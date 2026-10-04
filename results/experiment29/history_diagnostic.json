@@ -1,0 +1,1711 @@
+{
+  "normal_only": true,
+  "post_selection_diagnostic": true,
+  "totals": {
+    "fit": {
+      "valid_samples": 1123,
+      "mixed_pair_windows": 114,
+      "mixed_anchor_windows": 34,
+      "mixed_target_windows": 81,
+      "phases": {
+        "0": {
+          "valid_samples": 3,
+          "mixed_pair_windows": 3
+        },
+        "1": {
+          "valid_samples": 698,
+          "mixed_pair_windows": 60
+        },
+        "2": {
+          "valid_samples": 94,
+          "mixed_pair_windows": 18
+        },
+        "3": {
+          "valid_samples": 328,
+          "mixed_pair_windows": 33
+        }
+      }
+    },
+    "calibration": {
+      "valid_samples": 297,
+      "mixed_pair_windows": 26,
+      "mixed_anchor_windows": 13,
+      "mixed_target_windows": 14,
+      "phases": {
+        "0": {
+          "valid_samples": 0,
+          "mixed_pair_windows": 0
+        },
+        "1": {
+          "valid_samples": 146,
+          "mixed_pair_windows": 12
+        },
+        "2": {
+          "valid_samples": 31,
+          "mixed_pair_windows": 7
+        },
+        "3": {
+          "valid_samples": 120,
+          "mixed_pair_windows": 7
+        }
+      }
+    }
+  },
+  "selected_cases": [
+    {
+      "case_id": "fit_01_000004",
+      "frames": [
+        {
+          "source_frame": 0,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            0
+          ],
+          "history_anchor_tracks": [
+            1
+          ],
+          "history_target_tracks": [
+            0
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1043.6956610556351,
+            20.430849203325472,
+            135.73241673446853,
+            14.342916846526778
+          ]
+        },
+        {
+          "source_frame": 4,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            0,
+            4
+          ],
+          "history_anchor_tracks": [
+            1,
+            1
+          ],
+          "history_target_tracks": [
+            0,
+            0
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1043.689878045001,
+            20.421189197282942,
+            135.70353238780527,
+            14.334853578755444
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_01_000196",
+      "frames": [
+        {
+          "source_frame": 192,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            192
+          ],
+          "history_anchor_tracks": [
+            14
+          ],
+          "history_target_tracks": [
+            6
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1259.3341663779452,
+            2.8974671140867967,
+            123.08384577976875,
+            0.825150280036947
+          ]
+        },
+        {
+          "source_frame": 196,
+          "stored_phase": 2,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            192,
+            196
+          ],
+          "history_anchor_tracks": [
+            14,
+            15
+          ],
+          "history_target_tracks": [
+            6,
+            6
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            826.114750603314,
+            132.29132625769319,
+            77.55099347735336,
+            113.17190227813062
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_02_000152",
+      "frames": [
+        {
+          "source_frame": 148,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            140,
+            144,
+            148
+          ],
+          "history_anchor_tracks": [
+            11,
+            11,
+            13
+          ],
+          "history_target_tracks": [
+            9,
+            9,
+            9
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1262.092345429695,
+            17.582242499002167,
+            54.825878674324265,
+            17.577630578319255
+          ]
+        },
+        {
+          "source_frame": 152,
+          "stored_phase": 2,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            144,
+            148,
+            152
+          ],
+          "history_anchor_tracks": [
+            11,
+            13,
+            13
+          ],
+          "history_target_tracks": [
+            9,
+            9,
+            9
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1226.0346701346314,
+            68.63433752824503,
+            10.842107020941217,
+            64.7808796087989
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_02_000176",
+      "frames": [
+        {
+          "source_frame": 172,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 1,
+          "history_source_frames": [
+            164,
+            168,
+            172
+          ],
+          "history_anchor_tracks": [
+            13,
+            15,
+            15
+          ],
+          "history_target_tracks": [
+            9,
+            9,
+            9
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1243.2502696214233,
+            18.235462629174346,
+            52.97324417657532,
+            16.503046606382423
+          ]
+        },
+        {
+          "source_frame": 176,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            168,
+            172,
+            176
+          ],
+          "history_anchor_tracks": [
+            15,
+            15,
+            15
+          ],
+          "history_target_tracks": [
+            9,
+            9,
+            9
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1279.0690812421462,
+            1.6255884962788625,
+            126.64063579507211,
+            1.470339209353931
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_02_000376",
+      "frames": [
+        {
+          "source_frame": 372,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            364,
+            368,
+            372
+          ],
+          "history_anchor_tracks": [
+            26,
+            26,
+            27
+          ],
+          "history_target_tracks": [
+            9,
+            9,
+            9
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1203.0705534624562,
+            21.613967137492416,
+            51.1694361238562,
+            15.609210008685707
+          ]
+        },
+        {
+          "source_frame": 376,
+          "stored_phase": 2,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            368,
+            372,
+            376
+          ],
+          "history_anchor_tracks": [
+            26,
+            27,
+            27
+          ],
+          "history_target_tracks": [
+            9,
+            9,
+            9
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1201.011174360101,
+            69.95222151169418,
+            9.961540728271286,
+            63.49237275345837
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_03_000004",
+      "frames": [
+        {
+          "source_frame": 0,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            0
+          ],
+          "history_anchor_tracks": [
+            1
+          ],
+          "history_target_tracks": [
+            0
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1081.9130530564921,
+            19.902437440624745,
+            140.28197366582117,
+            14.674103368866906
+          ]
+        },
+        {
+          "source_frame": 4,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            0,
+            4
+          ],
+          "history_anchor_tracks": [
+            1,
+            1
+          ],
+          "history_target_tracks": [
+            0,
+            0
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1081.7635420730037,
+            19.946376333963634,
+            140.32617471121378,
+            14.708791199560626
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_03_000052",
+      "frames": [
+        {
+          "source_frame": 48,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            40,
+            44,
+            48
+          ],
+          "history_anchor_tracks": [
+            1,
+            4,
+            1
+          ],
+          "history_target_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1022.8986472519967,
+            40.66058149411198,
+            72.8260604937277,
+            32.43867038042113
+          ]
+        },
+        {
+          "source_frame": 52,
+          "stored_phase": 2,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            44,
+            48,
+            52
+          ],
+          "history_anchor_tracks": [
+            4,
+            1,
+            4
+          ],
+          "history_target_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1007.0229857191761,
+            88.62662394683335,
+            31.129631861200984,
+            77.21192219264087
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_04_000160",
+      "frames": [
+        {
+          "source_frame": 156,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            148,
+            152,
+            156
+          ],
+          "history_anchor_tracks": [
+            12,
+            12,
+            12
+          ],
+          "history_target_tracks": [
+            10,
+            10,
+            10
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1273.141014707288,
+            2.119928941368738,
+            128.46105737451742,
+            1.0901340877193364
+          ]
+        },
+        {
+          "source_frame": 160,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            152,
+            156,
+            160
+          ],
+          "history_anchor_tracks": [
+            12,
+            12,
+            12
+          ],
+          "history_target_tracks": [
+            10,
+            10,
+            10
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1248.276384011472,
+            3.4716171149278736,
+            126.13354443106579,
+            0.2562910092289805
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_04_000364",
+      "frames": [
+        {
+          "source_frame": 360,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            360
+          ],
+          "history_anchor_tracks": [
+            26
+          ],
+          "history_target_tracks": [
+            23
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1220.7772461223346,
+            9.539137045523063,
+            127.82475820621414,
+            1.7798022281460362
+          ]
+        },
+        {
+          "source_frame": 364,
+          "stored_phase": 2,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            360,
+            364
+          ],
+          "history_anchor_tracks": [
+            26,
+            25
+          ],
+          "history_target_tracks": [
+            23,
+            23
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1193.8181914175025,
+            41.272445652977844,
+            27.982997027224982,
+            34.31608102643205
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_05_000160",
+      "frames": [
+        {
+          "source_frame": 156,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            152,
+            156
+          ],
+          "history_anchor_tracks": [
+            15,
+            15
+          ],
+          "history_target_tracks": [
+            12,
+            12
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1259.8825527196818,
+            2.563862398730196,
+            127.9119017534825,
+            1.1102530446786565
+          ]
+        },
+        {
+          "source_frame": 160,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            152,
+            156,
+            160
+          ],
+          "history_anchor_tracks": [
+            15,
+            15,
+            15
+          ],
+          "history_target_tracks": [
+            12,
+            12,
+            12
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1248.2711568646746,
+            3.103335734014889,
+            126.76911935751744,
+            0.6989646035883907
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_06_000136",
+      "frames": [
+        {
+          "source_frame": 132,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            132
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            3
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1237.9917523140616,
+            1.8884314759012626,
+            126.2698527908826,
+            1.5829876738194735
+          ]
+        },
+        {
+          "source_frame": 136,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            132,
+            136
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            3,
+            3
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1238.44135081609,
+            2.1588694307756606,
+            126.78166119492673,
+            1.874760089781248
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_07_000128",
+      "frames": [
+        {
+          "source_frame": 124,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            116,
+            120,
+            124
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            6,
+            6,
+            6
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1239.8716630713343,
+            2.4190005890531814,
+            125.20914272595931,
+            0.5366799657150483
+          ]
+        },
+        {
+          "source_frame": 128,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            120,
+            124,
+            128
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            6,
+            6,
+            6
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1232.157304240131,
+            4.0655114297012585,
+            124.56947758636048,
+            0.07845987755918432
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_08_000144",
+      "frames": [
+        {
+          "source_frame": 140,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            132,
+            136,
+            140
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            3,
+            3,
+            3
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1250.4527997385276,
+            1.7749193705913553,
+            125.1751216731997,
+            0.8103405307149462
+          ]
+        },
+        {
+          "source_frame": 144,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            136,
+            140,
+            144
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            3,
+            3,
+            3
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1253.6142580702476,
+            2.2000557559531315,
+            124.45828459711602,
+            0.4935290894936103
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_10_000140",
+      "frames": [
+        {
+          "source_frame": 136,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            128,
+            132,
+            136
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1245.444537744434,
+            1.8455939172158125,
+            125.90914337238178,
+            1.3491953760355417
+          ]
+        },
+        {
+          "source_frame": 140,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            132,
+            136,
+            140
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1243.182701501236,
+            2.1158213859323136,
+            125.53585563275945,
+            1.014663867788984
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_11_000244",
+      "frames": [
+        {
+          "source_frame": 240,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            240
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            8
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1245.2199464014716,
+            4.501610232562453,
+            124.93997654651544,
+            0.34233110985722315
+          ]
+        },
+        {
+          "source_frame": 244,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            240,
+            244
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            8,
+            8
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1245.0540505714798,
+            4.48484082670826,
+            124.82167147010937,
+            0.33380499118498785
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_12_000108",
+      "frames": [
+        {
+          "source_frame": 104,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            104
+          ],
+          "history_anchor_tracks": [
+            1
+          ],
+          "history_target_tracks": [
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1231.741386747515,
+            2.190640154911993,
+            125.98316131192315,
+            1.4050836567679592
+          ]
+        },
+        {
+          "source_frame": 108,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            104,
+            108
+          ],
+          "history_anchor_tracks": [
+            1,
+            1
+          ],
+          "history_target_tracks": [
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1234.539725870131,
+            1.9629893502349112,
+            125.24200829343657,
+            0.875680700616524
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_13_000116",
+      "frames": [
+        {
+          "source_frame": 112,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            104,
+            108,
+            112
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1238.7551189561646,
+            1.9150375697682815,
+            126.64505286288444,
+            1.8288839439731803
+          ]
+        },
+        {
+          "source_frame": 116,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            108,
+            112,
+            116
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1236.7668158371323,
+            2.3154429838632025,
+            125.8268701455372,
+            0.9778683840563436
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_14_000116",
+      "frames": [
+        {
+          "source_frame": 112,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            104,
+            108,
+            112
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            5,
+            5
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1246.1867432999622,
+            4.105524552480418,
+            126.66706827215641,
+            0.26922781172900134
+          ]
+        },
+        {
+          "source_frame": 116,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            108,
+            112,
+            116
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            5,
+            5,
+            5
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1216.071571675111,
+            9.674929938589521,
+            127.03204986323294,
+            1.634163006481135
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "calibration_15_000120",
+      "frames": [
+        {
+          "source_frame": 116,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            116
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1209.1662970528666,
+            7.708312403429975,
+            125.85303389853766,
+            0.6931119143622478
+          ]
+        },
+        {
+          "source_frame": 120,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            116,
+            120
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1209.1727336301235,
+            7.682946747617831,
+            125.84546883533802,
+            0.6853095619680645
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_16_000208",
+      "frames": [
+        {
+          "source_frame": 204,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            196,
+            200,
+            204
+          ],
+          "history_anchor_tracks": [
+            1,
+            1,
+            1
+          ],
+          "history_target_tracks": [
+            10,
+            10,
+            10
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1248.7377804436753,
+            1.4545534885811475,
+            125.00610879295323,
+            1.3881100509759143
+          ]
+        },
+        {
+          "source_frame": 208,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            200,
+            204,
+            208
+          ],
+          "history_anchor_tracks": [
+            1,
+            1,
+            1
+          ],
+          "history_target_tracks": [
+            10,
+            10,
+            10
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1237.9292853282898,
+            2.026985317919648,
+            124.62644164376708,
+            0.5717970405246178
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_17_000132",
+      "frames": [
+        {
+          "source_frame": 128,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            120,
+            124,
+            128
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            2,
+            2,
+            2
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1245.838666004658,
+            1.8774808271825543,
+            125.06549125714228,
+            0.4189692664155525
+          ]
+        },
+        {
+          "source_frame": 132,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            124,
+            128,
+            132
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            2,
+            2,
+            2
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1236.0909321780857,
+            4.09969925490217,
+            124.92767411502534,
+            0.13684029470674794
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_17_000152",
+      "frames": [
+        {
+          "source_frame": 148,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            140,
+            144,
+            148
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            9
+          ],
+          "history_target_tracks": [
+            2,
+            2,
+            2
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1223.5736339218306,
+            20.182971508526908,
+            53.60264303486598,
+            14.878816767124102
+          ]
+        },
+        {
+          "source_frame": 152,
+          "stored_phase": 2,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            144,
+            148,
+            152
+          ],
+          "history_anchor_tracks": [
+            0,
+            9,
+            9
+          ],
+          "history_target_tracks": [
+            2,
+            2,
+            2
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1247.448467547382,
+            65.1392950130379,
+            13.309906810774656,
+            60.46861755722517
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_18_000132",
+      "frames": [
+        {
+          "source_frame": 128,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            120,
+            124,
+            128
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1237.9830738734242,
+            2.5313731551213157,
+            124.86017852914809,
+            0.2909037534247242
+          ]
+        },
+        {
+          "source_frame": 132,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            124,
+            128,
+            132
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1230.5098493027144,
+            4.215936655244552,
+            124.43717674400219,
+            0.07792829269476295
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_19_000064",
+      "frames": [
+        {
+          "source_frame": 60,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            60
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            5
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1146.965475770257,
+            6.067191681751772,
+            127.7157877674181,
+            4.841382844375204
+          ]
+        },
+        {
+          "source_frame": 64,
+          "stored_phase": 1,
+          "raw_descriptor_nearest_existing_center_diagnostic": 1,
+          "history_source_frames": [
+            60,
+            64
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            5,
+            6
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1279.2700613920738,
+            1.3432034243703006,
+            132.10996604225224,
+            4.845432916984678
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_20_000180",
+      "frames": [
+        {
+          "source_frame": 176,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            168,
+            172,
+            176
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            6,
+            6,
+            6
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1251.0743821050555,
+            1.5489337724410046,
+            125.73264425870691,
+            1.3760486250899606
+          ]
+        },
+        {
+          "source_frame": 180,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 2,
+          "history_source_frames": [
+            172,
+            176,
+            180
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            9
+          ],
+          "history_target_tracks": [
+            6,
+            6,
+            6
+          ],
+          "history_contains_multiple_pairs": true,
+          "stored_squared_distances": [
+            1171.8360288995873,
+            24.66410126213633,
+            47.22840796008785,
+            20.540681652470063
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_21_000368",
+      "frames": [
+        {
+          "source_frame": 364,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            364
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            14
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1227.3848170361828,
+            4.567837084469858,
+            125.47609410819999,
+            0.10223384291191179
+          ]
+        },
+        {
+          "source_frame": 368,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            364,
+            368
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            14,
+            14
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1227.3004559793578,
+            4.5767437068749794,
+            125.45507332935323,
+            0.1024404023902949
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_22_000136",
+      "frames": [
+        {
+          "source_frame": 132,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            132
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            3
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1227.4037150813963,
+            7.320953686088523,
+            126.56239845852622,
+            0.8341238162773249
+          ]
+        },
+        {
+          "source_frame": 136,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            132,
+            136
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            3,
+            3
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1224.177109470819,
+            7.914395211307231,
+            126.56756309279044,
+            1.0131731206537833
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_23_000052",
+      "frames": [
+        {
+          "source_frame": 48,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            40,
+            44,
+            48
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1142.82519171174,
+            6.712456861818134,
+            128.64631363241574,
+            5.173937066819492
+          ]
+        },
+        {
+          "source_frame": 52,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            44,
+            48,
+            52
+          ],
+          "history_anchor_tracks": [
+            0,
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            4,
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1140.948824067515,
+            6.943956272302898,
+            128.77115505706945,
+            5.292285868105736
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_24_000324",
+      "frames": [
+        {
+          "source_frame": 320,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            320
+          ],
+          "history_anchor_tracks": [
+            0
+          ],
+          "history_target_tracks": [
+            12
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1230.6398046127752,
+            5.236476707304419,
+            126.2781514710227,
+            0.37535780951265685
+          ]
+        },
+        {
+          "source_frame": 324,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            320,
+            324
+          ],
+          "history_anchor_tracks": [
+            0,
+            0
+          ],
+          "history_target_tracks": [
+            12,
+            12
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1230.7718490549569,
+            5.194692295136108,
+            126.41131969023084,
+            0.36664691347630646
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "fit_25_000052",
+      "frames": [
+        {
+          "source_frame": 48,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            48
+          ],
+          "history_anchor_tracks": [
+            1
+          ],
+          "history_target_tracks": [
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1143.5717100304444,
+            6.5690563882855555,
+            128.74145311711558,
+            5.1022592548931796
+          ]
+        },
+        {
+          "source_frame": 52,
+          "stored_phase": 3,
+          "raw_descriptor_nearest_existing_center_diagnostic": 3,
+          "history_source_frames": [
+            48,
+            52
+          ],
+          "history_anchor_tracks": [
+            1,
+            1
+          ],
+          "history_target_tracks": [
+            4,
+            4
+          ],
+          "history_contains_multiple_pairs": false,
+          "stored_squared_distances": [
+            1143.015720522875,
+            6.638757651212325,
+            128.6927592547395,
+            5.133945637464438
+          ]
+        }
+      ]
+    }
+  ],
+  "additional_visual_followup_source_hashes": {
+    "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/144.jpg": "c7c9814b768aeb18deff3420a3a41af63e80b5f03e1cf474e4f9c0a3d6c2e2e3",
+    "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/368.jpg": "7da5ccdd0cb016922a027d8249c330a52691a841b0da65605c10ecd3c00a5222"
+  },
+  "note": "Nearest-center values for unsmoothed raw descriptors are diagnostic only, not new phase assignments or score predictions. No test inputs or original caches/models modified."
+}

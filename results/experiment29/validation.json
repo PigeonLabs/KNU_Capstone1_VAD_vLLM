@@ -1,0 +1,17 @@
+{
+  "normal_sequences_checked": 25,
+  "normal_source_frames": 9732,
+  "sampled_frames": 2442,
+  "transitions": 2417,
+  "selected_cases": 30,
+  "local_contact_sheets": 15,
+  "protected_files_unchanged": 181,
+  "code_input_and_selection_image_hashes_match": true,
+  "phase_mask_descriptor_margin_reconstruction_verified": true,
+  "coverage_video_counts_holdout_and_mixed_windows_independently_reconstructed": true,
+  "all_selected_cases_have_exploratory_review_records": true,
+  "all_trace_source_paths_selected_boxes_and_tracks_verified": true,
+  "selection_before_visual_review_verified": true,
+  "test_inputs_opened": false,
+  "score_or_model_changes": false
+}

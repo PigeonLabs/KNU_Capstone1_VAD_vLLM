@@ -35,7 +35,8 @@
 | 실험 26 | 실제 bank에 일치하는 CDF 선택 | 완료: 같은 bank 점수 불일치 제거, ranking 저하·경보 불변 | [결과·의의·추천 3개](docs/EXPERIMENT26.md) |
 | 실험 27 | 연속 관측 전이만 공정 결합 | 완료: ranking·오탐 개선, TP 소폭 감소·새 구간 없음 | [결과·의의·추천 3개](docs/EXPERIMENT27.md) |
 | 실험 28 | 전이 CDF의 정상 관측 모집단 정렬 | 완료: 정상 오탐 증가, test 경보 불변·ranking 소폭 저하 | [결과·의의·추천 3개](docs/EXPERIMENT28.md) |
-| 다음 실험 29 | 정상 전이 커버리지·관측 근거 감사 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT29_PLAN.md) |
+| 실험 29 | 정상 전이 커버리지·관측 근거 감사 | 완료: 객체 쌍의 이력 혼합·역할 혼동 확인, 정상-only 진단 | [결과·의의·추천 3개](docs/EXPERIMENT29.md) |
+| 다음 실험 30 | 객체 쌍 track 경계의 관계 평균 초기화 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT30_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -977,3 +978,29 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **고정 설정의 다른 장면 적용성 검증** | 반복 R04에서 calibration만 바꿔도 정상 오탐이 증가하고 test 효용은 없음 | 장면/protocol을 먼저 고정하고 정상 적합 후 test 한 번 평가. object/phase 의미 차이, 지원 부족과 실패도 보고 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT28.md) · [정상 반례 원인](results/experiment28/normal_alarm_attribution.json) · [검증](results/experiment28/validation.json) · [1순위를 구체화한 실험 29 계획](docs/EXPERIMENT29_PLAN.md)
+
+## 실험 29 — 정상 전이 근거 추적
+
+| 항목 | 결과 |
+|---|---|
+| 감사 범위 | 정상 25개 영상, 9,732프레임, 2,442 samples / 2,417전이 |
+| 관측 3→2 | FIT 4회/4개 영상, calibration 2회/1개 영상 |
+| 서로 다른 쌍이 섞인 평균 | FIT 114/1,123, calibration 26/297 유효 samples |
+| 시각 검토 | target 6 + 대조 24 사례, 독립 semantic GT 아님 |
+| 성능 평가 | 새 AUROC/AP·FPR·recall 미평가; 점수/모델 변경 없음 |
+
+![정상 관측 전이 coverage](results/experiment29/observed_transition_coverage.png)
+
+**의의:** 두 정상 반례에서 바이스 주변 anchor가 blade 주변으로 바뀐 뒤 이전 track descriptor가 관계 평균에 남아 있었다. raw 최근접 중심은 2→2인데 저장 평균 phase는 3→2였다. 전이→객체/track→원본 frame을 연결하는 진단 기능을 추가했다.
+
+**보완할 점:** 이력 초기화만으로 지속적 역할 오류를 고칠 수 없고 track 단절이 실제 객체 변경을 뜻하지 않는다. 30개 목적 표집의 시각 메모는 정확도 평가가 아니다. 이번 정상-only 감사에서 test 성능·운용 비용은 측정하지 않았다. 기존 정상 특징/점수/모델 181개 파일은 그대로다.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **객체 쌍 track 경계에서 관계 평균 초기화**: anchor 또는 target track이 바뀌면 이전 descriptor 이력을 비움 | 정상 3→2 6회 모두 현재 평균에 서로 다른 쌍이 섞임. 두 calibration 반례의 raw 최근접 중심은 2→2인데 저장 평균 phase는 3→2 | 선택 객체/관측 mask·기존 phase 중심을 고정하고 평균 규칙만 변경. 정상 재적합·holdout 후 테스트, rank/support 변화도 보고. track 단절이 실제 객체 교체라는 보장은 없음 |
+| 2 | **정상 시공간 근거를 추가한 역할 검증**: blade와 바이스·갈색 제품 후보의 혼동을 줄이는 검증 | 검토 사례에서 양수 semantic margin으로 바이스를 anchor로 선택하는 현상과 target의 blade 선택이 보임 | 정상 데이터에서만 규칙을 정하고 역할 검토·가용성·최종 탐지를 함께 확인. 이번 목적 표집을 정확도 근거로 쓰거나 test로 margin을 조정하지 않음 |
+| 3 | **고정 설정의 다른 장면 적용성 검증** | 전이 3→2의 calibration support가 한 영상에 집중하며 현재 관측 문제도 R04 사례에 한정 | 장면/protocol을 먼저 고정하고 정상 적합 뒤 test 한 번 평가. 다른 기구/객체 역할과 phase 의미 차이·지원 부족도 보고 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT29.md) · [평균 이력 진단](results/experiment29/history_diagnostic.json) · [검증](results/experiment29/validation.json) · [1순위를 구체화한 실험 30 계획](docs/EXPERIMENT30_PLAN.md)

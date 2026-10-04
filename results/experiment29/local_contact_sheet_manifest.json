@@ -1,0 +1,126 @@
+{
+  "local_only": true,
+  "renderer_sha256": "f6c55d82989c11086eaa861824eea7a60e8074bdfeeda470bdcac222cd22661e",
+  "pages": [
+    {
+      "path": "artifacts/experiment29/contact_sheets/target_3_to_2_01.jpg",
+      "case_ids": [
+        "calibration_02_000152",
+        "calibration_02_000376"
+      ],
+      "sha256": "5dda00deed2f3a168517925a235e427843f76d60bd6fa13e4acdf047a25f1402"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/target_3_to_2_02.jpg",
+      "case_ids": [
+        "fit_01_000196",
+        "fit_03_000052"
+      ],
+      "sha256": "cfa0c84c06b6fa024d1d1a51df8ccf7fd70eee4f5a847a34615dcc34102f0966"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/target_3_to_2_03.jpg",
+      "case_ids": [
+        "fit_04_000364",
+        "fit_17_000152"
+      ],
+      "sha256": "7bbaca84db27d201032033e73ad5f372b39d746e9d02250ad2c29cc9137350e4"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_01.jpg",
+      "case_ids": [
+        "fit_01_000004",
+        "calibration_02_000176"
+      ],
+      "sha256": "80b6ece954181517955d7f7263b521a385789895201b115b26a33868dfe6eab4"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_02.jpg",
+      "case_ids": [
+        "fit_03_000004",
+        "fit_04_000160"
+      ],
+      "sha256": "438335db76741d9ba74a0fae0f04996c41f1563757fe43327dd34e183d897854"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_03.jpg",
+      "case_ids": [
+        "fit_05_000160",
+        "fit_06_000136"
+      ],
+      "sha256": "2219e380c418d87c67f837f56511994a1fa49b5bc3a8a21273fcc3b11ead143d"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_04.jpg",
+      "case_ids": [
+        "fit_07_000128",
+        "calibration_08_000144"
+      ],
+      "sha256": "b20282528ed1c97aa63662ff085ec06c342773dd6cd2a312cb08db588acb8718"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_05.jpg",
+      "case_ids": [
+        "calibration_10_000140",
+        "fit_11_000244"
+      ],
+      "sha256": "e1fa78c34da4d8016b84733c789e89883ca8c47e444ab8e19cf82e8e0bd0e6e6"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_06.jpg",
+      "case_ids": [
+        "calibration_12_000108",
+        "fit_13_000116"
+      ],
+      "sha256": "6e18787ff97a8f883378df551a58bc253850f6bcd31613a7f1bfe205d8162e07"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_07.jpg",
+      "case_ids": [
+        "fit_14_000116",
+        "calibration_15_000120"
+      ],
+      "sha256": "95735fbc5536ee7bc1bc0c96d1e8032fe358e83035d026580dfa25763cbacb5d"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_08.jpg",
+      "case_ids": [
+        "fit_16_000208",
+        "fit_17_000132"
+      ],
+      "sha256": "5e166015a19af4cedb681b8e3179480297fd156e3338c2bc85d26c61a3cee22a"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_09.jpg",
+      "case_ids": [
+        "fit_18_000132",
+        "fit_19_000064"
+      ],
+      "sha256": "449f438a5d7d56a1a17910d82875e91c84ada86bfb925c25dfe978a200ab3b3e"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_10.jpg",
+      "case_ids": [
+        "fit_20_000180",
+        "fit_21_000368"
+      ],
+      "sha256": "5123296122c4b7785e573372c3f334a4548cda56aacbcec0f44cd6ac3e414d63"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_11.jpg",
+      "case_ids": [
+        "fit_22_000136",
+        "fit_23_000052"
+      ],
+      "sha256": "fc8152d96791d88af1ca5f5d54ee718ded8a58b5a7b79d9dca22daaff07b192a"
+    },
+    {
+      "path": "artifacts/experiment29/contact_sheets/control_previous_3_12.jpg",
+      "case_ids": [
+        "fit_24_000324",
+        "fit_25_000052"
+      ],
+      "sha256": "fbdf2cbb50f53c7195bb7efe336242b01f9018379c7eb4e36b0442ede30cd7c4"
+    }
+  ]
+}

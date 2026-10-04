@@ -1,0 +1,13 @@
+{
+  "experiment": "29",
+  "scope": "R04_normal_transition_provenance_audit",
+  "feature_source": "artifacts/experiment19/features/R04",
+  "relation_model": "artifacts/experiment18/normal_relation_model.npz",
+  "relation_config": "configs/experiment18.json",
+  "data_root": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset",
+  "case_limit_per_group": 24,
+  "mandatory_cases": [["02",152],["02",376]],
+  "normal_only": true,
+  "score_or_model_changes": false,
+  "publish_source_images": false
+}

@@ -1,0 +1,282 @@
+{
+  "normal_only": true,
+  "purposeful_sample_not_accuracy_estimate": true,
+  "reviewed_cases": [
+    {
+      "case_id": "calibration_02_000152",
+      "selection_group": "target_3_to_2",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전/현재 anchor bbox는 올라간 blade 주변이며 제품 후보는 하단 갈색 판 주변이다. 두 영상에서 즉각적인 새로운 동작 경계를 확정할 수 없다. 더 이른 우하단 바이스 track 혼합은 별도 trace와 추가 원본 frame 검토로 확인했다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "calibration_02_000376",
+      "selection_group": "target_3_to_2",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전/현재 anchor bbox는 올라간 blade 주변이며 제품 후보는 하단 갈색 판 주변이다. 두 영상에서 즉각적인 새로운 동작 경계를 확정할 수 없다. 더 이른 우하단 바이스 track 혼합은 별도 trace와 추가 원본 frame 검토로 확인했다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_01_000196",
+      "selection_group": "target_3_to_2",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전 anchor bbox는 우하단 바이스 주변, 현재 bbox는 움직이는 금속 부품의 왼쪽 작은 영역이다. 다음 sample에서는 anchor가 없다. 현재 bbox가 의도한 blade 전체를 대표하는지는 미확정.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_03_000052",
+      "selection_group": "target_3_to_2",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전 anchor bbox는 우하단 바이스 주변, 현재 bbox는 올라간 금속 blade 주변이다. 선택 위치와 track이 바뀐다. 이것을 공정 단계 변화의 정답으로 취급하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_04_000364",
+      "selection_group": "target_3_to_2",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전 anchor bbox는 우하단 바이스 주변, 현재 bbox는 올라간 금속 blade 주변이다. 선택 위치와 track이 바뀐다. 이것을 공정 단계 변화의 정답으로 취급하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_17_000152",
+      "selection_group": "target_3_to_2",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전/현재 anchor bbox는 올라간 blade 주변이고 track도 같다. 다음 sample은 우하단 바이스로 돌아간다. 더 이른 track의 descriptor가 평균에 남는 현상은 별도 수치 trace로 확인했다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_01_000004",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다. target bbox는 상단 고정구 주변 작은 영역으로 제품 여부는 미확정이다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "calibration_02_000176",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_03_000004",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다. target bbox는 상단 고정구 주변 작은 영역으로 제품 여부는 미확정이다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_04_000160",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_05_000160",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_06_000136",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_07_000128",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "calibration_08_000144",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "calibration_10_000140",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_11_000244",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "calibration_12_000108",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_13_000116",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_14_000116",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "calibration_15_000120",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_16_000208",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_17_000132",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_18_000132",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_19_000064",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다. target은 이전 blade 주변에서 현재 상단 갈색 판 주변으로 바뀐다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_20_000180",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "이전 우하단 바이스 anchor가 현재 움직이는 blade 쪽으로 바뀌고 다음 sample에서 다시 바이스로 돌아간다. 잠재 phase는 세 sample 모두 3이다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_21_000368",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_22_000136",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_23_000052",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다. target bbox가 올라간 금속 blade 주변을 선택해 갈색 제품 역할과도 어긋나 보인다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_24_000324",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "fit_25_000052",
+      "selection_group": "control_previous_3",
+      "reviewed": true,
+      "review_type": "assistant visual exploratory observation; not independent annotation",
+      "observation": "현재 anchor bbox가 움직이는 blade보다 우하단 바이스 주변을 선택한다. 양수 semantic margin/관계 valid와 의미 역할의 정확성을 동일시할 수 없다. target bbox가 올라간 금속 blade 주변을 선택해 갈색 제품 역할과도 어긋나 보인다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    }
+  ],
+  "limitations": [
+    "No independent human semantic/bbox annotation.",
+    "Images are 256x256; small or blurred parts may be ambiguous.",
+    "Next sampled frame and two earlier frames are used only in posthoc explanation.",
+    "No selection thresholds or model labels changed from visual observations."
+  ]
+}
