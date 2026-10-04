@@ -27,7 +27,8 @@
 | 실험 18 | track 단위 인과적 semantic margin 집계 | 완료: 짧은 변동 감소, ranking 저하·오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT18.md) |
 | 실험 19 | 관계 관측 여부를 반영하는 외형 subspace 선택 | 완료: ranking·오탐 개선, recall·구간 탐지 감소 | [결과·의의·추천 3개](docs/EXPERIMENT19.md) |
 | 실험 20 | 외형 bank 경로별 정상 보정·영상 holdout 검증 | 완료: 정상 holdout 오탐 증가, 테스트 효과 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT20.md) |
-| 다음 실험 21 | 관측 FIT 제한·추론 fallback의 2×2 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT21_PLAN.md) |
+| 실험 21 | 관측 FIT 제한·추론 fallback의 2×2 대조 | 완료: 두 요소의 개별 효과·보정 상호작용 확인 | [결과·의의·추천 3개](docs/EXPERIMENT21.md) |
+| 다음 실험 22 | 동일 bank 표본 수 무작위 FIT 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT22_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -711,6 +712,35 @@ R04 정상 FIT 20개/calibration 5개, 테스트 19개·8,154프레임입니다.
 | 3 | **정상 역할·누락 검증 확대**: 기존 역할 오류와 체류 가용성 5.11% 지속 | 별도 정상 자세/배경 사례 검토와 보조 주석 범위·비용 공개. coverage와 의미 정확도 구분 |
 
 [상세 결과·의의·한계·검증 기준](docs/EXPERIMENT20.md) · [정상 holdout](results/experiment20/normal_holdout.json) · [지표](results/experiment20/metrics.json) · [관측·경로 진단](results/experiment20/route_diagnostic.json) · [재현 검증](results/experiment20/validation.json) · [실험 21 계획](docs/EXPERIMENT21_PLAN.md)
+
+## 실험 21 결과 — 관측 정보의 학습·추론 역할 분리
+
+A는 관측된 정상 FIT만 phase PCA에 사용하는 변경, B는 미관측 추론 시 pooled PCA로 전환하는 변경입니다. 역할 전체 CDF를 유지하고 네 셀을 모두 비교했습니다.
+
+| 구성 | 정상 holdout 오탐 / 1,920 | Combined AUROC | 테스트 오탐률 | 이상 recall | 탐지 구간 / 26 |
+|---|---:|---:|---:|---:|---:|
+| 18: A/B 없음 | 52 | 0.6655 | 10.60% | 14.64% | 15 |
+| 21_fit: A만 | 40 | 0.6765 | 8.64% | 13.74% | 13 |
+| 21_infer: B만 | 48 | 0.6715 | 9.48% | 13.76% | 17 |
+| 19: A+B | 44 | 0.6792 | 8.05% | 13.13% | 14 |
+
+R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. 네 구성의 정상 q99는 0.997457627로 같았고 특징·관측 mask·공정 점수는 보존했습니다.
+
+![실험 21 네 셀 비교](results/experiment21/factorial_matrix.png)
+
+**의의:** 학습 제한과 추론 fallback을 분리해 역할과 절충을 확인했습니다. A는 두 B 조건에서 ranking과 정상 오탐을 개선했지만 이상 경보·구간 탐지는 줄었습니다. B는 이상 프레임 경보를 줄이면서 탐지 구간 수는 늘렸습니다. 지표별로 유리한 구성이 달라 하나를 종합 승자로 선택하지 않습니다.
+
+**보완할 점:** A가 표본 수와 bank 지원도 바꾸므로 관측 정보 자체의 가치를 아직 입증하지 못했습니다. B는 역할 전체 CDF를 통해 관측 프레임 경보에도 간접 영향을 줍니다. 정상 영상별 결과가 다르고, 역할 오류·체류 가용성 5.11%와 R04 반복 개발 한계도 남습니다. 성능 상승을 novelty로 주장하지 않습니다.
+
+### 실험 21 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 근거 | 변경·검증 방향 |
+|---|---|---|
+| 1 | **동일 표본 수 무작위 FIT 대조**: A 효과에 표본 감소·phase 0 bank 제거가 혼재 | 역할×phase 표본 수를 맞춰 seed 0~4 모두 평가. 정상 holdout·전체/관측별 지표 공개, 최고 seed 선택 금지 |
+| 2 | **미관측 길이를 반영한 인과적 fallback**: A 고정 시 미관측 이상 경보 283→134개 | 정상 FIT 누락 분포로만 규칙을 정하고 길이별 오탐·미탐·경계 지연 검증. 미래 보간과 테스트 기반 gate 튜닝 금지 |
+| 3 | **정상 객체 역할·누락 검증 확대**: 모든 셀이 기존 역할 오류를 계승 | 별도 정상 사례의 실제 부품/혼동 검토. 보조 주석 범위·비용 공개, 관측률과 정확도 구분 |
+
+[상세 결과·의의·한계·검증 기준](docs/EXPERIMENT21.md) · [정상 holdout](results/experiment21/normal_holdout.json) · [요인·관측·bank 진단](results/experiment21/factorial_diagnostic.json) · [재현 검증](results/experiment21/validation.json) · [실험 22 계획](docs/EXPERIMENT22_PLAN.md)
 
 ## 로컬 VLM
 

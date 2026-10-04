@@ -1,5 +1,5 @@
 """Normal calibration-video holdout for role-wide versus bank-route CDFs."""
-import copy,json
+import argparse,copy,json
 from pathlib import Path
 import numpy as np
 from threadpoolctl import threadpool_limits
@@ -29,17 +29,24 @@ def support_rows(model):
 
 
 def main():
-    out=Path('results/experiment20');art=Path('artifacts/experiment20/normal_holdout');art.mkdir(parents=True,exist_ok=True)
-    split=json.loads(Path('results/stage00/splits.json').read_text())['R04'];root=Path('artifacts/experiment20/features/R04');fit=[load_cache(root,s) for s in split['fit']];cal={s:load_cache(root,s) for s in split['calibration']}
-    configs={e:json.loads(Path(f'configs/experiment{e}.json').read_text()) for e in ['19','20']};models={};rows=[]
+    parser=argparse.ArgumentParser();parser.add_argument('--experiments',nargs='+',default=['19','20']);parser.add_argument('--output-experiment',default='20');parser.add_argument('--feature-source-experiment',default='20');args=parser.parse_args();variants=args.experiments
+    out=Path(f'results/experiment{args.output_experiment}');out.mkdir(parents=True,exist_ok=True);art=Path(f'artifacts/experiment{args.output_experiment}/normal_holdout');art.mkdir(parents=True,exist_ok=True)
+    split=json.loads(Path('results/stage00/splits.json').read_text())['R04'];root=Path(f'artifacts/experiment{args.feature_source_experiment}/features/R04');fit=[load_cache(root,s) for s in split['fit']];cal={s:load_cache(root,s) for s in split['calibration']}
+    configs={e:json.loads(Path(f'configs/experiment{e}.json').read_text()) for e in variants};models={};rows=[]
     with threadpool_limits(limits=4):
         for e,cfg in configs.items():
             model=LognormalDwellBaseline(cfg,load_process(cfg));model.fit(fit);models[e]=model
-        for key in models['19'].spaces:
-            for attr in ['mean','basis']:np.testing.assert_array_equal(getattr(models['19'].spaces[key],attr),getattr(models['20'].spaces[key],attr))
+        by_fit_mode={}
+        for e,model in models.items():
+            mode=configs[e].get('appearance_fit_conditioning',configs[e].get('appearance_conditioning','phase'))
+            if mode in by_fit_mode:
+                other=by_fit_mode[mode];assert set(model.spaces)==set(other.spaces)
+                for key in model.spaces:
+                    for attr in ['mean','basis']:np.testing.assert_array_equal(getattr(model.spaces[key],attr),getattr(other.spaces[key],attr))
+            else:by_fit_mode[mode]=model
         for held,used in leave_one_video_out(split['calibration']):
             scores_by_variant={};d=cal[held];n=int(d['frame_count'])
-            for e in ['19','20']:
+            for e in variants:
                 model=copy.deepcopy(models[e]);model.calibrate([cal[s] for s in used]);r=model.score(d);scores_by_variant[e]=r
                 refs=normal_model_arrays(model);np.savez_compressed(art/f'{e}_exclude_{held}_references.npz',**refs)
                 saved={k:r[k] for k in ['visual','transition','dwell','process','combined','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']};saved.update(indices=d['indices'],relation_valid=d['relation_valid'],global_route=model.appearance_routes(d,-1,np.arange(len(d['indices']))))
@@ -63,9 +70,10 @@ def main():
                         row['object_bank_strata'].append({'role':int(role),'route':'phase' if kind else 'pooled','observations':int(mask.sum()),'alarms':int(np.sum(mask&(saved['object_scores']>model.threshold))),'conditional_cdf_observations':int(np.sum(mask&saved['object_route_calibrated']))})
                 assert f'R04/training_{held}' not in {s for v in row['route_support'] for s in v['videos']}
                 rows.append(row)
-            for key in ['transition','dwell','process','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']:np.testing.assert_array_equal(scores_by_variant['19'][key],scores_by_variant['20'][key])
+            for e in variants[1:]:
+                for key in ['transition','dwell','process','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']:np.testing.assert_array_equal(scores_by_variant[variants[0]][key],scores_by_variant[e][key])
     totals={}
-    for e in ['19','20']:
+    for e in variants:
         items=[r for r in rows if r['variant']==e];total={k:sum(r[k] for r in items) for k in ['held_out_samples','held_out_sample_alarms','held_out_frames','held_out_frame_alarms','held_out_at_one_samples']}
         total['frame_alarm_rate']=total['held_out_frame_alarms']/total['held_out_frames'];total['q99_range']=[min(r['normal_q99'] for r in items),max(r['normal_q99'] for r in items)];total['unsupported_routes']=sum(not r['supported'] for item in items for r in item['route_support']);totals[e]=total
     result={'normal_only':True,'fit_sequences':split['fit'],'holdout_sequences':split['calibration'],'totals':totals,'folds':rows,'note':'Each held-out normal video excluded from appearance/process references and q99. Fixed normal FIT models; no parameter selection. Global bank strata assign the combined frame alarm by the global branch route; object bank strata are individual feature observations, not unique frames.'}

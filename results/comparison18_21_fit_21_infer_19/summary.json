@@ -1,0 +1,56 @@
+{
+  "scene": "R04",
+  "seed": 42,
+  "test_frames": 8154,
+  "rows": [
+    {
+      "experiment": "18",
+      "visual_auroc": 0.6805989862028592,
+      "visual_average_precision": 0.6687883292408777,
+      "process_auroc": 0.5687937482835427,
+      "process_average_precision": 0.5941191179979334,
+      "combined_auroc": 0.6654821889143976,
+      "combined_average_precision": 0.6572126646792338,
+      "normal_q99_threshold": 0.997457627118644,
+      "test_normal_frame_alarm_rate": 0.10598434004474273,
+      "test_anomaly_frame_recall_at_q99": 0.14635211882918306
+    },
+    {
+      "experiment": "21_fit",
+      "visual_auroc": 0.7001288809040025,
+      "visual_average_precision": 0.6970101030308128,
+      "process_auroc": 0.5687937482835427,
+      "process_average_precision": 0.5941191179979334,
+      "combined_auroc": 0.6764982107306318,
+      "combined_average_precision": 0.6752829362293051,
+      "normal_q99_threshold": 0.997457627118644,
+      "test_normal_frame_alarm_rate": 0.08640939597315436,
+      "test_anomaly_frame_recall_at_q99": 0.13739624290083005
+    },
+    {
+      "experiment": "21_infer",
+      "visual_auroc": 0.6852247166440413,
+      "visual_average_precision": 0.6759119829719539,
+      "process_auroc": 0.5687937482835427,
+      "process_average_precision": 0.5941191179979334,
+      "combined_auroc": 0.6714598280561738,
+      "combined_average_precision": 0.6647084455507833,
+      "normal_q99_threshold": 0.997457627118644,
+      "test_normal_frame_alarm_rate": 0.09479865771812081,
+      "test_anomaly_frame_recall_at_q99": 0.13761467889908258
+    },
+    {
+      "experiment": "19",
+      "visual_auroc": 0.6970707158445753,
+      "visual_average_precision": 0.6939383127481112,
+      "process_auroc": 0.5687937482835427,
+      "process_average_precision": 0.5941191179979334,
+      "combined_auroc": 0.6791623236019363,
+      "combined_average_precision": 0.676748295047322,
+      "normal_q99_threshold": 0.997457627118644,
+      "test_normal_frame_alarm_rate": 0.08053691275167785,
+      "test_anomaly_frame_recall_at_q99": 0.13128003494975973
+    }
+  ],
+  "comparison_note": "Descriptive development scene; each model uses its own normal calibration q99. Not equal test FPR. No significance claim."
+}

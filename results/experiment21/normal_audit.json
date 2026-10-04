@@ -1,0 +1,549 @@
+{
+  "normal_only": true,
+  "variants": {
+    "18": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 0,
+          "samples": 126,
+          "rank": 20
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 1045,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 313,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 476,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 0,
+          "samples": 13,
+          "rank": 4
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 1309,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 459,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 681,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 0,
+          "samples": 128,
+          "rank": 17
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 1134,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 361,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 539,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 0,
+          "samples": 126,
+          "rank": 31
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 1045,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 313,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 476,
+          "rank": 32
+        }
+      ],
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 185,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 189,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 185
+      },
+      "role_calibration_counts": {
+        "0": 590,
+        "1": 543,
+        "2": 482,
+        "-1": 482
+      }
+    },
+    "21_fit": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 31
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ],
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "role_calibration_counts": {
+        "0": 590,
+        "1": 543,
+        "2": 482,
+        "-1": 482
+      }
+    },
+    "21_infer": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 0,
+          "samples": 126,
+          "rank": 20
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 1045,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 313,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 476,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 0,
+          "samples": 13,
+          "rank": 4
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 1309,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 459,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 681,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 0,
+          "samples": 128,
+          "rank": 17
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 1134,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 361,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 539,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 0,
+          "samples": 126,
+          "rank": 31
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 1045,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 313,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 476,
+          "rank": 32
+        }
+      ],
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      },
+      "role_calibration_counts": {
+        "0": 590,
+        "1": 543,
+        "2": 482,
+        "-1": 482
+      }
+    },
+    "19": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 31
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ],
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      },
+      "role_calibration_counts": {
+        "0": 590,
+        "1": 543,
+        "2": 482,
+        "-1": 482
+      }
+    }
+  },
+  "same_A_same_pca_verified": true,
+  "all_pooled_and_process_preserved": true,
+  "legacy_full_calibration_reproduced": true,
+  "calibration_samples": 482,
+  "note": "Four prespecified cells. No route-specific CDF and no configuration selection."
+}

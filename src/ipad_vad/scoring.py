@@ -39,9 +39,10 @@ class Baseline:
         self.cfg=config;self.process=process;self.k=len(process['phases'])
         self.spaces={};self.calibration={};self.fallback_counts={}
 
-    def appearance_phases(self,data):
+    def appearance_phases(self,data,stage='inference'):
         """Keep process states intact; -1 requests pooled appearance only."""
-        mode=self.cfg.get('appearance_conditioning','phase')
+        if stage not in ['fit','inference']:raise ValueError('Unknown appearance conditioning stage')
+        mode=self.cfg.get(f'appearance_{stage}_conditioning',self.cfg.get('appearance_conditioning','phase'))
         if mode=='phase':return data['phases']
         if mode!='observed_relation':raise ValueError(f'Unknown appearance conditioning: {mode}')
         valid=np.asarray(data['relation_valid'])
@@ -80,7 +81,7 @@ class Baseline:
         buckets={};counts=np.ones((self.k,self.k))*self.cfg['transition_laplace_alpha']
         for data in caches:
             phases=data['phases']
-            appearance_phases=self.appearance_phases(data)
+            appearance_phases=self.appearance_phases(data,stage='fit')
             np.add.at(counts,(phases[:-1],phases[1:]),1)
             for role,frames,x in observations(data):
                 buckets.setdefault((role,-1),[]).append(x)

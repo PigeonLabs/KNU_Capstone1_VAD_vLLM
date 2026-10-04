@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-10-04T19:58:35.467038+00:00",
+  "stage": "After all four normal holdout/full-calibration checks; before both new test configurations",
+  "file_sha256": {
+    "results/experiment21/pre_normal_protocol.json": "604b04040b93162f22b0bd12a80445e464696b70b8053050a251a98ff9035986",
+    "results/experiment21/normal_holdout.json": "0f3442553090fdd0376afbb8a73f7cc3fdf28b5b0774e069620c01f327d69466",
+    "results/experiment21/normal_audit.json": "d0d4b45907c8adc40b7263435b2befdfaa808ae7f1eecfd01f8539f68d7f1569",
+    "scripts/validate_factorial_appearance.py": "344f826d0196e5c26b18581c21b5bf8d2ef92edca02a83d04d936a635ebe8997",
+    "artifacts/experiment21/full_normal/18_references.npz": "1744bc69b0c40abacb5a9628348eebd7d9cc049cfc2d5f25f8a3dc9fdc8ba8b1",
+    "artifacts/experiment21/full_normal/18_scores.npz": "c4d56c9d7f3147804f769cfed0b75739adaff8527a81e835b8d5968bbde4f824",
+    "artifacts/experiment21/full_normal/19_references.npz": "8f1203223fbf1cf54b08fdf2e6a0c0dad1cd8933719f6e9bd1ff973c2ad72e25",
+    "artifacts/experiment21/full_normal/19_scores.npz": "ffc88594db1735a886014320cdd397fd0fa135624f4cc260f9348b7a2c36fc0a",
+    "artifacts/experiment21/full_normal/21_fit_references.npz": "4c72c102dc3b54b9730dc0be02da9c1df6b522ea501fffaa3d9c9c11fee8d9dd",
+    "artifacts/experiment21/full_normal/21_fit_scores.npz": "fd4f2caa00ceb4e90cbadf82cdba815930eacb6c1877f9bf9e71ba58f41152e3",
+    "artifacts/experiment21/full_normal/21_infer_references.npz": "12f2f505745aa2dd176d1139be2938bf289f911e844eea853d6e7946c1825239",
+    "artifacts/experiment21/full_normal/21_infer_scores.npz": "56351e64eb621bf2c64548841beac06b3bc8407b736c20e07b3610cf3caaf129"
+  },
+  "decision": "All four q99 values finite and below 1; retain both prespecified new cells despite different normal holdout alarm counts. No tuning or cell selection."
+}

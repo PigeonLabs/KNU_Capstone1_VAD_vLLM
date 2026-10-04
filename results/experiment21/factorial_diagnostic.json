@@ -1,0 +1,736 @@
+{
+  "cells": {
+    "18": {
+      "A": 0,
+      "B": 0,
+      "alarms": {
+        "normal": 379,
+        "anomaly": 670
+      },
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6805989862028592,
+          "average_precision": 0.6687883292408777
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6654821889143976,
+          "average_precision": 0.6572126646792338
+        }
+      },
+      "q99": 0.997457627118644
+    },
+    "21_fit": {
+      "A": 1,
+      "B": 0,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 629
+      },
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7001288809040025,
+          "average_precision": 0.6970101030308128
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6764982107306318,
+          "average_precision": 0.6752829362293051
+        }
+      },
+      "q99": 0.997457627118644
+    },
+    "21_infer": {
+      "A": 0,
+      "B": 1,
+      "alarms": {
+        "normal": 339,
+        "anomaly": 630
+      },
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6852247166440413,
+          "average_precision": 0.6759119829719539
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6714598280561738,
+          "average_precision": 0.6647084455507833
+        }
+      },
+      "q99": 0.997457627118644
+    },
+    "19": {
+      "A": 1,
+      "B": 1,
+      "alarms": {
+        "normal": 288,
+        "anomaly": 601
+      },
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6970707158445753,
+          "average_precision": 0.6939383127481112
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6791623236019363,
+          "average_precision": 0.676748295047322
+        }
+      },
+      "q99": 0.997457627118644
+    }
+  },
+  "strata_relation_observed": {
+    "18": {
+      "False": {
+        "frames": 2555,
+        "normal_frames": 1334,
+        "anomaly_frames": 1221,
+        "alarms": {
+          "normal": 120,
+          "anomaly": 258
+        },
+        "metrics": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7730238075065662,
+            "average_precision": 0.6755375118810719
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7730238075065662,
+            "average_precision": 0.675537511881072
+          }
+        }
+      },
+      "True": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 259,
+          "anomaly": 412
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6330532921874672,
+            "average_precision": 0.6690379199476088
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6082768853185204,
+            "average_precision": 0.6524702263034661
+          }
+        }
+      }
+    },
+    "21_fit": {
+      "False": {
+        "frames": 2555,
+        "normal_frames": 1334,
+        "anomaly_frames": 1221,
+        "alarms": {
+          "normal": 84,
+          "anomaly": 283
+        },
+        "metrics": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.8077988033010521,
+            "average_precision": 0.7300462354170386
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.8077988033010521,
+            "average_precision": 0.7300462354170384
+          }
+        }
+      },
+      "True": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6494295940393235,
+            "average_precision": 0.689161822584552
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6086325005042256,
+            "average_precision": 0.657012702026491
+          }
+        }
+      }
+    },
+    "21_infer": {
+      "False": {
+        "frames": 2555,
+        "normal_frames": 1334,
+        "anomaly_frames": 1221,
+        "alarms": {
+          "normal": 56,
+          "anomaly": 178
+        },
+        "metrics": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7834829513989934,
+            "average_precision": 0.7041567487935136
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7834829513989934,
+            "average_precision": 0.7041567487935138
+          }
+        }
+      },
+      "True": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 283,
+          "anomaly": 452
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6322463984744886,
+            "average_precision": 0.6686327917030652
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6100927615535406,
+            "average_precision": 0.6536921200059753
+          }
+        }
+      }
+    },
+    "19": {
+      "False": {
+        "frames": 2555,
+        "normal_frames": 1334,
+        "anomaly_frames": 1221,
+        "alarms": {
+          "normal": 48,
+          "anomaly": 134
+        },
+        "metrics": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7801860740391475,
+            "average_precision": 0.6990423777468455
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7801860740391475,
+            "average_precision": 0.6990423777468455
+          }
+        }
+      },
+      "True": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 240,
+          "anomaly": 467
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6526156483436822,
+            "average_precision": 0.6939108320880583
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6247909025225094,
+            "average_precision": 0.6715597256506958
+          }
+        }
+      }
+    }
+  },
+  "factor_contrasts": {
+    "A_when_B0": {
+      "before": "18",
+      "after": "21_fit",
+      "added": {
+        "normal": 20,
+        "anomaly": 109
+      },
+      "removed": {
+        "normal": 90,
+        "anomaly": 150
+      },
+      "delta_combined_auroc": 0.011016021816234178,
+      "relation_strata": {
+        "False": {
+          "added": {
+            "normal": 8,
+            "anomaly": 73
+          },
+          "removed": {
+            "normal": 44,
+            "anomaly": 48
+          }
+        },
+        "True": {
+          "added": {
+            "normal": 12,
+            "anomaly": 36
+          },
+          "removed": {
+            "normal": 46,
+            "anomaly": 102
+          }
+        }
+      }
+    },
+    "A_when_B1": {
+      "before": "21_infer",
+      "after": "19",
+      "added": {
+        "normal": 19,
+        "anomaly": 73
+      },
+      "removed": {
+        "normal": 70,
+        "anomaly": 102
+      },
+      "delta_combined_auroc": 0.007702495545762522,
+      "relation_strata": {
+        "False": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 8,
+            "anomaly": 44
+          }
+        },
+        "True": {
+          "added": {
+            "normal": 19,
+            "anomaly": 73
+          },
+          "removed": {
+            "normal": 62,
+            "anomaly": 58
+          }
+        }
+      }
+    },
+    "B_when_A0": {
+      "before": "18",
+      "after": "21_infer",
+      "added": {
+        "normal": 24,
+        "anomaly": 48
+      },
+      "removed": {
+        "normal": 64,
+        "anomaly": 88
+      },
+      "delta_combined_auroc": 0.005977639141776181,
+      "relation_strata": {
+        "False": {
+          "added": {
+            "normal": 0,
+            "anomaly": 8
+          },
+          "removed": {
+            "normal": 64,
+            "anomaly": 88
+          }
+        },
+        "True": {
+          "added": {
+            "normal": 24,
+            "anomaly": 40
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        }
+      }
+    },
+    "B_when_A1": {
+      "before": "21_fit",
+      "after": "19",
+      "added": {
+        "normal": 15,
+        "anomaly": 121
+      },
+      "removed": {
+        "normal": 36,
+        "anomaly": 149
+      },
+      "delta_combined_auroc": 0.002664112871304525,
+      "relation_strata": {
+        "False": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 36,
+            "anomaly": 149
+          }
+        },
+        "True": {
+          "added": {
+            "normal": 15,
+            "anomaly": 121
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        }
+      }
+    }
+  },
+  "bank_usage_observations": {
+    "18": {
+      "test": {
+        "-1:phase_unobserved": 641,
+        "-1:phase_observed": 1406,
+        "0:phase_observed": 1832,
+        "0:phase_unobserved": 601,
+        "1:phase_unobserved": 658,
+        "1:phase_observed": 1641,
+        "2:phase_unobserved": 644,
+        "2:phase_observed": 1409
+      },
+      "fit": {
+        "-1:phase_observed": 1123,
+        "-1:phase_unobserved": 837,
+        "0:phase_observed": 1455,
+        "0:phase_unobserved": 1007,
+        "1:phase_observed": 1319,
+        "1:phase_unobserved": 843,
+        "2:phase_observed": 1123,
+        "2:phase_unobserved": 837
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 185,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 189,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 185
+      }
+    },
+    "21_fit": {
+      "test": {
+        "-1:support_pool_unobserved": 170,
+        "-1:phase_observed": 1395,
+        "-1:phase_unobserved": 471,
+        "0:phase_observed": 1815,
+        "0:phase_unobserved": 589,
+        "1:support_pool_unobserved": 179,
+        "1:phase_observed": 1628,
+        "1:phase_unobserved": 479,
+        "2:support_pool_unobserved": 170,
+        "2:phase_observed": 1398,
+        "2:phase_unobserved": 474,
+        "-1:support_pool_observed": 11,
+        "0:support_pool_observed": 17,
+        "0:support_pool_unobserved": 12,
+        "1:support_pool_observed": 13,
+        "2:support_pool_observed": 11
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:phase_unobserved": 714,
+        "0:phase_observed": 1452,
+        "0:phase_unobserved": 997,
+        "1:phase_observed": 1316,
+        "1:phase_unobserved": 718,
+        "2:phase_observed": 1120,
+        "2:phase_unobserved": 714,
+        "-1:support_pool_observed": 3,
+        "0:support_pool_observed": 3,
+        "1:support_pool_observed": 3,
+        "2:support_pool_observed": 3,
+        "-1:support_pool_unobserved": 123,
+        "0:support_pool_unobserved": 10,
+        "1:support_pool_unobserved": 125,
+        "2:support_pool_unobserved": 123
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      }
+    },
+    "21_infer": {
+      "test": {
+        "-1:explicit_missing_pool": 641,
+        "-1:phase_observed": 1406,
+        "0:phase_observed": 1832,
+        "0:explicit_missing_pool": 601,
+        "1:explicit_missing_pool": 658,
+        "1:phase_observed": 1641,
+        "2:explicit_missing_pool": 644,
+        "2:phase_observed": 1409
+      },
+      "fit": {
+        "-1:phase_observed": 1123,
+        "-1:explicit_missing_pool": 837,
+        "0:phase_observed": 1455,
+        "0:explicit_missing_pool": 1007,
+        "1:phase_observed": 1319,
+        "1:explicit_missing_pool": 843,
+        "2:phase_observed": 1123,
+        "2:explicit_missing_pool": 837
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      }
+    },
+    "19": {
+      "test": {
+        "-1:explicit_missing_pool": 641,
+        "-1:phase_observed": 1395,
+        "0:phase_observed": 1815,
+        "0:explicit_missing_pool": 601,
+        "1:explicit_missing_pool": 658,
+        "1:phase_observed": 1628,
+        "2:explicit_missing_pool": 644,
+        "2:phase_observed": 1398,
+        "-1:support_pool_observed": 11,
+        "0:support_pool_observed": 17,
+        "1:support_pool_observed": 13,
+        "2:support_pool_observed": 11
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:explicit_missing_pool": 837,
+        "0:phase_observed": 1452,
+        "0:explicit_missing_pool": 1007,
+        "1:phase_observed": 1316,
+        "1:explicit_missing_pool": 843,
+        "2:phase_observed": 1120,
+        "2:explicit_missing_pool": 837,
+        "-1:support_pool_observed": 3,
+        "0:support_pool_observed": 3,
+        "1:support_pool_observed": 3,
+        "2:support_pool_observed": 3
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      }
+    }
+  },
+  "branch_exceedances": {
+    "18": {
+      "visual": {
+        "normal": 359,
+        "anomaly": 666
+      },
+      "transition": {
+        "normal": 32,
+        "anomaly": 12
+      },
+      "dwell": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_only_over_visual": {
+        "normal": 20,
+        "anomaly": 4
+      }
+    },
+    "21_fit": {
+      "visual": {
+        "normal": 277,
+        "anomaly": 617
+      },
+      "transition": {
+        "normal": 32,
+        "anomaly": 12
+      },
+      "dwell": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_only_over_visual": {
+        "normal": 32,
+        "anomaly": 12
+      }
+    },
+    "21_infer": {
+      "visual": {
+        "normal": 319,
+        "anomaly": 626
+      },
+      "transition": {
+        "normal": 32,
+        "anomaly": 12
+      },
+      "dwell": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_only_over_visual": {
+        "normal": 20,
+        "anomaly": 4
+      }
+    },
+    "19": {
+      "visual": {
+        "normal": 256,
+        "anomaly": 593
+      },
+      "transition": {
+        "normal": 32,
+        "anomaly": 12
+      },
+      "dwell": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_only_over_visual": {
+        "normal": 32,
+        "anomaly": 8
+      }
+    }
+  },
+  "note": "All four cells disclosed; each refits role CDF and normal q99. Descriptive repeated R04 development comparison, not independent factorial significance testing."
+}
