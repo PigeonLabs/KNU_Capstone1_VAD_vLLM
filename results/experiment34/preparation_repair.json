@@ -1,0 +1,8 @@
+{
+  "failure": "New subclass constructor was given already normalized text embeddings, normalizing them a second time; exact margin comparison failed before normal fitting/calibration/test.",
+  "max_observed_absolute_difference": 8.326672684688674e-17,
+  "repair": "Use same original text embedding file and one constructor normalization as control. No tolerance relaxation.",
+  "initial_protocol": "pre_normal_protocol_initial.json",
+  "modified_source_sha256": "7ed94b8121f335252c1b558521288ef92f72cf3a4bf09d75a5783737fb79b588",
+  "test_data_opened": false
+}

@@ -29,6 +29,11 @@ class RelationalPhase:
             self.area_upper[role]=upper
             self.gate_evidence[str(role)]={'normal_boxes':len(areas),'area_upper':upper,'excluded_fraction':float(np.mean(areas>upper+1e-8))}
 
+    def select_candidate(self,data,ids,prior,role):
+        """Choose among already eligible candidates; ties retain cache order."""
+        same=ids[data['tracks'][ids]==prior];pool=same if len(same) else ids
+        return int(pool[np.argmax(data['confidence'][pool])]) if len(pool) else -1
+
     def descriptors(self,data):
         n=len(data['indices']);features=np.zeros((n,6));valid=np.zeros(n,bool);chosen=np.full((n,2),-1,int)
         prior=[None,None];history=deque(maxlen=self.smoothing);previous_pair=None
@@ -37,9 +42,9 @@ class RelationalPhase:
                 ids=np.flatnonzero((data['object_frames']==step)&(data['roles']==role))
                 b=data['boxes'][ids];area=np.maximum(b[:,2:]-b[:,:2],0).prod(1)
                 ids=ids[(area>0)&(area<=self.area_upper[role]+1e-8)]
-                same=ids[data['tracks'][ids]==prior[j]];pool=same if len(same) else ids
-                if len(pool):
-                    chosen[step,j]=pool[np.argmax(data['confidence'][pool])]
+                index=self.select_candidate(data,ids,prior[j],role)
+                if index>=0:
+                    chosen[step,j]=index
                     prior[j]=data['tracks'][chosen[step,j]]
             if np.any(chosen[step]<0):
                 history.clear();previous_pair=None;continue

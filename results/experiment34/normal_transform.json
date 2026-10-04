@@ -1,0 +1,1489 @@
+{
+  "normal_only": true,
+  "rows": [
+    {
+      "sequence": "01",
+      "partition": "fit",
+      "samples": 78,
+      "frames": 309,
+      "anchor_selection_changed_samples": 8,
+      "phase_changed_samples": 8,
+      "phase_changed_frames": 32,
+      "descriptor_changed_samples": 9,
+      "groups": {
+        "control": {
+          "valid_samples": 44,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 1
+          },
+          "phase_counts": [
+            0,
+            23,
+            32,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            20,
+            4,
+            20
+          ],
+          "episode_status": {
+            "unknown_entry": 12
+          },
+          "selected_anchor_margin_mean": 0.01642343868945548
+        },
+        "semantic": {
+          "valid_samples": 44,
+          "pair_changes": {
+            "anchor": 4,
+            "target": 2,
+            "both": 1
+          },
+          "phase_counts": [
+            0,
+            21,
+            40,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            12,
+            14
+          ],
+          "episode_status": {
+            "unknown_entry": 15
+          },
+          "selected_anchor_margin_mean": 0.02596013717304956
+        }
+      }
+    },
+    {
+      "sequence": "03",
+      "partition": "fit",
+      "samples": 116,
+      "frames": 461,
+      "anchor_selection_changed_samples": 4,
+      "phase_changed_samples": 5,
+      "phase_changed_frames": 20,
+      "descriptor_changed_samples": 4,
+      "groups": {
+        "control": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 9,
+            "target": 2
+          },
+          "phase_counts": [
+            1,
+            27,
+            68,
+            20
+          ],
+          "observed_phase_counts": [
+            1,
+            12,
+            39,
+            15
+          ],
+          "episode_status": {
+            "unknown_entry": 26
+          },
+          "selected_anchor_margin_mean": 0.040848406633938114
+        },
+        "semantic": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 10,
+            "target": 2
+          },
+          "phase_counts": [
+            1,
+            22,
+            73,
+            20
+          ],
+          "observed_phase_counts": [
+            1,
+            8,
+            43,
+            15
+          ],
+          "episode_status": {
+            "unknown_entry": 27
+          },
+          "selected_anchor_margin_mean": 0.04376917890782413
+        }
+      }
+    },
+    {
+      "sequence": "04",
+      "partition": "fit",
+      "samples": 102,
+      "frames": 408,
+      "anchor_selection_changed_samples": 1,
+      "phase_changed_samples": 1,
+      "phase_changed_frames": 4,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "valid_samples": 50,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 2
+          },
+          "phase_counts": [
+            7,
+            72,
+            14,
+            9
+          ],
+          "observed_phase_counts": [
+            0,
+            30,
+            13,
+            7
+          ],
+          "episode_status": {
+            "unknown_entry": 15,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.026818123165377017
+        },
+        "semantic": {
+          "valid_samples": 50,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 2
+          },
+          "phase_counts": [
+            7,
+            71,
+            15,
+            9
+          ],
+          "observed_phase_counts": [
+            0,
+            29,
+            14,
+            7
+          ],
+          "episode_status": {
+            "unknown_entry": 16,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.027774142455859897
+        }
+      }
+    },
+    {
+      "sequence": "05",
+      "partition": "fit",
+      "samples": 110,
+      "frames": 437,
+      "anchor_selection_changed_samples": 27,
+      "phase_changed_samples": 27,
+      "phase_changed_frames": 105,
+      "descriptor_changed_samples": 41,
+      "groups": {
+        "control": {
+          "valid_samples": 78,
+          "pair_changes": {
+            "target": 4
+          },
+          "phase_counts": [
+            3,
+            54,
+            9,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            46,
+            2,
+            30
+          ],
+          "episode_status": {
+            "unknown_entry": 13,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.01442286776895613
+        },
+        "semantic": {
+          "valid_samples": 78,
+          "pair_changes": {
+            "target": 2,
+            "both": 2,
+            "anchor": 16
+          },
+          "phase_counts": [
+            4,
+            45,
+            35,
+            26
+          ],
+          "observed_phase_counts": [
+            1,
+            37,
+            28,
+            12
+          ],
+          "episode_status": {
+            "unknown_entry": 29,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.03261482360370191
+        }
+      }
+    },
+    {
+      "sequence": "06",
+      "partition": "fit",
+      "samples": 112,
+      "frames": 448,
+      "anchor_selection_changed_samples": 2,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 6,
+      "groups": {
+        "control": {
+          "valid_samples": 52,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            7,
+            27,
+            21,
+            57
+          ],
+          "observed_phase_counts": [
+            0,
+            23,
+            3,
+            26
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.011436762441245718
+        },
+        "semantic": {
+          "valid_samples": 52,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 1
+          },
+          "phase_counts": [
+            7,
+            26,
+            23,
+            56
+          ],
+          "observed_phase_counts": [
+            0,
+            22,
+            5,
+            25
+          ],
+          "episode_status": {
+            "unknown_entry": 11,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.013313937765797638
+        }
+      }
+    },
+    {
+      "sequence": "07",
+      "partition": "fit",
+      "samples": 97,
+      "frames": 385,
+      "anchor_selection_changed_samples": 3,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 5,
+      "groups": {
+        "control": {
+          "valid_samples": 72,
+          "pair_changes": {
+            "target": 4,
+            "anchor": 1
+          },
+          "phase_counts": [
+            8,
+            42,
+            3,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            2,
+            34
+          ],
+          "episode_status": {
+            "unknown_entry": 12,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.0124331112673618
+        },
+        "semantic": {
+          "valid_samples": 72,
+          "pair_changes": {
+            "both": 2,
+            "target": 2,
+            "anchor": 3
+          },
+          "phase_counts": [
+            8,
+            40,
+            6,
+            43
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            5,
+            33
+          ],
+          "episode_status": {
+            "unknown_entry": 14,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.014673229167325507
+        }
+      }
+    },
+    {
+      "sequence": "09",
+      "partition": "fit",
+      "samples": 105,
+      "frames": 417,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 35,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            4,
+            57,
+            44,
+            0
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            8,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selected_anchor_margin_mean": 0.017391816795564327
+        },
+        "semantic": {
+          "valid_samples": 35,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            4,
+            57,
+            44,
+            0
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            8,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selected_anchor_margin_mean": 0.017391816795564327
+        }
+      }
+    },
+    {
+      "sequence": "11",
+      "partition": "fit",
+      "samples": 85,
+      "frames": 340,
+      "anchor_selection_changed_samples": 3,
+      "phase_changed_samples": 4,
+      "phase_changed_frames": 16,
+      "descriptor_changed_samples": 4,
+      "groups": {
+        "control": {
+          "valid_samples": 24,
+          "pair_changes": {},
+          "phase_counts": [
+            6,
+            44,
+            30,
+            5
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            4,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 7
+          },
+          "selected_anchor_margin_mean": 0.019659818229928766
+        },
+        "semantic": {
+          "valid_samples": 24,
+          "pair_changes": {
+            "anchor": 3
+          },
+          "phase_counts": [
+            6,
+            40,
+            34,
+            5
+          ],
+          "observed_phase_counts": [
+            0,
+            16,
+            6,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 10
+          },
+          "selected_anchor_margin_mean": 0.024782666451107823
+        }
+      }
+    },
+    {
+      "sequence": "13",
+      "partition": "fit",
+      "samples": 96,
+      "frames": 382,
+      "anchor_selection_changed_samples": 2,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "valid_samples": 66,
+          "pair_changes": {
+            "anchor": 3
+          },
+          "phase_counts": [
+            7,
+            58,
+            7,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            41,
+            3,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 14,
+            "complete": 2,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.014144943888583617
+        },
+        "semantic": {
+          "valid_samples": 66,
+          "pair_changes": {
+            "anchor": 5
+          },
+          "phase_counts": [
+            7,
+            58,
+            8,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            41,
+            4,
+            21
+          ],
+          "episode_status": {
+            "unknown_entry": 16,
+            "complete": 1,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.015654565791813832
+        }
+      }
+    },
+    {
+      "sequence": "14",
+      "partition": "fit",
+      "samples": 81,
+      "frames": 323,
+      "anchor_selection_changed_samples": 2,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 4,
+      "groups": {
+        "control": {
+          "valid_samples": 68,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 2
+          },
+          "phase_counts": [
+            5,
+            51,
+            1,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            44,
+            1,
+            23
+          ],
+          "episode_status": {
+            "unknown_entry": 12,
+            "right_censored": 2,
+            "complete": 4
+          },
+          "selected_anchor_margin_mean": 0.010019611665972282
+        },
+        "semantic": {
+          "valid_samples": 68,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 5
+          },
+          "phase_counts": [
+            5,
+            49,
+            4,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            43,
+            3,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 15,
+            "right_censored": 2,
+            "complete": 4
+          },
+          "selected_anchor_margin_mean": 0.011956884101444104
+        }
+      }
+    },
+    {
+      "sequence": "16",
+      "partition": "fit",
+      "samples": 94,
+      "frames": 373,
+      "anchor_selection_changed_samples": 6,
+      "phase_changed_samples": 7,
+      "phase_changed_frames": 28,
+      "descriptor_changed_samples": 13,
+      "groups": {
+        "control": {
+          "valid_samples": 63,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 1
+          },
+          "phase_counts": [
+            0,
+            62,
+            2,
+            30
+          ],
+          "observed_phase_counts": [
+            0,
+            39,
+            1,
+            23
+          ],
+          "episode_status": {
+            "unknown_entry": 12,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.007236948456306139
+        },
+        "semantic": {
+          "valid_samples": 63,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 11
+          },
+          "phase_counts": [
+            0,
+            59,
+            8,
+            27
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            7,
+            20
+          ],
+          "episode_status": {
+            "unknown_entry": 22,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.013142870968527088
+        }
+      }
+    },
+    {
+      "sequence": "17",
+      "partition": "fit",
+      "samples": 93,
+      "frames": 372,
+      "anchor_selection_changed_samples": 11,
+      "phase_changed_samples": 12,
+      "phase_changed_frames": 48,
+      "descriptor_changed_samples": 13,
+      "groups": {
+        "control": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 1
+          },
+          "phase_counts": [
+            5,
+            46,
+            19,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            39,
+            6,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 10,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.015865797615022593
+        },
+        "semantic": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 5,
+            "target": 1
+          },
+          "phase_counts": [
+            5,
+            40,
+            31,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            17,
+            16
+          ],
+          "episode_status": {
+            "unknown_entry": 13,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.025735472256468786
+        }
+      }
+    },
+    {
+      "sequence": "18",
+      "partition": "fit",
+      "samples": 103,
+      "frames": 412,
+      "anchor_selection_changed_samples": 2,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 5,
+      "groups": {
+        "control": {
+          "valid_samples": 69,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            11,
+            69,
+            4,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            66,
+            1,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 7,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.015249403507476266
+        },
+        "semantic": {
+          "valid_samples": 69,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 3
+          },
+          "phase_counts": [
+            11,
+            67,
+            6,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            64,
+            3,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 10,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.016360752783035535
+        }
+      }
+    },
+    {
+      "sequence": "19",
+      "partition": "fit",
+      "samples": 99,
+      "frames": 396,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 36,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            7,
+            91,
+            0,
+            1
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            0,
+            1
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selected_anchor_margin_mean": 0.012369564628775113
+        },
+        "semantic": {
+          "valid_samples": 36,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            7,
+            91,
+            0,
+            1
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            0,
+            1
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selected_anchor_margin_mean": 0.012369564628775113
+        }
+      }
+    },
+    {
+      "sequence": "20",
+      "partition": "fit",
+      "samples": 101,
+      "frames": 404,
+      "anchor_selection_changed_samples": 1,
+      "phase_changed_samples": 1,
+      "phase_changed_frames": 4,
+      "descriptor_changed_samples": 2,
+      "groups": {
+        "control": {
+          "valid_samples": 32,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 1
+          },
+          "phase_counts": [
+            15,
+            68,
+            15,
+            3
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            2,
+            3
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.008622640180926362
+        },
+        "semantic": {
+          "valid_samples": 32,
+          "pair_changes": {
+            "anchor": 4,
+            "target": 1
+          },
+          "phase_counts": [
+            15,
+            67,
+            16,
+            3
+          ],
+          "observed_phase_counts": [
+            0,
+            26,
+            3,
+            3
+          ],
+          "episode_status": {
+            "unknown_entry": 10,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.008826194240905947
+        }
+      }
+    },
+    {
+      "sequence": "21",
+      "partition": "fit",
+      "samples": 105,
+      "frames": 417,
+      "anchor_selection_changed_samples": 3,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 4,
+      "groups": {
+        "control": {
+          "valid_samples": 48,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            5,
+            59,
+            27,
+            14
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            1,
+            11
+          ],
+          "episode_status": {
+            "unknown_entry": 10
+          },
+          "selected_anchor_margin_mean": 0.007530039638205033
+        },
+        "semantic": {
+          "valid_samples": 48,
+          "pair_changes": {
+            "anchor": 2,
+            "both": 1,
+            "target": 1
+          },
+          "phase_counts": [
+            5,
+            56,
+            30,
+            14
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            3,
+            11
+          ],
+          "episode_status": {
+            "unknown_entry": 12
+          },
+          "selected_anchor_margin_mean": 0.010883010969878855
+        }
+      }
+    },
+    {
+      "sequence": "22",
+      "partition": "fit",
+      "samples": 95,
+      "frames": 380,
+      "anchor_selection_changed_samples": 1,
+      "phase_changed_samples": 1,
+      "phase_changed_frames": 4,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "valid_samples": 38,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            7,
+            56,
+            15,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            20,
+            2,
+            16
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.011785825905193505
+        },
+        "semantic": {
+          "valid_samples": 38,
+          "pair_changes": {
+            "anchor": 1,
+            "target": 1
+          },
+          "phase_counts": [
+            7,
+            56,
+            16,
+            16
+          ],
+          "observed_phase_counts": [
+            0,
+            20,
+            3,
+            15
+          ],
+          "episode_status": {
+            "unknown_entry": 9,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.013740787659784615
+        }
+      }
+    },
+    {
+      "sequence": "23",
+      "partition": "fit",
+      "samples": 95,
+      "frames": 377,
+      "anchor_selection_changed_samples": 2,
+      "phase_changed_samples": 1,
+      "phase_changed_frames": 4,
+      "descriptor_changed_samples": 2,
+      "groups": {
+        "control": {
+          "valid_samples": 54,
+          "pair_changes": {
+            "target": 4
+          },
+          "phase_counts": [
+            8,
+            75,
+            0,
+            12
+          ],
+          "observed_phase_counts": [
+            0,
+            45,
+            0,
+            9
+          ],
+          "episode_status": {
+            "unknown_entry": 13,
+            "right_censored": 3
+          },
+          "selected_anchor_margin_mean": 0.009362288784293966
+        },
+        "semantic": {
+          "valid_samples": 54,
+          "pair_changes": {
+            "target": 4,
+            "anchor": 2
+          },
+          "phase_counts": [
+            8,
+            75,
+            1,
+            11
+          ],
+          "observed_phase_counts": [
+            0,
+            45,
+            1,
+            8
+          ],
+          "episode_status": {
+            "unknown_entry": 15,
+            "right_censored": 2
+          },
+          "selected_anchor_margin_mean": 0.010444033918322758
+        }
+      }
+    },
+    {
+      "sequence": "24",
+      "partition": "fit",
+      "samples": 92,
+      "frames": 368,
+      "anchor_selection_changed_samples": 2,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "valid_samples": 79,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 1
+          },
+          "phase_counts": [
+            9,
+            65,
+            1,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            64,
+            1,
+            14
+          ],
+          "episode_status": {
+            "unknown_entry": 8
+          },
+          "selected_anchor_margin_mean": 0.008944751079271432
+        },
+        "semantic": {
+          "valid_samples": 79,
+          "pair_changes": {
+            "anchor": 4,
+            "both": 1,
+            "target": 2
+          },
+          "phase_counts": [
+            9,
+            63,
+            3,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            62,
+            3,
+            14
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selected_anchor_margin_mean": 0.009982685704388391
+        }
+      }
+    },
+    {
+      "sequence": "25",
+      "partition": "fit",
+      "samples": 101,
+      "frames": 403,
+      "anchor_selection_changed_samples": 4,
+      "phase_changed_samples": 4,
+      "phase_changed_frames": 16,
+      "descriptor_changed_samples": 10,
+      "groups": {
+        "control": {
+          "valid_samples": 81,
+          "pair_changes": {
+            "target": 5
+          },
+          "phase_counts": [
+            9,
+            48,
+            0,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            44,
+            0,
+            37
+          ],
+          "episode_status": {
+            "unknown_entry": 11,
+            "complete": 1,
+            "right_censored": 3
+          },
+          "selected_anchor_margin_mean": 0.00906060023201048
+        },
+        "semantic": {
+          "valid_samples": 81,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 6
+          },
+          "phase_counts": [
+            10,
+            46,
+            3,
+            42
+          ],
+          "observed_phase_counts": [
+            1,
+            42,
+            3,
+            35
+          ],
+          "episode_status": {
+            "unknown_entry": 17,
+            "complete": 1,
+            "right_censored": 3
+          },
+          "selected_anchor_margin_mean": 0.010634399021286925
+        }
+      }
+    },
+    {
+      "sequence": "02",
+      "partition": "calibration",
+      "samples": 103,
+      "frames": 409,
+      "anchor_selection_changed_samples": 6,
+      "phase_changed_samples": 7,
+      "phase_changed_frames": 28,
+      "descriptor_changed_samples": 10,
+      "groups": {
+        "control": {
+          "valid_samples": 56,
+          "pair_changes": {
+            "target": 2,
+            "anchor": 7
+          },
+          "phase_counts": [
+            0,
+            22,
+            58,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            17,
+            25,
+            14
+          ],
+          "episode_status": {
+            "unknown_entry": 25,
+            "complete": 3,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.030771178568510867
+        },
+        "semantic": {
+          "valid_samples": 56,
+          "pair_changes": {
+            "target": 2,
+            "anchor": 8
+          },
+          "phase_counts": [
+            0,
+            22,
+            64,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            17,
+            31,
+            8
+          ],
+          "episode_status": {
+            "unknown_entry": 26,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.035653741537467365
+        }
+      }
+    },
+    {
+      "sequence": "08",
+      "partition": "calibration",
+      "samples": 104,
+      "frames": 413,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 82,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 1
+          },
+          "phase_counts": [
+            8,
+            40,
+            1,
+            55
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            1,
+            46
+          ],
+          "episode_status": {
+            "unknown_entry": 11,
+            "right_censored": 2,
+            "complete": 1
+          },
+          "selected_anchor_margin_mean": 0.010599106679331621
+        },
+        "semantic": {
+          "valid_samples": 82,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 1
+          },
+          "phase_counts": [
+            8,
+            40,
+            1,
+            55
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            1,
+            46
+          ],
+          "episode_status": {
+            "unknown_entry": 11,
+            "right_censored": 2,
+            "complete": 1
+          },
+          "selected_anchor_margin_mean": 0.010599106679331621
+        }
+      }
+    },
+    {
+      "sequence": "10",
+      "partition": "calibration",
+      "samples": 94,
+      "frames": 376,
+      "anchor_selection_changed_samples": 9,
+      "phase_changed_samples": 29,
+      "phase_changed_frames": 116,
+      "descriptor_changed_samples": 15,
+      "groups": {
+        "control": {
+          "valid_samples": 55,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            10,
+            60,
+            3,
+            21
+          ],
+          "observed_phase_counts": [
+            0,
+            38,
+            1,
+            16
+          ],
+          "episode_status": {
+            "unknown_entry": 7,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.010371088873010552
+        },
+        "semantic": {
+          "valid_samples": 55,
+          "pair_changes": {
+            "anchor": 7,
+            "target": 1
+          },
+          "phase_counts": [
+            10,
+            32,
+            32,
+            20
+          ],
+          "observed_phase_counts": [
+            0,
+            31,
+            9,
+            15
+          ],
+          "episode_status": {
+            "unknown_entry": 14,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.017041961220985086
+        }
+      }
+    },
+    {
+      "sequence": "12",
+      "partition": "calibration",
+      "samples": 96,
+      "frames": 382,
+      "anchor_selection_changed_samples": 4,
+      "phase_changed_samples": 4,
+      "phase_changed_frames": 16,
+      "descriptor_changed_samples": 7,
+      "groups": {
+        "control": {
+          "valid_samples": 51,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            0,
+            44,
+            8,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            2,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 15,
+            "right_censored": 2,
+            "complete": 1
+          },
+          "selected_anchor_margin_mean": 0.009670045884743956
+        },
+        "semantic": {
+          "valid_samples": 51,
+          "pair_changes": {
+            "both": 1,
+            "anchor": 3
+          },
+          "phase_counts": [
+            0,
+            40,
+            12,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            23,
+            6,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 18,
+            "right_censored": 2,
+            "complete": 1
+          },
+          "selected_anchor_margin_mean": 0.012304589367598475
+        }
+      }
+    },
+    {
+      "sequence": "15",
+      "partition": "calibration",
+      "samples": 85,
+      "frames": 340,
+      "anchor_selection_changed_samples": 9,
+      "phase_changed_samples": 9,
+      "phase_changed_frames": 36,
+      "descriptor_changed_samples": 17,
+      "groups": {
+        "control": {
+          "valid_samples": 53,
+          "pair_changes": {
+            "target": 3
+          },
+          "phase_counts": [
+            2,
+            45,
+            19,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            1,
+            18
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.009259490802878446
+        },
+        "semantic": {
+          "valid_samples": 53,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 10
+          },
+          "phase_counts": [
+            2,
+            43,
+            28,
+            12
+          ],
+          "observed_phase_counts": [
+            0,
+            32,
+            10,
+            11
+          ],
+          "episode_status": {
+            "unknown_entry": 18,
+            "right_censored": 1
+          },
+          "selected_anchor_margin_mean": 0.020126120079805906
+        }
+      }
+    }
+  ],
+  "valid_and_target_selection_unchanged": true,
+  "independent_scalar_selection_descriptor_phase_checked": true
+}

@@ -1,0 +1,2287 @@
+{
+  "normal_only": true,
+  "case_selection_source": "results/experiment33/case_selection.json",
+  "selection_sha256": "aece744499da840336b00b07e7d83032c756da8b7399672b968c8e4b23cb2044",
+  "cases": [
+    {
+      "case": {
+        "case_id": "02_0192",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 48,
+        "source_frame": 192,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 17
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/188.jpg",
+          "sample": 47,
+          "source_frame": 188,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            161,
+            160
+          ],
+          "new_selected": [
+            161,
+            160
+          ],
+          "old_tracks": [
+            15,
+            9
+          ],
+          "new_tracks": [
+            15,
+            9
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/192.jpg",
+          "sample": 48,
+          "source_frame": 192,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            164
+          ],
+          "new_selected": [
+            -1,
+            164
+          ],
+          "old_tracks": [
+            null,
+            9
+          ],
+          "new_tracks": [
+            null,
+            9
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/196.jpg",
+          "sample": 49,
+          "source_frame": 196,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            168
+          ],
+          "new_selected": [
+            -1,
+            168
+          ],
+          "old_tracks": [
+            null,
+            9
+          ],
+          "new_tracks": [
+            null,
+            9
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "04_0352",
+        "sequence": "04",
+        "partition": "fit",
+        "sample": 88,
+        "source_frame": 352,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 14
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/348.jpg",
+          "sample": 87,
+          "source_frame": 348,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            278,
+            277
+          ],
+          "new_selected": [
+            278,
+            277
+          ],
+          "old_tracks": [
+            24,
+            23
+          ],
+          "new_tracks": [
+            24,
+            23
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/352.jpg",
+          "sample": 88,
+          "source_frame": 352,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            280
+          ],
+          "new_selected": [
+            -1,
+            280
+          ],
+          "old_tracks": [
+            null,
+            23
+          ],
+          "new_tracks": [
+            null,
+            23
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/356.jpg",
+          "sample": 89,
+          "source_frame": 356,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            283
+          ],
+          "new_selected": [
+            -1,
+            283
+          ],
+          "old_tracks": [
+            null,
+            23
+          ],
+          "new_tracks": [
+            null,
+            23
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "05_0320",
+        "sequence": "05",
+        "partition": "fit",
+        "sample": 80,
+        "source_frame": 320,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 11
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/316.jpg",
+          "sample": 79,
+          "source_frame": 316,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            283,
+            282
+          ],
+          "new_selected": [
+            283,
+            282
+          ],
+          "old_tracks": [
+            21,
+            25
+          ],
+          "new_tracks": [
+            21,
+            25
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/320.jpg",
+          "sample": 80,
+          "source_frame": 320,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            285
+          ],
+          "new_selected": [
+            -1,
+            285
+          ],
+          "old_tracks": [
+            null,
+            25
+          ],
+          "new_tracks": [
+            null,
+            25
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/324.jpg",
+          "sample": 81,
+          "source_frame": 324,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            289,
+            288
+          ],
+          "new_selected": [
+            289,
+            288
+          ],
+          "old_tracks": [
+            21,
+            25
+          ],
+          "new_tracks": [
+            21,
+            25
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "06_0256",
+        "sequence": "06",
+        "partition": "fit",
+        "sample": 64,
+        "source_frame": 256,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 6
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/252.jpg",
+          "sample": 63,
+          "source_frame": 252,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            205,
+            204
+          ],
+          "new_selected": [
+            205,
+            204
+          ],
+          "old_tracks": [
+            0,
+            10
+          ],
+          "new_tracks": [
+            0,
+            10
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/256.jpg",
+          "sample": 64,
+          "source_frame": 256,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            207
+          ],
+          "new_selected": [
+            -1,
+            207
+          ],
+          "old_tracks": [
+            null,
+            10
+          ],
+          "new_tracks": [
+            null,
+            10
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/260.jpg",
+          "sample": 65,
+          "source_frame": 260,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            210
+          ],
+          "new_selected": [
+            -1,
+            210
+          ],
+          "old_tracks": [
+            null,
+            10
+          ],
+          "new_tracks": [
+            null,
+            10
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "08_0152",
+        "sequence": "08",
+        "partition": "calibration",
+        "sample": 38,
+        "source_frame": 152,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 3
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/148.jpg",
+          "sample": 37,
+          "source_frame": 148,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            110,
+            109
+          ],
+          "new_selected": [
+            110,
+            109
+          ],
+          "old_tracks": [
+            0,
+            3
+          ],
+          "new_tracks": [
+            0,
+            3
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/152.jpg",
+          "sample": 38,
+          "source_frame": 152,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            112
+          ],
+          "new_selected": [
+            -1,
+            112
+          ],
+          "old_tracks": [
+            null,
+            3
+          ],
+          "new_tracks": [
+            null,
+            3
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/156.jpg",
+          "sample": 39,
+          "source_frame": 156,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            116
+          ],
+          "new_selected": [
+            -1,
+            116
+          ],
+          "old_tracks": [
+            null,
+            3
+          ],
+          "new_tracks": [
+            null,
+            3
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "12_0144",
+        "sequence": "12",
+        "partition": "calibration",
+        "sample": 36,
+        "source_frame": 144,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 8
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/140.jpg",
+          "sample": 35,
+          "source_frame": 140,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            118,
+            117
+          ],
+          "new_selected": [
+            118,
+            117
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            1,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/144.jpg",
+          "sample": 36,
+          "source_frame": 144,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": false,
+          "old_selected": [
+            -1,
+            120
+          ],
+          "new_selected": [
+            -1,
+            120
+          ],
+          "old_tracks": [
+            null,
+            4
+          ],
+          "new_tracks": [
+            null,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/148.jpg",
+          "sample": 37,
+          "source_frame": 148,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": false,
+          "old_selected": [
+            -1,
+            123
+          ],
+          "new_selected": [
+            -1,
+            123
+          ],
+          "old_tracks": [
+            null,
+            4
+          ],
+          "new_tracks": [
+            null,
+            4
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "01_0100",
+        "sequence": "01",
+        "partition": "fit",
+        "sample": 25,
+        "source_frame": 100,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 4
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/096.jpg",
+          "sample": 24,
+          "source_frame": 96,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": false,
+          "old_selected": [
+            -1,
+            84
+          ],
+          "new_selected": [
+            -1,
+            84
+          ],
+          "old_tracks": [
+            null,
+            6
+          ],
+          "new_tracks": [
+            null,
+            6
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/100.jpg",
+          "sample": 25,
+          "source_frame": 100,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            89,
+            87
+          ],
+          "new_selected": [
+            89,
+            87
+          ],
+          "old_tracks": [
+            1,
+            6
+          ],
+          "new_tracks": [
+            1,
+            6
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/104.jpg",
+          "sample": 26,
+          "source_frame": 104,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            93,
+            91
+          ],
+          "new_selected": [
+            93,
+            91
+          ],
+          "old_tracks": [
+            1,
+            6
+          ],
+          "new_tracks": [
+            1,
+            6
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "02_0012",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 3,
+        "source_frame": 12,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 1
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/008.jpg",
+          "sample": 2,
+          "source_frame": 8,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            5,
+            -1
+          ],
+          "new_selected": [
+            5,
+            -1
+          ],
+          "old_tracks": [
+            1,
+            null
+          ],
+          "new_tracks": [
+            1,
+            null
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/012.jpg",
+          "sample": 3,
+          "source_frame": 12,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            8,
+            7
+          ],
+          "new_selected": [
+            8,
+            7
+          ],
+          "old_tracks": [
+            1,
+            3
+          ],
+          "new_tracks": [
+            1,
+            3
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/016.jpg",
+          "sample": 4,
+          "source_frame": 16,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": false,
+          "old_selected": [
+            -1,
+            -1
+          ],
+          "new_selected": [
+            -1,
+            -1
+          ],
+          "old_tracks": [
+            null,
+            null
+          ],
+          "new_tracks": [
+            null,
+            null
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "03_0092",
+        "sequence": "03",
+        "partition": "fit",
+        "sample": 23,
+        "source_frame": 92,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 8
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/088.jpg",
+          "sample": 22,
+          "source_frame": 88,
+          "old_phase": 1,
+          "new_phase": 2,
+          "valid": false,
+          "old_selected": [
+            -1,
+            74
+          ],
+          "new_selected": [
+            -1,
+            74
+          ],
+          "old_tracks": [
+            null,
+            5
+          ],
+          "new_tracks": [
+            null,
+            5
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/092.jpg",
+          "sample": 23,
+          "source_frame": 92,
+          "old_phase": 2,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            79,
+            77
+          ],
+          "new_selected": [
+            79,
+            77
+          ],
+          "old_tracks": [
+            4,
+            5
+          ],
+          "new_tracks": [
+            4,
+            5
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/096.jpg",
+          "sample": 24,
+          "source_frame": 96,
+          "old_phase": 2,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            83,
+            81
+          ],
+          "new_selected": [
+            83,
+            81
+          ],
+          "old_tracks": [
+            4,
+            5
+          ],
+          "new_tracks": [
+            4,
+            5
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "04_0028",
+        "sequence": "04",
+        "partition": "fit",
+        "sample": 7,
+        "source_frame": 28,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 0
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/024.jpg",
+          "sample": 6,
+          "source_frame": 24,
+          "old_phase": 0,
+          "new_phase": 0,
+          "valid": false,
+          "old_selected": [
+            14,
+            -1
+          ],
+          "new_selected": [
+            14,
+            -1
+          ],
+          "old_tracks": [
+            0,
+            null
+          ],
+          "new_tracks": [
+            0,
+            null
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/028.jpg",
+          "sample": 7,
+          "source_frame": 28,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            17,
+            16
+          ],
+          "new_selected": [
+            17,
+            16
+          ],
+          "old_tracks": [
+            0,
+            4
+          ],
+          "new_tracks": [
+            0,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/032.jpg",
+          "sample": 8,
+          "source_frame": 32,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            20,
+            19
+          ],
+          "new_selected": [
+            20,
+            19
+          ],
+          "old_tracks": [
+            0,
+            4
+          ],
+          "new_tracks": [
+            0,
+            4
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "05_0012",
+        "sequence": "05",
+        "partition": "fit",
+        "sample": 3,
+        "source_frame": 12,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 0
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/008.jpg",
+          "sample": 2,
+          "source_frame": 8,
+          "old_phase": 0,
+          "new_phase": 0,
+          "valid": false,
+          "old_selected": [
+            4,
+            -1
+          ],
+          "new_selected": [
+            4,
+            -1
+          ],
+          "old_tracks": [
+            0,
+            null
+          ],
+          "new_tracks": [
+            0,
+            null
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/012.jpg",
+          "sample": 3,
+          "source_frame": 12,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            7,
+            6
+          ],
+          "new_selected": [
+            7,
+            6
+          ],
+          "old_tracks": [
+            0,
+            2
+          ],
+          "new_tracks": [
+            0,
+            2
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/016.jpg",
+          "sample": 4,
+          "source_frame": 16,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            10,
+            9
+          ],
+          "new_selected": [
+            10,
+            9
+          ],
+          "old_tracks": [
+            0,
+            2
+          ],
+          "new_tracks": [
+            0,
+            2
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "06_0028",
+        "sequence": "06",
+        "partition": "fit",
+        "sample": 7,
+        "source_frame": 28,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 0
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/024.jpg",
+          "sample": 6,
+          "source_frame": 24,
+          "old_phase": 0,
+          "new_phase": 0,
+          "valid": false,
+          "old_selected": [
+            12,
+            -1
+          ],
+          "new_selected": [
+            12,
+            -1
+          ],
+          "old_tracks": [
+            0,
+            null
+          ],
+          "new_tracks": [
+            0,
+            null
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/028.jpg",
+          "sample": 7,
+          "source_frame": 28,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            15,
+            14
+          ],
+          "new_selected": [
+            15,
+            14
+          ],
+          "old_tracks": [
+            0,
+            2
+          ],
+          "new_tracks": [
+            0,
+            2
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/032.jpg",
+          "sample": 8,
+          "source_frame": 32,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            18,
+            17
+          ],
+          "new_selected": [
+            18,
+            17
+          ],
+          "old_tracks": [
+            0,
+            2
+          ],
+          "new_tracks": [
+            0,
+            2
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "01_0024",
+        "sequence": "01",
+        "partition": "fit",
+        "sample": 6,
+        "source_frame": 24,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 1
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/020.jpg",
+          "sample": 5,
+          "source_frame": 20,
+          "old_phase": 3,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            20,
+            18
+          ],
+          "new_selected": [
+            19,
+            18
+          ],
+          "old_tracks": [
+            1,
+            0
+          ],
+          "new_tracks": [
+            3,
+            0
+          ],
+          "anchor_changed": true
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/024.jpg",
+          "sample": 6,
+          "source_frame": 24,
+          "old_phase": 1,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            24,
+            22
+          ],
+          "new_selected": [
+            23,
+            22
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            3,
+            4
+          ],
+          "anchor_changed": true
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/028.jpg",
+          "sample": 7,
+          "source_frame": 28,
+          "old_phase": 1,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            27,
+            26
+          ],
+          "new_selected": [
+            28,
+            26
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            3,
+            4
+          ],
+          "anchor_changed": true
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "02_0040",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 10,
+        "source_frame": 40,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 4
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/036.jpg",
+          "sample": 9,
+          "source_frame": 36,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            25,
+            24
+          ],
+          "new_selected": [
+            25,
+            24
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            1,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/040.jpg",
+          "sample": 10,
+          "source_frame": 40,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            28,
+            27
+          ],
+          "new_selected": [
+            28,
+            27
+          ],
+          "old_tracks": [
+            1,
+            5
+          ],
+          "new_tracks": [
+            1,
+            5
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/044.jpg",
+          "sample": 11,
+          "source_frame": 44,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            32,
+            31
+          ],
+          "new_selected": [
+            32,
+            31
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            1,
+            4
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "03_0036",
+        "sequence": "03",
+        "partition": "fit",
+        "sample": 9,
+        "source_frame": 36,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 1
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/032.jpg",
+          "sample": 8,
+          "source_frame": 32,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            25,
+            24
+          ],
+          "new_selected": [
+            25,
+            24
+          ],
+          "old_tracks": [
+            1,
+            0
+          ],
+          "new_tracks": [
+            1,
+            0
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/036.jpg",
+          "sample": 9,
+          "source_frame": 36,
+          "old_phase": 0,
+          "new_phase": 0,
+          "valid": true,
+          "old_selected": [
+            28,
+            27
+          ],
+          "new_selected": [
+            28,
+            27
+          ],
+          "old_tracks": [
+            3,
+            0
+          ],
+          "new_tracks": [
+            3,
+            0
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/040.jpg",
+          "sample": 10,
+          "source_frame": 40,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            31,
+            30
+          ],
+          "new_selected": [
+            31,
+            30
+          ],
+          "old_tracks": [
+            1,
+            0
+          ],
+          "new_tracks": [
+            1,
+            0
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "04_0060",
+        "sequence": "04",
+        "partition": "fit",
+        "sample": 15,
+        "source_frame": 60,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 3
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/056.jpg",
+          "sample": 14,
+          "source_frame": 56,
+          "old_phase": 2,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            39,
+            37
+          ],
+          "new_selected": [
+            39,
+            37
+          ],
+          "old_tracks": [
+            7,
+            6
+          ],
+          "new_tracks": [
+            7,
+            6
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/060.jpg",
+          "sample": 15,
+          "source_frame": 60,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            42,
+            41
+          ],
+          "new_selected": [
+            42,
+            41
+          ],
+          "old_tracks": [
+            0,
+            6
+          ],
+          "new_tracks": [
+            0,
+            6
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/064.jpg",
+          "sample": 16,
+          "source_frame": 64,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            45,
+            44
+          ],
+          "new_selected": [
+            45,
+            44
+          ],
+          "old_tracks": [
+            0,
+            6
+          ],
+          "new_tracks": [
+            0,
+            6
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "05_0032",
+        "sequence": "05",
+        "partition": "fit",
+        "sample": 8,
+        "source_frame": 32,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 2
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/028.jpg",
+          "sample": 7,
+          "source_frame": 28,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            18,
+            17
+          ],
+          "new_selected": [
+            18,
+            17
+          ],
+          "old_tracks": [
+            0,
+            3
+          ],
+          "new_tracks": [
+            0,
+            3
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/032.jpg",
+          "sample": 8,
+          "source_frame": 32,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            23,
+            21
+          ],
+          "new_selected": [
+            23,
+            21
+          ],
+          "old_tracks": [
+            0,
+            5
+          ],
+          "new_tracks": [
+            0,
+            5
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/036.jpg",
+          "sample": 9,
+          "source_frame": 36,
+          "old_phase": 1,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            26,
+            25
+          ],
+          "new_selected": [
+            27,
+            25
+          ],
+          "old_tracks": [
+            0,
+            3
+          ],
+          "new_tracks": [
+            4,
+            3
+          ],
+          "anchor_changed": true
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "06_0384",
+        "sequence": "06",
+        "partition": "fit",
+        "sample": 96,
+        "source_frame": 384,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 8
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/380.jpg",
+          "sample": 95,
+          "source_frame": 380,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            317,
+            315
+          ],
+          "new_selected": [
+            317,
+            315
+          ],
+          "old_tracks": [
+            16,
+            10
+          ],
+          "new_tracks": [
+            16,
+            10
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/384.jpg",
+          "sample": 96,
+          "source_frame": 384,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            320,
+            319
+          ],
+          "new_selected": [
+            320,
+            319
+          ],
+          "old_tracks": [
+            16,
+            17
+          ],
+          "new_tracks": [
+            16,
+            17
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/388.jpg",
+          "sample": 97,
+          "source_frame": 388,
+          "old_phase": 3,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            325,
+            322
+          ],
+          "new_selected": [
+            324,
+            322
+          ],
+          "old_tracks": [
+            16,
+            17
+          ],
+          "new_tracks": [
+            18,
+            17
+          ],
+          "anchor_changed": true
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "02_0176",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 44,
+        "source_frame": 176,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 14
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/172.jpg",
+          "sample": 43,
+          "source_frame": 172,
+          "old_phase": 1,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            143,
+            142
+          ],
+          "new_selected": [
+            144,
+            142
+          ],
+          "old_tracks": [
+            15,
+            9
+          ],
+          "new_tracks": [
+            13,
+            9
+          ],
+          "anchor_changed": true
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/176.jpg",
+          "sample": 44,
+          "source_frame": 176,
+          "old_phase": 3,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            149,
+            147
+          ],
+          "new_selected": [
+            148,
+            147
+          ],
+          "old_tracks": [
+            15,
+            9
+          ],
+          "new_tracks": [
+            13,
+            9
+          ],
+          "anchor_changed": true
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/180.jpg",
+          "sample": 45,
+          "source_frame": 180,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            153,
+            152
+          ],
+          "new_selected": [
+            153,
+            152
+          ],
+          "old_tracks": [
+            15,
+            9
+          ],
+          "new_tracks": [
+            15,
+            9
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "08_0308",
+        "sequence": "08",
+        "partition": "calibration",
+        "sample": 77,
+        "source_frame": 308,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 10
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/304.jpg",
+          "sample": 76,
+          "source_frame": 304,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            255,
+            254
+          ],
+          "new_selected": [
+            255,
+            254
+          ],
+          "old_tracks": [
+            10,
+            7
+          ],
+          "new_tracks": [
+            10,
+            7
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/308.jpg",
+          "sample": 77,
+          "source_frame": 308,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            258,
+            257
+          ],
+          "new_selected": [
+            258,
+            257
+          ],
+          "old_tracks": [
+            10,
+            7
+          ],
+          "new_tracks": [
+            10,
+            7
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/312.jpg",
+          "sample": 78,
+          "source_frame": 312,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            261,
+            260
+          ],
+          "new_selected": [
+            261,
+            260
+          ],
+          "old_tracks": [
+            10,
+            7
+          ],
+          "new_tracks": [
+            10,
+            7
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "12_0244",
+        "sequence": "12",
+        "partition": "calibration",
+        "sample": 61,
+        "source_frame": 244,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 13
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/240.jpg",
+          "sample": 60,
+          "source_frame": 240,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            207,
+            206
+          ],
+          "new_selected": [
+            207,
+            206
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            1,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/244.jpg",
+          "sample": 61,
+          "source_frame": 244,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            210,
+            209
+          ],
+          "new_selected": [
+            210,
+            209
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            1,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/248.jpg",
+          "sample": 62,
+          "source_frame": 248,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            213,
+            212
+          ],
+          "new_selected": [
+            213,
+            212
+          ],
+          "old_tracks": [
+            1,
+            4
+          ],
+          "new_tracks": [
+            1,
+            4
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "13_0124",
+        "sequence": "13",
+        "partition": "fit",
+        "sample": 31,
+        "source_frame": 124,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 2
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/13/120.jpg",
+          "sample": 30,
+          "source_frame": 120,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            87,
+            86
+          ],
+          "new_selected": [
+            87,
+            86
+          ],
+          "old_tracks": [
+            0,
+            4
+          ],
+          "new_tracks": [
+            0,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/13/124.jpg",
+          "sample": 31,
+          "source_frame": 124,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            92,
+            90
+          ],
+          "new_selected": [
+            92,
+            90
+          ],
+          "old_tracks": [
+            0,
+            4
+          ],
+          "new_tracks": [
+            0,
+            4
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/13/128.jpg",
+          "sample": 32,
+          "source_frame": 128,
+          "old_phase": 1,
+          "new_phase": 2,
+          "valid": true,
+          "old_selected": [
+            97,
+            94
+          ],
+          "new_selected": [
+            96,
+            94
+          ],
+          "old_tracks": [
+            0,
+            4
+          ],
+          "new_tracks": [
+            7,
+            4
+          ],
+          "anchor_changed": true
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "14_0288",
+        "sequence": "14",
+        "partition": "fit",
+        "sample": 72,
+        "source_frame": 288,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 13
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/14/284.jpg",
+          "sample": 71,
+          "source_frame": 284,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            235,
+            234
+          ],
+          "new_selected": [
+            235,
+            234
+          ],
+          "old_tracks": [
+            14,
+            12
+          ],
+          "new_tracks": [
+            14,
+            12
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/14/288.jpg",
+          "sample": 72,
+          "source_frame": 288,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            238,
+            237
+          ],
+          "new_selected": [
+            238,
+            237
+          ],
+          "old_tracks": [
+            14,
+            12
+          ],
+          "new_tracks": [
+            14,
+            12
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/14/292.jpg",
+          "sample": 73,
+          "source_frame": 292,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            241,
+            240
+          ],
+          "new_selected": [
+            241,
+            240
+          ],
+          "old_tracks": [
+            14,
+            12
+          ],
+          "new_tracks": [
+            14,
+            12
+          ],
+          "anchor_changed": false
+        }
+      ]
+    },
+    {
+      "case": {
+        "case_id": "25_0132",
+        "sequence": "25",
+        "partition": "fit",
+        "sample": 33,
+        "source_frame": 132,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 4
+          }
+        ]
+      },
+      "frames": [
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/25/128.jpg",
+          "sample": 32,
+          "source_frame": 128,
+          "old_phase": 1,
+          "new_phase": 1,
+          "valid": true,
+          "old_selected": [
+            95,
+            94
+          ],
+          "new_selected": [
+            95,
+            94
+          ],
+          "old_tracks": [
+            1,
+            7
+          ],
+          "new_tracks": [
+            1,
+            7
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/25/132.jpg",
+          "sample": 33,
+          "source_frame": 132,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            99,
+            97
+          ],
+          "new_selected": [
+            99,
+            97
+          ],
+          "old_tracks": [
+            1,
+            7
+          ],
+          "new_tracks": [
+            1,
+            7
+          ],
+          "anchor_changed": false
+        },
+        {
+          "source_path": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/25/136.jpg",
+          "sample": 34,
+          "source_frame": 136,
+          "old_phase": 3,
+          "new_phase": 3,
+          "valid": true,
+          "old_selected": [
+            103,
+            101
+          ],
+          "new_selected": [
+            103,
+            101
+          ],
+          "old_tracks": [
+            1,
+            7
+          ],
+          "new_tracks": [
+            1,
+            7
+          ],
+          "anchor_changed": false
+        }
+      ]
+    }
+  ]
+}

@@ -40,7 +40,8 @@
 | 실험 31 | 같은 객체 쌍의 연속 관측 전이만 결합 | 완료: 오탐 감소·이상 경보 소폭 감소, 탐지 구간 유지 | [결과·의의·추천 3개](docs/EXPERIMENT31.md) |
 | 실험 32 | 객체 쌍의 연속성을 반영한 정상 체류 episode 재구성 | 완료: 진입 미확인·검열 분리, 체류 지원 부족 확인 | [결과·의의·추천 3개](docs/EXPERIMENT32.md) |
 | 실험 33 | 관계 관측 손실·선택 track·episode 근거 추적 | 완료: filter/선택 병목과 역할 혼동의 근거 확인, normal-only 진단 | [결과·의의·추천 3개](docs/EXPERIMENT33.md) |
-| 다음 실험 34 | eligible anchor의 semantic 근거 우선 선택 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT34_PLAN.md) |
+| 실험 34 | eligible anchor의 semantic 근거 우선 선택 | 완료: 일부 역할 선택 변화, track 단절 증가·탐지 저하 | [결과·의의·추천 3개](docs/EXPERIMENT34.md) |
+| 다음 실험 35 | 자발적 anchor 교체의 연속 우위 확인 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT35_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1112,3 +1113,31 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **target의 혼동 객체 대비 역할 검증 보강**: cardboard와 blade/trough·고정부 혼동을 구분하는 정상 근거 추가 | target에는 semantic gate가 없으며 04_0028·06_0028·05_0032에서 금속 칼날을 선택하는 듯한 사례. 연속 valid target 교체 53회는 모두 이전 ID 후보 부재 | 정상 자료만으로 검증 규칙을 정하고 실제 제품의 가림/퇴장과 filter 누락, 선택 정확도 보조 주석·관측률을 분리. 목적 표집 메모를 학습 GT로 사용하지 않음 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT33.md) · [진단 집계](results/experiment33/diagnostic_summary.json) · [24개 시각 메모](results/experiment33/visual_review.json) · [검증](results/experiment33/validation.json) · [1순위를 구체화한 실험 34 계획](docs/EXPERIMENT34_PLAN.md)
+
+
+## 실험 34 — eligible anchor의 semantic 근거 우선 선택
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 FPR (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| control_hold | 0.6905 / 0.6896 | 0.7210 / 0.7139 | 8.64% (309) | 18.11% (829) | 16 |
+| control_pool | 0.6889 / 0.6861 | 0.7207 / 0.7124 | 7.63% (273) | 16.69% (764) | 17 |
+| control_age | 0.6902 / 0.6886 | 0.7208 / 0.7131 | 8.64% (309) | 18.28% (837) | 16 |
+| semantic_hold | 0.6794 / 0.6781 | 0.7002 / 0.6964 | 8.19% (293) | 16.01% (733) | 12 |
+| semantic_pool | 0.6864 / 0.6837 | 0.7082 / 0.7027 | 6.96% (249) | 12.84% (588) | 11 |
+| semantic_age | 0.6797 / 0.6777 | 0.7007 / 0.6960 | 8.19% (293) | 15.57% (713) | 12 |
+
+![실험 34 비교](results/experiment34/semantic_priority_comparison.png)
+
+**의의:** 후보·관측 mask·target 선택과 공유 PCA rank·관계 중심을 유지하고 anchor 선택 우선순위만 바꿨다. 일부 고정 정상 사례에서 바이스 대신 blade로 보이는 대안을 선택했으나 FIT/calibration 쌍 교체는 69/16→135/37회로 늘었다. control은 실험 31 정상 모델/점수와 test 예측 57개를 정확히 재현한다.
+
+**보완할 점:** 세 경로 모두 ranking·recall·구간 탐지가 낮아졌다. 자신의 정상 q99에서 FP는 감소했지만, 같은 변경군 점수에 control q99를 쓰면 FP/TP가 모두 증가한다. 정상 holdout FP는 모두 +4다. strict same-pair FIT complete는 7→6개이고 기존 체류의 지원 확대와 불일치한다. 공정이 Visual에 추가하는 구간은 1→0개다. 역할 GT·독립 평가·비용 측정은 없으며 성공한 개선으로 채택하지 않는다. 테스트 138개 통과.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **자발적 anchor 교체에 연속 우위 확인**: 기존 anchor가 아직 eligible이면 같은 대안 track이 2개 연속 sample에서 margin 최대일 때 교체. 기존 후보 부재/탈락 시 즉시 기존 semantic 규칙으로 선택 | semantic anchor 교체 중 이전 후보가 eligible인 즉시 교체 36/11회, 한-sample 왕복 38/9회. 쌍 교체 증가와 strict complete 감소 | margin·후보 gate·관측 mask를 고정하고 2회 확인을 사전 고정. 선택 지연·왕복·역할 사례·episode 지원·holdout·탐지를 함께 검증. 올바른 역할로 복구가 늦어질 수 있고 후보 부재 57/16회는 해결하지 못함 |
+| 2 | **anchor 후보 연속성 및 면적 gate 보강**: blade 후보의 실제 부재와 상한 배제를 구분해 정상 근거로 한 요소씩 변경 | 이전 ID 후보 부재에 따른 anchor 교체 57/16회, 면적 탈락 1/3회. 24개 사례 중 19개 선택이 그대로이며 이전 면적/후보 소실 문제 잔존 | 정상 자료로 후보 생성/area 대조를 고정하고 역할 품질·누락·강제 교체·큰 배경 box 증가를 함께 측정. 관측률을 검출 정확도로 쓰지 않음 |
+| 3 | **체류 점수의 객체 쌍 연속성 검증**: 관측된 진입 이후 같은 쌍으로 유지됐는지를 체류 결합 근거로 요구하는 대조 | 기존 지원은 5맥락으로 늘지만 strict FIT complete는 1→3·3→1 각 3개뿐. 새 맥락의 strict complete는 0, 체류 독자 FP 13/TP 167에도 추가 구간 없음 | 우선 기존 분포를 고정하고 가용성/독자 경보 손실을 분리. 지원 부족을 threshold 완화로 숨기지 않고, 참 이상 지속을 차단할 위험을 보고 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT34.md) · [비교 CSV](results/experiment34/comparison.csv) · [교체 원인](results/experiment34/normal_switch_mechanism.json) · [검증](results/experiment34/validation.json) · [1순위를 구체화한 실험 35 계획](docs/EXPERIMENT35_PLAN.md)
