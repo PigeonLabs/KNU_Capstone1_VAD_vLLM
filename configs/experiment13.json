@@ -1,0 +1,17 @@
+{
+  "experiment": "13",
+  "scene": "R03",
+  "seed": 42,
+  "source_features_experiment": "12",
+  "variants": [
+    "10",
+    "11",
+    "12_support",
+    "12"
+  ],
+  "protocol": "leave_one_normal_calibration_video_out",
+  "split_source": "results/stage00/splits.json",
+  "fit_policy": "Fixed 18 normal FIT videos; all calibration references and q99 rebuilt on remaining 3 normal videos.",
+  "evaluation_policy": "Held-out NORMAL video only; no test labels or anomaly ranking metrics.",
+  "time_unit": "source_frame_index"
+}

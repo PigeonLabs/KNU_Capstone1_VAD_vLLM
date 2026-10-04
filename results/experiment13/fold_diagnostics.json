@@ -1,0 +1,1694 @@
+[
+  {
+    "variant": "10",
+    "held_out": "07",
+    "calibration_ids": [
+      "08",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "e36f7d5730b0840beb6b1a141efdda30a5c194d4a53705f2c8a0489bcd00bef3",
+    "visual_reference_samples": {
+      "0": 538,
+      "1": 715,
+      "-1": 530
+    },
+    "process_reference_samples": 530,
+    "previous_state_reference_samples": {
+      "0": 201,
+      "1": 156,
+      "2": 161,
+      "3": 9
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 212,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "0->1": {
+        "frames": 220,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 8,
+        "visual_at_one": 8,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "2->0": {
+        "frames": 41,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "2->3": {
+        "frames": 28,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      }
+    },
+    "heldout_visual_at_one": 16,
+    "heldout_process_at_one": 0
+  },
+  {
+    "variant": "10",
+    "held_out": "08",
+    "calibration_ids": [
+      "07",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "e36f7d5730b0840beb6b1a141efdda30a5c194d4a53705f2c8a0489bcd00bef3",
+    "visual_reference_samples": {
+      "0": 542,
+      "1": 758,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 198,
+      "1": 157,
+      "2": 161,
+      "3": 7
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 224,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "0->1": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "2->0": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "2->3": {
+        "frames": 36,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      }
+    },
+    "heldout_visual_at_one": 8,
+    "heldout_process_at_one": 0
+  },
+  {
+    "variant": "10",
+    "held_out": "15",
+    "calibration_ids": [
+      "07",
+      "08",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "e36f7d5730b0840beb6b1a141efdda30a5c194d4a53705f2c8a0489bcd00bef3",
+    "visual_reference_samples": {
+      "0": 540,
+      "1": 699,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 193,
+      "1": 162,
+      "2": 152,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 252,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "0->1": {
+        "frames": 196,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "0->2": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "2->0": {
+        "frames": 34,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 4
+  },
+  {
+    "variant": "10",
+    "held_out": "22",
+    "calibration_ids": [
+      "07",
+      "08",
+      "15"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "e36f7d5730b0840beb6b1a141efdda30a5c194d4a53705f2c8a0489bcd00bef3",
+    "visual_reference_samples": {
+      "0": 543,
+      "1": 663,
+      "-1": 527
+    },
+    "process_reference_samples": 527,
+    "previous_state_reference_samples": {
+      "0": 200,
+      "1": 158,
+      "2": 150,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "0->1": {
+        "frames": 212,
+        "alarm_frames": 12,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "1->2": {
+        "frames": 232,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      },
+      "2->0": {
+        "frames": 43,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": null,
+        "dwell_at_one_valid": null
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 0
+  },
+  {
+    "variant": "11",
+    "held_out": "07",
+    "calibration_ids": [
+      "08",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "b0d04e339580bfcdb55e7a8671c884fae97638553a98ebbb3a2f21ee6f1e7e73",
+    "visual_reference_samples": {
+      "0": 538,
+      "1": 715,
+      "-1": 530
+    },
+    "process_reference_samples": 530,
+    "previous_state_reference_samples": {
+      "0": 201,
+      "1": 156,
+      "2": 161,
+      "3": 9
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 212,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 220,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 220,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 8,
+        "visual_at_one": 8,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 41,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "2->3": {
+        "frames": 28,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 28,
+        "dwell_at_one_valid": 0
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 8,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 16,
+    "heldout_process_at_one": 0,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 109,
+      "1": 0,
+      "2": 53,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.0,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.11441035117774422,
+      2.001480000210124,
+      2.917770732084279
+    ]
+  },
+  {
+    "variant": "11",
+    "held_out": "08",
+    "calibration_ids": [
+      "07",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "b0d04e339580bfcdb55e7a8671c884fae97638553a98ebbb3a2f21ee6f1e7e73",
+    "visual_reference_samples": {
+      "0": 542,
+      "1": 758,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 198,
+      "1": 157,
+      "2": 161,
+      "3": 7
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 224,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 216,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "2->3": {
+        "frames": 36,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 36,
+        "dwell_at_one_valid": 0
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 8,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 8,
+    "heldout_process_at_one": 0,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 110,
+      "1": 0,
+      "2": 56,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.02857920691997432,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.11441035117774422,
+      2.001480000210124,
+      2.917770732084279
+    ]
+  },
+  {
+    "variant": "11",
+    "held_out": "15",
+    "calibration_ids": [
+      "07",
+      "08",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "b0d04e339580bfcdb55e7a8671c884fae97638553a98ebbb3a2f21ee6f1e7e73",
+    "visual_reference_samples": {
+      "0": 540,
+      "1": 699,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 193,
+      "1": 162,
+      "2": 152,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 252,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 196,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 196,
+        "dwell_at_one_valid": 0
+      },
+      "0->2": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 44,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 34,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 4,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 105,
+      "1": 0,
+      "2": 63,
+      "3": 9
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.0,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.08004270767353637,
+      2.001480000210124,
+      2.917770732084279
+    ]
+  },
+  {
+    "variant": "11",
+    "held_out": "22",
+    "calibration_ids": [
+      "07",
+      "08",
+      "15"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "b0d04e339580bfcdb55e7a8671c884fae97638553a98ebbb3a2f21ee6f1e7e73",
+    "visual_reference_samples": {
+      "0": 543,
+      "1": 663,
+      "-1": 527
+    },
+    "process_reference_samples": 527,
+    "previous_state_reference_samples": {
+      "0": 200,
+      "1": 158,
+      "2": 150,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 212,
+        "alarm_frames": 12,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 212,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 232,
+        "alarm_frames": 40,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 232,
+        "dwell_at_one_valid": 40
+      },
+      "2->0": {
+        "frames": 43,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 40,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 111,
+      "1": 0,
+      "2": 54,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.14518200984449783,
+      2.8484560140282884,
+      2.917770732084279
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      -0.0,
+      1.5314763709643884,
+      1.5314763709643884
+    ]
+  },
+  {
+    "variant": "12_support",
+    "held_out": "07",
+    "calibration_ids": [
+      "08",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 538,
+      "1": 715,
+      "-1": 530
+    },
+    "process_reference_samples": 530,
+    "previous_state_reference_samples": {
+      "0": 201,
+      "1": 156,
+      "2": 161,
+      "3": 9
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 212,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 220,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 220,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 8,
+        "visual_at_one": 8,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 41,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "2->3": {
+        "frames": 28,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 28,
+        "dwell_at_one_valid": 0
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 8,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 16,
+    "heldout_process_at_one": 0,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 109,
+      "1": 0,
+      "2": 53,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.0,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.05715841383994864,
+      2.001480000210124,
+      2.917770732084279
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12_support",
+    "held_out": "08",
+    "calibration_ids": [
+      "07",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 542,
+      "1": 758,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 198,
+      "1": 157,
+      "2": 161,
+      "3": 7
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 224,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 216,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "2->3": {
+        "frames": 36,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 36,
+        "dwell_at_one_valid": 0
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 8,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 8,
+    "heldout_process_at_one": 0,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 110,
+      "1": 0,
+      "2": 56,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.02857920691997432,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.02857920691997432,
+      2.001480000210124,
+      2.917770732084279
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12_support",
+    "held_out": "15",
+    "calibration_ids": [
+      "07",
+      "08",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 540,
+      "1": 699,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 193,
+      "1": 162,
+      "2": 152,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 252,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 196,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 196,
+        "dwell_at_one_valid": 0
+      },
+      "0->2": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 34,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 4,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 94,
+      "1": 0,
+      "2": 63,
+      "3": 20
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      -0.0,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.08004270767353637,
+      2.001480000210124,
+      2.917770732084279
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12_support",
+    "held_out": "22",
+    "calibration_ids": [
+      "07",
+      "08",
+      "15"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 543,
+      "1": 663,
+      "-1": 527
+    },
+    "process_reference_samples": 527,
+    "previous_state_reference_samples": {
+      "0": 200,
+      "1": 158,
+      "2": 150,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 212,
+        "alarm_frames": 12,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 212,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 232,
+        "alarm_frames": 40,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 232,
+        "dwell_at_one_valid": 40
+      },
+      "2->0": {
+        "frames": 43,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 40,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 111,
+      "1": 0,
+      "2": 54,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.14518200984449783,
+      2.8484560140282884,
+      2.917770732084279
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.0,
+      1.5314763709643884,
+      1.5314763709643884
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12",
+    "held_out": "07",
+    "calibration_ids": [
+      "08",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 538,
+      "1": 715,
+      "-1": 530
+    },
+    "process_reference_samples": 530,
+    "previous_state_reference_samples": {
+      "0": 201,
+      "1": 156,
+      "2": 161,
+      "3": 9
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 212,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 220,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 220,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 8,
+        "visual_at_one": 8,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 41,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "2->3": {
+        "frames": 28,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 28,
+        "dwell_at_one_valid": 0
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 8,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 16,
+    "heldout_process_at_one": 0,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 109,
+      "1": 0,
+      "2": 53,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.0,
+      0.8649974374866046,
+      0.8649974374866046
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.0,
+      1.3350010667323402,
+      2.2512917986064953
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12",
+    "held_out": "08",
+    "calibration_ids": [
+      "07",
+      "15",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 542,
+      "1": 758,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 198,
+      "1": 157,
+      "2": 161,
+      "3": 7
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 224,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 216,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 4,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "2->3": {
+        "frames": 36,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 36,
+        "dwell_at_one_valid": 0
+      },
+      "3->2": {
+        "frames": 8,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 8,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 8,
+    "heldout_process_at_one": 0,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 110,
+      "1": 0,
+      "2": 56,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      -0.0,
+      0.8649974374866046,
+      0.8649974374866046
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      -0.0,
+      1.3350010667323402,
+      2.2512917986064953
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12",
+    "held_out": "15",
+    "calibration_ids": [
+      "07",
+      "08",
+      "22"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 540,
+      "1": 699,
+      "-1": 526
+    },
+    "process_reference_samples": 526,
+    "previous_state_reference_samples": {
+      "0": 193,
+      "1": 162,
+      "2": 152,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 252,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 196,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 196,
+        "dwell_at_one_valid": 0
+      },
+      "0->2": {
+        "frames": 44,
+        "alarm_frames": 4,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 180,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 180,
+        "dwell_at_one_valid": 0
+      },
+      "2->0": {
+        "frames": 34,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 4,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 94,
+      "1": 0,
+      "2": 63,
+      "3": 20
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      -0.0,
+      0.8649974374866046,
+      0.8649974374866046
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      -0.0,
+      1.3350010667323402,
+      2.2512917986064953
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  },
+  {
+    "variant": "12",
+    "held_out": "22",
+    "calibration_ids": [
+      "07",
+      "08",
+      "15"
+    ],
+    "fit_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+    "visual_reference_samples": {
+      "0": 543,
+      "1": 663,
+      "-1": 527
+    },
+    "process_reference_samples": 527,
+    "previous_state_reference_samples": {
+      "0": 200,
+      "1": 158,
+      "2": 150,
+      "3": 16
+    },
+    "contexts": {
+      "-1->0": {
+        "frames": 216,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      },
+      "0->1": {
+        "frames": 212,
+        "alarm_frames": 12,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 212,
+        "dwell_at_one_valid": 0
+      },
+      "1->2": {
+        "frames": 232,
+        "alarm_frames": 40,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 232,
+        "dwell_at_one_valid": 40
+      },
+      "2->0": {
+        "frames": 43,
+        "alarm_frames": 0,
+        "visual_at_one": 0,
+        "dwell_valid_frames": 0,
+        "dwell_at_one_valid": 0
+      }
+    },
+    "heldout_visual_at_one": 0,
+    "heldout_process_at_one": 40,
+    "dwell_fit_support": {
+      "1": 17,
+      "2": 36,
+      "3": 25,
+      "0": 4
+    },
+    "dwell_reason_counts_sampled": {
+      "0": 111,
+      "1": 0,
+      "2": 54,
+      "3": 11
+    },
+    "dwell_raw_heldout_quantiles_valid": [
+      0.0,
+      0.05406722127027582,
+      2.1819770805505048,
+      2.2512917986064953
+    ],
+    "dwell_reference_quantiles": [
+      0.0,
+      0.0,
+      0.8649974374866046,
+      0.8649974374866046
+    ],
+    "dwell_context_support": {
+      "0->1": 17,
+      "1->2": 18,
+      "2->3": 23,
+      "3->2": 16,
+      "3->0": 1,
+      "0->3": 2,
+      "2->0": 3,
+      "0->2": 2
+    }
+  }
+]

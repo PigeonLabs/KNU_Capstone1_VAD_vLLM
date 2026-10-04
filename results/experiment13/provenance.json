@@ -1,0 +1,126 @@
+{
+  "scene": "R03",
+  "fit_sequences": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+  ],
+  "normal_calibration_pool": [
+    "07",
+    "08",
+    "15",
+    "22"
+  ],
+  "folds": [
+    {
+      "held_out": "07",
+      "calibration": [
+        "08",
+        "15",
+        "22"
+      ]
+    },
+    {
+      "held_out": "08",
+      "calibration": [
+        "07",
+        "15",
+        "22"
+      ]
+    },
+    {
+      "held_out": "15",
+      "calibration": [
+        "07",
+        "08",
+        "22"
+      ]
+    },
+    {
+      "held_out": "22",
+      "calibration": [
+        "07",
+        "08",
+        "15"
+      ]
+    }
+  ],
+  "discovery_fit_sequences": [
+    "01",
+    "02"
+  ],
+  "discovery_excludes_calibration_pool": true,
+  "normal_feature_sequences_checked": 22,
+  "appearance_detection_tracking_arrays_match_experiment07": true,
+  "relation_model_reconstructed_from_fit_only_within_tolerance": true,
+  "relation_parameter_max_abs_difference": {
+    "location": 0.0,
+    "scale": 0.0,
+    "centers": 1.1102230246251565e-16
+  },
+  "relation_parameter_absolute_tolerance": 1e-12,
+  "all_normal_phase_assignments_reproduced": true,
+  "encoder_frozen_config": true,
+  "source_sha256": {
+    "artifacts/experiment07/features/R03/training_01.npz": "90ac370b1fd291d5b9a504bf5c88ea71bc3a2177290259b9cd29ffcaedbc0db0",
+    "artifacts/experiment12/features/R03/training_01.npz": "063946cea13314edcee823ada78cd21642ba3aa1d991fb39043e81fb76340d32",
+    "artifacts/experiment07/features/R03/training_02.npz": "5278bdd797ebca632fbcdb6e67ac394ca85ae6b6429ca3d0fb7e9fc3a7035b0a",
+    "artifacts/experiment12/features/R03/training_02.npz": "dc9435bf1704d261d00c026869f01f8a7e64c8acbd987b15dff81f2e4d1fb687",
+    "artifacts/experiment07/features/R03/training_03.npz": "67e4c1124a0e09eb5c75b0165285ff59960aa16b4b883e5a7376e34ab5a340f2",
+    "artifacts/experiment12/features/R03/training_03.npz": "ba8ba557163ff05ab445c740b10d5f776622e998b59be94744334b4721ccf69d",
+    "artifacts/experiment07/features/R03/training_04.npz": "5b6f532802072d886b951f5e2df86f59cd6fceda48f19b8fa6c6a44d2f133b24",
+    "artifacts/experiment12/features/R03/training_04.npz": "98990a3853dda9df72cd2571a3ce15b8105ffc649d5d1bc5975779d6ceb7b41a",
+    "artifacts/experiment07/features/R03/training_05.npz": "2cfdbcb3e9c1c330db16eb9d04c1ba5f32f443dd45702c55645803abe5ea3426",
+    "artifacts/experiment12/features/R03/training_05.npz": "923363e0a39272d48f9b59c3e375999ce9bb150620a3ef9a862f2bfec1dc8295",
+    "artifacts/experiment07/features/R03/training_06.npz": "af30e26d1900dcd56c4e9901afedb0e45b3214d07b9db92e790df62702d93cf2",
+    "artifacts/experiment12/features/R03/training_06.npz": "be010c77a94c1b73fdd484cab777a7becf31fb145b2e4d6fd5079f75edafc947",
+    "artifacts/experiment07/features/R03/training_09.npz": "7813fa1a6e965f3fb02b2c3f239d4c58a36b7b98c824dfe42d8824d5957cf68f",
+    "artifacts/experiment12/features/R03/training_09.npz": "c96bf462fa8761ec3c679793c1f79537041aa1e1ad85481e67a17c5dc1c41354",
+    "artifacts/experiment07/features/R03/training_10.npz": "03fefcee2b0ab37468048f08598517157629fd77372da5dd8be98eaaafd7d1d3",
+    "artifacts/experiment12/features/R03/training_10.npz": "08deb7e297c7c71ca2053f6bfd5f2860e3be29e990a48db3d202bbecb817ecd0",
+    "artifacts/experiment07/features/R03/training_11.npz": "5186f779bda75c95bf57f13ede39761c9eac2afeb7ed9f2befe7d6e5fbb6a7c9",
+    "artifacts/experiment12/features/R03/training_11.npz": "070d5aa1c3a4165c34b110162a8051f50d10a0481db17bfa57515c56b5c830ec",
+    "artifacts/experiment07/features/R03/training_12.npz": "108b361c17a1fd7c99abbf74ec078e8030bfda5fced4021f27a709abb776ac97",
+    "artifacts/experiment12/features/R03/training_12.npz": "bde976d19805f64a4464c03675138953718961543c62dacfa41095adcdf9301d",
+    "artifacts/experiment07/features/R03/training_13.npz": "b5c249ac5e885977d6b87b0564400366a3170fa648257326828922b079c315a8",
+    "artifacts/experiment12/features/R03/training_13.npz": "cd23b3e91e97f9bbd5662b30c2bc15bb2aad5baed6ac107e35434dbad93a0868",
+    "artifacts/experiment07/features/R03/training_14.npz": "ef5930fdf321dd977b28b8d03798e24fa720d90cec6e910a46ba52d5f4256020",
+    "artifacts/experiment12/features/R03/training_14.npz": "bd0989556d6340c2a1f91e5c1a6c5888f00ee6b8339d584293b01cf3bbbf9b70",
+    "artifacts/experiment07/features/R03/training_16.npz": "2b1078e28709ee4b18577d52b4f8d1df59437440649b5f399891878a13b0fb9f",
+    "artifacts/experiment12/features/R03/training_16.npz": "5ea9b003d05cd72e3f826427eadcb3bdb94e7bd66070287071dfe75b8d617426",
+    "artifacts/experiment07/features/R03/training_17.npz": "6d9e4ced0fe46d4b042c195c8c2236173f8c962ffb714e53b9c38c85ea3244df",
+    "artifacts/experiment12/features/R03/training_17.npz": "43b812591d3a48769b3a95b8a8f0c82808bc4e3f293bb2830e8822ff7d56e554",
+    "artifacts/experiment07/features/R03/training_18.npz": "c4c60f17f394ced544583c65b2f1bea3827e9278aee89de4526ef6c6058713b0",
+    "artifacts/experiment12/features/R03/training_18.npz": "4b974cd6e619c922a90a965c1781acc445290af98396facde7911e3d13a53e55",
+    "artifacts/experiment07/features/R03/training_19.npz": "204fd464206d498f29e01d836850582c327ed6adf8746026b959b32565d7642d",
+    "artifacts/experiment12/features/R03/training_19.npz": "2c1a0732beb165cc4a5cced5c8bac1011543ec68a75133f904a349dfbc12139c",
+    "artifacts/experiment07/features/R03/training_20.npz": "88e75bd6c2cb49b74a09414473899066b9c489d7bf80ce44c5147f8bf70cf689",
+    "artifacts/experiment12/features/R03/training_20.npz": "efa71f6181fdd42afd344e971fa4c938e9440b02589644f0564afdd688ad296e",
+    "artifacts/experiment07/features/R03/training_21.npz": "924e3546ded52d321073884e4fa0d4da3af0189e1cf9699631b58272bd18376f",
+    "artifacts/experiment12/features/R03/training_21.npz": "44465efc9076b26a838580b34447263e46e2d991ecb081c30a041520bd526879",
+    "artifacts/experiment07/features/R03/training_07.npz": "2ae284bb5ee8e65761bf544ef2c14c3e7d14b406420e677a7bec48e600d0be8e",
+    "artifacts/experiment12/features/R03/training_07.npz": "d1b15d07fc72a2d7d29916248c7db0a6d8cb124b549ca19560ce16afbab2d8df",
+    "artifacts/experiment07/features/R03/training_08.npz": "782b2a012c6ac7bfecea0a35639c3949189f47979c2c641c1a455b756a31ab3e",
+    "artifacts/experiment12/features/R03/training_08.npz": "4e1c62013edc301c72bcae72f1370102c695b1274a72ff811bc2f8a7a08bed82",
+    "artifacts/experiment07/features/R03/training_15.npz": "bfb8318c936ca424542d6605bba8dc4fd78867560618ed514b939b4d2697688d",
+    "artifacts/experiment12/features/R03/training_15.npz": "f1df0a7a2a7dea446d5c38085e3d042bb68064497887f2820ccc861a3fff9c54",
+    "artifacts/experiment07/features/R03/training_22.npz": "0d5117da991c593734528af1a4b81e3f2e129b1ed0048dbe66285cbed6b1bf3d",
+    "artifacts/experiment12/features/R03/training_22.npz": "f2f8575766105a5e94c20c54efcc8ba5ddf35541dd777812cc7845871a12689a"
+  },
+  "limitations": "Checks cached feature lineage and train-only relation reconstruction; does not prove original recording-group independence or pretraining-data independence."
+}

@@ -1,0 +1,12 @@
+{
+  "folds_reconstructed": 16,
+  "normal_feature_videos": 22,
+  "fit_and_all_calibration_references_exclude_heldout": true,
+  "all_scores_q99_alarm_counts_and_aggregates_reconstructed": true,
+  "fixed_fit_fingerprints_preserved": true,
+  "common_visual_transition_branches_identical_between_variants": true,
+  "context_arms_have_identical_masks": true,
+  "configuration_source_and_code_hashes_match": true,
+  "artifact_validation_only": true,
+  "limitation": "Normal-only evidence; no anomaly accuracy or original recording-group independence established."
+}

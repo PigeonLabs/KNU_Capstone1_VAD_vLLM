@@ -1,0 +1,395 @@
+{
+  "scene": "R03",
+  "protocol": "leave_one_normal_calibration_video_out",
+  "fit_sequences": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+  ],
+  "heldout_pool": [
+    "07",
+    "08",
+    "15",
+    "22"
+  ],
+  "folds": [
+    {
+      "variant": "10",
+      "held_out": "07",
+      "calibration_ids": "08,15,22",
+      "frames": 689,
+      "false_positive_frames": 20,
+      "frame_fpr": 0.02902757619738752,
+      "samples": 173,
+      "sample_fpr": 0.028901734104046242,
+      "q99": 0.9972118959107806,
+      "calibration_samples": 530,
+      "calibration_sample_fpr": 0.009433962264150943,
+      "process_fallback_samples": 8,
+      "process_insufficient_support_fallback_samples": 7,
+      "dwell_reference_samples": null,
+      "dwell_valid_frames": null
+    },
+    {
+      "variant": "10",
+      "held_out": "08",
+      "calibration_ids": "07,15,22",
+      "frames": 708,
+      "false_positive_frames": 8,
+      "frame_fpr": 0.011299435028248588,
+      "samples": 177,
+      "sample_fpr": 0.011299435028248588,
+      "q99": 0.9972324723247232,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 10,
+      "process_insufficient_support_fallback_samples": 9,
+      "dwell_reference_samples": null,
+      "dwell_valid_frames": null
+    },
+    {
+      "variant": "10",
+      "held_out": "15",
+      "calibration_ids": "07,08,22",
+      "frames": 706,
+      "false_positive_frames": 4,
+      "frame_fpr": 0.0056657223796034,
+      "samples": 177,
+      "sample_fpr": 0.005649717514124294,
+      "q99": 0.997148288973384,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": null,
+      "dwell_valid_frames": null
+    },
+    {
+      "variant": "10",
+      "held_out": "22",
+      "calibration_ids": "07,08,15",
+      "frames": 703,
+      "false_positive_frames": 12,
+      "frame_fpr": 0.017069701280227598,
+      "samples": 176,
+      "sample_fpr": 0.017045454545454544,
+      "q99": 0.9972375690607734,
+      "calibration_samples": 527,
+      "calibration_sample_fpr": 0.009487666034155597,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": null,
+      "dwell_valid_frames": null
+    },
+    {
+      "variant": "11",
+      "held_out": "07",
+      "calibration_ids": "08,15,22",
+      "frames": 689,
+      "false_positive_frames": 20,
+      "frame_fpr": 0.02902757619738752,
+      "samples": 173,
+      "sample_fpr": 0.028901734104046242,
+      "q99": 0.9972118959107806,
+      "calibration_samples": 530,
+      "calibration_sample_fpr": 0.009433962264150943,
+      "process_fallback_samples": 8,
+      "process_insufficient_support_fallback_samples": 7,
+      "dwell_reference_samples": 326,
+      "dwell_valid_frames": 436
+    },
+    {
+      "variant": "11",
+      "held_out": "08",
+      "calibration_ids": "07,15,22",
+      "frames": 708,
+      "false_positive_frames": 8,
+      "frame_fpr": 0.011299435028248588,
+      "samples": 177,
+      "sample_fpr": 0.011299435028248588,
+      "q99": 0.9972324723247232,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 10,
+      "process_insufficient_support_fallback_samples": 9,
+      "dwell_reference_samples": 325,
+      "dwell_valid_frames": 440
+    },
+    {
+      "variant": "11",
+      "held_out": "15",
+      "calibration_ids": "07,08,22",
+      "frames": 706,
+      "false_positive_frames": 4,
+      "frame_fpr": 0.0056657223796034,
+      "samples": 177,
+      "sample_fpr": 0.005649717514124294,
+      "q99": 0.997148288973384,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": 330,
+      "dwell_valid_frames": 420
+    },
+    {
+      "variant": "11",
+      "held_out": "22",
+      "calibration_ids": "07,08,15",
+      "frames": 703,
+      "false_positive_frames": 52,
+      "frame_fpr": 0.07396870554765292,
+      "samples": 176,
+      "sample_fpr": 0.07386363636363637,
+      "q99": 0.9972375690607734,
+      "calibration_samples": 527,
+      "calibration_sample_fpr": 0.009487666034155597,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": 324,
+      "dwell_valid_frames": 444
+    },
+    {
+      "variant": "12_support",
+      "held_out": "07",
+      "calibration_ids": "08,15,22",
+      "frames": 689,
+      "false_positive_frames": 20,
+      "frame_fpr": 0.02902757619738752,
+      "samples": 173,
+      "sample_fpr": 0.028901734104046242,
+      "q99": 0.9972118959107806,
+      "calibration_samples": 530,
+      "calibration_sample_fpr": 0.009433962264150943,
+      "process_fallback_samples": 8,
+      "process_insufficient_support_fallback_samples": 7,
+      "dwell_reference_samples": 315,
+      "dwell_valid_frames": 436
+    },
+    {
+      "variant": "12_support",
+      "held_out": "08",
+      "calibration_ids": "07,15,22",
+      "frames": 708,
+      "false_positive_frames": 8,
+      "frame_fpr": 0.011299435028248588,
+      "samples": 177,
+      "sample_fpr": 0.011299435028248588,
+      "q99": 0.9972324723247232,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 10,
+      "process_insufficient_support_fallback_samples": 9,
+      "dwell_reference_samples": 314,
+      "dwell_valid_frames": 440
+    },
+    {
+      "variant": "12_support",
+      "held_out": "15",
+      "calibration_ids": "07,08,22",
+      "frames": 706,
+      "false_positive_frames": 4,
+      "frame_fpr": 0.0056657223796034,
+      "samples": 177,
+      "sample_fpr": 0.005649717514124294,
+      "q99": 0.997148288973384,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": 330,
+      "dwell_valid_frames": 376
+    },
+    {
+      "variant": "12_support",
+      "held_out": "22",
+      "calibration_ids": "07,08,15",
+      "frames": 703,
+      "false_positive_frames": 52,
+      "frame_fpr": 0.07396870554765292,
+      "samples": 176,
+      "sample_fpr": 0.07386363636363637,
+      "q99": 0.9972375690607734,
+      "calibration_samples": 527,
+      "calibration_sample_fpr": 0.009487666034155597,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": 313,
+      "dwell_valid_frames": 444
+    },
+    {
+      "variant": "12",
+      "held_out": "07",
+      "calibration_ids": "08,15,22",
+      "frames": 689,
+      "false_positive_frames": 20,
+      "frame_fpr": 0.02902757619738752,
+      "samples": 173,
+      "sample_fpr": 0.028901734104046242,
+      "q99": 0.9972118959107806,
+      "calibration_samples": 530,
+      "calibration_sample_fpr": 0.009433962264150943,
+      "process_fallback_samples": 8,
+      "process_insufficient_support_fallback_samples": 7,
+      "dwell_reference_samples": 315,
+      "dwell_valid_frames": 436
+    },
+    {
+      "variant": "12",
+      "held_out": "08",
+      "calibration_ids": "07,15,22",
+      "frames": 708,
+      "false_positive_frames": 8,
+      "frame_fpr": 0.011299435028248588,
+      "samples": 177,
+      "sample_fpr": 0.011299435028248588,
+      "q99": 0.9972324723247232,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 10,
+      "process_insufficient_support_fallback_samples": 9,
+      "dwell_reference_samples": 314,
+      "dwell_valid_frames": 440
+    },
+    {
+      "variant": "12",
+      "held_out": "15",
+      "calibration_ids": "07,08,22",
+      "frames": 706,
+      "false_positive_frames": 4,
+      "frame_fpr": 0.0056657223796034,
+      "samples": 177,
+      "sample_fpr": 0.005649717514124294,
+      "q99": 0.997148288973384,
+      "calibration_samples": 526,
+      "calibration_sample_fpr": 0.009505703422053232,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": 330,
+      "dwell_valid_frames": 376
+    },
+    {
+      "variant": "12",
+      "held_out": "22",
+      "calibration_ids": "07,08,15",
+      "frames": 703,
+      "false_positive_frames": 52,
+      "frame_fpr": 0.07396870554765292,
+      "samples": 176,
+      "sample_fpr": 0.07386363636363637,
+      "q99": 0.9972375690607734,
+      "calibration_samples": 527,
+      "calibration_sample_fpr": 0.009487666034155597,
+      "process_fallback_samples": 1,
+      "process_insufficient_support_fallback_samples": 0,
+      "dwell_reference_samples": 313,
+      "dwell_valid_frames": 444
+    }
+  ],
+  "summaries": {
+    "10": {
+      "heldout_videos": 4,
+      "frames": 2806,
+      "false_positive_frames": 44,
+      "micro_frame_fpr": 0.015680684248039915,
+      "macro_video_frame_fpr": 0.015765608721366776,
+      "video_frame_fpr_min_max": [
+        0.0056657223796034,
+        0.02902757619738752
+      ],
+      "q99_min_max": [
+        0.997148288973384,
+        0.9972375690607734
+      ]
+    },
+    "11": {
+      "heldout_videos": 4,
+      "frames": 2806,
+      "false_positive_frames": 84,
+      "micro_frame_fpr": 0.02993585174625802,
+      "macro_video_frame_fpr": 0.029990359788223106,
+      "video_frame_fpr_min_max": [
+        0.0056657223796034,
+        0.07396870554765292
+      ],
+      "q99_min_max": [
+        0.997148288973384,
+        0.9972375690607734
+      ]
+    },
+    "12_support": {
+      "heldout_videos": 4,
+      "frames": 2806,
+      "false_positive_frames": 84,
+      "micro_frame_fpr": 0.02993585174625802,
+      "macro_video_frame_fpr": 0.029990359788223106,
+      "video_frame_fpr_min_max": [
+        0.0056657223796034,
+        0.07396870554765292
+      ],
+      "q99_min_max": [
+        0.997148288973384,
+        0.9972375690607734
+      ]
+    },
+    "12": {
+      "heldout_videos": 4,
+      "frames": 2806,
+      "false_positive_frames": 84,
+      "micro_frame_fpr": 0.02993585174625802,
+      "macro_video_frame_fpr": 0.029990359788223106,
+      "video_frame_fpr_min_max": [
+        0.0056657223796034,
+        0.07396870554765292
+      ],
+      "q99_min_max": [
+        0.997148288973384,
+        0.9972375690607734
+      ]
+    }
+  },
+  "fit_checks": {
+    "10": {
+      "fit_arrays_match_original": true,
+      "fit_fingerprint": "e36f7d5730b0840beb6b1a141efdda30a5c194d4a53705f2c8a0489bcd00bef3"
+    },
+    "11": {
+      "fit_arrays_match_original": true,
+      "fit_fingerprint": "b0d04e339580bfcdb55e7a8671c884fae97638553a98ebbb3a2f21ee6f1e7e73"
+    },
+    "12_support": {
+      "fit_arrays_match_original": true,
+      "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302"
+    },
+    "12": {
+      "fit_arrays_match_original": true,
+      "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302"
+    }
+  },
+  "not_applicable": [
+    "Anomaly AUROC/AP",
+    "Anomaly recall",
+    "Anomaly event latency"
+  ],
+  "limitations": [
+    "Only four normal calibration videos.",
+    "Original recording-group independence unknown.",
+    "Fixed R03 development representation; not full IPAD or a final independent anomaly test.",
+    "Calibration video scores used to set q99; heldout video is excluded from every score reference."
+  ]
+}

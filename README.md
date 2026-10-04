@@ -19,7 +19,8 @@
 | 실험 10 | max 결합 및 Visual 단독 비교 | 완료: 평균 결합 억제 해소, 추가 공정 기여 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT10.md) |
 | 실험 11 | 관측된 진입 이후 체류 시간 신호 | 완료: 결합 ranking 하락, 추가 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT11.md) |
 | 실험 12 | 진입 맥락별 체류 시간 및 동일 support 대조 | 완료: 조건화 후 결합 성능 저하, 보정 간섭 확인 | [결과·의의·추천 3개](docs/EXPERIMENT12.md) |
-| 다음 실험 13 | 정상 영상 단위 보정 holdout 검증 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT13_PLAN.md) |
+| 실험 13 | 정상 영상 단위 보정 holdout 검증 | 완료: 정상 FIT 범위 안의 체류 오탐 반례 확인 | [결과·의의·추천 3개](docs/EXPERIMENT13.md) |
+| 다음 실험 14 | 완결 정상 길이 기준 체류 percentile | 계획 완료, 미실행 | [계획](docs/EXPERIMENT14_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -465,6 +466,33 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **관계 상태의 의미·관측 재검증** | 약한 체류 구별력과 기존 오탐 원인 확인. 실제 정상 대기·재방문과 군집/검출 오류 구분 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT12.md) · [12 지표](results/experiment12/metrics.json) · [대조군 지표](results/experiment12_support/metrics.json) · [보정 간섭 진단](results/comparison11_12_support_12/calibration_interference.json) · [실험 13 계획](docs/EXPERIMENT13_PLAN.md)
+
+## 실험 13 결과 — 정상 영상 단위 보정 검증
+
+정상 calibration 영상 07/08/15/22를 하나씩 제외하고 나머지 3개로 모든 reference와 q99를 적합했습니다. FIT 18개는 고정했으며, 4설정 × 4fold에서 각 설정이 동일한 정상 2,806프레임을 평가했습니다. **정상만 사용하므로 이상 AUROC/AP·recall·구간 지연은 계산하지 않았습니다.**
+
+| 정상 holdout 결과 | 체류 없음 (10) | 상태별 (11) | support 대조 (12_support) | 진입별 (12) |
+|---|---:|---:|---:|---:|
+| 오탐 프레임 | 44 | 84 | 84 | 84 |
+| 전체 프레임 가중 오탐률 | 1.568% | 2.994% | 2.994% | 2.994% |
+| 영상별 오탐률 평균 | 1.577% | 2.999% | 2.999% | 2.999% |
+| 영상 22 오탐률 | 1.71% | 7.40% | 7.40% | 7.40% |
+
+![정상 holdout 비교](results/experiment13/normal_holdout.png)
+
+**의의:** 모든 보정 단계에서 평가 영상을 제외하는 검증을 추가했습니다. 정상 22의 구간 길이 232는 FIT 최대 244 이내였지만, 보정 영상 세 개의 길이가 모두 180이어서 체류 점수가 1로 포화됐습니다. 이상 라벨 없이 정상 support 왜곡의 구체적 반례를 확인했습니다.
+
+**보완할 점:** 추가 체류 오탐 40프레임은 한 영상에 집중됐고 세 체류 모델의 경보는 같았습니다. 기본 모델에도 정상 오탐이 남습니다. 네 정상 영상은 이전 실험에 사용된 개발 자료이며, 이번 fold에서 제외했다고 최종 독립 테스트가 되는 것은 아닙니다. 성능 향상·novelty·통계적 유의성은 주장하지 않습니다.
+
+### 실험 13 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **완결 정상 구간 기준 체류 percentile** | FIT 길이 분포에서 경과 시간 위치를 직접 계산. 정상 support 보존과 이상 민감도 감소를 함께 평가 |
+| 2 | **영상 단위 support·보정 불확실성** | 한 영상 제외로 state 3 reference가 7/9개가 되는 희소성 점검. 프레임 수와 영상 다양성 구분 |
+| 3 | **관계 상태·외형 오탐 진단** | 체류 없이도 남는 정상 44프레임 오탐을 bbox/상태 안정성 관점에서 분석 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT13.md) · [fold 결과](results/experiment13/fold_metrics.csv) · [정상 support 반례](results/experiment13/support_diagnostic.json) · [실험 14 계획](docs/EXPERIMENT14_PLAN.md)
 
 ## 로컬 VLM
 
