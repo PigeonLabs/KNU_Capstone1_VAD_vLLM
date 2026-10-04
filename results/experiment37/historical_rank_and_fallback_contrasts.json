@@ -1,0 +1,176 @@
+{
+  "historical_rank_comparison": {
+    "hold": {
+      "previous_experiment36_refit_combined": {
+        "frames": 8154,
+        "positive_frames": 4578,
+        "auroc": 0.6703907377761359,
+        "average_precision": 0.6751698289900366
+      },
+      "matched_rank_control_combined": {
+        "frames": 8154,
+        "positive_frames": 4578,
+        "auroc": 0.6662173030142213,
+        "average_precision": 0.6721028672549515
+      },
+      "previous_fp": 221,
+      "previous_tp": 505,
+      "current_fp": 221,
+      "current_tp": 513,
+      "prediction_files_checked": 19,
+      "unchanged_arrays": [
+        "labels",
+        "indices",
+        "phases",
+        "boxes",
+        "tracks",
+        "detected_roles",
+        "detected_object_frames",
+        "transition",
+        "transition_raw",
+        "transition_valid",
+        "transition_gated",
+        "dwell",
+        "dwell_valid",
+        "dwell_age",
+        "dwell_reason",
+        "dwell_entry_context",
+        "process"
+      ],
+      "changed_combined_frames": 2951
+    },
+    "pool": {
+      "previous_experiment36_refit_combined": {
+        "frames": 8154,
+        "positive_frames": 4578,
+        "auroc": 0.6842914769400976,
+        "average_precision": 0.6838840222905306
+      },
+      "matched_rank_control_combined": {
+        "frames": 8154,
+        "positive_frames": 4578,
+        "auroc": 0.6828657178139199,
+        "average_precision": 0.6827491936813359
+      },
+      "previous_fp": 217,
+      "previous_tp": 500,
+      "current_fp": 217,
+      "current_tp": 504,
+      "prediction_files_checked": 19,
+      "unchanged_arrays": [
+        "labels",
+        "indices",
+        "phases",
+        "boxes",
+        "tracks",
+        "detected_roles",
+        "detected_object_frames",
+        "transition",
+        "transition_raw",
+        "transition_valid",
+        "transition_gated",
+        "dwell",
+        "dwell_valid",
+        "dwell_age",
+        "dwell_reason",
+        "dwell_entry_context",
+        "process"
+      ],
+      "changed_combined_frames": 1755
+    },
+    "age": {
+      "previous_experiment36_refit_combined": {
+        "frames": 8154,
+        "positive_frames": 4578,
+        "auroc": 0.6868446003794043,
+        "average_precision": 0.6854543233183756
+      },
+      "matched_rank_control_combined": {
+        "frames": 8154,
+        "positive_frames": 4578,
+        "auroc": 0.6852770044557035,
+        "average_precision": 0.6845463128975272
+      },
+      "previous_fp": 221,
+      "previous_tp": 513,
+      "current_fp": 221,
+      "current_tp": 521,
+      "prediction_files_checked": 19,
+      "unchanged_arrays": [
+        "labels",
+        "indices",
+        "phases",
+        "boxes",
+        "tracks",
+        "detected_roles",
+        "detected_object_frames",
+        "transition",
+        "transition_raw",
+        "transition_valid",
+        "transition_gated",
+        "dwell",
+        "dwell_valid",
+        "dwell_age",
+        "dwell_reason",
+        "dwell_entry_context",
+        "process"
+      ],
+      "changed_combined_frames": 2421
+    }
+  },
+  "rank_changes": {
+    "-1:0": {
+      "previous": 32,
+      "matched_control": 31
+    },
+    "1:0": {
+      "previous": 32,
+      "matched_control": 20
+    }
+  },
+  "existing_asinh_hold_vs_age_by_state": {
+    "0": {
+      "frames": 5599,
+      "visual_changed_frames": 0,
+      "combined_changed_frames": 0,
+      "hold_only_fp": 0,
+      "hold_only_tp": 0,
+      "age_only_fp": 0,
+      "age_only_tp": 0
+    },
+    "1": {
+      "frames": 652,
+      "visual_changed_frames": 636,
+      "combined_changed_frames": 636,
+      "hold_only_fp": 60,
+      "hold_only_tp": 0,
+      "age_only_fp": 0,
+      "age_only_tp": 0
+    },
+    "2": {
+      "frames": 1725,
+      "visual_changed_frames": 0,
+      "combined_changed_frames": 0,
+      "hold_only_fp": 0,
+      "hold_only_tp": 0,
+      "age_only_fp": 0,
+      "age_only_tp": 0
+    },
+    "3": {
+      "frames": 178,
+      "visual_changed_frames": 170,
+      "combined_changed_frames": 170,
+      "hold_only_fp": 0,
+      "hold_only_tp": 16,
+      "age_only_fp": 0,
+      "age_only_tp": 12
+    }
+  },
+  "state_names": {
+    "0": "observed",
+    "1": "no_prior_observation",
+    "2": "missing_within_tau",
+    "3": "stale_missing"
+  },
+  "note": "Existing measured runs only, no new model selection. Previous same-phase control differs in PCA ranks/CDF. Hold/age comparison shares phase model/ranks and full-normal request CDFs but routing differs; a future initial-only gate still requires its own normal q99 validation."
+}

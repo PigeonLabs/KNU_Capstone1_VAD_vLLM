@@ -1,0 +1,9 @@
+{
+  "frozen_protocols_verified": true,
+  "normal_holdout_cells_reconstructed": 30,
+  "test_predictions_reconstructed": 114,
+  "derived_feature_files_checked": 88,
+  "pooled_pca_unchanged": true,
+  "normal_reference_q99_same_pair_process_gate_independently_reconstructed": true,
+  "labels_metrics_events_recomputed": true
+}

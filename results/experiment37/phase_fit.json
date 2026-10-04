@@ -1,0 +1,559 @@
+{
+  "descriptor_names": [
+    "relative_center_x",
+    "relative_center_y",
+    "log_area_ratio",
+    "iou",
+    "anchor_center_x",
+    "anchor_center_y"
+  ],
+  "coordinate_transform": "asinh",
+  "frozen_area_upper": {
+    "1": 0.21158000361228899,
+    "0": 0.6152034895935014
+  },
+  "normal_valid_pairs": 1123,
+  "per_input_valid_pairs": [
+    44,
+    67,
+    50,
+    78,
+    52,
+    72,
+    35,
+    24,
+    66,
+    68,
+    63,
+    67,
+    69,
+    36,
+    32,
+    48,
+    38,
+    54,
+    79,
+    81
+  ],
+  "median": [
+    -0.7588369250297546,
+    -0.5965532660484314,
+    -0.27193203568458557,
+    0.014736372977495193,
+    0.7961103916168213,
+    0.7486045360565186
+  ],
+  "scale_iqr_with_floor": [
+    0.29645538330078125,
+    0.9262671747710556,
+    0.8110888749361038,
+    0.07278591766953468,
+    0.05,
+    0.05
+  ],
+  "cluster_centers_transformed": [
+    [
+      -1.1087329855973145,
+      -0.6950468974670947,
+      -1.1190723440580943,
+      -0.2011035986557942,
+      -0.002673756395902546,
+      -0.007481839834985904
+    ],
+    [
+      -0.25121614265157,
+      -0.12456281205012901,
+      0.286297079124582,
+      0.07017608503304396,
+      0.16340651111710694,
+      0.0025255324904938647
+    ],
+    [
+      0.595018449822774,
+      0.39526712893992666,
+      -0.5641974247632673,
+      1.0297128694938644,
+      0.06580099701326664,
+      0.004894228486192753
+    ],
+    [
+      1.0074354077857308,
+      1.30778469907369,
+      0.3659494088685152,
+      0.07767524104146714,
+      -1.8950256951896949,
+      -3.0642386764137153
+    ]
+  ],
+  "normal_cluster_samples": [
+    98,
+    579,
+    312,
+    134
+  ],
+  "median_normal_relative_position_for_label_permutation": [
+    0.14222503160556257,
+    0.3341772151898734,
+    0.6223150146855869,
+    0.6790721827938376
+  ],
+  "ordering_note": "Normal FIT relative position only orders latent IDs; it is not an inference input.",
+  "semantic_note": "Gates, selection, raw descriptors and normal scaler are fixed. Clusters are not action labels.",
+  "normal_fit_sequences": [
+    "01",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "09",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+  ],
+  "calibration_sequences_excluded": [
+    "02",
+    "08",
+    "10",
+    "12",
+    "15"
+  ],
+  "fit_input_sha256": {
+    "artifacts/experiment36/refit/features/R04/training_01.npz": "7cc31c9d70c3c57691e2f6c13be27590107a72746aabdc4ed204a18d28c8760c",
+    "artifacts/experiment36/refit/features/R04/training_03.npz": "565ade71cce7c8e0ff7f6fa3c65a779411f1efdbe5c533f33abc3a4452f729bd",
+    "artifacts/experiment36/refit/features/R04/training_04.npz": "45247f100907e0f8cb866bbdfcf19fea58fdccc4a11b11bc28cf32839f325d95",
+    "artifacts/experiment36/refit/features/R04/training_05.npz": "60879cba259ad59d851f6e57866bf12ed8f592c4652ff7f138640ead2e60fb77",
+    "artifacts/experiment36/refit/features/R04/training_06.npz": "4a82ae50747ca00350541a2acf3961e649c42be8b8d66a374f072831e426cda9",
+    "artifacts/experiment36/refit/features/R04/training_07.npz": "d1c0314d82d4c7bc43a4abea1c6c5236b6309518e0cf615cf0a269b45210277f",
+    "artifacts/experiment36/refit/features/R04/training_09.npz": "2dfbfd402646ceb4289490a0aee847f75919031349d916f12390eca3f168e581",
+    "artifacts/experiment36/refit/features/R04/training_11.npz": "659ab43b58365024b87e096a2d568bf3094ca493d7551bfecc9d900c8f5f411e",
+    "artifacts/experiment36/refit/features/R04/training_13.npz": "9d51e5c02c422350b72b7e856625dd9c21586671b5f0fee449f7f251e545e1aa",
+    "artifacts/experiment36/refit/features/R04/training_14.npz": "d3387cd21fbbd347e299fae374028b4a37aba8b4532687aab318ccb50c317a1d",
+    "artifacts/experiment36/refit/features/R04/training_16.npz": "bdd167f2dd92c2fe3c485d525b311917723f47532aebaac7e689bd58f0f2cf2d",
+    "artifacts/experiment36/refit/features/R04/training_17.npz": "10363280c2dcd6e8cedb0641b876f8e95174bfccfe2bf9df364a58a12067ab2d",
+    "artifacts/experiment36/refit/features/R04/training_18.npz": "f8e6dfa599c4602a5ec961ff735521663c530ba2fd8e1a9d843fe1d63f8cf840",
+    "artifacts/experiment36/refit/features/R04/training_19.npz": "64966f0a625f8c8fd2e1ae351b509da2d8fbda40a9031504419f93fbf89de929",
+    "artifacts/experiment36/refit/features/R04/training_20.npz": "7518f5e7590bd05aa87a099a5d6d15cc13bcb6f8cf437403be355cb0d178c975",
+    "artifacts/experiment36/refit/features/R04/training_21.npz": "1db7848ecaad8acf7f14de0878e3e82714e92ea37aebe124643544a2f82dd286",
+    "artifacts/experiment36/refit/features/R04/training_22.npz": "0abbeaffb9034cc334b3e466be552c807753032341fdf26c2689c11fc339e0fb",
+    "artifacts/experiment36/refit/features/R04/training_23.npz": "2f739999a6eedf9f36b82ce446e58a0ab6eb7708d93744343abad9bc54801b19",
+    "artifacts/experiment36/refit/features/R04/training_24.npz": "a88eec6073a6e443f31f1443a6f1e8971e007147349f9c100f4e04d4c30a148f",
+    "artifacts/experiment36/refit/features/R04/training_25.npz": "57c4bb8da9fa2b90139388a153fba6a85059a69331f7aaf9e5124ba4181ddba0"
+  },
+  "raw_descriptor_std": [
+    1.1386725116939367,
+    0.767592029858057,
+    0.6945797696904727,
+    0.0652673953120285,
+    0.08087662746819992,
+    0.1791176072770008
+  ],
+  "phase_coordinate_std": {
+    "control": [
+      3.84095744531867,
+      0.8286939781146638,
+      0.8563546994097172,
+      0.8967036124811658,
+      1.6175325493639965,
+      3.582352145540016
+    ],
+    "asinh": [
+      0.7771486864251429,
+      0.6477015624041849,
+      0.6626596594826374,
+      0.6313154199127062,
+      0.720528098610921,
+      0.9986622044728405
+    ]
+  },
+  "nearest_center_squared_distance": {
+    "control": {
+      "mean": 3.243214336030807,
+      "median": 1.2517769328697521,
+      "max": 133.6455565714925
+    },
+    "asinh": {
+      "mean": 0.8730150521205484,
+      "median": 0.42355919853875595,
+      "max": 30.71181446237739
+    }
+  },
+  "distance_note": "Different phase coordinate units: linear versus asinh. Distances cannot be compared as a physical or semantic error.",
+  "normal_fit_contingency_control_rows_asinh_columns": [
+    [
+      98,
+      579,
+      312,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      128
+    ],
+    [
+      0,
+      0,
+      0,
+      4
+    ]
+  ],
+  "diagnostic_asinh_to_control_mapping": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "0": 3
+  },
+  "raw_fit_agreement": 0.09082813891362422,
+  "permutation_adjusted_fit_agreement": 0.6295636687444346,
+  "mapping_used_for_inference": false,
+  "per_video_observed_phase_counts": {
+    "01": {
+      "control": [
+        34,
+        0,
+        8,
+        2
+      ],
+      "asinh": [
+        3,
+        15,
+        16,
+        10
+      ]
+    },
+    "03": {
+      "control": [
+        24,
+        1,
+        42,
+        0
+      ],
+      "asinh": [
+        0,
+        7,
+        17,
+        43
+      ]
+    },
+    "04": {
+      "control": [
+        36,
+        0,
+        14,
+        0
+      ],
+      "asinh": [
+        0,
+        28,
+        8,
+        14
+      ]
+    },
+    "05": {
+      "control": [
+        57,
+        1,
+        20,
+        0
+      ],
+      "asinh": [
+        7,
+        39,
+        11,
+        21
+      ]
+    },
+    "06": {
+      "control": [
+        49,
+        0,
+        3,
+        0
+      ],
+      "asinh": [
+        4,
+        19,
+        26,
+        3
+      ]
+    },
+    "07": {
+      "control": [
+        69,
+        0,
+        3,
+        0
+      ],
+      "asinh": [
+        5,
+        29,
+        35,
+        3
+      ]
+    },
+    "09": {
+      "control": [
+        27,
+        0,
+        7,
+        1
+      ],
+      "asinh": [
+        6,
+        19,
+        2,
+        8
+      ]
+    },
+    "11": {
+      "control": [
+        20,
+        0,
+        4,
+        0
+      ],
+      "asinh": [
+        3,
+        15,
+        2,
+        4
+      ]
+    },
+    "13": {
+      "control": [
+        63,
+        0,
+        3,
+        0
+      ],
+      "asinh": [
+        4,
+        37,
+        22,
+        3
+      ]
+    },
+    "14": {
+      "control": [
+        67,
+        0,
+        1,
+        0
+      ],
+      "asinh": [
+        8,
+        34,
+        25,
+        1
+      ]
+    },
+    "16": {
+      "control": [
+        61,
+        0,
+        2,
+        0
+      ],
+      "asinh": [
+        5,
+        35,
+        21,
+        2
+      ]
+    },
+    "17": {
+      "control": [
+        53,
+        0,
+        14,
+        0
+      ],
+      "asinh": [
+        9,
+        24,
+        20,
+        14
+      ]
+    },
+    "18": {
+      "control": [
+        68,
+        0,
+        1,
+        0
+      ],
+      "asinh": [
+        2,
+        63,
+        3,
+        1
+      ]
+    },
+    "19": {
+      "control": [
+        36,
+        0,
+        0,
+        0
+      ],
+      "asinh": [
+        8,
+        23,
+        5,
+        0
+      ]
+    },
+    "20": {
+      "control": [
+        30,
+        0,
+        2,
+        0
+      ],
+      "asinh": [
+        5,
+        20,
+        5,
+        2
+      ]
+    },
+    "21": {
+      "control": [
+        47,
+        0,
+        1,
+        0
+      ],
+      "asinh": [
+        9,
+        23,
+        15,
+        1
+      ]
+    },
+    "22": {
+      "control": [
+        36,
+        0,
+        2,
+        0
+      ],
+      "asinh": [
+        3,
+        16,
+        17,
+        2
+      ]
+    },
+    "23": {
+      "control": [
+        54,
+        0,
+        0,
+        0
+      ],
+      "asinh": [
+        3,
+        41,
+        10,
+        0
+      ]
+    },
+    "24": {
+      "control": [
+        78,
+        0,
+        0,
+        1
+      ],
+      "asinh": [
+        10,
+        45,
+        23,
+        1
+      ]
+    },
+    "25": {
+      "control": [
+        80,
+        0,
+        1,
+        0
+      ],
+      "asinh": [
+        4,
+        47,
+        29,
+        1
+      ]
+    }
+  },
+  "old_location": [
+    -0.7588369250297546,
+    -0.5965532660484314,
+    -0.27193203568458557,
+    0.014736372977495193,
+    0.7961103916168213,
+    0.7486045360565186
+  ],
+  "old_scale": [
+    0.29645538330078125,
+    0.9262671747710556,
+    0.8110888749361038,
+    0.07278591766953468,
+    0.05,
+    0.05
+  ],
+  "old_centers": [
+    [
+      -0.08658805483269605,
+      -0.015600845466325008,
+      -0.18254279410380186,
+      0.47086606194829866,
+      0.12876603673273312,
+      0.0022804291110922748
+    ],
+    [
+      85.36170827489255,
+      -0.17269141856528045,
+      2.13542039901231,
+      -0.20246186967651925,
+      -15.645380206406116,
+      -1.3869118690490723
+    ],
+    [
+      1.20850782805262,
+      1.8876198466037704,
+      0.32090780690541426,
+      0.25945618772718515,
+      -3.252512807957828,
+      -11.202919045463197
+    ],
+    [
+      12.819697464420825,
+      2.4546835310286994,
+      2.2886985533843953,
+      -0.20246186967651925,
+      -14.396771565079689,
+      -7.022014856338501
+    ]
+  ]
+}

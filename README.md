@@ -43,7 +43,8 @@
 | 실험 34 | eligible anchor의 semantic 근거 우선 선택 | 완료: 일부 역할 선택 변화, track 단절 증가·탐지 저하 | [결과·의의·추천 3개](docs/EXPERIMENT34.md) |
 | 실험 35 | 자발적 anchor 교체의 연속 우위 확인 | 완료: 왕복 감소·구간 증가, ranking/recall·정상 오탐 악화 | [결과·의의·추천 3개](docs/EXPERIMENT35.md) |
 | 실험 36 | 현재 선택 정책에 맞춘 정상 phase 재학습 | 완료: 오탐 감소·recall 감소, 동일 쌍 공정 전환 소실 | [결과·의의·추천 3개](docs/EXPERIMENT36.md) |
-| 다음 실험 37 | phase 거리의 극단값 영향 완화 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT37_PLAN.md) |
+| 실험 37 | asinh phase 거리의 극단값 영향 완화 | 완료: phase 지원/전환 증가, 정상·test 오탐 증가 및 초기 phase0 문제 확인 | [결과·의의·추천 3개](docs/EXPERIMENT37.md) |
+| 다음 실험 38 | 첫 관측 전 phase 미확정 처리 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT38_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1199,3 +1200,33 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **역할 및 기하 descriptor 근거 보강**: 작은 anchor box·바이스/칼날 혼동과 실제 관계 변화를 구분하는 정상 진단 | 희소 phase 1의 두 anchor 폭은 약 .027/.029이고 상대 x는 21.17/27.93. 기존 역할 오류는 선택 고정으로 그대로이며 단일 상태가 FIT 88.07%를 차지 | 정상 역할 주석·bbox 근거를 확보하고 후보 필터 또는 descriptor 한 요소만 대조. 작은 box를 자동 오검출로 단정하거나 현재 24개 목적 표집을 정확도로 환산하지 않음 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT36.md) · [비교 CSV](results/experiment36/comparison.csv) · [정상 phase 교차표](results/experiment36/normal_phase_contingency.png) · [검증](results/experiment36/validation.json) · [1순위를 구체화한 실험 37 계획](docs/EXPERIMENT37_PLAN.md)
+
+
+## 실험 37 — phase 좌표의 극단값 영향 완화
+
+공유 PCA rank를 맞춘 선형 control과 asinh 대조다. control의 global/anchor phase0 rank도32→31/20으로 바뀌어 실험36과 최종 점수가 다르다.
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 FPR (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| control_hold | 0.6660 / 0.6724 | 0.6662 / 0.6721 | 6.18% (221) | 11.21% (513) | 14 |
+| control_pool | 0.6820 / 0.6829 | 0.6829 / 0.6827 | 6.07% (217) | 11.01% (504) | 15 |
+| control_age | 0.6843 / 0.6846 | 0.6853 / 0.6845 | 6.18% (221) | 11.38% (521) | 14 |
+| asinh_hold | 0.6187 / 0.6363 | 0.6245 / 0.6377 | 9.93% (355) | 13.52% (619) | 14 |
+| asinh_pool | 0.6860 / 0.6814 | 0.6916 / 0.6815 | 7.47% (267) | 12.28% (562) | 14 |
+| asinh_age | 0.6852 / 0.6809 | 0.6906 / 0.6812 | 8.25% (295) | 13.43% (615) | 13 |
+
+![실험 37 비교](results/experiment37/asinh_phase_comparison.png)
+
+**의의:** 동일 선택/descriptor·정상 median/IQR에서 `asinh`를 적용했다. 이전 희소6 samples의 제곱 좌표 에너지 비중은44.09%→5.38%, 정상 phase 지원은989/2/128/4→98/579/312/134다. 동일 쌍 내부 phase 전환은 FIT/calibration0/0→51/14, strict complete0/0→17/4로 늘었다. 거리 정의와 공정 관측 근거의 관계를 분리해 확인했다.
+
+**보완할 점:** normal holdout FP는20/32/20→44/40/44, test FP도 증가했다. AP는 모든 경로에서 낮아지고 pool/age는 구간을 하나씩 잃었다. 체류 독자 FP13/TP19는 한 영상에서만 발생하고 새 구간은0이다. 기존 지원13/16 대비 동일 쌍 완결은9/4로 부족하다. hold는 첫 관계 관측 전 정상652 frames에서 phase0을 요청해 FP60을 냈고 pool/age는0이다. 의미 GT·독립 평가·비용 측정은 없다. 테스트157개 통과.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **첫 관측 전 phase 미확정 처리**: 관계를 한 번도 관측하지 못했으면 외형만 pooled bank로 요청하고, 첫 관측 이후 기존 hold/pool/age 정책을 유지 | asinh hold는 처음부터 숫자 phase0을 요청. 첫 관측 전 test 정상 652 frames 중 FP60, 동일 구간 pool/age FP0. 정상 FIT/calibration도 492/80 frames의 미확정 구간 존재 | phase/선택/PCA·공정/정상 CDF를 고정 가능한 범위에서 검증하고 q99는 정상에서만 재보정. 초기 상태 ID에 대한 의존성·초기/이후 구간·prefix·holdout·전체 성능을 분리. 테스트에서 본 FP60 제거를 성능 보장으로 삼지 않음 |
+| 2 | **체류 결합의 동일 객체 쌍 근거 확보**: 기존 분포를 유지한 채 실제 진입 이후 같은 쌍이 이어지는지 결합 gate로 대조 | 체류 독자 FP13/TP19는 모두 1→2, 추가 구간0. 기존 0→1/1→2 지원13/16 대비 strict complete9/4, 정상 가용338/51 중 동일 쌍 진입 근거308/50 | 분포 재학습과 결합 gate를 동시에 바꾸지 않고 차단 경보·가용성·지원 불일치를 보고. 최소 지원10을 9로 낮추지 않으며 참 이상 지속을 차단할 수 있음 |
+| 3 | **역할 및 phase 의미의 정상 근거 검증**: 새 상태 분할이 역할 혼동/정적 외형과 실제 관계 변화 중 무엇을 반영하는지 확인 | 정상 동일 쌍 전환51/14와 strict complete17/4를 확보했지만 action GT 없음. 예전 희소 상태와 phase2는 모두 새 phase3으로 합쳐지고 24개 사례의 선택은 그대로 | 정상 보조 역할/경계 주석과 sequence별 관찰을 분리하고 실제 의미 정확도·영상 집중·후속 탐지를 검증. balanced cluster, track 동일성, median 시간 순서를 동작 정답으로 쓰지 않음 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT37.md) · [비교 CSV](results/experiment37/comparison.csv) · [정상 phase 교차표](results/experiment37/normal_phase_contingency.png) · [검증](results/experiment37/validation.json) · [1순위를 구체화한 실험 38 계획](docs/EXPERIMENT38_PLAN.md)

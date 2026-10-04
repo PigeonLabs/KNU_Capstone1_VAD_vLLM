@@ -1,0 +1,182 @@
+{
+  "fit": {
+    "samples": 1960,
+    "frames": 7812,
+    "anchor_selection_changed_samples": 0,
+    "phase_changed_samples": 1690,
+    "phase_changed_frames": 6732,
+    "descriptor_changed_samples": 0,
+    "groups": {
+      "control": {
+        "pair_changes": {
+          "anchor": 40,
+          "target": 42,
+          "both": 3
+        },
+        "episode_status": {
+          "unknown_entry": 244
+        },
+        "all_phase_samples": [
+          1606,
+          2,
+          335,
+          17
+        ],
+        "observed_phase_samples": [
+          989,
+          2,
+          128,
+          4
+        ],
+        "identity_complete_contexts": {}
+      },
+      "asinh": {
+        "pair_changes": {
+          "anchor": 40,
+          "target": 42,
+          "both": 3
+        },
+        "episode_status": {
+          "unknown_entry": 244,
+          "right_censored": 34,
+          "complete": 17
+        },
+        "all_phase_samples": [
+          253,
+          875,
+          478,
+          354
+        ],
+        "observed_phase_samples": [
+          98,
+          579,
+          312,
+          134
+        ],
+        "identity_complete_contexts": {
+          "0->1": 9,
+          "1->2": 4,
+          "2->1": 4
+        }
+      }
+    }
+  },
+  "calibration": {
+    "samples": 482,
+    "frames": 1920,
+    "anchor_selection_changed_samples": 0,
+    "phase_changed_samples": 442,
+    "phase_changed_frames": 1760,
+    "descriptor_changed_samples": 0,
+    "groups": {
+      "control": {
+        "pair_changes": {
+          "target": 8,
+          "anchor": 21
+        },
+        "episode_status": {
+          "unknown_entry": 79
+        },
+        "all_phase_samples": [
+          380,
+          0,
+          100,
+          2
+        ],
+        "observed_phase_samples": [
+          254,
+          0,
+          42,
+          1
+        ],
+        "identity_complete_contexts": {}
+      },
+      "asinh": {
+        "pair_changes": {
+          "target": 8,
+          "anchor": 21
+        },
+        "episode_status": {
+          "unknown_entry": 79,
+          "right_censored": 10,
+          "complete": 4
+        },
+        "all_phase_samples": [
+          39,
+          202,
+          140,
+          101
+        ],
+        "observed_phase_samples": [
+          18,
+          133,
+          104,
+          42
+        ],
+        "identity_complete_contexts": {
+          "0->1": 2,
+          "2->1": 1,
+          "1->2": 1
+        }
+      }
+    }
+  },
+  "test": {
+    "samples": 2047,
+    "frames": 8154,
+    "anchor_selection_changed_samples": 0,
+    "phase_changed_samples": 1782,
+    "phase_changed_frames": 7094,
+    "descriptor_changed_samples": 0,
+    "groups": {
+      "control": {
+        "pair_changes": {
+          "both": 1,
+          "target": 48,
+          "anchor": 32
+        },
+        "episode_status": {
+          "unknown_entry": 237
+        },
+        "all_phase_samples": [
+          1870,
+          11,
+          152,
+          14
+        ],
+        "observed_phase_samples": [
+          1328,
+          5,
+          69,
+          4
+        ],
+        "identity_complete_contexts": null
+      },
+      "asinh": {
+        "pair_changes": {
+          "both": 1,
+          "target": 48,
+          "anchor": 32
+        },
+        "episode_status": {
+          "unknown_entry": 237,
+          "complete": 14,
+          "right_censored": 32
+        },
+        "all_phase_samples": [
+          251,
+          813,
+          806,
+          177
+        ],
+        "observed_phase_samples": [
+          83,
+          698,
+          547,
+          78
+        ],
+        "identity_complete_contexts": null
+      }
+    }
+  }
+}

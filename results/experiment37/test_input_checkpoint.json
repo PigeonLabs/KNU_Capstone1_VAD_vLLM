@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-04T23:41:06.618096+00:00",
+  "file_sha256": {
+    "artifacts/experiment36/refit/features/R04/testing_01.npz": "e040ffa1134c277e087126962bfa16897cb1b033bb19b0a774fc6c76225d0e94",
+    "artifacts/experiment36/refit/features/R04/testing_02.npz": "1ba14ec5e601a42b68001cd7a51e3ca649ea3fcb86495808c16f4060ee921f9f",
+    "artifacts/experiment36/refit/features/R04/testing_03.npz": "424e273f0193d51203a04693bde5af2c14dd5e8919d0dec99db3a24ed2b4f464",
+    "artifacts/experiment36/refit/features/R04/testing_04.npz": "16ec9150735908f73f60919d4f824bc6b0879fad3936efa1139ab221a1e8ec2a",
+    "artifacts/experiment36/refit/features/R04/testing_05.npz": "ec7530bcd1268104a00654bd7488576b68c25470a0d45f312e66dce1522bf5ce",
+    "artifacts/experiment36/refit/features/R04/testing_06.npz": "29f8795fabe6dc48a9badd0cad0d0b67ab9a250675309fe99a3ac9bbd701a48f",
+    "artifacts/experiment36/refit/features/R04/testing_07.npz": "01862c4fcc77e2da7c6db3a935eae4f395324ea33b6df91ff0a2287df07fd109",
+    "artifacts/experiment36/refit/features/R04/testing_08.npz": "65d4e3f59111fb4be67d75af56eba796d11ebe15a176594d28918894e39be1fa",
+    "artifacts/experiment36/refit/features/R04/testing_09.npz": "ffb55bc30b90f4906f845e97b3d9d558d697798d5508c2477e16714ef66dabaa",
+    "artifacts/experiment36/refit/features/R04/testing_10.npz": "5ef865c9181669aafbde2048521dd53d43295c3595e2e1f6dd55984c5b819ef3",
+    "artifacts/experiment36/refit/features/R04/testing_11.npz": "6177877d73f1510f4ac976c317193af3c9542eb1823e978980d65696e966fb63",
+    "artifacts/experiment36/refit/features/R04/testing_12.npz": "082a9e6bc1d802b56cb98e1ad03f6a2ec11388bfd0e9c21a548cbfc84f704f4b",
+    "artifacts/experiment36/refit/features/R04/testing_13.npz": "5dd6e48cd24d6321bfb7b65bca07458b9eb8c9caade4d56b5da9009f70c5ed9b",
+    "artifacts/experiment36/refit/features/R04/testing_14.npz": "864a1db9113856b8d261dcd1b657174c81351553818298225cfb54bf452c9294",
+    "artifacts/experiment36/refit/features/R04/testing_15.npz": "4750030f9935a11eedc4e64b6d7041384f3da702904dae01a892f61b74a95fa0",
+    "artifacts/experiment36/refit/features/R04/testing_16.npz": "0235ad0b3fca87718ff39cd4e20f93e37209c18b17da5ac901b116b6a125de22",
+    "artifacts/experiment36/refit/features/R04/testing_17.npz": "09584915fb2e16972d33099691f2087024b3d28658e7bc07bc994ea71d423bf1",
+    "artifacts/experiment36/refit/features/R04/testing_18.npz": "5f328dfc6c78d8e5ab9fab8e695c892c7e82c195917d022342d0a62d9ce27536",
+    "artifacts/experiment36/refit/features/R04/testing_19.npz": "160b1bd575124dde65c6deef0f6191a963072bb6cef224a1658139de32972333"
+  }
+}

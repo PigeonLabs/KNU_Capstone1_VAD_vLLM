@@ -1,0 +1,32 @@
+{
+  "37_control_hold": {},
+  "37_control_pool": {},
+  "37_control_age": {},
+  "37_asinh_hold": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "37_asinh_pool": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "37_asinh_age": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  }
+}
