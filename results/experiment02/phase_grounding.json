@@ -1,0 +1,656 @@
+{
+  "experiment": "02",
+  "motivation": "Experiment 01 has zero FIT samples in semantic middle phase; replace global CLIP phase lookup with normal-track spatial grounding.",
+  "fit_sequences": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "10",
+    "12",
+    "15",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "32",
+    "33",
+    "34"
+  ],
+  "parameters": {
+    "role": 0,
+    "k": 3,
+    "min_track_samples": 3,
+    "min_displacement": 0.1,
+    "band_padding": 0.03,
+    "smoothing": 3,
+    "seed": 42
+  },
+  "grounding_model": {
+    "fit_dynamic_tracks": 14,
+    "fit_dynamic_observations": 150,
+    "dominant_axis": "x",
+    "perpendicular_band": [
+      0.3365556585788727,
+      0.463925096988678
+    ],
+    "phase_centers": [
+      0.10868874192237854,
+      0.4191330671310425,
+      0.825532078742981
+    ],
+    "note": "Phase indices follow increasing spatial coordinate for the R01 left/center/right descriptions; not a general learned action grammar."
+  },
+  "sequences": [
+    {
+      "sequence_key": "testing_01",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 1,
+      "held_phase_samples": 57,
+      "phase_changed_samples": 20,
+      "phase_counts": [
+        44,
+        0,
+        14
+      ]
+    },
+    {
+      "sequence_key": "testing_02",
+      "sampled_frames": 64,
+      "direct_bbox_observations": 22,
+      "held_phase_samples": 42,
+      "phase_changed_samples": 39,
+      "phase_counts": [
+        25,
+        39,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_03",
+      "sampled_frames": 103,
+      "direct_bbox_observations": 9,
+      "held_phase_samples": 94,
+      "phase_changed_samples": 35,
+      "phase_counts": [
+        68,
+        35,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_04",
+      "sampled_frames": 48,
+      "direct_bbox_observations": 7,
+      "held_phase_samples": 41,
+      "phase_changed_samples": 15,
+      "phase_counts": [
+        34,
+        2,
+        12
+      ]
+    },
+    {
+      "sequence_key": "testing_05",
+      "sampled_frames": 73,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 73,
+      "phase_changed_samples": 6,
+      "phase_counts": [
+        73,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_06",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 16,
+      "held_phase_samples": 43,
+      "phase_changed_samples": 39,
+      "phase_counts": [
+        24,
+        15,
+        20
+      ]
+    },
+    {
+      "sequence_key": "testing_07",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 3,
+      "held_phase_samples": 55,
+      "phase_changed_samples": 15,
+      "phase_counts": [
+        47,
+        0,
+        11
+      ]
+    },
+    {
+      "sequence_key": "testing_08",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 20,
+      "held_phase_samples": 39,
+      "phase_changed_samples": 38,
+      "phase_counts": [
+        21,
+        38,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_09",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 6,
+      "held_phase_samples": 52,
+      "phase_changed_samples": 33,
+      "phase_counts": [
+        28,
+        24,
+        6
+      ]
+    },
+    {
+      "sequence_key": "testing_10",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_11",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 5,
+      "held_phase_samples": 53,
+      "phase_changed_samples": 4,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_12",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 5,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_13",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 19,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_14",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 7,
+      "held_phase_samples": 51,
+      "phase_changed_samples": 17,
+      "phase_counts": [
+        50,
+        8,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_15",
+      "sampled_frames": 57,
+      "direct_bbox_observations": 9,
+      "held_phase_samples": 48,
+      "phase_changed_samples": 32,
+      "phase_counts": [
+        57,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_01",
+      "sampled_frames": 52,
+      "direct_bbox_observations": 9,
+      "held_phase_samples": 43,
+      "phase_changed_samples": 36,
+      "phase_counts": [
+        16,
+        32,
+        4
+      ]
+    },
+    {
+      "sequence_key": "training_02",
+      "sampled_frames": 54,
+      "direct_bbox_observations": 25,
+      "held_phase_samples": 29,
+      "phase_changed_samples": 36,
+      "phase_counts": [
+        18,
+        21,
+        15
+      ]
+    },
+    {
+      "sequence_key": "training_03",
+      "sampled_frames": 51,
+      "direct_bbox_observations": 7,
+      "held_phase_samples": 44,
+      "phase_changed_samples": 19,
+      "phase_counts": [
+        45,
+        6,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_04",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 28,
+      "held_phase_samples": 30,
+      "phase_changed_samples": 39,
+      "phase_counts": [
+        19,
+        25,
+        14
+      ]
+    },
+    {
+      "sequence_key": "training_05",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 8,
+      "held_phase_samples": 51,
+      "phase_changed_samples": 38,
+      "phase_counts": [
+        21,
+        38,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_06",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 30,
+      "held_phase_samples": 28,
+      "phase_changed_samples": 32,
+      "phase_counts": [
+        26,
+        14,
+        18
+      ]
+    },
+    {
+      "sequence_key": "training_07",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 11,
+      "held_phase_samples": 48,
+      "phase_changed_samples": 39,
+      "phase_counts": [
+        20,
+        39,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_08",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 26,
+      "held_phase_samples": 32,
+      "phase_changed_samples": 32,
+      "phase_counts": [
+        26,
+        12,
+        20
+      ]
+    },
+    {
+      "sequence_key": "training_09",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 12,
+      "held_phase_samples": 47,
+      "phase_changed_samples": 40,
+      "phase_counts": [
+        19,
+        40,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_10",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 27,
+      "held_phase_samples": 32,
+      "phase_changed_samples": 40,
+      "phase_counts": [
+        19,
+        25,
+        15
+      ]
+    },
+    {
+      "sequence_key": "training_11",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 59,
+      "phase_changed_samples": 1,
+      "phase_counts": [
+        59,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_12",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_13",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_14",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 1,
+      "held_phase_samples": 57,
+      "phase_changed_samples": 13,
+      "phase_counts": [
+        45,
+        0,
+        13
+      ]
+    },
+    {
+      "sequence_key": "training_15",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 59,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        59,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_16",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_17",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 59,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        59,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_18",
+      "sampled_frames": 57,
+      "direct_bbox_observations": 1,
+      "held_phase_samples": 56,
+      "phase_changed_samples": 8,
+      "phase_counts": [
+        49,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_19",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 59,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        59,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_20",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 3,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_21",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 16,
+      "held_phase_samples": 42,
+      "phase_changed_samples": 41,
+      "phase_counts": [
+        19,
+        39,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_22",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 10,
+      "held_phase_samples": 49,
+      "phase_changed_samples": 38,
+      "phase_counts": [
+        21,
+        38,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_23",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 7,
+      "held_phase_samples": 52,
+      "phase_changed_samples": 38,
+      "phase_counts": [
+        21,
+        38,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_24",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 8,
+      "held_phase_samples": 50,
+      "phase_changed_samples": 36,
+      "phase_counts": [
+        22,
+        36,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_25",
+      "sampled_frames": 57,
+      "direct_bbox_observations": 12,
+      "held_phase_samples": 45,
+      "phase_changed_samples": 38,
+      "phase_counts": [
+        19,
+        38,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_26",
+      "sampled_frames": 60,
+      "direct_bbox_observations": 3,
+      "held_phase_samples": 57,
+      "phase_changed_samples": 0,
+      "phase_counts": [
+        60,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_27",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 8,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_28",
+      "sampled_frames": 57,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 57,
+      "phase_changed_samples": 1,
+      "phase_counts": [
+        57,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_29",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 2,
+      "held_phase_samples": 57,
+      "phase_changed_samples": 39,
+      "phase_counts": [
+        59,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_30",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 31,
+      "held_phase_samples": 27,
+      "phase_changed_samples": 38,
+      "phase_counts": [
+        20,
+        18,
+        20
+      ]
+    },
+    {
+      "sequence_key": "training_31",
+      "sampled_frames": 59,
+      "direct_bbox_observations": 3,
+      "held_phase_samples": 56,
+      "phase_changed_samples": 30,
+      "phase_counts": [
+        34,
+        25,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_32",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 5,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_33",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 1,
+      "held_phase_samples": 57,
+      "phase_changed_samples": 25,
+      "phase_counts": [
+        33,
+        25,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_34",
+      "sampled_frames": 58,
+      "direct_bbox_observations": 0,
+      "held_phase_samples": 58,
+      "phase_changed_samples": 41,
+      "phase_counts": [
+        58,
+        0,
+        0
+      ]
+    }
+  ],
+  "only_phases_changed": true,
+  "test_labels_used_for_grounding": false,
+  "missing_policy": "Hold prior phase; before first observation use phase 0. Smoothing uses last three valid observations, which may be stale across missing intervals.",
+  "limitations": [
+    "R01-specific increasing spatial phase order.",
+    "Normal detector track errors may contaminate path estimation.",
+    "Missing detections remain unsolved and are explicitly counted.",
+    "Not validation of semantic phase accuracy."
+  ]
+}

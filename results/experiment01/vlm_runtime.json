@@ -31,7 +31,7 @@
     "1"
   ],
   "llama_cpp_commit": "1506d39e76d1a6694a3a9412ed3116feb7b37ac1",
-  "gpu_offload_note": "all explicitly requested; VRAM allocation observed separately; model metadata hash pending",
+  "gpu_offload_note": "all explicitly requested; llama process allocated 32614 MiB VRAM during completed multimodal inference.",
   "gguf_metadata": {
     "architecture": "qwen35",
     "name": "Qwen3.8-27B",
@@ -40,5 +40,15 @@
   },
   "observed_llama_gpu_memory_mib": 32614,
   "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
-  "llama_cpp_worktree_note": "Two pre-existing deleted, unrelated template files observed; not modified by this experiment."
+  "llama_cpp_worktree_note": "Two pre-existing deleted, unrelated template files observed; not modified by this experiment.",
+  "gguf_sha256": {
+    "Qwen3.8-27B-Q8_0.gguf": {
+      "sha256": "aab65c67ef0dad127960efef9247f1832bca105faa1c7a052cc039b223cf86a1",
+      "bytes": 28595763648
+    },
+    "mmproj-Qwen3.8-27B-Q8_0.gguf": {
+      "sha256": "2e968a6af97ce35d8971890b257b9b7edabf20ad91450501fa53162a19ee33eb",
+      "bytes": 629247008
+    }
+  }
 }

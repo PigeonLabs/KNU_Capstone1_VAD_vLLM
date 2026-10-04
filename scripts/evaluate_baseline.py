@@ -22,9 +22,10 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--data-root',type=Path,required=True)
     p.add_argument('--config',type=Path,default=Path('configs/experiment01.json'))
     args=p.parse_args();cfg=json.loads(args.config.read_text());scene=cfg['scene']
-    out=Path('results/experiment01');process=json.loads((out/'process_discovery.json').read_text())['process']
+    experiment='experiment'+cfg['experiment']
+    out=Path('results')/experiment;process=json.loads(Path('results/experiment01/process_discovery.json').read_text())['process']
     split=json.loads(Path('results/stage00/splits.json').read_text())[scene]
-    root=Path('artifacts/experiment01/features')/scene
+    root=Path('artifacts')/experiment/'features'/scene
     def load(part,seq):
         with np.load(root/f'{part}_{seq}.npz',allow_pickle=False) as f:return dict(f)
     fit=[load('training',seq) for seq in split['fit']]
@@ -33,7 +34,7 @@ def main():
     with threadpool_limits(limits=4):
         model.fit(fit);model.calibrate(cal)
         predictions=[];all_labels=[];all_scores={k:[] for k in ['visual','process','combined']};rows=[]
-        cache_out=Path('artifacts/experiment01/predictions');cache_out.mkdir(parents=True,exist_ok=True)
+        cache_out=Path('artifacts')/experiment/'predictions';cache_out.mkdir(parents=True,exist_ok=True)
         for seq in sorted((args.data_root/scene/'testing/frames').iterdir()):
             if not seq.is_dir():continue
             data=load('testing',seq.name)
@@ -65,9 +66,9 @@ def main():
                 'subspaces':[{'role':k[0],'phase':k[1],'samples':v.n,'rank':v.rank} for k,v in sorted(model.spaces.items())],
                 'transition_probabilities':model.transition.tolist(),
                 'limitations':['Single R01 scene, single split/seed; not full IPAD.','No phase/object ground truth; no localization accuracy claimed.',
-                               'Geometry/trajectory recorded but not used in anomaly scores in experiment 01.',
+                               'Appearance scoring excludes direct geometry residuals; experiment 02 uses geometry only for phase estimation.',
                                'Missed objects have no crop score; global branch remains.','PCA fallback pools normal phases if support is insufficient.',
-                               'CLIP semantic phase assignment is an unverified proxy.','Frame-level AUPRC is reported as average precision (step integral).',
+                               'Phase assignments are proxies, not ground truth.','Frame-level AUPRC is reported as average precision (step integral).',
                                'Q99 alarm uses strict >; no per-test-video normalization.']}
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
@@ -77,7 +78,7 @@ def main():
     for (role,phase),space in model.spaces.items():
         arrays[f'mean_{role}_{phase}']=space.mean;arrays[f'basis_{role}_{phase}']=space.basis
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
-    np.savez_compressed('artifacts/experiment01/normal_model.npz',**arrays)
+    np.savez_compressed(Path('artifacts')/experiment/'normal_model.npz',**arrays)
     print(json.dumps(result,indent=2))
 
 

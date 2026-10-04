@@ -1,0 +1,12 @@
+{
+  "scene": "R01",
+  "test_frames": 3685,
+  "test_sequences": 15,
+  "single_seed": 42,
+  "combined_auroc_delta": 0.05875300232181735,
+  "combined_ap_delta": 0.039477996509027724,
+  "confidence_interval": null,
+  "interpretation": "Descriptive development-set result; increased AUROC/AP and recall, but increased false alarms. No statistical significance or final held-out performance claim.",
+  "next_recommended_improvement": "Improve transported-product grounding and explicitly handle missing observations before extending process reasoning.",
+  "next_experiment_status": "not implemented; no further experiment matrix planned"
+}

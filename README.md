@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 데이터 정리 (Stage 00) | IPAD 16개 장면 전체 | 안전한 로더·평가 마스크 완료, 정확한 재라벨링은 미해결 | 아래 표 및 [기계 판독 결과](results/stage00/summary.json) |
 | 실험 01 | R01 전체 학습/테스트를 사용하는 기본 파이프라인 pilot | 완료: R01 15개 테스트 영상 평가 | [결과](results/experiment01/metrics.json) · [설정](configs/experiment01.json) |
-| 실험 02 | 정상 trajectory 기반 phase 추정 | 실험 01 결과에 따라 설계 | 아래 Recommended improvements |
+| 실험 02 | 정상 trajectory 기반 phase 추정 | 완료: phase만 교체한 비교 | [결과와 한계](docs/EXPERIMENT02.md) |
 
 ## Stage 00 — 데이터 정합성과 시간축
 
@@ -90,6 +90,29 @@ export PYTHONPATH=src
 - **외형 정보의 한계:** crop 정규화로 위치 정보를 잃으며, motion/관계는 아직 scoring에 사용하지 않습니다.
 
 **실험 02의 단일 변경:** detector, crop 특징, encoder, split, sampling, PCA/scoring 규칙은 그대로 유지하고 phase 추정만 바꿉니다. 정상 FIT에서 실제로 이동한 product-role track으로 이동 경로와 3개 공간 상태를 적합하고, test-time에는 현재 bbox와 과거 상태만 사용합니다. 누락 시 이전 phase를 유지하며 그 비율을 공개합니다. 위치 정답·test label·미래 프레임은 사용하지 않습니다. 이는 R01의 공간적 진행 proxy이며 일반 공정 grammar 학습으로 주장하지 않습니다. 그 이후 실험은 아직 설계하지 않습니다.
+
+## 실험 02 결과와 비교
+
+실험 01의 검출·encoder 특징을 재사용하고 **phase 추정만** 정상 trajectory로 교체했습니다. `phases` 이외의 입력 배열이 모두 동일한지 검사했습니다. 상세 근거는 [실험 02 문서](docs/EXPERIMENT02.md)에 있습니다.
+
+| R01 평가 | 실험 01 | 실험 02 |
+|---|---:|---:|
+| Combined AUROC | 0.5371 | 0.5959 |
+| Combined average precision | 0.3636 | 0.4031 |
+| Process AUROC | 0.4942 | 0.5471 |
+| 정상 q99에서 테스트 정상 프레임 오탐률 | 6.95% | 14.85% |
+| 정상 q99에서 테스트 이상 프레임 recall | 5.98% | 23.37% |
+| FIT phase 0/1/2 샘플 수 | 1363 / 0 / 193 | 998 / 444 / 114 |
+
+![실험 01–02 비교](results/comparison01_02/comparison.png)
+
+**Ranking은 개선됐지만 오탐도 증가했습니다.** 각 모델의 정상 calibration에서 결정한 q99를 그대로 적용한 결과입니다. 동일 test FPR 비교나 통계적 유의성 주장이 아닙니다.
+
+또한 공간 phase를 직접 관측할 수 있었던 bbox는 전체 샘플의 **383/2893 = 13.24%**뿐입니다. 나머지는 이전 phase를 유지했습니다. 상태 점유율이 달라졌다는 것만으로 semantic phase 정확도를 주장하지 않습니다. 현재 병목은 검출 품질·관측 누락입니다.
+
+**다음 Recommended improvement:** 특정 색상에 의존하는 제품 prompt와 고정 배경 오검출을 보완하고, 정상 motion으로 제품 후보를 검증합니다. 먼저 작은 객체 GT subset에서 제품 recall·오검출·관측 누락 길이를 측정하는 것이 필요합니다. 실험 03은 아직 실행하지 않았고 전체 후속 실험은 미리 기획하지 않았습니다. R01은 이제 개발 장면이며 최종 검증 결과로 간주하지 않습니다.
+
+[실험 02 지표](results/experiment02/metrics.json) · [phase 관측 진단](results/experiment02/phase_grounding.json) · [비교 CSV](results/comparison01_02/metrics.csv)
 
 ## 로컬 VLM
 
