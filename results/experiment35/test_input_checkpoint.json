@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-04T23:06:32.984557+00:00",
+  "file_sha256": {
+    "artifacts/experiment34/semantic/features/R04/testing_01.npz": "bc48af1d10e9d0779440973460a254758a01f9ec4aed18ff0229df4e4041d44d",
+    "artifacts/experiment34/semantic/features/R04/testing_02.npz": "31d6ff8f1293370120e1cd804df0c093943352a7dd5165f638b48e37518968cb",
+    "artifacts/experiment34/semantic/features/R04/testing_03.npz": "ceb26aeff1dd77e25076b2d9b99cfbdb23bba1c8f37b60f4bd2b3ccc0ce9b327",
+    "artifacts/experiment34/semantic/features/R04/testing_04.npz": "15382a548b91066f4dd221f6219676e065134ffcf787e9f20aaba516c9e1ed88",
+    "artifacts/experiment34/semantic/features/R04/testing_05.npz": "703ce0e775b148c629ed9a579c813b6d9fc08925604ff25dc0ebce1f8034ae30",
+    "artifacts/experiment34/semantic/features/R04/testing_06.npz": "34deb99cc39f6e5c02e53f0913fd47c40de2e0d864a6e8e27e33ad7e3e3de335",
+    "artifacts/experiment34/semantic/features/R04/testing_07.npz": "f55e14cf5aaf308ab8af4677d9f32d0dcae4766f5bac318bddd4287cb46609be",
+    "artifacts/experiment34/semantic/features/R04/testing_08.npz": "652de753b8e865d09d2748a8099ca62009bb8b476e87591f07fcd914118ea23c",
+    "artifacts/experiment34/semantic/features/R04/testing_09.npz": "3d3de8039b6f60155884ca02c0e5aaa860a331e8ddd08d15cc217b549646e8ae",
+    "artifacts/experiment34/semantic/features/R04/testing_10.npz": "eef512e65a4ce50cdb59a17b1efd0e42933b5c9336d3e2d2f2a6306a2aed2024",
+    "artifacts/experiment34/semantic/features/R04/testing_11.npz": "4dd1ace2c4c2a903b9ee37d5ba237672e1449f672df6a772493ee13fb5374c64",
+    "artifacts/experiment34/semantic/features/R04/testing_12.npz": "19539e1877417b52c9a3092eb57578ec496c5ddea8f52297d0f5f3c6a2a201f6",
+    "artifacts/experiment34/semantic/features/R04/testing_13.npz": "da6eed8a0b253044843616e2e484657b75adb80cb359e41b2410e8d97e41266e",
+    "artifacts/experiment34/semantic/features/R04/testing_14.npz": "8a92c66079d8d7242e58292a3d63391874cbae0a896c603eef761427ac02069f",
+    "artifacts/experiment34/semantic/features/R04/testing_15.npz": "e2571776e3b5df3fe64439c0f8456c2bee1993a6b712ee4a4ef387cd730647ba",
+    "artifacts/experiment34/semantic/features/R04/testing_16.npz": "eaecd1738204ef4243ff4a9975ab482e2184e62d2929f978290b63b81899f005",
+    "artifacts/experiment34/semantic/features/R04/testing_17.npz": "fea2ed7d7858604d21092e8c8d0f376c8e59d7b91bdb2c35b31fe49d6d4587fe",
+    "artifacts/experiment34/semantic/features/R04/testing_18.npz": "302f6078ea23cdcddacc1fff95d2d32000188e6ee3ed8f7365f6d2199b0d0276",
+    "artifacts/experiment34/semantic/features/R04/testing_19.npz": "1475c6fd5900515ecdf91fc9f29adee3fc3649739ba984e3e2ca6f2e1117cb9b"
+  }
+}

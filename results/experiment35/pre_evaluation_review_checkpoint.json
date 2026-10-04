@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-10-04T23:06:32.023751+00:00",
+  "file_sha256": {
+    "results/experiment35/normal_verification_checkpoint.json": "8821b24f46f9912b7c0111526e01c775f4f98461427fbd0f14aed88a0f029435",
+    "results/experiment35/pre_visual_checkpoint.json": "2799081e12159c2e7b381db51088f5f2ff27bbc29ce58639f672500ee8e45e08",
+    "results/experiment35/visual_review.json": "fe830b6fb7b9bfb24e88413832e21d6c0eb445c3fc3c2b2a3f6049ec35ab95d4",
+    "results/experiment35/visual_validation.json": "78100f9d494f24dbe4b030a11d3f37f5959993147319920357f71abc578539a1",
+    "scripts/review_confirmed_anchor.py": "3bdf387f90aca9256b4d2e3d95c8e5532ce1912e16e8a768b64b82fba91f3b77"
+  }
+}

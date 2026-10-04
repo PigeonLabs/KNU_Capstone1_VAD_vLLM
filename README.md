@@ -41,7 +41,8 @@
 | 실험 32 | 객체 쌍의 연속성을 반영한 정상 체류 episode 재구성 | 완료: 진입 미확인·검열 분리, 체류 지원 부족 확인 | [결과·의의·추천 3개](docs/EXPERIMENT32.md) |
 | 실험 33 | 관계 관측 손실·선택 track·episode 근거 추적 | 완료: filter/선택 병목과 역할 혼동의 근거 확인, normal-only 진단 | [결과·의의·추천 3개](docs/EXPERIMENT33.md) |
 | 실험 34 | eligible anchor의 semantic 근거 우선 선택 | 완료: 일부 역할 선택 변화, track 단절 증가·탐지 저하 | [결과·의의·추천 3개](docs/EXPERIMENT34.md) |
-| 다음 실험 35 | 자발적 anchor 교체의 연속 우위 확인 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT35_PLAN.md) |
+| 실험 35 | 자발적 anchor 교체의 연속 우위 확인 | 완료: 왕복 감소·구간 증가, ranking/recall·정상 오탐 악화 | [결과·의의·추천 3개](docs/EXPERIMENT35.md) |
+| 다음 실험 36 | 현재 선택 정책에 맞춘 정상 phase 모델 재적합 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT36_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1141,3 +1142,31 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **체류 점수의 객체 쌍 연속성 검증**: 관측된 진입 이후 같은 쌍으로 유지됐는지를 체류 결합 근거로 요구하는 대조 | 기존 지원은 5맥락으로 늘지만 strict FIT complete는 1→3·3→1 각 3개뿐. 새 맥락의 strict complete는 0, 체류 독자 FP 13/TP 167에도 추가 구간 없음 | 우선 기존 분포를 고정하고 가용성/독자 경보 손실을 분리. 지원 부족을 threshold 완화로 숨기지 않고, 참 이상 지속을 차단할 위험을 보고 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT34.md) · [비교 CSV](results/experiment34/comparison.csv) · [교체 원인](results/experiment34/normal_switch_mechanism.json) · [검증](results/experiment34/validation.json) · [1순위를 구체화한 실험 35 계획](docs/EXPERIMENT35_PLAN.md)
+
+
+## 실험 35 — 자발적 anchor 교체의 연속 우위 확인
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 FPR (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| control_hold | 0.6794 / 0.6781 | 0.7002 / 0.6964 | 8.19% (293) | 16.01% (733) | 12 |
+| control_pool | 0.6864 / 0.6837 | 0.7082 / 0.7027 | 6.96% (249) | 12.84% (588) | 11 |
+| control_age | 0.6797 / 0.6777 | 0.7007 / 0.6960 | 8.19% (293) | 15.57% (713) | 12 |
+| confirmed_hold | 0.6819 / 0.6769 | 0.6799 / 0.6745 | 8.72% (312) | 13.59% (622) | 14 |
+| confirmed_pool | 0.6830 / 0.6774 | 0.6812 / 0.6752 | 7.83% (280) | 12.43% (569) | 15 |
+| confirmed_age | 0.6818 / 0.6761 | 0.6799 / 0.6737 | 8.72% (312) | 13.76% (630) | 14 |
+
+![실험 35 비교](results/experiment35/anchor_confirmation_comparison.png)
+
+**의의:** 이전 anchor가 유효할 때만 같은 대안의 우위를 두 번 확인하도록 했다. 정상 FIT/calibration의 한-sample 왕복이 38/9→11/5회, 쌍 교체는 135/37→85/29회로 줄었다. control은 실험 34 semantic의 정상 모델/점수와 test 예측 57개를 정확히 재현한다. 관측 mask·target·공유 rank는 같다.
+
+**보완할 점:** combined ranking·frame recall은 낮아지고 정상 holdout FP는 28/36/28→36/40/36으로 늘었다. 자신의 q99에서 구간 수가 +2/+4/+2지만, 같은 confirmed 점수에 control q99를 적용하면 13/11/13개다. 체류 지원은 5→1 맥락이며 공정 독자 경보는 0이다. 4개 시각 사례에서는 blade로 보이는 후보 대신 바이스를 한 번 더 유지했다. strict complete 부족·옛 phase 중심의 적합성·역할 GT 부재를 유지하며 종합 성능 개선으로 채택하지 않는다. 테스트 147개 통과, 비용은 미측정이다.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **현재 선택 정책에 맞춘 정상 phase 모델 재적합**: confirmed 선택·관측·descriptor는 고정하고 정상 FIT의 location/scale·KMeans 중심만 재학습 | 다른 선택 정책의 실험 18 중심을 계속 사용. 정상 유효 phase 분포 2/697/132/292, 체류 지원 5→1, 공정 독자 경보 0이며 combined ranking이 Visual보다 낮음 | gate/선택/이력은 고정하고 정상 FIT만 사용. cluster label permutation·새 bank/support·normal holdout·최종 성능을 분리. 중심 불일치는 가설이고 재학습이 역할 오류를 해결하지는 않음 |
+| 2 | **체류 관측 근거를 같은 객체 쌍의 연속성으로 제한**: 실제 진입 이후 ID 연속성을 체류 사용/학습 근거와 연결하는 대조 | 기존 1→3 support 13개 대비 strict same-pair complete 3개. 전체 strict FIT complete 7개뿐이며 체류 가용성도 429프레임으로 줄어듦 | 기존 분포를 고정한 결합 gate와 학습 자료 변경을 동시에 하지 않고 각각 분리. support 부족을 숨기거나 threshold를 낮추지 않으며 참 이상 지속 차단도 보고 |
+| 3 | **정상 역할·후보 연속성 검증 보강**: blade/바이스와 target 혼동, 후보 부재/면적 탈락을 구분해 관측 근거 개선 | 확인군에서도 anchor 후보 부재 기반 교체 30/11회, 면적 탈락 1/3회. 4개 변경 사례에서 blade 선택 지연·바이스 유지 관찰 | 정상 근거로 한 요소씩 고정하고 별도 보조 역할 주석·관측률·최종 탐지를 분리. 안정적인 track을 정확한 역할로 취급하거나 목적 표집을 정확도로 환산하지 않음 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT35.md) · [비교 CSV](results/experiment35/comparison.csv) · [확인 상태와 교체 원인](results/experiment35/normal_confirmation_mechanism.json) · [검증](results/experiment35/validation.json) · [1순위를 구체화한 실험 36 계획](docs/EXPERIMENT36_PLAN.md)
