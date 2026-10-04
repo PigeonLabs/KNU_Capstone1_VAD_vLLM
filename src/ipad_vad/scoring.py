@@ -78,18 +78,30 @@ class Baseline:
         return self.route_calibration.score(role,self.appearance_routes(data,role,frames),residual,self.calibration[role])
 
     def fit(self,caches):
+        from ipad_vad.fit_sampling import sampling_rng,observed_mask
+        rng=sampling_rng(self.cfg);targets={};self.sampling_indices={};self.sampling_support={};self.spaces={}
         buckets={};counts=np.ones((self.k,self.k))*self.cfg['transition_laplace_alpha']
         for data in caches:
             phases=data['phases']
             appearance_phases=self.appearance_phases(data,stage='fit')
+            valid=observed_mask(data) if rng is not None else None
             np.add.at(counts,(phases[:-1],phases[1:]),1)
             for role,frames,x in observations(data):
                 buckets.setdefault((role,-1),[]).append(x)
                 for phase in np.unique(appearance_phases[frames]):
                     if phase<0:continue  # Already present once in the pooled bank.
-                    buckets.setdefault((role,int(phase)),[]).append(x[appearance_phases[frames]==phase])
-        for key,arrays in buckets.items():
+                    key=(role,int(phase));mask=appearance_phases[frames]==phase
+                    buckets.setdefault(key,[]).append(x[mask])
+                    if rng is not None:targets[key]=targets.get(key,0)+int(np.sum(mask&valid[frames]))
+        keys=sorted(buckets) if rng is not None else buckets
+        for key in keys:
+            arrays=buckets[key]
             x=np.concatenate(arrays)
+            if rng is not None and key[1]>=0:
+                chosen=np.sort(rng.choice(len(x),size=targets[key],replace=False))
+                self.sampling_indices[key]=chosen
+                self.sampling_support[key]={'population':len(x),'target':targets[key]}
+                x=x[chosen]
             if len(x)>=self.cfg['minimum_phase_samples']:
                 self.spaces[key]=Subspace(x,self.cfg['pca_variance'],self.cfg['pca_max_rank'])
         if (-1,-1) not in self.spaces:raise ValueError('Insufficient normal fit data')

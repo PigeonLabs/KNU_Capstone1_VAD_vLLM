@@ -1,0 +1,16 @@
+{
+  "feature_sequences_checked": 44,
+  "normal_holdout_configurations_checked": 35,
+  "test_predictions_checked": 133,
+  "protocol_hashes_match": true,
+  "features_byte_identical": true,
+  "normal_fit_only_counts_indices_unique_reproduced": true,
+  "banks_independently_reconstructed": true,
+  "all_pooled_preserved": true,
+  "matched_bank_support_counts_routes": true,
+  "holdout_exclusion_references_q99_verified": true,
+  "process_scores_preserved_all_variants": true,
+  "legacy_18_21_fit_reproduced": true,
+  "normal_preflight_matches_final": true,
+  "scores_source_labels_and_metrics_recomputed": true
+}

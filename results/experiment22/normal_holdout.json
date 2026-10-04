@@ -1,0 +1,3558 @@
+{
+  "normal_only": true,
+  "fit_sequences": [
+    "01",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "09",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+  ],
+  "holdout_sequences": [
+    "02",
+    "08",
+    "10",
+    "12",
+    "15"
+  ],
+  "totals": {
+    "18": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 13,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 52,
+      "held_out_at_one_samples": 13,
+      "frame_alarm_rate": 0.027083333333333334,
+      "q99_range": [
+        0.9986772486772487,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    },
+    "21_fit": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 10,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 40,
+      "held_out_at_one_samples": 10,
+      "frame_alarm_rate": 0.020833333333333332,
+      "q99_range": [
+        0.9986772486772487,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    },
+    "22_s0": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 8,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 32,
+      "held_out_at_one_samples": 8,
+      "frame_alarm_rate": 0.016666666666666666,
+      "q99_range": [
+        0.9967462039045553,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    },
+    "22_s1": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 10,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 40,
+      "held_out_at_one_samples": 10,
+      "frame_alarm_rate": 0.020833333333333332,
+      "q99_range": [
+        0.9986772486772487,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    },
+    "22_s2": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 10,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 40,
+      "held_out_at_one_samples": 10,
+      "frame_alarm_rate": 0.020833333333333332,
+      "q99_range": [
+        0.9986772486772487,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    },
+    "22_s3": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 14,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 56,
+      "held_out_at_one_samples": 7,
+      "frame_alarm_rate": 0.029166666666666667,
+      "q99_range": [
+        0.9967320261437909,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    },
+    "22_s4": {
+      "held_out_samples": 482,
+      "held_out_sample_alarms": 10,
+      "held_out_frames": 1920,
+      "held_out_frame_alarms": 40,
+      "held_out_at_one_samples": 10,
+      "frame_alarm_rate": 0.020833333333333332,
+      "q99_range": [
+        0.9986772486772487,
+        0.9987405541561712
+      ],
+      "unsupported_routes": 0
+    }
+  },
+  "folds": [
+    {
+      "variant": "18",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986807387862797,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 4,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 16,
+      "held_out_at_one_samples": 4,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 16
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 16
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "21_fit",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986807387862797,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 7,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 28,
+      "held_out_at_one_samples": 7,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 12
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 16
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 28
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 3,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s0",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986807387862797,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 5,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 20,
+      "held_out_at_one_samples": 5,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 20
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 20
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s1",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986807387862797,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 4,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 16,
+      "held_out_at_one_samples": 4,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 16
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 16
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s2",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986807387862797,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 5,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 20,
+      "held_out_at_one_samples": 5,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 4
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 16
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 20
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 3,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s3",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9967320261437909,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 5,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 20,
+      "held_out_at_one_samples": 4,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 20
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 20
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s4",
+      "held_out_sequence": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986807387862797,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 103,
+      "held_out_sample_alarms": 4,
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 16,
+      "held_out_at_one_samples": 4,
+      "relation_strata": {
+        "False": {
+          "frames": 188,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 221,
+          "alarms": 16
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 409,
+          "alarms": 16
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 131,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 121,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 103,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "18",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986772486772487,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 1,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_at_one_samples": 1,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 4
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 413,
+          "alarms": 4
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 104,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 107,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 104,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "21_fit",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986772486772487,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 32,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 381,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 99,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s0",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9967462039045553,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 1,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_at_one_samples": 1,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 4
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 32,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 381,
+          "alarms": 4
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 99,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s1",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986772486772487,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 1,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_at_one_samples": 1,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 4
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 32,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 381,
+          "alarms": 4
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 99,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s2",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986772486772487,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 8
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 32,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 381,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 99,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s3",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9967462039045553,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 1,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 4
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 32,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 381,
+          "alarms": 4
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 99,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s4",
+      "held_out_sequence": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9986772486772487,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 104,
+      "held_out_sample_alarms": 1,
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_at_one_samples": 1,
+      "relation_strata": {
+        "False": {
+          "frames": 88,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 325,
+          "alarms": 4
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 32,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 381,
+          "alarms": 4
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 129,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 99,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 8,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "18",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9987113402061856,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 376,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 94,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 110,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 94,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "21_fit",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9987113402061856,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 40,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 336,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 100,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s0",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9987113402061856,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 40,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 336,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 100,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s1",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9987113402061856,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 40,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 336,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 100,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s2",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9987113402061856,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 40,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 336,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 100,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s3",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9969072164948454,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 40,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 336,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 100,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s4",
+      "held_out_sequence": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "normal_q99": 0.9987113402061856,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 94,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 156,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 220,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 40,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 336,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 105,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 100,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 10,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 84,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "18",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9987046632124352,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 6,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 24,
+      "held_out_at_one_samples": 6,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 12
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 12
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 24
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 6,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "21_fit",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9987046632124352,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s0",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9987046632124352,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 0,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 0,
+      "held_out_at_one_samples": 0,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 0
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 0
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s1",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9987046632124352,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 3,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 12,
+      "held_out_at_one_samples": 3,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 4
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 8
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 12
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 3,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s2",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9987046632124352,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 1,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 4,
+      "held_out_at_one_samples": 1,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 4
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 4
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s3",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9968619246861925,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 6,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 24,
+      "held_out_at_one_samples": 1,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 12
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 12
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 24
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 6,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s4",
+      "held_out_sequence": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "normal_q99": 0.9987046632124352,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 96,
+      "held_out_sample_alarms": 3,
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 12,
+      "held_out_at_one_samples": 3,
+      "relation_strata": {
+        "False": {
+          "frames": 180,
+          "alarms": 4
+        },
+        "True": {
+          "frames": 202,
+          "alarms": 8
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 382,
+          "alarms": 12
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 112,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 108,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 96,
+          "alarms": 3,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "18",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 8
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 0,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 340,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 85,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 97,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 85,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "21_fit",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 3,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 12,
+      "held_out_at_one_samples": 3,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 12
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 8,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 332,
+          "alarms": 12
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 95,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s0",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 8
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 8,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 332,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 95,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s1",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 8
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 8,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 332,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 95,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s2",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 8
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 8,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 332,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 95,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s3",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 8
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 8,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 332,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 1,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 95,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    },
+    {
+      "variant": "22_s4",
+      "held_out_sequence": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "normal_q99": 0.9987405541561712,
+      "calibration_finite": true,
+      "calibration_unit_interval": true,
+      "calibration_combined_at_one": 0,
+      "held_out_samples": 85,
+      "held_out_sample_alarms": 2,
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_at_one_samples": 2,
+      "relation_strata": {
+        "False": {
+          "frames": 128,
+          "alarms": 8
+        },
+        "True": {
+          "frames": 212,
+          "alarms": 0
+        }
+      },
+      "global_bank_strata": {
+        "pooled": {
+          "frames": 8,
+          "alarms": 0
+        },
+        "phase": {
+          "frames": 332,
+          "alarms": 8
+        }
+      },
+      "object_bank_strata": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": -1,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "pooled",
+          "observations": 0,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 0,
+          "route": "phase",
+          "observations": 113,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 1,
+          "route": "phase",
+          "observations": 95,
+          "alarms": 2,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "pooled",
+          "observations": 2,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        },
+        {
+          "role": 2,
+          "route": "phase",
+          "observations": 83,
+          "alarms": 0,
+          "conditional_cdf_observations": 0
+        }
+      ],
+      "route_support": []
+    }
+  ],
+  "note": "Each held-out normal video excluded from appearance/process references and q99. Fixed normal FIT models; no parameter selection. Global bank strata assign the combined frame alarm by the global branch route; object bank strata are individual feature observations, not unique frames."
+}

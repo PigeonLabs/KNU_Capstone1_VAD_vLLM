@@ -28,7 +28,8 @@
 | 실험 19 | 관계 관측 여부를 반영하는 외형 subspace 선택 | 완료: ranking·오탐 개선, recall·구간 탐지 감소 | [결과·의의·추천 3개](docs/EXPERIMENT19.md) |
 | 실험 20 | 외형 bank 경로별 정상 보정·영상 holdout 검증 | 완료: 정상 holdout 오탐 증가, 테스트 효과 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT20.md) |
 | 실험 21 | 관측 FIT 제한·추론 fallback의 2×2 대조 | 완료: 두 요소의 개별 효과·보정 상호작용 확인 | [결과·의의·추천 3개](docs/EXPERIMENT21.md) |
-| 다음 실험 22 | 동일 bank 표본 수 무작위 FIT 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT22_PLAN.md) |
+| 실험 22 | 동일 bank 표본 수 무작위 FIT 대조 | 완료: 관측 FIT의 외형 차이 유지, 구간 탐지는 모든 random보다 적음 | [결과·의의·추천 3개](docs/EXPERIMENT22.md) |
+| 다음 실험 23 | 표본 수·PCA rank를 함께 맞춘 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT23_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -741,6 +742,40 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **정상 객체 역할·누락 검증 확대**: 모든 셀이 기존 역할 오류를 계승 | 별도 정상 사례의 실제 부품/혼동 검토. 보조 주석 범위·비용 공개, 관측률과 정확도 구분 |
 
 [상세 결과·의의·한계·검증 기준](docs/EXPERIMENT21.md) · [정상 holdout](results/experiment21/normal_holdout.json) · [요인·관측·bank 진단](results/experiment21/factorial_diagnostic.json) · [재현 검증](results/experiment21/validation.json) · [실험 22 계획](docs/EXPERIMENT22_PLAN.md)
+
+## 실험 22 결과 — 같은 표본 수에서도 남는 차이와 상충
+
+관측 FIT(21_fit)와 bank별 표본 수·지원 부족 fallback을 맞춘 무작위 seed 0–4를 모두 평가했다. B는 끄고 pooled PCA·관계 phase·공정 점수를 고정했다. R04 정상 FIT 20 / calibration 5 / 테스트 19개, 테스트 8,154프레임이다.
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 오탐률 (FP) | 이상 recall (TP) | 탐지 구간 / 26 |
+|---|---:|---:|---:|---:|---:|
+| 18: 전체 FIT | 0.6806 / 0.6688 | 0.6655 / 0.6572 | 10.60% (379) | 14.64% (670) | 15 |
+| 21_fit: 관측 FIT | 0.7001 / 0.6970 | 0.6765 / 0.6753 | 8.64% (309) | 13.74% (629) | 13 |
+| 22_s0: 무작위 0 | 0.6912 / 0.6835 | 0.6737 / 0.6672 | 9.31% (333) | 13.65% (625) | 17 |
+| 22_s1: 무작위 1 | 0.6955 / 0.6866 | 0.6781 / 0.6709 | 9.87% (353) | 13.54% (620) | 16 |
+| 22_s2: 무작위 2 | 0.6889 / 0.6829 | 0.6722 / 0.6679 | 10.88% (389) | 17.15% (785) | 18 |
+| 22_s3: 무작위 3 | 0.6894 / 0.6814 | 0.6738 / 0.6670 | 9.20% (329) | 12.84% (588) | 16 |
+| 22_s4: 무작위 4 | 0.6908 / 0.6846 | 0.6749 / 0.6694 | 8.86% (317) | 12.84% (588) | 17 |
+
+정상 영상 holdout 오탐은 전체 FIT 52, 관측 FIT 40, random 32/40/40/56/40프레임(/1,920)이다. 각 구성은 역할 CDF/q99를 다시 적합했으며 s3의 q99는 0.997238, 나머지는 0.997458이다. 같은 테스트 오탐률 비교가 아니다.
+
+![실험 22 seed별 비교](results/experiment22/matched_fit_comparison.png)
+
+**의의:** 같은 표본 수에서도 관측 FIT의 Visual AUROC/AP와 낮은 오탐이 다섯 random보다 유리했다. 다만 random도 전체 FIT보다 Combined AUROC가 높아 기존 개선 전체를 관측 정보의 의미적 품질로 설명할 수 없다. 표본 선택에 따른 파이프라인의 상충을 구체화했다.
+
+**보완할 점:** 관측 FIT의 Combined AUROC는 random 범위 안이고 구간 탐지는 13개 대 16–18개로 적다. 정상 holdout 우위도 일정하지 않다. 두 phase bank의 rank 차이가 남고, 동일 R04의 다섯 seed는 독립 검증/신뢰구간/novelty 증명이 아니다. 기존 라벨 정렬 미확정·역할 GT·FPS 한계는 유지한다.
+
+### 실험 22 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **표본 수와 PCA rank를 함께 맞춘 관측 FIT 대조**: 같은 표본·bank별 공통 rank로 비교 | Visual AUROC/AP·오탐 차이는 무작위 범위 밖에 있지만 phase 2의 PCA rank가 다름 | 정상 FIT rank만으로 공통 값을 고정하고 여섯 구성 모두 정상 holdout·전체/관측별 점수·구간 탐지를 비교. 최고 seed 선택 금지, capacity 통제 후에도 의미 정확도/novelty로 해석하지 않음 |
+| 2 | **미관측 지속 길이에 따른 인과적 fallback**: 짧은 누락과 긴 누락을 구분 | 관측 FIT는 미관측 AUROC가 높지만, 미관측 이상 경보 283개·구간 탐지 13개로 지표 간 차이가 남음 | 정상 FIT 누락 분포로만 규칙을 정하고 길이별 오탐/미탐·경계 지연과 CDF 간접 효과를 보고. 미래 프레임·테스트 길이를 gate 결정에 사용하지 않음 |
+| 3 | **정상 영상의 객체 역할·관계 관측 감사 확대**: 부품과 혼동 객체의 추가 사례 점검 | 모든 대조가 같은 검출/관계 mask에 의존하고 체류 유효 비율은 계속 5.11% | 별도 정상 사례에서 역할 오류·누락을 검증하고 보조 주석 범위/비용 공개. 관측 mask나 5개 seed를 정답/독립 검증으로 간주하지 않음 |
+
+72개 테스트와 44개 특징 파일·35개 정상 holdout 구성·133개 테스트 예측의 재구성 검증을 통과했다. 최고 seed는 선택하지 않았다.
+
+[상세 결과·의의·한계](docs/EXPERIMENT22.md) · [비교 CSV](results/experiment22/comparison.csv) · [전체 진단](results/experiment22/matched_fit_diagnostic.json) · [정상 감사](results/experiment22/normal_audit.json) · [검증](results/experiment22/validation.json) · [실험 23 계획](docs/EXPERIMENT23_PLAN.md)
 
 ## 로컬 VLM
 

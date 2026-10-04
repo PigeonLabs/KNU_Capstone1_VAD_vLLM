@@ -39,6 +39,7 @@ def main():
         by_fit_mode={}
         for e,model in models.items():
             mode=configs[e].get('appearance_fit_conditioning',configs[e].get('appearance_conditioning','phase'))
+            mode=(mode,json.dumps(configs[e].get('appearance_fit_sampling'),sort_keys=True))
             if mode in by_fit_mode:
                 other=by_fit_mode[mode];assert set(model.spaces)==set(other.spaces)
                 for key in model.spaces:

@@ -152,6 +152,7 @@ def main():
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
     # Normal model artifacts are locally persisted to make inference reproducible.
     arrays={'transition':model.transition,'process_reference':model.process_reference,'threshold':np.array(model.threshold)}
+    for (role,phase),indices in model.sampling_indices.items():arrays[f'fit_selection_{role}_{phase}']=indices
     for (role,phase),space in model.spaces.items():
         arrays[f'mean_{role}_{phase}']=space.mean;arrays[f'basis_{role}_{phase}']=space.basis
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
