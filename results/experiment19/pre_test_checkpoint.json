@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-04T19:29:40.575901+00:00",
+  "stage": "Normal FIT and calibration checked, before experiment19 test scores",
+  "file_sha256": {
+    "results/experiment19/pre_normal_protocol.json": "13bc3867601196fe276b8f97cbe6acfc0f9868e881765493dac6099ae299d638",
+    "results/experiment19/normal_appearance_audit.json": "1ff34819e4e89000842e9c0087f7e12fa76e88e31ca41507a3f77cd5c50ca194",
+    "results/experiment19/normal_feasibility.json": "eb9e2fd9a5c47b8fa4c186238e4a3b33e821f6d15d84834b29bd6750842a1f1b",
+    "artifacts/experiment19/preflight_calibration_scores.npz": "ffc88594db1735a886014320cdd397fd0fa135624f4cc260f9348b7a2c36fc0a",
+    "scripts/validate_observed_appearance.py": "4f84909c24c08ff2e92b33804291103af6700bab928ef1284d482831a7a5ef02"
+  },
+  "decision": "Proceed unchanged: pooled banks and process preserved; 4 phase-0 banks unsupported; normal q99 finite and below 1."
+}

@@ -1,0 +1,14 @@
+{
+  "feature_sequences_checked": 44,
+  "test_sequences_checked": 19,
+  "protocol_hashes_match": true,
+  "all_feature_arrays_byte_identical": true,
+  "normal_banks_independently_reconstructed": true,
+  "pooled_banks_exactly_preserved": true,
+  "all_appearance_routes_checked": true,
+  "raw_and_calibrated_process_unchanged": true,
+  "legacy_experiment18_reproduced": true,
+  "preflight_and_final_calibration_identical": true,
+  "scores_and_source_labels_reproduced": true,
+  "metrics_recomputed": true
+}

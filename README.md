@@ -25,7 +25,8 @@
 | 실험 16 | 연속 체류 꼬리 점수·경보 가능성 | 완료: 경보 복구, 체류 없는 기준선과 동일 경보 | [결과·의의·추천 3개](docs/EXPERIMENT16.md) |
 | 실험 17 | 혼동 객체와 대조하는 anchor 역할 검증 | 완료: 일부 오검출 차단, ranking·체류 가용성 저하 | [결과·의의·추천 3개](docs/EXPERIMENT17.md) |
 | 실험 18 | track 단위 인과적 semantic margin 집계 | 완료: 짧은 변동 감소, ranking 저하·오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT18.md) |
-| 다음 실험 19 | 관계 관측 여부를 반영하는 외형 subspace 선택 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT19_PLAN.md) |
+| 실험 19 | 관계 관측 여부를 반영하는 외형 subspace 선택 | 완료: ranking·오탐 개선, recall·구간 탐지 감소 | [결과·의의·추천 3개](docs/EXPERIMENT19.md) |
+| 다음 실험 20 | 외형 bank 경로별 정상 보정·영상 holdout 검증 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT20_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -649,6 +650,36 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **정상 역할 검증 범위 확대**: 집계로 바이스 오류 한 사례 복원 | 별도 정상 자세·배경 사례의 부품 누락/혼동 검토. 주석 범위·비용 공개, 테스트 이상 라벨로 gate 튜닝 금지 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT18.md) · [지표](results/experiment18/metrics.json) · [정상 연속성](results/experiment18/normal_temporal_continuity.json) · [관측 조건/branch](results/experiment18/observation_conditioning.json) · [검증](results/experiment18/validation.json) · [실험 19 계획](docs/EXPERIMENT19_PLAN.md)
+
+## 실험 19 결과 — 관측 여부를 반영한 외형 모델
+
+관계가 관측된 정상 FIT만 phase별 PCA에 사용하고, 관계 미관측 또는 phase 지원 부족 시 역할별 전체 정상 PCA를 사용했습니다. 실험 18의 모든 특징·관계 mask·공정 점수는 유지했습니다.
+
+| R04 지표 | 실험 18 | 실험 19 |
+|---|---:|---:|
+| Combined AUROC / AP | 0.6655 / 0.6572 | 0.6792 / 0.6767 |
+| 정상 오탐률 | 10.60% (379프레임) | 8.05% (288프레임) |
+| 이상 프레임 recall | 14.64% (670프레임) | 13.13% (601프레임) |
+| 경보가 발생한 GT 이상 구간 | 15 / 26 | 14 / 26 |
+| 역할×phase 외형 bank | 16 | 12 |
+
+정상 FIT 20개/calibration 5개, 테스트 19개·8,154프레임을 평가했습니다. 정상 q99는 두 모델 모두 0.997457627이며 관계·체류 가용성도 같습니다.
+
+![실험 19 관측별 오탐과 recall](results/experiment19/observation_strata.png)
+
+**의의:** 초기/이전 phase를 미관측 프레임에도 확정적으로 적용하던 가정을 검증했습니다. 같은 관측 범위에서 ranking과 오탐은 개선됐지만 미탐이 늘어 절충을 확인했습니다. 모델 선택 구조를 명시한 구현 결과이며 성능 상승만으로 novelty를 주장하지 않습니다.
+
+**보완할 점:** 미관측 구간에서 정상 경보 72개와 이상 경보 124개가 함께 사라졌고 R04_04의 이상 구간 하나를 놓쳤습니다. 일부 역할의 phase/pooled 정상 residual 분포가 다른데 CDF는 혼합되어 있습니다. 학습 표본 제한과 추론 fallback의 개별 효과도 아직 분리하지 않았고, 객체 역할 오류·체류 가용성 5.11%는 남습니다. R04는 반복 개발 장면입니다.
+
+### 실험 19 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 근거 | 변경·검증 방향 |
+|---|---|---|
+| 1 | **실제 외형 bank 경로별 정상 보정**: 판재 정상 보정 99% 분위가 관측 0.99271 / 미관측 0.96329 | 역할×phase/pooled CDF 비교. 정상 영상 holdout으로 표본 부족·포화·오탐 안정성을 먼저 검증하고 전체 recall/오탐 평가. 테스트 threshold 탐색 금지 |
+| 2 | **학습 표본 제한과 추론 fallback의 분리 대조**: 관측/미관측 경보 변화가 다름 | 두 변경의 개별 구성과 결합 비교. 동일 특징·공정·분할을 유지하며 보정은 각 구성에 맞게 재적합 |
+| 3 | **정상 객체 역할·관측 누락 검증**: 기존 역할 오류와 낮은 체류 지원 지속 | 별도 정상 사례의 부품 누락·혼동 검토. 주석 범위/비용 공개, 관측률과 의미 정확도 구분 |
+
+[상세 결과·의의·한계·검증 기준](docs/EXPERIMENT19.md) · [지표](results/experiment19/metrics.json) · [관측별/bank 진단](results/experiment19/appearance_diagnostic.json) · [재현 검증](results/experiment19/validation.json) · [실험 20 계획](docs/EXPERIMENT20_PLAN.md)
 
 ## 로컬 VLM
 

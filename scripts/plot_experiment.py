@@ -11,18 +11,18 @@ import matplotlib.pyplot as plt
 def main():
     p=argparse.ArgumentParser();p.add_argument('--experiment',default='01');args=p.parse_args()
     root=Path(f'results/experiment{args.experiment}');d=json.loads((root/'metrics.json').read_text());scene=d['scene']
-    fig,axes=plt.subplots(1,2,figsize=(11,4),layout='constrained')
+    fig,axes=plt.subplots(1,2,figsize=(12,4),layout='constrained')
     branches=list(d['metrics']);x=np.arange(len(branches))
     axes[0].bar(x-.18,[d['metrics'][k]['auroc'] for k in branches],.36,label='AUROC')
     axes[0].bar(x+.18,[d['metrics'][k]['average_precision'] for k in branches],.36,label='Average precision')
-    axes[0].set(xticks=x,xticklabels=branches,ylim=(0,1),title=f'Experiment {args.experiment}: {scene} test frames')
+    axes[0].set(xticks=x,xticklabels=branches,ylim=(0,1),ylabel='Score',title=f'Experiment {args.experiment}: {scene} test frames')
     axes[0].axhline(.5,color='gray',linestyle=':',linewidth=1);axes[0].legend()
     labels=['Fit normal','Calibration normal','Test']
     counts=np.array([d['phase_fit_counts'],d['phase_calibration_counts'],d['phase_test_counts']])
     fractions=counts/counts.sum(1,keepdims=True);bottom=np.zeros(3)
     for k in range(counts.shape[1]):
         axes[1].bar(labels,fractions[:,k],bottom=bottom,label=f'Phase {k}');bottom+=fractions[:,k]
-    axes[1].set(ylim=(0,1),ylabel='Fraction of sampled frames',title='Observed phase distribution (not GT)');axes[1].legend()
+    axes[1].set(ylim=(0,1),ylabel='Fraction of sampled frames',title='Assigned phase distribution (not GT)');axes[1].legend()
     fig.savefig(root/'summary.png',dpi=150);plt.close(fig)
     pred=Path(f'artifacts/experiment{args.experiment}/predictions')
     chosen=['03','05','13'];fig,axes=plt.subplots(3,1,figsize=(10,7),layout='constrained')

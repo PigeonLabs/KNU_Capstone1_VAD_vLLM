@@ -1,0 +1,220 @@
+{
+  "normal_fit_only": true,
+  "all_features_reused": true,
+  "legacy_fit_reproduces_saved_experiment18": true,
+  "pooled_subspaces_exactly_preserved": true,
+  "transition_and_dwell_fit_preserved": true,
+  "role_phase_support": [
+    {
+      "role": -1,
+      "phase": 0,
+      "all": 126,
+      "observed": 3
+    },
+    {
+      "role": -1,
+      "phase": 1,
+      "all": 1045,
+      "observed": 698
+    },
+    {
+      "role": -1,
+      "phase": 2,
+      "all": 313,
+      "observed": 94
+    },
+    {
+      "role": -1,
+      "phase": 3,
+      "all": 476,
+      "observed": 328
+    },
+    {
+      "role": 0,
+      "phase": 0,
+      "all": 13,
+      "observed": 3
+    },
+    {
+      "role": 0,
+      "phase": 1,
+      "all": 1309,
+      "observed": 838
+    },
+    {
+      "role": 0,
+      "phase": 2,
+      "all": 459,
+      "observed": 139
+    },
+    {
+      "role": 0,
+      "phase": 3,
+      "all": 681,
+      "observed": 475
+    },
+    {
+      "role": 1,
+      "phase": 0,
+      "all": 128,
+      "observed": 3
+    },
+    {
+      "role": 1,
+      "phase": 1,
+      "all": 1134,
+      "observed": 790
+    },
+    {
+      "role": 1,
+      "phase": 2,
+      "all": 361,
+      "observed": 137
+    },
+    {
+      "role": 1,
+      "phase": 3,
+      "all": 539,
+      "observed": 389
+    },
+    {
+      "role": 2,
+      "phase": 0,
+      "all": 126,
+      "observed": 3
+    },
+    {
+      "role": 2,
+      "phase": 1,
+      "all": 1045,
+      "observed": 698
+    },
+    {
+      "role": 2,
+      "phase": 2,
+      "all": 313,
+      "observed": 94
+    },
+    {
+      "role": 2,
+      "phase": 3,
+      "all": 476,
+      "observed": 328
+    }
+  ],
+  "fit_bank_usage_observations": {
+    "-1:observed_phase": 1120,
+    "-1:unobserved_pool": 837,
+    "0:observed_phase": 1452,
+    "0:unobserved_pool": 1007,
+    "1:observed_phase": 1316,
+    "1:unobserved_pool": 843,
+    "2:observed_phase": 1120,
+    "2:unobserved_pool": 837,
+    "-1:observed_support_pool": 3,
+    "0:observed_support_pool": 3,
+    "1:observed_support_pool": 3,
+    "2:observed_support_pool": 3
+  },
+  "old_phase_bank_count": 16,
+  "new_phase_bank_count": 12,
+  "new_subspaces": [
+    {
+      "role": -1,
+      "phase": -1,
+      "samples": 1960,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 1,
+      "samples": 698,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 2,
+      "samples": 94,
+      "rank": 30
+    },
+    {
+      "role": -1,
+      "phase": 3,
+      "samples": 328,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": -1,
+      "samples": 2462,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 1,
+      "samples": 838,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 2,
+      "samples": 139,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 3,
+      "samples": 475,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": -1,
+      "samples": 2162,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 1,
+      "samples": 790,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 2,
+      "samples": 137,
+      "rank": 31
+    },
+    {
+      "role": 1,
+      "phase": 3,
+      "samples": 389,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": -1,
+      "samples": 1960,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 1,
+      "samples": 698,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 2,
+      "samples": 94,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 3,
+      "samples": 328,
+      "rank": 32
+    }
+  ],
+  "note": "Usage counts are feature observations (global plus crops), not distinct source frames. Unobserved samples remain in each role pooled bank once."
+}

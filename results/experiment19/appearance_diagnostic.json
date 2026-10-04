@@ -1,0 +1,311 @@
+{
+  "q99_before": 0.997457627118644,
+  "q99_after": 0.997457627118644,
+  "added_alarms": {
+    "normal": 23,
+    "anomaly": 93
+  },
+  "removed_alarms": {
+    "normal": 114,
+    "anomaly": 162
+  },
+  "strata_relation_observed": {
+    "False": {
+      "frames": 2555,
+      "normal_frames": 1334,
+      "anomaly_frames": 1221,
+      "alarms_before": {
+        "normal": 120,
+        "anomaly": 258
+      },
+      "alarms_after": {
+        "normal": 48,
+        "anomaly": 134
+      },
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 72,
+        "anomaly": 124
+      },
+      "metrics": {
+        "18": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7730238075065662,
+            "average_precision": 0.6755375118810719
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7730238075065662,
+            "average_precision": 0.675537511881072
+          }
+        },
+        "19": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7801860740391475,
+            "average_precision": 0.6990423777468455
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7801860740391475,
+            "average_precision": 0.6990423777468455
+          }
+        }
+      }
+    },
+    "True": {
+      "frames": 5599,
+      "normal_frames": 2242,
+      "anomaly_frames": 3357,
+      "alarms_before": {
+        "normal": 259,
+        "anomaly": 412
+      },
+      "alarms_after": {
+        "normal": 240,
+        "anomaly": 467
+      },
+      "added": {
+        "normal": 23,
+        "anomaly": 93
+      },
+      "removed": {
+        "normal": 42,
+        "anomaly": 38
+      },
+      "metrics": {
+        "18": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6330532921874672,
+            "average_precision": 0.6690379199476088
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6082768853185204,
+            "average_precision": 0.6524702263034661
+          }
+        },
+        "19": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6526156483436822,
+            "average_precision": 0.6939108320880583
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6247909025225094,
+            "average_precision": 0.6715597256506958
+          }
+        }
+      }
+    }
+  },
+  "bank_usage_observations": {
+    "test": {
+      "-1:unobserved_pool": 641,
+      "-1:observed_phase": 1395,
+      "0:observed_phase": 1815,
+      "0:unobserved_pool": 601,
+      "1:unobserved_pool": 658,
+      "1:observed_phase": 1628,
+      "2:unobserved_pool": 644,
+      "2:observed_phase": 1398,
+      "-1:observed_support_pool": 11,
+      "0:observed_support_pool": 17,
+      "1:observed_support_pool": 13,
+      "2:observed_support_pool": 11
+    },
+    "fit": {
+      "-1:observed_phase": 1120,
+      "-1:unobserved_pool": 837,
+      "0:observed_phase": 1452,
+      "0:unobserved_pool": 1007,
+      "1:observed_phase": 1316,
+      "1:unobserved_pool": 843,
+      "2:observed_phase": 1120,
+      "2:unobserved_pool": 837,
+      "-1:observed_support_pool": 3,
+      "0:observed_support_pool": 3,
+      "1:observed_support_pool": 3,
+      "2:observed_support_pool": 3
+    },
+    "calibration": {
+      "-1:observed_phase": 297,
+      "-1:unobserved_pool": 185,
+      "0:observed_phase": 381,
+      "0:unobserved_pool": 209,
+      "1:observed_phase": 354,
+      "1:unobserved_pool": 189,
+      "2:observed_phase": 297,
+      "2:unobserved_pool": 185
+    }
+  },
+  "normal_calibration_role_observation_strata": [
+    {
+      "role": -1,
+      "relation_observed": false,
+      "observations": 185,
+      "raw_quantiles_50_90_99": [
+        0.007391371935025745,
+        0.011714856219741701,
+        0.015573547614120511
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.4927385892116183,
+        0.8881742738589211,
+        0.9670124481327801
+      ],
+      "above_final_q99": 0
+    },
+    {
+      "role": -1,
+      "relation_observed": true,
+      "observations": 297,
+      "raw_quantiles_50_90_99": [
+        0.007467890476627978,
+        0.012436973495627222,
+        0.020873404067453742
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.5051867219917012,
+        0.9085062240663901,
+        0.9928215767634856
+      ],
+      "above_final_q99": 1
+    },
+    {
+      "role": 0,
+      "relation_observed": false,
+      "observations": 209,
+      "raw_quantiles_50_90_99": [
+        0.01815793254342348,
+        0.03345426831638827,
+        0.049325451871738715
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.43135593220338986,
+        0.8849152542372882,
+        0.9632881355932202
+      ],
+      "above_final_q99": 0
+    },
+    {
+      "role": 0,
+      "relation_observed": true,
+      "observations": 381,
+      "raw_quantiles_50_90_99": [
+        0.02044930864669222,
+        0.036823191965396934,
+        0.07117110309262191
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.55,
+        0.9093220338983051,
+        0.9927118644067796
+      ],
+      "above_final_q99": 1
+    },
+    {
+      "role": 1,
+      "relation_observed": false,
+      "observations": 189,
+      "raw_quantiles_50_90_99": [
+        0.004690917792569461,
+        0.02215502976484345,
+        0.07367938913180426
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.43738489871086556,
+        0.8727440147329651,
+        0.9905340699815838
+      ],
+      "above_final_q99": 1
+    },
+    {
+      "role": 1,
+      "relation_observed": true,
+      "observations": 354,
+      "raw_quantiles_50_90_99": [
+        0.005435188431204311,
+        0.028997214698009127,
+        0.06780374081384494
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.5506445672191529,
+        0.9082872928176795,
+        0.9870534069981584
+      ],
+      "above_final_q99": 0
+    },
+    {
+      "role": 2,
+      "relation_observed": false,
+      "observations": 185,
+      "raw_quantiles_50_90_99": [
+        0.00937575075496213,
+        0.014696413600210383,
+        0.026327738382514506
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.5031120331950207,
+        0.8811203319502074,
+        0.989253112033195
+      ],
+      "above_final_q99": 1
+    },
+    {
+      "role": 2,
+      "relation_observed": true,
+      "observations": 297,
+      "raw_quantiles_50_90_99": [
+        0.009298034811700065,
+        0.016783301027548207,
+        0.024384922675351094
+      ],
+      "calibrated_quantiles_50_90_99": [
+        0.4927385892116183,
+        0.9143153526970956,
+        0.9866804979253113
+      ],
+      "above_final_q99": 0
+    }
+  ],
+  "note": "Fixed masks and identical process scores. Each model refits appearance calibration and q99. Counts of bank usage include global and each crop, not unique frames. Calibration strata are descriptive and not tuned."
+}

@@ -39,15 +39,33 @@ class Baseline:
         self.cfg=config;self.process=process;self.k=len(process['phases'])
         self.spaces={};self.calibration={};self.fallback_counts={}
 
+    def appearance_phases(self,data):
+        """Keep process states intact; -1 requests pooled appearance only."""
+        mode=self.cfg.get('appearance_conditioning','phase')
+        if mode=='phase':return data['phases']
+        if mode!='observed_relation':raise ValueError(f'Unknown appearance conditioning: {mode}')
+        valid=np.asarray(data['relation_valid'])
+        if valid.dtype!=np.bool_ or valid.shape!=data['phases'].shape:
+            raise ValueError('relation_valid must be a boolean array matching phases')
+        return np.where(valid,data['phases'],-1)
+
+    def appearance_space_key(self,role,phase):
+        key=(role,int(phase))
+        if key not in self.spaces:key=(role,-1)
+        if key not in self.spaces:key=(-1,-1)
+        return key
+
     def fit(self,caches):
         buckets={};counts=np.ones((self.k,self.k))*self.cfg['transition_laplace_alpha']
         for data in caches:
             phases=data['phases']
+            appearance_phases=self.appearance_phases(data)
             np.add.at(counts,(phases[:-1],phases[1:]),1)
             for role,frames,x in observations(data):
                 buckets.setdefault((role,-1),[]).append(x)
-                for phase in np.unique(phases[frames]):
-                    buckets.setdefault((role,int(phase)),[]).append(x[phases[frames]==phase])
+                for phase in np.unique(appearance_phases[frames]):
+                    if phase<0:continue  # Already present once in the pooled bank.
+                    buckets.setdefault((role,int(phase)),[]).append(x[appearance_phases[frames]==phase])
         for key,arrays in buckets.items():
             x=np.concatenate(arrays)
             if len(x)>=self.cfg['minimum_phase_samples']:
@@ -61,15 +79,14 @@ class Baseline:
         if self.process['cyclic']:self.allowed[order[-1],order[0]]=True
 
     def raw(self,data):
-        phases=data['phases'];outputs=[]
+        phases=data['phases'];appearance_phases=self.appearance_phases(data);outputs=[]
         for role,frames,x in observations(data):
             residual=np.empty(len(x))
-            for phase in np.unique(phases[frames]):
-                key=(role,int(phase));fallback=False
-                if key not in self.spaces:key=(role,-1);fallback=True
-                if key not in self.spaces:key=(-1,-1);fallback=True
-                if fallback:self.fallback_counts[str((role,int(phase)))]=self.fallback_counts.get(str((role,int(phase))),0)+int((phases[frames]==phase).sum())
-                mask=phases[frames]==phase;residual[mask]=self.spaces[key].residual(x[mask])
+            for phase in np.unique(appearance_phases[frames]):
+                key=self.appearance_space_key(role,phase);mask=appearance_phases[frames]==phase
+                if phase<0 or key!=(role,int(phase)):
+                    name=str((role,int(phase)));self.fallback_counts[name]=self.fallback_counts.get(name,0)+int(mask.sum())
+                residual[mask]=self.spaces[key].residual(x[mask])
             outputs.append((role,frames,residual))
         process=np.zeros(len(phases))
         if len(phases)>1:
