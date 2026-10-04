@@ -11,6 +11,7 @@ from ipad_vad.scoring import Baseline
 from ipad_vad.experiment import load_process
 from ipad_vad.kinematic_scoring import KinematicBaseline
 from ipad_vad.process_calibration import StateCalibratedBaseline
+from ipad_vad.dwell_scoring import DwellBaseline
 
 
 def metrics(labels,scores):
@@ -36,8 +37,9 @@ def main():
     if 'process_calibration' in cfg:
         if 'normal_progress' in cfg:raise ValueError('Conditional process calibration with motion is not specified')
         if cfg['process_calibration']['mode']!='previous_state':raise ValueError('Unknown process calibration mode')
-        model=StateCalibratedBaseline(cfg,process)
+        model=DwellBaseline(cfg,process) if 'normal_dwell' in cfg else StateCalibratedBaseline(cfg,process)
     else:model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
+    if 'normal_dwell' in cfg and 'process_calibration' not in cfg:raise ValueError('Dwell experiment requires previous-state process calibration')
     with threadpool_limits(limits=4):
         model.fit(fit);model.calibrate(cal)
         predictions=[];all_labels=[];all_scores={k:[] for k in ['visual','process','combined']};rows=[]
@@ -52,6 +54,10 @@ def main():
             row={'sequence':seq.name,'frames':len(labels),'positive_frames':int((labels==1).sum())}
             if 'process_calibration' in cfg:
                 saved['process_conditioned']=model.conditioning_mask(data)
+            if 'dwell' in result:
+                for key in ('transition','dwell','dwell_age','dwell_reason','dwell_valid'):
+                    saved[key]=hold_scores(data['indices'],result[key],len(labels))
+                row['dwell_valid_frames']=int(saved['dwell_valid'].sum())
             if 'motion' in result:
                 saved['motion']=hold_scores(data['indices'],result['motion'],len(labels))
                 saved['motion_valid']=hold_scores(data['indices'],result['motion_valid'].astype(float),len(labels)).astype(bool)
@@ -72,6 +78,9 @@ def main():
         y=np.concatenate(all_labels);scores={k:np.concatenate(v) for k,v in all_scores.items()}
         cal_results=[model.score(c) for c in cal]
         cal_scores={key:np.concatenate([r[key] for r in cal_results]) for key in ('visual','process','combined')}
+        if 'normal_dwell' in cfg:
+            for key in ('transition','dwell','dwell_valid','dwell_age','dwell_reason'):
+                cal_scores[key]=np.concatenate([r[key] for r in cal_results])
         np.savez_compressed(Path('artifacts')/experiment/'normal_calibration_scores.npz',**cal_scores,
                             phases=np.concatenate([d['phases'] for d in cal]),
                             sequence=np.concatenate([np.full(len(d['phases']),seq) for seq,d in zip(split['calibration'],cal)]))
@@ -103,6 +112,14 @@ def main():
             'normal_transition_support':{str(k):len(v) for k,v in model.state_process_references.items()},
             'test_sampled_conditional_fraction':float(np.concatenate([p['process_conditioned'] for p in predictions]).mean()),
             'fallback':'Global reference for first observation or insufficient previous-state support.'}
+    if 'normal_dwell' in cfg:
+        dwell=np.concatenate([p['dwell'] for p in predictions]);valid=np.concatenate([p['dwell_valid'] for p in predictions]).astype(bool)
+        result['dwell']={'complete_run_support':model.dwell.support,'supported_states':sorted(model.dwell.durations),
+            'normal_calibration_samples':len(model.dwell.reference),'test_dense_valid_fraction':float(valid.mean()),
+            'valid_only_metrics':metrics(np.where(valid,y,-1),dwell),
+            'reason_counts':{str(i):int((np.concatenate([p['dwell_reason'] for p in predictions])==i).sum()) for i in range(4)},
+            'reason_codes':{'0':'valid','1':'relation_missing','2':'entry_not_observed','3':'unsupported_state'}}
+        result['limitations'].append('Dwell-only metrics cover valid intervals only. Unsupported, missing and unobserved-entry intervals retain the transition branch; cluster duration is not action-duration ground truth.')
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -113,6 +130,9 @@ def main():
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
     if 'process_calibration' in cfg:
         for state,reference in model.state_process_references.items():arrays[f'process_reference_state_{state}']=reference
+    if 'normal_dwell' in cfg:
+        arrays['dwell_reference']=model.dwell.reference
+        for state,durations in model.dwell.durations.items():arrays[f'dwell_durations_state_{state}']=durations
     if 'normal_progress' in cfg:
         arrays['motion_reference']=model.motion.reference
         for phase,parameters in model.motion.models.items():

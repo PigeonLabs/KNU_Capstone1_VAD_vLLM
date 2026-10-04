@@ -1,0 +1,549 @@
+{
+  "scene": "R03",
+  "source": "NORMAL FIT/calibration only; post-experiment diagnostic, no test access",
+  "groups": {
+    "fit": {
+      "0->1": {
+        "complete_runs": 17,
+        "distinct_sequences": 17,
+        "duration_min_median_max": [
+          192.0,
+          216.0,
+          244.0
+        ],
+        "runs": [
+          {
+            "sequence": "01",
+            "duration_frames": 232
+          },
+          {
+            "sequence": "02",
+            "duration_frames": 224
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 216
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 208
+          },
+          {
+            "sequence": "06",
+            "duration_frames": 228
+          },
+          {
+            "sequence": "09",
+            "duration_frames": 232
+          },
+          {
+            "sequence": "10",
+            "duration_frames": 244
+          },
+          {
+            "sequence": "11",
+            "duration_frames": 212
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 220
+          },
+          {
+            "sequence": "13",
+            "duration_frames": 220
+          },
+          {
+            "sequence": "14",
+            "duration_frames": 196
+          },
+          {
+            "sequence": "16",
+            "duration_frames": 208
+          },
+          {
+            "sequence": "17",
+            "duration_frames": 204
+          },
+          {
+            "sequence": "18",
+            "duration_frames": 208
+          },
+          {
+            "sequence": "19",
+            "duration_frames": 208
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 192
+          },
+          {
+            "sequence": "21",
+            "duration_frames": 220
+          }
+        ]
+      },
+      "0->2": {
+        "complete_runs": 2,
+        "distinct_sequences": 1,
+        "duration_min_median_max": [
+          12.0,
+          12.0,
+          12.0
+        ],
+        "runs": [
+          {
+            "sequence": "18",
+            "duration_frames": 12
+          },
+          {
+            "sequence": "18",
+            "duration_frames": 12
+          }
+        ]
+      },
+      "0->3": {
+        "complete_runs": 2,
+        "distinct_sequences": 2,
+        "duration_min_median_max": [
+          4.0,
+          14.0,
+          24.0
+        ],
+        "runs": [
+          {
+            "sequence": "04",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "06",
+            "duration_frames": 24
+          }
+        ]
+      },
+      "1->2": {
+        "complete_runs": 18,
+        "distinct_sequences": 18,
+        "duration_min_median_max": [
+          16.0,
+          134.0,
+          244.0
+        ],
+        "runs": [
+          {
+            "sequence": "01",
+            "duration_frames": 128
+          },
+          {
+            "sequence": "02",
+            "duration_frames": 72
+          },
+          {
+            "sequence": "03",
+            "duration_frames": 68
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 96
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 80
+          },
+          {
+            "sequence": "06",
+            "duration_frames": 208
+          },
+          {
+            "sequence": "09",
+            "duration_frames": 244
+          },
+          {
+            "sequence": "10",
+            "duration_frames": 16
+          },
+          {
+            "sequence": "11",
+            "duration_frames": 112
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 140
+          },
+          {
+            "sequence": "13",
+            "duration_frames": 216
+          },
+          {
+            "sequence": "14",
+            "duration_frames": 124
+          },
+          {
+            "sequence": "16",
+            "duration_frames": 188
+          },
+          {
+            "sequence": "17",
+            "duration_frames": 220
+          },
+          {
+            "sequence": "18",
+            "duration_frames": 204
+          },
+          {
+            "sequence": "19",
+            "duration_frames": 160
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 40
+          },
+          {
+            "sequence": "21",
+            "duration_frames": 220
+          }
+        ]
+      },
+      "2->0": {
+        "complete_runs": 3,
+        "distinct_sequences": 2,
+        "duration_min_median_max": [
+          4.0,
+          4.0,
+          8.0
+        ],
+        "runs": [
+          {
+            "sequence": "06",
+            "duration_frames": 8
+          },
+          {
+            "sequence": "18",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "18",
+            "duration_frames": 4
+          }
+        ]
+      },
+      "2->3": {
+        "complete_runs": 23,
+        "distinct_sequences": 11,
+        "duration_min_median_max": [
+          4.0,
+          36.0,
+          108.0
+        ],
+        "runs": [
+          {
+            "sequence": "01",
+            "duration_frames": 84
+          },
+          {
+            "sequence": "02",
+            "duration_frames": 20
+          },
+          {
+            "sequence": "02",
+            "duration_frames": 52
+          },
+          {
+            "sequence": "03",
+            "duration_frames": 52
+          },
+          {
+            "sequence": "03",
+            "duration_frames": 56
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 36
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 12
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 44
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 12
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 40
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 72
+          },
+          {
+            "sequence": "10",
+            "duration_frames": 108
+          },
+          {
+            "sequence": "10",
+            "duration_frames": 36
+          },
+          {
+            "sequence": "11",
+            "duration_frames": 8
+          },
+          {
+            "sequence": "11",
+            "duration_frames": 76
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 16
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 68
+          },
+          {
+            "sequence": "14",
+            "duration_frames": 20
+          },
+          {
+            "sequence": "19",
+            "duration_frames": 32
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 16
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 20
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 12
+          }
+        ]
+      },
+      "3->0": {
+        "complete_runs": 1,
+        "distinct_sequences": 1,
+        "duration_min_median_max": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "runs": [
+          {
+            "sequence": "04",
+            "duration_frames": 8
+          }
+        ]
+      },
+      "3->2": {
+        "complete_runs": 16,
+        "distinct_sequences": 10,
+        "duration_min_median_max": [
+          4.0,
+          18.0,
+          112.0
+        ],
+        "runs": [
+          {
+            "sequence": "02",
+            "duration_frames": 52
+          },
+          {
+            "sequence": "03",
+            "duration_frames": 20
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "04",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 32
+          },
+          {
+            "sequence": "05",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "10",
+            "duration_frames": 40
+          },
+          {
+            "sequence": "10",
+            "duration_frames": 4
+          },
+          {
+            "sequence": "11",
+            "duration_frames": 28
+          },
+          {
+            "sequence": "11",
+            "duration_frames": 8
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 16
+          },
+          {
+            "sequence": "12",
+            "duration_frames": 16
+          },
+          {
+            "sequence": "14",
+            "duration_frames": 56
+          },
+          {
+            "sequence": "19",
+            "duration_frames": 20
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 112
+          },
+          {
+            "sequence": "20",
+            "duration_frames": 12
+          }
+        ]
+      }
+    },
+    "calibration": {
+      "0->1": {
+        "complete_runs": 4,
+        "distinct_sequences": 4,
+        "duration_min_median_max": [
+          196.0,
+          214.0,
+          220.0
+        ],
+        "runs": [
+          {
+            "sequence": "07",
+            "duration_frames": 220
+          },
+          {
+            "sequence": "08",
+            "duration_frames": 216
+          },
+          {
+            "sequence": "15",
+            "duration_frames": 196
+          },
+          {
+            "sequence": "22",
+            "duration_frames": 212
+          }
+        ]
+      },
+      "0->2": {
+        "complete_runs": 1,
+        "distinct_sequences": 1,
+        "duration_min_median_max": [
+          44.0,
+          44.0,
+          44.0
+        ],
+        "runs": [
+          {
+            "sequence": "15",
+            "duration_frames": 44
+          }
+        ]
+      },
+      "1->2": {
+        "complete_runs": 4,
+        "distinct_sequences": 4,
+        "duration_min_median_max": [
+          180.0,
+          180.0,
+          232.0
+        ],
+        "runs": [
+          {
+            "sequence": "07",
+            "duration_frames": 180
+          },
+          {
+            "sequence": "08",
+            "duration_frames": 180
+          },
+          {
+            "sequence": "15",
+            "duration_frames": 180
+          },
+          {
+            "sequence": "22",
+            "duration_frames": 232
+          }
+        ]
+      },
+      "2->0": {
+        "complete_runs": 1,
+        "distinct_sequences": 1,
+        "duration_min_median_max": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "runs": [
+          {
+            "sequence": "15",
+            "duration_frames": 8
+          }
+        ]
+      },
+      "2->3": {
+        "complete_runs": 2,
+        "distinct_sequences": 2,
+        "duration_min_median_max": [
+          28.0,
+          32.0,
+          36.0
+        ],
+        "runs": [
+          {
+            "sequence": "07",
+            "duration_frames": 28
+          },
+          {
+            "sequence": "08",
+            "duration_frames": 36
+          }
+        ]
+      },
+      "3->2": {
+        "complete_runs": 2,
+        "distinct_sequences": 2,
+        "duration_min_median_max": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "runs": [
+          {
+            "sequence": "07",
+            "duration_frames": 8
+          },
+          {
+            "sequence": "08",
+            "duration_frames": 8
+          }
+        ]
+      }
+    }
+  },
+  "note": "Entry context is the previous estimated cluster, not action or direction GT. Sparse normal contexts are not evidence of a reliable duration model."
+}

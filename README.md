@@ -17,7 +17,8 @@
 | 실험 08 | R03 객체 관계 기반 잠재 상태 | 완료: 외형 ranking 상승, 결합 ranking 하락 | [결과·의의·추천 3개](docs/EXPERIMENT08.md) |
 | 실험 09 | 이전 상태별 공정 점수 보정 | 완료: 결합 ranking 상승, 프레임 recall 하락 | [결과·의의·추천 3개](docs/EXPERIMENT09.md) |
 | 실험 10 | max 결합 및 Visual 단독 비교 | 완료: 평균 결합 억제 해소, 추가 공정 기여 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT10.md) |
-| 다음 실험 11 | 관측된 진입 이후 체류 시간 신호 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT11_PLAN.md) |
+| 실험 11 | 관측된 진입 이후 체류 시간 신호 | 완료: 결합 ranking 하락, 추가 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT11.md) |
+| 다음 실험 12 | 진입 맥락별 체류 시간 및 동일 support 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT12_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -405,6 +406,36 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **관계 상태의 의미·관측 품질** | 짧은 군집 전환이 실제 동작인지 확인. 검출 실패·jitter와 실제 전환을 보조 진단으로 구분 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT10.md) · [최댓값 지표](results/experiment10/metrics.json) · [Visual 지표](results/experiment10_visual/metrics.json) · [경보·상단 점수 진단](results/comparison09_10_10_visual/fusion_diagnostic.json) · [실험 11 계획](docs/EXPERIMENT11_PLAN.md)
+
+## 실험 11 결과 — 관측된 진입 이후 체류 시간
+
+정상 완결 구간이 충분한 상태 1/2/3에만 체류 점수를 추가했습니다. 시작 경계·관계 누락·지원 부족 상태에서는 기존 전이를 유지합니다. 특징·phase·Visual·기존 전이 점수는 보존했습니다.
+
+| R03 지표 | 실험 10 | 실험 11 |
+|---|---:|---:|
+| Visual AUROC | 0.7330 | 0.7330 |
+| Process AUROC | 0.4627 | 0.5230 |
+| Combined AUROC | 0.7339 | 0.7005 |
+| Combined AP | 0.6784 | 0.6055 |
+| 정상 q99 기준 정상 오탐률 | 2.62% | 6.37% |
+| 정상 q99 기준 이상 프레임 recall | 25.59% | 26.22% |
+| 경보가 발생한 GT 이상 구간 | 11 / 17 | 11 / 17 |
+
+![실험 10–11 비교](results/comparison10_11/comparison.png)
+
+**의의:** 경계·누락·지원 부족을 구분하는 인과적 체류 모듈을 구현하고 실패 조건을 확인했습니다. Process ranking은 조금 높아져도 최종 성능은 악화됐으며, 현재 결과로 체류 모듈의 성능 개선이나 novelty를 주장할 수 없습니다.
+
+**보완할 점:** 정상 오탐 260프레임과 이상 탐지 32프레임이 추가됐고 새 GT 구간은 탐지하지 못했습니다. 상태 2에서 추가 이상 탐지 없이 오탐 224프레임이 발생했습니다. 체류 신호는 테스트 프레임 58.43%에서만 유효하며, 유효 구간 단독 AUROC는 0.5050입니다. 정상 길이도 진입 맥락에 따라 달랐지만 이것이 실패 원인인지는 후속 검증이 필요합니다. 각자의 정상 q99 비교이며 R03은 개발 장면입니다.
+
+### 실험 11 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **진입 맥락별 체류 시간** | 상태 2의 정상 길이 중앙값 134 대 18프레임 차이 검증. 동일 유효 마스크 대조군으로 abstention 효과와 분리 |
+| 2 | **정상 속도·상단 보정 안정성** | 체류 percentile=1인 테스트 정상 284프레임. 정상 영상별 길이 꼬리·calibration 대표성 점검 |
+| 3 | **관계 상태와 실제 동작 대응** | 의미 GT 부재와 약한 체류 구별력 점검. 군집 재방문·jitter·가림과 실제 지속 구분 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT11.md) · [지표](results/experiment11/metrics.json) · [체류 오류 진단](results/experiment11/dwell_diagnostic.json) · [정상 진입 맥락](results/experiment11/normal_entry_context_diagnostic.json) · [실험 12 계획](docs/EXPERIMENT12_PLAN.md)
 
 ## 로컬 VLM
 

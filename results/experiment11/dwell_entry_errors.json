@@ -1,0 +1,48 @@
+{
+  "scene": "R03",
+  "contexts": {
+    "0->1": {
+      "normal_frames": 1976,
+      "anomaly_frames": 1180,
+      "added_false_positives": 0,
+      "added_true_positives": 0
+    },
+    "0->2": {
+      "normal_frames": 48,
+      "anomaly_frames": 0,
+      "added_false_positives": 0,
+      "added_true_positives": 0
+    },
+    "1->2": {
+      "normal_frames": 1706,
+      "anomaly_frames": 1230,
+      "added_false_positives": 224,
+      "added_true_positives": 0
+    },
+    "1->3": {
+      "normal_frames": 0,
+      "anomaly_frames": 8,
+      "added_false_positives": 0,
+      "added_true_positives": 0
+    },
+    "2->1": {
+      "normal_frames": 0,
+      "anomaly_frames": 48,
+      "added_false_positives": 0,
+      "added_true_positives": 0
+    },
+    "2->3": {
+      "normal_frames": 166,
+      "anomaly_frames": 484,
+      "added_false_positives": 36,
+      "added_true_positives": 32
+    },
+    "3->2": {
+      "normal_frames": 16,
+      "anomaly_frames": 152,
+      "added_false_positives": 0,
+      "added_true_positives": 0
+    }
+  },
+  "note": "Observed entry clusters, not action labels. Post-evaluation strata on development labels; not used to select thresholds or support criteria."
+}
