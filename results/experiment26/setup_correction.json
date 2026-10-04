@@ -1,0 +1,6 @@
+{
+  "stage": "before any experiment26 normal fit/calibration",
+  "issue": "Preparation created aggregate artifact25 directory instead of artifact26; shell log redirection failed before audit execution.",
+  "correction": "Aggregate artifact directory corrected to experiment26; original freeze retained as pre_normal_protocol_attempt1.json; current freeze regenerated.",
+  "scientific_configuration_changed": false
+}

@@ -1,0 +1,18 @@
+{
+  "feature_sequences_checked": 44,
+  "normal_holdout_configurations_checked": 30,
+  "test_predictions_checked": 114,
+  "protocol_hashes_match": true,
+  "feature_bytes_unchanged": true,
+  "complete_censored_gap_metadata_independently_reconstructed": true,
+  "tau_fit_only_frozen_and_same_all_folds": true,
+  "all_banks_and_process_preserved": true,
+  "causal_routes_and_prefix_invariance_verified": true,
+  "observed_raw_unchanged_age_young_equals_hold_old_equals_pool": true,
+  "normal_holdout_exclusion_references_q99_reconstructed": true,
+  "all_legacy_variants_reproduced": true,
+  "both_full_normal_references_independently_reconstructed": true,
+  "same_actual_bank_calibrated_scores_identical_across_gates": true,
+  "normal_preflight_matches_final": true,
+  "scores_source_labels_and_metrics_recomputed": true
+}

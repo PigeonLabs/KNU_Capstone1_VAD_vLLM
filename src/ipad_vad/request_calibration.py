@@ -14,11 +14,18 @@ def request_residuals(model,data):
         yield role,frames,phase_residual,pooled
 
 
+def calibration_codes(model,data,role,frames):
+    mode=model.cfg.get('appearance_calibration_dispatch','request')
+    if mode=='request':return (model.appearance_phases(data)[frames]>=0).astype(np.int8)
+    if mode=='actual_bank':return model.appearance_routes(data,role,frames)
+    raise ValueError(f'Unknown appearance calibration dispatch: {mode}')
+
+
 def selected_residuals(model,data):
     phases=model.appearance_phases(data);requested=phases>=0
     if np.any(phases[requested]!=data['phases'][requested]):
         raise ValueError('Phase-request calibration requires the preserved source phase on phase requests')
-    return [(role,frames,np.where(requested[frames],phase,pool)) for role,frames,phase,pool in request_residuals(model,data)]
+    return [(role,frames,np.where(calibration_codes(model,data,role,frames)==1,phase,pool)) for role,frames,phase,pool in request_residuals(model,data)]
 
 
 class RequestCalibration:

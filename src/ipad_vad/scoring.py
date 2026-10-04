@@ -66,6 +66,8 @@ class Baseline:
 
     def fit_appearance_calibration(self,caches,raw):
         self.route_calibration=None;self.request_calibration=None
+        if 'appearance_calibration_dispatch' in self.cfg and 'appearance_request_calibration' not in self.cfg:
+            raise ValueError('Appearance calibration dispatch requires dual full-normal references')
         if 'appearance_request_calibration' in self.cfg:
             if self.cfg['appearance_request_calibration']!='dual_full_normal' or 'appearance_route_calibration' in self.cfg:
                 raise ValueError('Request calibration requires dual_full_normal and excludes route calibration')
@@ -85,7 +87,8 @@ class Baseline:
     def calibrate_appearance(self,data,role,frames,residual):
         if role not in self.calibration:raise ValueError(f'Role {role} absent from normal calibration')
         if self.request_calibration is not None:
-            requests=(self.appearance_phases(data)[frames]>=0).astype(np.int8)
+            from ipad_vad.request_calibration import calibration_codes
+            requests=calibration_codes(self,data,role,frames)
             return self.request_calibration.score(role,requests,residual)
         if self.route_calibration is None:return empirical_percentile(self.calibration[role],residual)
         return self.route_calibration.score(role,self.appearance_routes(data,role,frames),residual,self.calibration[role])

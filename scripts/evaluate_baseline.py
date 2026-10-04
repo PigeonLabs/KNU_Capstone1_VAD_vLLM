@@ -150,6 +150,7 @@ def main():
     if model.missing_age is not None:result['appearance_missing_age']=model.missing_age.report()
     if model.request_calibration is not None:
         result['appearance_request_calibration']={'mode':'dual_full_normal','request_codes':{'0':'explicit_pooled_request','1':'phase_request_including_support_fallback'},'support':{str(k):v for k,v in model.request_calibration.support.items()}}
+        result['appearance_request_calibration']['dispatch']=cfg.get('appearance_calibration_dispatch','request')
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)

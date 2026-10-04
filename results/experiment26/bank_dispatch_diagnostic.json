@@ -1,0 +1,3719 @@
+{
+  "tau_frames": 56,
+  "variants": {
+    "25_hold": {
+      "q99": 0.997457627118644,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 629
+      },
+      "normal_fpr": 0.08640939597315436,
+      "anomaly_recall": 0.13739624290083005,
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7001257045416118,
+          "average_precision": 0.6970671912429253
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.676534861065909,
+          "average_precision": 0.6753338838667131
+        }
+      },
+      "events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "normal_holdout_fp": 40
+    },
+    "25_pool": {
+      "q99": 0.9968879668049793,
+      "alarms": {
+        "normal": 281,
+        "anomaly": 552
+      },
+      "normal_fpr": 0.07857941834451902,
+      "anomaly_recall": 0.12057667103538663,
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6883156532115956,
+          "average_precision": 0.6861423659152011
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6656532238123581,
+          "average_precision": 0.6654418554702893
+        }
+      },
+      "events": {
+        "events": 26,
+        "detected_events": 14,
+        "missed_events": 12,
+        "event_coverage": 0.5384615384615384,
+        "median_delay_detected_only_frames": 64.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "normal_holdout_fp": 40
+    },
+    "25_age": {
+      "q99": 0.9972375690607734,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 637
+      },
+      "normal_fpr": 0.08640939597315436,
+      "anomaly_recall": 0.13914373088685014,
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6912427627804606,
+          "average_precision": 0.690259937015527
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6680807282275019,
+          "average_precision": 0.6691863098131793
+        }
+      },
+      "events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "normal_holdout_fp": 40
+    },
+    "26_hold": {
+      "q99": 0.997457627118644,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 629
+      },
+      "normal_fpr": 0.08640939597315436,
+      "anomaly_recall": 0.13739624290083005,
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6899156541400707,
+          "average_precision": 0.6898957073923464
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6668683351365298,
+          "average_precision": 0.668881151654683
+        }
+      },
+      "events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "normal_holdout_fp": 40
+    },
+    "26_pool": {
+      "q99": 0.9968879668049793,
+      "alarms": {
+        "normal": 281,
+        "anomaly": 552
+      },
+      "normal_fpr": 0.07857941834451902,
+      "anomaly_recall": 0.12057667103538663,
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6874518048091103,
+          "average_precision": 0.6856855030945024
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6649915630928191,
+          "average_precision": 0.6650096271456452
+        }
+      },
+      "events": {
+        "events": 26,
+        "detected_events": 14,
+        "missed_events": 12,
+        "event_coverage": 0.5384615384615384,
+        "median_delay_detected_only_frames": 64.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "normal_holdout_fp": 40
+    },
+    "26_age": {
+      "q99": 0.9972375690607734,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 637
+      },
+      "normal_fpr": 0.08640939597315436,
+      "anomaly_recall": 0.13914373088685014,
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6898433308117903,
+          "average_precision": 0.6891095640758029
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5687937482835427,
+          "average_precision": 0.5941191179979334
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6668766425458593,
+          "average_precision": 0.6681298061100716
+        }
+      },
+      "events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "normal_holdout_fp": 40
+    }
+  },
+  "age_strata": {
+    "25_hold": {
+      "observed": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6493589094591646,
+            "average_precision": 0.6891537909819397
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6086643882847483,
+            "average_precision": 0.6570086294543762
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 1395,
+          "global_pooled_samples": 11
+        }
+      },
+      "initial_missing": {
+        "frames": 652,
+        "normal_frames": 652,
+        "anomaly_frames": 0,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "metrics": {
+          "visual": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "process": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "combined": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 163
+        }
+      },
+      "missing_within_tau": {
+        "frames": 1725,
+        "normal_frames": 674,
+        "anomaly_frames": 1051,
+        "alarms": {
+          "normal": 84,
+          "anomaly": 255
+        },
+        "metrics": {
+          "visual": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.660374322038923,
+            "average_precision": 0.7159277670495694
+          },
+          "process": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.4805766445408781,
+            "average_precision": 0.6015204644890836
+          },
+          "combined": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.660374322038923,
+            "average_precision": 0.7159277670495694
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 426,
+          "global_pooled_samples": 7
+        }
+      },
+      "missing_beyond_tau": {
+        "frames": 178,
+        "normal_frames": 8,
+        "anomaly_frames": 170,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 28
+        },
+        "metrics": {
+          "visual": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7647058823529411,
+            "average_precision": 0.987744255111418
+          },
+          "process": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.8764705882352941,
+            "average_precision": 0.9888962326503635
+          },
+          "combined": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7647058823529411,
+            "average_precision": 0.987744255111418
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 45,
+          "global_pooled_samples": 0
+        }
+      }
+    },
+    "25_pool": {
+      "observed": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6493589094591646,
+            "average_precision": 0.6891537909819397
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6086643882847483,
+            "average_precision": 0.6570086294543762
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 1395,
+          "global_pooled_samples": 11
+        }
+      },
+      "initial_missing": {
+        "frames": 652,
+        "normal_frames": 652,
+        "anomaly_frames": 0,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "metrics": {
+          "visual": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "process": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "combined": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 163
+        }
+      },
+      "missing_within_tau": {
+        "frames": 1725,
+        "normal_frames": 674,
+        "anomaly_frames": 1051,
+        "alarms": {
+          "normal": 56,
+          "anomaly": 170
+        },
+        "metrics": {
+          "visual": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6462631321872344,
+            "average_precision": 0.7056693387789751
+          },
+          "process": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.4805766445408781,
+            "average_precision": 0.6015204644890836
+          },
+          "combined": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6462631321872344,
+            "average_precision": 0.705669338778975
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 433
+        }
+      },
+      "missing_beyond_tau": {
+        "frames": 178,
+        "normal_frames": 8,
+        "anomaly_frames": 170,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 36
+        },
+        "metrics": {
+          "visual": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          },
+          "process": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.8764705882352941,
+            "average_precision": 0.9888962326503635
+          },
+          "combined": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 45
+        }
+      }
+    },
+    "25_age": {
+      "observed": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6493589094591646,
+            "average_precision": 0.6891537909819397
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6086643882847483,
+            "average_precision": 0.6570086294543762
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 1395,
+          "global_pooled_samples": 11
+        }
+      },
+      "initial_missing": {
+        "frames": 652,
+        "normal_frames": 652,
+        "anomaly_frames": 0,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "metrics": {
+          "visual": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "process": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "combined": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 163
+        }
+      },
+      "missing_within_tau": {
+        "frames": 1725,
+        "normal_frames": 674,
+        "anomaly_frames": 1051,
+        "alarms": {
+          "normal": 84,
+          "anomaly": 255
+        },
+        "metrics": {
+          "visual": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.660374322038923,
+            "average_precision": 0.7159277670495694
+          },
+          "process": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.4805766445408781,
+            "average_precision": 0.6015204644890836
+          },
+          "combined": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.660374322038923,
+            "average_precision": 0.7159277670495694
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 426,
+          "global_pooled_samples": 7
+        }
+      },
+      "missing_beyond_tau": {
+        "frames": 178,
+        "normal_frames": 8,
+        "anomaly_frames": 170,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 36
+        },
+        "metrics": {
+          "visual": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          },
+          "process": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.8764705882352941,
+            "average_precision": 0.9888962326503635
+          },
+          "combined": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 45
+        }
+      }
+    },
+    "26_hold": {
+      "observed": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.647890211434586,
+            "average_precision": 0.6882563316865201
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6075472530404334,
+            "average_precision": 0.6563196709216751
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 1395,
+          "global_pooled_samples": 11
+        }
+      },
+      "initial_missing": {
+        "frames": 652,
+        "normal_frames": 652,
+        "anomaly_frames": 0,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "metrics": {
+          "visual": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "process": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "combined": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 163
+        }
+      },
+      "missing_within_tau": {
+        "frames": 1725,
+        "normal_frames": 674,
+        "anomaly_frames": 1051,
+        "alarms": {
+          "normal": 84,
+          "anomaly": 255
+        },
+        "metrics": {
+          "visual": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6572065039089521,
+            "average_precision": 0.7135819299763891
+          },
+          "process": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.4805766445408781,
+            "average_precision": 0.6015204644890836
+          },
+          "combined": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6572065039089521,
+            "average_precision": 0.7135819299763891
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 426,
+          "global_pooled_samples": 7
+        }
+      },
+      "missing_beyond_tau": {
+        "frames": 178,
+        "normal_frames": 8,
+        "anomaly_frames": 170,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 28
+        },
+        "metrics": {
+          "visual": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7647058823529411,
+            "average_precision": 0.987744255111418
+          },
+          "process": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.8764705882352941,
+            "average_precision": 0.9888962326503635
+          },
+          "combined": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7647058823529411,
+            "average_precision": 0.987744255111418
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 45,
+          "global_pooled_samples": 0
+        }
+      }
+    },
+    "26_pool": {
+      "observed": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.647890211434586,
+            "average_precision": 0.6882563316865201
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6075472530404334,
+            "average_precision": 0.6563196709216751
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 1395,
+          "global_pooled_samples": 11
+        }
+      },
+      "initial_missing": {
+        "frames": 652,
+        "normal_frames": 652,
+        "anomaly_frames": 0,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "metrics": {
+          "visual": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "process": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "combined": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 163
+        }
+      },
+      "missing_within_tau": {
+        "frames": 1725,
+        "normal_frames": 674,
+        "anomaly_frames": 1051,
+        "alarms": {
+          "normal": 56,
+          "anomaly": 170
+        },
+        "metrics": {
+          "visual": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6462631321872344,
+            "average_precision": 0.7056693387789751
+          },
+          "process": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.4805766445408781,
+            "average_precision": 0.6015204644890836
+          },
+          "combined": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6462631321872344,
+            "average_precision": 0.705669338778975
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 433
+        }
+      },
+      "missing_beyond_tau": {
+        "frames": 178,
+        "normal_frames": 8,
+        "anomaly_frames": 170,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 36
+        },
+        "metrics": {
+          "visual": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          },
+          "process": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.8764705882352941,
+            "average_precision": 0.9888962326503635
+          },
+          "combined": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 45
+        }
+      }
+    },
+    "26_age": {
+      "observed": {
+        "frames": 5599,
+        "normal_frames": 2242,
+        "anomaly_frames": 3357,
+        "alarms": {
+          "normal": 225,
+          "anomaly": 346
+        },
+        "metrics": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.647890211434586,
+            "average_precision": 0.6882563316865201
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6075472530404334,
+            "average_precision": 0.6563196709216751
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 1395,
+          "global_pooled_samples": 11
+        }
+      },
+      "initial_missing": {
+        "frames": 652,
+        "normal_frames": 652,
+        "anomaly_frames": 0,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "metrics": {
+          "visual": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "process": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          },
+          "combined": {
+            "frames": 652,
+            "positive_frames": 0,
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 163
+        }
+      },
+      "missing_within_tau": {
+        "frames": 1725,
+        "normal_frames": 674,
+        "anomaly_frames": 1051,
+        "alarms": {
+          "normal": 84,
+          "anomaly": 255
+        },
+        "metrics": {
+          "visual": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6572065039089521,
+            "average_precision": 0.7135819299763891
+          },
+          "process": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.4805766445408781,
+            "average_precision": 0.6015204644890836
+          },
+          "combined": {
+            "frames": 1725,
+            "positive_frames": 1051,
+            "auroc": 0.6572065039089521,
+            "average_precision": 0.7135819299763891
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 426,
+          "global_pooled_samples": 7
+        }
+      },
+      "missing_beyond_tau": {
+        "frames": 178,
+        "normal_frames": 8,
+        "anomaly_frames": 170,
+        "alarms": {
+          "normal": 0,
+          "anomaly": 36
+        },
+        "metrics": {
+          "visual": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          },
+          "process": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.8764705882352941,
+            "average_precision": 0.9888962326503635
+          },
+          "combined": {
+            "frames": 178,
+            "positive_frames": 170,
+            "auroc": 0.7529411764705882,
+            "average_precision": 0.9865433973641828
+          }
+        },
+        "bank_usage": {
+          "global_phase_samples": 0,
+          "global_pooled_samples": 45
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "25_hold_to_26_hold": {
+      "before": "25_hold",
+      "after": "26_hold",
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "age_strata": {
+        "observed": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 24
+        },
+        "initial_missing": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 336
+        },
+        "missing_within_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 28
+        },
+        "missing_beyond_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        }
+      },
+      "gained_events": [],
+      "lost_events": []
+    },
+    "25_pool_to_26_pool": {
+      "before": "25_pool",
+      "after": "26_pool",
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "age_strata": {
+        "observed": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 24
+        },
+        "initial_missing": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_within_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_beyond_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        }
+      },
+      "gained_events": [],
+      "lost_events": []
+    },
+    "25_age_to_26_age": {
+      "before": "25_age",
+      "after": "26_age",
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "age_strata": {
+        "observed": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 24
+        },
+        "initial_missing": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_within_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 28
+        },
+        "missing_beyond_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        }
+      },
+      "gained_events": [],
+      "lost_events": []
+    },
+    "26_hold_to_26_pool": {
+      "before": "26_hold",
+      "after": "26_pool",
+      "added": {
+        "normal": 4,
+        "anomaly": 36
+      },
+      "removed": {
+        "normal": 32,
+        "anomaly": 113
+      },
+      "age_strata": {
+        "observed": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "initial_missing": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_within_tau": {
+          "added": {
+            "normal": 4,
+            "anomaly": 12
+          },
+          "removed": {
+            "normal": 32,
+            "anomaly": 97
+          },
+          "combined_changed_frames": 1539
+        },
+        "missing_beyond_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 24
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 16
+          },
+          "combined_changed_frames": 174
+        }
+      },
+      "gained_events": [
+        {
+          "sequence_key": "R04_04",
+          "start_frame": 261,
+          "end_frame_exclusive": 379
+        }
+      ],
+      "lost_events": []
+    },
+    "26_hold_to_26_age": {
+      "before": "26_hold",
+      "after": "26_age",
+      "added": {
+        "normal": 0,
+        "anomaly": 24
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 16
+      },
+      "age_strata": {
+        "observed": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "initial_missing": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_within_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_beyond_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 24
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 16
+          },
+          "combined_changed_frames": 174
+        }
+      },
+      "gained_events": [],
+      "lost_events": []
+    },
+    "26_pool_to_26_age": {
+      "before": "26_pool",
+      "after": "26_age",
+      "added": {
+        "normal": 32,
+        "anomaly": 97
+      },
+      "removed": {
+        "normal": 4,
+        "anomaly": 12
+      },
+      "age_strata": {
+        "observed": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "initial_missing": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        },
+        "missing_within_tau": {
+          "added": {
+            "normal": 32,
+            "anomaly": 97
+          },
+          "removed": {
+            "normal": 4,
+            "anomaly": 12
+          },
+          "combined_changed_frames": 1539
+        },
+        "missing_beyond_tau": {
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "combined_changed_frames": 0
+        }
+      },
+      "gained_events": [],
+      "lost_events": [
+        {
+          "sequence_key": "R04_04",
+          "start_frame": 261,
+          "end_frame_exclusive": 379
+        }
+      ]
+    }
+  },
+  "bank_usage_observations": {
+    "25_hold": {
+      "test": {
+        "-1:support_pool_unobserved": 170,
+        "-1:phase_observed": 1395,
+        "-1:phase_unobserved": 471,
+        "0:phase_observed": 1815,
+        "0:phase_unobserved": 589,
+        "1:support_pool_unobserved": 179,
+        "1:phase_observed": 1628,
+        "1:phase_unobserved": 479,
+        "2:support_pool_unobserved": 170,
+        "2:phase_observed": 1398,
+        "2:phase_unobserved": 474,
+        "-1:support_pool_observed": 11,
+        "0:support_pool_observed": 17,
+        "0:support_pool_unobserved": 12,
+        "1:support_pool_observed": 13,
+        "2:support_pool_observed": 11
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:phase_unobserved": 714,
+        "0:phase_observed": 1452,
+        "0:phase_unobserved": 997,
+        "1:phase_observed": 1316,
+        "1:phase_unobserved": 718,
+        "2:phase_observed": 1120,
+        "2:phase_unobserved": 714,
+        "-1:support_pool_observed": 3,
+        "0:support_pool_observed": 3,
+        "1:support_pool_observed": 3,
+        "2:support_pool_observed": 3,
+        "-1:support_pool_unobserved": 123,
+        "0:support_pool_unobserved": 10,
+        "1:support_pool_unobserved": 125,
+        "2:support_pool_unobserved": 123
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      }
+    },
+    "25_pool": {
+      "test": {
+        "-1:explicit_missing_pool": 641,
+        "-1:phase_observed": 1395,
+        "0:phase_observed": 1815,
+        "0:explicit_missing_pool": 601,
+        "1:explicit_missing_pool": 658,
+        "1:phase_observed": 1628,
+        "2:explicit_missing_pool": 644,
+        "2:phase_observed": 1398,
+        "-1:support_pool_observed": 11,
+        "0:support_pool_observed": 17,
+        "1:support_pool_observed": 13,
+        "2:support_pool_observed": 11
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:explicit_missing_pool": 837,
+        "0:phase_observed": 1452,
+        "0:explicit_missing_pool": 1007,
+        "1:phase_observed": 1316,
+        "1:explicit_missing_pool": 843,
+        "2:phase_observed": 1120,
+        "2:explicit_missing_pool": 837,
+        "-1:support_pool_observed": 3,
+        "0:support_pool_observed": 3,
+        "1:support_pool_observed": 3,
+        "2:support_pool_observed": 3
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      }
+    },
+    "25_age": {
+      "test": {
+        "-1:explicit_missing_pool": 208,
+        "-1:phase_observed": 1395,
+        "-1:phase_unobserved": 426,
+        "0:phase_observed": 1815,
+        "0:phase_unobserved": 519,
+        "1:explicit_missing_pool": 215,
+        "1:phase_observed": 1628,
+        "1:phase_unobserved": 437,
+        "2:explicit_missing_pool": 208,
+        "2:phase_observed": 1398,
+        "2:phase_unobserved": 429,
+        "-1:support_pool_observed": 11,
+        "-1:support_pool_unobserved": 7,
+        "0:explicit_missing_pool": 75,
+        "0:support_pool_observed": 17,
+        "0:support_pool_unobserved": 7,
+        "1:support_pool_observed": 13,
+        "1:support_pool_unobserved": 6,
+        "2:support_pool_observed": 11,
+        "2:support_pool_unobserved": 7
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:phase_unobserved": 587,
+        "0:phase_observed": 1452,
+        "0:phase_unobserved": 817,
+        "1:phase_observed": 1316,
+        "1:phase_unobserved": 584,
+        "2:phase_observed": 1120,
+        "2:phase_unobserved": 587,
+        "-1:support_pool_observed": 3,
+        "-1:explicit_missing_pool": 250,
+        "0:support_pool_observed": 3,
+        "0:explicit_missing_pool": 190,
+        "1:support_pool_observed": 3,
+        "1:explicit_missing_pool": 259,
+        "2:support_pool_observed": 3,
+        "2:explicit_missing_pool": 250
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 154,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 194,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 159,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 154,
+        "-1:explicit_missing_pool": 31,
+        "1:explicit_missing_pool": 30,
+        "2:explicit_missing_pool": 31,
+        "0:explicit_missing_pool": 15
+      }
+    },
+    "26_hold": {
+      "test": {
+        "-1:support_pool_unobserved": 170,
+        "-1:phase_observed": 1395,
+        "-1:phase_unobserved": 471,
+        "0:phase_observed": 1815,
+        "0:phase_unobserved": 589,
+        "1:support_pool_unobserved": 179,
+        "1:phase_observed": 1628,
+        "1:phase_unobserved": 479,
+        "2:support_pool_unobserved": 170,
+        "2:phase_observed": 1398,
+        "2:phase_unobserved": 474,
+        "-1:support_pool_observed": 11,
+        "0:support_pool_observed": 17,
+        "0:support_pool_unobserved": 12,
+        "1:support_pool_observed": 13,
+        "2:support_pool_observed": 11
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:phase_unobserved": 714,
+        "0:phase_observed": 1452,
+        "0:phase_unobserved": 997,
+        "1:phase_observed": 1316,
+        "1:phase_unobserved": 718,
+        "2:phase_observed": 1120,
+        "2:phase_unobserved": 714,
+        "-1:support_pool_observed": 3,
+        "0:support_pool_observed": 3,
+        "1:support_pool_observed": 3,
+        "2:support_pool_observed": 3,
+        "-1:support_pool_unobserved": 123,
+        "0:support_pool_unobserved": 10,
+        "1:support_pool_unobserved": 125,
+        "2:support_pool_unobserved": 123
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      }
+    },
+    "26_pool": {
+      "test": {
+        "-1:explicit_missing_pool": 641,
+        "-1:phase_observed": 1395,
+        "0:phase_observed": 1815,
+        "0:explicit_missing_pool": 601,
+        "1:explicit_missing_pool": 658,
+        "1:phase_observed": 1628,
+        "2:explicit_missing_pool": 644,
+        "2:phase_observed": 1398,
+        "-1:support_pool_observed": 11,
+        "0:support_pool_observed": 17,
+        "1:support_pool_observed": 13,
+        "2:support_pool_observed": 11
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:explicit_missing_pool": 837,
+        "0:phase_observed": 1452,
+        "0:explicit_missing_pool": 1007,
+        "1:phase_observed": 1316,
+        "1:explicit_missing_pool": 843,
+        "2:phase_observed": 1120,
+        "2:explicit_missing_pool": 837,
+        "-1:support_pool_observed": 3,
+        "0:support_pool_observed": 3,
+        "1:support_pool_observed": 3,
+        "2:support_pool_observed": 3
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      }
+    },
+    "26_age": {
+      "test": {
+        "-1:explicit_missing_pool": 208,
+        "-1:phase_observed": 1395,
+        "-1:phase_unobserved": 426,
+        "0:phase_observed": 1815,
+        "0:phase_unobserved": 519,
+        "1:explicit_missing_pool": 215,
+        "1:phase_observed": 1628,
+        "1:phase_unobserved": 437,
+        "2:explicit_missing_pool": 208,
+        "2:phase_observed": 1398,
+        "2:phase_unobserved": 429,
+        "-1:support_pool_observed": 11,
+        "-1:support_pool_unobserved": 7,
+        "0:explicit_missing_pool": 75,
+        "0:support_pool_observed": 17,
+        "0:support_pool_unobserved": 7,
+        "1:support_pool_observed": 13,
+        "1:support_pool_unobserved": 6,
+        "2:support_pool_observed": 11,
+        "2:support_pool_unobserved": 7
+      },
+      "fit": {
+        "-1:phase_observed": 1120,
+        "-1:phase_unobserved": 587,
+        "0:phase_observed": 1452,
+        "0:phase_unobserved": 817,
+        "1:phase_observed": 1316,
+        "1:phase_unobserved": 584,
+        "2:phase_observed": 1120,
+        "2:phase_unobserved": 587,
+        "-1:support_pool_observed": 3,
+        "-1:explicit_missing_pool": 250,
+        "0:support_pool_observed": 3,
+        "0:explicit_missing_pool": 190,
+        "1:support_pool_observed": 3,
+        "1:explicit_missing_pool": 259,
+        "2:support_pool_observed": 3,
+        "2:explicit_missing_pool": 250
+      },
+      "calibration": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 154,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 194,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 159,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 154,
+        "-1:explicit_missing_pool": 31,
+        "1:explicit_missing_pool": 30,
+        "2:explicit_missing_pool": 31,
+        "0:explicit_missing_pool": 15
+      }
+    }
+  },
+  "same_actual_bank_feature_score_comparisons": {
+    "26_hold_to_26_pool": {
+      "same_bank_feature_comparisons": 13609,
+      "different_request_same_bank": 972,
+      "changed_calibrated_scores_on_same_bank": 0
+    },
+    "26_hold_to_26_age": {
+      "same_bank_feature_comparisons": 18656,
+      "different_request_same_bank": 945,
+      "changed_calibrated_scores_on_same_bank": 0
+    },
+    "26_pool_to_26_age": {
+      "same_bank_feature_comparisons": 14426,
+      "different_request_same_bank": 27,
+      "changed_calibrated_scores_on_same_bank": 0
+    }
+  },
+  "same_bank_different_request": {
+    "25_hold_to_25_pool": {
+      "feature_observations": 531,
+      "changed_calibrated_scores": 519
+    },
+    "25_hold_to_25_age": {
+      "feature_observations": 504,
+      "changed_calibrated_scores": 492
+    },
+    "25_pool_to_25_age": {
+      "feature_observations": 27,
+      "changed_calibrated_scores": 27
+    },
+    "26_hold_to_26_pool": {
+      "feature_observations": 531,
+      "changed_calibrated_scores": 0
+    },
+    "26_hold_to_26_age": {
+      "feature_observations": 504,
+      "changed_calibrated_scores": 0
+    },
+    "26_pool_to_26_age": {
+      "feature_observations": 27,
+      "changed_calibrated_scores": 0
+    }
+  },
+  "support_fallback_changes": {
+    "26_hold": {
+      "observed": {
+        "feature_observations": 52,
+        "changed_scores": 52
+      },
+      "initial_missing": {
+        "feature_observations": 504,
+        "changed_scores": 492
+      },
+      "missing_within_tau": {
+        "feature_observations": 27,
+        "changed_scores": 27
+      },
+      "missing_beyond_tau": {
+        "feature_observations": 0,
+        "changed_scores": 0
+      }
+    },
+    "26_pool": {
+      "observed": {
+        "feature_observations": 52,
+        "changed_scores": 52
+      },
+      "initial_missing": {
+        "feature_observations": 0,
+        "changed_scores": 0
+      },
+      "missing_within_tau": {
+        "feature_observations": 0,
+        "changed_scores": 0
+      },
+      "missing_beyond_tau": {
+        "feature_observations": 0,
+        "changed_scores": 0
+      }
+    },
+    "26_age": {
+      "observed": {
+        "feature_observations": 52,
+        "changed_scores": 52
+      },
+      "initial_missing": {
+        "feature_observations": 0,
+        "changed_scores": 0
+      },
+      "missing_within_tau": {
+        "feature_observations": 27,
+        "changed_scores": 27
+      },
+      "missing_beyond_tau": {
+        "feature_observations": 0,
+        "changed_scores": 0
+      }
+    }
+  },
+  "events": {
+    "25_hold": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3916083916083916,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 124,
+        "alarmed_fraction": 0.07766990291262135,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.064,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.175,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6195965417867435,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.15,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_19"
+      }
+    ],
+    "25_pool": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.22,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3076923076923077,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.05063291139240506,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": true,
+        "first_alarm_delay_frames": 23,
+        "alarmed_fraction": 0.03389830508474576,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 64,
+        "alarmed_fraction": 0.019417475728155338,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.064,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.175,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.5850144092219021,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.25,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_19"
+      }
+    ],
+    "25_age": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.43356643356643354,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 124,
+        "alarmed_fraction": 0.05825242718446602,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.064,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.175,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6195965417867435,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.15,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_19"
+      }
+    ],
+    "26_hold": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3916083916083916,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 124,
+        "alarmed_fraction": 0.07766990291262135,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.064,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.175,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6195965417867435,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.15,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_19"
+      }
+    ],
+    "26_pool": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.22,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3076923076923077,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.05063291139240506,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": true,
+        "first_alarm_delay_frames": 23,
+        "alarmed_fraction": 0.03389830508474576,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 64,
+        "alarmed_fraction": 0.019417475728155338,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.064,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.175,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.5850144092219021,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.25,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_19"
+      }
+    ],
+    "26_age": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.43356643356643354,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 124,
+        "alarmed_fraction": 0.05825242718446602,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.064,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.175,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6195965417867435,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.15,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R04_18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence_key": "R04_19"
+      }
+    ]
+  },
+  "note": "Both full-normal reference arrays preserved from experiment25; new CDF dispatch uses actual subspace family, with own normal q99. Same raw PCA residuals within 1e-12; canonical batching stabilizes numeric ties. Repeated R04 development evaluation, no point adjustment or threshold sweep."
+}

@@ -32,7 +32,8 @@
 | 실험 23 | 표본 수·PCA rank를 함께 맞춘 대조 | 완료: rank 통제 후에도 외형 장점·구간 미탐 상충 유지 | [결과·의의·추천 3개](docs/EXPERIMENT23.md) |
 | 실험 24 | 누락 지속 길이에 따른 인과적 fallback | 완료: 시간 제한은 오탐·ranking 악화, CDF 간접 효과 확인 | [결과·의의·추천 3개](docs/EXPERIMENT24.md) |
 | 실험 25 | 두 외형 경로의 고정 정상 CDF | 완료: 요청별 점수 불변 확보, pooled/age ranking 저하 | [결과·의의·추천 3개](docs/EXPERIMENT25.md) |
-| 다음 실험 26 | 실제 bank에 일치하는 CDF 선택 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT26_PLAN.md) |
+| 실험 26 | 실제 bank에 일치하는 CDF 선택 | 완료: 같은 bank 점수 불일치 제거, ranking 저하·경보 불변 | [결과·의의·추천 3개](docs/EXPERIMENT26.md) |
+| 다음 실험 27 | 연속 관측 전이만 공정 결합 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT27_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -893,3 +894,30 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 - [IPAD 논문](https://arxiv.org/abs/2404.15033), [공식 코드 고정 commit](https://github.com/LJF1113/IPAD/tree/22764cbeeda3946303d236babdd2664fd6241b91)
 - [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO), [CLIP](https://github.com/openai/CLIP)
 - [SubspaceAD](https://github.com/CLendering/SubspaceAD): 정상 subspace residual이라는 발상 참고. 본 구현은 CLIP crop 특징을 사용하며 원 논문의 DINOv2 patch-level 구현과 동일하지 않습니다.
+
+## 실험 26 — 실제 bank에 일치하는 CDF 선택
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 오탐률 (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| 25_hold | 0.7001 / 0.6971 | 0.6765 / 0.6753 | 8.64% (309) | 13.74% (629) | 13 |
+| 25_pool | 0.6883 / 0.6861 | 0.6657 / 0.6654 | 7.86% (281) | 12.06% (552) | 14 |
+| 25_age | 0.6912 / 0.6903 | 0.6681 / 0.6692 | 8.64% (309) | 13.91% (637) | 13 |
+| 26_hold | 0.6899 / 0.6899 | 0.6669 / 0.6689 | 8.64% (309) | 13.74% (629) | 13 |
+| 26_pool | 0.6875 / 0.6857 | 0.6650 / 0.6650 | 7.86% (281) | 12.06% (552) | 14 |
+| 26_age | 0.6898 / 0.6891 | 0.6669 / 0.6681 | 8.64% (309) | 13.91% (637) | 13 |
+
+![실험 26의 짝지은 ranking](results/experiment26/bank_dispatch_comparison.png)
+
+**의의:** 같은 실제 bank·다른 요청의 테스트 특징 관측에서 점수 불일치가 hold→pool 519→0, hold→age 492→0, pool→age 27→0개로 사라졌다. 두 정상 reference·PCA·process를 보존하고 dispatch만 변경해 보정 일관성을 검증했다. 정상 holdout은 모두 40/1,920프레임이다.
+
+**보완할 점:** 짝지은 q99·경보·탐지 구간은 모두 같지만 Visual/Combined ranking은 낮아졌다. 첫 reference의 fallback 혼합, 공정 관측 신뢰도와 역할 의미 정확도는 남아 있다. 반복 R04 개발 평가이며 성능 개선·독립 일반화·novelty를 주장하지 않는다. 비용은 미측정이다.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **연속 관측으로 뒷받침되는 전이만 결합**: 이전·현재 관계가 모두 관측된 경우에만 transition score 기여 | 세 구성 모두 Combined AUROC 0.6650–0.6669로 Visual 0.6875–0.6899보다 낮음. 외형 보정 불일치를 제거해도 공정 기여 문제는 남음 | 전이 확률·CDF는 고정하고 결합 gate만 변경. 정상 holdout, 공정 독자 TP/FP·구간 및 gate 경계 검사. 누락 자체가 이상 단서일 수 있어 미탐 증가도 보고 |
+| 2 | **정상 역할·누락 원인 감사 확대**: 실제 부품·혼동 객체·가림 사례를 구분 | 같은 bank 불변성을 확보했어도 관계 의미 정확도는 미검증이고 체류 유효 범위는 5.11% | 정상 사례와 보조 주석 범위/비용 명시. 관측률을 검출 recall 또는 phase 정확도로 대체하지 않음 |
+| 3 | **정상 상태별 보정 진단**: reference와 실제 경로의 분포 차이를 영상 단위로 점검 | 정상 오탐·q99가 같아도 ranking은 낮아짐. 첫 reference는 여전히 phase 요청과 지원 부족 fallback을 함께 포함 | 정상 holdout의 관측/누락·bank별 percentile 및 support를 보고. 작은 subset CDF 재적합이나 테스트 순위에 맞춘 선택을 바로 도입하지 않음 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT26.md) · [6개 구성 CSV](results/experiment26/comparison.csv) · [검증](results/experiment26/validation.json) · [1순위를 구체화한 실험 27 계획](docs/EXPERIMENT27_PLAN.md)
