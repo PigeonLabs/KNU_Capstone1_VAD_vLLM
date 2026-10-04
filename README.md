@@ -30,7 +30,8 @@
 | 실험 21 | 관측 FIT 제한·추론 fallback의 2×2 대조 | 완료: 두 요소의 개별 효과·보정 상호작용 확인 | [결과·의의·추천 3개](docs/EXPERIMENT21.md) |
 | 실험 22 | 동일 bank 표본 수 무작위 FIT 대조 | 완료: 관측 FIT의 외형 차이 유지, 구간 탐지는 모든 random보다 적음 | [결과·의의·추천 3개](docs/EXPERIMENT22.md) |
 | 실험 23 | 표본 수·PCA rank를 함께 맞춘 대조 | 완료: rank 통제 후에도 외형 장점·구간 미탐 상충 유지 | [결과·의의·추천 3개](docs/EXPERIMENT23.md) |
-| 다음 실험 24 | 누락 지속 길이에 따른 인과적 fallback | 계획 완료, 미실행 | [계획](docs/EXPERIMENT24_PLAN.md) |
+| 실험 24 | 누락 지속 길이에 따른 인과적 fallback | 완료: 시간 제한은 오탐·ranking 악화, CDF 간접 효과 확인 | [결과·의의·추천 3개](docs/EXPERIMENT24.md) |
+| 다음 실험 25 | 두 외형 경로의 고정 정상 CDF | 계획 완료, 미실행 | [계획](docs/EXPERIMENT25_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -810,6 +811,36 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 82개 테스트, 44개 특징 파일·60개 정상 holdout 구성·228개 테스트 예측의 재구성 검증을 통과했다. 최고 seed는 선택하지 않았다.
 
 [상세 결과·의의·한계](docs/EXPERIMENT23.md) · [12개 버전 비교 CSV](results/experiment23/comparison.csv) · [paired/관측/구간 진단](results/experiment23/common_rank_diagnostic.json) · [정상 감사](results/experiment23/normal_audit.json) · [검증](results/experiment23/validation.json) · [실험 24 계획](docs/EXPERIMENT24_PLAN.md)
+
+## 실험 24 결과 — 누락 길이 제어와 보정의 간접 효과
+
+정상 FIT의 완결 누락 139개에서 90분위수 **56프레임**을 유지 한도로 고정했다. 시작/끝 경계 23개는 제외했다. 같은 PCA/공정 모델에서 무기한 유지·즉시 pooled·시간 제한을 R04 테스트 19개/8,154프레임에서 비교했다.
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 오탐률 (FP) | 이상 recall (TP) | 탐지 구간 / 26 |
+|---|---:|---:|---:|---:|---:|
+| 23_obs: 무기한 유지 | 0.7001 / 0.6971 | 0.6765 / 0.6753 | 8.64% (309) | 13.74% (629) | 13 |
+| 24_pool: 즉시 pooled | 0.6971 / 0.6940 | 0.6792 / 0.6768 | 8.05% (288) | 13.13% (601) | 14 |
+| 24_age: 56프레임 제한 | 0.6966 / 0.6934 | 0.6735 / 0.6725 | 9.17% (328) | 14.55% (666) | 13 |
+
+정상 holdout 오탐은 40/44/40프레임(/1,920), 전체 정상 q99는 모두 0.997457627118644다. 각 구성의 정상 CDF/q99를 재적합했고 동일 테스트 FPR 비교는 아니다.
+
+![실험 24 세 경로 비교](results/experiment24/missing_age_comparison.png)
+
+**의의:** 미래 정보 없이 누락 나이에 따라 경로를 전환하는 구현을 검증했다. 기대한 성능 개선은 없었으며, 실제 경로 변경과 CDF의 간접 효과를 구분했다. 시간 제한에서 긴 누락의 이상 경보는 20프레임 줄었지만, raw가 같은 관측·짧은 누락에서 정상 19/이상 57프레임 경보가 추가됐다.
+
+**보완할 점:** 시간 제한은 오탐·ranking을 악화시키고 구간 탐지도 늘리지 못했다. 긴 누락 subset은 정상 8/이상 170프레임이라 비교 근거가 제한적이다. 정상 reference 혼합이 다른 상태 점수에 미치는 영향, 역할 GT·독립 검증·FPS 부재도 남는다. 이 후보를 개선된 기본값으로 채택하지 않는다.
+
+### 실험 24 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **두 외형 경로를 모두 계산하는 고정 정상 CDF**: 정상 calibration을 phase 요청/pooled 요청 양쪽으로 통과시켜 gate와 무관한 reference를 만듦 | 24_age에서 raw가 같은 관측·짧은 누락 구간에 정상 19/이상 57 경보 추가. q99도 같아 CDF 혼합의 간접 효과임 | 같은 요청 경로의 보정 점수 불변과 holdout 비누출 확인, 전체 지표·포화·임계값 효과 공개. 실험 20의 부분 표본 route CDF와 구분하고 개선을 보장하지 않음 |
+| 2 | **관측 근거를 반영한 공정 점수 신뢰도**: 불확실한 phase에서 분기 기여를 구분 | 모든 구성에서 process 점수 동일, 관측 subset process AUROC 0.4812, 전체 Combined AUROC가 Visual보다 낮음 | 정상 지원 정보로만 규칙을 정하고 독자 TP/FP·정상 보정 확인. 테스트 라벨로 분기 가중치 선택 금지 |
+| 3 | **정상 역할·누락 원인 감사 확대**: 실제 부품, 혼동 객체, 가림의 사례를 구분 | 누락 길이만으로 pooled 전환의 이점을 얻지 못했고 역할 오류는 그대로임 | 별도 정상 사례/보조 주석의 범위와 비용 공개. 긴 누락을 이상 정답으로 간주하거나 관측률을 semantic 정확도로 대체하지 않음 |
+
+92개 테스트와 44개 특징 파일·15개 정상 holdout 구성·57개 테스트 예측의 재구성 검증을 통과했다.
+
+[상세 결과·의의·한계](docs/EXPERIMENT24.md) · [비교 CSV](results/experiment24/comparison.csv) · [누락 나이별 진단](results/experiment24/missing_age_diagnostic.json) · [FIT 누락·τ](results/experiment24/fit_gap_profile.json) · [검증](results/experiment24/validation.json) · [실험 25 계획](docs/EXPERIMENT25_PLAN.md)
 
 ## 로컬 VLM
 

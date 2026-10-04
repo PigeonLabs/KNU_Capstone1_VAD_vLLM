@@ -17,6 +17,8 @@ def load_cache(root,seq,part='training'):
 
 def normal_model_arrays(model):
     arrays={'threshold':np.array(model.threshold),'process_reference':model.process_reference}
+    if model.missing_age is not None:
+        arrays['appearance_age_tau']=np.array(model.missing_age.tau);arrays['appearance_age_fit_durations']=model.missing_age.durations
     for role,ref in model.calibration.items():arrays[f'calibration_{role}']=ref
     for state,ref in model.state_process_references.items():arrays[f'process_reference_state_{state}']=ref
     if model.route_calibration is not None:

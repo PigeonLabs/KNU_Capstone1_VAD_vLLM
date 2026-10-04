@@ -1,0 +1,160 @@
+{
+  "normal_only": true,
+  "tau_frames": 56,
+  "variants": {
+    "23_obs": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "calibration_age_strata": {
+        "observed": {
+          "samples": 297,
+          "frames": 1180,
+          "alarms": 4,
+          "global_phase_samples": 297,
+          "global_pooled_samples": 0
+        },
+        "initial_missing": {
+          "samples": 20,
+          "frames": 80,
+          "alarms": 0,
+          "global_phase_samples": 0,
+          "global_pooled_samples": 20
+        },
+        "missing_within_tau": {
+          "samples": 154,
+          "frames": 616,
+          "alarms": 8,
+          "global_phase_samples": 154,
+          "global_pooled_samples": 0
+        },
+        "missing_beyond_tau": {
+          "samples": 11,
+          "frames": 44,
+          "alarms": 4,
+          "global_phase_samples": 11,
+          "global_pooled_samples": 0
+        }
+      }
+    },
+    "24_pool": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      },
+      "calibration_age_strata": {
+        "observed": {
+          "samples": 297,
+          "frames": 1180,
+          "alarms": 8,
+          "global_phase_samples": 297,
+          "global_pooled_samples": 0
+        },
+        "initial_missing": {
+          "samples": 20,
+          "frames": 80,
+          "alarms": 0,
+          "global_phase_samples": 0,
+          "global_pooled_samples": 20
+        },
+        "missing_within_tau": {
+          "samples": 154,
+          "frames": 616,
+          "alarms": 8,
+          "global_phase_samples": 0,
+          "global_pooled_samples": 154
+        },
+        "missing_beyond_tau": {
+          "samples": 11,
+          "frames": 44,
+          "alarms": 0,
+          "global_phase_samples": 0,
+          "global_pooled_samples": 11
+        }
+      }
+    },
+    "24_age": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 154,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 194,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 159,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 154,
+        "-1:explicit_missing_pool": 31,
+        "1:explicit_missing_pool": 30,
+        "2:explicit_missing_pool": 31,
+        "0:explicit_missing_pool": 15
+      },
+      "calibration_age_strata": {
+        "observed": {
+          "samples": 297,
+          "frames": 1180,
+          "alarms": 4,
+          "global_phase_samples": 297,
+          "global_pooled_samples": 0
+        },
+        "initial_missing": {
+          "samples": 20,
+          "frames": 80,
+          "alarms": 0,
+          "global_phase_samples": 0,
+          "global_pooled_samples": 20
+        },
+        "missing_within_tau": {
+          "samples": 154,
+          "frames": 616,
+          "alarms": 12,
+          "global_phase_samples": 154,
+          "global_pooled_samples": 0
+        },
+        "missing_beyond_tau": {
+          "samples": 11,
+          "frames": 44,
+          "alarms": 0,
+          "global_phase_samples": 0,
+          "global_pooled_samples": 11
+        }
+      }
+    }
+  },
+  "all_banks_and_process_preserved": true,
+  "baseline_calibration_reproduced": true,
+  "fit_gap_profile_matches_frozen": true
+}

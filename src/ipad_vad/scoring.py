@@ -44,6 +44,10 @@ class Baseline:
         if stage not in ['fit','inference']:raise ValueError('Unknown appearance conditioning stage')
         mode=self.cfg.get(f'appearance_{stage}_conditioning',self.cfg.get('appearance_conditioning','phase'))
         if mode=='phase':return data['phases']
+        if mode=='missing_age':
+            if stage!='inference':raise ValueError('Missing-age routing is inference-only')
+            if getattr(self,'missing_age',None) is None:raise RuntimeError('Missing-age model has not been fitted')
+            return self.missing_age.states(data)[2]
         if mode!='observed_relation':raise ValueError(f'Unknown appearance conditioning: {mode}')
         valid=np.asarray(data['relation_valid'])
         if valid.dtype!=np.bool_ or valid.shape!=data['phases'].shape:
@@ -78,6 +82,10 @@ class Baseline:
         return self.route_calibration.score(role,self.appearance_routes(data,role,frames),residual,self.calibration[role])
 
     def fit(self,caches):
+        from ipad_vad.missing_age import MissingAge
+        self.missing_age=None
+        if self.cfg.get('appearance_inference_conditioning',self.cfg.get('appearance_conditioning','phase'))=='missing_age':
+            self.missing_age=MissingAge(**self.cfg['appearance_missing_age']);self.missing_age.fit(caches)
         from ipad_vad.fit_sampling import sampling_rng,observed_mask
         rng=sampling_rng(self.cfg);targets={};self.sampling_indices={};self.sampling_support={};self.spaces={}
         buckets={};counts=np.ones((self.k,self.k))*self.cfg['transition_laplace_alpha']
