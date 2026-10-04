@@ -105,6 +105,8 @@ class Baseline:
             if len(x)>=self.cfg['minimum_phase_samples']:
                 self.spaces[key]=Subspace(x,self.cfg['pca_variance'],self.cfg['pca_max_rank'])
         if (-1,-1) not in self.spaces:raise ValueError('Insufficient normal fit data')
+        from ipad_vad.rank_control import constrain_phase_ranks
+        self.rank_control=constrain_phase_ranks(self.spaces,self.cfg.get('appearance_phase_ranks'))
         self.transition=counts/counts.sum(1,keepdims=True)
         ids={p['id']:i for i,p in enumerate(self.process['phases'])}
         order=[ids[s] for s in self.process['normal_order']]

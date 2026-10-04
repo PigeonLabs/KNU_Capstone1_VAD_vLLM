@@ -1,0 +1,2275 @@
+{
+  "normal_only": true,
+  "common_rank_rule": "Minimum original normal FIT rank per supported phase bank across all six fixed selections",
+  "common_ranks": {
+    "-1:1": 32,
+    "-1:2": 30,
+    "-1:3": 32,
+    "0:1": 32,
+    "0:2": 32,
+    "0:3": 32,
+    "1:1": 32,
+    "1:2": 29,
+    "1:3": 32,
+    "2:1": 32,
+    "2:2": 32,
+    "2:3": 32
+  },
+  "pairs": {
+    "23_obs": {
+      "before": "21_fit",
+      "banks": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 30,
+          "common_rank": 30,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "original_rank": 31,
+          "common_rank": 29,
+          "changed": true
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        }
+      ],
+      "normal_raw_checks": {
+        "observations_checked": 10641,
+        "raw_residual_increased": 466
+      }
+    },
+    "23_s0": {
+      "before": "22_s0",
+      "banks": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 30,
+          "changed": true
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "original_rank": 30,
+          "common_rank": 29,
+          "changed": true
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        }
+      ],
+      "normal_raw_checks": {
+        "observations_checked": 10641,
+        "raw_residual_increased": 868
+      }
+    },
+    "23_s1": {
+      "before": "22_s1",
+      "banks": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 30,
+          "changed": true
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "original_rank": 29,
+          "common_rank": 29,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        }
+      ],
+      "normal_raw_checks": {
+        "observations_checked": 10641,
+        "raw_residual_increased": 402
+      }
+    },
+    "23_s2": {
+      "before": "22_s2",
+      "banks": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 30,
+          "changed": true
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "original_rank": 29,
+          "common_rank": 29,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        }
+      ],
+      "normal_raw_checks": {
+        "observations_checked": 10641,
+        "raw_residual_increased": 402
+      }
+    },
+    "23_s3": {
+      "before": "22_s3",
+      "banks": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 30,
+          "changed": true
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "original_rank": 29,
+          "common_rank": 29,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        }
+      ],
+      "normal_raw_checks": {
+        "observations_checked": 10641,
+        "raw_residual_increased": 402
+      }
+    },
+    "23_s4": {
+      "before": "22_s4",
+      "banks": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 31,
+          "common_rank": 30,
+          "changed": true
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "original_rank": 32,
+          "common_rank": 29,
+          "changed": true
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "original_rank": 32,
+          "common_rank": 32,
+          "changed": false
+        }
+      ],
+      "normal_raw_checks": {
+        "observations_checked": 10641,
+        "raw_residual_increased": 868
+      }
+    }
+  },
+  "variants": {
+    "21_fit": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 31
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "22_s0": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 30
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "22_s1": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "22_s2": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "22_s3": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "22_s4": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 31
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "23_obs": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "23_s0": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "23_s1": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "23_s2": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "23_s3": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    },
+    "23_s4": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "subspaces": [
+        {
+          "role": -1,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": -1,
+          "phase": 2,
+          "samples": 94,
+          "rank": 30
+        },
+        {
+          "role": -1,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": -1,
+          "samples": 2462,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 1,
+          "samples": 838,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 2,
+          "samples": 139,
+          "rank": 32
+        },
+        {
+          "role": 0,
+          "phase": 3,
+          "samples": 475,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": -1,
+          "samples": 2162,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 1,
+          "samples": 790,
+          "rank": 32
+        },
+        {
+          "role": 1,
+          "phase": 2,
+          "samples": 137,
+          "rank": 29
+        },
+        {
+          "role": 1,
+          "phase": 3,
+          "samples": 389,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": -1,
+          "samples": 1960,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 1,
+          "samples": 698,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 2,
+          "samples": 94,
+          "rank": 32
+        },
+        {
+          "role": 2,
+          "phase": 3,
+          "samples": 328,
+          "rank": 32
+        }
+      ]
+    }
+  },
+  "legacy_calibration_exact": true,
+  "all_process_exact": true,
+  "samples_support_routes_pooled_preserved": true
+}
