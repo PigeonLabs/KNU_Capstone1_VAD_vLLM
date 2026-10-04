@@ -10,6 +10,8 @@
 | 실험 01 | R01 전체 학습/테스트를 사용하는 기본 파이프라인 pilot | 완료: R01 15개 테스트 영상 평가 | [결과](results/experiment01/metrics.json) · [설정](configs/experiment01.json) |
 | 실험 02 | 정상 trajectory 기반 phase 추정 | 완료: phase만 교체한 비교 | [결과와 한계](docs/EXPERIMENT02.md) |
 
+각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
+
 ## Stage 00 — 데이터 정합성과 시간축
 
 | 항목 | 실측 |
@@ -83,11 +85,25 @@ export PYTHONPATH=src
 
 [상세 방법](docs/EXPERIMENT01.md) · [전체 지표](results/experiment01/metrics.json) · [영상별 지표](results/experiment01/per_sequence.csv) · [검출/추출 진단](results/experiment01/extraction.json)
 
-### 관찰한 실패와 Recommended improvements
+### 실험 01의 의의
+
+로컬 VLM부터 객체·공정 이상 점수까지 연결하는 실행 가능한 baseline을 확보했습니다. Process를 더했을 때 Visual 단독보다 AUROC가 낮아지고 중앙 phase가 사라진 결과는 phase 관측 방식의 검증이 우선임을 보여줍니다. 파이프라인 구현의 근거이며 novelty나 일반화 성능의 입증은 아닙니다.
+
+### 실험 01의 보완할 점
 
 - **Phase collapse:** FIT 샘플의 phase 분포가 `[1363, 0, 193]`입니다. 왼쪽/중앙/오른쪽이라는 언어적 설명만으로 CLIP 전체 프레임 특징이 중앙 상태를 분리하지 못했습니다. Calibration/Test에서도 중앙은 각각 1샘플뿐입니다. Process AUROC 0.4942와 함께 볼 때 현 phase proxy의 유효성이 부족합니다.
 - **객체 오검출:** 정상 영상 01의 bbox 직접 점검에서 하단 고정 빨간 부품도 product 역할로 검출되었습니다. `role_frame_coverage=1.0`은 해당 역할의 박스가 있다는 뜻이며, 실제 제품 recall 100%가 아닙니다.
 - **외형 정보의 한계:** crop 정규화로 위치 정보를 잃으며, motion/관계는 아직 scoring에 사용하지 않습니다.
+
+### 실험 01 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 관측 근거와 검증 방향 |
+|---|---|---|
+| 1 | 정상 trajectory 기반 phase 추정 | 중앙 FIT 표본 0개. phase만 교체하고 관측률·점수·오탐/recall 비교 |
+| 2 | 제품 grounding 검증·개선 | 고정 부품 오검출. bbox subset에서 precision/recall·누락 길이 확인 |
+| 3 | Process 신뢰도에 따른 결합·보정 | Combined가 Visual보다 낮음. 정상 데이터로 결정한 결합 규칙 비교 |
+
+[후보별 변경 내용·검증 기준](docs/EXPERIMENT01.md)에 따라 1순위를 실험 02로 선택했습니다.
 
 **실험 02의 단일 변경:** detector, crop 특징, encoder, split, sampling, PCA/scoring 규칙은 그대로 유지하고 phase 추정만 바꿉니다. 정상 FIT에서 실제로 이동한 product-role track으로 이동 경로와 3개 공간 상태를 적합하고, test-time에는 현재 bbox와 과거 상태만 사용합니다. 누락 시 이전 phase를 유지하며 그 비율을 공개합니다. 위치 정답·test label·미래 프레임은 사용하지 않습니다. 이는 R01의 공간적 진행 proxy이며 일반 공정 grammar 학습으로 주장하지 않습니다. 그 이후 실험은 아직 설계하지 않습니다.
 
@@ -106,11 +122,25 @@ export PYTHONPATH=src
 
 ![실험 01–02 비교](results/comparison01_02/comparison.png)
 
+### 실험 02의 의의
+
+동일한 검출·encoder 특징에서 phase 추정만 교체한 비교로 Combined AUROC +0.0588, AP +0.0395를 관측했습니다. phase 구성 방식이 후속 정상 모델에 영향을 준다는 근거입니다. semantic phase 정확도나 novelty를 입증한 결과는 아닙니다.
+
+### 실험 02의 보완할 점
+
 **Ranking은 개선됐지만 오탐도 증가했습니다.** 각 모델의 정상 calibration에서 결정한 q99를 그대로 적용한 결과입니다. 동일 test FPR 비교나 통계적 유의성 주장이 아닙니다.
 
-또한 공간 phase를 직접 관측할 수 있었던 bbox는 전체 샘플의 **383/2893 = 13.24%**뿐입니다. 나머지는 이전 phase를 유지했습니다. 상태 점유율이 달라졌다는 것만으로 semantic phase 정확도를 주장하지 않습니다. 현재 병목은 검출 품질·관측 누락입니다.
+또한 공간 phase를 직접 관측할 수 있었던 bbox는 전체 샘플의 **383/2893 = 13.24%**뿐입니다. 나머지는 이전 phase를 유지하거나 첫 관측 전 초기 phase 0을 사용했습니다. 상태 점유율이 달라졌다는 것만으로 semantic phase 정확도를 주장하지 않습니다. 현재 병목은 검출 품질·관측 누락입니다.
 
-**다음 Recommended improvement:** 특정 색상에 의존하는 제품 prompt와 고정 배경 오검출을 보완하고, 정상 motion으로 제품 후보를 검증합니다. 먼저 작은 객체 GT subset에서 제품 recall·오검출·관측 누락 길이를 측정하는 것이 필요합니다. 실험 03은 아직 실행하지 않았고 전체 후속 실험은 미리 기획하지 않았습니다. R01은 이제 개발 장면이며 최종 검증 결과로 간주하지 않습니다.
+### 실험 02 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 관측 근거와 검증 방향 |
+|---|---|---|
+| 1 | **제품 grounding 품질 개선** | 직접 phase 관측 13.24%. 색상 의존·고정 배경 혼동을 점검하고 bbox subset의 precision/recall·누락 길이 검증 |
+| 2 | **누락 관측을 반영한 phase 불확실성** | 오래된 phase 유지 가능. 관측 경과 프레임 수·unknown·재관측 처리를 비교하고 오탐/recall 확인 |
+| 3 | **신뢰도 기반 결합·정상 calibration 개선** | 정상 오탐률 14.85%. 정상 데이터로 결합/임계값 규칙을 결정하고 경보 품질 비교 |
+
+[후보별 변경 내용·검증 기준과 주의점](docs/EXPERIMENT02.md)을 기록했습니다. 다음 실험의 최우선 후보는 제품 grounding 개선이며, 세 후보를 확정된 후속 실험으로 취급하지 않습니다. 실험 03은 아직 실행하지 않았습니다. R01은 개발 장면이며 최종 검증 결과로 간주하지 않습니다.
 
 [실험 02 지표](results/experiment02/metrics.json) · [phase 관측 진단](results/experiment02/phase_grounding.json) · [비교 CSV](results/comparison01_02/metrics.csv)
 

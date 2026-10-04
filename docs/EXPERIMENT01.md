@@ -44,6 +44,41 @@ HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/python scripts/extract_feature
 
 정확히 같은 vocabulary로 재현하려면 저장소의 `process_discovery.json`을 사용하고 discovery 재생성을 생략한다. temperature 0.2와 llama.cpp 기본 seed를 사용한 재생성은 동일 응답을 보장하지 않는다. feature cache는 config/process/model revision signature가 다르면 재사용을 거부한다.
 
-## 결과와 Recommended improvements
+## 이번 실험 결과
 
-R01 전체 실행을 완료했다. 결과는 [metrics.json](../results/experiment01/metrics.json), [시퀀스별 결과](../results/experiment01/per_sequence.csv)와 README에 기록했다. Combined AUROC 0.5371 / AP 0.3636이며, 중앙 phase의 FIT 점유율이 0인 실패에 따라 실험 02의 공간적 phase 추정을 설계했다.
+R01 정상 fit 27개 / calibration 7개와 테스트 15개 영상의 3,685프레임(이상 1,254개)을 평가했다. seed는 42다.
+
+| 점수 | Frame AUROC | Average precision |
+|---|---:|---:|
+| Visual | 0.5727 | 0.3766 |
+| Process | 0.4942 | 0.3377 |
+| Combined (0.5/0.5) | 0.5371 | 0.3636 |
+
+정상 calibration q99 임계값 0.9810에서 테스트 정상 프레임 오탐률은 6.95%, 이상 프레임 recall은 5.98%다. FIT phase 분포는 `[1363, 0, 193]`이며 중앙 상태가 관측되지 않았다.
+
+[전체 지표](../results/experiment01/metrics.json) · [영상별 결과](../results/experiment01/per_sequence.csv) · [검출 진단](../results/experiment01/extraction.json) · [결과 그래프](../results/experiment01/summary.png)
+
+## 실험 결과의 의의
+
+로컬 VLM이 제안한 객체/phase 후보를 검출·추적·객체 특징·정상 subspace·공정 점수로 연결하는 실행 가능한 baseline을 확보했다. 이는 파이프라인 구현의 출발점이며 원 논문 재현이나 새로운 알고리즘의 독창성 입증은 아니다.
+
+Process 점수를 더한 Combined AUROC가 Visual보다 낮았고 중앙 phase의 FIT 표본이 없었다. 이 관측은 언어적 phase 후보를 실제 영상에서 구분하는 단계부터 검증해야 한다는 근거다. phase 추정이 모든 성능 저하의 원인이라고 단정할 수는 없다.
+
+## 보완할 점
+
+- **Phase 관측 실패:** 중앙 phase는 FIT 0개, calibration/test 각 1개다. 의미 있는 정상 전이를 학습했는지 확인할 수 없다.
+- **제품 역할 오검출:** 정상 영상 01의 bbox 점검에서 고정된 하단 빨간 부품이 product로 검출됐다. 박스가 존재하는 비율은 제품 recall이 아니며 객체 GT 기반 정량 검증이 없다.
+- **결합 및 경보 품질:** Process AUROC 0.4942인 상태에서 동일 가중치로 결합했다. q99에서도 낮은 이상 recall과 정상 오탐이 함께 나타났다.
+- **평가 범위:** 단일 장면·단일 seed다. 객체 localization, semantic phase 정확도, 다른 장면 일반화와 통계적 유의성은 검증하지 않았다.
+
+## 다음 Recommended improvements — 추천순 3개
+
+아래 순위는 실험 01에서 관측한 근거로 정리했다. 실험 02 결과를 소급해 실험 01의 근거로 사용하지 않는다.
+
+| 추천순 | 개선 후보와 변경 내용 | 실험 01의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **정상 trajectory 기반 phase 추정:** 이동 제품의 공간적 진행 위치로 phase를 추정 | 중앙 FIT 표본 0개, Process AUROC 0.4942 | 검출·특징·분할·scoring 규칙을 고정하고 phase만 변경. 관측률·분포·AUROC/AP·오탐/recall을 함께 비교. 점유율 분산을 phase 정확도로 해석하지 않음 |
+| 2 | **제품 grounding 품질 검증·개선:** 색상 의존 prompt와 고정 배경 혼동을 점검하고 정상 motion으로 후보 검증 | 고정 빨간 부품의 product 오검출 관찰 | 작은 bbox 검증 subset에서 precision/recall과 누락 길이 측정. 제품 부재와 detector 실패를 구분하고 검출 수 증가만으로 성공 판정하지 않음 |
+| 3 | **Process 신뢰도에 따른 결합·보정:** 불확실한 phase에서 process 기여를 낮추는 후보 검증 | Visual AUROC 0.5727에서 Combined 0.5371로 하락 | Visual 단독/고정 결합/신뢰도 결합 비교. 정상 데이터로 규칙·임계값 결정, test 성능으로 가중치 탐색 금지. 오탐 감소와 recall 손실을 함께 확인 |
+
+이 중 1순위만 실험 02의 변경으로 선택했다. 2·3순위는 확정된 후속 실험이 아니며 다음 결과에 따라 다시 평가한다.
