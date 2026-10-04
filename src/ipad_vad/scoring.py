@@ -92,6 +92,14 @@ class Baseline:
     def calibrate_process(self,data,process):
         return empirical_percentile(self.process_reference,process)
 
+    def fuse(self,visual,process):
+        mode=self.cfg.get('score_fusion','mean')
+        if mode=='max':return np.maximum(visual,process)
+        if mode=='visual':return visual.copy()
+        if mode!='mean':raise ValueError(f'Unknown score fusion: {mode}')
+        w=self.cfg['visual_process_weight']
+        return w*visual+(1-w)*process
+
     def score(self,data):
         raw,process=self.raw(data);visual=np.zeros(len(data['indices']));objects=[]
         for role,frames,residual in raw:
@@ -101,5 +109,4 @@ class Baseline:
             np.maximum.at(visual,frames,score)
             objects.append((role,frames,score))
         process=self.calibrate_process(data,process)
-        w=self.cfg['visual_process_weight']
-        return {'visual':visual,'process':process,'combined':w*visual+(1-w)*process,'objects':objects}
+        return {'visual':visual,'process':process,'combined':self.fuse(visual,process),'objects':objects}

@@ -70,9 +70,15 @@ def main():
             np.savez_compressed(cache_out/f'{scene}_{seq.name}.npz',**saved);rows.append(row)
             predictions.append(saved)
         y=np.concatenate(all_labels);scores={k:np.concatenate(v) for k,v in all_scores.items()}
+        cal_results=[model.score(c) for c in cal]
+        cal_scores={key:np.concatenate([r[key] for r in cal_results]) for key in ('visual','process','combined')}
+        np.savez_compressed(Path('artifacts')/experiment/'normal_calibration_scores.npz',**cal_scores,
+                            phases=np.concatenate([d['phases'] for d in cal]),
+                            sequence=np.concatenate([np.full(len(d['phases']),seq) for seq,d in zip(split['calibration'],cal)]))
         result={'scene':scene,'scope':cfg['scope'],'seed':cfg['seed'],'fit_sequences':split['fit'],'calibration_sequences':split['calibration'],
                 'test_sequences':len(rows),'metrics':{k:metrics(y,v) for k,v in scores.items()},'normal_q99_threshold':model.threshold,
-                'normal_calibration_sample_alarm_rate':float(np.mean(np.concatenate([model.score(c)['combined'] for c in cal])>model.threshold)),
+                'normal_calibration_sample_alarm_rate':float(np.mean(cal_scores['combined']>model.threshold)),
+                'score_fusion':cfg.get('score_fusion','mean'),
                 'test_normal_frame_alarm_rate':float(np.mean(scores['combined'][y==0]>model.threshold)),
                 'test_anomaly_frame_recall_at_q99':float(np.mean(scores['combined'][y==1]>model.threshold)),
                 'phase_fit_counts':np.bincount(np.concatenate([d['phases'] for d in fit]),minlength=model.k).tolist(),

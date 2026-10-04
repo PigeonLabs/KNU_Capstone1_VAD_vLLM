@@ -1,0 +1,10 @@
+{
+  "feature_sequences_checked": 39,
+  "normal_models_identical_except_threshold": true,
+  "calibration_threshold_reconstructed": true,
+  "config_matches_pre_evaluation_freeze": true,
+  "test_predictions_checked": 17,
+  "all_branch_object_phase_label_values_identical": true,
+  "final_fusion_reconstructed": true,
+  "artifact_validation_only": true
+}

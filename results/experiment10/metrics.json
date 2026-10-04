@@ -1,0 +1,215 @@
+{
+  "scene": "R03",
+  "scope": "R03_fixed_fusion_max",
+  "seed": 42,
+  "fit_sequences": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+  ],
+  "calibration_sequences": [
+    "07",
+    "08",
+    "15",
+    "22"
+  ],
+  "test_sequences": 17,
+  "metrics": {
+    "visual": {
+      "frames": 12005,
+      "positive_frames": 5068,
+      "auroc": 0.7329639662589645,
+      "average_precision": 0.6778070187815984
+    },
+    "process": {
+      "frames": 12005,
+      "positive_frames": 5068,
+      "auroc": 0.46267151345990337,
+      "average_precision": 0.408632951232289
+    },
+    "combined": {
+      "frames": 12005,
+      "positive_frames": 5068,
+      "auroc": 0.7338782723619578,
+      "average_precision": 0.678394029579727
+    }
+  },
+  "normal_q99_threshold": 0.9973544973544973,
+  "normal_calibration_sample_alarm_rate": 0.00995732574679943,
+  "score_fusion": "max",
+  "test_normal_frame_alarm_rate": 0.026236125126135216,
+  "test_anomaly_frame_recall_at_q99": 0.2559194948697711,
+  "phase_fit_counts": [
+    1189,
+    975,
+    747,
+    231
+  ],
+  "phase_calibration_counts": [
+    268,
+    211,
+    208,
+    16
+  ],
+  "phase_test_counts": [
+    1253,
+    801,
+    788,
+    165
+  ],
+  "subspaces": [
+    {
+      "role": -1,
+      "phase": -1,
+      "samples": 3142,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 0,
+      "samples": 1189,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 1,
+      "samples": 975,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 2,
+      "samples": 747,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 3,
+      "samples": 231,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": -1,
+      "samples": 3304,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 0,
+      "samples": 1231,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 1,
+      "samples": 989,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 2,
+      "samples": 806,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 3,
+      "samples": 278,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": -1,
+      "samples": 4435,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 0,
+      "samples": 1561,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 1,
+      "samples": 1083,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 2,
+      "samples": 1329,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 3,
+      "samples": 462,
+      "rank": 32
+    }
+  ],
+  "transition_probabilities": [
+    [
+      0.9787234042553191,
+      0.016170212765957447,
+      0.002553191489361702,
+      0.002553191489361702
+    ],
+    [
+      0.0010214504596527069,
+      0.9785495403472931,
+      0.01940755873340143,
+      0.0010214504596527069
+    ],
+    [
+      0.018641810918774968,
+      0.0013315579227696406,
+      0.948069241011984,
+      0.03195739014647137
+    ],
+    [
+      0.0425531914893617,
+      0.00425531914893617,
+      0.07234042553191489,
+      0.8808510638297873
+    ]
+  ],
+  "limitations": [
+    "Single R03 scene, single split/seed; not full IPAD.",
+    "No phase/object ground truth; no localization accuracy claimed.",
+    "Appearance scoring uses CLIP residuals; optional normal geometry/motion branches are specified in the experiment config.",
+    "Missed objects have no crop score; global branch remains.",
+    "PCA fallback pools normal phases if support is insufficient.",
+    "Phase assignments are proxies, not ground truth.",
+    "Frame-level AUPRC is reported as average precision (step integral).",
+    "Q99 alarm uses strict >; no per-test-video normalization."
+  ],
+  "process_calibration": {
+    "mode": "previous_state",
+    "minimum_support": 10,
+    "normal_transition_support": {
+      "0": 264,
+      "1": 211,
+      "2": 208,
+      "3": 16
+    },
+    "test_sampled_conditional_fraction": 0.9943465247755238,
+    "fallback": "Global reference for first observation or insufficient previous-state support."
+  }
+}

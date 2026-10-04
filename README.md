@@ -16,7 +16,8 @@
 | 실험 07 | 실제 장면 R03 적용성 | 완료: 진행량 추가로 ranking 저하, 상태 관측 실패 확인 | [결과·의의·추천 3개](docs/EXPERIMENT07.md) |
 | 실험 08 | R03 객체 관계 기반 잠재 상태 | 완료: 외형 ranking 상승, 결합 ranking 하락 | [결과·의의·추천 3개](docs/EXPERIMENT08.md) |
 | 실험 09 | 이전 상태별 공정 점수 보정 | 완료: 결합 ranking 상승, 프레임 recall 하락 | [결과·의의·추천 3개](docs/EXPERIMENT09.md) |
-| 다음 실험 10 | max 결합 및 Visual 단독 비교 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT10_PLAN.md) |
+| 실험 10 | max 결합 및 Visual 단독 비교 | 완료: 평균 결합 억제 해소, 추가 공정 기여 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT10.md) |
+| 다음 실험 11 | 관측된 진입 이후 체류 시간 신호 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT11_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -376,6 +377,34 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **정상 보정·상태 관측의 안정성 검증** | calibration 4개 영상·희소 상태 16개 전이의 한계 점검. 영상 단위 support와 의미 정확도 구분 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT09.md) · [지표](results/experiment09/metrics.json) · [결합 실패 진단](results/experiment09/fusion_diagnostic.json) · [실험 10 계획](docs/EXPERIMENT10_PLAN.md)
+
+## 실험 10 결과 — 최댓값 결합과 Visual 단독
+
+두 branch를 고정하고 평균 결합을 max로 교체했습니다. Visual 단독 대조군도 함께 평가했으며, 각 설정의 최종 점수로 정상 q99를 따로 정했습니다.
+
+| R03 최종 점수 지표 | 09 평균 | 10 최댓값 | Visual 단독 |
+|---|---:|---:|---:|
+| AUROC | 0.7108 | 0.7339 | 0.7330 |
+| AP | 0.6125 | 0.6784 | 0.6778 |
+| 정상 q99 기준 정상 오탐률 | 1.85% | 2.62% | 7.87% |
+| 정상 q99 기준 이상 프레임 recall | 2.29% | 25.59% | 31.53% |
+| 경보가 발생한 GT 이상 구간 | 11 / 17 | 11 / 17 | 13 / 17 |
+
+![실험 10 결합 비교](results/comparison09_10_10_visual/comparison.png)
+
+**의의:** 평균 결합에서 경보가 불가능했던 상태 유지 이상 4,884프레임 중 max는 1,213프레임을 탐지했습니다. 결합의 억제는 해소됐지만 Visual 대비 AUROC 차이는 +0.0009이며 추가 탐지 GT 구간은 없었습니다. 공정 신호의 추가 기여가 제한적임을 확인한 결과이고 novelty·일반화 입증은 아닙니다.
+
+**보완할 점:** max도 이상 구간 6개를 놓쳤습니다. Visual보다 높은 q99 때문에 기존 이상 경보 317프레임을 잃고 16프레임을 추가했으며, 구간 2개를 더 놓쳤습니다. 점수가 낮아지지 않아도 재보정한 임계값의 탐지가 보존되는 것은 아닙니다. 각자의 정상 q99 비교이며 작은 ranking 차이에 유의성을 주장하지 않습니다.
+
+### 실험 10 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **관측된 진입 이후 정상 체류 시간** | 전이만으로 부족한 지속 신호 추가. 정상 support가 충분한 상태만 사용하고 경계·누락·진입 미관측은 abstain |
+| 2 | **영상 단위 정상 보정 안정성** | q99 차이 0.0008219에 경보가 크게 변함. 정상 영상별 상단 분포와 임계값 민감도 점검 |
+| 3 | **관계 상태의 의미·관측 품질** | 짧은 군집 전환이 실제 동작인지 확인. 검출 실패·jitter와 실제 전환을 보조 진단으로 구분 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT10.md) · [최댓값 지표](results/experiment10/metrics.json) · [Visual 지표](results/experiment10_visual/metrics.json) · [경보·상단 점수 진단](results/comparison09_10_10_visual/fusion_diagnostic.json) · [실험 11 계획](docs/EXPERIMENT11_PLAN.md)
 
 ## 로컬 VLM
 

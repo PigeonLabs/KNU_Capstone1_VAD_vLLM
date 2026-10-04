@@ -1,0 +1,68 @@
+{
+  "scene": "R03",
+  "experiments": [
+    "09",
+    "10",
+    "10_visual"
+  ],
+  "thresholds": {
+    "09": 0.9579590762055217,
+    "10": 0.9973544973544973,
+    "10_visual": 0.9965325936199723
+  },
+  "max_vs_visual_alarm_changes": {
+    "added_by_max": {
+      "normal": 16,
+      "anomaly": 16
+    },
+    "lost_by_max": {
+      "normal": 380,
+      "anomaly": 317
+    },
+    "both": {
+      "normal": 166,
+      "anomaly": 1281
+    },
+    "neither": {
+      "normal": 6375,
+      "anomaly": 3454
+    }
+  },
+  "score_tails": {
+    "10": {
+      "normal_calibration_samples": 703,
+      "normal_calibration_max": 0.9994708994708995,
+      "normal_calibration_at_q99": 1,
+      "normal_calibration_above_q99": 7,
+      "normal_calibration_at_one": 0,
+      "test_at_one": {
+        "normal": 70,
+        "anomaly": 765
+      },
+      "test_at_q99": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "test_unique_scores": 517,
+      "test_process_exceeds_visual": 248
+    },
+    "10_visual": {
+      "normal_calibration_samples": 703,
+      "normal_calibration_max": 0.9994708994708995,
+      "normal_calibration_at_q99": 1,
+      "normal_calibration_above_q99": 7,
+      "normal_calibration_at_one": 0,
+      "test_at_one": {
+        "normal": 66,
+        "anomaly": 741
+      },
+      "test_at_q99": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "test_unique_scores": 535,
+      "test_process_exceeds_visual": 248
+    }
+  },
+  "note": "Each mode has its own normal q99. Diagnostic counts do not tune scores, parameters or thresholds. Same development scene."
+}

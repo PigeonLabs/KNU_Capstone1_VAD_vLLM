@@ -1,0 +1,58 @@
+{
+  "scene": "R03",
+  "fusion": "max",
+  "threshold": 0.9973544973544973,
+  "self_transition_score_bounds": [
+    {
+      "state": 0,
+      "self_process_percentile": 0.49053030303030304,
+      "combined_upper_bound_when_visual_is_one": 1.0,
+      "can_exceed_current_q99": true
+    },
+    {
+      "state": 1,
+      "self_process_percentile": 0.490521327014218,
+      "combined_upper_bound_when_visual_is_one": 1.0,
+      "can_exceed_current_q99": true
+    },
+    {
+      "state": 2,
+      "self_process_percentile": 0.4831730769230769,
+      "combined_upper_bound_when_visual_is_one": 1.0,
+      "can_exceed_current_q99": true
+    },
+    {
+      "state": 3,
+      "self_process_percentile": 0.4375,
+      "combined_upper_bound_when_visual_is_one": 1.0,
+      "can_exceed_current_q99": true
+    }
+  ],
+  "test_dense_strata": {
+    "initial": {
+      "frames": 68,
+      "normal": 52,
+      "anomaly": 16,
+      "false_positive": 0,
+      "true_positive": 4,
+      "combined_below_visual": 0
+    },
+    "self_transition": {
+      "frames": 11613,
+      "normal": 6729,
+      "anomaly": 4884,
+      "false_positive": 146,
+      "true_positive": 1213,
+      "combined_below_visual": 0
+    },
+    "state_change": {
+      "frames": 324,
+      "normal": 156,
+      "anomaly": 168,
+      "false_positive": 36,
+      "true_positive": 80,
+      "combined_below_visual": 0
+    }
+  },
+  "interpretation": "Fixed arithmetic fusion bounds follow normal calibration only. Test labels describe strata after evaluation, not tune parameters. Self-transition means repeated estimated cluster, not a verified physical state."
+}

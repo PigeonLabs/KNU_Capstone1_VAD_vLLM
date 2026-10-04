@@ -21,7 +21,6 @@ class KinematicBaseline(Baseline):
         result=super().score(data);motion,valid=self.motion.score(data)
         transition=result['process'].copy()
         result['process']=np.where(valid,np.maximum(transition,motion),transition)
-        w=self.cfg['visual_process_weight']
-        result['combined']=w*result['visual']+(1-w)*result['process']
+        result['combined']=self.fuse(result['visual'],result['process'])
         result.update(motion=motion,motion_valid=valid,transition=transition)
         return result
