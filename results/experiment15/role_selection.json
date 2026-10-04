@@ -1,0 +1,30 @@
+{
+  "created_at_utc": "2026-10-04T18:22:49.936131+00:00",
+  "stage": "before FIT detector extraction and before any R04 test extraction or scoring",
+  "scene": "R04",
+  "anchor_role": 1,
+  "anchor_id": "lid",
+  "target_role": 0,
+  "target_id": "cardboard",
+  "rationale": "Normal FIT 01/03 show the hinged metal part moving relative to cardboard. Use its coordinate frame as anchor and cardboard as target. Keep the third trough role for appearance crops.",
+  "reviewed_normal_images": [
+    "01/000.jpg",
+    "01/130.jpg",
+    "01/284.jpg",
+    "03/000.jpg",
+    "03/230.jpg",
+    "03/460.jpg"
+  ],
+  "qualitative_limitations": [
+    "Cardboard is absent in some normal frames and multiple cut pieces can coexist.",
+    "Metal lid and trough may be visually confused.",
+    "Role observations and learned clusters have no ground-truth accuracy labels.",
+    "Qwen state order is a hypothesis; relational cluster states replace semantic assignments."
+  ],
+  "configuration_sha256": {
+    "configs/experiment15_raw.json": "44f57d498080e62808630aaba1a777ecf98a169bd31c42b2d05392ec88c42140",
+    "configs/experiment15.json": "c3cc29bc3d9986210f7e19a16379b4268ff14ff3f223fac6c2d214013012a68a",
+    "configs/experiment15_base.json": "14dacc41694c2c18e66bb1685575358200a57399833b5d8e7185962965765467"
+  },
+  "discovery_sha256": "3dab66d797b5cae8a94d70d44a982a60c5b965b538ac57de3a24c45b1b9048a6"
+}

@@ -1,0 +1,79 @@
+{
+  "scene": "R04",
+  "sources": [
+    "R04/training/frames/01/000.jpg",
+    "R04/training/frames/01/061.jpg",
+    "R04/training/frames/01/123.jpg",
+    "R04/training/frames/01/184.jpg",
+    "R04/training/frames/01/246.jpg",
+    "R04/training/frames/01/308.jpg",
+    "R04/training/frames/03/000.jpg",
+    "R04/training/frames/03/092.jpg",
+    "R04/training/frames/03/184.jpg",
+    "R04/training/frames/03/276.jpg",
+    "R04/training/frames/03/368.jpg",
+    "R04/training/frames/03/460.jpg"
+  ],
+  "prompt": "You are documenting only the VISIBLE normal operation of an industrial device.\nThe supplied images are two normal training sequences, each sampled in temporal order.\nUse no test data or imagined defects. Do not infer hidden actions such as grasping if not visible.\nReturn ONLY a JSON object, no markdown. Schema:\n{\"objects\":[{\"id\":\"short_ascii_role\",\"detection_prompt\":\"short concrete English noun phrase\",\"description\":\"visible role\"}],\n\"phases\":[{\"id\":\"short_ascii_state\",\"description\":\"A photo of ... (a concrete visually discriminable normal state)\"}],\n\"normal_order\":[\"phase_id\"],\"cyclic\":true,\"uncertainties\":[\"limitations\"]}.\nUse 1-3 object roles (include transported product and relevant machine part), 2-4 observable phases.\nPhases must describe distinct VISIBLE positions/states, not defect types. Vocabulary must work as object detection prompts.\nWhen a fine-grained action is not observable, use spatial progression states instead. Do not invent numeric period or FPS.",
+  "process": {
+    "objects": [
+      {
+        "id": "cardboard",
+        "detection_prompt": "brown cardboard sheet",
+        "description": "the cardboard material loaded into the trough and accumulated as cut pieces on the green bench"
+      },
+      {
+        "id": "lid",
+        "detection_prompt": "hinged metal lid",
+        "description": "the hinged metal cover with a serrated lower edge that rotates over the trough"
+      },
+      {
+        "id": "trough",
+        "detection_prompt": "galvanized metal trough",
+        "description": "the long metal channel that holds the cardboard during the cycle"
+      }
+    ],
+    "phases": [
+      {
+        "id": "lid_open_loaded",
+        "description": "A photo of the hinged metal lid raised open with a long brown cardboard strip lying inside the metal trough"
+      },
+      {
+        "id": "lid_closing",
+        "description": "A photo of the hinged metal lid angled downward covering the trough with its serrated edge visible over the cardboard"
+      },
+      {
+        "id": "lid_open_unloaded",
+        "description": "A photo of the hinged metal lid raised open over an empty trough with a cut brown cardboard piece resting on the bench beside it"
+      },
+      {
+        "id": "lid_closed",
+        "description": "A photo of the hinged metal lid in the closed horizontal position with the empty trough interior visible"
+      }
+    ],
+    "normal_order": [
+      "lid_open_loaded",
+      "lid_closing",
+      "lid_open_unloaded",
+      "lid_closed"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "The cutting engagement of the serrated edge is not directly visible and is inferred from the lid closing over the trough",
+      "Sparse frame sampling skips some intermediate lid positions, so the exact transition order between open and closed states is approximate",
+      "In some frames a cardboard strip remains in the trough across multiple lid cycles, making the loaded versus unloaded open state ambiguous",
+      "No numeric period or frame rate is provided or inferred"
+    ]
+  },
+  "elapsed_seconds": 143.95997297100257,
+  "usage": {
+    "completion_tokens": 6360,
+    "prompt_tokens": 1266,
+    "total_tokens": 7626,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "note": "Generated normal-state hypotheses, not ground truth. Reasoning text is not persisted."
+}

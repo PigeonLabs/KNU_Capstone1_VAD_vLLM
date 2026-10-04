@@ -1,0 +1,394 @@
+{
+  "scene": "R04",
+  "fit_only": true,
+  "model": {
+    "descriptor_names": [
+      "relative_center_x",
+      "relative_center_y",
+      "log_area_ratio",
+      "iou",
+      "anchor_center_x",
+      "anchor_center_y"
+    ],
+    "area_gates": {
+      "1": {
+        "normal_boxes": 2162,
+        "area_upper": 0.21002313104907966,
+        "excluded_fraction": 0.11424606845513413
+      },
+      "0": {
+        "normal_boxes": 2462,
+        "area_upper": 0.6152034895935014,
+        "excluded_fraction": 0.0036555645816409425
+      }
+    },
+    "normal_valid_pairs": 1644,
+    "median": [
+      -0.6937091052532196,
+      -0.3399088829755783,
+      -0.3435570001602173,
+      0.05246259272098541,
+      0.7963222563266754,
+      0.7486985325813293
+    ],
+    "scale_iqr_with_floor": [
+      0.2132786065340042,
+      0.9120263587683439,
+      0.7470319345593452,
+      0.11168263689614832,
+      0.05,
+      0.05
+    ],
+    "cluster_centers_scaled": [
+      [
+        47.32606202965603,
+        -1.317210631252695,
+        -1.8424431005847186,
+        -0.46974708136386,
+        -6.042464176813761,
+        -1.5445248285929363
+      ],
+      [
+        -0.8612960746600226,
+        -0.47141425151194344,
+        0.15954669917503672,
+        -0.2907733751710143,
+        0.1359669021243395,
+        -0.018316905236436698
+      ],
+      [
+        0.4283592574880923,
+        0.22492882814731976,
+        -0.23977186924191213,
+        0.5815046772911192,
+        -0.03794302170625505,
+        -0.09840136860129106
+      ],
+      [
+        2.1024571216453185,
+        1.3303819812062616,
+        0.2420079083684386,
+        -0.13586753076498934,
+        -3.175301293239872,
+        -10.30422891325809
+      ]
+    ],
+    "normal_cluster_samples": [
+      3,
+      746,
+      827,
+      68
+    ],
+    "median_normal_relative_position_for_label_permutation": [
+      0.08695652173913043,
+      0.31421018256461297,
+      0.6753246753246753,
+      0.7347826086956522
+    ],
+    "ordering_note": "Normal FIT relative frame position ONLY orders cluster IDs. It is not a phase label or a test-time input.",
+    "semantic_note": "latent_0..k-1 have no verified mapping to actions or original VLM phases."
+  },
+  "groups": {
+    "fit": {
+      "samples": 1960,
+      "valid_relations": 1644,
+      "valid_fraction": 0.8387755102040816,
+      "phase_counts": [
+        127,
+        860,
+        881,
+        92
+      ]
+    }
+  },
+  "sequences": [
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 78,
+      "valid_relations": 60,
+      "phase_counts": [
+        1,
+        19,
+        37,
+        21
+      ],
+      "changed_phase_samples": 59,
+      "phase_transitions": 9
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 116,
+      "valid_relations": 91,
+      "phase_counts": [
+        3,
+        34,
+        39,
+        40
+      ],
+      "changed_phase_samples": 82,
+      "phase_transitions": 17
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 102,
+      "valid_relations": 67,
+      "phase_counts": [
+        7,
+        52,
+        29,
+        14
+      ],
+      "changed_phase_samples": 51,
+      "phase_transitions": 9
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 110,
+      "valid_relations": 98,
+      "phase_counts": [
+        3,
+        49,
+        56,
+        2
+      ],
+      "changed_phase_samples": 69,
+      "phase_transitions": 6
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 112,
+      "valid_relations": 98,
+      "phase_counts": [
+        7,
+        42,
+        63,
+        0
+      ],
+      "changed_phase_samples": 70,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_07",
+      "group": "fit",
+      "samples": 97,
+      "valid_relations": 79,
+      "phase_counts": [
+        8,
+        38,
+        49,
+        2
+      ],
+      "changed_phase_samples": 61,
+      "phase_transitions": 6
+    },
+    {
+      "sequence_key": "training_09",
+      "group": "fit",
+      "samples": 105,
+      "valid_relations": 91,
+      "phase_counts": [
+        4,
+        32,
+        65,
+        4
+      ],
+      "changed_phase_samples": 80,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_11",
+      "group": "fit",
+      "samples": 85,
+      "valid_relations": 74,
+      "phase_counts": [
+        6,
+        36,
+        43,
+        0
+      ],
+      "changed_phase_samples": 49,
+      "phase_transitions": 4
+    },
+    {
+      "sequence_key": "training_13",
+      "group": "fit",
+      "samples": 96,
+      "valid_relations": 66,
+      "phase_counts": [
+        7,
+        53,
+        27,
+        9
+      ],
+      "changed_phase_samples": 47,
+      "phase_transitions": 12
+    },
+    {
+      "sequence_key": "training_14",
+      "group": "fit",
+      "samples": 81,
+      "valid_relations": 74,
+      "phase_counts": [
+        5,
+        44,
+        32,
+        0
+      ],
+      "changed_phase_samples": 43,
+      "phase_transitions": 13
+    },
+    {
+      "sequence_key": "training_16",
+      "group": "fit",
+      "samples": 94,
+      "valid_relations": 85,
+      "phase_counts": [
+        0,
+        41,
+        53,
+        0
+      ],
+      "changed_phase_samples": 60,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_17",
+      "group": "fit",
+      "samples": 93,
+      "valid_relations": 83,
+      "phase_counts": [
+        5,
+        38,
+        50,
+        0
+      ],
+      "changed_phase_samples": 55,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 103,
+      "valid_relations": 87,
+      "phase_counts": [
+        11,
+        78,
+        14,
+        0
+      ],
+      "changed_phase_samples": 40,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 99,
+      "valid_relations": 83,
+      "phase_counts": [
+        7,
+        42,
+        50,
+        0
+      ],
+      "changed_phase_samples": 69,
+      "phase_transitions": 12
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 101,
+      "valid_relations": 83,
+      "phase_counts": [
+        15,
+        35,
+        51,
+        0
+      ],
+      "changed_phase_samples": 71,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 105,
+      "valid_relations": 97,
+      "phase_counts": [
+        5,
+        43,
+        57,
+        0
+      ],
+      "changed_phase_samples": 62,
+      "phase_transitions": 6
+    },
+    {
+      "sequence_key": "training_22",
+      "group": "fit",
+      "samples": 95,
+      "valid_relations": 85,
+      "phase_counts": [
+        7,
+        29,
+        59,
+        0
+      ],
+      "changed_phase_samples": 66,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_23",
+      "group": "fit",
+      "samples": 95,
+      "valid_relations": 77,
+      "phase_counts": [
+        8,
+        56,
+        31,
+        0
+      ],
+      "changed_phase_samples": 41,
+      "phase_transitions": 10
+    },
+    {
+      "sequence_key": "training_24",
+      "group": "fit",
+      "samples": 92,
+      "valid_relations": 80,
+      "phase_counts": [
+        9,
+        58,
+        25,
+        0
+      ],
+      "changed_phase_samples": 41,
+      "phase_transitions": 6
+    },
+    {
+      "sequence_key": "training_25",
+      "group": "fit",
+      "samples": 101,
+      "valid_relations": 86,
+      "phase_counts": [
+        9,
+        41,
+        51,
+        0
+      ],
+      "changed_phase_samples": 61,
+      "phase_transitions": 8
+    }
+  ],
+  "source_sha256": {},
+  "source_arrays_preserved_except_phases": false,
+  "missing_policy": "Hold last phase, initial latent_0; mark invalid and clear descriptor smoothing history. Invalid sentinel excluded from clustering.",
+  "limitations": [
+    "No independent object/phase GT.",
+    "Normal temporal ordering is a heuristic, not semantic supervision.",
+    "Area gates affect phase anchors only; appearance boxes remain unchanged."
+  ]
+}

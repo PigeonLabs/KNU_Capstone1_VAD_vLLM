@@ -1,0 +1,55 @@
+{
+  "fit": {
+    "sequences": 20,
+    "source_frames": 7812,
+    "sampled_frames": 1960,
+    "role_sample_coverage": [
+      0.9239795918367347,
+      0.9760204081632653,
+      1.0
+    ],
+    "raw_semantic_phase_counts": [
+      0,
+      1789,
+      1,
+      170
+    ],
+    "extraction_seconds": 188.52913808397716
+  },
+  "calibration": {
+    "sequences": 5,
+    "source_frames": 1920,
+    "sampled_frames": 482,
+    "role_sample_coverage": [
+      0.9336099585062241,
+      0.9875518672199171,
+      1.0
+    ],
+    "raw_semantic_phase_counts": [
+      0,
+      450,
+      0,
+      32
+    ],
+    "extraction_seconds": 44.53435728204204
+  },
+  "test": {
+    "sequences": 19,
+    "source_frames": 8154,
+    "sampled_frames": 2047,
+    "role_sample_coverage": [
+      0.9066927210552027,
+      0.9843673668783586,
+      1.0
+    ],
+    "raw_semantic_phase_counts": [
+      4,
+      1810,
+      9,
+      224
+    ],
+    "extraction_seconds": 187.76469852105947
+  },
+  "timing_note": "Sum of per-sequence extraction times from initial FIT and subsequent calibration/test runs; excludes VLM, model loading, normal fit, scoring. Not end-to-end latency.",
+  "not_detection_recall": true
+}

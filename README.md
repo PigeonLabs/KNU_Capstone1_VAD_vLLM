@@ -21,7 +21,8 @@
 | 실험 12 | 진입 맥락별 체류 시간 및 동일 support 대조 | 완료: 조건화 후 결합 성능 저하, 보정 간섭 확인 | [결과·의의·추천 3개](docs/EXPERIMENT12.md) |
 | 실험 13 | 정상 영상 단위 보정 holdout 검증 | 완료: 정상 FIT 범위 안의 체류 오탐 반례 확인 | [결과·의의·추천 3개](docs/EXPERIMENT13.md) |
 | 실험 14 | 완결 정상 길이 기준 체류 percentile | 완료: 정상 holdout 반례 교정, R03 체류 효용은 미확인 | [결과·의의·추천 3개](docs/EXPERIMENT14.md) |
-| 다음 실험 15 | R04에서 고정 파이프라인 적용성 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT15_PLAN.md) |
+| 실험 15 | R04에서 고정 파이프라인 적용성 | 완료: 역할 오검출·q99=1 경보 불능 확인 | [결과·의의·추천 3개](docs/EXPERIMENT15.md) |
+| 다음 실험 16 | 연속 체류 꼬리 점수·경보 가능성 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT16_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -524,6 +525,37 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **영상 단위 길이 support·불확실성** | 희소 길이 은행의 기여 영상 수와 최대 길이 안정성 확인. 추가 abstention의 탐지 손실 포함 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT14.md) · [지표](results/experiment14/metrics.json) · [체류 진단](results/experiment14/completed_dwell_diagnostic.json) · [기준선 포함 비교](results/comparison10_12_14/comparison.png) · [실험 15 계획](docs/EXPERIMENT15_PLAN.md)
+
+## 실험 15 결과 — R04 적용성과 경보 불능
+
+새 실제 장면 R04의 정상 FIT 20개로 vocabulary·관계 모델을 적합하고 calibration 5개, 테스트 19개·8,154프레임을 평가했습니다. 같은 특징의 체류 없는/있는 두 구성을 비교했습니다.
+
+| R04 지표 | 체류 없음 (15_base) | 완결 FIT 체류 (15) |
+|---|---:|---:|
+| Combined AUROC | 0.6692 | 0.7061 |
+| Combined AP | 0.6614 | 0.7191 |
+| 정상 q99 | 0.997458 | **1.000000** |
+| 정상 오탐률 | 9.12% | 0% |
+| 이상 프레임 recall | 11.51% | **0%** |
+| 경보가 발생한 GT 이상 구간 | 12 / 26 | **0 / 26** |
+
+**오탐 0%는 개선이 아닙니다.** 정상 calibration 482개 중 5개 체류 점수가 FIT 최대 길이 밖에서 1로 포화됐고 q99도 1이 됐습니다. 모든 점수는 1 이하이므로 `score > q99` 경보가 불가능합니다. 테스트 비교 연산이나 임계값을 바꿔 결과를 보정하지 않았습니다.
+
+![실험 15 정상 점수 상단 포화](results/experiment15/threshold_ceiling.png)
+
+**의의:** 새 장면에서 고정한 파이프라인을 재현하고 ranking 상승과 경보 가능성을 구분했습니다. 이 실패는 정상 calibration만으로도 발견할 수 있습니다. AUROC 상승을 운용 성능 개선이나 novelty로 주장하지 않습니다.
+
+**보완할 점:** 정상 예시 6개 중 5개에서 `lid` bbox가 움직이는 금속판 대신 바이스를 가리켰습니다. 이는 정성 사례이며 전수 검출 정확도는 아닙니다. 높은 역할 관측률로 올바른 grounding을 주장할 수 없습니다. 체류 가용성은 41.83%이고, 희소 군집·미관측 상태 할당도 남아 있습니다. 같은 IPAD의 한 장면·단일 seed 결과이며 이후 R04는 개발 장면입니다.
+
+### 실험 15 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **연속 체류 꼬리 점수·경보 가능성 검사** | 체류 점수만 FIT lognormal CDF로 교체. 정상 q99 포화와 finite 여부, 경보 복구·오탐 증가를 함께 평가 |
+| 2 | **정상 객체 역할 grounding 검증** | 높은 관측률과 실제 부품 오검출의 차이 확인. 정상 crop·혼동 객체를 점검하고 누락/후단 손실도 평가 |
+| 3 | **미관측 관계 상태의 명시적 처리** | latent 0의 FIT 유효 관측 3개 대비 전체 할당 127개. 직접 관측과 초기/유지 상태를 구분한 fallback 검증 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT15.md) · [체류 지표](results/experiment15/metrics.json) · [체류 없는 지표](results/experiment15_base/metrics.json) · [정상 포화 진단](results/experiment15/threshold_ceiling.json) · [실험 16 계획](docs/EXPERIMENT16_PLAN.md)
 
 ## 로컬 VLM
 

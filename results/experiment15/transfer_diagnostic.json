@@ -1,0 +1,32 @@
+{
+  "frames": 8154,
+  "labels": {
+    "normal": 3576,
+    "anomaly": 4578
+  },
+  "added_alarms": {
+    "normal": 0,
+    "anomaly": 0
+  },
+  "removed_alarms": {
+    "normal": 326,
+    "anomaly": 527
+  },
+  "relation_valid": {
+    "normal": 2671,
+    "anomaly": 4211
+  },
+  "dwell_valid": {
+    "normal": 1215,
+    "anomaly": 2196
+  },
+  "normal_only_fitted_context_support": [
+    "1->2",
+    "2->1"
+  ],
+  "limitations": [
+    "New scene in the same dataset; not external validation.",
+    "Each model uses its own normal q99.",
+    "Observation masks do not measure detection or phase accuracy."
+  ]
+}

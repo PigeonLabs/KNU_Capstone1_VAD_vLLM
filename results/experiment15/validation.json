@@ -1,0 +1,10 @@
+{
+  "source_hashes_match": true,
+  "feature_sequences_checked": 44,
+  "test_sequences_checked": 19,
+  "fit_only_relation_model_reproduced": true,
+  "shared_features_and_existing_branches_preserved": true,
+  "normal_thresholds_and_metrics_recomputed": true,
+  "dwell_percentiles_reconstructed": true,
+  "unit_tests_passed": 42
+}

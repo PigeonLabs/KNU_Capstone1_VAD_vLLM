@@ -1,0 +1,93 @@
+{
+  "calibration_samples": 482,
+  "quantile_higher_sorted_zero_based_index": 477,
+  "normal_q99": 1.0,
+  "calibration_branches": {
+    "visual": {
+      "at_one": 0,
+      "maximum": 0.9991525423728813
+    },
+    "transition": {
+      "at_one": 0,
+      "maximum": 0.9940828402366864
+    },
+    "dwell": {
+      "at_one": 5,
+      "maximum": 1.0
+    },
+    "combined": {
+      "at_one": 5,
+      "maximum": 1.0
+    }
+  },
+  "calibration_at_one_fraction": 0.01037344398340249,
+  "calibration_by_video": [
+    {
+      "sequence": "02",
+      "samples": 103,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "08",
+      "samples": 104,
+      "combined_at_one": 5,
+      "dwell_ages_at_ceiling": [
+        64.0,
+        68.0,
+        72.0,
+        76.0,
+        80.0
+      ],
+      "phases_at_ceiling": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entry_contexts_at_ceiling": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "sequence": "10",
+      "samples": 94,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "12",
+      "samples": 96,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "15",
+      "samples": 85,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    }
+  ],
+  "test_score_max": 1.0,
+  "test_at_one": {
+    "normal": 177,
+    "anomaly": 768
+  },
+  "strict_threshold_test_alarms": 0,
+  "declared_score_upper_bound": 1.0,
+  "alarm_impossible_for_bounded_scores": true,
+  "interpretation": "Empirical complete-run percentile saturates beyond FIT maximum. A normal q99 equal to its closed upper bound makes strict > alarms impossible, regardless of ranking. No threshold comparison operator or tie rule was changed."
+}

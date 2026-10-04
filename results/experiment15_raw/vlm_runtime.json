@@ -1,0 +1,29 @@
+{
+  "context_per_request": 65536,
+  "slots": 1,
+  "temperature": 0.20000000298023224,
+  "model": "Qwen3.8-27B-Q8_0.gguf",
+  "modalities": {
+    "vision": true,
+    "audio": false
+  },
+  "build_info": "b9336-1506d39e7",
+  "command_flags": [
+    "--ctx-size",
+    "65536",
+    "--temp",
+    "0.2",
+    "--gpu-layers",
+    "all",
+    "--reasoning",
+    "on",
+    "--parallel",
+    "1"
+  ],
+  "actual_process_arguments_verified": true,
+  "reasoning_on_log_verified": true,
+  "gpu_allocated_MiB_at_check": 32614,
+  "model_weights": "Configured local Qwen3.8-27B-Q8_0 and matching mmproj filenames. Full weight hashes not recomputed.",
+  "other_server_options": "defaults",
+  "external_paid_api_used": false
+}

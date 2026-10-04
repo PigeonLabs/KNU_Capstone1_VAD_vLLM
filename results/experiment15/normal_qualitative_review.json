@@ -1,0 +1,40 @@
+{
+  "stage": "normal FIT only, before test extraction and scoring",
+  "selection": "First, middle sampled, last sampled frames of the same first two FIT discovery sequences; no anomaly labels used",
+  "local_overlay": "artifacts/experiment15_raw/normal_boxes.png",
+  "frames": [
+    {
+      "sequence": "01",
+      "frame": 0
+    },
+    {
+      "sequence": "01",
+      "frame": 156
+    },
+    {
+      "sequence": "01",
+      "frame": 308
+    },
+    {
+      "sequence": "03",
+      "frame": 0
+    },
+    {
+      "sequence": "03",
+      "frame": 232
+    },
+    {
+      "sequence": "03",
+      "frame": 460
+    }
+  ],
+  "observations": [
+    "In FIT01 frames 0/156/308 and FIT03 frames 0/232, the lid-role box visibly covers the lower-right bench vise rather than the intended hinged metal part.",
+    "In FIT03 frame460, the lid-role box is on the raised hinged metal part.",
+    "Cardboard-role detections include background pieces and accumulated cut pieces, not only the actively processed sheet.",
+    "Trough-role boxes cover a large region and can include the moving metal part."
+  ],
+  "interpretation": "Detected role coverage is not correct grounding. Relation states can reflect the cardboard versus a vise or other scene geometry rather than the intended lid-cardboard process. Preserve frozen vocabulary to measure this pipeline failure, conditional on numerical FIT support; do not silently repair prompts using test outcomes.",
+  "not_ground_truth_accuracy": true,
+  "original_images_uploaded": false
+}

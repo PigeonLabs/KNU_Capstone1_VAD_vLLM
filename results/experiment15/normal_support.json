@@ -1,0 +1,877 @@
+{
+  "scene": "R04",
+  "fit_ids": [
+    "01",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "09",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+  ],
+  "normal_only": true,
+  "model": {
+    "descriptor_names": [
+      "relative_center_x",
+      "relative_center_y",
+      "log_area_ratio",
+      "iou",
+      "anchor_center_x",
+      "anchor_center_y"
+    ],
+    "area_gates": {
+      "1": {
+        "normal_boxes": 2162,
+        "area_upper": 0.21002313104907966,
+        "excluded_fraction": 0.11424606845513413
+      },
+      "0": {
+        "normal_boxes": 2462,
+        "area_upper": 0.6152034895935014,
+        "excluded_fraction": 0.0036555645816409425
+      }
+    },
+    "normal_valid_pairs": 1644,
+    "median": [
+      -0.6937091052532196,
+      -0.3399088829755783,
+      -0.3435570001602173,
+      0.05246259272098541,
+      0.7963222563266754,
+      0.7486985325813293
+    ],
+    "scale_iqr_with_floor": [
+      0.2132786065340042,
+      0.9120263587683439,
+      0.7470319345593452,
+      0.11168263689614832,
+      0.05,
+      0.05
+    ],
+    "cluster_centers_scaled": [
+      [
+        47.32606202965603,
+        -1.317210631252695,
+        -1.8424431005847186,
+        -0.46974708136386,
+        -6.042464176813761,
+        -1.5445248285929363
+      ],
+      [
+        -0.8612960746600227,
+        -0.47141425151194344,
+        0.15954669917503672,
+        -0.2907733751710143,
+        0.1359669021243395,
+        -0.018316905236436642
+      ],
+      [
+        0.4283592574880922,
+        0.22492882814731976,
+        -0.2397718692419121,
+        0.5815046772911192,
+        -0.03794302170625505,
+        -0.09840136860129106
+      ],
+      [
+        2.1024571216453185,
+        1.3303819812062616,
+        0.2420079083684386,
+        -0.13586753076498934,
+        -3.175301293239872,
+        -10.30422891325809
+      ]
+    ],
+    "normal_cluster_samples": [
+      3,
+      746,
+      827,
+      68
+    ],
+    "median_normal_relative_position_for_label_permutation": [
+      0.08695652173913043,
+      0.31421018256461297,
+      0.6753246753246753,
+      0.7347826086956522
+    ],
+    "ordering_note": "Normal FIT relative frame position ONLY orders cluster IDs. It is not a phase label or a test-time input.",
+    "semantic_note": "latent_0..k-1 have no verified mapping to actions or original VLM phases."
+  },
+  "samples": 1960,
+  "valid_relations": 1644,
+  "valid_relation_fraction": 0.8387755102040816,
+  "contexts": {
+    "2->3": {
+      "runs": 2,
+      "distinct_videos": 2,
+      "min_duration": 4.0,
+      "max_duration": 20.0,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "01",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "03",
+          "duration_frames": 20.0
+        }
+      ]
+    },
+    "3->2": {
+      "runs": 2,
+      "distinct_videos": 2,
+      "min_duration": 4.0,
+      "max_duration": 16.0,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "01",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "03",
+          "duration_frames": 4.0
+        }
+      ]
+    },
+    "2->0": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "min_duration": 12.0,
+      "max_duration": 12.0,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 12.0
+        }
+      ]
+    },
+    "0->2": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "min_duration": 4.0,
+      "max_duration": 4.0,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 4.0
+        }
+      ]
+    },
+    "1->2": {
+      "runs": 29,
+      "distinct_videos": 18,
+      "min_duration": 4.0,
+      "max_duration": 60.0,
+      "supported": true,
+      "observations": [
+        {
+          "sequence": "04",
+          "duration_frames": 28.0
+        },
+        {
+          "sequence": "05",
+          "duration_frames": 36.0
+        },
+        {
+          "sequence": "06",
+          "duration_frames": 60.0
+        },
+        {
+          "sequence": "07",
+          "duration_frames": 40.0
+        },
+        {
+          "sequence": "09",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "11",
+          "duration_frames": 20.0
+        },
+        {
+          "sequence": "13",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 44.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 28.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "16",
+          "duration_frames": 48.0
+        },
+        {
+          "sequence": "16",
+          "duration_frames": 56.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 60.0
+        },
+        {
+          "sequence": "18",
+          "duration_frames": 56.0
+        },
+        {
+          "sequence": "19",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "19",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "20",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "20",
+          "duration_frames": 32.0
+        },
+        {
+          "sequence": "21",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "21",
+          "duration_frames": 32.0
+        },
+        {
+          "sequence": "22",
+          "duration_frames": 44.0
+        },
+        {
+          "sequence": "23",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "23",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 20.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 32.0
+        }
+      ]
+    },
+    "2->1": {
+      "runs": 26,
+      "distinct_videos": 12,
+      "min_duration": 4.0,
+      "max_duration": 76.0,
+      "supported": true,
+      "observations": [
+        {
+          "sequence": "06",
+          "duration_frames": 56.0
+        },
+        {
+          "sequence": "06",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "09",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "09",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "13",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 40.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "16",
+          "duration_frames": 36.0
+        },
+        {
+          "sequence": "16",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 32.0
+        },
+        {
+          "sequence": "19",
+          "duration_frames": 64.0
+        },
+        {
+          "sequence": "19",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "19",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "20",
+          "duration_frames": 72.0
+        },
+        {
+          "sequence": "20",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "20",
+          "duration_frames": 32.0
+        },
+        {
+          "sequence": "21",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "21",
+          "duration_frames": 60.0
+        },
+        {
+          "sequence": "22",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "22",
+          "duration_frames": 40.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 76.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 68.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 64.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 8.0
+        }
+      ]
+    },
+    "1->3": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "min_duration": 4.0,
+      "max_duration": 4.0,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "13",
+          "duration_frames": 4.0
+        }
+      ]
+    }
+  },
+  "supported_contexts": [
+    "1->2",
+    "2->1"
+  ],
+  "sequences": [
+    {
+      "sequence": "01",
+      "samples": 78,
+      "valid_relations": 60,
+      "relation_fraction": 0.7692307692307693,
+      "role_sample_coverage": {
+        "0": 1.0,
+        "1": 0.9871794871794872,
+        "2": 1.0
+      },
+      "phase_counts": [
+        1,
+        19,
+        37,
+        21
+      ],
+      "phase_transitions": 9,
+      "complete_context_support": {
+        "2->3": 1,
+        "3->2": 1
+      }
+    },
+    {
+      "sequence": "03",
+      "samples": 116,
+      "valid_relations": 91,
+      "relation_fraction": 0.7844827586206896,
+      "role_sample_coverage": {
+        "0": 1.0,
+        "1": 0.9482758620689655,
+        "2": 1.0
+      },
+      "phase_counts": [
+        3,
+        34,
+        39,
+        40
+      ],
+      "phase_transitions": 17,
+      "complete_context_support": {
+        "2->0": 1,
+        "0->2": 1,
+        "2->3": 1,
+        "3->2": 1
+      }
+    },
+    {
+      "sequence": "04",
+      "samples": 102,
+      "valid_relations": 67,
+      "relation_fraction": 0.6568627450980392,
+      "role_sample_coverage": {
+        "0": 0.9313725490196079,
+        "1": 0.9313725490196079,
+        "2": 1.0
+      },
+      "phase_counts": [
+        7,
+        52,
+        29,
+        14
+      ],
+      "phase_transitions": 9,
+      "complete_context_support": {
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "05",
+      "samples": 110,
+      "valid_relations": 98,
+      "relation_fraction": 0.8909090909090909,
+      "role_sample_coverage": {
+        "0": 0.9636363636363636,
+        "1": 0.990909090909091,
+        "2": 1.0
+      },
+      "phase_counts": [
+        3,
+        49,
+        56,
+        2
+      ],
+      "phase_transitions": 6,
+      "complete_context_support": {
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "06",
+      "samples": 112,
+      "valid_relations": 98,
+      "relation_fraction": 0.875,
+      "role_sample_coverage": {
+        "0": 0.9107142857142857,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        7,
+        42,
+        63,
+        0
+      ],
+      "phase_transitions": 8,
+      "complete_context_support": {
+        "2->1": 2,
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "07",
+      "samples": 97,
+      "valid_relations": 79,
+      "relation_fraction": 0.8144329896907216,
+      "role_sample_coverage": {
+        "0": 0.9175257731958762,
+        "1": 0.9484536082474226,
+        "2": 1.0
+      },
+      "phase_counts": [
+        8,
+        38,
+        49,
+        2
+      ],
+      "phase_transitions": 6,
+      "complete_context_support": {
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "09",
+      "samples": 105,
+      "valid_relations": 91,
+      "relation_fraction": 0.8666666666666667,
+      "role_sample_coverage": {
+        "0": 0.9238095238095239,
+        "1": 0.9714285714285714,
+        "2": 1.0
+      },
+      "phase_counts": [
+        4,
+        32,
+        65,
+        4
+      ],
+      "phase_transitions": 8,
+      "complete_context_support": {
+        "1->2": 1,
+        "2->1": 2
+      }
+    },
+    {
+      "sequence": "11",
+      "samples": 85,
+      "valid_relations": 74,
+      "relation_fraction": 0.8705882352941177,
+      "role_sample_coverage": {
+        "0": 0.9058823529411765,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        6,
+        36,
+        43,
+        0
+      ],
+      "phase_transitions": 4,
+      "complete_context_support": {
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "13",
+      "samples": 96,
+      "valid_relations": 66,
+      "relation_fraction": 0.6875,
+      "role_sample_coverage": {
+        "0": 0.90625,
+        "1": 0.8541666666666666,
+        "2": 1.0
+      },
+      "phase_counts": [
+        7,
+        53,
+        27,
+        9
+      ],
+      "phase_transitions": 12,
+      "complete_context_support": {
+        "1->2": 1,
+        "2->1": 1,
+        "1->3": 1
+      }
+    },
+    {
+      "sequence": "14",
+      "samples": 81,
+      "valid_relations": 74,
+      "relation_fraction": 0.9135802469135802,
+      "role_sample_coverage": {
+        "0": 0.9382716049382716,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        5,
+        44,
+        32,
+        0
+      ],
+      "phase_transitions": 13,
+      "complete_context_support": {
+        "1->2": 6,
+        "2->1": 4
+      }
+    },
+    {
+      "sequence": "16",
+      "samples": 94,
+      "valid_relations": 85,
+      "relation_fraction": 0.9042553191489362,
+      "role_sample_coverage": {
+        "0": 0.9042553191489362,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        0,
+        41,
+        53,
+        0
+      ],
+      "phase_transitions": 5,
+      "complete_context_support": {
+        "1->2": 2,
+        "2->1": 2
+      }
+    },
+    {
+      "sequence": "17",
+      "samples": 93,
+      "valid_relations": 83,
+      "relation_fraction": 0.8924731182795699,
+      "role_sample_coverage": {
+        "0": 0.9247311827956989,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        5,
+        38,
+        50,
+        0
+      ],
+      "phase_transitions": 5,
+      "complete_context_support": {
+        "1->2": 1,
+        "2->1": 1
+      }
+    },
+    {
+      "sequence": "18",
+      "samples": 103,
+      "valid_relations": 87,
+      "relation_fraction": 0.8446601941747572,
+      "role_sample_coverage": {
+        "0": 0.883495145631068,
+        "1": 0.9902912621359223,
+        "2": 1.0
+      },
+      "phase_counts": [
+        11,
+        78,
+        14,
+        0
+      ],
+      "phase_transitions": 3,
+      "complete_context_support": {
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "19",
+      "samples": 99,
+      "valid_relations": 83,
+      "relation_fraction": 0.8383838383838383,
+      "role_sample_coverage": {
+        "0": 0.898989898989899,
+        "1": 0.9797979797979798,
+        "2": 1.0
+      },
+      "phase_counts": [
+        7,
+        42,
+        50,
+        0
+      ],
+      "phase_transitions": 12,
+      "complete_context_support": {
+        "2->1": 3,
+        "1->2": 2
+      }
+    },
+    {
+      "sequence": "20",
+      "samples": 101,
+      "valid_relations": 83,
+      "relation_fraction": 0.8217821782178217,
+      "role_sample_coverage": {
+        "0": 0.8316831683168316,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        15,
+        35,
+        51,
+        0
+      ],
+      "phase_transitions": 8,
+      "complete_context_support": {
+        "2->1": 3,
+        "1->2": 2
+      }
+    },
+    {
+      "sequence": "21",
+      "samples": 105,
+      "valid_relations": 97,
+      "relation_fraction": 0.9238095238095239,
+      "role_sample_coverage": {
+        "0": 0.9428571428571428,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        5,
+        43,
+        57,
+        0
+      ],
+      "phase_transitions": 6,
+      "complete_context_support": {
+        "1->2": 2,
+        "2->1": 2
+      }
+    },
+    {
+      "sequence": "22",
+      "samples": 95,
+      "valid_relations": 85,
+      "relation_fraction": 0.8947368421052632,
+      "role_sample_coverage": {
+        "0": 0.9157894736842105,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        7,
+        29,
+        59,
+        0
+      ],
+      "phase_transitions": 8,
+      "complete_context_support": {
+        "2->1": 2,
+        "1->2": 1
+      }
+    },
+    {
+      "sequence": "23",
+      "samples": 95,
+      "valid_relations": 77,
+      "relation_fraction": 0.8105263157894737,
+      "role_sample_coverage": {
+        "0": 0.9263157894736842,
+        "1": 0.9368421052631579,
+        "2": 1.0
+      },
+      "phase_counts": [
+        8,
+        56,
+        31,
+        0
+      ],
+      "phase_transitions": 10,
+      "complete_context_support": {
+        "1->2": 2
+      }
+    },
+    {
+      "sequence": "24",
+      "samples": 92,
+      "valid_relations": 80,
+      "relation_fraction": 0.8695652173913043,
+      "role_sample_coverage": {
+        "0": 0.9239130434782609,
+        "1": 0.9891304347826086,
+        "2": 1.0
+      },
+      "phase_counts": [
+        9,
+        58,
+        25,
+        0
+      ],
+      "phase_transitions": 6,
+      "complete_context_support": {
+        "1->2": 2,
+        "2->1": 2
+      }
+    },
+    {
+      "sequence": "25",
+      "samples": 101,
+      "valid_relations": 86,
+      "relation_fraction": 0.8514851485148515,
+      "role_sample_coverage": {
+        "0": 0.9306930693069307,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "phase_counts": [
+        9,
+        41,
+        51,
+        0
+      ],
+      "phase_transitions": 8,
+      "complete_context_support": {
+        "2->1": 2,
+        "1->2": 1
+      }
+    }
+  ],
+  "limitations": [
+    "Normal observations only; coverage is not object or phase accuracy.",
+    "Complete runs within a video are not independent videos.",
+    "First/last and missing-observation runs are excluded."
+  ]
+}
