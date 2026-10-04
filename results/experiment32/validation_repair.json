@@ -1,0 +1,11 @@
+{
+  "stage": "First extraction completed; independent validator stopped while importing NumPy testing code. No test dataset access occurred.",
+  "reason": "The strict path guard interpreted numpy/testing package code as a test-data path.",
+  "repair": "Eagerly import numpy.testing before installing the data guard. Data allowlist, extractor, configuration and statistical rules are unchanged.",
+  "original_validator_sha256": "ca0564fb524672d3f55f0638b4cd6877b28a8bb6126de145b575bc3327352417",
+  "repaired_validator_sha256": "d58090a246bf957f6ae4b3276ea7bbbc80a1dc2705316e8e3e55fd04a7a29d83",
+  "first_extraction_output_sha256": {
+    "results/experiment32/episodes.json": "dbe1a59f67c96880bdc6386203318b83427ca6f57cdb190e2c4b036673109c09",
+    "results/experiment32/summary.json": "1bd96ec4bacd298c7c345ecbe4cdef48cd4608f1dee824ad23adc9a3e2edfc78"
+  }
+}

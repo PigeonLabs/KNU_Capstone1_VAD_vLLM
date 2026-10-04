@@ -1,0 +1,30 @@
+{
+  "unit_tests_passed": 132,
+  "normal_episodes_independently_reconstructed": 335,
+  "sample_assignments_verified": 2442,
+  "causal_prefixes_checked": 2467,
+  "protected_normal_files_unchanged": 103,
+  "first_extraction_episode_and_summary_hashes_preserved_after_validator_import_repair": true,
+  "figure_visually_inspected": true,
+  "markdown_links_and_tables_checked": true,
+  "recommendations_exactly_three_in_report_and_readme": true,
+  "test_data_opened": false,
+  "score_or_model_changes": false,
+  "public_files_exclude_originals_weights_features_scores_and_logs": true,
+  "file_sha256": {
+    "README.md": "04f2cfd14e531120b9bae7fe5ddc74446192b20493412b645ffe0a3a42fdd319",
+    "docs/EXPERIMENT32.md": "536d569502226f2f5d2e4755b17b5f977bff8552012de4989045e9125287ca2e",
+    "docs/EXPERIMENT33_PLAN.md": "ae3f9f6c97ac672f9fce45c7578e293372c148db1b303b00fdb73ac8d2b3d031",
+    "results/experiment32/audit_access_log.json": "f89522009437426f5b1dd972dff502bb4381a5df204408b9ccf7a4581deebd5a",
+    "results/experiment32/context_evidence.csv": "959e01316887172423f2a8d6aeb88432a1272c05a2c13732d14f6bd599aa1265",
+    "results/experiment32/duration_evidence.png": "472035da11c8e4afee2ecaa281cccb3fcc5861c3b8338098d141423e88b6cbe7",
+    "results/experiment32/episodes.json": "dbe1a59f67c96880bdc6386203318b83427ca6f57cdb190e2c4b036673109c09",
+    "results/experiment32/evidence_diagnostic.json": "660a29254f0a3ec7e63ae6b2670cd799ad8d25786dca1d9b303d2637e0884006",
+    "results/experiment32/pre_audit_attempt01.json": "493441cf4d011d328b07081e67aa63320ee70d812237448611518e5a1f20f217",
+    "results/experiment32/pre_audit_protocol.json": "ef03341bac577ef06556000dfdf94bddbc6e31df110b4a306f08ad8a8c2310e9",
+    "results/experiment32/summary.json": "1bd96ec4bacd298c7c345ecbe4cdef48cd4608f1dee824ad23adc9a3e2edfc78",
+    "results/experiment32/validation.json": "1961cfe6f25df0c6b9c2b1a8140ba3fa6987c5b02dc3bdbddfaaa0f185db9c75",
+    "results/experiment32/validation_access_log.json": "f6f7a8b212c0b93e75fba94af70b128fd968fc46db5d6c2fb8a4f18414c416d2",
+    "results/experiment32/validation_repair.json": "b54c784ac083e2c4a04616201a57cb9e7c4d482774ca9e83b6fadfb2ca385a93"
+  }
+}

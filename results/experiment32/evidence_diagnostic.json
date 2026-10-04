@@ -1,0 +1,156 @@
+{
+  "normal_only": true,
+  "partitions": {
+    "fit": {
+      "unknown_entry_start_reasons": {
+        "video_start": 3,
+        "target_changed": 45,
+        "reacquired": 156,
+        "anchor_changed": 24
+      },
+      "status_end_reasons": {
+        "complete": {
+          "phase_change": 7
+        },
+        "right_censored": {
+          "target_changed": 6,
+          "relation_missing": 11,
+          "anchor_changed": 3,
+          "video_end": 2
+        },
+        "unknown_entry": {
+          "target_changed": 39,
+          "relation_missing": 134,
+          "anchor_changed": 21,
+          "video_end": 12,
+          "phase_change": 22
+        }
+      },
+      "status_observed_samples": {
+        "complete": 16,
+        "right_censored": 91,
+        "unknown_entry": 1016
+      },
+      "context_long_censor_bounds": {
+        "1->3": {
+          "max_observed_complete_duration": 16,
+          "censor_bounds_above_complete_max": 5,
+          "cases": [
+            {
+              "sequence": "05",
+              "episode_id": 6,
+              "start_frame": 156,
+              "lower_bound": 28,
+              "end_reason": "target_changed"
+            },
+            {
+              "sequence": "07",
+              "episode_id": 4,
+              "start_frame": 120,
+              "lower_bound": 36,
+              "end_reason": "target_changed"
+            },
+            {
+              "sequence": "13",
+              "episode_id": 4,
+              "start_frame": 136,
+              "lower_bound": 72,
+              "end_reason": "relation_missing"
+            },
+            {
+              "sequence": "25",
+              "episode_id": 5,
+              "start_frame": 132,
+              "lower_bound": 24,
+              "end_reason": "target_changed"
+            },
+            {
+              "sequence": "25",
+              "episode_id": 12,
+              "start_frame": 296,
+              "lower_bound": 28,
+              "end_reason": "relation_missing"
+            }
+          ]
+        },
+        "3->1": {
+          "max_observed_complete_duration": 12,
+          "censor_bounds_above_complete_max": 1,
+          "cases": [
+            {
+              "sequence": "23",
+              "episode_id": 8,
+              "start_frame": 160,
+              "lower_bound": 16,
+              "end_reason": "target_changed"
+            }
+          ]
+        }
+      }
+    },
+    "calibration": {
+      "unknown_entry_start_reasons": {
+        "video_start": 2,
+        "reacquired": 48,
+        "target_changed": 8,
+        "anchor_changed": 8
+      },
+      "status_end_reasons": {
+        "complete": {
+          "phase_change": 5
+        },
+        "right_censored": {
+          "relation_missing": 6,
+          "target_changed": 1
+        },
+        "unknown_entry": {
+          "relation_missing": 39,
+          "target_changed": 7,
+          "anchor_changed": 8,
+          "phase_change": 7,
+          "video_end": 5
+        }
+      },
+      "status_observed_samples": {
+        "complete": 7,
+        "right_censored": 22,
+        "unknown_entry": 268
+      },
+      "context_long_censor_bounds": {
+        "1->3": {
+          "max_observed_complete_duration": 4,
+          "censor_bounds_above_complete_max": 3,
+          "cases": [
+            {
+              "sequence": "08",
+              "episode_id": 3,
+              "start_frame": 140,
+              "lower_bound": 8,
+              "end_reason": "relation_missing"
+            },
+            {
+              "sequence": "08",
+              "episode_id": 11,
+              "start_frame": 308,
+              "lower_bound": 28,
+              "end_reason": "relation_missing"
+            },
+            {
+              "sequence": "12",
+              "episode_id": 14,
+              "start_frame": 244,
+              "lower_bound": 12,
+              "end_reason": "relation_missing"
+            }
+          ]
+        },
+        "3->1": {
+          "max_observed_complete_duration": 8,
+          "censor_bounds_above_complete_max": 0,
+          "cases": []
+        }
+      }
+    }
+  },
+  "note": "Descriptive counts from frozen episode records. No new score/model fitting or test access."
+}

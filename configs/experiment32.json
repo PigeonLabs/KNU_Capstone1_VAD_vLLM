@@ -1,0 +1,16 @@
+{
+  "experiment": "32",
+  "scope": "R04_normal_only_identity_bounded_duration_evidence",
+  "feature_source": "artifacts/experiment30/reset/features/R04",
+  "split_source": "results/stage00/splits.json",
+  "legacy_identity_audit": "results/experiment31/normal_dwell_identity_audit.json",
+  "normal_only": true,
+  "score_or_model_changes": false,
+  "time_unit": "source_frame_index",
+  "support_rule_for_reporting_only": {"minimum_complete_runs": 10},
+  "censor_lower_bound": "last_observed_index_minus_observed_entry_index",
+  "unknown_entry_duration": null,
+  "zero_censor_bounds": "retain_and_report_separately",
+  "parameter_selection": "none",
+  "test_access": "forbidden"
+}

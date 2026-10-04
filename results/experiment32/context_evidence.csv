@@ -1,0 +1,12 @@
+partition,context,complete,complete_videos,right_censored,censored_videos,positive_censor_bounds,zero_censor_bounds,unknown_entry,unknown_entry_videos,meets_existing_complete_support
+fit,1->3,3,2,19,13,12,7,0,0,False
+fit,3->1,4,3,3,3,2,1,0,0,False
+fit,?->0,0,0,0,0,0,0,1,1,False
+fit,?->1,0,0,0,0,0,0,122,20,False
+fit,?->2,0,0,0,0,0,0,53,17,False
+fit,?->3,0,0,0,0,0,0,52,17,False
+calibration,1->3,1,1,6,5,5,1,0,0,False
+calibration,3->1,4,3,1,1,1,0,0,0,False
+calibration,?->1,0,0,0,0,0,0,29,5,False
+calibration,?->2,0,0,0,0,0,0,16,5,False
+calibration,?->3,0,0,0,0,0,0,21,5,False

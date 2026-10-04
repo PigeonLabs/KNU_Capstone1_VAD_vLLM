@@ -38,7 +38,8 @@
 | 실험 29 | 정상 전이 커버리지·관측 근거 감사 | 완료: 객체 쌍의 이력 혼합·역할 혼동 확인, 정상-only 진단 | [결과·의의·추천 3개](docs/EXPERIMENT29.md) |
 | 실험 30 | 객체 쌍 track 경계의 관계 평균 초기화 | 완료: 이력 혼합 제거, 탐지 증가·오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT30.md) |
 | 실험 31 | 같은 객체 쌍의 연속 관측 전이만 결합 | 완료: 오탐 감소·이상 경보 소폭 감소, 탐지 구간 유지 | [결과·의의·추천 3개](docs/EXPERIMENT31.md) |
-| 다음 실험 32 | 객체 쌍의 연속성을 반영한 정상 체류 episode 재구성 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT32_PLAN.md) |
+| 실험 32 | 객체 쌍의 연속성을 반영한 정상 체류 episode 재구성 | 완료: 진입 미확인·검열 분리, 체류 지원 부족 확인 | [결과·의의·추천 3개](docs/EXPERIMENT32.md) |
+| 다음 실험 33 | 관계 관측 손실의 원인·정상 역할 근거 감사 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT33_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1060,3 +1061,26 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **고정 설정의 다른 장면 적용성 검증** | 정상 holdout 개선은 영상 02 한 곳에 집중하고 현재 탐지 근거는 반복 R04의 체류 맥락에 의존 | 대상/프로토콜을 먼저 동결하고 새 장면 정상 FIT/calibration으로만 적합. 객체·phase 의미 차이와 지원 부족/실패를 포함해 보고하고 단일 장면 개선을 일반화하지 않음 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT31.md) · [비교 CSV](results/experiment31/comparison.csv) · [정상 체류 관측 근거](results/experiment31/normal_dwell_identity_audit.json) · [검증](results/experiment31/validation.json) · [1순위를 구체화한 실험 32 계획](docs/EXPERIMENT32_PLAN.md)
+
+## 실험 32 — 정상 체류의 완결·중단·진입 미확인 구분
+
+| 파티션 | episode | 완결 | 우측 검열 | 진입 미확인 |
+|---|---:|---:|---:|---:|
+| FIT 20영상 | 257 | 7 | 22 | 228 |
+| calibration 5영상 | 78 | 5 | 7 | 66 |
+
+![정상 체류 자료](results/experiment32/duration_evidence.png)
+
+**의의:** 정상 episode 335개를 선택 track·phase·관측 index로 재구성하고, 끝을 못 본 경우는 마지막 실제 관측까지의 하한으로 보존했다. FIT 1→3은 complete 3개/검열 19개이며, 그중 5개 하한이 complete 최대 16프레임보다 길었다. 완결만 남기면 이미 관측한 긴 구간의 정보가 빠질 수 있다.
+
+**보완할 점:** FIT 진입 미확인은 228/257개(88.72%)이고 재관측 시작 156개·track 교체 69개가 대부분이다. complete 7개는 3영상에 집중하며 두 맥락 모두 기존 최소 10 complete 조건에 미달한다. 검열의 독립성·의미 정확도는 미확인이다. 이번은 normal-only 자료 재구성으로 새 AUROC/AP·FPR/recall·비용은 미평가이며 기존 정상 입력/모델/점수 103개를 유지했다.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **관계 관측 손실의 원인을 분해하고 정상 역할 근거 검증**: raw 객체 후보→semantic/면적 gate→선택/track→episode 중단의 추적 정보를 추가 | FIT 228/257 episode가 진입 미확인. 이 중 재관측 시작 156개, track 교체 69개이며 진입을 아는 우측 검열 22개 중 관계 누락 11개·track 교체 9개 | 정상 25영상에서 후보가 원래 없었는지, filter로 제외됐는지, 다른 track으로 바뀌었는지 구분하고 사전 선택한 정상 사례를 검토. 캐시 후보 부재를 검출 false negative로 단정하거나 목적 표집을 의미 정확도로 계산하지 않음 |
+| 2 | **검열 정보를 보존하는 체류 추정의 지원성·민감도 대조**: 완결만 쓰는 추정과 중단 전 관측 하한을 활용하는 후보 비교 | FIT 1→3은 complete 3개/검열 19개이고 그중 5개 하한이 완결 최대 16프레임보다 큼. 3→1은 complete 4개/검열 3개 | 정상 데이터만으로 영상별 민감도·꼬리 불확실성·실패를 보고. 검열의 독립성은 미확인이고 0 하한은 양의 duration으로 대체하지 않음. 기존 최소 complete support 미달을 임의 완화해 성능을 만들지 않음 |
+| 3 | **다른 장면·별도 정상 자료에서 고정 파이프라인 적용성 검증** | FIT complete 7개가 영상 3개에만 있고 4개는 영상 14에 집중. 반복 R04만으로 안정적인 체류 학습을 보장할 수 없음 | 장면/분할/설정을 먼저 고정하고 calibration을 FIT에 합치지 않음. 객체·phase 의미 차이, 영상 그룹 독립성, 지원 실패까지 보고 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT32.md) · [맥락별 CSV](results/experiment32/context_evidence.csv) · [episode 출처](results/experiment32/episodes.json) · [검증](results/experiment32/validation.json) · [1순위를 구체화한 실험 33 계획](docs/EXPERIMENT33_PLAN.md)

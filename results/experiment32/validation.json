@@ -1,0 +1,15 @@
+{
+  "normal_sequences": 25,
+  "sample_assignments_verified": 2442,
+  "episode_records_independently_reconstructed": 335,
+  "causal_prefixes_checked": 2467,
+  "legacy_complete_records_exact": 12,
+  "partition_context_status_reason_counts_and_lengths_recomputed": true,
+  "all_valid_samples_assigned_once_and_missing_unassigned": true,
+  "zero_bounds_preserved_no_duration_imputed_for_unknown_entry": true,
+  "future_completion_not_used_in_past_age_or_context": true,
+  "protected_normal_files_unchanged": 103,
+  "protocol_hashes_verified": true,
+  "test_data_opened": false,
+  "score_or_model_changes": false
+}
