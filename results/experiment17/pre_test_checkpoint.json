@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-10-04T18:59:03.002776+00:00",
+  "stage": "Normal feasibility completed, before experiment17 test scoring",
+  "file_sha256": {
+    "scripts/check_normal_feasibility.py": "4168fefd38643478c14a76a3128b2d88c112a491c79686bb669c708ff8a8f68d",
+    "results/experiment17/normal_feasibility.json": "2881bffdbd627e4f31bcaec53851d524a3f8371cddee8a8f5c35e1de0a22f0b1"
+  },
+  "decision": "Proceed with unchanged model and threshold policy; normal feasibility does not select new parameters."
+}

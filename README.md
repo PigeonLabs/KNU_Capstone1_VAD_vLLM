@@ -23,7 +23,8 @@
 | 실험 14 | 완결 정상 길이 기준 체류 percentile | 완료: 정상 holdout 반례 교정, R03 체류 효용은 미확인 | [결과·의의·추천 3개](docs/EXPERIMENT14.md) |
 | 실험 15 | R04에서 고정 파이프라인 적용성 | 완료: 역할 오검출·q99=1 경보 불능 확인 | [결과·의의·추천 3개](docs/EXPERIMENT15.md) |
 | 실험 16 | 연속 체류 꼬리 점수·경보 가능성 | 완료: 경보 복구, 체류 없는 기준선과 동일 경보 | [결과·의의·추천 3개](docs/EXPERIMENT16.md) |
-| 다음 실험 17 | 혼동 객체와 대조하는 anchor 역할 검증 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT17_PLAN.md) |
+| 실험 17 | 혼동 객체와 대조하는 anchor 역할 검증 | 완료: 일부 오검출 차단, ranking·체류 가용성 저하 | [결과·의의·추천 3개](docs/EXPERIMENT17.md) |
+| 다음 실험 18 | track 단위 인과적 semantic margin 집계 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT18_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -586,6 +587,35 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **정상 영상 단위 경보 지점 안정성** | calibration 영상 제외에 따른 q99·포화·branch 기여 점검. 테스트 기반 임계값·가중치 탐색 금지 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT16.md) · [지표](results/experiment16/metrics.json) · [정상 경보 가능성](results/experiment16/normal_feasibility.json) · [경보 비교](results/experiment16/lognormal_diagnostic.json) · [실험 17 계획](docs/EXPERIMENT17_PLAN.md)
+
+## 실험 17 결과 — anchor 역할 검증과 관측 손실
+
+기존 CLIP crop 특징에서 금속판 문장과 혼동 바이스 문장의 cosine을 대조해 `margin > 0`인 후보만 관계 anchor로 허용했습니다. 원본 bbox/crop/track과 appearance 후보를 유지하고 정상 관계·점수 모델을 재적합했습니다.
+
+| R04 지표 | 실험 16 | 실험 17 |
+|---|---:|---:|
+| Combined AUROC | 0.6851 | 0.6711 |
+| Combined AP | 0.6712 | 0.6630 |
+| 정상 오탐률 | 9.12% | 10.15% |
+| 이상 프레임 recall | 11.51% | 14.48% |
+| 경보가 발생한 GT 이상 구간 | 12 / 26 | 14 / 26 |
+| 체류 유효 비율 | 41.83% | 4.03% |
+
+![실험 17 gate 진단](results/experiment17/anchor_gate.png)
+
+**의의:** 알려진 정상 바이스 오검출 5개 중 3개를 제외하고 확인한 금속판 1개를 유지했습니다. 언어로 후보 역할을 검증하는 단계를 구현했지만, 일부 정성 사례의 교정이 전체 파이프라인 개선을 보장하지 않음을 확인했습니다. 전수 정확도나 novelty 입증은 아닙니다.
+
+**보완할 점:** q99는 동일했으나 순 오탐 +37프레임, 이상 탐지 +136프레임으로 절충이 생겼습니다. 전체 경보는 Visual branch와 같고 체류의 추가 경보는 없습니다. 정상 FIT의 같은-track margin 부호 전환은 190/1,868쌍이며 새 누락 구간 136개 중 62개가 한 sample 길이였습니다. 역할 오류 두 사례와 관측 끊김이 남고, 동일 관측 지원 대조가 없어 의미 검증과 관측 감소 효과를 분리하지 못했습니다.
+
+### 실험 17 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **track 단위 인과적 margin 집계** | 같은 track의 최근 3개 연속 관측 중앙값. 짧은 끊김·지원 회복과 잘못된 anchor 지속을 함께 평가 |
+| 2 | **관측 지원을 맞춘 대조 실험** | 같은 관측 범위에서 후보 의미 변화와 coverage 감소의 영향을 분리 |
+| 3 | **정상 역할 검증 범위 확대** | 부품 자세·배경이 다양한 정상 crop 검토. 개발 사례와 별도 사례, 수작업 주석 범위를 구분 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT17.md) · [지표](results/experiment17/metrics.json) · [정상 역할/지원](results/experiment17/normal_anchor_audit.json) · [관측·경보 변화](results/experiment17/gate_diagnostic.json) · [정상 연속성](results/experiment17/normal_gate_continuity.json) · [실험 18 계획](docs/EXPERIMENT18_PLAN.md)
 
 ## 로컬 VLM
 

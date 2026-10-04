@@ -1,0 +1,352 @@
+{
+  "normal_fit_only": true,
+  "consecutive_same_track_pairs": 1868,
+  "margin_sign_changes": 190,
+  "lost_relation_samples": 555,
+  "lost_relation_runs": 136,
+  "one_sample_lost_runs": 62,
+  "median_lost_run_samples": 2.0,
+  "sequences": [
+    {
+      "sequence": "01",
+      "consecutive_same_track_pairs": 84,
+      "margin_sign_changes": 9,
+      "lost_relation_samples": 28,
+      "lost_relation_runs": 8,
+      "one_sample_lost_runs": 3,
+      "lost_run_lengths_source_frames": [
+        8,
+        44,
+        28,
+        12,
+        4,
+        8,
+        4,
+        1
+      ]
+    },
+    {
+      "sequence": "03",
+      "consecutive_same_track_pairs": 103,
+      "margin_sign_changes": 2,
+      "lost_relation_samples": 25,
+      "lost_relation_runs": 7,
+      "one_sample_lost_runs": 4,
+      "lost_run_lengths_source_frames": [
+        16,
+        8,
+        4,
+        4,
+        60,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "04",
+      "consecutive_same_track_pairs": 81,
+      "margin_sign_changes": 2,
+      "lost_relation_samples": 17,
+      "lost_relation_runs": 5,
+      "one_sample_lost_runs": 2,
+      "lost_run_lengths_source_frames": [
+        4,
+        4,
+        8,
+        24,
+        28
+      ]
+    },
+    {
+      "sequence": "05",
+      "consecutive_same_track_pairs": 117,
+      "margin_sign_changes": 7,
+      "lost_relation_samples": 19,
+      "lost_relation_runs": 5,
+      "one_sample_lost_runs": 2,
+      "lost_run_lengths_source_frames": [
+        8,
+        20,
+        4,
+        4,
+        40
+      ]
+    },
+    {
+      "sequence": "06",
+      "consecutive_same_track_pairs": 110,
+      "margin_sign_changes": 10,
+      "lost_relation_samples": 47,
+      "lost_relation_runs": 7,
+      "one_sample_lost_runs": 2,
+      "lost_run_lengths_source_frames": [
+        4,
+        12,
+        4,
+        64,
+        16,
+        12,
+        76
+      ]
+    },
+    {
+      "sequence": "07",
+      "consecutive_same_track_pairs": 87,
+      "margin_sign_changes": 9,
+      "lost_relation_samples": 8,
+      "lost_relation_runs": 6,
+      "one_sample_lost_runs": 5,
+      "lost_run_lengths_source_frames": [
+        4,
+        12,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "09",
+      "consecutive_same_track_pairs": 93,
+      "margin_sign_changes": 7,
+      "lost_relation_samples": 56,
+      "lost_relation_runs": 11,
+      "one_sample_lost_runs": 4,
+      "lost_run_lengths_source_frames": [
+        4,
+        8,
+        72,
+        12,
+        76,
+        4,
+        12,
+        12,
+        4,
+        4,
+        13
+      ]
+    },
+    {
+      "sequence": "11",
+      "consecutive_same_track_pairs": 81,
+      "margin_sign_changes": 5,
+      "lost_relation_samples": 50,
+      "lost_relation_runs": 9,
+      "one_sample_lost_runs": 1,
+      "lost_run_lengths_source_frames": [
+        84,
+        12,
+        12,
+        16,
+        16,
+        8,
+        8,
+        40,
+        4
+      ]
+    },
+    {
+      "sequence": "13",
+      "consecutive_same_track_pairs": 71,
+      "margin_sign_changes": 11,
+      "lost_relation_samples": 5,
+      "lost_relation_runs": 5,
+      "one_sample_lost_runs": 5,
+      "lost_run_lengths_source_frames": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "14",
+      "consecutive_same_track_pairs": 78,
+      "margin_sign_changes": 14,
+      "lost_relation_samples": 9,
+      "lost_relation_runs": 7,
+      "one_sample_lost_runs": 6,
+      "lost_run_lengths_source_frames": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        12,
+        4
+      ]
+    },
+    {
+      "sequence": "16",
+      "consecutive_same_track_pairs": 96,
+      "margin_sign_changes": 16,
+      "lost_relation_samples": 25,
+      "lost_relation_runs": 8,
+      "one_sample_lost_runs": 4,
+      "lost_run_lengths_source_frames": [
+        56,
+        4,
+        8,
+        12,
+        4,
+        8,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "17",
+      "consecutive_same_track_pairs": 105,
+      "margin_sign_changes": 15,
+      "lost_relation_samples": 19,
+      "lost_relation_runs": 7,
+      "one_sample_lost_runs": 4,
+      "lost_run_lengths_source_frames": [
+        4,
+        4,
+        4,
+        24,
+        4,
+        8,
+        28
+      ]
+    },
+    {
+      "sequence": "18",
+      "consecutive_same_track_pairs": 99,
+      "margin_sign_changes": 5,
+      "lost_relation_samples": 19,
+      "lost_relation_runs": 4,
+      "one_sample_lost_runs": 2,
+      "lost_run_lengths_source_frames": [
+        4,
+        16,
+        52,
+        4
+      ]
+    },
+    {
+      "sequence": "19",
+      "consecutive_same_track_pairs": 89,
+      "margin_sign_changes": 10,
+      "lost_relation_samples": 48,
+      "lost_relation_runs": 7,
+      "one_sample_lost_runs": 0,
+      "lost_run_lengths_source_frames": [
+        12,
+        80,
+        16,
+        8,
+        12,
+        12,
+        52
+      ]
+    },
+    {
+      "sequence": "20",
+      "consecutive_same_track_pairs": 103,
+      "margin_sign_changes": 17,
+      "lost_relation_samples": 49,
+      "lost_relation_runs": 9,
+      "one_sample_lost_runs": 3,
+      "lost_run_lengths_source_frames": [
+        4,
+        4,
+        12,
+        4,
+        8,
+        12,
+        104,
+        24,
+        24
+      ]
+    },
+    {
+      "sequence": "21",
+      "consecutive_same_track_pairs": 106,
+      "margin_sign_changes": 17,
+      "lost_relation_samples": 50,
+      "lost_relation_runs": 12,
+      "one_sample_lost_runs": 7,
+      "lost_run_lengths_source_frames": [
+        8,
+        4,
+        20,
+        4,
+        56,
+        72,
+        16,
+        4,
+        4,
+        4,
+        4,
+        1
+      ]
+    },
+    {
+      "sequence": "22",
+      "consecutive_same_track_pairs": 98,
+      "margin_sign_changes": 12,
+      "lost_relation_samples": 45,
+      "lost_relation_runs": 8,
+      "one_sample_lost_runs": 3,
+      "lost_run_lengths_source_frames": [
+        12,
+        4,
+        4,
+        12,
+        12,
+        92,
+        4,
+        40
+      ]
+    },
+    {
+      "sequence": "23",
+      "consecutive_same_track_pairs": 81,
+      "margin_sign_changes": 12,
+      "lost_relation_samples": 27,
+      "lost_relation_runs": 7,
+      "one_sample_lost_runs": 3,
+      "lost_run_lengths_source_frames": [
+        8,
+        4,
+        8,
+        4,
+        8,
+        4,
+        69
+      ]
+    },
+    {
+      "sequence": "24",
+      "consecutive_same_track_pairs": 90,
+      "margin_sign_changes": 2,
+      "lost_relation_samples": 2,
+      "lost_relation_runs": 1,
+      "one_sample_lost_runs": 0,
+      "lost_run_lengths_source_frames": [
+        8
+      ]
+    },
+    {
+      "sequence": "25",
+      "consecutive_same_track_pairs": 96,
+      "margin_sign_changes": 8,
+      "lost_relation_samples": 7,
+      "lost_relation_runs": 3,
+      "one_sample_lost_runs": 2,
+      "lost_run_lengths_source_frames": [
+        4,
+        20,
+        4
+      ]
+    }
+  ],
+  "limitations": [
+    "Sign flips are not ground-truth role errors.",
+    "Lost relations also depend on area gates, target availability and candidate selection.",
+    "Temporal smoothing could preserve persistent wrong anchors or delay a correct decision."
+  ]
+}

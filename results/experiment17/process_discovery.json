@@ -1,0 +1,66 @@
+{
+  "scene": "R04",
+  "sources": [
+    "R04/training/frames/01/000.jpg",
+    "R04/training/frames/01/061.jpg",
+    "R04/training/frames/01/123.jpg",
+    "R04/training/frames/01/184.jpg",
+    "R04/training/frames/01/246.jpg",
+    "R04/training/frames/01/308.jpg",
+    "R04/training/frames/03/000.jpg",
+    "R04/training/frames/03/092.jpg",
+    "R04/training/frames/03/184.jpg",
+    "R04/training/frames/03/276.jpg",
+    "R04/training/frames/03/368.jpg",
+    "R04/training/frames/03/460.jpg"
+  ],
+  "derived_from": "results/experiment15/process_discovery.json",
+  "process": {
+    "objects": [
+      {
+        "id": "cardboard",
+        "detection_prompt": "brown cardboard sheet",
+        "description": "the cardboard material loaded into the trough and accumulated as cut pieces on the green bench"
+      },
+      {
+        "id": "lid",
+        "detection_prompt": "hinged metal lid",
+        "description": "the hinged metal cover with a serrated lower edge that rotates over the trough"
+      },
+      {
+        "id": "trough",
+        "detection_prompt": "galvanized metal trough",
+        "description": "the long metal channel that holds the cardboard during the cycle"
+      }
+    ],
+    "phases": [
+      {
+        "id": "latent_0",
+        "description": "Normal relation cluster 0; no verified action label."
+      },
+      {
+        "id": "latent_1",
+        "description": "Normal relation cluster 1; no verified action label."
+      },
+      {
+        "id": "latent_2",
+        "description": "Normal relation cluster 2; no verified action label."
+      },
+      {
+        "id": "latent_3",
+        "description": "Normal relation cluster 3; no verified action label."
+      }
+    ],
+    "normal_order": [
+      "latent_0",
+      "latent_1",
+      "latent_2",
+      "latent_3"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "Cluster order uses normal median relative position; original four-state self/next/cycle scoring template retained."
+    ]
+  },
+  "note": "Normal object vocabulary retained; relation states refitted after fixed CLIP anchor verification. No new VLM generation and no semantic phase ground truth."
+}

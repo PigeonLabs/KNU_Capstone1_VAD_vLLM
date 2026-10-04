@@ -1,0 +1,15 @@
+{
+  "model": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "prompts": [
+    "A photo of the hinged metal cutting blade of a manual shear.",
+    "A photo of a bench vise fixed on a workbench."
+  ],
+  "margin_threshold": 0.0,
+  "text_features_sha256": "c7a05f8b5b5f961f7f1d8d7b892725a0750477b75410d5bbbb867016eead3e34",
+  "dimension": 512,
+  "device": "cuda",
+  "frozen": true,
+  "network_used": false,
+  "human_normal_semantic_input": true
+}

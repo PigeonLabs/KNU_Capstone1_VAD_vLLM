@@ -1,0 +1,21 @@
+{
+  "q99": 0.997457627118644,
+  "branch_exceedances": {
+    "visual": {
+      "normal": 363,
+      "anomaly": 663
+    },
+    "transition": {
+      "normal": 16,
+      "anomaly": 12
+    },
+    "dwell": {
+      "normal": 0,
+      "anomaly": 0
+    }
+  },
+  "max_valid_dwell_score": 0.9934211097081654,
+  "max_valid_dwell_age": 64.0,
+  "combined_alarm_equals_visual_alarm": true,
+  "note": "Branch exceedances overlap; descriptive attribution at final q99, not separate branch-optimal thresholds."
+}

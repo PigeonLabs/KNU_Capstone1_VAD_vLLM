@@ -1,0 +1,32 @@
+{
+  "scene": "R04",
+  "seed": 42,
+  "test_frames": 8154,
+  "rows": [
+    {
+      "experiment": "16",
+      "visual_auroc": 0.6816878676639467,
+      "visual_average_precision": 0.6706840471991544,
+      "process_auroc": 0.6307141843150248,
+      "process_average_precision": 0.6528071462391714,
+      "combined_auroc": 0.6850830936401406,
+      "combined_average_precision": 0.6712453635669275,
+      "normal_q99_threshold": 0.997457627118644,
+      "test_normal_frame_alarm_rate": 0.09116331096196868,
+      "test_anomaly_frame_recall_at_q99": 0.11511577107907384
+    },
+    {
+      "experiment": "17",
+      "visual_auroc": 0.6807630880790632,
+      "visual_average_precision": 0.668274486369722,
+      "process_auroc": 0.46377141845593606,
+      "process_average_precision": 0.5478545560955776,
+      "combined_auroc": 0.6711466509412295,
+      "combined_average_precision": 0.6629560233874515,
+      "normal_q99_threshold": 0.997457627118644,
+      "test_normal_frame_alarm_rate": 0.10151006711409397,
+      "test_anomaly_frame_recall_at_q99": 0.14482306684141547
+    }
+  ],
+  "comparison_note": "Descriptive development scene; each model uses its own normal calibration q99. Not equal test FPR. No significance claim."
+}

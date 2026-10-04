@@ -1,0 +1,50 @@
+{
+  "groups": {
+    "test": {
+      "samples": 2047,
+      "relations_before": 1729,
+      "relations_after": 1393,
+      "new_relations": 0,
+      "lost_relations": 336,
+      "anchor_boxes_before": 2299,
+      "anchor_boxes_after": 1934
+    },
+    "fit": {
+      "samples": 1960,
+      "relations_before": 1644,
+      "relations_after": 1101,
+      "new_relations": 12,
+      "lost_relations": 555,
+      "anchor_boxes_before": 2162,
+      "anchor_boxes_after": 1570
+    },
+    "calibration": {
+      "samples": 482,
+      "relations_before": 406,
+      "relations_after": 292,
+      "new_relations": 0,
+      "lost_relations": 114,
+      "anchor_boxes_before": 543,
+      "anchor_boxes_after": 414
+    }
+  },
+  "added_alarms": {
+    "normal": 78,
+    "anomaly": 207
+  },
+  "removed_alarms": {
+    "normal": 41,
+    "anomaly": 71
+  },
+  "dwell_valid_before": {
+    "normal": 1215,
+    "anomaly": 2196
+  },
+  "dwell_valid_after": {
+    "normal": 146,
+    "anomaly": 183
+  },
+  "q99_before": 0.997457627118644,
+  "q99_after": 0.997457627118644,
+  "note": "Normal area gates and phase-conditioned models refitted after candidate filter. Appearance inputs unchanged but scores may change. No matched-missingness control; cannot isolate semantic rejection from coverage effects."
+}

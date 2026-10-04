@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-10-04T18:54:54.951508+00:00",
+  "stage": "Before encoding text or inspecting any CLIP margins",
+  "config_sha256": "218e68d8ea1d95e1075a39b7804f260d22c63434f8983e39fb0a97a11dfdabe2",
+  "anchor_verification": {
+    "positive": "A photo of the hinged metal cutting blade of a manual shear.",
+    "negative": "A photo of a bench vise fixed on a workbench.",
+    "margin_threshold": 0.0,
+    "text_features": "artifacts/experiment17/anchor_text_features.npz"
+  },
+  "normal_evidence": "Experiment15 normal qualitative review; no further prompt or margin tuning.",
+  "normal_support_rule": "K=4, at least 40 valid normal relations, existing minimum 10 complete runs per supported context. Failure is reported without reducing requirements."
+}

@@ -1,0 +1,21 @@
+{
+  "normal_only": true,
+  "calibration_samples": 482,
+  "all_branch_scores_finite": true,
+  "all_branch_scores_in_unit_interval": true,
+  "normal_q99": 0.997457627118644,
+  "alarm_not_structurally_blocked": true,
+  "dwell_at_one": 0,
+  "combined_at_one": 0,
+  "calibration_sample_alarms": 4,
+  "supported_contexts": [
+    "0->1"
+  ],
+  "lognormal_parameters": {
+    "0->1": {
+      "mu": 2.9436219870808586,
+      "sigma": 0.49012938508320436
+    }
+  },
+  "note": "Necessary feasibility check on normal FIT/calibration only. No parameter selection or guarantee of useful test detection."
+}

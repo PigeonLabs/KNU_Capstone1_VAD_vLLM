@@ -1,0 +1,1036 @@
+{
+  "scene": "R04",
+  "fit_only": false,
+  "normal_fit_support_passed": true,
+  "failure": null,
+  "sequences": [
+    {
+      "sequence_key": "testing_01",
+      "group": "test",
+      "samples": 103,
+      "valid_relations": 73,
+      "anchor_boxes_before": 114,
+      "anchor_boxes_after": 97,
+      "phase_counts": [
+        73,
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_02",
+      "group": "test",
+      "samples": 100,
+      "valid_relations": 38,
+      "anchor_boxes_before": 96,
+      "anchor_boxes_after": 58,
+      "phase_counts": [
+        35,
+        60,
+        5,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_03",
+      "group": "test",
+      "samples": 96,
+      "valid_relations": 63,
+      "anchor_boxes_before": 109,
+      "anchor_boxes_after": 84,
+      "phase_counts": [
+        59,
+        20,
+        0,
+        17
+      ]
+    },
+    {
+      "sequence_key": "testing_04",
+      "group": "test",
+      "samples": 95,
+      "valid_relations": 50,
+      "anchor_boxes_before": 104,
+      "anchor_boxes_after": 70,
+      "phase_counts": [
+        38,
+        57,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_05",
+      "group": "test",
+      "samples": 117,
+      "valid_relations": 71,
+      "anchor_boxes_before": 126,
+      "anchor_boxes_after": 104,
+      "phase_counts": [
+        51,
+        66,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_06",
+      "group": "test",
+      "samples": 127,
+      "valid_relations": 111,
+      "anchor_boxes_before": 148,
+      "anchor_boxes_after": 148,
+      "phase_counts": [
+        79,
+        48,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_07",
+      "group": "test",
+      "samples": 138,
+      "valid_relations": 80,
+      "anchor_boxes_before": 155,
+      "anchor_boxes_after": 124,
+      "phase_counts": [
+        72,
+        55,
+        11,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_08",
+      "group": "test",
+      "samples": 164,
+      "valid_relations": 136,
+      "anchor_boxes_before": 185,
+      "anchor_boxes_after": 172,
+      "phase_counts": [
+        79,
+        85,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_09",
+      "group": "test",
+      "samples": 84,
+      "valid_relations": 39,
+      "anchor_boxes_before": 92,
+      "anchor_boxes_after": 57,
+      "phase_counts": [
+        48,
+        8,
+        0,
+        28
+      ]
+    },
+    {
+      "sequence_key": "testing_10",
+      "group": "test",
+      "samples": 56,
+      "valid_relations": 44,
+      "anchor_boxes_before": 63,
+      "anchor_boxes_after": 63,
+      "phase_counts": [
+        34,
+        22,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_11",
+      "group": "test",
+      "samples": 106,
+      "valid_relations": 60,
+      "anchor_boxes_before": 136,
+      "anchor_boxes_after": 99,
+      "phase_counts": [
+        50,
+        39,
+        0,
+        17
+      ]
+    },
+    {
+      "sequence_key": "testing_12",
+      "group": "test",
+      "samples": 172,
+      "valid_relations": 115,
+      "anchor_boxes_before": 209,
+      "anchor_boxes_after": 177,
+      "phase_counts": [
+        114,
+        54,
+        0,
+        4
+      ]
+    },
+    {
+      "sequence_key": "testing_13",
+      "group": "test",
+      "samples": 116,
+      "valid_relations": 100,
+      "anchor_boxes_before": 132,
+      "anchor_boxes_after": 127,
+      "phase_counts": [
+        103,
+        4,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "testing_14",
+      "group": "test",
+      "samples": 97,
+      "valid_relations": 79,
+      "anchor_boxes_before": 105,
+      "anchor_boxes_after": 98,
+      "phase_counts": [
+        31,
+        66,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_15",
+      "group": "test",
+      "samples": 94,
+      "valid_relations": 73,
+      "anchor_boxes_before": 112,
+      "anchor_boxes_after": 108,
+      "phase_counts": [
+        37,
+        44,
+        0,
+        13
+      ]
+    },
+    {
+      "sequence_key": "testing_16",
+      "group": "test",
+      "samples": 105,
+      "valid_relations": 63,
+      "anchor_boxes_before": 116,
+      "anchor_boxes_after": 83,
+      "phase_counts": [
+        86,
+        5,
+        2,
+        12
+      ]
+    },
+    {
+      "sequence_key": "testing_17",
+      "group": "test",
+      "samples": 146,
+      "valid_relations": 100,
+      "anchor_boxes_before": 153,
+      "anchor_boxes_after": 128,
+      "phase_counts": [
+        68,
+        66,
+        12,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_18",
+      "group": "test",
+      "samples": 61,
+      "valid_relations": 44,
+      "anchor_boxes_before": 67,
+      "anchor_boxes_after": 63,
+      "phase_counts": [
+        42,
+        19,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_19",
+      "group": "test",
+      "samples": 70,
+      "valid_relations": 54,
+      "anchor_boxes_before": 77,
+      "anchor_boxes_after": 74,
+      "phase_counts": [
+        37,
+        33,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 78,
+      "valid_relations": 43,
+      "anchor_boxes_before": 101,
+      "anchor_boxes_after": 71,
+      "phase_counts": [
+        21,
+        25,
+        2,
+        30
+      ]
+    },
+    {
+      "sequence_key": "training_02",
+      "group": "calibration",
+      "samples": 103,
+      "valid_relations": 54,
+      "anchor_boxes_before": 121,
+      "anchor_boxes_after": 90,
+      "phase_counts": [
+        25,
+        26,
+        0,
+        52
+      ]
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 116,
+      "valid_relations": 66,
+      "anchor_boxes_before": 133,
+      "anchor_boxes_after": 102,
+      "phase_counts": [
+        19,
+        24,
+        3,
+        70
+      ]
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 102,
+      "valid_relations": 50,
+      "anchor_boxes_before": 102,
+      "anchor_boxes_after": 85,
+      "phase_counts": [
+        77,
+        10,
+        0,
+        15
+      ]
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 110,
+      "valid_relations": 79,
+      "anchor_boxes_before": 142,
+      "anchor_boxes_after": 123,
+      "phase_counts": [
+        54,
+        48,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 112,
+      "valid_relations": 51,
+      "anchor_boxes_before": 124,
+      "anchor_boxes_after": 73,
+      "phase_counts": [
+        38,
+        53,
+        0,
+        21
+      ]
+    },
+    {
+      "sequence_key": "training_07",
+      "group": "fit",
+      "samples": 97,
+      "valid_relations": 72,
+      "anchor_boxes_before": 100,
+      "anchor_boxes_after": 92,
+      "phase_counts": [
+        49,
+        45,
+        0,
+        3
+      ]
+    },
+    {
+      "sequence_key": "training_08",
+      "group": "calibration",
+      "samples": 104,
+      "valid_relations": 79,
+      "anchor_boxes_before": 107,
+      "anchor_boxes_after": 98,
+      "phase_counts": [
+        52,
+        50,
+        0,
+        2
+      ]
+    },
+    {
+      "sequence_key": "training_09",
+      "group": "fit",
+      "samples": 105,
+      "valid_relations": 35,
+      "anchor_boxes_before": 112,
+      "anchor_boxes_after": 50,
+      "phase_counts": [
+        37,
+        24,
+        6,
+        38
+      ]
+    },
+    {
+      "sequence_key": "training_10",
+      "group": "calibration",
+      "samples": 94,
+      "valid_relations": 55,
+      "anchor_boxes_before": 110,
+      "anchor_boxes_after": 85,
+      "phase_counts": [
+        52,
+        39,
+        0,
+        3
+      ]
+    },
+    {
+      "sequence_key": "training_11",
+      "group": "fit",
+      "samples": 85,
+      "valid_relations": 24,
+      "anchor_boxes_before": 97,
+      "anchor_boxes_after": 44,
+      "phase_counts": [
+        50,
+        8,
+        0,
+        27
+      ]
+    },
+    {
+      "sequence_key": "training_12",
+      "group": "calibration",
+      "samples": 96,
+      "valid_relations": 53,
+      "anchor_boxes_before": 108,
+      "anchor_boxes_after": 69,
+      "phase_counts": [
+        47,
+        44,
+        0,
+        5
+      ]
+    },
+    {
+      "sequence_key": "training_13",
+      "group": "fit",
+      "samples": 96,
+      "valid_relations": 61,
+      "anchor_boxes_before": 89,
+      "anchor_boxes_after": 83,
+      "phase_counts": [
+        64,
+        23,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_14",
+      "group": "fit",
+      "samples": 81,
+      "valid_relations": 65,
+      "anchor_boxes_before": 88,
+      "anchor_boxes_after": 79,
+      "phase_counts": [
+        54,
+        27,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_15",
+      "group": "calibration",
+      "samples": 85,
+      "valid_relations": 51,
+      "anchor_boxes_before": 97,
+      "anchor_boxes_after": 72,
+      "phase_counts": [
+        34,
+        32,
+        0,
+        19
+      ]
+    },
+    {
+      "sequence_key": "training_16",
+      "group": "fit",
+      "samples": 94,
+      "valid_relations": 60,
+      "anchor_boxes_before": 109,
+      "anchor_boxes_after": 83,
+      "phase_counts": [
+        63,
+        29,
+        0,
+        2
+      ]
+    },
+    {
+      "sequence_key": "training_17",
+      "group": "fit",
+      "samples": 93,
+      "valid_relations": 64,
+      "anchor_boxes_before": 121,
+      "anchor_boxes_after": 97,
+      "phase_counts": [
+        45,
+        31,
+        0,
+        17
+      ]
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 103,
+      "valid_relations": 68,
+      "anchor_boxes_before": 111,
+      "anchor_boxes_after": 91,
+      "phase_counts": [
+        79,
+        20,
+        0,
+        4
+      ]
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 99,
+      "valid_relations": 35,
+      "anchor_boxes_before": 101,
+      "anchor_boxes_after": 53,
+      "phase_counts": [
+        98,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 101,
+      "valid_relations": 34,
+      "anchor_boxes_before": 109,
+      "anchor_boxes_after": 57,
+      "phase_counts": [
+        74,
+        19,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 105,
+      "valid_relations": 47,
+      "anchor_boxes_before": 117,
+      "anchor_boxes_after": 66,
+      "phase_counts": [
+        64,
+        15,
+        0,
+        26
+      ]
+    },
+    {
+      "sequence_key": "training_22",
+      "group": "fit",
+      "samples": 95,
+      "valid_relations": 40,
+      "anchor_boxes_before": 107,
+      "anchor_boxes_after": 60,
+      "phase_counts": [
+        63,
+        17,
+        0,
+        15
+      ]
+    },
+    {
+      "sequence_key": "training_23",
+      "group": "fit",
+      "samples": 95,
+      "valid_relations": 50,
+      "anchor_boxes_before": 94,
+      "anchor_boxes_after": 66,
+      "phase_counts": [
+        84,
+        11,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_24",
+      "group": "fit",
+      "samples": 92,
+      "valid_relations": 78,
+      "anchor_boxes_before": 98,
+      "anchor_boxes_after": 96,
+      "phase_counts": [
+        70,
+        22,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_25",
+      "group": "fit",
+      "samples": 101,
+      "valid_relations": 79,
+      "anchor_boxes_before": 107,
+      "anchor_boxes_after": 99,
+      "phase_counts": [
+        52,
+        46,
+        3,
+        0
+      ]
+    }
+  ],
+  "qualitative_cases": [
+    {
+      "sequence": "01",
+      "source_frame": 0,
+      "old_selected_anchor_detection": -1,
+      "candidates": [
+        {
+          "detection_index": 1,
+          "track": 1,
+          "box": [
+            0.5875831246376038,
+            0.48930829763412476,
+            0.9997588992118835,
+            1.0
+          ],
+          "margin": 0.021141590047563438,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "sequence": "01",
+      "source_frame": 156,
+      "old_selected_anchor_detection": 143,
+      "candidates": [
+        {
+          "detection_index": 143,
+          "track": 1,
+          "box": [
+            0.5892658829689026,
+            0.49159225821495056,
+            1.0,
+            0.9998205900192261
+          ],
+          "margin": -0.007756247940097412,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "sequence": "01",
+      "source_frame": 308,
+      "old_selected_anchor_detection": 273,
+      "candidates": [
+        {
+          "detection_index": 273,
+          "track": 18,
+          "box": [
+            0.589153528213501,
+            0.4903719127178192,
+            0.9997628927230835,
+            0.9999713897705078
+          ],
+          "margin": -0.005291880400917383,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "sequence": "03",
+      "source_frame": 0,
+      "old_selected_anchor_detection": 1,
+      "candidates": [
+        {
+          "detection_index": 1,
+          "track": 1,
+          "box": [
+            0.5904804468154907,
+            0.495878666639328,
+            0.9998453855514526,
+            0.999901533126831
+          ],
+          "margin": 0.00691049720043058,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "sequence": "03",
+      "source_frame": 232,
+      "old_selected_anchor_detection": 209,
+      "candidates": [
+        {
+          "detection_index": 209,
+          "track": 8,
+          "box": [
+            0.5828479528427124,
+            0.4977603554725647,
+            0.9999420642852783,
+            0.9999616742134094
+          ],
+          "margin": -0.009396711504022983,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "sequence": "03",
+      "source_frame": 460,
+      "old_selected_anchor_detection": 414,
+      "candidates": [
+        {
+          "detection_index": 414,
+          "track": 28,
+          "box": [
+            0.5611108541488647,
+            0.0,
+            0.797646164894104,
+            0.3708479404449463
+          ],
+          "margin": 0.07416754520766833,
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "contexts": {
+    "1->0": {
+      "runs": 6,
+      "distinct_videos": 4,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "01",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 80.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 8.0
+        }
+      ]
+    },
+    "0->1": {
+      "runs": 12,
+      "distinct_videos": 8,
+      "supported": true,
+      "observations": [
+        {
+          "sequence": "01",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "04",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "05",
+          "duration_frames": 36.0
+        },
+        {
+          "sequence": "07",
+          "duration_frames": 40.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 28.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "23",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "24",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 32.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 20.0
+        }
+      ]
+    },
+    "1->2": {
+      "runs": 2,
+      "distinct_videos": 2,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 12.0
+        }
+      ]
+    },
+    "2->1": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 4.0
+        }
+      ]
+    },
+    "1->3": {
+      "runs": 3,
+      "distinct_videos": 3,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 20.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "20",
+          "duration_frames": 4.0
+        }
+      ]
+    },
+    "3->1": {
+      "runs": 2,
+      "distinct_videos": 2,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 24.0
+        }
+      ]
+    },
+    "0->3": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "13",
+          "duration_frames": 4.0
+        }
+      ]
+    }
+  },
+  "supported_contexts": [
+    "0->1"
+  ],
+  "model": {
+    "descriptor_names": [
+      "relative_center_x",
+      "relative_center_y",
+      "log_area_ratio",
+      "iou",
+      "anchor_center_x",
+      "anchor_center_y"
+    ],
+    "area_gates": {
+      "1": {
+        "normal_boxes": 1570,
+        "area_upper": 0.21172909154357733,
+        "excluded_fraction": 0.14203821656050955
+      },
+      "0": {
+        "normal_boxes": 2462,
+        "area_upper": 0.6152034895935014,
+        "excluded_fraction": 0.0036555645816409425
+      }
+    },
+    "normal_valid_pairs": 1101,
+    "median": [
+      -0.7488691210746765,
+      -0.5989939570426941,
+      -0.3039167523384094,
+      0.01587357372045517,
+      0.7961229085922241,
+      0.7485920786857605
+    ],
+    "scale_iqr_with_floor": [
+      0.29142653942108154,
+      0.9140259381383657,
+      0.7940010502934456,
+      0.08398811088409275,
+      0.05,
+      0.05
+    ],
+    "cluster_centers_scaled": [
+      [
+        -0.49170828339343225,
+        -0.20942125313589557,
+        0.010865166980166194,
+        -0.0012438649663439882,
+        0.1583052023660033,
+        -0.010824486208108608
+      ],
+      [
+        0.7126998656711081,
+        0.4374475704457017,
+        -0.5630642164707649,
+        1.224414967275879,
+        -0.00532765940922067,
+        -0.14846428865339856
+      ],
+      [
+        24.356356990718147,
+        0.6225699490472392,
+        0.4123892782083184,
+        0.3148397075283606,
+        -7.838438488543034,
+        -2.8791286051273346
+      ],
+      [
+        1.2421463880535397,
+        1.8917054406591705,
+        0.46316611954824705,
+        0.29422360906574363,
+        -3.029140922629715,
+        -10.12923534923387
+      ]
+    ],
+    "normal_cluster_samples": [
+      662,
+      328,
+      8,
+      103
+    ],
+    "median_normal_relative_position_for_label_permutation": [
+      0.27884615384615385,
+      0.6781592187037585,
+      0.7169705294705295,
+      0.7565217391304347
+    ],
+    "ordering_note": "Normal FIT relative frame position ONLY orders cluster IDs. It is not a phase label or a test-time input.",
+    "semantic_note": "latent_0..k-1 have no verified mapping to actions or original VLM phases."
+  },
+  "interpretation": "Gate acceptance is not object accuracy. The six normal cases are qualitative checks; no test labels or margin tuning used.",
+  "source_sha256": {
+    "testing_01.npz": "78124037f8e3837e86df459c46daa03f63ea82aa994a4940ff1c8ae80f6a7e61",
+    "testing_02.npz": "a749a22efd5d4b959c36d0933f31f1c3f860085190c62d3816aa66ff03d77cfd",
+    "testing_03.npz": "fd4e595709ba648a27d905f4bb0b9cab27f3975c69f984eb0497e42b148369a3",
+    "testing_04.npz": "2d714f7046580ac2b8976949d95b81174427eb19c40011a522380a589499fa9e",
+    "testing_05.npz": "fb502896066753c84216d3e0f2f9fba862b1aa8f5025c354c313df5eed024f5b",
+    "testing_06.npz": "c6b085f16160b32640b98b521a86303a78828f432d78dcbfaea997a7e28de706",
+    "testing_07.npz": "3ae533b61c4fd736dd41355a36127872fdffd232bcc70ee4a96e1fb12f87bd6d",
+    "testing_08.npz": "98b44f9945183bfe43d4a2134759e91e758caa66ae63af753b9c22bcefc219c6",
+    "testing_09.npz": "b263b85a3bd7c22fc424e65d2b562fcc408f70f89f2284af68e97173c89d3a8e",
+    "testing_10.npz": "a4dd6f56b7f6bcf6b48a5b4b514fc3fcb2536332613572dd9acac3ef4b512c7e",
+    "testing_11.npz": "73c19939d7a02159c8bcd18ff14d039c41a1ab5ef47e81e5004264055c2e3b76",
+    "testing_12.npz": "e0bf8e2b0bf799dd218024bbad2961b4c722eb0ea145c61231e97822f8d88f71",
+    "testing_13.npz": "18f75f20ee801600327b5a0d1aad62cd00935b65c225efa266ce6fe1977f49ec",
+    "testing_14.npz": "7eb110329dd16793c92cf420b761173fe5929205cca72b90dc5c27d62887074b",
+    "testing_15.npz": "8a27751c6d4004e6f1122ca5461b2ab14892045e2143ee4d388592846927dc51",
+    "testing_16.npz": "dbd82bf1bd627d79deaa5240bb0bb981d6c451539cb1017322353d27d4c2d900",
+    "testing_17.npz": "29c1245e46c38a4bf2523b71aa918f7ac6dd13636199897b9e64bba5a47b287e",
+    "testing_18.npz": "a155eb6519ff44afc7884689a5f31c62970dc95b97792f3562bfce4962da17c7",
+    "testing_19.npz": "db2bb6fba33c5f79549018dc3d0117f2497d03867958aa81d6cc2422e208f837",
+    "training_01.npz": "50a19b4d0f10f1b94eb0d0f2ed05e86b3a659af39b14edbf6a43eda55819cbfa",
+    "training_02.npz": "b740182e653222f55bba9a8dfeda41fd196ed0b37de2e1ec8856641b217e0ab1",
+    "training_03.npz": "b87d132d64782f5a9b621c2618466e0c4f704bb90e808f205d3c4fbb6e748f61",
+    "training_04.npz": "d98c89fadd578e4b940ed66f1f1fa3da0a97d8f25a9fa911174f03c1a30ea127",
+    "training_05.npz": "d414d66ea612bf117cdaf2a6a3de44ae2802cad3bf40c288d60dcddd028b733c",
+    "training_06.npz": "e1964e9815874d0243e51a1cf1691ed1d6515182dc57232ddaa6829b01324954",
+    "training_07.npz": "caa82b55e7df9af174ce811f6d8aa770f168ed5f08fed1c8f6677a0e6881df49",
+    "training_08.npz": "fb19bf08ddbdab1084e51dedd12b68ae5834ce1197ccd65bba5d9a07cd8cebe4",
+    "training_09.npz": "c14903a57f795f32d19f46a31a4f91e0de0d7e0b4b0bbf3ad03303326253d446",
+    "training_10.npz": "ce65d33c1348e9a9e23c8c6e22c9e0dbf5265bdaf97a7e106c016f2c7d46b1be",
+    "training_11.npz": "b958a34b00251491f150a7556e31a0643e84396cd1b5648d18a8841547c0c060",
+    "training_12.npz": "5fd2a691d1f2ee30847ab3f0074aba2fe47d230db500d28d381398a8a8467295",
+    "training_13.npz": "30f080229354fbb00f1c624d7c257d311b219e7135ff24da43b7867794bb50a9",
+    "training_14.npz": "0cd5d2649f8b2d51c7c2212cc75e3df4805b5ab8c9b69040d1bf26479c053f8a",
+    "training_15.npz": "52c9f2a835ca2f4663e939db866384551c841b28bf7d91839c8b17389c2b7b84",
+    "training_16.npz": "ac31362e1e3257fd3e4b9d59c059564dae57d5308edf3eebc08949aa404ddf99",
+    "training_17.npz": "64344577084b339c1ae212d59ac98cd5716b45d49474ba23009d971a4f05f4af",
+    "training_18.npz": "806f1e67fdf561ff29c8242161161a5ba4b70980cb1ddabe938b0368f6a1c4d3",
+    "training_19.npz": "36b66eabc807acedfb33a778c8143fc55a149b5519b294cf586ca6d62888819d",
+    "training_20.npz": "373741e1e4b7ccc11d0910e5bc2010ec0cfdb292614458f89691c69288cc5336",
+    "training_21.npz": "a55ca1a94def533212407aefacf2ee7ab5878bc0b03193fcd6b72d0e8e1368db",
+    "training_22.npz": "70187ce19cb5719ddc3a84c80f4b351367a1d8d7fa518c6eb0ed955bd0775a7c",
+    "training_23.npz": "e0c7824ef4fd78f0f948e071f93e3d5b8710b06f9ad66c34b99aed5244bd3f67",
+    "training_24.npz": "eabcb4464847b237d772e40a678d43a5067b57c0557aac65a40dac4a94637ba8",
+    "training_25.npz": "5c3e4af40eaa89364a17b52e0b4988df5a4aea12d05e910643b5d0330981a35c"
+  }
+}
