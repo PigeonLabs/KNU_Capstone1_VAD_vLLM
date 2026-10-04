@@ -65,7 +65,13 @@ class Baseline:
         return np.array([int(self.appearance_space_key(role,p)[1]>=0) for p in phases],dtype=np.int8)
 
     def fit_appearance_calibration(self,caches,raw):
-        self.route_calibration=None
+        self.route_calibration=None;self.request_calibration=None
+        if 'appearance_request_calibration' in self.cfg:
+            if self.cfg['appearance_request_calibration']!='dual_full_normal' or 'appearance_route_calibration' in self.cfg:
+                raise ValueError('Request calibration requires dual_full_normal and excludes route calibration')
+            from ipad_vad.request_calibration import RequestCalibration
+            self.request_calibration=RequestCalibration();self.request_calibration.fit(self,caches)
+            return
         if 'appearance_route_calibration' not in self.cfg:return
         from ipad_vad.route_calibration import RouteCalibration
         ids=[d['sequence_id'] for d in caches]
@@ -78,6 +84,9 @@ class Baseline:
 
     def calibrate_appearance(self,data,role,frames,residual):
         if role not in self.calibration:raise ValueError(f'Role {role} absent from normal calibration')
+        if self.request_calibration is not None:
+            requests=(self.appearance_phases(data)[frames]>=0).astype(np.int8)
+            return self.request_calibration.score(role,requests,residual)
         if self.route_calibration is None:return empirical_percentile(self.calibration[role],residual)
         return self.route_calibration.score(role,self.appearance_routes(data,role,frames),residual,self.calibration[role])
 
@@ -124,7 +133,15 @@ class Baseline:
 
     def raw(self,data):
         phases=data['phases'];appearance_phases=self.appearance_phases(data);outputs=[]
+        if 'appearance_request_calibration' in self.cfg:
+            from ipad_vad.request_calibration import selected_residuals
+            outputs=selected_residuals(self,data)
         for role,frames,x in observations(data):
+            if 'appearance_request_calibration' in self.cfg:
+                for phase in np.unique(appearance_phases[frames]):
+                    if phase<0 or self.appearance_space_key(role,phase)!=(role,int(phase)):
+                        name=str((role,int(phase)));self.fallback_counts[name]=self.fallback_counts.get(name,0)+int(np.sum(appearance_phases[frames]==phase))
+                continue
             residual=np.empty(len(x))
             for phase in np.unique(appearance_phases[frames]):
                 key=self.appearance_space_key(role,phase);mask=appearance_phases[frames]==phase

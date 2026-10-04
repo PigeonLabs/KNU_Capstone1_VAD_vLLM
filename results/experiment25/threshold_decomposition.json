@@ -1,0 +1,186 @@
+{
+  "post_evaluation_diagnostic_only": true,
+  "variants": {
+    "25_hold": {
+      "own_normal_q99": 0.997457627118644,
+      "legacy_normal_q99": 0.997457627118644,
+      "own_minus_legacy_threshold_on_same_new_scores": {
+        "observed": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "initial_missing": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "missing_within_tau": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "missing_beyond_tau": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        }
+      },
+      "totals": {
+        "added_normal": 0,
+        "added_anomaly": 0,
+        "removed_normal": 0,
+        "removed_anomaly": 0
+      },
+      "own_q_events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "legacy_q_on_new_scores_events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "25_pool": {
+      "own_normal_q99": 0.9968879668049793,
+      "legacy_normal_q99": 0.997457627118644,
+      "own_minus_legacy_threshold_on_same_new_scores": {
+        "observed": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "initial_missing": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "missing_within_tau": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "missing_beyond_tau": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        }
+      },
+      "totals": {
+        "added_normal": 0,
+        "added_anomaly": 0,
+        "removed_normal": 0,
+        "removed_anomaly": 0
+      },
+      "own_q_events": {
+        "events": 26,
+        "detected_events": 14,
+        "missed_events": 12,
+        "event_coverage": 0.5384615384615384,
+        "median_delay_detected_only_frames": 64.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "legacy_q_on_new_scores_events": {
+        "events": 26,
+        "detected_events": 14,
+        "missed_events": 12,
+        "event_coverage": 0.5384615384615384,
+        "median_delay_detected_only_frames": 64.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "25_age": {
+      "own_normal_q99": 0.9972375690607734,
+      "legacy_normal_q99": 0.997457627118644,
+      "own_minus_legacy_threshold_on_same_new_scores": {
+        "observed": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "initial_missing": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "missing_within_tau": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        },
+        "missing_beyond_tau": {
+          "added_normal": 0,
+          "added_anomaly": 0,
+          "removed_normal": 0,
+          "removed_anomaly": 0
+        }
+      },
+      "totals": {
+        "added_normal": 0,
+        "added_anomaly": 0,
+        "removed_normal": 0,
+        "removed_anomaly": 0
+      },
+      "own_q_events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "legacy_q_on_new_scores_events": {
+        "events": 26,
+        "detected_events": 13,
+        "missed_events": 13,
+        "event_coverage": 0.5,
+        "median_delay_detected_only_frames": 75.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    }
+  },
+  "note": "Same saved new score arrays evaluated at own and paired legacy normal q99. No model, threshold or gate selected; main results retain own q99."
+}

@@ -20,6 +20,8 @@ def normal_model_arrays(model):
     if model.missing_age is not None:
         arrays['appearance_age_tau']=np.array(model.missing_age.tau);arrays['appearance_age_fit_durations']=model.missing_age.durations
     for role,ref in model.calibration.items():arrays[f'calibration_{role}']=ref
+    if model.request_calibration is not None:
+        for (role,request),ref in model.request_calibration.references.items():arrays[f'request_calibration_{role}_{request}']=ref
     for state,ref in model.state_process_references.items():arrays[f'process_reference_state_{state}']=ref
     if model.route_calibration is not None:
         for (role,route),ref in model.route_calibration.references.items():arrays[f'route_calibration_{role}_{route}']=ref
@@ -63,6 +65,7 @@ def main():
                 cal_scores=[model.score(cal[s]) for s in used];branches=['visual','transition','dwell','process','combined']
                 finite=all(np.isfinite(x[k]).all() for x in cal_scores for k in branches);bounded=all(np.all((x[k]>=0)&(x[k]<=1)) for x in cal_scores for k in branches)
                 row={'variant':e,'held_out_sequence':held,'calibration_sequences':used,'normal_q99':model.threshold,'calibration_finite':finite,'calibration_unit_interval':bounded,'calibration_combined_at_one':int(sum(np.sum(x['combined']==1) for x in cal_scores)),'held_out_samples':len(alarm),'held_out_sample_alarms':int(alarm.sum()),'held_out_frames':n,'held_out_frame_alarms':int(dense.sum()),'held_out_at_one_samples':int(np.sum(r['combined']==1)),'relation_strata':{},'global_bank_strata':{},'object_bank_strata':[],'route_support':support_rows(model)}
+                row['request_support']=[] if model.request_calibration is None else [{'role':role,'request':request,**v} for (role,request),v in sorted(model.request_calibration.support.items())]
                 for observed in [False,True]:
                     mask=valid==observed;row['relation_strata'][str(observed)]={'frames':int(mask.sum()),'alarms':int(np.sum(dense&mask))}
                 for kind in [0,1]:

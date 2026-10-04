@@ -31,7 +31,8 @@
 | 실험 22 | 동일 bank 표본 수 무작위 FIT 대조 | 완료: 관측 FIT의 외형 차이 유지, 구간 탐지는 모든 random보다 적음 | [결과·의의·추천 3개](docs/EXPERIMENT22.md) |
 | 실험 23 | 표본 수·PCA rank를 함께 맞춘 대조 | 완료: rank 통제 후에도 외형 장점·구간 미탐 상충 유지 | [결과·의의·추천 3개](docs/EXPERIMENT23.md) |
 | 실험 24 | 누락 지속 길이에 따른 인과적 fallback | 완료: 시간 제한은 오탐·ranking 악화, CDF 간접 효과 확인 | [결과·의의·추천 3개](docs/EXPERIMENT24.md) |
-| 다음 실험 25 | 두 외형 경로의 고정 정상 CDF | 계획 완료, 미실행 | [계획](docs/EXPERIMENT25_PLAN.md) |
+| 실험 25 | 두 외형 경로의 고정 정상 CDF | 완료: 요청별 점수 불변 확보, pooled/age ranking 저하 | [결과·의의·추천 3개](docs/EXPERIMENT25.md) |
+| 다음 실험 26 | 실제 bank에 일치하는 CDF 선택 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT26_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -841,6 +842,36 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 92개 테스트와 44개 특징 파일·15개 정상 holdout 구성·57개 테스트 예측의 재구성 검증을 통과했다.
 
 [상세 결과·의의·한계](docs/EXPERIMENT24.md) · [비교 CSV](results/experiment24/comparison.csv) · [누락 나이별 진단](results/experiment24/missing_age_diagnostic.json) · [FIT 누락·τ](results/experiment24/fit_gap_profile.json) · [검증](results/experiment24/validation.json) · [실험 25 계획](docs/EXPERIMENT25_PLAN.md)
+
+## 실험 25 결과 — gate와 독립적인 정상 보정
+
+정상 calibration의 각 특징을 phase 요청/pooled 요청 경로에 모두 통과시켜 역할별 두 CDF를 고정했다. gate별로 표본을 나누지 않으며 세 구성의 reference는 정확히 같다. R04 테스트 19개/8,154프레임을 평가했다.
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 오탐률 (FP) | 이상 recall (TP) | 탐지 구간 / 26 |
+|---|---:|---:|---:|---:|---:|
+| 25_hold | 0.7001 / 0.6971 | 0.6765 / 0.6753 | 8.64% (309) | 13.74% (629) | 13 |
+| 25_pool | 0.6883 / 0.6861 | 0.6657 / 0.6654 | 7.86% (281) | 12.06% (552) | 14 |
+| 25_age | 0.6912 / 0.6903 | 0.6681 / 0.6692 | 8.64% (309) | 13.91% (637) | 13 |
+
+정상 holdout 오탐은 세 새 구성 모두 40프레임(/1,920)이다. 정상 q99는 hold/pool/age 순으로 0.997458/0.996888/0.997238이다. 자체 q99와 이전 정상 q99를 같은 새 점수에 적용한 사후 진단에서는 경보 차이가 0개였다.
+
+![실험 25 세 gate 비교](results/experiment25/request_calibration_comparison.png)
+
+**의의:** 같은 요청 경로의 점수가 gate와 무관하게 같아졌다. 세 구성의 관측 구간 점수·경보도 정확히 같아, 기존 정상 CDF 혼합의 간접 효과를 분리할 수 있게 됐다.
+
+**보완할 점:** 이전 대비 pool/age의 오탐과 이상 recall이 함께 줄고 ranking은 낮아졌다. 같은 pooled bank인데 요청이 달라 보정 점수가 달라지는 사례가 hold→pool에서 519개, hold→age에서 492개 남는다. 특징 관측 수이며 frame 수가 아니다. 구조적 일관성과 성능·novelty를 동일시하지 않는다.
+
+### 실험 25 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **실제 bank에 일치하는 CDF 선택**: 지원 부족 pooled fallback도 pooled 기준 CDF로 보정 | 같은 pooled bank·다른 요청인 관측에서 hold→pool 531개 중 519개, hold→age 504개 중 492개의 점수가 달라짐 | reference는 그대로 두고 실제 bank dispatch만 변경. 같은 bank 점수 불변·지원 부족 subset·q99 효과와 전체 성능 검증. 일관성 확보를 성능/novelty로 동일시하지 않음 |
+| 2 | **관측 근거를 반영한 공정 점수 신뢰도**: 불확실한 phase에서 분기 기여를 구분 | 모든 공정 배열은 같고 전체 Combined ranking이 여전히 Visual보다 낮음 | 정상 지원 정보로만 규칙을 정하고 독자 TP/FP·정상 보정 확인. 테스트 라벨로 가중치 선택 금지 |
+| 3 | **정상 역할·누락 원인 감사 확대**: 실제 부품·혼동 객체·가림 사례 검증 | 보정 구조를 바꿔도 역할/관계 mask의 의미 품질은 검증되지 않음 | 별도 정상 사례/보조 주석 범위와 비용 공개. 누락률을 의미 정확도로 대체하지 않고 반복 R04를 독립 평가로 부르지 않음 |
+
+96개 테스트와 44개 특징 파일·30개 정상 holdout 구성·114개 테스트 예측의 재구성 검증을 통과했다.
+
+[상세 결과·의의·한계](docs/EXPERIMENT25.md) · [비교 CSV](results/experiment25/comparison.csv) · [요청/관측/구간 진단](results/experiment25/request_calibration_diagnostic.json) · [임계값 효과](results/experiment25/threshold_decomposition.json) · [검증](results/experiment25/validation.json) · [실험 26 계획](docs/EXPERIMENT26_PLAN.md)
 
 ## 로컬 VLM
 

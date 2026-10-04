@@ -148,6 +148,8 @@ def main():
             'support':{str(k):v for k,v in model.route_calibration.support.items()},
             'fallback':'Role-wide normal CDF when route support is insufficient.'}
     if model.missing_age is not None:result['appearance_missing_age']=model.missing_age.report()
+    if model.request_calibration is not None:
+        result['appearance_request_calibration']={'mode':'dual_full_normal','request_codes':{'0':'explicit_pooled_request','1':'phase_request_including_support_fallback'},'support':{str(k):v for k,v in model.request_calibration.support.items()}}
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -159,6 +161,8 @@ def main():
     for (role,phase),space in model.spaces.items():
         arrays[f'mean_{role}_{phase}']=space.mean;arrays[f'basis_{role}_{phase}']=space.basis
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
+    if model.request_calibration is not None:
+        for (role,request),reference in model.request_calibration.references.items():arrays[f'request_calibration_{role}_{request}']=reference
     if model.route_calibration is not None:
         for (role,route),reference in model.route_calibration.references.items():arrays[f'route_calibration_{role}_{route}']=reference
     if 'process_calibration' in cfg:

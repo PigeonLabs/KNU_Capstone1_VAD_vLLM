@@ -1,0 +1,431 @@
+{
+  "normal_only": true,
+  "variants": {
+    "23_obs": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "request_support": []
+    },
+    "24_pool": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      },
+      "request_support": []
+    },
+    "24_age": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 154,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 194,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 159,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 154,
+        "-1:explicit_missing_pool": 31,
+        "1:explicit_missing_pool": 30,
+        "2:explicit_missing_pool": 31,
+        "0:explicit_missing_pool": 15
+      },
+      "request_support": []
+    },
+    "25_hold": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 165,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 209,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 169,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 165,
+        "-1:support_pool_unobserved": 20,
+        "1:support_pool_unobserved": 20,
+        "2:support_pool_unobserved": 20
+      },
+      "request_support": [
+        {
+          "role": -1,
+          "request": 0,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": -1,
+          "request": 1,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 0,
+          "request": 0,
+          "observations": 590,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 0,
+          "request": 1,
+          "observations": 590,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 1,
+          "request": 0,
+          "observations": 543,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 1,
+          "request": 1,
+          "observations": 543,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 2,
+          "request": 0,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 2,
+          "request": 1,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        }
+      ]
+    },
+    "25_pool": {
+      "normal_q99": 0.9968879668049793,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:explicit_missing_pool": 185,
+        "0:phase_observed": 381,
+        "0:explicit_missing_pool": 209,
+        "1:phase_observed": 354,
+        "1:explicit_missing_pool": 189,
+        "2:phase_observed": 297,
+        "2:explicit_missing_pool": 185
+      },
+      "request_support": [
+        {
+          "role": -1,
+          "request": 0,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": -1,
+          "request": 1,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 0,
+          "request": 0,
+          "observations": 590,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 0,
+          "request": 1,
+          "observations": 590,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 1,
+          "request": 0,
+          "observations": 543,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 1,
+          "request": 1,
+          "observations": 543,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 2,
+          "request": 0,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 2,
+          "request": 1,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        }
+      ]
+    },
+    "25_age": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "calibration_sample_alarms": 4,
+      "calibration_bank_usage_observations": {
+        "-1:phase_observed": 297,
+        "-1:phase_unobserved": 154,
+        "0:phase_observed": 381,
+        "0:phase_unobserved": 194,
+        "1:phase_observed": 354,
+        "1:phase_unobserved": 159,
+        "2:phase_observed": 297,
+        "2:phase_unobserved": 154,
+        "-1:explicit_missing_pool": 31,
+        "1:explicit_missing_pool": 30,
+        "2:explicit_missing_pool": 31,
+        "0:explicit_missing_pool": 15
+      },
+      "request_support": [
+        {
+          "role": -1,
+          "request": 0,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": -1,
+          "request": 1,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 0,
+          "request": 0,
+          "observations": 590,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 0,
+          "request": 1,
+          "observations": 590,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 1,
+          "request": 0,
+          "observations": 543,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 1,
+          "request": 1,
+          "observations": 543,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 2,
+          "request": 0,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        {
+          "role": 2,
+          "request": 1,
+          "observations": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        }
+      ]
+    }
+  },
+  "all_banks_and_process_preserved": true,
+  "all_legacy_calibrations_reproduced": true,
+  "identical_full_population_request_references": true,
+  "same_request_calibrated_feature_comparisons": 4755,
+  "normal_reference_independently_reconstructed": true,
+  "tau_frames": 56,
+  "note": "Canonical per-policy batches eliminate gate-dependent floating-point tie differences. Both inference paths are currently computed; runtime overhead not benchmarked."
+}
