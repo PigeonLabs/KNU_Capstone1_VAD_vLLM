@@ -68,6 +68,8 @@ def main():
                 for key in ('transition','dwell','dwell_age','dwell_reason','dwell_valid'):
                     saved[key]=hold_scores(data['indices'],result[key],len(labels))
                 row['dwell_valid_frames']=int(saved['dwell_valid'].sum())
+            for key in ('transition_raw','transition_valid','transition_gated'):
+                if key in result:saved[key]=hold_scores(data['indices'],result[key],len(labels))
             if 'dwell_entry_context' in result:
                 saved['dwell_entry_context']=hold_scores(data['indices'],result['dwell_entry_context'],len(labels))
             if 'motion' in result:
@@ -93,6 +95,8 @@ def main():
         if 'normal_dwell' in cfg:
             for key in ('transition','dwell','dwell_valid','dwell_age','dwell_reason'):
                 cal_scores[key]=np.concatenate([r[key] for r in cal_results])
+        if 'transition_evidence_gate' in cfg:
+            for key in ('transition_raw','transition_valid','transition_gated'):cal_scores[key]=np.concatenate([r[key] for r in cal_results])
         if 'dwell_context' in cfg:cal_scores['dwell_entry_context']=np.concatenate([r['dwell_entry_context'] for r in cal_results])
         np.savez_compressed(Path('artifacts')/experiment/'normal_calibration_scores.npz',**cal_scores,
                             phases=np.concatenate([d['phases'] for d in cal]),

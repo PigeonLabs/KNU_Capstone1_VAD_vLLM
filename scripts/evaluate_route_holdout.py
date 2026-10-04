@@ -55,6 +55,8 @@ def main():
                 model=copy.deepcopy(models[e]);model.calibrate([cal[s] for s in used]);r=model.score(d);scores_by_variant[e]=r
                 refs=normal_model_arrays(model);np.savez_compressed(art/f'{e}_exclude_{held}_references.npz',**refs)
                 saved={k:r[k] for k in ['visual','transition','dwell','process','combined','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']};saved.update(indices=d['indices'],relation_valid=d['relation_valid'],global_route=model.appearance_routes(d,-1,np.arange(len(d['indices']))))
+                for key in ('transition_raw','transition_valid','transition_gated'):
+                    if key in r:saved[key]=r[key]
                 roles=[];frames=[];routes=[];values=[];conditional=[]
                 for role,ids,s in r['objects']:
                     route=model.appearance_routes(d,role,ids);roles.extend([role]*len(ids));frames.extend(ids);routes.extend(route);values.extend(s)
@@ -77,7 +79,12 @@ def main():
                 assert f'R04/training_{held}' not in {s for v in row['route_support'] for s in v['videos']}
                 rows.append(row)
             for e in variants[1:]:
-                for key in ['transition','dwell','process','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']:np.testing.assert_array_equal(scores_by_variant[variants[0]][key],scores_by_variant[e][key])
+                for key in ['transition','dwell','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']:np.testing.assert_array_equal(scores_by_variant[variants[0]][key],scores_by_variant[e][key])
+            groups={}
+            for e in variants:
+                mode=configs[e].get('transition_evidence_gate');r=scores_by_variant[e]
+                if mode in groups:np.testing.assert_array_equal(r['process'],groups[mode])
+                else:groups[mode]=r['process']
     totals={}
     for e in variants:
         items=[r for r in rows if r['variant']==e];total={k:sum(r[k] for r in items) for k in ['held_out_samples','held_out_sample_alarms','held_out_frames','held_out_frame_alarms','held_out_at_one_samples']}

@@ -1,0 +1,12 @@
+{
+  "feature_files_checked": 44,
+  "normal_holdout_cells_checked": 30,
+  "test_predictions_checked": 114,
+  "protocol_and_feature_hashes_match": true,
+  "all_paired_pca_references_appearance_ungated_transition_dwell_preserved": true,
+  "normal_exclusion_q99_and_predictions_reconstructed": true,
+  "causal_gate_boundaries_and_prefix_verified": true,
+  "old_scores_reproduced": true,
+  "new_process_combined_never_increase_at_fixed_q": true,
+  "labels_metrics_branch_events_recomputed": true
+}

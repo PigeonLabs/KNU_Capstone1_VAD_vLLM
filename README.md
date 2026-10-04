@@ -33,7 +33,8 @@
 | 실험 24 | 누락 지속 길이에 따른 인과적 fallback | 완료: 시간 제한은 오탐·ranking 악화, CDF 간접 효과 확인 | [결과·의의·추천 3개](docs/EXPERIMENT24.md) |
 | 실험 25 | 두 외형 경로의 고정 정상 CDF | 완료: 요청별 점수 불변 확보, pooled/age ranking 저하 | [결과·의의·추천 3개](docs/EXPERIMENT25.md) |
 | 실험 26 | 실제 bank에 일치하는 CDF 선택 | 완료: 같은 bank 점수 불일치 제거, ranking 저하·경보 불변 | [결과·의의·추천 3개](docs/EXPERIMENT26.md) |
-| 다음 실험 27 | 연속 관측 전이만 공정 결합 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT27_PLAN.md) |
+| 실험 27 | 연속 관측 전이만 공정 결합 | 완료: ranking·오탐 개선, TP 소폭 감소·새 구간 없음 | [결과·의의·추천 3개](docs/EXPERIMENT27.md) |
+| 다음 실험 28 | 전이 CDF의 정상 관측 모집단 정렬 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT28_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -921,3 +922,30 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **정상 상태별 보정 진단**: reference와 실제 경로의 분포 차이를 영상 단위로 점검 | 정상 오탐·q99가 같아도 ranking은 낮아짐. 첫 reference는 여전히 phase 요청과 지원 부족 fallback을 함께 포함 | 정상 holdout의 관측/누락·bank별 percentile 및 support를 보고. 작은 subset CDF 재적합이나 테스트 순위에 맞춘 선택을 바로 도입하지 않음 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT26.md) · [6개 구성 CSV](results/experiment26/comparison.csv) · [검증](results/experiment26/validation.json) · [1순위를 구체화한 실험 27 계획](docs/EXPERIMENT27_PLAN.md)
+
+## 실험 27 — 연속 관측 전이만 공정 결합
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 오탐률 (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| 26_hold | 0.6899 / 0.6899 | 0.6669 / 0.6689 | 8.64% (309) | 13.74% (629) | 13 |
+| 26_pool | 0.6875 / 0.6857 | 0.6650 / 0.6650 | 7.86% (281) | 12.06% (552) | 14 |
+| 26_age | 0.6898 / 0.6891 | 0.6669 / 0.6681 | 8.64% (309) | 13.91% (637) | 13 |
+| 27_hold | 0.6899 / 0.6899 | 0.6820 / 0.6816 | 8.19% (293) | 13.65% (625) | 13 |
+| 27_pool | 0.6875 / 0.6857 | 0.6797 / 0.6774 | 7.41% (265) | 11.97% (548) | 14 |
+| 27_age | 0.6898 / 0.6891 | 0.6820 / 0.6808 | 8.19% (293) | 13.83% (633) | 13 |
+
+![실험 27 비교](results/experiment27/transition_gate_comparison.png)
+
+**의의:** 외형·전이 확률·정상 CDF를 고정한 채 관측 전이만 결합해 재관측 경계의 간섭을 분리했다. 정상 holdout FP는 세 구성 모두 40→32/1,920프레임, 테스트는 FP −16/TP −4프레임이며 탐지 구간 집합은 같다. q99는 짝지은 이전 값과 같다.
+
+**보완할 점:** 공정의 독자 추가 경보는 정상 16/이상 4프레임, 추가 탐지 구간은 0개다. Combined ranking은 Visual보다 낮고 전이 CDF에는 미관측 표본이 남는다. 정상 holdout 개선은 영상 02에 집중했고 R04 반복 개발 평가다. 성능 상승을 novelty·일반화로 해석하지 않는다. 비용은 미측정이다.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **전이 보정 모집단을 연속 관측에 맞추기**: 정상 CDF에 관측 쌍만 포함하고 전이 확률·gate는 고정 | 결합에서는 관측 쌍만 쓰지만 정상 reference에는 전체 477개 전이가 남음. 관측 쌍은 247개, 이전 상태 0은 20→0개. 공정 추가 경보는 여전히 FP 16/TP 4 | 이전 상태별 support·global fallback·정상 holdout·q99 포화와 독자 TP/FP를 검사. 작은 표본에서 포화/오탐 증가 가능, 테스트로 cutoff 선택 금지 |
+| 2 | **정상 역할·누락 원인 감사 확대**: 실제 부품·혼동 객체·재관측 사례를 구분 | 재관측 경보 간섭은 확인했으나 관측 쌍에서도 Combined ranking이 Visual보다 낮고 의미 정확도는 미검증 | 정상 영상의 보조 사례/주석 범위를 명시. 관측 mask를 semantic 정답으로 취급하지 않음 |
+| 3 | **고정 설정의 다른 장면 적용성 검증**: 새 장면의 정상 데이터로만 적합·보정 | 개선과 실패가 반복 사용한 R04에 한정되고 정상 holdout 개선은 영상 02에 집중 | 대상과 protocol을 먼저 고정하고 test를 한 번 평가. 장면별 object/phase 의미 차이와 지원 부족, 전체 실패도 보고 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT27.md) · [6개 구성 CSV](results/experiment27/comparison.csv) · [검증](results/experiment27/validation.json) · [1순위를 구체화한 실험 28 계획](docs/EXPERIMENT28_PLAN.md)

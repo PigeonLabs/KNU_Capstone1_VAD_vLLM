@@ -1,0 +1,104 @@
+{
+  "normal_only": true,
+  "variants": {
+    "26_hold": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "previous_state_reference_counts": {
+        "0": 20,
+        "1": 206,
+        "2": 88,
+        "3": 163
+      },
+      "observed_pair_samples": 247
+    },
+    "26_pool": {
+      "normal_q99": 0.9968879668049793,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "previous_state_reference_counts": {
+        "0": 20,
+        "1": 206,
+        "2": 88,
+        "3": 163
+      },
+      "observed_pair_samples": 247
+    },
+    "26_age": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "previous_state_reference_counts": {
+        "0": 20,
+        "1": 206,
+        "2": 88,
+        "3": 163
+      },
+      "observed_pair_samples": 247
+    },
+    "27_hold": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "previous_state_reference_counts": {
+        "0": 20,
+        "1": 206,
+        "2": 88,
+        "3": 163
+      },
+      "observed_pair_samples": 247
+    },
+    "27_pool": {
+      "normal_q99": 0.9968879668049793,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "previous_state_reference_counts": {
+        "0": 20,
+        "1": 206,
+        "2": 88,
+        "3": 163
+      },
+      "observed_pair_samples": 247
+    },
+    "27_age": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "previous_state_reference_counts": {
+        "0": 20,
+        "1": 206,
+        "2": 88,
+        "3": 163
+      },
+      "observed_pair_samples": 247
+    }
+  },
+  "paired_pca_appearance_references_ungated_transition_dwell_preserved": true,
+  "old_calibration_exactly_reproduced": true,
+  "gated_process_and_combined_never_increase_at_fixed_q": true
+}

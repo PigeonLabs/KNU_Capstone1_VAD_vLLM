@@ -4,6 +4,15 @@ from ipad_vad.process_calibration import StateCalibratedBaseline
 from ipad_vad.dwell import NormalDwell
 
 
+def observed_transition_mask(data):
+    phases=np.asarray(data['phases']);valid=np.asarray(data['relation_valid'])
+    if phases.ndim!=1 or valid.dtype!=np.bool_ or valid.shape!=phases.shape:
+        raise ValueError('Boolean relation_valid must match one-dimensional phases')
+    mask=np.zeros(len(phases),dtype=bool)
+    mask[1:]=valid[:-1]&valid[1:]
+    return mask
+
+
 class DwellBaseline(StateCalibratedBaseline):
     def __init__(self,config,process):
         super().__init__(config,process);self.dwell=NormalDwell(**config['normal_dwell'])
@@ -18,7 +27,13 @@ class DwellBaseline(StateCalibratedBaseline):
     def score(self,data):
         result=super().score(data);score,valid,age,reason=self.dwell.score(data)
         transition=result['process'].copy()
-        result['process']=np.where(valid,np.maximum(transition,score),transition)
+        effective=transition
+        gate=self.cfg.get('transition_evidence_gate')
+        if gate is not None:
+            if gate!='consecutive_observed':raise ValueError('Unknown transition evidence gate')
+            mask=observed_transition_mask(data);effective=np.where(mask,transition,0.)
+            result.update(transition_raw=self.raw(data)[1],transition_valid=mask,transition_gated=effective)
+        result['process']=np.where(valid,np.maximum(effective,score),effective)
         result['combined']=self.fuse(result['visual'],result['process'])
         result.update(transition=transition,dwell=score,dwell_valid=valid,dwell_age=age,dwell_reason=reason)
         return result
