@@ -1,0 +1,27 @@
+{
+  "scene": "R03",
+  "partition": "normal_fit_only",
+  "roles": {
+    "0": {
+      "boxes": 3304,
+      "frame_with_role_fraction": 1.0,
+      "normalized_bbox_area_quantiles_01_50_99": [
+        0.07757574550807476,
+        0.210640586912632,
+        0.9994068843126297
+      ],
+      "boxes_over_half_image_fraction": 0.04116222760290557
+    },
+    "1": {
+      "boxes": 4435,
+      "frame_with_role_fraction": 0.9993634627625716,
+      "normalized_bbox_area_quantiles_01_50_99": [
+        0.014953489396721125,
+        0.04345307871699333,
+        0.9992593145370483
+      ],
+      "boxes_over_half_image_fraction": 0.06042841037204059
+    }
+  },
+  "note": "Geometry/coverage diagnostics, not object precision or recall. Half-image criterion is descriptive only and not used as a scoring/filtering rule."
+}

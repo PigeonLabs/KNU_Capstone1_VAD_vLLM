@@ -8,6 +8,7 @@ from sklearn.metrics import roc_auc_score,average_precision_score
 from threadpoolctl import threadpool_limits
 from ipad_vad.data import evaluation_labels,hold_scores
 from ipad_vad.scoring import Baseline
+from ipad_vad.experiment import load_process
 from ipad_vad.kinematic_scoring import KinematicBaseline
 
 
@@ -24,7 +25,7 @@ def main():
     p.add_argument('--config',type=Path,default=Path('configs/experiment01.json'))
     args=p.parse_args();cfg=json.loads(args.config.read_text());scene=cfg['scene']
     experiment='experiment'+cfg['experiment']
-    out=Path('results')/experiment;out.mkdir(parents=True,exist_ok=True);process=json.loads(Path('results/experiment01/process_discovery.json').read_text())['process']
+    out=Path('results')/experiment;out.mkdir(parents=True,exist_ok=True);process=load_process(cfg)
     split=json.loads(Path('results/stage00/splits.json').read_text())[scene]
     root=Path('artifacts')/experiment/'features'/scene
     def load(part,seq):
@@ -72,7 +73,7 @@ def main():
                 'phase_test_counts':np.bincount(np.concatenate([p['phases'] for p in predictions]),minlength=model.k).tolist(),
                 'subspaces':[{'role':k[0],'phase':k[1],'samples':v.n,'rank':v.rank} for k,v in sorted(model.spaces.items())],
                 'transition_probabilities':model.transition.tolist(),
-                'limitations':['Single R01 scene, single split/seed; not full IPAD.','No phase/object ground truth; no localization accuracy claimed.',
+                'limitations':[f'Single {scene} scene, single split/seed; not full IPAD.','No phase/object ground truth; no localization accuracy claimed.',
                                'Appearance scoring uses CLIP residuals; optional normal geometry/motion branches are specified in the experiment config.',
                                'Missed objects have no crop score; global branch remains.','PCA fallback pools normal phases if support is insufficient.',
                                'Phase assignments are proxies, not ground truth.','Frame-level AUPRC is reported as average precision (step integral).',

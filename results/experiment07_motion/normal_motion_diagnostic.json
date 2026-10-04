@@ -1,0 +1,417 @@
+{
+  "scene": "R03",
+  "role": 0,
+  "role_id": "forklift",
+  "axis_model": {
+    "axis": 0,
+    "axis_name": "x",
+    "moving_tracks": 22,
+    "moving_observations": 3101,
+    "coordinate_variances": [
+      0.028041383251547813,
+      0.0034932326525449753
+    ],
+    "min_track_samples": 3,
+    "min_displacement": 0.1,
+    "note": "Dominant screen-coordinate axis; no assumption of monotonic motion or semantic phase order."
+  },
+  "groups": {
+    "fit": {
+      "samples": 3142,
+      "observed_fraction": 1.0,
+      "valid_motion_fraction": 0.9789942711648632,
+      "phase_counts": [
+        2921,
+        48,
+        0,
+        173
+      ]
+    }
+  },
+  "fit_signed_velocity": {
+    "samples": 3076,
+    "quantiles_01_25_50_75_99": [
+      -0.010626484950383505,
+      -0.0001545964429775874,
+      4.296501477559408e-06,
+      0.00013774260878562927,
+      0.012382306158542633
+    ],
+    "positive_fraction": 0.3013654096228869,
+    "negative_fraction": 0.2981144343302991,
+    "near_zero_fraction": 0.40052015604681407,
+    "diagnostic_epsilon": 0.0001
+  },
+  "sequences": [
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 167,
+      "anchor_observed": 167,
+      "valid_motion": 164,
+      "reason_counts": [
+        164,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        158,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_02",
+      "group": "fit",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        156,
+        8,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 181,
+      "anchor_observed": 181,
+      "valid_motion": 178,
+      "reason_counts": [
+        178,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        173,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 172,
+      "anchor_observed": 172,
+      "valid_motion": 169,
+      "reason_counts": [
+        169,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        163,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 174,
+      "reason_counts": [
+        174,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        164,
+        0,
+        0,
+        13
+      ]
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 174,
+      "reason_counts": [
+        174,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        176,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "sequence_key": "training_09",
+      "group": "fit",
+      "samples": 186,
+      "anchor_observed": 186,
+      "valid_motion": 183,
+      "reason_counts": [
+        183,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        176,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "training_10",
+      "group": "fit",
+      "samples": 175,
+      "anchor_observed": 175,
+      "valid_motion": 172,
+      "reason_counts": [
+        172,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        169,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "training_11",
+      "group": "fit",
+      "samples": 174,
+      "anchor_observed": 174,
+      "valid_motion": 168,
+      "reason_counts": [
+        168,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        167,
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "sequence_key": "training_12",
+      "group": "fit",
+      "samples": 187,
+      "anchor_observed": 187,
+      "valid_motion": 178,
+      "reason_counts": [
+        178,
+        3,
+        0,
+        0,
+        6
+      ],
+      "phase_counts": [
+        178,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_13",
+      "group": "fit",
+      "samples": 180,
+      "anchor_observed": 180,
+      "valid_motion": 177,
+      "reason_counts": [
+        177,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        169,
+        0,
+        0,
+        11
+      ]
+    },
+    {
+      "sequence_key": "training_14",
+      "group": "fit",
+      "samples": 158,
+      "anchor_observed": 158,
+      "valid_motion": 155,
+      "reason_counts": [
+        155,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        150,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_16",
+      "group": "fit",
+      "samples": 164,
+      "anchor_observed": 164,
+      "valid_motion": 161,
+      "reason_counts": [
+        161,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        143,
+        0,
+        0,
+        21
+      ]
+    },
+    {
+      "sequence_key": "training_17",
+      "group": "fit",
+      "samples": 172,
+      "anchor_observed": 172,
+      "valid_motion": 166,
+      "reason_counts": [
+        166,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        164,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        165,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 174,
+      "anchor_observed": 174,
+      "valid_motion": 171,
+      "reason_counts": [
+        171,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        159,
+        0,
+        0,
+        15
+      ]
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        146,
+        17,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 179,
+      "anchor_observed": 179,
+      "valid_motion": 176,
+      "reason_counts": [
+        176,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        145,
+        23,
+        0,
+        11
+      ]
+    }
+  ],
+  "source_sha256": {},
+  "time_unit": "normalized_coordinate_per_source_frame",
+  "fit_only": true,
+  "no_spatial_phase_or_roi_transfer": true,
+  "all_source_arrays_preserved": false,
+  "limitations": [
+    "Full object bbox center is not a tracked physical keypoint.",
+    "Signed pooled velocity can mix travel, rotation, standstill and box jitter.",
+    "No object/phase ground-truth accuracy claim."
+  ]
+}

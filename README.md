@@ -13,7 +13,8 @@
 | 실험 04 | 정상 phase별 진행량 기반 공정 점수 | 완료: AUROC/AP·recall 상승, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT04.md) |
 | 실험 05 | 여러 연속 관측의 진행량 | 완료: 오탐 감소, 관측 가용성 감소 | [결과·의의·추천 3개](docs/EXPERIMENT05.md) |
 | 실험 06 | 진행량 phase 조건화 제거 비교 | 완료: 단순화 가능성, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT06.md) |
-| 다음 실험 07 | 미사용 실제 장면 R03 적용성 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT07_PLAN.md) |
+| 실험 07 | 실제 장면 R03 적용성 | 완료: 진행량 추가로 ranking 저하, 상태 관측 실패 확인 | [결과·의의·추천 3개](docs/EXPERIMENT07.md) |
+| 다음 실험 08 | R03 객체 관계 기반 상태 grounding | 계획 완료, 미실행 | [계획](docs/EXPERIMENT08_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -275,7 +276,40 @@ export PYTHONPATH=src
 | 2 | **정상 조건별 보정·오탐 진단** | 정상 진입/진행/이탈 및 관측 신뢰도를 진단. test 기반 phase별 threshold 최적화 금지 |
 | 3 | **독립 반복·짧은 이상 및 누락 검증** | 작은 지표 차이와 평가 공백을 seed/영상 단위 불확실성 및 다른 이상 길이로 확인 |
 
-[상세 보고서](docs/EXPERIMENT06.md) · [지표](results/experiment06/metrics.json) · [phase별 오류](results/comparison05_06/phase_errors.json) · [다음 실험 07 계획](docs/EXPERIMENT07_PLAN.md)
+[상세 보고서](docs/EXPERIMENT06.md) · [지표](results/experiment06/metrics.json) · [phase별 오류](results/comparison05_06/phase_errors.json) · [실험 07 계획](docs/EXPERIMENT07_PLAN.md)
+
+## 실험 07 결과 — 다른 실제 공정 R03 적용성
+
+R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적합했습니다. 지게차·팔레트 공정에 R01의 단방향 ROI/공간 phase를 복사하지 않고, 같은 R03 특징에서 기본 설정과 pooled 지게차 진행량 추가를 비교했습니다. 정상 fit/calibration 18/4개, 테스트 17개 영상의 12,005프레임입니다.
+
+| R03 지표 | 기본 외형·전이 (07) | 진행량 추가 (07_motion) |
+|---|---:|---:|
+| Visual AUROC | 0.6968 | 0.6968 |
+| Visual AP | 0.6374 | 0.6374 |
+| Process AUROC | 0.4980 | 0.5243 |
+| Process AP | 0.4223 | 0.4355 |
+| Combined AUROC | 0.6747 | 0.6165 |
+| Combined AP | 0.5664 | 0.4942 |
+| 정상 q99 기준 정상 오탐률 | 3.85% | 3.59% |
+| 정상 q99 기준 이상 프레임 recall | 5.56% | 6.41% |
+| 경보가 발생한 GT 이상 구간 | 10 / 17 | 11 / 17 |
+| 미탐 GT 이상 구간 | 7 | 6 |
+
+![실험 07 R03 내부 비교](results/comparison07_07_motion/comparison.png)
+
+**의의:** R01에서 유용했던 진행량이 R03에서는 Combined AUROC -0.0582, AP -0.0722로 악화됐습니다. 모듈의 적용 조건과 실패를 확인했으며, 장면별 discovery·artifact·역할 anchor를 분리하는 구현을 추가했습니다. R01 학습 분포를 그대로 이전한 zero-shot 실험은 아닙니다.
+
+**보완할 점:** `carrying` phase가 모든 분할에서 0개이고, 높은 역할 관측률에도 배경·부분·중복 박스가 섞입니다. 정상 정지와 왕복이 있는 공정에서 지게차 중심 속도만으로 적재 관계를 표현하기 어렵습니다. 두 설정 모두 프레임 recall이 낮고 6~7개 GT 구간을 놓쳤습니다. 서로 다른 정상 q99 기준 비교이며, 탐지 구간 집합이 달라 detected-only 지연 중앙값을 직접 개선량으로 해석하지 않습니다.
+
+### 실험 07 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **객체 관계 기반 상태 grounding** | 지게차–팔레트 상대 위치·겹침·크기로 정상 latent state 구성. 상태 support와 탐지 품질 함께 검증 |
+| 2 | **역할별 검출 품질·관측 불확실성** | 큰 배경 박스, 부분/중복 팔레트 진단. coverage를 GT recall로 해석하지 않음 |
+| 3 | **공정 모듈의 조건부 사용·결합 검증** | 약한 공정 점수가 외형 신호를 희석하는지 검증. 정상 support로 규칙을 정하고 test 가중치 탐색 금지 |
+
+[상세 보고서](docs/EXPERIMENT07.md) · [기본 지표](results/experiment07/metrics.json) · [진행량 추가 지표](results/experiment07_motion/metrics.json) · [다음 실험 08 계획](docs/EXPERIMENT08_PLAN.md)
 
 ## 로컬 VLM
 

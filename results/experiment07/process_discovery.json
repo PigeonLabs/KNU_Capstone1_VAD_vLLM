@@ -1,0 +1,73 @@
+{
+  "scene": "R03",
+  "sources": [
+    "R03/training/frames/01/000.jpg",
+    "R03/training/frames/01/133.jpg",
+    "R03/training/frames/01/266.jpg",
+    "R03/training/frames/01/400.jpg",
+    "R03/training/frames/01/533.jpg",
+    "R03/training/frames/01/667.jpg",
+    "R03/training/frames/02/000.jpg",
+    "R03/training/frames/02/138.jpg",
+    "R03/training/frames/02/276.jpg",
+    "R03/training/frames/02/414.jpg",
+    "R03/training/frames/02/552.jpg",
+    "R03/training/frames/02/691.jpg"
+  ],
+  "prompt": "You are documenting only the VISIBLE normal operation of an industrial device.\nThe supplied images are two normal training sequences, each sampled in temporal order.\nUse no test data or imagined defects. Do not infer hidden actions such as grasping if not visible.\nReturn ONLY a JSON object, no markdown. Schema:\n{\"objects\":[{\"id\":\"short_ascii_role\",\"detection_prompt\":\"short concrete English noun phrase\",\"description\":\"visible role\"}],\n\"phases\":[{\"id\":\"short_ascii_state\",\"description\":\"A photo of ... (a concrete visually discriminable normal state)\"}],\n\"normal_order\":[\"phase_id\"],\"cyclic\":true,\"uncertainties\":[\"limitations\"]}.\nUse 1-3 object roles (include transported product and relevant machine part), 2-4 observable phases.\nPhases must describe distinct VISIBLE positions/states, not defect types. Vocabulary must work as object detection prompts.\nWhen a fine-grained action is not observable, use spatial progression states instead. Do not invent numeric period or FPS.",
+  "process": {
+    "objects": [
+      {
+        "id": "forklift",
+        "detection_prompt": "yellow and black toy forklift",
+        "description": "The mobile machine with two front forks that moves across the mat and positions its forks at the pallet."
+      },
+      {
+        "id": "pallet",
+        "detection_prompt": "black pallet tray holding white cups",
+        "description": "The transported product: a black slatted tray carrying four white cups, moved from the left side to the center of the mat."
+      }
+    ],
+    "phases": [
+      {
+        "id": "forklift_idle",
+        "description": "A photo of the yellow forklift parked in the upper-center of the green mat with its empty forks extended toward the left, while the black pallet of white cups rests separately on the left side of the mat."
+      },
+      {
+        "id": "forklift_at_pallet",
+        "description": "A photo of the forklift shifted to the left edge of the mat with its empty forks aligned against the side of the black pallet of white cups."
+      },
+      {
+        "id": "forklift_carrying",
+        "description": "A photo of the forklift positioned in the center of the mat with the black pallet of white cups resting on its raised forks."
+      },
+      {
+        "id": "pallet_set",
+        "description": "A photo of the black pallet of white cups resting flat on the center of the green mat while the forklift, now with empty forks, is positioned at the right edge."
+      }
+    ],
+    "normal_order": [
+      "forklift_idle",
+      "forklift_at_pallet",
+      "forklift_carrying",
+      "pallet_set"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "The actual lifting and releasing of the pallet by the forks is not directly visible; it is inferred from the pallet's position relative to the forks across frames.",
+      "The camera viewpoint changes between frames (top-down vs. angled), so absolute positions on the mat are approximate.",
+      "No timing, FPS, or cycle period can be determined from the sampled frames."
+    ]
+  },
+  "elapsed_seconds": 39.48209775198484,
+  "usage": {
+    "completion_tokens": 1749,
+    "prompt_tokens": 1268,
+    "total_tokens": 3017,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "note": "Generated normal-state hypotheses, not ground truth. Reasoning text is not persisted."
+}

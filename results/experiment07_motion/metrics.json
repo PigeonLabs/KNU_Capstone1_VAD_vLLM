@@ -1,0 +1,200 @@
+{
+  "scene": "R03",
+  "scope": "R03_same_observations_pooled_progress",
+  "seed": 42,
+  "fit_sequences": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+  ],
+  "calibration_sequences": [
+    "07",
+    "08",
+    "15",
+    "22"
+  ],
+  "test_sequences": 17,
+  "metrics": {
+    "visual": {
+      "frames": 12005,
+      "positive_frames": 5068,
+      "auroc": 0.6967918448355643,
+      "average_precision": 0.6374271758528001
+    },
+    "process": {
+      "frames": 12005,
+      "positive_frames": 5068,
+      "auroc": 0.524318738985746,
+      "average_precision": 0.43553080893737384
+    },
+    "combined": {
+      "frames": 12005,
+      "positive_frames": 5068,
+      "auroc": 0.616474217899078,
+      "average_precision": 0.4941771378762849
+    }
+  },
+  "normal_q99_threshold": 0.9769824390417134,
+  "normal_calibration_sample_alarm_rate": 0.00995732574679943,
+  "test_normal_frame_alarm_rate": 0.03589447888136082,
+  "test_anomaly_frame_recall_at_q99": 0.06412786108918705,
+  "phase_fit_counts": [
+    2921,
+    48,
+    0,
+    173
+  ],
+  "phase_calibration_counts": [
+    662,
+    1,
+    0,
+    40
+  ],
+  "phase_test_counts": [
+    2825,
+    68,
+    0,
+    114
+  ],
+  "subspaces": [
+    {
+      "role": -1,
+      "phase": -1,
+      "samples": 3142,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 0,
+      "samples": 2921,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 1,
+      "samples": 48,
+      "rank": 11
+    },
+    {
+      "role": -1,
+      "phase": 3,
+      "samples": 173,
+      "rank": 28
+    },
+    {
+      "role": 0,
+      "phase": -1,
+      "samples": 3304,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 0,
+      "samples": 3064,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 1,
+      "samples": 48,
+      "rank": 16
+    },
+    {
+      "role": 0,
+      "phase": 3,
+      "samples": 192,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": -1,
+      "samples": 4435,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 0,
+      "samples": 4047,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 1,
+      "samples": 48,
+      "rank": 21
+    },
+    {
+      "role": 1,
+      "phase": 3,
+      "samples": 340,
+      "rank": 23
+    }
+  ],
+  "transition_probabilities": [
+    [
+      0.9883720930232558,
+      0.003419972640218878,
+      0.0003419972640218878,
+      0.00786593707250342
+    ],
+    [
+      0.19230769230769232,
+      0.7692307692307693,
+      0.019230769230769232,
+      0.019230769230769232
+    ],
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    [
+      0.0375,
+      0.00625,
+      0.00625,
+      0.95
+    ]
+  ],
+  "limitations": [
+    "Single R03 scene, single split/seed; not full IPAD.",
+    "No phase/object ground truth; no localization accuracy claimed.",
+    "Appearance scoring uses CLIP residuals; optional normal geometry/motion branches are specified in the experiment config.",
+    "Missed objects have no crop score; global branch remains.",
+    "PCA fallback pools normal phases if support is insufficient.",
+    "Phase assignments are proxies, not ground truth.",
+    "Frame-level AUPRC is reported as average precision (step integral).",
+    "Q99 alarm uses strict >; no per-test-video normalization.",
+    "Motion-only metrics cover valid dense intervals only, not the full test set. Invalid motion retains transition score."
+  ],
+  "motion_valid_only_metrics": {
+    "frames": 11729,
+    "positive_frames": 5008,
+    "auroc": 0.5187998413964527,
+    "average_precision": 0.4535869566864575
+  },
+  "motion_test_valid_fraction": 0.9770095793419409,
+  "motion_model": {
+    "-1": {
+      "median": 4.296501477559408e-06,
+      "scale": 0.00021786112785339356,
+      "samples": 3076
+    }
+  },
+  "motion_calibration_samples": 685
+}

@@ -37,7 +37,7 @@ def main():
                 'Event coverage means any alarm overlaps a contiguous positive GT interval. It is not point-adjusted frame AUROC.',
                 'An alarm already active before onset can yield zero delay; flagged explicitly.',
                 'Misses have null delay and remain in counts. Detected-only latency is conditional, not overall latency.',
-                'Clip-boundary/unknown-label censoring flagged; FPS unavailable. Repeated R01 development data.']}
+                'Clip-boundary/unknown-label censoring flagged; FPS unavailable. Repeated scene-specific development data.']}
     root=Path('results/comparison'+'_'.join(args.experiments));root.mkdir(parents=True,exist_ok=True)
     (root/'events.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(summaries,indent=2))
 

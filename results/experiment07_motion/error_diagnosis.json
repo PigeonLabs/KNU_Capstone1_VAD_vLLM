@@ -1,0 +1,269 @@
+{
+  "threshold": 0.9769824390417134,
+  "unchanged_visual_and_transition_predictions": true,
+  "scope": "post-evaluation error diagnosis; not used to tune this experiment",
+  "velocity_quantiles": {
+    "test_normal_valid": [
+      -0.009618677198886871,
+      -0.00016491363445917764,
+      9.636084238688152e-07,
+      0.00011097391446431477,
+      0.01140588521957398
+    ],
+    "test_anomaly_valid": [
+      -0.008645415306091309,
+      -0.00016527374585469565,
+      -5.425264437993368e-06,
+      0.00013141334056854248,
+      0.012327825029691061
+    ]
+  },
+  "alarm_run_summary": {
+    "false_alarm": {
+      "runs": 29,
+      "median_frames": 8.0,
+      "max_frames": 40,
+      "fraction_runs_at_most_4_frames": 0.4482758620689655
+    },
+    "true_alarm": {
+      "runs": 29,
+      "median_frames": 8.0,
+      "max_frames": 32,
+      "fraction_runs_at_most_4_frames": 0.41379310344827586
+    }
+  },
+  "sequences": [
+    {
+      "sequence": "01",
+      "normal_frames": 0,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 720,
+      "detected_anomaly_frames": 72,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        12,
+        12,
+        12,
+        8,
+        28
+      ]
+    },
+    {
+      "sequence": "02",
+      "normal_frames": 0,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 676,
+      "detected_anomaly_frames": 44,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        4,
+        4,
+        4,
+        32
+      ]
+    },
+    {
+      "sequence": "03",
+      "normal_frames": 0,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 674,
+      "detected_anomaly_frames": 16,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        12,
+        4
+      ]
+    },
+    {
+      "sequence": "04",
+      "normal_frames": 0,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 683,
+      "detected_anomaly_frames": 39,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        4,
+        4,
+        4,
+        8,
+        4,
+        8,
+        7
+      ]
+    },
+    {
+      "sequence": "05",
+      "normal_frames": 515,
+      "false_alarm_frames": 8,
+      "anomaly_frames": 59,
+      "detected_anomaly_frames": 12,
+      "false_alarm_runs_source_frames": [
+        8
+      ],
+      "true_alarm_runs_source_frames": [
+        12
+      ]
+    },
+    {
+      "sequence": "06",
+      "normal_frames": 131,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 451,
+      "detected_anomaly_frames": 30,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        4,
+        26
+      ]
+    },
+    {
+      "sequence": "07",
+      "normal_frames": 269,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 417,
+      "detected_anomaly_frames": 34,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        8,
+        26
+      ]
+    },
+    {
+      "sequence": "08",
+      "normal_frames": 290,
+      "false_alarm_frames": 4,
+      "anomaly_frames": 405,
+      "detected_anomaly_frames": 40,
+      "false_alarm_runs_source_frames": [
+        4
+      ],
+      "true_alarm_runs_source_frames": [
+        32,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "09",
+      "normal_frames": 620,
+      "false_alarm_frames": 48,
+      "anomaly_frames": 92,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        8,
+        4,
+        20,
+        8,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "10",
+      "normal_frames": 445,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 202,
+      "detected_anomaly_frames": 4,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        4
+      ]
+    },
+    {
+      "sequence": "11",
+      "normal_frames": 490,
+      "false_alarm_frames": 56,
+      "anomaly_frames": 216,
+      "detected_anomaly_frames": 14,
+      "false_alarm_runs_source_frames": [
+        4,
+        8,
+        40,
+        4
+      ],
+      "true_alarm_runs_source_frames": [
+        14
+      ]
+    },
+    {
+      "sequence": "12",
+      "normal_frames": 670,
+      "false_alarm_frames": 24,
+      "anomaly_frames": 171,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        8,
+        8,
+        8
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "13",
+      "normal_frames": 664,
+      "false_alarm_frames": 40,
+      "anomaly_frames": 102,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        4,
+        8,
+        4,
+        12,
+        12
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "14",
+      "normal_frames": 780,
+      "false_alarm_frames": 16,
+      "anomaly_frames": 128,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        8,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "15",
+      "normal_frames": 620,
+      "false_alarm_frames": 4,
+      "anomaly_frames": 72,
+      "detected_anomaly_frames": 20,
+      "false_alarm_runs_source_frames": [
+        4
+      ],
+      "true_alarm_runs_source_frames": [
+        20
+      ]
+    },
+    {
+      "sequence": "16",
+      "normal_frames": 730,
+      "false_alarm_frames": 12,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        8,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "17",
+      "normal_frames": 713,
+      "false_alarm_frames": 37,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        12,
+        4,
+        21
+      ],
+      "true_alarm_runs_source_frames": []
+    }
+  ]
+}

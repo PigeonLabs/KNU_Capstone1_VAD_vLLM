@@ -1,0 +1,33 @@
+{
+  "review_type": "assistant visual review, not independent object/phase GT",
+  "scene": "R03",
+  "normal_samples": {
+    "01": [
+      0,
+      132,
+      264,
+      396,
+      528,
+      664
+    ],
+    "02": [
+      0,
+      136,
+      272,
+      412,
+      548,
+      688
+    ]
+  },
+  "findings": [
+    "Forklift-role boxes generally cover the moving vehicle in these 12 normal samples.",
+    "Pallet role has duplicate/partial cup or pallet boxes; final samples also include a whole-mat false box.",
+    "CLIP phase is idle across visibly different load positions; last sampled views map to pallet_set.",
+    "Travel, standstill and lift/load relation are visibly mixed, so R01 monotonic spatial phase/ROI is not copied."
+  ],
+  "limitations": [
+    "No IoU/precision/recall or phase accuracy measurement.",
+    "VLM lifting/release and camera viewpoint statements are hypotheses, not verified labels.",
+    "Raw images remain local."
+  ]
+}

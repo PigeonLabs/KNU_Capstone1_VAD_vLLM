@@ -1,0 +1,10 @@
+{
+  "frozen_at_utc": "2026-10-04T16:35:38.351472+00:00",
+  "normal_diagnostic": "results/experiment07_motion/normal_motion_diagnostic.json",
+  "test_evaluation_started": false,
+  "config_sha256": {
+    "07": "c7883beadbb1b2575b1df65586eac891bb3874cc1dd0a8ef3bb78aa67bf0b3d1",
+    "07_motion": "3d534e4a451f57a6c26f429e0b1f8aeaac15cbce205a7f5c10be9a6a27167ec4"
+  },
+  "decision": "Execute fixed baseline and pooled forklift motion on same R03 semantic phase observations; do not transfer R01 ROI or spatial phase."
+}

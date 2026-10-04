@@ -1,0 +1,18 @@
+{
+  "tests_passed": 25,
+  "scene": "R03",
+  "feature_sequences_checked": 39,
+  "test_prediction_sequences_checked": 17,
+  "all_baseline_feature_arrays_preserved": true,
+  "visual_and_original_transition_predictions_identical": true,
+  "appearance_models_and_normal_calibration_identical": true,
+  "invalid_motion_dense_frames": 276,
+  "invalid_motion_combined_identical": true,
+  "labels_identical": true,
+  "scores_finite": true,
+  "configs_unchanged_since_pre_evaluation_freeze": true,
+  "discovery_uses_only_this_scene_FIT": true,
+  "sampled_frames": 6852,
+  "extraction_elapsed_seconds": 632.530094667105,
+  "limitations": "Coverage and unit/invariant tests do not verify detection/localization or semantic phase accuracy. GPU extraction timing excludes VLM, loading and final evaluation."
+}

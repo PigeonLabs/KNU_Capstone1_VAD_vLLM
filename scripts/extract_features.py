@@ -11,6 +11,7 @@ from torchvision.ops import nms
 from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection, CLIPModel, CLIPProcessor
 from ipad_vad.data import frames_in_order, sample_indices
 from ipad_vad.tracking import Tracker
+from ipad_vad.experiment import load_process
 
 
 def role_for_phrase(phrase, prompts):
@@ -24,10 +25,11 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--data-root',type=Path,required=True)
     p.add_argument('--config',type=Path,default=Path('configs/experiment01.json'))
     p.add_argument('--limit-sequences',type=int,default=None)
+    p.add_argument('--fit-only',action='store_true')
     args=p.parse_args();cfg=json.loads(args.config.read_text());scene=cfg['scene']
     torch.manual_seed(cfg['seed']);np.random.seed(cfg['seed']);torch.set_num_threads(4)
     if not torch.cuda.is_available():raise RuntimeError('CUDA GPU required; no silent CPU substitution')
-    process=json.loads(Path('results/experiment01/process_discovery.json').read_text())['process']
+    process=load_process(cfg)
     paths=json.loads(Path('artifacts/model_paths.json').read_text())
     signature=hashlib.sha256(json.dumps({'config':cfg,'process':process,'models':{k:v['revision'] for k,v in paths.items()}},sort_keys=True).encode()).hexdigest()
     detector_path=paths[cfg['detector']]['local_path'];encoder_path=paths[cfg['encoder']]['local_path']
@@ -42,11 +44,12 @@ def main():
     text_inputs=clip_processor(text=[s['description'] for s in process['phases']],padding=True,return_tensors='pt').to('cuda')
     with torch.inference_mode():
         phase_text=clip.get_text_features(**text_inputs);phase_text=phase_text/phase_text.norm(dim=-1,keepdim=True)
-    root=Path('artifacts/experiment01/features')/scene;root.mkdir(parents=True,exist_ok=True)
+    root=Path('artifacts')/('experiment'+cfg['experiment'])/'features'/scene;root.mkdir(parents=True,exist_ok=True)
     logs=[];seen=0
-    for partition in ('training','testing'):
+    fit_ids=json.loads(Path('results/stage00/splits.json').read_text())[scene]['fit']
+    for partition in (('training',) if args.fit_only else ('training','testing')):
         for seq in sorted((args.data_root/scene/partition/'frames').iterdir()):
-            if not seq.is_dir():continue
+            if not seq.is_dir() or (args.fit_only and seq.name not in fit_ids):continue
             out=root/f'{partition}_{seq.name}.npz';metadata=out.with_suffix('.json')
             if metadata.exists() and out.exists():
                 saved=json.loads(metadata.read_text())
@@ -100,7 +103,7 @@ def main():
                    'timing_note':'Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput.'}
             metadata.write_text(json.dumps(saved,indent=2)+'\n');logs.append(saved);seen+=1
             print(json.dumps(saved),flush=True)
-    out=Path('results/experiment01');out.mkdir(parents=True,exist_ok=True)
+    out=Path('results')/('experiment'+cfg['experiment']);out.mkdir(parents=True,exist_ok=True)
     (out/'extraction.json').write_text(json.dumps({'sequences':logs,'model_signature':signature},indent=2)+'\n')
 
 

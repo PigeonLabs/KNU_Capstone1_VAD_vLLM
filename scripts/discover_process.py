@@ -46,7 +46,7 @@ def main():
         raise ValueError('Unexpected vocabulary/phase cardinality')
     phase_ids=[p['id'] for p in process['phases']]
     if set(process['normal_order'])!=set(phase_ids): raise ValueError('Phase order mismatch')
-    out=Path('results/experiment01');out.mkdir(parents=True,exist_ok=True)
+    out=Path('results')/('experiment'+cfg['experiment']);out.mkdir(parents=True,exist_ok=True)
     result={'scene':scene,'sources':sources,'prompt':PROMPT,'process':process,
             'elapsed_seconds':elapsed,'usage':body.get('usage'),'finish_reason':body['choices'][0].get('finish_reason'),
             'note':'Generated normal-state hypotheses, not ground truth. Reasoning text is not persisted.'}

@@ -37,7 +37,7 @@ def main():
         width=.8/len(rows);x=np.arange(2)
         for i,row in enumerate(rows):ax.bar(x+(i-(len(rows)-1)/2)*width,[row[k] for k in keys],width,label=f'Exp {row["experiment"]}')
         ax.set(xticks=x,xticklabels=names,ylim=(0,1));ax.legend()
-    axes[0].set_title('R01 combined score ranking');axes[1].set_title('Each normal calibration q99')
+    axes[0].set_title(first['scene']+' combined score ranking');axes[1].set_title('Each normal calibration q99')
     fig.savefig(root/'comparison.png',dpi=150);plt.close(fig)
 
 if __name__=='__main__':main()

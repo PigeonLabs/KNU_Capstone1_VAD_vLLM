@@ -1,0 +1,899 @@
+{
+  "scene": "R03",
+  "role": 0,
+  "role_id": "forklift",
+  "axis_model": {
+    "axis": 0,
+    "axis_name": "x",
+    "moving_tracks": 22,
+    "moving_observations": 3101,
+    "coordinate_variances": [
+      0.028041383251547813,
+      0.0034932326525449753
+    ],
+    "min_track_samples": 3,
+    "min_displacement": 0.1,
+    "note": "Dominant screen-coordinate axis; no assumption of monotonic motion or semantic phase order."
+  },
+  "groups": {
+    "fit": {
+      "samples": 3142,
+      "observed_fraction": 1.0,
+      "valid_motion_fraction": 0.9789942711648632,
+      "phase_counts": [
+        2921,
+        48,
+        0,
+        173
+      ]
+    },
+    "calibration": {
+      "samples": 703,
+      "observed_fraction": 1.0,
+      "valid_motion_fraction": 0.9743954480796586,
+      "phase_counts": [
+        662,
+        1,
+        0,
+        40
+      ]
+    },
+    "test": {
+      "samples": 3007,
+      "observed_fraction": 1.0,
+      "valid_motion_fraction": 0.9770535417359495,
+      "phase_counts": [
+        2825,
+        68,
+        0,
+        114
+      ]
+    }
+  },
+  "fit_signed_velocity": {
+    "samples": 3076,
+    "quantiles_01_25_50_75_99": [
+      -0.010626484950383505,
+      -0.0001545964429775874,
+      4.296501477559408e-06,
+      0.00013774260878562927,
+      0.012382306158542633
+    ],
+    "positive_fraction": 0.3013654096228869,
+    "negative_fraction": 0.2981144343302991,
+    "near_zero_fraction": 0.40052015604681407,
+    "diagnostic_epsilon": 0.0001
+  },
+  "sequences": [
+    {
+      "sequence_key": "testing_01",
+      "group": "test",
+      "samples": 180,
+      "anchor_observed": 180,
+      "valid_motion": 177,
+      "reason_counts": [
+        177,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        173,
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "sequence_key": "testing_02",
+      "group": "test",
+      "samples": 169,
+      "anchor_observed": 169,
+      "valid_motion": 166,
+      "reason_counts": [
+        166,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        162,
+        1,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "testing_03",
+      "group": "test",
+      "samples": 169,
+      "anchor_observed": 169,
+      "valid_motion": 166,
+      "reason_counts": [
+        166,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        159,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "testing_04",
+      "group": "test",
+      "samples": 171,
+      "anchor_observed": 171,
+      "valid_motion": 168,
+      "reason_counts": [
+        168,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        158,
+        2,
+        0,
+        11
+      ]
+    },
+    {
+      "sequence_key": "testing_05",
+      "group": "test",
+      "samples": 144,
+      "anchor_observed": 144,
+      "valid_motion": 141,
+      "reason_counts": [
+        141,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        132,
+        2,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "testing_06",
+      "group": "test",
+      "samples": 146,
+      "anchor_observed": 146,
+      "valid_motion": 143,
+      "reason_counts": [
+        143,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        139,
+        1,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "testing_07",
+      "group": "test",
+      "samples": 172,
+      "anchor_observed": 172,
+      "valid_motion": 169,
+      "reason_counts": [
+        169,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        166,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "testing_08",
+      "group": "test",
+      "samples": 174,
+      "anchor_observed": 174,
+      "valid_motion": 171,
+      "reason_counts": [
+        171,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        157,
+        8,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "testing_09",
+      "group": "test",
+      "samples": 178,
+      "anchor_observed": 178,
+      "valid_motion": 175,
+      "reason_counts": [
+        175,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        171,
+        7,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "testing_10",
+      "group": "test",
+      "samples": 162,
+      "anchor_observed": 162,
+      "valid_motion": 156,
+      "reason_counts": [
+        156,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        157,
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "sequence_key": "testing_11",
+      "group": "test",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 171,
+      "reason_counts": [
+        171,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        149,
+        24,
+        0,
+        4
+      ]
+    },
+    {
+      "sequence_key": "testing_12",
+      "group": "test",
+      "samples": 211,
+      "anchor_observed": 211,
+      "valid_motion": 208,
+      "reason_counts": [
+        208,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        203,
+        1,
+        0,
+        7
+      ]
+    },
+    {
+      "sequence_key": "testing_13",
+      "group": "test",
+      "samples": 192,
+      "anchor_observed": 192,
+      "valid_motion": 186,
+      "reason_counts": [
+        186,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        164,
+        22,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "testing_14",
+      "group": "test",
+      "samples": 227,
+      "anchor_observed": 227,
+      "valid_motion": 221,
+      "reason_counts": [
+        221,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        220,
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "sequence_key": "testing_15",
+      "group": "test",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 167,
+      "reason_counts": [
+        167,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        167,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "testing_16",
+      "group": "test",
+      "samples": 183,
+      "anchor_observed": 183,
+      "valid_motion": 180,
+      "reason_counts": [
+        180,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        178,
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "sequence_key": "testing_17",
+      "group": "test",
+      "samples": 179,
+      "anchor_observed": 179,
+      "valid_motion": 173,
+      "reason_counts": [
+        173,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        170,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 167,
+      "anchor_observed": 167,
+      "valid_motion": 164,
+      "reason_counts": [
+        164,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        158,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_02",
+      "group": "fit",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        156,
+        8,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 181,
+      "anchor_observed": 181,
+      "valid_motion": 178,
+      "reason_counts": [
+        178,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        173,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 172,
+      "anchor_observed": 172,
+      "valid_motion": 169,
+      "reason_counts": [
+        169,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        163,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 174,
+      "reason_counts": [
+        174,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        164,
+        0,
+        0,
+        13
+      ]
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 174,
+      "reason_counts": [
+        174,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        176,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "sequence_key": "training_07",
+      "group": "calibration",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        163,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "training_08",
+      "group": "calibration",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 174,
+      "reason_counts": [
+        174,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        168,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_09",
+      "group": "fit",
+      "samples": 186,
+      "anchor_observed": 186,
+      "valid_motion": 183,
+      "reason_counts": [
+        183,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        176,
+        0,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "training_10",
+      "group": "fit",
+      "samples": 175,
+      "anchor_observed": 175,
+      "valid_motion": 172,
+      "reason_counts": [
+        172,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        169,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "sequence_key": "training_11",
+      "group": "fit",
+      "samples": 174,
+      "anchor_observed": 174,
+      "valid_motion": 168,
+      "reason_counts": [
+        168,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        167,
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "sequence_key": "training_12",
+      "group": "fit",
+      "samples": 187,
+      "anchor_observed": 187,
+      "valid_motion": 178,
+      "reason_counts": [
+        178,
+        3,
+        0,
+        0,
+        6
+      ],
+      "phase_counts": [
+        178,
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "sequence_key": "training_13",
+      "group": "fit",
+      "samples": 180,
+      "anchor_observed": 180,
+      "valid_motion": 177,
+      "reason_counts": [
+        177,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        169,
+        0,
+        0,
+        11
+      ]
+    },
+    {
+      "sequence_key": "training_14",
+      "group": "fit",
+      "samples": 158,
+      "anchor_observed": 158,
+      "valid_motion": 155,
+      "reason_counts": [
+        155,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        150,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_15",
+      "group": "calibration",
+      "samples": 177,
+      "anchor_observed": 177,
+      "valid_motion": 171,
+      "reason_counts": [
+        171,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        163,
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "sequence_key": "training_16",
+      "group": "fit",
+      "samples": 164,
+      "anchor_observed": 164,
+      "valid_motion": 161,
+      "reason_counts": [
+        161,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        143,
+        0,
+        0,
+        21
+      ]
+    },
+    {
+      "sequence_key": "training_17",
+      "group": "fit",
+      "samples": 172,
+      "anchor_observed": 172,
+      "valid_motion": 166,
+      "reason_counts": [
+        166,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        164,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        165,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 174,
+      "anchor_observed": 174,
+      "valid_motion": 171,
+      "reason_counts": [
+        171,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        159,
+        0,
+        0,
+        15
+      ]
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 173,
+      "anchor_observed": 173,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        146,
+        17,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 179,
+      "anchor_observed": 179,
+      "valid_motion": 176,
+      "reason_counts": [
+        176,
+        3,
+        0,
+        0,
+        0
+      ],
+      "phase_counts": [
+        145,
+        23,
+        0,
+        11
+      ]
+    },
+    {
+      "sequence_key": "training_22",
+      "group": "calibration",
+      "samples": 176,
+      "anchor_observed": 176,
+      "valid_motion": 170,
+      "reason_counts": [
+        170,
+        3,
+        0,
+        0,
+        3
+      ],
+      "phase_counts": [
+        168,
+        1,
+        0,
+        7
+      ]
+    }
+  ],
+  "source_sha256": {
+    "testing_01.npz": "3c42b84531941e139a38d7188f9569909f42281a10e2fc372c2f00e7265d7b7e",
+    "testing_02.npz": "e867c1f28fd1d34a61495f3fadcdf47e5687c63d3f3d0d8ab48c7e4f30b5921f",
+    "testing_03.npz": "fe578998d205064114eba194c041c88c84a4db040c2887eed3bd5f67507947a7",
+    "testing_04.npz": "04bd6d582ad0548a9ac4f1da2f46e8a8bee2c794569546f4a804696cc5ea49f3",
+    "testing_05.npz": "264a0e788da516c2993fa7e1b57d2edf9e2e88f8aca558b50a938227029b039b",
+    "testing_06.npz": "a03fa81074095f6d8df0602036cd5993ae22cf18253488c441d3bb6ad18c1d00",
+    "testing_07.npz": "66a01c2ee68358104dfbd31e893bbb9a3cfbbd7c8fe9d74d0268a6d43bed1894",
+    "testing_08.npz": "0da55ba0272cffe3d00130b9d20163686fa71408cd68679261ab7a1584ad53a3",
+    "testing_09.npz": "57687b69b430d86a8243901aefe333110fe2bec5c91a69920c70e8cfffa6b9fa",
+    "testing_10.npz": "5036e234b948047f0b6f120a6ab5dc0537d5ef314f9ff2656ffb2f91118aaba2",
+    "testing_11.npz": "e1180834bef9ee1cb4e521c88725ea1c90c6622f013f3963894653584798aca3",
+    "testing_12.npz": "847fb6ff89d074ced2d9ad741e69f0296770f522951de1c448e565cbf0728edf",
+    "testing_13.npz": "edc210a77f1d74b53ffb252df5221a37cbed89eb8ab65a1595d98978871d864b",
+    "testing_14.npz": "66b79951ae3437828343641d037aa7ac8f2dd25520a36e8eea76a57d9add90f3",
+    "testing_15.npz": "c9f015e575a59946ad8d7b6dbba8dbfe50ee7512ecf0986bbcc9a169f5c5a8c6",
+    "testing_16.npz": "b7ed1adc37d5cfd0c07097652bb154dd6703fa2244dee785c1a2b446a81a8560",
+    "testing_17.npz": "f8dcf46e2b7a4cb29d6256cf1c26f920db843f0362826087b735b400acd5c356",
+    "training_01.npz": "90ac370b1fd291d5b9a504bf5c88ea71bc3a2177290259b9cd29ffcaedbc0db0",
+    "training_02.npz": "5278bdd797ebca632fbcdb6e67ac394ca85ae6b6429ca3d0fb7e9fc3a7035b0a",
+    "training_03.npz": "67e4c1124a0e09eb5c75b0165285ff59960aa16b4b883e5a7376e34ab5a340f2",
+    "training_04.npz": "5b6f532802072d886b951f5e2df86f59cd6fceda48f19b8fa6c6a44d2f133b24",
+    "training_05.npz": "2cfdbcb3e9c1c330db16eb9d04c1ba5f32f443dd45702c55645803abe5ea3426",
+    "training_06.npz": "af30e26d1900dcd56c4e9901afedb0e45b3214d07b9db92e790df62702d93cf2",
+    "training_07.npz": "2ae284bb5ee8e65761bf544ef2c14c3e7d14b406420e677a7bec48e600d0be8e",
+    "training_08.npz": "782b2a012c6ac7bfecea0a35639c3949189f47979c2c641c1a455b756a31ab3e",
+    "training_09.npz": "7813fa1a6e965f3fb02b2c3f239d4c58a36b7b98c824dfe42d8824d5957cf68f",
+    "training_10.npz": "03fefcee2b0ab37468048f08598517157629fd77372da5dd8be98eaaafd7d1d3",
+    "training_11.npz": "5186f779bda75c95bf57f13ede39761c9eac2afeb7ed9f2befe7d6e5fbb6a7c9",
+    "training_12.npz": "108b361c17a1fd7c99abbf74ec078e8030bfda5fced4021f27a709abb776ac97",
+    "training_13.npz": "b5c249ac5e885977d6b87b0564400366a3170fa648257326828922b079c315a8",
+    "training_14.npz": "ef5930fdf321dd977b28b8d03798e24fa720d90cec6e910a46ba52d5f4256020",
+    "training_15.npz": "bfb8318c936ca424542d6605bba8dc4fd78867560618ed514b939b4d2697688d",
+    "training_16.npz": "2b1078e28709ee4b18577d52b4f8d1df59437440649b5f399891878a13b0fb9f",
+    "training_17.npz": "6d9e4ced0fe46d4b042c195c8c2236173f8c962ffb714e53b9c38c85ea3244df",
+    "training_18.npz": "c4c60f17f394ced544583c65b2f1bea3827e9278aee89de4526ef6c6058713b0",
+    "training_19.npz": "204fd464206d498f29e01d836850582c327ed6adf8746026b959b32565d7642d",
+    "training_20.npz": "88e75bd6c2cb49b74a09414473899066b9c489d7bf80ce44c5147f8bf70cf689",
+    "training_21.npz": "924e3546ded52d321073884e4fa0d4da3af0189e1cf9699631b58272bd18376f",
+    "training_22.npz": "0d5117da991c593734528af1a4b81e3f2e129b1ed0048dbe66285cbed6b1bf3d"
+  },
+  "time_unit": "normalized_coordinate_per_source_frame",
+  "fit_only": false,
+  "no_spatial_phase_or_roi_transfer": true,
+  "all_source_arrays_preserved": true,
+  "limitations": [
+    "Full object bbox center is not a tracked physical keypoint.",
+    "Signed pooled velocity can mix travel, rotation, standstill and box jitter.",
+    "No object/phase ground-truth accuracy claim."
+  ]
+}
