@@ -1,0 +1,3673 @@
+{
+  "normal_only": true,
+  "case_source": "results/experiment35/visual_case_context.json",
+  "case_source_sha256": "efbf90e7a0d5f89451f5e845c1cdd10da2aa7bf69c8b2b8e3601b62434342e5e",
+  "cases": [
+    {
+      "case": {
+        "case_id": "02_0192",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 48,
+        "source_frame": 192,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 17
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 47,
+          "source_frame": 188,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/188.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            161,
+            160
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1277.8583279440443,
+                1.6342222671447062,
+                126.59322616920522,
+                1.4516162666842933
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.7474632100246752,
+                7549.315622990026,
+                141.5166952578043,
+                439.8766340080471
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 48,
+          "source_frame": 192,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/192.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            164
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 49,
+          "source_frame": 196,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/196.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            168
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "04_0352",
+        "sequence": "04",
+        "partition": "fit",
+        "sample": 88,
+        "source_frame": 352,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 14
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 87,
+          "source_frame": 348,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/348.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            278,
+            277
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1284.9757282638068,
+                3.51582934374559,
+                131.2232710087662,
+                1.327695965064043
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                2.1803767893822545,
+                7559.839360183442,
+                146.4002455707379,
+                453.4174269870708
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 88,
+          "source_frame": 352,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/352.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            280
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 89,
+          "source_frame": 356,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/356.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            283
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "05_0320",
+        "sequence": "05",
+        "partition": "fit",
+        "sample": 80,
+        "source_frame": 320,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 11
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 79,
+          "source_frame": 316,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/316.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            283,
+            282
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1258.9654748226576,
+                2.349275483001782,
+                125.40145249923525,
+                1.9989275404982785
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.4622338079738144,
+                7490.365128372331,
+                141.21103549394243,
+                423.9059805457889
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 80,
+          "source_frame": 320,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/320.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            285
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 81,
+          "source_frame": 324,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/324.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            289,
+            288
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1256.5082170259868,
+                2.41845232406926,
+                125.15971210153,
+                1.805479094646785
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.462822839120682,
+                7485.063198085037,
+                141.00532879418736,
+                423.19443879472203
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "06_0256",
+        "sequence": "06",
+        "partition": "fit",
+        "sample": 64,
+        "source_frame": 256,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 6
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 63,
+          "source_frame": 252,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/252.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            205,
+            204
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1278.2725245009553,
+                1.7559660124200152,
+                127.56384682322249,
+                1.4546643479696224
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.8475900643620065,
+                7542.508304891476,
+                142.71457034673955,
+                441.0503807170884
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 64,
+          "source_frame": 256,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/256.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            207
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 65,
+          "source_frame": 260,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/260.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            210
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "08_0152",
+        "sequence": "08",
+        "partition": "calibration",
+        "sample": 38,
+        "source_frame": 152,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 3
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 37,
+          "source_frame": 148,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/148.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            110,
+            109
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1255.6607148013952,
+                2.5994365417225405,
+                124.15536293269841,
+                0.4472959992043198
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.1955067868616085,
+                7494.737473412905,
+                139.715227250033,
+                426.54152861624647
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 38,
+          "source_frame": 152,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/152.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            112
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 39,
+          "source_frame": 156,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/156.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            116
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "12_0144",
+        "sequence": "12",
+        "partition": "calibration",
+        "sample": 36,
+        "source_frame": 144,
+        "groups": [
+          "censored_missing"
+        ],
+        "episode_links": [
+          {
+            "group": "censored_missing",
+            "episode_id": 8
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 35,
+          "source_frame": 140,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/140.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            118,
+            117
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1263.6290930503296,
+                1.0460830559343441,
+                125.6071486052715,
+                1.9656961104686852
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.48428789616622747,
+                7507.77591091001,
+                141.0186152766982,
+                427.032473281147
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 36,
+          "source_frame": 144,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/144.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            120
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 37,
+          "source_frame": 148,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/148.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            123
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "01_0100",
+        "sequence": "01",
+        "partition": "fit",
+        "sample": 25,
+        "source_frame": 100,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 4
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 24,
+          "source_frame": 96,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/096.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            84
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 25,
+          "source_frame": 100,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/100.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            89,
+            87
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1275.248474756905,
+                0.6261330358724623,
+                125.84709560186079,
+                2.5844397294910677
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.4381717745238101,
+                7549.212859444089,
+                140.53716994520607,
+                434.8527967308267
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 26,
+          "source_frame": 104,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/104.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            93,
+            91
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1275.219054477525,
+                0.6320405150209744,
+                125.84077906697394,
+                2.564092106257945
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.4357104389972082,
+                7549.1553869673435,
+                140.52996087699802,
+                434.9159104623902
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "02_0012",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 3,
+        "source_frame": 12,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 1
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 2,
+          "source_frame": 8,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/008.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            5,
+            -1
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 3,
+          "source_frame": 12,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/012.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            8,
+            7
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1106.3096815321555,
+                21.511498215980247,
+                144.1527901828205,
+                16.54538204731207
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                19.304853060202166,
+                7162.624955181005,
+                160.78673242535092,
+                410.51941147151535
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 4,
+          "source_frame": 16,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/016.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            -1
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "03_0092",
+        "sequence": "03",
+        "partition": "fit",
+        "sample": 23,
+        "source_frame": 92,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 8
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 22,
+          "source_frame": 88,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/088.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            -1,
+            74
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        },
+        {
+          "sample": 23,
+          "source_frame": 92,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/092.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            79,
+            77
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1283.3760545880775,
+                159.77527920722198,
+                13.905321569618014,
+                146.49366626069963
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                158.0026619650322,
+                7369.813356890737,
+                15.116657851157221,
+                293.5121059497254
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        },
+        {
+          "sample": 24,
+          "source_frame": 96,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/096.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            83,
+            81
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1284.3278552668196,
+                159.2554460570705,
+                13.618620562861754,
+                146.14688198608874
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                157.4869544975912,
+                7372.782445120204,
+                14.739594377535813,
+                293.92270452843286
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "04_0028",
+        "sequence": "04",
+        "partition": "fit",
+        "sample": 7,
+        "source_frame": 28,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 0
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 6,
+          "source_frame": 24,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/024.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            14,
+            -1
+          ],
+          "phases": {
+            "control": 0,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 0,
+                "0": 0,
+                "1": 0,
+                "2": 0
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 7,
+          "source_frame": 28,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/028.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            17,
+            16
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1302.3353453490304,
+                0.5779781454463497,
+                130.06933045895852,
+                6.133626244116725
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.4036847769747318,
+                7601.0932671769815,
+                144.54588833803965,
+                442.0556926546317
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 8,
+          "source_frame": 32,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/032.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            20,
+            19
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1315.9507828633507,
+                1.132405343261505,
+                129.90128195641967,
+                6.59948841217857
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.885305741637939,
+                7626.179734457938,
+                144.3609754013009,
+                443.64520567216516
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "05_0012",
+        "sequence": "05",
+        "partition": "fit",
+        "sample": 3,
+        "source_frame": 12,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 0
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 2,
+          "source_frame": 8,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/008.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            4,
+            -1
+          ],
+          "phases": {
+            "control": 0,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 0,
+                "0": 0,
+                "1": 0,
+                "2": 0
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 3,
+          "source_frame": 12,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/012.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            7,
+            6
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1428.2779967722709,
+                3.472059265745758,
+                139.32816138879107,
+                12.930226862012255
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                5.2372887583902195,
+                7891.029693563399,
+                151.68776329408806,
+                487.7509087214735
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 4,
+          "source_frame": 16,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/016.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            10,
+            9
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1427.6801294518934,
+                3.4552231403434375,
+                139.2874141242557,
+                12.899719350382126
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                5.218056545407041,
+                7889.525441504384,
+                151.6640412280784,
+                487.48219059109135
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "06_0028",
+        "sequence": "06",
+        "partition": "fit",
+        "sample": 7,
+        "source_frame": 28,
+        "groups": [
+          "unknown_reacquired"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_reacquired",
+            "episode_id": 0
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 6,
+          "source_frame": 24,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/024.jpg",
+          "valid": false,
+          "selection_unchanged": true,
+          "selected_indices": [
+            12,
+            -1
+          ],
+          "phases": {
+            "control": 0,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 0,
+                "0": 0,
+                "1": 0,
+                "2": 0
+              }
+            },
+            "refit": {
+              "squared_distances": null,
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 7,
+          "source_frame": 28,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/028.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            15,
+            14
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1303.7581113002266,
+                1.6725514624590483,
+                127.77981423170507,
+                4.611168379852075
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.6855393135270038,
+                7593.84864676446,
+                142.69323039904933,
+                438.22791352139836
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 8,
+          "source_frame": 32,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/032.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            18,
+            17
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1304.2048823720675,
+                0.8105991559809049,
+                128.7564813303074,
+                5.112610141375412
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.2166304703989987,
+                7600.445149797176,
+                143.39311721158415,
+                440.6846708457732
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "01_0024",
+        "sequence": "01",
+        "partition": "fit",
+        "sample": 6,
+        "source_frame": 24,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 1
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 5,
+          "source_frame": 20,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/020.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            19,
+            18
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                998.5993815637581,
+                188.71733183543068,
+                22.668775865108845,
+                173.73399247694505
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                184.0210094686576,
+                6694.727182096117,
+                24.53411828995788,
+                199.94667213041578
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        },
+        {
+          "sample": 6,
+          "source_frame": 24,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/024.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            23,
+            22
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1320.2177986078761,
+                155.9438910042358,
+                10.646923447951412,
+                152.18014829445372
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                155.57119502098953,
+                7491.255745810556,
+                8.085366560763223,
+                293.63144543422493
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        },
+        {
+          "sample": 7,
+          "source_frame": 28,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/01/028.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            28,
+            26
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1304.945234526208,
+                157.56980406219387,
+                11.959432630312705,
+                152.84206234269533
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                156.94469842732116,
+                7458.851126049903,
+                9.543511205419085,
+                292.17297823813453
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "02_0040",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 10,
+        "source_frame": 40,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 4
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 9,
+          "source_frame": 36,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/036.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            25,
+            24
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1348.2351500347509,
+                6.525776211305788,
+                143.04208333256753,
+                11.209533432803903
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                7.184719474919053,
+                7738.830288350601,
+                155.92015699244516,
+                480.90174663372784
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 10,
+          "source_frame": 40,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/040.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            28,
+            27
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1332.0982353410666,
+                2.249651714583713,
+                130.83166394691256,
+                7.83650514959974
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                3.0108897301998954,
+                7656.792056105499,
+                145.23984784934044,
+                447.49124949513686
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 11,
+          "source_frame": 44,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/044.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            32,
+            31
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1343.2580330041937,
+                1.0192011113982118,
+                134.49720156187385,
+                6.962897160589554
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.9453766608106198,
+                7711.767503659062,
+                147.89494666883311,
+                464.08176163566156
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "03_0036",
+        "sequence": "03",
+        "partition": "fit",
+        "sample": 9,
+        "source_frame": 36,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 1
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 8,
+          "source_frame": 32,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/032.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            25,
+            24
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1081.0465180845026,
+                20.060410871024423,
+                140.25442841772838,
+                14.787288107160313
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                17.6116346388505,
+                7097.849221544015,
+                157.2949589452837,
+                396.5997529962788
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 9,
+          "source_frame": 36,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/036.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            28,
+            27
+          ],
+          "phases": {
+            "control": 0,
+            "refit": 1
+          },
+          "refit_phase_mapped_for_diagnostic_only": 0,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                4191.849945462845,
+                10150.755528639216,
+                9703.545557442118,
+                9915.58918140484
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 0,
+                "0": 0,
+                "1": 0,
+                "2": 0
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                9633.662057698906,
+                133.6455565714925,
+                9392.681613247136,
+                7098.001786680125
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 0,
+                "0": 0,
+                "1": 0,
+                "2": 0
+              }
+            }
+          }
+        },
+        {
+          "sample": 10,
+          "source_frame": 40,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/03/040.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            31,
+            30
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1081.8868284189011,
+                19.948752202206922,
+                140.33113799040723,
+                14.712774548442097
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                17.51157154251179,
+                7099.933838341612,
+                157.35649254786367,
+                397.1966931996104
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "04_0060",
+        "sequence": "04",
+        "partition": "fit",
+        "sample": 15,
+        "source_frame": 60,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 3
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 14,
+          "source_frame": 56,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/056.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            39,
+            37
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1472.0603167439183,
+                134.54843284171537,
+                16.830257902268148,
+                138.3594409951799
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                136.01369491766172,
+                7854.9918589870085,
+                11.35526776008436,
+                382.4624839098263
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        },
+        {
+          "sample": 15,
+          "source_frame": 60,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/060.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            42,
+            41
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1284.4464719123926,
+                0.28337504283958853,
+                129.00291851745024,
+                4.7126489862123
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.8045733737554791,
+                7565.445785172165,
+                143.63837217162154,
+                437.82315637914394
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 16,
+          "source_frame": 64,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/04/064.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            45,
+            44
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1280.5048441398576,
+                0.3181756092758794,
+                128.41987667709986,
+                4.661590188425127
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.8155866575388401,
+                7554.337791218356,
+                143.17764164404198,
+                435.27820637318746
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "05_0032",
+        "sequence": "05",
+        "partition": "fit",
+        "sample": 8,
+        "source_frame": 32,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 2
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 7,
+          "source_frame": 28,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/028.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            18,
+            17
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1463.5990009540722,
+                12.838721926046452,
+                157.3201915096663,
+                20.925052248947235
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                14.23757036547389,
+                8006.985238851684,
+                168.0247384548235,
+                530.6355240836003
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 8,
+          "source_frame": 32,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/032.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            23,
+            21
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1300.425824939344,
+                0.5934992432116543,
+                130.02057471369966,
+                6.0896646265922865
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.402649437351353,
+                7596.239274394251,
+                144.5296190239339,
+                441.74004319504286
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 9,
+          "source_frame": 36,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/05/036.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            26,
+            25
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1445.5282191209967,
+                9.636486715564603,
+                152.38450637665352,
+                17.59752547748289
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                11.011336512253816,
+                7963.0775408711115,
+                163.4854982158682,
+                519.057211730261
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "06_0384",
+        "sequence": "06",
+        "partition": "fit",
+        "sample": 96,
+        "source_frame": 384,
+        "groups": [
+          "unknown_track_change"
+        ],
+        "episode_links": [
+          {
+            "group": "unknown_track_change",
+            "episode_id": 8
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 95,
+          "source_frame": 380,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/380.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            317,
+            315
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1241.6534411270634,
+                5.777154857405728,
+                125.85964361518381,
+                0.922459271808861
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                3.913160519764496,
+                7451.0932860921375,
+                142.4618036060569,
+                422.0865109145578
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 96,
+          "source_frame": 384,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/384.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            320,
+            319
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1225.4047349789407,
+                4.775210849984446,
+                125.44235824539918,
+                0.09367839765279286
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                2.801528668321208,
+                7423.667379749801,
+                141.74635292689817,
+                419.93674318769735
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 97,
+          "source_frame": 388,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/06/388.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            325,
+            322
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1225.7698941594522,
+                4.831214187992121,
+                125.47853496750292,
+                0.10013960414521858
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                2.8371311987483048,
+                7424.942699891668,
+                141.76096334981727,
+                420.3204308039573
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "02_0176",
+        "sequence": "02",
+        "partition": "calibration",
+        "sample": 44,
+        "source_frame": 176,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 14
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 43,
+          "source_frame": 172,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/172.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            143,
+            142
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1292.1607232125564,
+                1.3641547201777773,
+                128.15786214923705,
+                2.186260303786379
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.7599921738710899,
+                7583.21548875195,
+                142.74444882806992,
+                447.9936746167968
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 44,
+          "source_frame": 176,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/176.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            148,
+            147
+          ],
+          "phases": {
+            "control": 2,
+            "refit": 2
+          },
+          "refit_phase_mapped_for_diagnostic_only": 2,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1256.3008403640904,
+                149.71774552337305,
+                2.0643664436677263,
+                143.35257666501315
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 132,
+                "0": 186,
+                "1": 218,
+                "2": 132
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                148.16641364901906,
+                7324.109975202198,
+                0.6468404277507454,
+                280.99348939976
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 128,
+                "0": 181,
+                "1": 213,
+                "2": 128
+              }
+            }
+          }
+        },
+        {
+          "sample": 45,
+          "source_frame": 180,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/02/180.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            153,
+            152
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1329.6988556601193,
+                1.5188372359923312,
+                133.4144828299761,
+                5.229630771595358
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.7863352851726353,
+                7671.216444214088,
+                147.17569244570655,
+                470.1955835708731
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "08_0308",
+        "sequence": "08",
+        "partition": "calibration",
+        "sample": 77,
+        "source_frame": 308,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 10
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 76,
+          "source_frame": 304,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/304.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            255,
+            254
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1256.1587552278531,
+                1.799164197775006,
+                125.65014723560743,
+                1.8064170555317998
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.9901052817830038,
+                7486.813560620839,
+                141.37522280413856,
+                424.0948198636677
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 77,
+          "source_frame": 308,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/308.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            258,
+            257
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1256.3472300456795,
+                1.7958094652630796,
+                125.57851633017411,
+                1.7878932881748775
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.9832956413522732,
+                7487.334689614473,
+                141.29450465440746,
+                424.14601988151935
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 78,
+          "source_frame": 312,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/08/312.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            261,
+            260
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1256.4558363662002,
+                1.7945244005017886,
+                125.59346034293914,
+                1.789346266634859
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.9827448123221731,
+                7487.589643866653,
+                141.3072157322782,
+                424.2248911094998
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "12_0244",
+        "sequence": "12",
+        "partition": "calibration",
+        "sample": 61,
+        "source_frame": 244,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 13
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 60,
+          "source_frame": 240,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/240.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            207,
+            206
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1257.3916216698115,
+                1.4620531811599928,
+                125.512077876707,
+                2.0285813591857886
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.7995462299088449,
+                7490.605240315215,
+                141.11915014902888,
+                424.3486304738343
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 61,
+          "source_frame": 244,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/244.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            210,
+            209
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1250.5952582443742,
+                1.733817400950983,
+                125.22359152728322,
+                1.642405355537221
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.8911627700941508,
+                7474.879692472093,
+                140.97578791084058,
+                422.25901525607634
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 62,
+          "source_frame": 248,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/12/248.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            213,
+            212
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1246.4307371751,
+                1.9545673132153827,
+                125.06612503675709,
+                1.4546685553570071
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.00271544229696,
+                7465.034439326554,
+                140.91420108634708,
+                420.9298986545143
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "13_0124",
+        "sequence": "13",
+        "partition": "fit",
+        "sample": 31,
+        "source_frame": 124,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 2
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 30,
+          "source_frame": 120,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/13/120.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            87,
+            86
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1265.447681004342,
+                1.541400421505395,
+                127.26961241437809,
+                1.2580637537959114
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.6473703374048,
+                7524.28316969658,
+                142.25350931387837,
+                438.49759702267556
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 31,
+          "source_frame": 124,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/13/124.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            92,
+            90
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1297.3541008763405,
+                1.218737520028745,
+                129.92803788522772,
+                2.738833582662514
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.8308415471835795,
+                7597.83082681377,
+                144.27452113865743,
+                454.45642634889873
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 32,
+          "source_frame": 128,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/13/128.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            97,
+            94
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1301.1966404528353,
+                1.3039832523420036,
+                129.78775457424956,
+                2.9576868134635346
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                0.9502623639040064,
+                7605.807945519485,
+                144.0918581053289,
+                455.09555203771515
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "14_0288",
+        "sequence": "14",
+        "partition": "fit",
+        "sample": 72,
+        "source_frame": 288,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 13
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 71,
+          "source_frame": 284,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/14/284.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            235,
+            234
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1318.9800321726211,
+                2.1551219047946497,
+                137.36082073999205,
+                3.947931896509202
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.7807894551701908,
+                7646.666559800118,
+                151.16178052146938,
+                480.8554890425221
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 72,
+          "source_frame": 288,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/14/288.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            238,
+            237
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1277.029975464467,
+                2.8289815101255047,
+                132.26733901243483,
+                1.2384204146378408
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.5762382369365984,
+                7547.453332470569,
+                147.16519454210595,
+                456.5211355762244
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 73,
+          "source_frame": 292,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/14/292.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            241,
+            240
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1276.4750494112636,
+                2.850739998985201,
+                132.15641474650977,
+                1.2163242754945438
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.5876074397276423,
+                7546.121912236855,
+                147.06437798733288,
+                456.18465060049186
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case": {
+        "case_id": "25_0132",
+        "sequence": "25",
+        "partition": "fit",
+        "sample": 33,
+        "source_frame": 132,
+        "groups": [
+          "complete_control"
+        ],
+        "episode_links": [
+          {
+            "group": "complete_control",
+            "episode_id": 4
+          }
+        ]
+      },
+      "frames": [
+        {
+          "sample": 32,
+          "source_frame": 128,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/25/128.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            95,
+            94
+          ],
+          "phases": {
+            "control": 1,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1248.9944832248073,
+                1.8408958238212663,
+                130.00621732577022,
+                2.0350726724496444
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 697,
+                "0": 839,
+                "1": 773,
+                "2": 697
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.0991941999179837,
+                7489.086893000144,
+                145.04093436262536,
+                440.8223288576351
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 33,
+          "source_frame": 132,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/25/132.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            99,
+            97
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1231.7409610502582,
+                2.8389350150251285,
+                128.40998145752084,
+                0.9241269147992017
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                1.4740739691511142,
+                7447.485306737474,
+                143.8949436986824,
+                431.9049723884177
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        },
+        {
+          "sample": 34,
+          "source_frame": 136,
+          "source_path_reference": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset/R04/training/frames/25/136.jpg",
+          "valid": true,
+          "selection_unchanged": true,
+          "selected_indices": [
+            103,
+            101
+          ],
+          "phases": {
+            "control": 3,
+            "refit": 0
+          },
+          "refit_phase_mapped_for_diagnostic_only": 1,
+          "groups": {
+            "control": {
+              "squared_distances": [
+                1222.1275718933905,
+                4.157825319126932,
+                128.44569840628287,
+                0.5963694774660896
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 292,
+                "0": 428,
+                "1": 325,
+                "2": 292
+              }
+            },
+            "refit": {
+              "squared_distances": [
+                2.3535958203043923,
+                7423.7494778228465,
+                144.23183929251815,
+                429.4707632214102
+              ],
+              "appearance_phase_bank_samples": {
+                "-1": 989,
+                "0": 1267,
+                "1": 1098,
+                "2": 989
+              }
+            }
+          }
+        }
+      ],
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    }
+  ],
+  "case_count": 24,
+  "frames": 72,
+  "raw_id_changed_frames": 61,
+  "valid_raw_id_changed_frames": 47,
+  "new_images_reviewed": false,
+  "note": "Same 24 previously inspected cases, unchanged detections and selection. This is phase/distance/support metadata comparison, not a new visual or semantic accuracy review. Cluster IDs differ and squared distances use different scales."
+}

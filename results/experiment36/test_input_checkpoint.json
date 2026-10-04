@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-04T23:25:13.642770+00:00",
+  "file_sha256": {
+    "artifacts/experiment35/confirmed/features/R04/testing_01.npz": "35ce0ebf91ba65c9c51096c26aee516c2a53c67a5371989e8da1d2622cf491cb",
+    "artifacts/experiment35/confirmed/features/R04/testing_02.npz": "26cfd5c7845af8a0898416d73fabb2369a91d710b80d2f310e12594f6edbd502",
+    "artifacts/experiment35/confirmed/features/R04/testing_03.npz": "a14547c0615dd00054fb6775f3719f6cd8ce9f7c4571c6559a82e232d52557b7",
+    "artifacts/experiment35/confirmed/features/R04/testing_04.npz": "b86b330538068153baff7d7fae61bc2e6279bb975dfc1b8da5f1f6da2de3dbae",
+    "artifacts/experiment35/confirmed/features/R04/testing_05.npz": "ac374f4c67a59ef6bea69f99efd4f43fb5bf3eea4146fafe37ecb5b3aea986d3",
+    "artifacts/experiment35/confirmed/features/R04/testing_06.npz": "8ed8348a9c68826f5dfe2faa132abca5a75e258c245be8cb86228ff6324e5394",
+    "artifacts/experiment35/confirmed/features/R04/testing_07.npz": "973eb3cbad6a41f809cadffbb9414f058293127986f3f29ec82f803999a6e3bc",
+    "artifacts/experiment35/confirmed/features/R04/testing_08.npz": "dc651e4a849da7d29e5bea81d18b9ed4ddbffef3583fd98eb1e90702a18bc00e",
+    "artifacts/experiment35/confirmed/features/R04/testing_09.npz": "3bda495c78fab88eb6d2c68bb9fd081ba973722e09b99e804aecac1b29adcbdf",
+    "artifacts/experiment35/confirmed/features/R04/testing_10.npz": "7c0c2bd06ba4da7b8e9dd9164563b1597862a9879192386fb3a6ac2885fd90ce",
+    "artifacts/experiment35/confirmed/features/R04/testing_11.npz": "90176494f7cf6ac715851f3973e39cf25ce199868de4c196c5f146b504a9f7ce",
+    "artifacts/experiment35/confirmed/features/R04/testing_12.npz": "bc3a5640769075faa875001a3cafa6f5d09fc78aa7d9f25fd73fc509cc3c8b08",
+    "artifacts/experiment35/confirmed/features/R04/testing_13.npz": "8f3fcde009ce7253430b56cc3ca1559c7fa8ec3c63a034f6a9eb5daba45652d9",
+    "artifacts/experiment35/confirmed/features/R04/testing_14.npz": "0b8ca9335c221eff5474ada12e2085e368001412115e06a118ea34cfe5d5e4e7",
+    "artifacts/experiment35/confirmed/features/R04/testing_15.npz": "15a1be288ee79c4209ba9e6a49550f0b452f2d1f9e5bda0e25aed4b5fbc41f1f",
+    "artifacts/experiment35/confirmed/features/R04/testing_16.npz": "92795d72d9560d9823fbd06e769f0d5fecc760658f6f295a2a9dfea81a6af32c",
+    "artifacts/experiment35/confirmed/features/R04/testing_17.npz": "6142f99479eeca1e52ec8007e10e7c3eab3bb738d19a2e482988cc70fb405ffb",
+    "artifacts/experiment35/confirmed/features/R04/testing_18.npz": "a3a147d65281eee010681bdc75c7e86e261280cb982c1076c894a7470ced0625",
+    "artifacts/experiment35/confirmed/features/R04/testing_19.npz": "755daba22c17e976c7179a8e42356c1a91e3ce0a0ee4f320d118328a39396902"
+  }
+}

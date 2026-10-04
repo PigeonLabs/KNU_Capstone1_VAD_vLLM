@@ -1,0 +1,1780 @@
+{
+  "normal_only": true,
+  "rows": [
+    {
+      "sequence": "01",
+      "partition": "fit",
+      "samples": 78,
+      "frames": 309,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 50,
+      "phase_changed_frames": 197,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 44,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 2,
+            "both": 1
+          },
+          "phase_counts": [
+            0,
+            21,
+            38,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            10,
+            16
+          ],
+          "episode_status": {
+            "unknown_entry": 13
+          },
+          "selection_decisions": {
+            "forced": 8,
+            "pending_challenger": 2,
+            "retained": 33,
+            "confirmed_challenger": 1,
+            "missing": 34
+          },
+          "selected_anchor_margin_mean": 0.02369925227152846
+        },
+        "refit": {
+          "valid_samples": 44,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 2,
+            "both": 1
+          },
+          "phase_counts": [
+            40,
+            0,
+            28,
+            10
+          ],
+          "observed_phase_counts": [
+            34,
+            0,
+            8,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 13
+          },
+          "selection_decisions": {
+            "forced": 8,
+            "pending_challenger": 2,
+            "retained": 33,
+            "confirmed_challenger": 1,
+            "missing": 34
+          },
+          "selected_anchor_margin_mean": 0.02369925227152846
+        }
+      }
+    },
+    {
+      "sequence": "03",
+      "partition": "fit",
+      "samples": 116,
+      "frames": 461,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 44,
+      "phase_changed_frames": 176,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 10,
+            "target": 2
+          },
+          "phase_counts": [
+            1,
+            23,
+            72,
+            20
+          ],
+          "observed_phase_counts": [
+            1,
+            9,
+            42,
+            15
+          ],
+          "episode_status": {
+            "unknown_entry": 27
+          },
+          "selection_decisions": {
+            "forced": 21,
+            "retained": 44,
+            "pending_challenger": 1,
+            "confirmed_challenger": 1,
+            "missing": 49
+          },
+          "selected_anchor_margin_mean": 0.042952110087759655
+        },
+        "refit": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 10,
+            "target": 2
+          },
+          "phase_counts": [
+            43,
+            1,
+            72,
+            0
+          ],
+          "observed_phase_counts": [
+            24,
+            1,
+            42,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 27
+          },
+          "selection_decisions": {
+            "forced": 21,
+            "retained": 44,
+            "pending_challenger": 1,
+            "confirmed_challenger": 1,
+            "missing": 49
+          },
+          "selected_anchor_margin_mean": 0.042952110087759655
+        }
+      }
+    },
+    {
+      "sequence": "04",
+      "partition": "fit",
+      "samples": 102,
+      "frames": 408,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 80,
+      "phase_changed_frames": 320,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 50,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 2
+          },
+          "phase_counts": [
+            7,
+            71,
+            15,
+            9
+          ],
+          "observed_phase_counts": [
+            0,
+            29,
+            14,
+            7
+          ],
+          "episode_status": {
+            "unknown_entry": 16,
+            "right_censored": 2
+          },
+          "selection_decisions": {
+            "forced": 9,
+            "retained": 47,
+            "missing": 46
+          },
+          "selected_anchor_margin_mean": 0.027774142455859897
+        },
+        "refit": {
+          "valid_samples": 50,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 2
+          },
+          "phase_counts": [
+            87,
+            0,
+            15,
+            0
+          ],
+          "observed_phase_counts": [
+            36,
+            0,
+            14,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 16
+          },
+          "selection_decisions": {
+            "forced": 9,
+            "retained": 47,
+            "missing": 46
+          },
+          "selected_anchor_margin_mean": 0.027774142455859897
+        }
+      }
+    },
+    {
+      "sequence": "05",
+      "partition": "fit",
+      "samples": 110,
+      "frames": 437,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 80,
+      "phase_changed_frames": 320,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 78,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 7,
+            "both": 1
+          },
+          "phase_counts": [
+            4,
+            51,
+            27,
+            28
+          ],
+          "observed_phase_counts": [
+            1,
+            43,
+            20,
+            14
+          ],
+          "episode_status": {
+            "unknown_entry": 20,
+            "right_censored": 2
+          },
+          "selection_decisions": {
+            "forced": 11,
+            "retained": 60,
+            "pending_challenger": 8,
+            "confirmed_challenger": 3,
+            "missing": 28
+          },
+          "selected_anchor_margin_mean": 0.027485156599600262
+        },
+        "refit": {
+          "valid_samples": 78,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 7,
+            "both": 1
+          },
+          "phase_counts": [
+            82,
+            1,
+            27,
+            0
+          ],
+          "observed_phase_counts": [
+            57,
+            1,
+            20,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 20
+          },
+          "selection_decisions": {
+            "forced": 11,
+            "retained": 60,
+            "pending_challenger": 8,
+            "confirmed_challenger": 3,
+            "missing": 28
+          },
+          "selected_anchor_margin_mean": 0.027485156599600262
+        }
+      }
+    },
+    {
+      "sequence": "06",
+      "partition": "fit",
+      "samples": 112,
+      "frames": 448,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 84,
+      "phase_changed_frames": 336,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 52,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            7,
+            27,
+            21,
+            57
+          ],
+          "observed_phase_counts": [
+            0,
+            23,
+            3,
+            26
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 56,
+            "pending_challenger": 2,
+            "missing": 50
+          },
+          "selected_anchor_margin_mean": 0.011436762441245718
+        },
+        "refit": {
+          "valid_samples": 52,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            91,
+            0,
+            21,
+            0
+          ],
+          "observed_phase_counts": [
+            49,
+            0,
+            3,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 8
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 56,
+            "pending_challenger": 2,
+            "missing": 50
+          },
+          "selected_anchor_margin_mean": 0.011436762441245718
+        }
+      }
+    },
+    {
+      "sequence": "07",
+      "partition": "fit",
+      "samples": 97,
+      "frames": 385,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 85,
+      "phase_changed_frames": 337,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 72,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 2,
+            "both": 1
+          },
+          "phase_counts": [
+            8,
+            41,
+            4,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            3,
+            34
+          ],
+          "episode_status": {
+            "unknown_entry": 13,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 8,
+            "retained": 69,
+            "pending_challenger": 2,
+            "confirmed_challenger": 1,
+            "missing": 17
+          },
+          "selected_anchor_margin_mean": 0.013083244882611167
+        },
+        "refit": {
+          "valid_samples": 72,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 2,
+            "both": 1
+          },
+          "phase_counts": [
+            93,
+            0,
+            4,
+            0
+          ],
+          "observed_phase_counts": [
+            69,
+            0,
+            3,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 13
+          },
+          "selection_decisions": {
+            "forced": 8,
+            "retained": 69,
+            "pending_challenger": 2,
+            "confirmed_challenger": 1,
+            "missing": 17
+          },
+          "selected_anchor_margin_mean": 0.013083244882611167
+        }
+      }
+    },
+    {
+      "sequence": "09",
+      "partition": "fit",
+      "samples": 105,
+      "frames": 417,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 63,
+      "phase_changed_frames": 252,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 35,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            4,
+            57,
+            44,
+            0
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            8,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 38,
+            "missing": 62
+          },
+          "selected_anchor_margin_mean": 0.017391816795564327
+        },
+        "refit": {
+          "valid_samples": 35,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            61,
+            0,
+            38,
+            6
+          ],
+          "observed_phase_counts": [
+            27,
+            0,
+            7,
+            1
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 38,
+            "missing": 62
+          },
+          "selected_anchor_margin_mean": 0.017391816795564327
+        }
+      }
+    },
+    {
+      "sequence": "11",
+      "partition": "fit",
+      "samples": 85,
+      "frames": 340,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 49,
+      "phase_changed_frames": 196,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 24,
+          "pair_changes": {},
+          "phase_counts": [
+            6,
+            44,
+            30,
+            5
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            4,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 7
+          },
+          "selection_decisions": {
+            "forced": 6,
+            "retained": 23,
+            "pending_challenger": 3,
+            "missing": 53
+          },
+          "selected_anchor_margin_mean": 0.019659818229928766
+        },
+        "refit": {
+          "valid_samples": 24,
+          "pair_changes": {},
+          "phase_counts": [
+            55,
+            0,
+            30,
+            0
+          ],
+          "observed_phase_counts": [
+            20,
+            0,
+            4,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 7
+          },
+          "selection_decisions": {
+            "forced": 6,
+            "retained": 23,
+            "pending_challenger": 3,
+            "missing": 53
+          },
+          "selected_anchor_margin_mean": 0.019659818229928766
+        }
+      }
+    },
+    {
+      "sequence": "13",
+      "partition": "fit",
+      "samples": 96,
+      "frames": 382,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 82,
+      "phase_changed_frames": 326,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 66,
+          "pair_changes": {
+            "anchor": 3
+          },
+          "phase_counts": [
+            7,
+            58,
+            7,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            41,
+            3,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 14,
+            "complete": 2,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 10,
+            "retained": 63,
+            "pending_challenger": 2,
+            "missing": 21
+          },
+          "selected_anchor_margin_mean": 0.014144943888583617
+        },
+        "refit": {
+          "valid_samples": 66,
+          "pair_changes": {
+            "anchor": 3
+          },
+          "phase_counts": [
+            89,
+            0,
+            7,
+            0
+          ],
+          "observed_phase_counts": [
+            63,
+            0,
+            3,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 14
+          },
+          "selection_decisions": {
+            "forced": 10,
+            "retained": 63,
+            "pending_challenger": 2,
+            "missing": 21
+          },
+          "selected_anchor_margin_mean": 0.014144943888583617
+        }
+      }
+    },
+    {
+      "sequence": "14",
+      "partition": "fit",
+      "samples": 81,
+      "frames": 323,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 75,
+      "phase_changed_frames": 299,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 68,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 2
+          },
+          "phase_counts": [
+            5,
+            51,
+            1,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            44,
+            1,
+            23
+          ],
+          "episode_status": {
+            "unknown_entry": 12,
+            "right_censored": 2,
+            "complete": 4
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 67,
+            "pending_challenger": 2,
+            "missing": 8
+          },
+          "selected_anchor_margin_mean": 0.010019611665972282
+        },
+        "refit": {
+          "valid_samples": 68,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 2
+          },
+          "phase_counts": [
+            80,
+            0,
+            1,
+            0
+          ],
+          "observed_phase_counts": [
+            67,
+            0,
+            1,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 12
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 67,
+            "pending_challenger": 2,
+            "missing": 8
+          },
+          "selected_anchor_margin_mean": 0.010019611665972282
+        }
+      }
+    },
+    {
+      "sequence": "16",
+      "partition": "fit",
+      "samples": 94,
+      "frames": 373,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 91,
+      "phase_changed_frames": 361,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 63,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 3
+          },
+          "phase_counts": [
+            0,
+            62,
+            3,
+            29
+          ],
+          "observed_phase_counts": [
+            0,
+            39,
+            2,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 14,
+            "right_censored": 2
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 62,
+            "pending_challenger": 5,
+            "missing": 22,
+            "confirmed_challenger": 1
+          },
+          "selected_anchor_margin_mean": 0.00822722942468088
+        },
+        "refit": {
+          "valid_samples": 63,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 3
+          },
+          "phase_counts": [
+            91,
+            0,
+            3,
+            0
+          ],
+          "observed_phase_counts": [
+            61,
+            0,
+            2,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 14
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 62,
+            "pending_challenger": 5,
+            "missing": 22,
+            "confirmed_challenger": 1
+          },
+          "selected_anchor_margin_mean": 0.00822722942468088
+        }
+      }
+    },
+    {
+      "sequence": "17",
+      "partition": "fit",
+      "samples": 93,
+      "frames": 372,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 61,
+      "phase_changed_frames": 244,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 1
+          },
+          "phase_counts": [
+            5,
+            42,
+            27,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            14,
+            18
+          ],
+          "episode_status": {
+            "unknown_entry": 11,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 65,
+            "pending_challenger": 3,
+            "missing": 19,
+            "confirmed_challenger": 1
+          },
+          "selected_anchor_margin_mean": 0.02320384920244773
+        },
+        "refit": {
+          "valid_samples": 67,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 1
+          },
+          "phase_counts": [
+            66,
+            0,
+            27,
+            0
+          ],
+          "observed_phase_counts": [
+            53,
+            0,
+            14,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 65,
+            "pending_challenger": 3,
+            "missing": 19,
+            "confirmed_challenger": 1
+          },
+          "selected_anchor_margin_mean": 0.02320384920244773
+        }
+      }
+    },
+    {
+      "sequence": "18",
+      "partition": "fit",
+      "samples": 103,
+      "frames": 412,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 88,
+      "phase_changed_frames": 352,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 69,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            11,
+            69,
+            4,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            66,
+            1,
+            2
+          ],
+          "episode_status": {
+            "unknown_entry": 7,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 3,
+            "retained": 76,
+            "missing": 22,
+            "pending_challenger": 2
+          },
+          "selected_anchor_margin_mean": 0.015249403507476266
+        },
+        "refit": {
+          "valid_samples": 69,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            99,
+            0,
+            4,
+            0
+          ],
+          "observed_phase_counts": [
+            68,
+            0,
+            1,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 7
+          },
+          "selection_decisions": {
+            "forced": 3,
+            "retained": 76,
+            "missing": 22,
+            "pending_challenger": 2
+          },
+          "selected_anchor_margin_mean": 0.015249403507476266
+        }
+      }
+    },
+    {
+      "sequence": "19",
+      "partition": "fit",
+      "samples": 99,
+      "frames": 396,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 92,
+      "phase_changed_frames": 368,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 36,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            7,
+            91,
+            0,
+            1
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            0,
+            1
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selection_decisions": {
+            "forced": 2,
+            "retained": 44,
+            "missing": 53
+          },
+          "selected_anchor_margin_mean": 0.012369564628775113
+        },
+        "refit": {
+          "valid_samples": 36,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            99,
+            0,
+            0,
+            0
+          ],
+          "observed_phase_counts": [
+            36,
+            0,
+            0,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selection_decisions": {
+            "forced": 2,
+            "retained": 44,
+            "missing": 53
+          },
+          "selected_anchor_margin_mean": 0.012369564628775113
+        }
+      }
+    },
+    {
+      "sequence": "20",
+      "partition": "fit",
+      "samples": 101,
+      "frames": 404,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 71,
+      "phase_changed_frames": 284,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 32,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 1
+          },
+          "phase_counts": [
+            15,
+            68,
+            15,
+            3
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            2,
+            3
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 44,
+            "pending_challenger": 1,
+            "missing": 52
+          },
+          "selected_anchor_margin_mean": 0.008622640180926362
+        },
+        "refit": {
+          "valid_samples": 32,
+          "pair_changes": {
+            "anchor": 2,
+            "target": 1
+          },
+          "phase_counts": [
+            86,
+            0,
+            15,
+            0
+          ],
+          "observed_phase_counts": [
+            30,
+            0,
+            2,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 8
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 44,
+            "pending_challenger": 1,
+            "missing": 52
+          },
+          "selected_anchor_margin_mean": 0.008622640180926362
+        }
+      }
+    },
+    {
+      "sequence": "21",
+      "partition": "fit",
+      "samples": 105,
+      "frames": 417,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 73,
+      "phase_changed_frames": 289,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 48,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            5,
+            59,
+            27,
+            14
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            1,
+            11
+          ],
+          "episode_status": {
+            "unknown_entry": 10
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 47,
+            "pending_challenger": 2,
+            "confirmed_challenger": 1,
+            "missing": 51
+          },
+          "selected_anchor_margin_mean": 0.008725079845668634
+        },
+        "refit": {
+          "valid_samples": 48,
+          "pair_changes": {
+            "target": 2
+          },
+          "phase_counts": [
+            78,
+            0,
+            27,
+            0
+          ],
+          "observed_phase_counts": [
+            47,
+            0,
+            1,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 10
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 47,
+            "pending_challenger": 2,
+            "confirmed_challenger": 1,
+            "missing": 51
+          },
+          "selected_anchor_margin_mean": 0.008725079845668634
+        }
+      }
+    },
+    {
+      "sequence": "22",
+      "partition": "fit",
+      "samples": 95,
+      "frames": 380,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 73,
+      "phase_changed_frames": 292,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 38,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            7,
+            56,
+            15,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            20,
+            2,
+            16
+          ],
+          "episode_status": {
+            "unknown_entry": 8,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 41,
+            "missing": 49,
+            "pending_challenger": 1
+          },
+          "selected_anchor_margin_mean": 0.011785825905193505
+        },
+        "refit": {
+          "valid_samples": 38,
+          "pair_changes": {
+            "target": 1
+          },
+          "phase_counts": [
+            80,
+            0,
+            15,
+            0
+          ],
+          "observed_phase_counts": [
+            36,
+            0,
+            2,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 8
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 41,
+            "missing": 49,
+            "pending_challenger": 1
+          },
+          "selected_anchor_margin_mean": 0.011785825905193505
+        }
+      }
+    },
+    {
+      "sequence": "23",
+      "partition": "fit",
+      "samples": 95,
+      "frames": 377,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 87,
+      "phase_changed_frames": 345,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 54,
+          "pair_changes": {
+            "target": 4
+          },
+          "phase_counts": [
+            8,
+            75,
+            0,
+            12
+          ],
+          "observed_phase_counts": [
+            0,
+            45,
+            0,
+            9
+          ],
+          "episode_status": {
+            "unknown_entry": 13,
+            "right_censored": 3
+          },
+          "selection_decisions": {
+            "forced": 2,
+            "retained": 58,
+            "pending_challenger": 2,
+            "missing": 33
+          },
+          "selected_anchor_margin_mean": 0.009362288784293966
+        },
+        "refit": {
+          "valid_samples": 54,
+          "pair_changes": {
+            "target": 4
+          },
+          "phase_counts": [
+            95,
+            0,
+            0,
+            0
+          ],
+          "observed_phase_counts": [
+            54,
+            0,
+            0,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 13
+          },
+          "selection_decisions": {
+            "forced": 2,
+            "retained": 58,
+            "pending_challenger": 2,
+            "missing": 33
+          },
+          "selected_anchor_margin_mean": 0.009362288784293966
+        }
+      }
+    },
+    {
+      "sequence": "24",
+      "partition": "fit",
+      "samples": 92,
+      "frames": 368,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 83,
+      "phase_changed_frames": 332,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 79,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 1
+          },
+          "phase_counts": [
+            9,
+            65,
+            1,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            64,
+            1,
+            14
+          ],
+          "episode_status": {
+            "unknown_entry": 8
+          },
+          "selection_decisions": {
+            "forced": 3,
+            "retained": 85,
+            "pending_challenger": 2,
+            "missing": 2
+          },
+          "selected_anchor_margin_mean": 0.008944751079271432
+        },
+        "refit": {
+          "valid_samples": 79,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 1
+          },
+          "phase_counts": [
+            91,
+            0,
+            0,
+            1
+          ],
+          "observed_phase_counts": [
+            78,
+            0,
+            0,
+            1
+          ],
+          "episode_status": {
+            "unknown_entry": 8
+          },
+          "selection_decisions": {
+            "forced": 3,
+            "retained": 85,
+            "pending_challenger": 2,
+            "missing": 2
+          },
+          "selected_anchor_margin_mean": 0.008944751079271432
+        }
+      }
+    },
+    {
+      "sequence": "25",
+      "partition": "fit",
+      "samples": 101,
+      "frames": 403,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 91,
+      "phase_changed_frames": 363,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 81,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 2
+          },
+          "phase_counts": [
+            9,
+            47,
+            1,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            43,
+            1,
+            37
+          ],
+          "episode_status": {
+            "unknown_entry": 13,
+            "complete": 1,
+            "right_censored": 3
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 83,
+            "pending_challenger": 3,
+            "confirmed_challenger": 1,
+            "missing": 10
+          },
+          "selected_anchor_margin_mean": 0.009319762304549764
+        },
+        "refit": {
+          "valid_samples": 81,
+          "pair_changes": {
+            "target": 5,
+            "anchor": 2
+          },
+          "phase_counts": [
+            100,
+            0,
+            1,
+            0
+          ],
+          "observed_phase_counts": [
+            80,
+            0,
+            1,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 13
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 83,
+            "pending_challenger": 3,
+            "confirmed_challenger": 1,
+            "missing": 10
+          },
+          "selected_anchor_margin_mean": 0.009319762304549764
+        }
+      }
+    },
+    {
+      "sequence": "02",
+      "partition": "calibration",
+      "samples": 103,
+      "frames": 409,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 43,
+      "phase_changed_frames": 172,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 56,
+          "pair_changes": {
+            "target": 2,
+            "anchor": 9
+          },
+          "phase_counts": [
+            0,
+            23,
+            62,
+            18
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            29,
+            9
+          ],
+          "episode_status": {
+            "unknown_entry": 27,
+            "right_censored": 2
+          },
+          "selection_decisions": {
+            "forced": 18,
+            "missing": 46,
+            "retained": 35,
+            "pending_challenger": 2,
+            "confirmed_challenger": 2
+          },
+          "selected_anchor_margin_mean": 0.03425111717536447
+        },
+        "refit": {
+          "valid_samples": 56,
+          "pair_changes": {
+            "target": 2,
+            "anchor": 9
+          },
+          "phase_counts": [
+            41,
+            0,
+            60,
+            2
+          ],
+          "observed_phase_counts": [
+            27,
+            0,
+            28,
+            1
+          ],
+          "episode_status": {
+            "unknown_entry": 27
+          },
+          "selection_decisions": {
+            "forced": 18,
+            "missing": 46,
+            "retained": 35,
+            "pending_challenger": 2,
+            "confirmed_challenger": 2
+          },
+          "selected_anchor_margin_mean": 0.03425111717536447
+        }
+      }
+    },
+    {
+      "sequence": "08",
+      "partition": "calibration",
+      "samples": 104,
+      "frames": 413,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 95,
+      "phase_changed_frames": 377,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 82,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 1
+          },
+          "phase_counts": [
+            8,
+            40,
+            1,
+            55
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            1,
+            46
+          ],
+          "episode_status": {
+            "unknown_entry": 11,
+            "right_censored": 2,
+            "complete": 1
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 88,
+            "missing": 12
+          },
+          "selected_anchor_margin_mean": 0.010599106679331621
+        },
+        "refit": {
+          "valid_samples": 82,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 1
+          },
+          "phase_counts": [
+            103,
+            0,
+            1,
+            0
+          ],
+          "observed_phase_counts": [
+            81,
+            0,
+            1,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 11
+          },
+          "selection_decisions": {
+            "forced": 4,
+            "retained": 88,
+            "missing": 12
+          },
+          "selected_anchor_margin_mean": 0.010599106679331621
+        }
+      }
+    },
+    {
+      "sequence": "10",
+      "partition": "calibration",
+      "samples": 94,
+      "frames": 376,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 77,
+      "phase_changed_frames": 308,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 55,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 1
+          },
+          "phase_counts": [
+            10,
+            56,
+            7,
+            21
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            5,
+            16
+          ],
+          "episode_status": {
+            "unknown_entry": 10,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 54,
+            "pending_challenger": 5,
+            "confirmed_challenger": 2,
+            "missing": 28
+          },
+          "selected_anchor_margin_mean": 0.012880673994853936
+        },
+        "refit": {
+          "valid_samples": 55,
+          "pair_changes": {
+            "anchor": 3,
+            "target": 1
+          },
+          "phase_counts": [
+            87,
+            0,
+            7,
+            0
+          ],
+          "observed_phase_counts": [
+            50,
+            0,
+            5,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 10
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 54,
+            "pending_challenger": 5,
+            "confirmed_challenger": 2,
+            "missing": 28
+          },
+          "selected_anchor_margin_mean": 0.012880673994853936
+        }
+      }
+    },
+    {
+      "sequence": "12",
+      "partition": "calibration",
+      "samples": 96,
+      "frames": 382,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 86,
+      "phase_changed_frames": 342,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 51,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 4
+          },
+          "phase_counts": [
+            0,
+            42,
+            10,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            25,
+            4,
+            22
+          ],
+          "episode_status": {
+            "unknown_entry": 19,
+            "right_censored": 2,
+            "complete": 1
+          },
+          "selection_decisions": {
+            "forced": 7,
+            "retained": 44,
+            "pending_challenger": 2,
+            "confirmed_challenger": 2,
+            "missing": 41
+          },
+          "selected_anchor_margin_mean": 0.0113047430096231
+        },
+        "refit": {
+          "valid_samples": 51,
+          "pair_changes": {
+            "target": 1,
+            "anchor": 4
+          },
+          "phase_counts": [
+            86,
+            0,
+            10,
+            0
+          ],
+          "observed_phase_counts": [
+            47,
+            0,
+            4,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 19
+          },
+          "selection_decisions": {
+            "forced": 7,
+            "retained": 44,
+            "pending_challenger": 2,
+            "confirmed_challenger": 2,
+            "missing": 41
+          },
+          "selected_anchor_margin_mean": 0.0113047430096231
+        }
+      }
+    },
+    {
+      "sequence": "15",
+      "partition": "calibration",
+      "samples": 85,
+      "frames": 340,
+      "anchor_selection_changed_samples": 0,
+      "phase_changed_samples": 61,
+      "phase_changed_frames": 244,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "valid_samples": 53,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 4
+          },
+          "phase_counts": [
+            2,
+            45,
+            22,
+            16
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            4,
+            15
+          ],
+          "episode_status": {
+            "unknown_entry": 12,
+            "right_censored": 1
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 44,
+            "pending_challenger": 6,
+            "missing": 28,
+            "confirmed_challenger": 2
+          },
+          "selected_anchor_margin_mean": 0.013058560180727966
+        },
+        "refit": {
+          "valid_samples": 53,
+          "pair_changes": {
+            "target": 3,
+            "anchor": 4
+          },
+          "phase_counts": [
+            63,
+            0,
+            22,
+            0
+          ],
+          "observed_phase_counts": [
+            49,
+            0,
+            4,
+            0
+          ],
+          "episode_status": {
+            "unknown_entry": 12
+          },
+          "selection_decisions": {
+            "forced": 5,
+            "retained": 44,
+            "pending_challenger": 6,
+            "missing": 28,
+            "confirmed_challenger": 2
+          },
+          "selected_anchor_margin_mean": 0.013058560180727966
+        }
+      }
+    }
+  ],
+  "valid_and_target_selection_unchanged": true,
+  "independent_scalar_selection_descriptor_phase_checked": true
+}

@@ -1,0 +1,8 @@
+{
+  "created_at_utc": "2026-10-04T23:23:00.138945+00:00",
+  "file_sha256": {
+    "results/experiment36/pre_test_checkpoint.json": "e13f1c9ec17863159b4e11a1aab7f888ed0a658399c63ed61b47efab8de121c3",
+    "results/experiment36/control_reproduction.json": "ded90e0c69b1283a7c44206ae5173f26e0d1075556abef7b97becd93e31fa374",
+    "results/experiment36/normal_access.json": "5ca4fd6d3d3f1680a628d28ab9c723e7f7242e6a8f6fc77b09d4f59e0b2395b3"
+  }
+}

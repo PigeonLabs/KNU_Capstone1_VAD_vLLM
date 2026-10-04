@@ -42,7 +42,8 @@
 | 실험 33 | 관계 관측 손실·선택 track·episode 근거 추적 | 완료: filter/선택 병목과 역할 혼동의 근거 확인, normal-only 진단 | [결과·의의·추천 3개](docs/EXPERIMENT33.md) |
 | 실험 34 | eligible anchor의 semantic 근거 우선 선택 | 완료: 일부 역할 선택 변화, track 단절 증가·탐지 저하 | [결과·의의·추천 3개](docs/EXPERIMENT34.md) |
 | 실험 35 | 자발적 anchor 교체의 연속 우위 확인 | 완료: 왕복 감소·구간 증가, ranking/recall·정상 오탐 악화 | [결과·의의·추천 3개](docs/EXPERIMENT35.md) |
-| 다음 실험 36 | 현재 선택 정책에 맞춘 정상 phase 모델 재적합 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT36_PLAN.md) |
+| 실험 36 | 현재 선택 정책에 맞춘 정상 phase 재학습 | 완료: 오탐 감소·recall 감소, 동일 쌍 공정 전환 소실 | [결과·의의·추천 3개](docs/EXPERIMENT36.md) |
+| 다음 실험 37 | phase 거리의 극단값 영향 완화 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT37_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1170,3 +1171,31 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **정상 역할·후보 연속성 검증 보강**: blade/바이스와 target 혼동, 후보 부재/면적 탈락을 구분해 관측 근거 개선 | 확인군에서도 anchor 후보 부재 기반 교체 30/11회, 면적 탈락 1/3회. 4개 변경 사례에서 blade 선택 지연·바이스 유지 관찰 | 정상 근거로 한 요소씩 고정하고 별도 보조 역할 주석·관측률·최종 탐지를 분리. 안정적인 track을 정확한 역할로 취급하거나 목적 표집을 정확도로 환산하지 않음 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT35.md) · [비교 CSV](results/experiment35/comparison.csv) · [확인 상태와 교체 원인](results/experiment35/normal_confirmation_mechanism.json) · [검증](results/experiment35/validation.json) · [1순위를 구체화한 실험 36 계획](docs/EXPERIMENT36_PLAN.md)
+
+
+## 실험 36 — 현재 객체 선택에 맞춘 정상 phase 재학습
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 FPR (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| control_hold | 0.6819 / 0.6769 | 0.6799 / 0.6745 | 8.72% (312) | 13.59% (622) | 14 |
+| control_pool | 0.6830 / 0.6774 | 0.6812 / 0.6752 | 7.83% (280) | 12.43% (569) | 15 |
+| control_age | 0.6818 / 0.6761 | 0.6799 / 0.6737 | 8.72% (312) | 13.76% (630) | 14 |
+| refit_hold | 0.6703 / 0.6755 | 0.6704 / 0.6752 | 6.18% (221) | 11.03% (505) | 14 |
+| refit_pool | 0.6836 / 0.6840 | 0.6843 / 0.6839 | 6.07% (217) | 10.92% (500) | 15 |
+| refit_age | 0.6861 / 0.6856 | 0.6868 / 0.6855 | 6.18% (221) | 11.21% (513) | 14 |
+
+![실험 36 비교](results/experiment36/phase_refit_comparison.png)
+
+**의의:** 동일한 객체 선택/관측/descriptor에서 정상 FIT만으로 median/IQR·KMeans 중심을 재학습했다. control은 실험 35 confirmed를 정확히 재현한다. 정상 holdout FP는 hold/pool/age 36/40/36→24/32/24, test FP도 감소했지만 TP는 −117/−69/−117프레임이다. 외형 오탐 감소와 공정 상태 학습의 성립을 분리해 확인했다.
+
+**보완할 점:** 새 정상 phase 지원은 989/2/128/4이며 기존 1/3이 하나로 합쳐졌다. 같은 쌍의 정상 phase 전환은 FIT/calibration 28/10→0/0, strict complete도 7/2→0/0이다. 기존 체류 지원 0→2의 13개는 모두 진입/이탈 때 쌍이 바뀐다. 공정 독자 경보는 0, test 체류 가용성은 429→97프레임이다. hold AUROC와 모든 frame recall이 낮아졌고, 구간 수는 같지만 한 구간을 얻고 하나를 잃었다. 새 cluster의 6 samples가 정규화 median 중심 제곱 에너지 44.09%를 차지하지만 원인 확정은 아니다. 역할 GT·독립 평가·비용 측정은 없다. 테스트 152개 통과.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **phase 거리의 극단값 영향 완화**: 동일 정상 median/IQR 이후 좌표별 `asinh(z)`를 적용해 KMeans와 추론 거리를 함께 변경 | 정상 6/1,123 samples가 median 중심 제곱 에너지 44.09%를 차지. 새 cluster 지원 989/2/128/4, 같은 쌍 phase 전환·strict complete 0 | 선택·관측·descriptor·K/seed·support를 고정. 정상 cluster/영상 지원·같은 쌍 전환·holdout과 최종 경보를 분리. 극단적인 실제 공정 변화를 약화시킬 수 있고 단순 균형이 정확도는 아님 |
+| 2 | **체류 점수의 관측 근거를 같은 객체 쌍으로 제한**: 기존 체류 분포를 고정한 채 실제 진입 이후 동일 쌍 이력을 결합 조건으로 대조 | 지원된 새 0→2 정상 FIT 13 runs 모두 진입·이탈 시 쌍이 달라짐. 체류 가용 정상 FIT/calibration 64/28 samples 중 같은 쌍 진입 근거는 0 | 학습 자료와 결합 gate를 동시에 바꾸지 않음. 차단되는 정상/이상 경보·가용성을 보고하고 지원을 낮추지 않음. 현재 모델에서는 branch가 꺼질 수 있어 탐지 개선으로 오해하지 않음 |
+| 3 | **역할 및 기하 descriptor 근거 보강**: 작은 anchor box·바이스/칼날 혼동과 실제 관계 변화를 구분하는 정상 진단 | 희소 phase 1의 두 anchor 폭은 약 .027/.029이고 상대 x는 21.17/27.93. 기존 역할 오류는 선택 고정으로 그대로이며 단일 상태가 FIT 88.07%를 차지 | 정상 역할 주석·bbox 근거를 확보하고 후보 필터 또는 descriptor 한 요소만 대조. 작은 box를 자동 오검출로 단정하거나 현재 24개 목적 표집을 정확도로 환산하지 않음 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT36.md) · [비교 CSV](results/experiment36/comparison.csv) · [정상 phase 교차표](results/experiment36/normal_phase_contingency.png) · [검증](results/experiment36/validation.json) · [1순위를 구체화한 실험 37 계획](docs/EXPERIMENT37_PLAN.md)

@@ -1,0 +1,862 @@
+{
+  "normal_only": true,
+  "variants": {
+    "36_control_hold": {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.997457627118644,
+      "eligible": true,
+      "calibration_alarms": 4,
+      "calibration_at_one": 0,
+      "context_support": {
+        "3->2": 9,
+        "3->0": 1,
+        "0->3": 1,
+        "2->3": 6,
+        "2->1": 4,
+        "1->3": 13,
+        "1->2": 4,
+        "3->1": 9,
+        "2->0": 1
+      },
+      "supported_contexts": [
+        [
+          1,
+          3
+        ]
+      ],
+      "log_parameters": {
+        "(1, 3)": [
+          2.4808285023292456,
+          0.7146760639397401
+        ]
+      },
+      "process_reference_samples": 482,
+      "state_reference_samples": {
+        "0": 20,
+        "1": 206,
+        "2": 101,
+        "3": 150
+      }
+    },
+    "36_control_pool": {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9968879668049793,
+      "eligible": true,
+      "calibration_alarms": 4,
+      "calibration_at_one": 0,
+      "context_support": {
+        "3->2": 9,
+        "3->0": 1,
+        "0->3": 1,
+        "2->3": 6,
+        "2->1": 4,
+        "1->3": 13,
+        "1->2": 4,
+        "3->1": 9,
+        "2->0": 1
+      },
+      "supported_contexts": [
+        [
+          1,
+          3
+        ]
+      ],
+      "log_parameters": {
+        "(1, 3)": [
+          2.4808285023292456,
+          0.7146760639397401
+        ]
+      },
+      "process_reference_samples": 482,
+      "state_reference_samples": {
+        "0": 20,
+        "1": 206,
+        "2": 101,
+        "3": 150
+      }
+    },
+    "36_control_age": {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.997457627118644,
+      "eligible": true,
+      "calibration_alarms": 4,
+      "calibration_at_one": 0,
+      "context_support": {
+        "3->2": 9,
+        "3->0": 1,
+        "0->3": 1,
+        "2->3": 6,
+        "2->1": 4,
+        "1->3": 13,
+        "1->2": 4,
+        "3->1": 9,
+        "2->0": 1
+      },
+      "supported_contexts": [
+        [
+          1,
+          3
+        ]
+      ],
+      "log_parameters": {
+        "(1, 3)": [
+          2.4808285023292456,
+          0.7146760639397401
+        ]
+      },
+      "process_reference_samples": 482,
+      "state_reference_samples": {
+        "0": 20,
+        "1": 206,
+        "2": 101,
+        "3": 150
+      }
+    },
+    "36_refit_hold": {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.997457627118644,
+      "eligible": true,
+      "calibration_alarms": 4,
+      "calibration_at_one": 0,
+      "context_support": {
+        "0->2": 13,
+        "0->1": 1,
+        "1->0": 1,
+        "2->0": 4,
+        "2->1": 1
+      },
+      "supported_contexts": [
+        [
+          0,
+          2
+        ]
+      ],
+      "log_parameters": {
+        "(0, 2)": [
+          1.9909239809254418,
+          0.7062613527720514
+        ]
+      },
+      "process_reference_samples": 482,
+      "state_reference_samples": {
+        "0": 376,
+        "1": 0,
+        "2": 99,
+        "3": 2
+      }
+    },
+    "36_refit_pool": {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9972375690607734,
+      "eligible": true,
+      "calibration_alarms": 4,
+      "calibration_at_one": 0,
+      "context_support": {
+        "0->2": 13,
+        "0->1": 1,
+        "1->0": 1,
+        "2->0": 4,
+        "2->1": 1
+      },
+      "supported_contexts": [
+        [
+          0,
+          2
+        ]
+      ],
+      "log_parameters": {
+        "(0, 2)": [
+          1.9909239809254418,
+          0.7062613527720514
+        ]
+      },
+      "process_reference_samples": 482,
+      "state_reference_samples": {
+        "0": 376,
+        "1": 0,
+        "2": 99,
+        "3": 2
+      }
+    },
+    "36_refit_age": {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.997457627118644,
+      "eligible": true,
+      "calibration_alarms": 4,
+      "calibration_at_one": 0,
+      "context_support": {
+        "0->2": 13,
+        "0->1": 1,
+        "1->0": 1,
+        "2->0": 4,
+        "2->1": 1
+      },
+      "supported_contexts": [
+        [
+          0,
+          2
+        ]
+      ],
+      "log_parameters": {
+        "(0, 2)": [
+          1.9909239809254418,
+          0.7062613527720514
+        ]
+      },
+      "process_reference_samples": 482,
+      "state_reference_samples": {
+        "0": 376,
+        "1": 0,
+        "2": 99,
+        "3": 2
+      }
+    }
+  },
+  "folds": [
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986807387862797,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_hold",
+      "held_out": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 12,
+      "held_out_sample_alarms": 3,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986772486772487,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_hold",
+      "held_out": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987113402061856,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_hold",
+      "held_out": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987046632124352,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_hold",
+      "held_out": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 16,
+      "held_out_sample_alarms": 4,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987405541561712,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_hold",
+      "held_out": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9964454976303317,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_control_pool",
+      "held_out": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986772486772487,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_pool",
+      "held_out": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9969072164948454,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_control_pool",
+      "held_out": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9961139896373057,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_control_pool",
+      "held_out": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 24,
+      "held_out_sample_alarms": 6,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9968553459119497,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_control_pool",
+      "held_out": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986807387862797,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_age",
+      "held_out": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 12,
+      "held_out_sample_alarms": 3,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986772486772487,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_age",
+      "held_out": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987113402061856,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_age",
+      "held_out": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987046632124352,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_age",
+      "held_out": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 16,
+      "held_out_sample_alarms": 4,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987405541561712,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_control_age",
+      "held_out": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986807387862797,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_hold",
+      "held_out": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986772486772487,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_hold",
+      "held_out": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987113402061856,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_hold",
+      "held_out": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987046632124352,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_hold",
+      "held_out": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987405541561712,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_refit_hold",
+      "held_out": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986807387862797,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_pool",
+      "held_out": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986772486772487,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_pool",
+      "held_out": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987113402061856,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_pool",
+      "held_out": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.996551724137931,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_refit_pool",
+      "held_out": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 20,
+      "held_out_sample_alarms": 5,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987405541561712,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_refit_pool",
+      "held_out": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986807387862797,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_age",
+      "held_out": "02",
+      "calibration_sequences": [
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 409,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9986772486772487,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_age",
+      "held_out": "08",
+      "calibration_sequences": [
+        "02",
+        "10",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 413,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987113402061856,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_age",
+      "held_out": "10",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "12",
+        "15"
+      ],
+      "held_out_frames": 376,
+      "held_out_frame_alarms": 0,
+      "held_out_sample_alarms": 0,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987046632124352,
+      "eligible": true,
+      "calibration_alarms": 2,
+      "calibration_at_one": 0,
+      "variant": "36_refit_age",
+      "held_out": "12",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "15"
+      ],
+      "held_out_frames": 382,
+      "held_out_frame_alarms": 4,
+      "held_out_sample_alarms": 1,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    },
+    {
+      "finite": true,
+      "unit_interval": true,
+      "q99": 0.9987405541561712,
+      "eligible": true,
+      "calibration_alarms": 3,
+      "calibration_at_one": 0,
+      "variant": "36_refit_age",
+      "held_out": "15",
+      "calibration_sequences": [
+        "02",
+        "08",
+        "10",
+        "12"
+      ],
+      "held_out_frames": 340,
+      "held_out_frame_alarms": 8,
+      "held_out_sample_alarms": 2,
+      "held_out_finite": true,
+      "held_out_bounded": true
+    }
+  ],
+  "eligible": [
+    "36_control_hold",
+    "36_control_pool",
+    "36_control_age",
+    "36_refit_hold",
+    "36_refit_pool",
+    "36_refit_age"
+  ],
+  "failed": []
+}

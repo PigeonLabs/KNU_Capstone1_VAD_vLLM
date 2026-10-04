@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-10-04T23:24:24.427346+00:00",
+  "file_sha256": {
+    "results/experiment36/normal_verification_checkpoint.json": "1c34d7a9befbede9b9bb75f5edabab852f5c745aa9edbd5f3422d657e85b2a45",
+    "results/experiment36/normal_phase_audit.json": "c9f4641267fff1aa56ce9f7066155dad555252a5fa526730e60ff13c39949058",
+    "results/experiment36/fixed_case_phase_review.json": "a779a3a708be7d4c7c795a14e9f3c7c8ca0b6ed7cd13deb78b13491dfaad12f0",
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/audit_phase_refit.py": "ec2b6fdac8d56b0fef4fc37025ecda9386eb41e4abe3422215889b1c59eec3e2"
+  }
+}
