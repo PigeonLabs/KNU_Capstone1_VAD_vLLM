@@ -1,0 +1,413 @@
+{
+  "mode": "normal_fit_only",
+  "time_unit": "normalized_coordinate_per_source_frame",
+  "groups": {
+    "fit": {
+      "samples": 1556,
+      "valid_progress_samples": 1432,
+      "valid_fraction": 0.9203084832904884,
+      "reason_counts": [
+        1432,
+        27,
+        68,
+        25,
+        4
+      ]
+    }
+  },
+  "fit_phase_velocity": {
+    "0": {
+      "samples": 423,
+      "quantiles_01_25_50_75_99": [
+        0.001866844855248928,
+        0.0026085805147886276,
+        0.004576966166496277,
+        0.004959724843502045,
+        0.005837179720401764
+      ]
+    },
+    "1": {
+      "samples": 486,
+      "quantiles_01_25_50_75_99": [
+        0.003989716619253159,
+        0.004782591015100479,
+        0.004925429821014404,
+        0.005061568692326546,
+        0.006068826466798777
+      ]
+    },
+    "2": {
+      "samples": 523,
+      "quantiles_01_25_50_75_99": [
+        0.0021785467863082884,
+        0.0027679502964019775,
+        0.00497514009475708,
+        0.005170024931430817,
+        0.00601547449827194
+      ]
+    }
+  },
+  "reason_codes": [
+    "valid",
+    "first_sample",
+    "no_current_anchor",
+    "prior_anchor_absent",
+    "track_ID_change"
+  ],
+  "invalid_policy": "velocity storage sentinel zero is masked; never fitted/calibrated/scored as a true zero speed",
+  "sequences": [
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 52,
+      "valid_progress_samples": 51,
+      "reason_counts": [
+        51,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_02",
+      "group": "fit",
+      "samples": 54,
+      "valid_progress_samples": 53,
+      "reason_counts": [
+        53,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 51,
+      "valid_progress_samples": 50,
+      "reason_counts": [
+        50,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 57,
+      "reason_counts": [
+        57,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 55,
+      "reason_counts": [
+        55,
+        1,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 55,
+      "reason_counts": [
+        55,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_07",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 55,
+      "reason_counts": [
+        55,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "sequence_key": "training_08",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 56,
+      "reason_counts": [
+        56,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_10",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 57,
+      "reason_counts": [
+        57,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_12",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 53,
+      "reason_counts": [
+        53,
+        1,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_15",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 54,
+      "reason_counts": [
+        54,
+        1,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 57,
+      "valid_progress_samples": 52,
+      "reason_counts": [
+        52,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 52,
+      "reason_counts": [
+        52,
+        1,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 51,
+      "reason_counts": [
+        51,
+        1,
+        4,
+        2,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 54,
+      "reason_counts": [
+        54,
+        1,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_22",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 56,
+      "reason_counts": [
+        56,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_23",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 56,
+      "reason_counts": [
+        56,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_24",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 56,
+      "reason_counts": [
+        56,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_25",
+      "group": "fit",
+      "samples": 57,
+      "valid_progress_samples": 53,
+      "reason_counts": [
+        53,
+        1,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_26",
+      "group": "fit",
+      "samples": 60,
+      "valid_progress_samples": 34,
+      "reason_counts": [
+        34,
+        1,
+        24,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_27",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 52,
+      "reason_counts": [
+        52,
+        1,
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_28",
+      "group": "fit",
+      "samples": 57,
+      "valid_progress_samples": 52,
+      "reason_counts": [
+        52,
+        1,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_29",
+      "group": "fit",
+      "samples": 59,
+      "valid_progress_samples": 56,
+      "reason_counts": [
+        56,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_30",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 54,
+      "reason_counts": [
+        54,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "sequence_key": "training_32",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 53,
+      "reason_counts": [
+        53,
+        1,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_33",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 52,
+      "reason_counts": [
+        52,
+        1,
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "sequence_key": "training_34",
+      "group": "fit",
+      "samples": 58,
+      "valid_progress_samples": 53,
+      "reason_counts": [
+        53,
+        1,
+        3,
+        1,
+        0
+      ]
+    }
+  ],
+  "source_sha256": {},
+  "all_original_arrays_preserved": false
+}

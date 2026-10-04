@@ -10,7 +10,8 @@
 | 실험 01 | R01 전체 학습/테스트를 사용하는 기본 파이프라인 pilot | 완료: R01 15개 테스트 영상 평가 | [결과](results/experiment01/metrics.json) · [설정](configs/experiment01.json) |
 | 실험 02 | 정상 trajectory 기반 phase 추정 | 완료: phase만 교체한 비교 | [결과와 한계](docs/EXPERIMENT02.md) |
 | 실험 03 | 정상 이동 영역 기반 제품 재검출 | 완료: 관측 개선, 최종 결합 성능 저하 | [결과·의의·추천 3개](docs/EXPERIMENT03.md) |
-| 다음 실험 04 | 정상 궤적의 진행량 기반 공정 점수 | 다음 단계 계획, 미실행 | [계획](docs/EXPERIMENT04_PLAN.md) |
+| 실험 04 | 정상 phase별 진행량 기반 공정 점수 | 완료: AUROC/AP·recall 상승, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT04.md) |
+| 다음 실험 05 | 여러 연속 관측의 진행량 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT05_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -176,7 +177,38 @@ export PYTHONPATH=src
 | 2 | **관측 상태와 실제 부재 구분** | 빈 벨트·검출 누락·재관측을 구분하고 정상 오탐과 제품 누락 이상을 함께 점검 |
 | 3 | **공정 기여를 검증하는 결합·보정** | Visual 단독/고정 결합/정상 신뢰도 결합 비교. test 지표로 가중치 탐색 금지 |
 
-[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT03.md) · [다음 실험 04 계획](docs/EXPERIMENT04_PLAN.md) · [지표](results/experiment03/metrics.json) · [관측 진단](results/experiment03/observations.json)
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT03.md) · [실험 04 계획](docs/EXPERIMENT04_PLAN.md) · [지표](results/experiment03/metrics.json) · [관측 진단](results/experiment03/observations.json)
+
+## 실험 04 결과 — 정상 phase별 진행량 추가
+
+동일 track의 인접 관측에서 원본 프레임당 진행량을 계산하고, phase별 정상 median/MAD 편차를 기존 공정 점수에 추가했습니다. 미관측·track 변경 시 진행량은 사용하지 않습니다. 실험 03의 특징·phase·Visual 및 기존 전이 점수가 보존됐는지 검사했습니다.
+
+| 지표 | 실험 03 | 실험 04 |
+|---|---:|---:|
+| Visual AUROC | 0.6514 | 0.6514 |
+| Visual AP | 0.4260 | 0.4260 |
+| Process AUROC | 0.5388 | 0.6738 |
+| Process AP | 0.3603 | 0.6167 |
+| Combined AUROC | 0.5814 | 0.6846 |
+| Combined AP | 0.4018 | 0.6298 |
+| 정상 q99에서 테스트 정상 오탐률 | 2.96% | 9.95% |
+| 정상 q99에서 테스트 이상 recall | 3.83% | 41.95% |
+
+![실험 03–04 비교](results/comparison03_04/comparison.png)
+
+**의의:** 외형과 phase를 고정한 상태에서 시간적 진행량이 추가 이상 신호를 제공할 가능성을 확인했습니다. Combined AUROC +0.1032, AP +0.2279입니다. 이는 R01 개발 결과이며 phase 조건화의 독립 기여나 알고리즘 novelty·일반화 입증은 아닙니다.
+
+**보완할 점:** 정상 오탐률도 2.96%→9.95%로 늘었습니다. 오탐 구간 41개 중 30개가 4프레임 이하였지만, 실제 이상과 겹치는 경보도 짧은 경우가 있어 단순 제거는 위험합니다. 진행량 유효 관측률은 테스트 sampled 시점 기준 93.85%이며 실제 부재와 검출 실패 문제는 남아 있습니다. 각 모델의 정상 q99에서 비교했으므로 동일 테스트 오탐률 비교가 아닙니다.
+
+### 실험 04 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **여러 연속 관측으로 진행량 추정** | 단일 간격 변동을 줄이는 인과적 변위 계산. 관측률·오탐/recall·지연·짧은 이상 손실 함께 확인 |
+| 2 | **phase 조건의 필요성 분리 검증** | phase별/pooled 진행량 모델만 교체해 추가 복잡성의 기여 확인 |
+| 3 | **미사용 장면 적용성과 검증 분리** | 테스트 성능과 무관하게 다른 장면을 선택하고 정상 데이터로만 파이프라인 적합 |
+
+[상세 보고서](docs/EXPERIMENT04.md) · [지표](results/experiment04/metrics.json) · [오류 진단](results/experiment04/error_diagnosis.json) · [다음 실험 05 계획](docs/EXPERIMENT05_PLAN.md)
 
 ## 로컬 VLM
 

@@ -1,0 +1,12 @@
+{
+  "tests_passed": 17,
+  "feature_sequences_checked": 49,
+  "test_prediction_sequences_checked": 15,
+  "all_experiment03_feature_arrays_preserved": true,
+  "visual_and_transition_predictions_identical": true,
+  "invalid_motion_dense_frames": 207,
+  "invalid_motion_keeps_previous_combined_exactly": true,
+  "labels_identical": true,
+  "scores_finite": true,
+  "verification_scope": "Feature preservation, branch isolation, explicit missing-motion behavior, causal motion unit tests. No phase/localization ground truth validation."
+}

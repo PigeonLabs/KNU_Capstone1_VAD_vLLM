@@ -8,6 +8,7 @@ from sklearn.metrics import roc_auc_score,average_precision_score
 from threadpoolctl import threadpool_limits
 from ipad_vad.data import evaluation_labels,hold_scores
 from ipad_vad.scoring import Baseline
+from ipad_vad.kinematic_scoring import KinematicBaseline
 
 
 def metrics(labels,scores):
@@ -23,14 +24,14 @@ def main():
     p.add_argument('--config',type=Path,default=Path('configs/experiment01.json'))
     args=p.parse_args();cfg=json.loads(args.config.read_text());scene=cfg['scene']
     experiment='experiment'+cfg['experiment']
-    out=Path('results')/experiment;process=json.loads(Path('results/experiment01/process_discovery.json').read_text())['process']
+    out=Path('results')/experiment;out.mkdir(parents=True,exist_ok=True);process=json.loads(Path('results/experiment01/process_discovery.json').read_text())['process']
     split=json.loads(Path('results/stage00/splits.json').read_text())[scene]
     root=Path('artifacts')/experiment/'features'/scene
     def load(part,seq):
         with np.load(root/f'{part}_{seq}.npz',allow_pickle=False) as f:return dict(f)
     fit=[load('training',seq) for seq in split['fit']]
     cal=[load('training',seq) for seq in split['calibration']]
-    model=Baseline(cfg,process)
+    model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
     with threadpool_limits(limits=4):
         model.fit(fit);model.calibrate(cal)
         predictions=[];all_labels=[];all_scores={k:[] for k in ['visual','process','combined']};rows=[]
@@ -43,6 +44,12 @@ def main():
             labels=evaluation_labels(np.load(args.data_root/scene/'test_label'/f'{int(seq.name):03}.npy'),int(data['frame_count']))
             all_labels.append(labels);saved={'labels':labels,'indices':data['indices'],'phases':data['phases']}
             row={'sequence':seq.name,'frames':len(labels),'positive_frames':int((labels==1).sum())}
+            if 'motion' in result:
+                saved['motion']=hold_scores(data['indices'],result['motion'],len(labels))
+                saved['motion_valid']=hold_scores(data['indices'],result['motion_valid'].astype(float),len(labels)).astype(bool)
+                saved['transition']=hold_scores(data['indices'],result['transition'],len(labels))
+                saved['motion_detection_index']=data['motion_detection_index']
+                row['motion_valid_frames']=int(saved['motion_valid'].sum())
             for branch in all_scores:
                 dense=hold_scores(data['indices'],result[branch],len(labels))
                 saved[branch]=dense;all_scores[branch].append(dense)
@@ -66,10 +73,17 @@ def main():
                 'subspaces':[{'role':k[0],'phase':k[1],'samples':v.n,'rank':v.rank} for k,v in sorted(model.spaces.items())],
                 'transition_probabilities':model.transition.tolist(),
                 'limitations':['Single R01 scene, single split/seed; not full IPAD.','No phase/object ground truth; no localization accuracy claimed.',
-                               'Appearance scoring excludes direct geometry residuals; spatial experiments use normal geometry for phase and optionally product ROI.',
+                               'Appearance scoring uses CLIP residuals; optional normal geometry/motion branches are specified in the experiment config.',
                                'Missed objects have no crop score; global branch remains.','PCA fallback pools normal phases if support is insufficient.',
                                'Phase assignments are proxies, not ground truth.','Frame-level AUPRC is reported as average precision (step integral).',
                                'Q99 alarm uses strict >; no per-test-video normalization.']}
+    if 'normal_progress' in cfg:
+        motion=np.concatenate([p['motion'] for p in predictions]);valid=np.concatenate([p['motion_valid'] for p in predictions])
+        result['motion_valid_only_metrics']=metrics(np.where(valid,y,-1),motion)
+        result['motion_test_valid_fraction']=float(valid.mean())
+        result['motion_model']={str(k):v for k,v in model.motion.models.items()}
+        result['motion_calibration_samples']=len(model.motion.reference)
+        result['limitations'].append('Motion-only metrics cover valid dense intervals only, not the full test set. Invalid motion retains transition score.')
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -78,6 +92,10 @@ def main():
     for (role,phase),space in model.spaces.items():
         arrays[f'mean_{role}_{phase}']=space.mean;arrays[f'basis_{role}_{phase}']=space.basis
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
+    if 'normal_progress' in cfg:
+        arrays['motion_reference']=model.motion.reference
+        for phase,parameters in model.motion.models.items():
+            arrays[f'motion_parameters_{phase}']=np.array([parameters['median'],parameters['scale'],parameters['samples']])
     np.savez_compressed(Path('artifacts')/experiment/'normal_model.npz',**arrays)
     print(json.dumps(result,indent=2))
 
