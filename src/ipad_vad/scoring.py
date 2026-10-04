@@ -82,8 +82,15 @@ class Baseline:
         roles={role for obs,_ in raw for role,_,_ in obs}
         self.calibration={role:np.concatenate([r for obs,_ in raw for current,_,r in obs if current==role]) for role in roles}
         self.process_reference=np.concatenate([p for _,p in raw])
+        self.fit_process_calibration(caches,raw)
         fused=np.concatenate([self.score(c)['combined'] for c in caches])
         self.threshold=float(np.quantile(fused,self.cfg['calibration_quantile'],method='higher'))
+
+    def fit_process_calibration(self,caches,raw):
+        """Extension point after global references exist, before fitting fused q99."""
+
+    def calibrate_process(self,data,process):
+        return empirical_percentile(self.process_reference,process)
 
     def score(self,data):
         raw,process=self.raw(data);visual=np.zeros(len(data['indices']));objects=[]
@@ -93,6 +100,6 @@ class Baseline:
             score=empirical_percentile(self.calibration[role],residual)
             np.maximum.at(visual,frames,score)
             objects.append((role,frames,score))
-        process=empirical_percentile(self.process_reference,process)
+        process=self.calibrate_process(data,process)
         w=self.cfg['visual_process_weight']
         return {'visual':visual,'process':process,'combined':w*visual+(1-w)*process,'objects':objects}

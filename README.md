@@ -15,7 +15,8 @@
 | 실험 06 | 진행량 phase 조건화 제거 비교 | 완료: 단순화 가능성, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT06.md) |
 | 실험 07 | 실제 장면 R03 적용성 | 완료: 진행량 추가로 ranking 저하, 상태 관측 실패 확인 | [결과·의의·추천 3개](docs/EXPERIMENT07.md) |
 | 실험 08 | R03 객체 관계 기반 잠재 상태 | 완료: 외형 ranking 상승, 결합 ranking 하락 | [결과·의의·추천 3개](docs/EXPERIMENT08.md) |
-| 다음 실험 09 | 이전 상태별 공정 점수 보정 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT09_PLAN.md) |
+| 실험 09 | 이전 상태별 공정 점수 보정 | 완료: 결합 ranking 상승, 프레임 recall 하락 | [결과·의의·추천 3개](docs/EXPERIMENT09.md) |
+| 다음 실험 10 | max 결합 및 Visual 단독 비교 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT10_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -343,6 +344,38 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **잠재 상태·관측 신뢰성 검증** | 상태 support를 의미 정확도와 구분. 정상 대표 관측·bbox/관계 품질 및 순서 안정성 점검 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT08.md) · [지표](results/experiment08/metrics.json) · [정상 보정 진단](results/experiment08/normal_process_calibration_diagnostic.json) · [실험 09 계획](docs/EXPERIMENT09_PLAN.md)
+
+## 실험 09 결과 — 이전 상태별 공정 점수 보정
+
+실험 08의 특징·phase·외형 모델·전이 원점수는 보존하고, 정상 전이 점수의 보정만 이전 상태별로 나눴습니다. 정상 상태별 percentile 중앙값 범위는 0.190~0.964에서 0.438~0.491로 줄었습니다. 보정에 사용한 정상 데이터의 진단이며 독립 일반화 결과는 아닙니다.
+
+| R03 지표 | 실험 08 | 실험 09 |
+|---|---:|---:|
+| Visual AUROC | 0.7330 | 0.7330 |
+| Visual AP | 0.6778 | 0.6778 |
+| Process AUROC | 0.5520 | 0.4627 |
+| Process AP | 0.4693 | 0.4086 |
+| Combined AUROC | 0.6361 | 0.7108 |
+| Combined AP | 0.5496 | 0.6125 |
+| 정상 q99 기준 정상 오탐률 | 3.36% | 1.85% |
+| 정상 q99 기준 이상 프레임 recall | 10.36% | 2.29% |
+| 경보가 발생한 GT 이상 구간 | 11 / 17 | 11 / 17 |
+
+![실험 08–09 비교](results/comparison08_09/comparison.png)
+
+**의의:** 보정만 바꿔 Combined AUROC +0.0747, AP +0.0629를 확인했습니다. 그러나 Process ranking은 하락했고 Visual 단독보다도 낮습니다. 정상 보정과 실제 공정 이해의 개선을 구분할 근거이며 novelty나 일반화 입증은 아닙니다.
+
+**보완할 점:** 평균 결합에서 상태 유지 점수의 상한은 0.719~0.745로 정상 q99 0.958을 넘지 못합니다. 상태 유지 이상 4,884프레임에서 경보가 없었고 전체 recall은 2.29%입니다. 경보는 상태 변경 구간에 집중돼 그 구간의 정상 156프레임 중 128프레임도 오탐입니다. 동일한 GT 11개 구간을 탐지했으며 공통 지연 변화 중앙값은 0프레임입니다. 각 모델의 정상 q99 비교이고, R03은 개발 장면입니다.
+
+### 실험 09 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **외형 점수를 낮추지 않는 결합** | 평균을 max로 바꾸고 Visual 단독도 비교. 상태 유지 탐지와 상태 전환 오탐의 상충 평가 |
+| 2 | **체류 시간 기반 공정 신호** | 같은 self-transition 반복의 한계를 정상 머무름 길이로 보완. 정상 대기·정지 및 경계 censoring 진단 |
+| 3 | **정상 보정·상태 관측의 안정성 검증** | calibration 4개 영상·희소 상태 16개 전이의 한계 점검. 영상 단위 support와 의미 정확도 구분 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT09.md) · [지표](results/experiment09/metrics.json) · [결합 실패 진단](results/experiment09/fusion_diagnostic.json) · [실험 10 계획](docs/EXPERIMENT10_PLAN.md)
 
 ## 로컬 VLM
 

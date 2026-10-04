@@ -1,0 +1,132 @@
+{
+  "feature_sequences_checked": 39,
+  "test_predictions_checked": 17,
+  "shared_normal_model_arrays_except_threshold_identical": true,
+  "all_features_phases_visual_objects_and_labels_identical": true,
+  "old_global_and_new_conditional_scores_reconstructed": true,
+  "conditional_references_from_normal_calibration_only": true,
+  "config_matches_pre_evaluation_freeze": true,
+  "sequences": [
+    {
+      "sequence": "R03_01.npz",
+      "sampled": 180,
+      "conditional": 179,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_02.npz",
+      "sampled": 169,
+      "conditional": 168,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_03.npz",
+      "sampled": 169,
+      "conditional": 168,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_04.npz",
+      "sampled": 171,
+      "conditional": 170,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_05.npz",
+      "sampled": 144,
+      "conditional": 143,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_06.npz",
+      "sampled": 146,
+      "conditional": 145,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_07.npz",
+      "sampled": 172,
+      "conditional": 171,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_08.npz",
+      "sampled": 174,
+      "conditional": 173,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_09.npz",
+      "sampled": 178,
+      "conditional": 177,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_10.npz",
+      "sampled": 162,
+      "conditional": 161,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_11.npz",
+      "sampled": 177,
+      "conditional": 176,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_12.npz",
+      "sampled": 211,
+      "conditional": 210,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_13.npz",
+      "sampled": 192,
+      "conditional": 191,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_14.npz",
+      "sampled": 227,
+      "conditional": 226,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_15.npz",
+      "sampled": 173,
+      "conditional": 172,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_16.npz",
+      "sampled": 183,
+      "conditional": 182,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    },
+    {
+      "sequence": "R03_17.npz",
+      "sampled": 179,
+      "conditional": 178,
+      "first_sample_fallback": 1,
+      "insufficient_support_fallback": 0
+    }
+  ],
+  "limitations": "Numerical and provenance checks; no semantic-state or localization accuracy claim.",
+  "tests_passed": 29
+}

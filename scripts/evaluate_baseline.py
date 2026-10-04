@@ -10,6 +10,7 @@ from ipad_vad.data import evaluation_labels,hold_scores
 from ipad_vad.scoring import Baseline
 from ipad_vad.experiment import load_process
 from ipad_vad.kinematic_scoring import KinematicBaseline
+from ipad_vad.process_calibration import StateCalibratedBaseline
 
 
 def metrics(labels,scores):
@@ -32,7 +33,11 @@ def main():
         with np.load(root/f'{part}_{seq}.npz',allow_pickle=False) as f:return dict(f)
     fit=[load('training',seq) for seq in split['fit']]
     cal=[load('training',seq) for seq in split['calibration']]
-    model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
+    if 'process_calibration' in cfg:
+        if 'normal_progress' in cfg:raise ValueError('Conditional process calibration with motion is not specified')
+        if cfg['process_calibration']['mode']!='previous_state':raise ValueError('Unknown process calibration mode')
+        model=StateCalibratedBaseline(cfg,process)
+    else:model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
     with threadpool_limits(limits=4):
         model.fit(fit);model.calibrate(cal)
         predictions=[];all_labels=[];all_scores={k:[] for k in ['visual','process','combined']};rows=[]
@@ -45,6 +50,8 @@ def main():
             labels=evaluation_labels(np.load(args.data_root/scene/'test_label'/f'{int(seq.name):03}.npy'),int(data['frame_count']))
             all_labels.append(labels);saved={'labels':labels,'indices':data['indices'],'phases':data['phases']}
             row={'sequence':seq.name,'frames':len(labels),'positive_frames':int((labels==1).sum())}
+            if 'process_calibration' in cfg:
+                saved['process_conditioned']=model.conditioning_mask(data)
             if 'motion' in result:
                 saved['motion']=hold_scores(data['indices'],result['motion'],len(labels))
                 saved['motion_valid']=hold_scores(data['indices'],result['motion_valid'].astype(float),len(labels)).astype(bool)
@@ -85,6 +92,11 @@ def main():
         result['motion_model']={str(k):v for k,v in model.motion.models.items()}
         result['motion_calibration_samples']=len(model.motion.reference)
         result['limitations'].append('Motion-only metrics cover valid dense intervals only, not the full test set. Invalid motion retains transition score.')
+    if 'process_calibration' in cfg:
+        result['process_calibration']={'mode':'previous_state','minimum_support':model.minimum_support,
+            'normal_transition_support':{str(k):len(v) for k,v in model.state_process_references.items()},
+            'test_sampled_conditional_fraction':float(np.concatenate([p['process_conditioned'] for p in predictions]).mean()),
+            'fallback':'Global reference for first observation or insufficient previous-state support.'}
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -93,6 +105,8 @@ def main():
     for (role,phase),space in model.spaces.items():
         arrays[f'mean_{role}_{phase}']=space.mean;arrays[f'basis_{role}_{phase}']=space.basis
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
+    if 'process_calibration' in cfg:
+        for state,reference in model.state_process_references.items():arrays[f'process_reference_state_{state}']=reference
     if 'normal_progress' in cfg:
         arrays['motion_reference']=model.motion.reference
         for phase,parameters in model.motion.models.items():
