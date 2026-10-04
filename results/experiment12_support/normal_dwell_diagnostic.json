@@ -1,0 +1,337 @@
+{
+  "scene": "R03",
+  "source": "NORMAL FIT and held-out NORMAL calibration only; no test access",
+  "complete_run_support": {
+    "1": 17,
+    "2": 36,
+    "3": 25,
+    "0": 4
+  },
+  "supported_durations": {
+    "1": [
+      192.0,
+      196.0,
+      204.0,
+      208.0,
+      208.0,
+      208.0,
+      208.0,
+      212.0,
+      216.0,
+      220.0,
+      220.0,
+      220.0,
+      224.0,
+      228.0,
+      232.0,
+      232.0,
+      244.0
+    ],
+    "2": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0,
+      16.0,
+      20.0,
+      20.0,
+      28.0,
+      32.0,
+      40.0,
+      40.0,
+      52.0,
+      56.0,
+      68.0,
+      72.0,
+      80.0,
+      96.0,
+      112.0,
+      112.0,
+      124.0,
+      128.0,
+      140.0,
+      160.0,
+      188.0,
+      204.0,
+      208.0,
+      216.0,
+      220.0,
+      220.0,
+      244.0
+    ],
+    "3": [
+      4.0,
+      4.0,
+      8.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0,
+      20.0,
+      20.0,
+      20.0,
+      24.0,
+      32.0,
+      36.0,
+      36.0,
+      40.0,
+      44.0,
+      52.0,
+      52.0,
+      56.0,
+      68.0,
+      72.0,
+      76.0,
+      84.0,
+      108.0
+    ]
+  },
+  "calibration_reference_samples": 424,
+  "groups": {
+    "fit": {
+      "samples": 3142,
+      "valid": 1923,
+      "valid_fraction": 0.6120305537873966,
+      "reason_counts": {
+        "0": 1923,
+        "1": 6,
+        "2": 1017,
+        "3": 196
+      },
+      "by_state": [
+        {
+          "state": 0,
+          "sampled_total": 1189,
+          "valid": 0,
+          "raw_min_median_max": null,
+          "percentile_min_median_max": null
+        },
+        {
+          "state": 1,
+          "sampled_total": 975,
+          "valid": 958,
+          "raw_min_median_max": [
+            0.0,
+            -0.0,
+            2.1972245773362196
+          ],
+          "percentile_min_median_max": [
+            0.25,
+            0.25,
+            0.9929245283018868
+          ]
+        },
+        {
+          "state": 2,
+          "sampled_total": 747,
+          "valid": 741,
+          "raw_min_median_max": [
+            0.0,
+            0.7205461547480597,
+            2.917770732084279
+          ],
+          "percentile_min_median_max": [
+            0.25,
+            0.7004716981132075,
+            0.9976415094339622
+          ]
+        },
+        {
+          "state": 3,
+          "sampled_total": 231,
+          "valid": 224,
+          "raw_min_median_max": [
+            0.0,
+            0.3677247801253174,
+            2.5649493574615367
+          ],
+          "percentile_min_median_max": [
+            0.25,
+            0.5825471698113207,
+            0.9952830188679245
+          ]
+        }
+      ]
+    },
+    "calibration": {
+      "samples": 703,
+      "valid": 424,
+      "valid_fraction": 0.6031294452347084,
+      "reason_counts": {
+        "0": 424,
+        "1": 0,
+        "2": 226,
+        "3": 53
+      },
+      "by_state": [
+        {
+          "state": 0,
+          "sampled_total": 268,
+          "valid": 0,
+          "raw_min_median_max": null,
+          "percentile_min_median_max": null
+        },
+        {
+          "state": 1,
+          "sampled_total": 211,
+          "valid": 211,
+          "raw_min_median_max": [
+            0.0,
+            0.0,
+            0.587786664902119
+          ],
+          "percentile_min_median_max": [
+            0.25,
+            0.25,
+            0.6426886792452831
+          ]
+        },
+        {
+          "state": 2,
+          "sampled_total": 208,
+          "valid": 197,
+          "raw_min_median_max": [
+            0.0,
+            0.9028677115420143,
+            2.917770732084279
+          ],
+          "percentile_min_median_max": [
+            0.25,
+            0.7617924528301887,
+            0.9976415094339622
+          ]
+        },
+        {
+          "state": 3,
+          "sampled_total": 16,
+          "valid": 16,
+          "raw_min_median_max": [
+            0.0,
+            0.1924832932799117,
+            0.6190392084062235
+          ],
+          "percentile_min_median_max": [
+            0.25,
+            0.5530660377358491,
+            0.6745283018867925
+          ]
+        }
+      ]
+    }
+  },
+  "raw_score": "-log((1 + count(D >= observed_age)) / (1 + n))",
+  "calibration": "Global empirical midrank of valid normal dwell raw scores only.",
+  "reason_codes": {
+    "0": "valid",
+    "1": "relation_missing",
+    "2": "entry_not_observed",
+    "3": "unsupported_entry_context"
+  },
+  "limitations": [
+    "Complete-run exclusion is not a censoring-aware survival estimator.",
+    "Cluster duration is not verified action duration.",
+    "Calibration samples are temporally correlated."
+  ],
+  "context_distribution": "pooled",
+  "complete_context_support": {
+    "0->1": 17,
+    "1->2": 18,
+    "2->3": 23,
+    "3->2": 16,
+    "3->0": 1,
+    "0->3": 2,
+    "2->0": 3,
+    "0->2": 2
+  },
+  "supported_context_durations": {
+    "0->1": [
+      192.0,
+      196.0,
+      204.0,
+      208.0,
+      208.0,
+      208.0,
+      208.0,
+      212.0,
+      216.0,
+      220.0,
+      220.0,
+      220.0,
+      224.0,
+      228.0,
+      232.0,
+      232.0,
+      244.0
+    ],
+    "1->2": [
+      16.0,
+      40.0,
+      68.0,
+      72.0,
+      80.0,
+      96.0,
+      112.0,
+      124.0,
+      128.0,
+      140.0,
+      160.0,
+      188.0,
+      204.0,
+      208.0,
+      216.0,
+      220.0,
+      220.0,
+      244.0
+    ],
+    "2->3": [
+      4.0,
+      8.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0,
+      20.0,
+      20.0,
+      20.0,
+      32.0,
+      36.0,
+      36.0,
+      40.0,
+      44.0,
+      52.0,
+      52.0,
+      56.0,
+      68.0,
+      72.0,
+      76.0,
+      84.0,
+      108.0
+    ],
+    "3->2": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      16.0,
+      20.0,
+      20.0,
+      28.0,
+      32.0,
+      40.0,
+      52.0,
+      56.0,
+      112.0
+    ]
+  }
+}

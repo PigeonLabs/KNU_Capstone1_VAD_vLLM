@@ -1,0 +1,171 @@
+{
+  "scene": "R03",
+  "thresholds": {
+    "11": 0.9977011494252873,
+    "12_support": 0.9976415094339622,
+    "12": 0.9976415094339622
+  },
+  "valid_test_frames": {
+    "11": {
+      "normal": 3912,
+      "anomaly": 3102
+    },
+    "12_support": {
+      "normal": 3864,
+      "anomaly": 3046
+    },
+    "12": {
+      "normal": 3864,
+      "anomaly": 3046
+    }
+  },
+  "alarm_changes": {
+    "11->12_support": {
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "lost": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "both": {
+        "normal": 442,
+        "anomaly": 1329
+      }
+    },
+    "12_support->12": {
+      "added": {
+        "normal": 68,
+        "anomaly": 24
+      },
+      "lost": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "both": {
+        "normal": 442,
+        "anomaly": 1329
+      }
+    },
+    "11->12": {
+      "added": {
+        "normal": 68,
+        "anomaly": 24
+      },
+      "lost": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "both": {
+        "normal": 442,
+        "anomaly": 1329
+      }
+    }
+  },
+  "supported_context_strata": {
+    "0->1": {
+      "frames": {
+        "normal": 1976,
+        "anomaly": 1180
+      },
+      "control_alarms": {
+        "normal": 28,
+        "anomaly": 296
+      },
+      "entry_alarms": {
+        "normal": 76,
+        "anomaly": 296
+      },
+      "entry_added_vs_control": {
+        "normal": 48,
+        "anomaly": 0
+      },
+      "entry_lost_vs_control": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    },
+    "1->2": {
+      "frames": {
+        "normal": 1706,
+        "anomaly": 1230
+      },
+      "control_alarms": {
+        "normal": 284,
+        "anomaly": 360
+      },
+      "entry_alarms": {
+        "normal": 284,
+        "anomaly": 360
+      },
+      "entry_added_vs_control": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "entry_lost_vs_control": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    },
+    "2->3": {
+      "frames": {
+        "normal": 166,
+        "anomaly": 484
+      },
+      "control_alarms": {
+        "normal": 69,
+        "anomaly": 317
+      },
+      "entry_alarms": {
+        "normal": 89,
+        "anomaly": 341
+      },
+      "entry_added_vs_control": {
+        "normal": 20,
+        "anomaly": 24
+      },
+      "entry_lost_vs_control": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    },
+    "3->2": {
+      "frames": {
+        "normal": 16,
+        "anomaly": 152
+      },
+      "control_alarms": {
+        "normal": 0,
+        "anomaly": 32
+      },
+      "entry_alarms": {
+        "normal": 0,
+        "anomaly": 32
+      },
+      "entry_added_vs_control": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "entry_lost_vs_control": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    }
+  },
+  "dwell_saturated_at_one": {
+    "11": {
+      "normal": 284,
+      "anomaly": 136
+    },
+    "12_support": {
+      "normal": 284,
+      "anomaly": 136
+    },
+    "12": {
+      "normal": 360,
+      "anomaly": 184
+    }
+  },
+  "note": "All thresholds fit on normal calibration per model. Support control changes gate and its resulting calibration; entry versus control isolates duration conditioning and its calibration on exactly matched observations."
+}

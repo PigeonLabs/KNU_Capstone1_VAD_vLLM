@@ -1,0 +1,26 @@
+{
+  "scene": "R03",
+  "unchanged_context": "0->1",
+  "fit_durations_identical": true,
+  "normal_calibration_raw_identical": true,
+  "normal_calibration_observations": 211,
+  "normal_raw_min_median_max": [
+    0.0,
+    0.0,
+    0.587786664902119
+  ],
+  "normal_percentile_min_median_max": {
+    "12_support": [
+      0.25,
+      0.25,
+      0.6426886792452831
+    ],
+    "12": [
+      0.2641509433962264,
+      0.2641509433962264,
+      0.8549528301886793
+    ]
+  },
+  "mechanism": "Entry 0->1 raw model is unchanged, but the global dwell calibration reference includes raw scores of other contexts that changed. Therefore its percentile can change without changing its own duration model.",
+  "limitation": "This is a mechanism check on the same normal calibration videos, not independent validation."
+}

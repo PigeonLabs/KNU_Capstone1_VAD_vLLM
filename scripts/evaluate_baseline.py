@@ -12,6 +12,7 @@ from ipad_vad.experiment import load_process
 from ipad_vad.kinematic_scoring import KinematicBaseline
 from ipad_vad.process_calibration import StateCalibratedBaseline
 from ipad_vad.dwell_scoring import DwellBaseline
+from ipad_vad.context_dwell_scoring import ContextDwellBaseline
 
 
 def metrics(labels,scores):
@@ -37,7 +38,8 @@ def main():
     if 'process_calibration' in cfg:
         if 'normal_progress' in cfg:raise ValueError('Conditional process calibration with motion is not specified')
         if cfg['process_calibration']['mode']!='previous_state':raise ValueError('Unknown process calibration mode')
-        model=DwellBaseline(cfg,process) if 'normal_dwell' in cfg else StateCalibratedBaseline(cfg,process)
+        if 'dwell_context' in cfg and 'normal_dwell' not in cfg:raise ValueError('Entry context requires dwell config')
+        model=ContextDwellBaseline(cfg,process) if 'dwell_context' in cfg else DwellBaseline(cfg,process) if 'normal_dwell' in cfg else StateCalibratedBaseline(cfg,process)
     else:model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
     if 'normal_dwell' in cfg and 'process_calibration' not in cfg:raise ValueError('Dwell experiment requires previous-state process calibration')
     with threadpool_limits(limits=4):
@@ -58,6 +60,8 @@ def main():
                 for key in ('transition','dwell','dwell_age','dwell_reason','dwell_valid'):
                     saved[key]=hold_scores(data['indices'],result[key],len(labels))
                 row['dwell_valid_frames']=int(saved['dwell_valid'].sum())
+            if 'dwell_entry_context' in result:
+                saved['dwell_entry_context']=hold_scores(data['indices'],result['dwell_entry_context'],len(labels))
             if 'motion' in result:
                 saved['motion']=hold_scores(data['indices'],result['motion'],len(labels))
                 saved['motion_valid']=hold_scores(data['indices'],result['motion_valid'].astype(float),len(labels)).astype(bool)
@@ -81,6 +85,7 @@ def main():
         if 'normal_dwell' in cfg:
             for key in ('transition','dwell','dwell_valid','dwell_age','dwell_reason'):
                 cal_scores[key]=np.concatenate([r[key] for r in cal_results])
+        if 'dwell_context' in cfg:cal_scores['dwell_entry_context']=np.concatenate([r['dwell_entry_context'] for r in cal_results])
         np.savez_compressed(Path('artifacts')/experiment/'normal_calibration_scores.npz',**cal_scores,
                             phases=np.concatenate([d['phases'] for d in cal]),
                             sequence=np.concatenate([np.full(len(d['phases']),seq) for seq,d in zip(split['calibration'],cal)]))
@@ -120,6 +125,11 @@ def main():
             'reason_counts':{str(i):int((np.concatenate([p['dwell_reason'] for p in predictions])==i).sum()) for i in range(4)},
             'reason_codes':{'0':'valid','1':'relation_missing','2':'entry_not_observed','3':'unsupported_state'}}
         result['limitations'].append('Dwell-only metrics cover valid intervals only. Unsupported, missing and unobserved-entry intervals retain the transition branch; cluster duration is not action-duration ground truth.')
+        if 'dwell_context' in cfg:
+            result['dwell']['reason_codes']['3']='unsupported_entry_context'
+            result['dwell']['context_distribution']=model.dwell.distribution
+            result['dwell']['complete_context_support']=model.dwell.context_support
+            result['dwell']['supported_contexts']=[f'{a}->{b}' for a,b in sorted(model.dwell.context_durations)]
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -133,6 +143,8 @@ def main():
     if 'normal_dwell' in cfg:
         arrays['dwell_reference']=model.dwell.reference
         for state,durations in model.dwell.durations.items():arrays[f'dwell_durations_state_{state}']=durations
+        if 'dwell_context' in cfg:
+            for (a,b),durations in model.dwell.context_durations.items():arrays[f'dwell_context_durations_{a}_{b}']=durations
     if 'normal_progress' in cfg:
         arrays['motion_reference']=model.motion.reference
         for phase,parameters in model.motion.models.items():

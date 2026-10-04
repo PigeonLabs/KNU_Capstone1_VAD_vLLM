@@ -18,7 +18,8 @@
 | 실험 09 | 이전 상태별 공정 점수 보정 | 완료: 결합 ranking 상승, 프레임 recall 하락 | [결과·의의·추천 3개](docs/EXPERIMENT09.md) |
 | 실험 10 | max 결합 및 Visual 단독 비교 | 완료: 평균 결합 억제 해소, 추가 공정 기여 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT10.md) |
 | 실험 11 | 관측된 진입 이후 체류 시간 신호 | 완료: 결합 ranking 하락, 추가 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT11.md) |
-| 다음 실험 12 | 진입 맥락별 체류 시간 및 동일 support 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT12_PLAN.md) |
+| 실험 12 | 진입 맥락별 체류 시간 및 동일 support 대조 | 완료: 조건화 후 결합 성능 저하, 보정 간섭 확인 | [결과·의의·추천 3개](docs/EXPERIMENT12.md) |
+| 다음 실험 13 | 정상 영상 단위 보정 holdout 검증 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT13_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -436,6 +437,34 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **관계 상태와 실제 동작 대응** | 의미 GT 부재와 약한 체류 구별력 점검. 군집 재방문·jitter·가림과 실제 지속 구분 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT11.md) · [지표](results/experiment11/metrics.json) · [체류 오류 진단](results/experiment11/dwell_diagnostic.json) · [정상 진입 맥락](results/experiment11/normal_entry_context_diagnostic.json) · [실험 12 계획](docs/EXPERIMENT12_PLAN.md)
+
+## 실험 12 결과 — 진입 맥락별 체류 시간
+
+진입별 길이 모델과 동일 유효 구간의 상태별 길이 대조군을 함께 평가했습니다. 두 설정 모두 테스트 체류 가용성은 57.56%이며 기존 Visual·전이 점수는 동일합니다.
+
+| R03 지표 | 11 상태별 | 12_support 대조 | 12 진입별 |
+|---|---:|---:|---:|
+| Combined AUROC | 0.7005 | 0.7006 | 0.6968 |
+| Combined AP | 0.6055 | 0.6055 | 0.5953 |
+| 정상 q99 기준 정상 오탐률 | 6.37% | 6.37% | 7.35% |
+| 정상 q99 기준 이상 프레임 recall | 26.22% | 26.22% | 26.70% |
+| 경보가 발생한 GT 이상 구간 | 11 / 17 | 11 / 17 | 11 / 17 |
+
+![실험 12 대조 비교](results/comparison11_12_support_12/comparison.png)
+
+**의의:** 동일 support 대조로 구간 제외 효과와 길이 조건화 효과를 분리했습니다. 조건화는 이번 결과에서 개선을 지지하지 않았으며, 다른 맥락의 raw 변화가 공유 CDF를 통해 길이 모델이 그대로인 맥락에도 영향을 주는 현상을 확인했습니다. novelty·일반화 입증은 아닙니다.
+
+**보완할 점:** 대조군보다 정상 오탐 68프레임과 이상 탐지 24프레임이 추가됐고 새 이상 구간은 탐지하지 못했습니다. 길이가 그대로인 0→1에서도 오탐 48프레임이 추가됐습니다. 정상 4개 영상의 보정 결과만으로 다른 정상 영상에서의 안정성을 판단하기 어렵습니다. 12와 대조군의 q99는 이번 실행에서 같았지만 동일 테스트 오탐률 비교는 아닙니다.
+
+### 실험 12 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **정상 영상 단위 보정 검증** | 정상 4개 영상을 하나씩 제외하고 나머지 3개로 모든 reference/q99 적합. 제외 영상의 오탐·support 확인 |
+| 2 | **맥락 간 보정 간섭 완화** | 같은 raw의 percentile 변화 진단. 충분한 support에서 보정만 분리하되 희소 맥락 불안정성 점검 |
+| 3 | **관계 상태의 의미·관측 재검증** | 약한 체류 구별력과 기존 오탐 원인 확인. 실제 정상 대기·재방문과 군집/검출 오류 구분 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT12.md) · [12 지표](results/experiment12/metrics.json) · [대조군 지표](results/experiment12_support/metrics.json) · [보정 간섭 진단](results/comparison11_12_support_12/calibration_interference.json) · [실험 13 계획](docs/EXPERIMENT13_PLAN.md)
 
 ## 로컬 VLM
 

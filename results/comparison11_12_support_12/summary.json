@@ -1,0 +1,44 @@
+{
+  "scene": "R03",
+  "seed": 42,
+  "test_frames": 12005,
+  "rows": [
+    {
+      "experiment": "11",
+      "visual_auroc": 0.7329639662589645,
+      "visual_average_precision": 0.6778070187815984,
+      "process_auroc": 0.523048114050243,
+      "process_average_precision": 0.42397795480285505,
+      "combined_auroc": 0.7004917637927273,
+      "combined_average_precision": 0.6055016423097205,
+      "normal_q99_threshold": 0.9977011494252873,
+      "test_normal_frame_alarm_rate": 0.06371630387775695,
+      "test_anomaly_frame_recall_at_q99": 0.2622336227308603
+    },
+    {
+      "experiment": "12_support",
+      "visual_auroc": 0.7329639662589645,
+      "visual_average_precision": 0.6778070187815984,
+      "process_auroc": 0.525320795036715,
+      "process_average_precision": 0.42475965098393986,
+      "combined_auroc": 0.7005751617983886,
+      "combined_average_precision": 0.6055458595488931,
+      "normal_q99_threshold": 0.9976415094339622,
+      "test_normal_frame_alarm_rate": 0.06371630387775695,
+      "test_anomaly_frame_recall_at_q99": 0.2622336227308603
+    },
+    {
+      "experiment": "12",
+      "visual_auroc": 0.7329639662589645,
+      "visual_average_precision": 0.6778070187815984,
+      "process_auroc": 0.5277538436752738,
+      "process_average_precision": 0.42850682823079944,
+      "combined_auroc": 0.6968283385740579,
+      "combined_average_precision": 0.5952510939387154,
+      "normal_q99_threshold": 0.9976415094339622,
+      "test_normal_frame_alarm_rate": 0.07351881216664265,
+      "test_anomaly_frame_recall_at_q99": 0.26696921862667716
+    }
+  ],
+  "comparison_note": "Descriptive development scene; each model uses its own normal calibration q99. Not equal test FPR. No significance claim."
+}

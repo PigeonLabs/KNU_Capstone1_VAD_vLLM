@@ -3,6 +3,7 @@ import argparse,json
 from pathlib import Path
 import numpy as np
 from ipad_vad.dwell import NormalDwell
+from ipad_vad.context_dwell import ContextDwell
 
 
 def main():
@@ -11,7 +12,8 @@ def main():
     def load(seq):
         with np.load(f'artifacts/experiment{n}/features/{scene}/training_{seq}.npz') as d:return dict(d)
     fit=[load(s) for s in split['fit']];cal=[load(s) for s in split['calibration']]
-    m=NormalDwell(**cfg['normal_dwell']);m.fit(fit);m.calibrate(cal);groups={}
+    m=ContextDwell(**cfg['normal_dwell'],**cfg['dwell_context']) if 'dwell_context' in cfg else NormalDwell(**cfg['normal_dwell'])
+    m.fit(fit);m.calibrate(cal);groups={}
     for name,caches in [('fit',fit),('calibration',cal)]:
         phases=np.concatenate([d['phases'] for d in caches]);raws=[m.raw(d) for d in caches];raw=np.concatenate([r[0] for r in raws]);valid=np.concatenate([r[1] for r in raws]);reason=np.concatenate([r[3] for r in raws])
         scores=np.concatenate([m.score(d)[0] for d in caches]);by_state=[]
@@ -25,6 +27,10 @@ def main():
         'raw_score':'-log((1 + count(D >= observed_age)) / (1 + n))','calibration':'Global empirical midrank of valid normal dwell raw scores only.',
         'reason_codes':{'0':'valid','1':'relation_missing','2':'entry_not_observed','3':'unsupported_state'},
         'limitations':['Complete-run exclusion is not a censoring-aware survival estimator.','Cluster duration is not verified action duration.','Calibration samples are temporally correlated.']}
+    if 'dwell_context' in cfg:
+        out.update(context_distribution=m.distribution,complete_context_support=m.context_support,
+                   supported_context_durations={f'{a}->{b}':v.tolist() for (a,b),v in m.context_durations.items()})
+        out['reason_codes']['3']='unsupported_entry_context'
     Path(f'results/experiment{n}/normal_dwell_diagnostic.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
 
 if __name__=='__main__':main()

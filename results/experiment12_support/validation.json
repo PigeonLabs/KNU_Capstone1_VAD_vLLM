@@ -1,0 +1,12 @@
+{
+  "feature_sequences_checked_per_arm": 39,
+  "test_predictions_checked_per_arm": 17,
+  "same_features_phases_visual_transition_objects_labels": true,
+  "same_normal_state_models_except_dwell_reference_and_threshold": true,
+  "context_reference_and_scores_reconstructed": true,
+  "identical_context_masks_in_both_arms": true,
+  "control_raw_equals_original_on_supported_observations": true,
+  "normal_thresholds_reconstructed": true,
+  "config_code_and_source_hashes_match_freeze": true,
+  "artifact_validation_only": true
+}
