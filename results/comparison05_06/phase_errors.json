@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "experiment": "05",
+      "phase": 0,
+      "normal_frames": 853,
+      "false_alarm_frames": 0,
+      "normal_false_alarm_rate": 0.0,
+      "anomaly_frames": 295,
+      "detected_anomaly_frames": 0,
+      "anomaly_recall": 0.0
+    },
+    {
+      "experiment": "05",
+      "phase": 1,
+      "normal_frames": 615,
+      "false_alarm_frames": 50,
+      "normal_false_alarm_rate": 0.08130081300813008,
+      "anomaly_frames": 657,
+      "detected_anomaly_frames": 430,
+      "anomaly_recall": 0.654490106544901
+    },
+    {
+      "experiment": "05",
+      "phase": 2,
+      "normal_frames": 963,
+      "false_alarm_frames": 94,
+      "normal_false_alarm_rate": 0.0976116303219107,
+      "anomaly_frames": 302,
+      "detected_anomaly_frames": 100,
+      "anomaly_recall": 0.33112582781456956
+    },
+    {
+      "experiment": "06",
+      "phase": 0,
+      "normal_frames": 853,
+      "false_alarm_frames": 68,
+      "normal_false_alarm_rate": 0.07971864009378664,
+      "anomaly_frames": 295,
+      "detected_anomaly_frames": 88,
+      "anomaly_recall": 0.2983050847457627
+    },
+    {
+      "experiment": "06",
+      "phase": 1,
+      "normal_frames": 615,
+      "false_alarm_frames": 38,
+      "normal_false_alarm_rate": 0.061788617886178863,
+      "anomaly_frames": 657,
+      "detected_anomaly_frames": 382,
+      "anomaly_recall": 0.5814307458143074
+    },
+    {
+      "experiment": "06",
+      "phase": 2,
+      "normal_frames": 963,
+      "false_alarm_frames": 84,
+      "normal_false_alarm_rate": 0.08722741433021806,
+      "anomaly_frames": 302,
+      "detected_anomaly_frames": 100,
+      "anomaly_recall": 0.33112582781456956
+    }
+  ],
+  "note": "Post-evaluation descriptive diagnosis on proxy phases. Each model uses its own normal q99. No phase ground truth or causal attribution to threshold versus ranking."
+}

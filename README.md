@@ -12,7 +12,8 @@
 | 실험 03 | 정상 이동 영역 기반 제품 재검출 | 완료: 관측 개선, 최종 결합 성능 저하 | [결과·의의·추천 3개](docs/EXPERIMENT03.md) |
 | 실험 04 | 정상 phase별 진행량 기반 공정 점수 | 완료: AUROC/AP·recall 상승, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT04.md) |
 | 실험 05 | 여러 연속 관측의 진행량 | 완료: 오탐 감소, 관측 가용성 감소 | [결과·의의·추천 3개](docs/EXPERIMENT05.md) |
-| 다음 실험 06 | 진행량 phase 조건화 제거 비교 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT06_PLAN.md) |
+| 실험 06 | 진행량 phase 조건화 제거 비교 | 완료: 단순화 가능성, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT06.md) |
+| 다음 실험 07 | 미사용 실제 장면 R03 적용성 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT07_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -240,7 +241,41 @@ export PYTHONPATH=src
 | 2 | **미사용 장면·짧은 이상 검증** | 다른 공정과 이상 길이에서 정상 데이터만으로 적합하고 적용 한계 평가 |
 | 3 | **초기·미관측 구간의 이상 신호 보완** | 긴 첫 경보 지연과 관측 부재를 진단하고 정상 빈 벨트/실제 누락 구분 |
 
-[상세 보고서](docs/EXPERIMENT05.md) · [지표](results/experiment05/metrics.json) · [이벤트별 지연](results/comparison04_05/events.json) · [다음 실험 06 계획](docs/EXPERIMENT06_PLAN.md)
+[상세 보고서](docs/EXPERIMENT05.md) · [지표](results/experiment05/metrics.json) · [이벤트별 지연](results/comparison04_05/events.json) · [실험 06 계획](docs/EXPERIMENT06_PLAN.md)
+
+## 실험 06 결과 — 진행량 phase 조건화 제거
+
+동일한 12프레임 진행량을 phase별 모델 대신 하나의 pooled 정상 모델로 적합했습니다. 외형 PCA의 phase 조건화와 전이는 유지했습니다. 모든 입력 특징·관측 마스크·기존 branch가 보존됐는지 확인했습니다.
+
+| 지표 | 실험 05: phase 조건 | 실험 06: pooled |
+|---|---:|---:|
+| Visual AUROC | 0.6514 | 0.6514 |
+| Visual AP | 0.4260 | 0.4260 |
+| Process AUROC | 0.6889 | 0.6929 |
+| Process AP | 0.6502 | 0.6502 |
+| Combined AUROC | 0.6992 | 0.7049 |
+| Combined AP | 0.6584 | 0.6612 |
+| 정상 q99 기준 테스트 정상 오탐률 | 5.92% | 7.82% |
+| 정상 q99 기준 테스트 이상 recall | 42.26% | 45.45% |
+| 첫 경보 지연 중앙값 (원본 프레임) | 38.5 | 12.0 |
+| 경보가 발생한 GT 이상 구간 | 8 / 8 | 8 / 8 |
+| 진행량 모델 수 (fallback 포함) | 4 | 1 |
+
+![실험 05–06 비교](results/comparison05_06/comparison.png)
+
+**의의:** 진행량 모델을 4→1개로 줄여도 이번 R01의 ranking은 낮아지지 않았습니다. 진행량의 phase 조건이 필수라는 주장은 현재 결과가 지지하지 않습니다. 외형 PCA의 phase 조건까지 불필요하다는 뜻은 아닙니다.
+
+**보완할 점:** 오탐률이 5.92%→7.82%로 증가했습니다. phase 0의 이상 탐지 프레임이 0→88개로 늘면서 정상 오탐도 0→68개로 늘었습니다. 각 모델의 정상 q99가 달라졌으므로 지연 개선을 동일 오탐률에서의 우월성으로 해석하지 않습니다. AUROC/AP 차이도 작고 단일 장면 개발 결과에 한정됩니다.
+
+### 실험 06 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **미사용 실제 장면 R03 적용성** | 장면별 실행 구조를 분리하고 정상 discovery·관측 가정을 확인한 뒤 같은 R03 특징에서 진행량 추가 전후 비교 |
+| 2 | **정상 조건별 보정·오탐 진단** | 정상 진입/진행/이탈 및 관측 신뢰도를 진단. test 기반 phase별 threshold 최적화 금지 |
+| 3 | **독립 반복·짧은 이상 및 누락 검증** | 작은 지표 차이와 평가 공백을 seed/영상 단위 불확실성 및 다른 이상 길이로 확인 |
+
+[상세 보고서](docs/EXPERIMENT06.md) · [지표](results/experiment06/metrics.json) · [phase별 오류](results/comparison05_06/phase_errors.json) · [다음 실험 07 계획](docs/EXPERIMENT07_PLAN.md)
 
 ## 로컬 VLM
 

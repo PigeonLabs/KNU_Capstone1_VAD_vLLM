@@ -64,3 +64,18 @@ def test_longer_progress_requires_entire_track_window_and_is_causal():
     assert not progress_signal(d,chosen,0,lag_samples=3)[1].any()
     d['tracks'][2]=1
     assert not progress_signal(d,np.arange(6),0,lag_samples=3)[1].any()
+
+
+def test_pooled_progress_is_invariant_to_phase_and_has_only_one_model():
+    d=sample(np.r_[np.tile([.009,.010,.011],10),np.tile([.019,.020,.021],10)])
+    d['phases'][30:]=1
+    pooled=NormalProgress(condition_on_phase=False);pooled.fit([d]);pooled.calibrate([d])
+    conditional=NormalProgress();conditional.fit([d]);conditional.calibrate([d])
+    assert set(pooled.models)=={-1} and set(conditional.models)=={-1,0,1}
+    probe=sample([.010,.020]);a=pooled.score(probe)[0]
+    before=conditional.residual(probe)[0]
+    probe['phases'][:]=1
+    np.testing.assert_array_equal(a,pooled.score(probe)[0])
+    assert not np.array_equal(before,conditional.residual(probe)[0])
+    conditional.fit([sample(np.tile([.009,.010,.011],10))])
+    assert set(conditional.models)=={-1,0}, 'Refit must not retain old phase models'

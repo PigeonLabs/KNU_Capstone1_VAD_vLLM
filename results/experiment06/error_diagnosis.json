@@ -1,0 +1,245 @@
+{
+  "threshold": 0.9792140613151339,
+  "unchanged_visual_and_transition_predictions": true,
+  "scope": "post-evaluation error diagnosis; not used to tune this experiment",
+  "velocity_quantiles": {
+    "test_normal_valid": [
+      0.002175435920556386,
+      0.004077111681302388,
+      0.0048618366320927935,
+      0.005063392221927643,
+      0.005930975079536438
+    ],
+    "test_anomaly_valid": [
+      -5.101412534713745e-05,
+      0.002084059019883474,
+      0.004696955283482869,
+      0.005003397663434346,
+      0.007656087478001912
+    ]
+  },
+  "alarm_run_summary": {
+    "false_alarm": {
+      "runs": 34,
+      "median_frames": 4.0,
+      "max_frames": 16,
+      "fraction_runs_at_most_4_frames": 0.7647058823529411
+    },
+    "true_alarm": {
+      "runs": 18,
+      "median_frames": 6.0,
+      "max_frames": 188,
+      "fraction_runs_at_most_4_frames": 0.5
+    }
+  },
+  "sequences": [
+    {
+      "sequence": "01",
+      "normal_frames": 89,
+      "false_alarm_frames": 8,
+      "anomaly_frames": 141,
+      "detected_anomaly_frames": 92,
+      "false_alarm_runs_source_frames": [
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": [
+        12,
+        4,
+        8,
+        68
+      ]
+    },
+    {
+      "sequence": "02",
+      "normal_frames": 129,
+      "false_alarm_frames": 16,
+      "anomaly_frames": 127,
+      "detected_anomaly_frames": 100,
+      "false_alarm_runs_source_frames": [
+        4,
+        4,
+        8
+      ],
+      "true_alarm_runs_source_frames": [
+        88,
+        12
+      ]
+    },
+    {
+      "sequence": "03",
+      "normal_frames": 214,
+      "false_alarm_frames": 20,
+      "anomaly_frames": 195,
+      "detected_anomaly_frames": 188,
+      "false_alarm_runs_source_frames": [
+        12,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": [
+        188
+      ]
+    },
+    {
+      "sequence": "04",
+      "normal_frames": 101,
+      "false_alarm_frames": 28,
+      "anomaly_frames": 90,
+      "detected_anomaly_frames": 64,
+      "false_alarm_runs_source_frames": [
+        12,
+        16
+      ],
+      "true_alarm_runs_source_frames": [
+        64
+      ]
+    },
+    {
+      "sequence": "05",
+      "normal_frames": 198,
+      "false_alarm_frames": 22,
+      "anomaly_frames": 92,
+      "detected_anomaly_frames": 82,
+      "false_alarm_runs_source_frames": [
+        4,
+        10,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": [
+        82
+      ]
+    },
+    {
+      "sequence": "06",
+      "normal_frames": 13,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 220,
+      "detected_anomaly_frames": 16,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "07",
+      "normal_frames": 36,
+      "false_alarm_frames": 0,
+      "anomaly_frames": 195,
+      "detected_anomaly_frames": 20,
+      "false_alarm_runs_source_frames": [],
+      "true_alarm_runs_source_frames": [
+        12,
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "08",
+      "normal_frames": 41,
+      "false_alarm_frames": 8,
+      "anomaly_frames": 194,
+      "detected_anomaly_frames": 8,
+      "false_alarm_runs_source_frames": [
+        8
+      ],
+      "true_alarm_runs_source_frames": [
+        4,
+        4
+      ]
+    },
+    {
+      "sequence": "09",
+      "normal_frames": 229,
+      "false_alarm_frames": 16,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        8,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "10",
+      "normal_frames": 231,
+      "false_alarm_frames": 16,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "11",
+      "normal_frames": 232,
+      "false_alarm_frames": 20,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        12,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "12",
+      "normal_frames": 231,
+      "false_alarm_frames": 8,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "13",
+      "normal_frames": 229,
+      "false_alarm_frames": 8,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "14",
+      "normal_frames": 230,
+      "false_alarm_frames": 8,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    },
+    {
+      "sequence": "15",
+      "normal_frames": 228,
+      "false_alarm_frames": 12,
+      "anomaly_frames": 0,
+      "detected_anomaly_frames": 0,
+      "false_alarm_runs_source_frames": [
+        4,
+        4,
+        4
+      ],
+      "true_alarm_runs_source_frames": []
+    }
+  ]
+}

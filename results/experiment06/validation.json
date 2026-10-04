@@ -1,0 +1,15 @@
+{
+  "tests_passed": 21,
+  "feature_sequences_checked": 49,
+  "test_sequences_checked": 15,
+  "all_feature_arrays_identical_to_experiment05": true,
+  "visual_and_original_transition_predictions_identical": true,
+  "appearance_model_and_calibration_arrays_identical": true,
+  "valid_motion_mask_and_anchor_indices_identical": true,
+  "invalid_motion_combined_identical": true,
+  "labels_identical": true,
+  "scores_finite": true,
+  "motion_models_before": 4,
+  "motion_models_after": 1,
+  "scope": "Isolates motion conditioning only; appearance phase conditioning and transition grammar remain."
+}

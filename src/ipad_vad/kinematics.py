@@ -23,14 +23,15 @@ def progress_signal(data, chosen, axis, lag_samples=1):
 
 
 class NormalProgress:
-    def __init__(self, minimum_samples=10, scale_floor=1e-6):
-        self.minimum_samples=minimum_samples;self.scale_floor=scale_floor;self.models={}
+    def __init__(self, minimum_samples=10, scale_floor=1e-6, condition_on_phase=True):
+        self.minimum_samples=minimum_samples;self.scale_floor=scale_floor;self.condition_on_phase=condition_on_phase;self.models={}
 
     def fit(self,caches):
+        self.models={}
         values=np.concatenate([d['motion_velocity'][d['motion_valid']] for d in caches])
         phases=np.concatenate([d['phases'][d['motion_valid']] for d in caches])
         if len(values)<self.minimum_samples:raise ValueError('Insufficient valid normal motion')
-        for phase in [-1,*np.unique(phases).tolist()]:
+        for phase in ([-1,*np.unique(phases).tolist()] if self.condition_on_phase else [-1]):
             x=values if phase==-1 else values[phases==phase]
             if len(x)<self.minimum_samples:continue
             median=float(np.median(x));scale=max(float(1.4826*np.median(np.abs(x-median))),self.scale_floor)
