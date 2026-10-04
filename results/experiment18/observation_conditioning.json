@@ -1,0 +1,64 @@
+{
+  "normal_fit_phase_conditioning": {
+    "0": {
+      "all_samples": 126,
+      "observed_samples": 3,
+      "unobserved_samples": 123
+    },
+    "1": {
+      "all_samples": 1045,
+      "observed_samples": 698,
+      "unobserved_samples": 347
+    },
+    "2": {
+      "all_samples": 313,
+      "observed_samples": 94,
+      "unobserved_samples": 219
+    },
+    "3": {
+      "all_samples": 476,
+      "observed_samples": 328,
+      "unobserved_samples": 148
+    }
+  },
+  "test_observation_strata": {
+    "normal_observed_False": {
+      "frames": 1334,
+      "alarms": 120
+    },
+    "normal_observed_True": {
+      "frames": 2242,
+      "alarms": 259
+    },
+    "anomaly_observed_False": {
+      "frames": 1221,
+      "alarms": 258
+    },
+    "anomaly_observed_True": {
+      "frames": 3357,
+      "alarms": 412
+    }
+  },
+  "branch_exceedances": {
+    "visual": {
+      "normal": 359,
+      "anomaly": 666
+    },
+    "transition": {
+      "normal": 32,
+      "anomaly": 12
+    },
+    "dwell": {
+      "normal": 0,
+      "anomaly": 0
+    },
+    "process_only_over_visual": {
+      "normal": 20,
+      "anomaly": 4
+    }
+  },
+  "max_valid_dwell_score": 0.9935769969618897,
+  "max_valid_dwell_age": 72.0,
+  "q99": 0.997457627118644,
+  "interpretation": "Unobserved samples still receive held/initial phase and currently enter phase-specific appearance subspaces. Counts diagnose modelling assumptions, not phase ground-truth errors. Branch exceedances overlap."
+}

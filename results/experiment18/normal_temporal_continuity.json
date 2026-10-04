@@ -1,0 +1,348 @@
+{
+  "normal_fit_only": true,
+  "comparators": {
+    "17": {
+      "consecutive_same_track_pairs": 1868,
+      "sign_changes": 190,
+      "lost_relation_samples_vs_ungated": 555,
+      "lost_runs_vs_ungated": 136,
+      "one_sample_lost_runs_vs_ungated": 62,
+      "median_lost_run_samples": 2.0
+    },
+    "18": {
+      "consecutive_same_track_pairs": 1868,
+      "sign_changes": 78,
+      "lost_relation_samples_vs_ungated": 532,
+      "lost_runs_vs_ungated": 89,
+      "one_sample_lost_runs_vs_ungated": 27,
+      "median_lost_run_samples": 3.0
+    }
+  },
+  "sequences": {
+    "17": [
+      {
+        "sequence": "01",
+        "consecutive_same_track_pairs": 84,
+        "sign_changes": 9,
+        "lost_relation_samples_vs_ungated": 28,
+        "lost_runs_vs_ungated": 8,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "03",
+        "consecutive_same_track_pairs": 103,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 25,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 4
+      },
+      {
+        "sequence": "04",
+        "consecutive_same_track_pairs": 81,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 17,
+        "lost_runs_vs_ungated": 5,
+        "one_sample_lost_runs_vs_ungated": 2
+      },
+      {
+        "sequence": "05",
+        "consecutive_same_track_pairs": 117,
+        "sign_changes": 7,
+        "lost_relation_samples_vs_ungated": 19,
+        "lost_runs_vs_ungated": 5,
+        "one_sample_lost_runs_vs_ungated": 2
+      },
+      {
+        "sequence": "06",
+        "consecutive_same_track_pairs": 110,
+        "sign_changes": 10,
+        "lost_relation_samples_vs_ungated": 47,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 2
+      },
+      {
+        "sequence": "07",
+        "consecutive_same_track_pairs": 87,
+        "sign_changes": 9,
+        "lost_relation_samples_vs_ungated": 8,
+        "lost_runs_vs_ungated": 6,
+        "one_sample_lost_runs_vs_ungated": 5
+      },
+      {
+        "sequence": "09",
+        "consecutive_same_track_pairs": 93,
+        "sign_changes": 7,
+        "lost_relation_samples_vs_ungated": 56,
+        "lost_runs_vs_ungated": 11,
+        "one_sample_lost_runs_vs_ungated": 4
+      },
+      {
+        "sequence": "11",
+        "consecutive_same_track_pairs": 81,
+        "sign_changes": 5,
+        "lost_relation_samples_vs_ungated": 50,
+        "lost_runs_vs_ungated": 9,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "13",
+        "consecutive_same_track_pairs": 71,
+        "sign_changes": 11,
+        "lost_relation_samples_vs_ungated": 5,
+        "lost_runs_vs_ungated": 5,
+        "one_sample_lost_runs_vs_ungated": 5
+      },
+      {
+        "sequence": "14",
+        "consecutive_same_track_pairs": 78,
+        "sign_changes": 14,
+        "lost_relation_samples_vs_ungated": 9,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 6
+      },
+      {
+        "sequence": "16",
+        "consecutive_same_track_pairs": 96,
+        "sign_changes": 16,
+        "lost_relation_samples_vs_ungated": 25,
+        "lost_runs_vs_ungated": 8,
+        "one_sample_lost_runs_vs_ungated": 4
+      },
+      {
+        "sequence": "17",
+        "consecutive_same_track_pairs": 105,
+        "sign_changes": 15,
+        "lost_relation_samples_vs_ungated": 19,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 4
+      },
+      {
+        "sequence": "18",
+        "consecutive_same_track_pairs": 99,
+        "sign_changes": 5,
+        "lost_relation_samples_vs_ungated": 19,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 2
+      },
+      {
+        "sequence": "19",
+        "consecutive_same_track_pairs": 89,
+        "sign_changes": 10,
+        "lost_relation_samples_vs_ungated": 48,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 0
+      },
+      {
+        "sequence": "20",
+        "consecutive_same_track_pairs": 103,
+        "sign_changes": 17,
+        "lost_relation_samples_vs_ungated": 49,
+        "lost_runs_vs_ungated": 9,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "21",
+        "consecutive_same_track_pairs": 106,
+        "sign_changes": 17,
+        "lost_relation_samples_vs_ungated": 50,
+        "lost_runs_vs_ungated": 12,
+        "one_sample_lost_runs_vs_ungated": 7
+      },
+      {
+        "sequence": "22",
+        "consecutive_same_track_pairs": 98,
+        "sign_changes": 12,
+        "lost_relation_samples_vs_ungated": 45,
+        "lost_runs_vs_ungated": 8,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "23",
+        "consecutive_same_track_pairs": 81,
+        "sign_changes": 12,
+        "lost_relation_samples_vs_ungated": 27,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "24",
+        "consecutive_same_track_pairs": 90,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 2,
+        "lost_runs_vs_ungated": 1,
+        "one_sample_lost_runs_vs_ungated": 0
+      },
+      {
+        "sequence": "25",
+        "consecutive_same_track_pairs": 96,
+        "sign_changes": 8,
+        "lost_relation_samples_vs_ungated": 7,
+        "lost_runs_vs_ungated": 3,
+        "one_sample_lost_runs_vs_ungated": 2
+      }
+    ],
+    "18": [
+      {
+        "sequence": "01",
+        "consecutive_same_track_pairs": 84,
+        "sign_changes": 4,
+        "lost_relation_samples_vs_ungated": 27,
+        "lost_runs_vs_ungated": 6,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "03",
+        "consecutive_same_track_pairs": 103,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 24,
+        "lost_runs_vs_ungated": 7,
+        "one_sample_lost_runs_vs_ungated": 4
+      },
+      {
+        "sequence": "04",
+        "consecutive_same_track_pairs": 81,
+        "sign_changes": 0,
+        "lost_relation_samples_vs_ungated": 17,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "05",
+        "consecutive_same_track_pairs": 117,
+        "sign_changes": 4,
+        "lost_relation_samples_vs_ungated": 20,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "06",
+        "consecutive_same_track_pairs": 110,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 46,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "07",
+        "consecutive_same_track_pairs": 87,
+        "sign_changes": 5,
+        "lost_relation_samples_vs_ungated": 7,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "09",
+        "consecutive_same_track_pairs": 93,
+        "sign_changes": 1,
+        "lost_relation_samples_vs_ungated": 56,
+        "lost_runs_vs_ungated": 9,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "11",
+        "consecutive_same_track_pairs": 81,
+        "sign_changes": 3,
+        "lost_relation_samples_vs_ungated": 50,
+        "lost_runs_vs_ungated": 8,
+        "one_sample_lost_runs_vs_ungated": 0
+      },
+      {
+        "sequence": "13",
+        "consecutive_same_track_pairs": 71,
+        "sign_changes": 0,
+        "lost_relation_samples_vs_ungated": 0,
+        "lost_runs_vs_ungated": 0,
+        "one_sample_lost_runs_vs_ungated": 0
+      },
+      {
+        "sequence": "14",
+        "consecutive_same_track_pairs": 78,
+        "sign_changes": 6,
+        "lost_relation_samples_vs_ungated": 6,
+        "lost_runs_vs_ungated": 3,
+        "one_sample_lost_runs_vs_ungated": 2
+      },
+      {
+        "sequence": "16",
+        "consecutive_same_track_pairs": 96,
+        "sign_changes": 10,
+        "lost_relation_samples_vs_ungated": 22,
+        "lost_runs_vs_ungated": 5,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "17",
+        "consecutive_same_track_pairs": 105,
+        "sign_changes": 3,
+        "lost_relation_samples_vs_ungated": 16,
+        "lost_runs_vs_ungated": 3,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "18",
+        "consecutive_same_track_pairs": 99,
+        "sign_changes": 1,
+        "lost_relation_samples_vs_ungated": 18,
+        "lost_runs_vs_ungated": 2,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "19",
+        "consecutive_same_track_pairs": 89,
+        "sign_changes": 7,
+        "lost_relation_samples_vs_ungated": 47,
+        "lost_runs_vs_ungated": 6,
+        "one_sample_lost_runs_vs_ungated": 0
+      },
+      {
+        "sequence": "20",
+        "consecutive_same_track_pairs": 103,
+        "sign_changes": 7,
+        "lost_relation_samples_vs_ungated": 51,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "21",
+        "consecutive_same_track_pairs": 106,
+        "sign_changes": 11,
+        "lost_relation_samples_vs_ungated": 49,
+        "lost_runs_vs_ungated": 9,
+        "one_sample_lost_runs_vs_ungated": 3
+      },
+      {
+        "sequence": "22",
+        "consecutive_same_track_pairs": 98,
+        "sign_changes": 4,
+        "lost_relation_samples_vs_ungated": 47,
+        "lost_runs_vs_ungated": 5,
+        "one_sample_lost_runs_vs_ungated": 2
+      },
+      {
+        "sequence": "23",
+        "consecutive_same_track_pairs": 81,
+        "sign_changes": 4,
+        "lost_relation_samples_vs_ungated": 23,
+        "lost_runs_vs_ungated": 4,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "24",
+        "consecutive_same_track_pairs": 90,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 1,
+        "lost_runs_vs_ungated": 1,
+        "one_sample_lost_runs_vs_ungated": 1
+      },
+      {
+        "sequence": "25",
+        "consecutive_same_track_pairs": 96,
+        "sign_changes": 2,
+        "lost_relation_samples_vs_ungated": 5,
+        "lost_runs_vs_ungated": 1,
+        "one_sample_lost_runs_vs_ungated": 0
+      }
+    ]
+  },
+  "note": "Relation-loss runs are measured against the same ungated experiment16 observations. Sign stability does not establish correct semantic identity; persistent wrong candidates can be stabilized."
+}

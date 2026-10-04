@@ -24,7 +24,8 @@
 | 실험 15 | R04에서 고정 파이프라인 적용성 | 완료: 역할 오검출·q99=1 경보 불능 확인 | [결과·의의·추천 3개](docs/EXPERIMENT15.md) |
 | 실험 16 | 연속 체류 꼬리 점수·경보 가능성 | 완료: 경보 복구, 체류 없는 기준선과 동일 경보 | [결과·의의·추천 3개](docs/EXPERIMENT16.md) |
 | 실험 17 | 혼동 객체와 대조하는 anchor 역할 검증 | 완료: 일부 오검출 차단, ranking·체류 가용성 저하 | [결과·의의·추천 3개](docs/EXPERIMENT17.md) |
-| 다음 실험 18 | track 단위 인과적 semantic margin 집계 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT18_PLAN.md) |
+| 실험 18 | track 단위 인과적 semantic margin 집계 | 완료: 짧은 변동 감소, ranking 저하·오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT18.md) |
+| 다음 실험 19 | 관계 관측 여부를 반영하는 외형 subspace 선택 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT19_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -616,6 +617,38 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **정상 역할 검증 범위 확대** | 부품 자세·배경이 다양한 정상 crop 검토. 개발 사례와 별도 사례, 수작업 주석 범위를 구분 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT17.md) · [지표](results/experiment17/metrics.json) · [정상 역할/지원](results/experiment17/normal_anchor_audit.json) · [관측·경보 변화](results/experiment17/gate_diagnostic.json) · [정상 연속성](results/experiment17/normal_gate_continuity.json) · [실험 18 계획](docs/EXPERIMENT18_PLAN.md)
+
+## 실험 18 결과 — 시간적 안정성과 의미 오류의 구분
+
+같은 anchor track의 최근 3개 연속 관측 margin 중앙값으로 역할 gate를 판정했습니다. 미래 관측 없이 gap·track·영상 변경에서 초기화하고, 기존 특징을 유지한 채 정상 관계·점수 모델을 재적합했습니다.
+
+| R04 지표 | 실험 17 | 실험 18 |
+|---|---:|---:|
+| Combined AUROC / AP | 0.6711 / 0.6630 | 0.6655 / 0.6572 |
+| 정상 오탐률 | 10.15% (363프레임) | 10.60% (379프레임) |
+| 이상 프레임 recall | 14.48% | 14.64% |
+| 경보가 발생한 GT 이상 구간 | 14 / 26 | 15 / 26 |
+| 체류 유효 비율 | 4.03% | 5.11% |
+| 정상 같은-track margin 부호 전환 | 190 / 1,868쌍 | 78 / 1,868쌍 |
+| 정상 한 sample 관계 누락 구간 | 62 | 27 |
+
+두 모델의 정상 q99는 0.997457627로 같습니다. 정상 FIT 20개/calibration 5개, 테스트 19개·8,154프레임을 평가했습니다. 누락 구간은 동일한 실험 16 관측을 기준으로 계산합니다.
+
+![실험 18 정상 연속성과 관측 지원](results/experiment18/temporal_anchor.png)
+
+**의의:** 짧은 판정 변동 감소와 의미 정확도·최종 경보의 개선을 분리했습니다. 인과적 역할 집계를 구현했지만, 종합 ranking은 하락하고 정상 오탐은 순 16프레임 늘었습니다. 안정성이 전반적 개선이나 novelty를 입증하지 않습니다.
+
+**보완할 점:** 알려진 바이스 한 사례가 다시 통과해 오검출 5개 중 3개가 남았습니다. 체류의 추가 경보는 여전히 없고 전이가 Visual에 더한 경보는 정상 20/이상 4프레임입니다. 정상 FIT 837/1,960개는 관계를 관측하지 못했는데도 초기/이전 phase로 외형 모델을 학습합니다. 관측률을 역할 정확도로 해석하지 않으며 R04는 반복 개발 장면입니다.
+
+### 실험 18 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 근거 | 변경·검증 방향 |
+|---|---|---|
+| 1 | **관측 여부를 반영하는 외형 subspace 선택**: FIT 미관측 837개, latent 0 직접 관측 3/126개 | 관측 FIT만 phase PCA에 사용하고 미관측 때 역할별 전체 정상 PCA로 fallback. 공정 점수 고정, 전체/관측별 지표·지원 부족 평가. 누락 프레임도 평가에 포함 |
+| 2 | **관측 지원을 맞춘 대조 실험**: FIT 관계 +61/−39개와 후단 재적합이 혼재 | 같은 관측 mask에서 gate 효과 분리. 입력·지원 범위를 공개하고 subset 결과를 전체로 일반화하지 않음 |
+| 3 | **정상 역할 검증 범위 확대**: 집계로 바이스 오류 한 사례 복원 | 별도 정상 자세·배경 사례의 부품 누락/혼동 검토. 주석 범위·비용 공개, 테스트 이상 라벨로 gate 튜닝 금지 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT18.md) · [지표](results/experiment18/metrics.json) · [정상 연속성](results/experiment18/normal_temporal_continuity.json) · [관측 조건/branch](results/experiment18/observation_conditioning.json) · [검증](results/experiment18/validation.json) · [실험 19 계획](docs/EXPERIMENT19_PLAN.md)
 
 ## 로컬 VLM
 

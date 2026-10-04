@@ -1,0 +1,12 @@
+{
+  "feature_sequences_checked": 44,
+  "test_sequences_checked": 19,
+  "protocol_hashes_match": true,
+  "normal_relation_model_reproduced": true,
+  "raw_features_detections_tracks_preserved": true,
+  "causal_medians_independently_reconstructed": true,
+  "every_selected_anchor_passes_aggregated_margin": true,
+  "refitted_normal_scores_and_q99_reproduced": true,
+  "preflight_and_final_calibration_identical": true,
+  "metrics_recomputed": true
+}

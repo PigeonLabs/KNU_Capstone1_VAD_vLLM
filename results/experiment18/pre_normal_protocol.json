@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-10-04T19:10:36.909431+00:00",
+  "stage": "Before normal FIT temporal gate outputs",
+  "file_sha256": {
+    "configs/experiment18.json": "e4e237b7ef61d8c197cbce40579efb7ac9c683f5b59b36d3eb5f7abd3850e38d",
+    "src/ipad_vad/temporal_anchor.py": "bf85d6d24ae82389bd9d45031a2019b0920d82b30aeebac4c3dd826946b2e297",
+    "artifacts/experiment17/anchor_text_features.npz": "c7a05f8b5b5f961f7f1d8d7b892725a0750477b75410d5bbbb867016eead3e34"
+  },
+  "fixed_decision": "Window 3 causal median of current/prior consecutive same-track observations; available prefix, gap reset, margin > 0, no prompt or threshold tuning."
+}

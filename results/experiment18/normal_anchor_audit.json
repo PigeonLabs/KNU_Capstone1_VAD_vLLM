@@ -1,0 +1,840 @@
+{
+  "scene": "R04",
+  "fit_only": true,
+  "normal_fit_support_passed": true,
+  "failure": null,
+  "sequences": [
+    {
+      "sequence": "01",
+      "sampled_frames": 78,
+      "anchor_boxes_before": 101,
+      "anchor_boxes_after": 72,
+      "anchor_observed_samples_before": 77,
+      "anchor_observed_samples_after": 57,
+      "anchor_margin_quantiles": [
+        -0.007050396621787134,
+        -0.0028542644749514085,
+        0.01433280151303631,
+        0.043843871464349995,
+        0.11393703446484518
+      ],
+      "valid_relations_before": 43,
+      "valid_relations_after": 44,
+      "phase_counts": [
+        0,
+        22,
+        32,
+        24
+      ]
+    },
+    {
+      "sequence": "03",
+      "sampled_frames": 116,
+      "anchor_boxes_before": 133,
+      "anchor_boxes_after": 103,
+      "anchor_observed_samples_before": 110,
+      "anchor_observed_samples_after": 89,
+      "anchor_margin_quantiles": [
+        -0.013965368536729009,
+        0.0018055595444740648,
+        0.02463876231828943,
+        0.062134390173700614,
+        0.08027986471414991
+      ],
+      "valid_relations_before": 66,
+      "valid_relations_after": 67,
+      "phase_counts": [
+        3,
+        24,
+        70,
+        19
+      ]
+    },
+    {
+      "sequence": "04",
+      "sampled_frames": 102,
+      "anchor_boxes_before": 102,
+      "anchor_boxes_after": 85,
+      "anchor_observed_samples_before": 95,
+      "anchor_observed_samples_after": 79,
+      "anchor_margin_quantiles": [
+        -0.011117425816964566,
+        0.010523639595439326,
+        0.014790140531249827,
+        0.04762605901886789,
+        0.07997894021515148
+      ],
+      "valid_relations_before": 50,
+      "valid_relations_after": 50,
+      "phase_counts": [
+        7,
+        71,
+        14,
+        10
+      ]
+    },
+    {
+      "sequence": "05",
+      "sampled_frames": 110,
+      "anchor_boxes_before": 142,
+      "anchor_boxes_after": 122,
+      "anchor_observed_samples_before": 109,
+      "anchor_observed_samples_after": 90,
+      "anchor_margin_quantiles": [
+        -0.009169953541554338,
+        0.00804563343427907,
+        0.01638232038286299,
+        0.049534908523949164,
+        0.08082111304351446
+      ],
+      "valid_relations_before": 79,
+      "valid_relations_after": 78,
+      "phase_counts": [
+        3,
+        52,
+        9,
+        46
+      ]
+    },
+    {
+      "sequence": "06",
+      "sampled_frames": 112,
+      "anchor_boxes_before": 124,
+      "anchor_boxes_after": 75,
+      "anchor_observed_samples_before": 112,
+      "anchor_observed_samples_after": 68,
+      "anchor_margin_quantiles": [
+        -0.007740158470495832,
+        -0.002691543039407289,
+        0.0054628358974161935,
+        0.0101934535221511,
+        0.07670154837583393
+      ],
+      "valid_relations_before": 51,
+      "valid_relations_after": 52,
+      "phase_counts": [
+        7,
+        27,
+        21,
+        57
+      ]
+    },
+    {
+      "sequence": "07",
+      "sampled_frames": 97,
+      "anchor_boxes_before": 100,
+      "anchor_boxes_after": 93,
+      "anchor_observed_samples_before": 92,
+      "anchor_observed_samples_after": 87,
+      "anchor_margin_quantiles": [
+        -0.010263601240033907,
+        0.00948228094609967,
+        0.01208885099049107,
+        0.01578193166404224,
+        0.09641417573154946
+      ],
+      "valid_relations_before": 72,
+      "valid_relations_after": 72,
+      "phase_counts": [
+        8,
+        42,
+        4,
+        43
+      ]
+    },
+    {
+      "sequence": "09",
+      "sampled_frames": 105,
+      "anchor_boxes_before": 112,
+      "anchor_boxes_after": 51,
+      "anchor_observed_samples_before": 102,
+      "anchor_observed_samples_after": 48,
+      "anchor_margin_quantiles": [
+        -0.015743265560356726,
+        -0.006269744561144187,
+        -0.002285402785783427,
+        0.008607506528427435,
+        0.07515870901700132
+      ],
+      "valid_relations_before": 35,
+      "valid_relations_after": 35,
+      "phase_counts": [
+        4,
+        57,
+        44,
+        0
+      ]
+    },
+    {
+      "sequence": "11",
+      "sampled_frames": 85,
+      "anchor_boxes_before": 97,
+      "anchor_boxes_after": 44,
+      "anchor_observed_samples_before": 85,
+      "anchor_observed_samples_after": 39,
+      "anchor_margin_quantiles": [
+        -0.011788602004404564,
+        -0.005912817386758102,
+        -0.0014751882671858868,
+        0.016887097683782416,
+        0.10449806710774595
+      ],
+      "valid_relations_before": 24,
+      "valid_relations_after": 24,
+      "phase_counts": [
+        6,
+        44,
+        30,
+        5
+      ]
+    },
+    {
+      "sequence": "13",
+      "sampled_frames": 96,
+      "anchor_boxes_before": 89,
+      "anchor_boxes_after": 89,
+      "anchor_observed_samples_before": 82,
+      "anchor_observed_samples_after": 82,
+      "anchor_margin_quantiles": [
+        0.00027295588240543525,
+        0.008218074998401494,
+        0.01610198860754807,
+        0.02428821471338658,
+        0.07334869800390692
+      ],
+      "valid_relations_before": 61,
+      "valid_relations_after": 66,
+      "phase_counts": [
+        7,
+        56,
+        9,
+        24
+      ]
+    },
+    {
+      "sequence": "14",
+      "sampled_frames": 81,
+      "anchor_boxes_before": 88,
+      "anchor_boxes_after": 82,
+      "anchor_observed_samples_before": 81,
+      "anchor_observed_samples_after": 75,
+      "anchor_margin_quantiles": [
+        -0.007780057605629755,
+        0.005554575554999866,
+        0.010226218851685634,
+        0.015512582573666108,
+        0.08088926860525628
+      ],
+      "valid_relations_before": 65,
+      "valid_relations_after": 68,
+      "phase_counts": [
+        5,
+        50,
+        0,
+        26
+      ]
+    },
+    {
+      "sequence": "16",
+      "sampled_frames": 94,
+      "anchor_boxes_before": 109,
+      "anchor_boxes_after": 86,
+      "anchor_observed_samples_before": 94,
+      "anchor_observed_samples_after": 74,
+      "anchor_margin_quantiles": [
+        -0.010206244850710929,
+        0.0008134705471132837,
+        0.004915130680102724,
+        0.01168602455937393,
+        0.08942706297876116
+      ],
+      "valid_relations_before": 60,
+      "valid_relations_after": 63,
+      "phase_counts": [
+        0,
+        61,
+        0,
+        33
+      ]
+    },
+    {
+      "sequence": "17",
+      "sampled_frames": 93,
+      "anchor_boxes_before": 121,
+      "anchor_boxes_after": 100,
+      "anchor_observed_samples_before": 93,
+      "anchor_observed_samples_after": 79,
+      "anchor_margin_quantiles": [
+        -0.007886468226363144,
+        0.0025922109295766094,
+        0.01187356005480505,
+        0.022993520787967632,
+        0.08487435509160005
+      ],
+      "valid_relations_before": 64,
+      "valid_relations_after": 67,
+      "phase_counts": [
+        5,
+        45,
+        19,
+        24
+      ]
+    },
+    {
+      "sequence": "18",
+      "sampled_frames": 103,
+      "anchor_boxes_before": 111,
+      "anchor_boxes_after": 92,
+      "anchor_observed_samples_before": 102,
+      "anchor_observed_samples_after": 85,
+      "anchor_margin_quantiles": [
+        -0.014245579467323624,
+        0.008745657120002984,
+        0.014071659860312193,
+        0.018194700360657335,
+        0.08261316139109365
+      ],
+      "valid_relations_before": 68,
+      "valid_relations_after": 69,
+      "phase_counts": [
+        11,
+        69,
+        4,
+        19
+      ]
+    },
+    {
+      "sequence": "19",
+      "sampled_frames": 99,
+      "anchor_boxes_before": 101,
+      "anchor_boxes_after": 54,
+      "anchor_observed_samples_before": 97,
+      "anchor_observed_samples_after": 52,
+      "anchor_margin_quantiles": [
+        -0.016327509946303193,
+        -0.008961766309995794,
+        0.006129188761999927,
+        0.0125115150112687,
+        0.07243078657851826
+      ],
+      "valid_relations_before": 35,
+      "valid_relations_after": 36,
+      "phase_counts": [
+        7,
+        91,
+        0,
+        1
+      ]
+    },
+    {
+      "sequence": "20",
+      "sampled_frames": 101,
+      "anchor_boxes_before": 109,
+      "anchor_boxes_after": 55,
+      "anchor_observed_samples_before": 101,
+      "anchor_observed_samples_after": 52,
+      "anchor_margin_quantiles": [
+        -0.015838852750624903,
+        -0.00785593143529593,
+        0.0004509567637064546,
+        0.007681128070878944,
+        0.07160586858083008
+      ],
+      "valid_relations_before": 34,
+      "valid_relations_after": 32,
+      "phase_counts": [
+        15,
+        62,
+        14,
+        10
+      ]
+    },
+    {
+      "sequence": "21",
+      "sampled_frames": 105,
+      "anchor_boxes_before": 117,
+      "anchor_boxes_after": 67,
+      "anchor_observed_samples_before": 105,
+      "anchor_observed_samples_after": 62,
+      "anchor_margin_quantiles": [
+        -0.012965449762568223,
+        -0.005504965605248565,
+        0.0005596192489559192,
+        0.009011741649217263,
+        0.07754285522487053
+      ],
+      "valid_relations_before": 47,
+      "valid_relations_after": 48,
+      "phase_counts": [
+        5,
+        59,
+        27,
+        14
+      ]
+    },
+    {
+      "sequence": "22",
+      "sampled_frames": 95,
+      "anchor_boxes_before": 107,
+      "anchor_boxes_after": 58,
+      "anchor_observed_samples_before": 95,
+      "anchor_observed_samples_after": 55,
+      "anchor_margin_quantiles": [
+        -0.011097233483110248,
+        -0.005265037484200388,
+        0.0023891153241215836,
+        0.014338548672839221,
+        0.09371385427217781
+      ],
+      "valid_relations_before": 40,
+      "valid_relations_after": 38,
+      "phase_counts": [
+        7,
+        24,
+        15,
+        49
+      ]
+    },
+    {
+      "sequence": "23",
+      "sampled_frames": 95,
+      "anchor_boxes_before": 94,
+      "anchor_boxes_after": 71,
+      "anchor_observed_samples_before": 89,
+      "anchor_observed_samples_after": 66,
+      "anchor_margin_quantiles": [
+        -0.013667409374232846,
+        0.000367971399904533,
+        0.005227540733797826,
+        0.015161311178373407,
+        0.0741776941110642
+      ],
+      "valid_relations_before": 50,
+      "valid_relations_after": 54,
+      "phase_counts": [
+        8,
+        77,
+        0,
+        10
+      ]
+    },
+    {
+      "sequence": "24",
+      "sampled_frames": 92,
+      "anchor_boxes_before": 98,
+      "anchor_boxes_after": 96,
+      "anchor_observed_samples_before": 91,
+      "anchor_observed_samples_after": 91,
+      "anchor_margin_quantiles": [
+        -0.005288684217593433,
+        0.006439900711714424,
+        0.008493239908574623,
+        0.010941598999186153,
+        0.06825728826881224
+      ],
+      "valid_relations_before": 78,
+      "valid_relations_after": 79,
+      "phase_counts": [
+        9,
+        68,
+        1,
+        14
+      ]
+    },
+    {
+      "sequence": "25",
+      "sampled_frames": 101,
+      "anchor_boxes_before": 107,
+      "anchor_boxes_after": 102,
+      "anchor_observed_samples_before": 101,
+      "anchor_observed_samples_after": 96,
+      "anchor_margin_quantiles": [
+        -0.003375874209112331,
+        0.007330042305245706,
+        0.0097907273353944,
+        0.012582870855574003,
+        0.08648602223314893
+      ],
+      "valid_relations_before": 79,
+      "valid_relations_after": 81,
+      "phase_counts": [
+        9,
+        44,
+        0,
+        48
+      ]
+    }
+  ],
+  "qualitative_cases": [
+    {
+      "sequence": "01",
+      "source_frame": 0,
+      "old_selected_anchor_detection": 1,
+      "candidates": [
+        {
+          "detection_index": 1,
+          "track": 1,
+          "box": [
+            0.5875831246376038,
+            0.48930829763412476,
+            0.9997588992118835,
+            1.0
+          ],
+          "raw_margin": 0.021141590047563438,
+          "margin": 0.021141590047563438,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "sequence": "01",
+      "source_frame": 156,
+      "old_selected_anchor_detection": -1,
+      "candidates": [
+        {
+          "detection_index": 143,
+          "track": 1,
+          "box": [
+            0.5892658829689026,
+            0.49159225821495056,
+            1.0,
+            0.9998205900192261
+          ],
+          "raw_margin": -0.007756247940097412,
+          "margin": -0.007050396621787134,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "sequence": "01",
+      "source_frame": 308,
+      "old_selected_anchor_detection": -1,
+      "candidates": [
+        {
+          "detection_index": 273,
+          "track": 18,
+          "box": [
+            0.589153528213501,
+            0.4903719127178192,
+            0.9997628927230835,
+            0.9999713897705078
+          ],
+          "raw_margin": -0.005291880400917383,
+          "margin": 0.0020643295514169314,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "sequence": "03",
+      "source_frame": 0,
+      "old_selected_anchor_detection": 1,
+      "candidates": [
+        {
+          "detection_index": 1,
+          "track": 1,
+          "box": [
+            0.5904804468154907,
+            0.495878666639328,
+            0.9998453855514526,
+            0.999901533126831
+          ],
+          "raw_margin": 0.00691049720043058,
+          "margin": 0.00691049720043058,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "sequence": "03",
+      "source_frame": 232,
+      "old_selected_anchor_detection": -1,
+      "candidates": [
+        {
+          "detection_index": 209,
+          "track": 8,
+          "box": [
+            0.5828479528427124,
+            0.4977603554725647,
+            0.9999420642852783,
+            0.9999616742134094
+          ],
+          "raw_margin": -0.009396711504022983,
+          "margin": -0.005264524000527109,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "sequence": "03",
+      "source_frame": 460,
+      "old_selected_anchor_detection": 414,
+      "candidates": [
+        {
+          "detection_index": 414,
+          "track": 28,
+          "box": [
+            0.5611108541488647,
+            0.0,
+            0.797646164894104,
+            0.3708479404449463
+          ],
+          "raw_margin": 0.07416754520766833,
+          "margin": 0.07416754520766833,
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "contexts": {
+    "3->1": {
+      "runs": 8,
+      "distinct_videos": 5,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "01",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "13",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "16",
+          "duration_frames": 40.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 68.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 8.0
+        }
+      ]
+    },
+    "1->3": {
+      "runs": 12,
+      "distinct_videos": 9,
+      "supported": true,
+      "observations": [
+        {
+          "sequence": "01",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "04",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "05",
+          "duration_frames": 36.0
+        },
+        {
+          "sequence": "07",
+          "duration_frames": 40.0
+        },
+        {
+          "sequence": "13",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 28.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 12.0
+        },
+        {
+          "sequence": "14",
+          "duration_frames": 16.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 24.0
+        },
+        {
+          "sequence": "23",
+          "duration_frames": 8.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 32.0
+        },
+        {
+          "sequence": "25",
+          "duration_frames": 20.0
+        }
+      ]
+    },
+    "3->0": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 12.0
+        }
+      ]
+    },
+    "0->3": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 4.0
+        }
+      ]
+    },
+    "3->2": {
+      "runs": 2,
+      "distinct_videos": 2,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 20.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 8.0
+        }
+      ]
+    },
+    "2->3": {
+      "runs": 2,
+      "distinct_videos": 2,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "03",
+          "duration_frames": 4.0
+        },
+        {
+          "sequence": "17",
+          "duration_frames": 24.0
+        }
+      ]
+    },
+    "1->2": {
+      "runs": 1,
+      "distinct_videos": 1,
+      "supported": false,
+      "observations": [
+        {
+          "sequence": "13",
+          "duration_frames": 4.0
+        }
+      ]
+    }
+  },
+  "supported_contexts": [
+    "1->3"
+  ],
+  "model": {
+    "descriptor_names": [
+      "relative_center_x",
+      "relative_center_y",
+      "log_area_ratio",
+      "iou",
+      "anchor_center_x",
+      "anchor_center_y"
+    ],
+    "area_gates": {
+      "1": {
+        "normal_boxes": 1597,
+        "area_upper": 0.21158000361228899,
+        "excluded_fraction": 0.14026299311208515
+      },
+      "0": {
+        "normal_boxes": 2462,
+        "area_upper": 0.6152034895935014,
+        "excluded_fraction": 0.0036555645816409425
+      }
+    },
+    "normal_valid_pairs": 1123,
+    "median": [
+      -0.7527163028717041,
+      -0.591705322265625,
+      -0.3165469467639923,
+      0.01695145294070244,
+      0.7961745858192444,
+      0.7485998272895813
+    ],
+    "scale_iqr_with_floor": [
+      0.2895859479904175,
+      0.9046006379649043,
+      0.816973514854908,
+      0.07844923157244921,
+      0.05,
+      0.05
+    ],
+    "cluster_centers_scaled": [
+      [
+        35.059172692942006,
+        -1.0496724594385478,
+        -1.717771582094409,
+        -0.2160818226122136,
+        -6.03951076666514,
+        -1.5425507227579751
+      ],
+      [
+        -0.4483685750605553,
+        -0.2032314202022188,
+        0.0025553731605593988,
+        0.0012657364512380087,
+        0.1485194364044928,
+        -0.02369428944793084
+      ],
+      [
+        1.7473401619014368,
+        1.9424771603365603,
+        0.5030120349649498,
+        0.29344618284083457,
+        -3.56790790849543,
+        -10.313326580093268
+      ],
+      [
+        0.7421336739697671,
+        0.45514861120454425,
+        -0.5003783237822654,
+        1.3589636163604268,
+        -0.013974692399909089,
+        -0.11800091804527812
+      ]
+    ],
+    "normal_cluster_samples": [
+      3,
+      698,
+      94,
+      328
+    ],
+    "median_normal_relative_position_for_label_permutation": [
+      0.08695652173913043,
+      0.28536328536328537,
+      0.7015352162193835,
+      0.7064448400200831
+    ],
+    "ordering_note": "Normal FIT relative frame position ONLY orders cluster IDs. It is not a phase label or a test-time input.",
+    "semantic_note": "latent_0..k-1 have no verified mapping to actions or original VLM phases."
+  },
+  "interpretation": "Gate acceptance is not object accuracy. The six normal cases are qualitative checks; no test labels or margin tuning used."
+}

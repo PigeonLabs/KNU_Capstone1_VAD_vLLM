@@ -1,0 +1,8 @@
+{
+  "created_at_utc": "2026-10-04T19:13:24.637509+00:00",
+  "stage": "After normal feasibility, before experiment18 test scoring",
+  "file_sha256": {
+    "results/experiment18/normal_feasibility.json": "eb9e2fd9a5c47b8fa4c186238e4a3b33e821f6d15d84834b29bd6750842a1f1b"
+  },
+  "decision": "Proceed with frozen settings; no threshold or model change."
+}
