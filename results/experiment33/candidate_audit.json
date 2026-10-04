@@ -1,0 +1,1262 @@
+{
+  "normal_only": true,
+  "partitions": {
+    "fit": {
+      "samples": 1960,
+      "valid_samples": 1123,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 47,
+          "no_positive_area": 0,
+          "semantic_excluded": 487,
+          "area_excluded": 100,
+          "no_joint_candidate": 47,
+          "candidate_available": 1279
+        },
+        "target": {
+          "no_raw_candidate": 149,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 9,
+          "no_joint_candidate": 0,
+          "candidate_available": 1802
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 99,
+        "area_excluded|no_raw_candidate": 1,
+        "candidate_available|area_excluded": 9,
+        "candidate_available|candidate_available": 1123,
+        "candidate_available|no_raw_candidate": 147,
+        "no_joint_candidate|candidate_available": 47,
+        "no_raw_candidate|candidate_available": 47,
+        "semantic_excluded|candidate_available": 486,
+        "semantic_excluded|no_raw_candidate": 1
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 20,
+          "no_selection": 681,
+          "prior_candidate_absent": 74,
+          "prior_candidate_filtered": 17,
+          "retained": 1168
+        },
+        "target": {
+          "first_selection": 20,
+          "no_selection": 158,
+          "prior_candidate_absent": 97,
+          "retained": 1685
+        }
+      }
+    },
+    "calibration": {
+      "samples": 482,
+      "valid_samples": 297,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 6,
+          "no_positive_area": 0,
+          "semantic_excluded": 103,
+          "area_excluded": 37,
+          "no_joint_candidate": 9,
+          "candidate_available": 327
+        },
+        "target": {
+          "no_raw_candidate": 32,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 1,
+          "no_joint_candidate": 0,
+          "candidate_available": 449
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 34,
+        "area_excluded|no_raw_candidate": 3,
+        "candidate_available|area_excluded": 1,
+        "candidate_available|candidate_available": 297,
+        "candidate_available|no_raw_candidate": 29,
+        "no_joint_candidate|candidate_available": 9,
+        "no_raw_candidate|candidate_available": 6,
+        "semantic_excluded|candidate_available": 103
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 5,
+          "no_selection": 155,
+          "prior_candidate_absent": 21,
+          "prior_candidate_filtered": 7,
+          "retained": 294
+        },
+        "target": {
+          "first_selection": 5,
+          "no_selection": 33,
+          "prior_candidate_absent": 17,
+          "retained": 427
+        }
+      }
+    }
+  },
+  "sequences": [
+    {
+      "sequence": "01",
+      "partition": "fit",
+      "samples": 78,
+      "valid_samples": 44,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 1,
+          "no_positive_area": 0,
+          "semantic_excluded": 20,
+          "area_excluded": 6,
+          "no_joint_candidate": 7,
+          "candidate_available": 44
+        },
+        "target": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 78
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 6,
+        "candidate_available|candidate_available": 44,
+        "no_joint_candidate|candidate_available": 7,
+        "no_raw_candidate|candidate_available": 1,
+        "semantic_excluded|candidate_available": 20
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 34,
+          "prior_candidate_absent": 5,
+          "prior_candidate_filtered": 1,
+          "retained": 37
+        },
+        "target": {
+          "first_selection": 1,
+          "prior_candidate_absent": 3,
+          "retained": 74
+        }
+      }
+    },
+    {
+      "sequence": "03",
+      "partition": "fit",
+      "samples": 116,
+      "valid_samples": 67,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 6,
+          "no_positive_area": 0,
+          "semantic_excluded": 21,
+          "area_excluded": 18,
+          "no_joint_candidate": 4,
+          "candidate_available": 67
+        },
+        "target": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 116
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 18,
+        "candidate_available|candidate_available": 67,
+        "no_joint_candidate|candidate_available": 4,
+        "no_raw_candidate|candidate_available": 6,
+        "semantic_excluded|candidate_available": 21
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 49,
+          "prior_candidate_absent": 19,
+          "prior_candidate_filtered": 2,
+          "retained": 45
+        },
+        "target": {
+          "first_selection": 1,
+          "prior_candidate_absent": 5,
+          "retained": 110
+        }
+      }
+    },
+    {
+      "sequence": "04",
+      "partition": "fit",
+      "samples": 102,
+      "valid_samples": 50,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 7,
+          "no_positive_area": 0,
+          "semantic_excluded": 16,
+          "area_excluded": 22,
+          "no_joint_candidate": 1,
+          "candidate_available": 56
+        },
+        "target": {
+          "no_raw_candidate": 7,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 95
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 21,
+        "area_excluded|no_raw_candidate": 1,
+        "candidate_available|candidate_available": 50,
+        "candidate_available|no_raw_candidate": 6,
+        "no_joint_candidate|candidate_available": 1,
+        "no_raw_candidate|candidate_available": 7,
+        "semantic_excluded|candidate_available": 16
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 46,
+          "prior_candidate_absent": 6,
+          "prior_candidate_filtered": 1,
+          "retained": 48
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 7,
+          "prior_candidate_absent": 8,
+          "retained": 86
+        }
+      }
+    },
+    {
+      "sequence": "05",
+      "partition": "fit",
+      "samples": 110,
+      "valid_samples": 78,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 1,
+          "no_positive_area": 0,
+          "semantic_excluded": 19,
+          "area_excluded": 7,
+          "no_joint_candidate": 1,
+          "candidate_available": 82
+        },
+        "target": {
+          "no_raw_candidate": 4,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 106
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 7,
+        "candidate_available|candidate_available": 78,
+        "candidate_available|no_raw_candidate": 4,
+        "no_joint_candidate|candidate_available": 1,
+        "no_raw_candidate|candidate_available": 1,
+        "semantic_excluded|candidate_available": 19
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 28,
+          "prior_candidate_absent": 5,
+          "retained": 76
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 4,
+          "prior_candidate_absent": 6,
+          "retained": 99
+        }
+      }
+    },
+    {
+      "sequence": "06",
+      "partition": "fit",
+      "samples": 112,
+      "valid_samples": 52,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 44,
+          "area_excluded": 4,
+          "no_joint_candidate": 2,
+          "candidate_available": 62
+        },
+        "target": {
+          "no_raw_candidate": 10,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 102
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 4,
+        "candidate_available|candidate_available": 52,
+        "candidate_available|no_raw_candidate": 10,
+        "no_joint_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 44
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 50,
+          "prior_candidate_absent": 2,
+          "prior_candidate_filtered": 1,
+          "retained": 58
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 10,
+          "prior_candidate_absent": 6,
+          "retained": 95
+        }
+      }
+    },
+    {
+      "sequence": "07",
+      "partition": "fit",
+      "samples": 97,
+      "valid_samples": 72,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 5,
+          "no_positive_area": 0,
+          "semantic_excluded": 5,
+          "area_excluded": 5,
+          "no_joint_candidate": 2,
+          "candidate_available": 80
+        },
+        "target": {
+          "no_raw_candidate": 8,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 89
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 5,
+        "candidate_available|candidate_available": 72,
+        "candidate_available|no_raw_candidate": 8,
+        "no_joint_candidate|candidate_available": 2,
+        "no_raw_candidate|candidate_available": 5,
+        "semantic_excluded|candidate_available": 5
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 17,
+          "prior_candidate_absent": 6,
+          "retained": 73
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 8,
+          "prior_candidate_absent": 5,
+          "retained": 83
+        }
+      }
+    },
+    {
+      "sequence": "09",
+      "partition": "fit",
+      "samples": 105,
+      "valid_samples": 35,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 3,
+          "no_positive_area": 0,
+          "semantic_excluded": 54,
+          "area_excluded": 3,
+          "no_joint_candidate": 2,
+          "candidate_available": 43
+        },
+        "target": {
+          "no_raw_candidate": 8,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 97
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 3,
+        "candidate_available|candidate_available": 35,
+        "candidate_available|no_raw_candidate": 8,
+        "no_joint_candidate|candidate_available": 2,
+        "no_raw_candidate|candidate_available": 3,
+        "semantic_excluded|candidate_available": 54
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 62,
+          "prior_candidate_absent": 4,
+          "retained": 38
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 8,
+          "prior_candidate_absent": 4,
+          "retained": 92
+        }
+      }
+    },
+    {
+      "sequence": "11",
+      "partition": "fit",
+      "samples": 85,
+      "valid_samples": 24,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 46,
+          "area_excluded": 3,
+          "no_joint_candidate": 4,
+          "candidate_available": 32
+        },
+        "target": {
+          "no_raw_candidate": 8,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 77
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 3,
+        "candidate_available|candidate_available": 24,
+        "candidate_available|no_raw_candidate": 8,
+        "no_joint_candidate|candidate_available": 4,
+        "semantic_excluded|candidate_available": 46
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 53,
+          "prior_candidate_absent": 3,
+          "prior_candidate_filtered": 2,
+          "retained": 26
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 8,
+          "prior_candidate_absent": 3,
+          "retained": 73
+        }
+      }
+    },
+    {
+      "sequence": "13",
+      "partition": "fit",
+      "samples": 96,
+      "valid_samples": 66,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 14,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 7,
+          "no_joint_candidate": 0,
+          "candidate_available": 75
+        },
+        "target": {
+          "no_raw_candidate": 9,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 87
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 7,
+        "candidate_available|candidate_available": 66,
+        "candidate_available|no_raw_candidate": 9,
+        "no_raw_candidate|candidate_available": 14
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 21,
+          "prior_candidate_absent": 9,
+          "retained": 65
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 9,
+          "prior_candidate_absent": 3,
+          "retained": 83
+        }
+      }
+    },
+    {
+      "sequence": "14",
+      "partition": "fit",
+      "samples": 81,
+      "valid_samples": 68,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 6,
+          "area_excluded": 2,
+          "no_joint_candidate": 0,
+          "candidate_available": 73
+        },
+        "target": {
+          "no_raw_candidate": 5,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 76
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 2,
+        "candidate_available|candidate_available": 68,
+        "candidate_available|no_raw_candidate": 5,
+        "semantic_excluded|candidate_available": 6
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 8,
+          "prior_candidate_absent": 2,
+          "prior_candidate_filtered": 1,
+          "retained": 69
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 5,
+          "prior_candidate_absent": 8,
+          "retained": 67
+        }
+      }
+    },
+    {
+      "sequence": "16",
+      "partition": "fit",
+      "samples": 94,
+      "valid_samples": 63,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 20,
+          "area_excluded": 0,
+          "no_joint_candidate": 2,
+          "candidate_available": 72
+        },
+        "target": {
+          "no_raw_candidate": 9,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 85
+        }
+      },
+      "failure_combinations": {
+        "candidate_available|candidate_available": 63,
+        "candidate_available|no_raw_candidate": 9,
+        "no_joint_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 20
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 22,
+          "prior_candidate_absent": 1,
+          "prior_candidate_filtered": 1,
+          "retained": 69
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 9,
+          "prior_candidate_absent": 6,
+          "retained": 78
+        }
+      }
+    },
+    {
+      "sequence": "17",
+      "partition": "fit",
+      "samples": 93,
+      "valid_samples": 67,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 14,
+          "area_excluded": 3,
+          "no_joint_candidate": 2,
+          "candidate_available": 74
+        },
+        "target": {
+          "no_raw_candidate": 7,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 86
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 3,
+        "candidate_available|candidate_available": 67,
+        "candidate_available|no_raw_candidate": 7,
+        "no_joint_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 14
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 19,
+          "prior_candidate_absent": 2,
+          "prior_candidate_filtered": 2,
+          "retained": 69
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 7,
+          "prior_candidate_absent": 2,
+          "retained": 83
+        }
+      }
+    },
+    {
+      "sequence": "18",
+      "partition": "fit",
+      "samples": 103,
+      "valid_samples": 69,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 1,
+          "no_positive_area": 0,
+          "semantic_excluded": 17,
+          "area_excluded": 3,
+          "no_joint_candidate": 1,
+          "candidate_available": 81
+        },
+        "target": {
+          "no_raw_candidate": 12,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 91
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 3,
+        "candidate_available|candidate_available": 69,
+        "candidate_available|no_raw_candidate": 12,
+        "no_joint_candidate|candidate_available": 1,
+        "no_raw_candidate|candidate_available": 1,
+        "semantic_excluded|candidate_available": 17
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 22,
+          "prior_candidate_absent": 1,
+          "prior_candidate_filtered": 1,
+          "retained": 78
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 12,
+          "prior_candidate_absent": 4,
+          "retained": 86
+        }
+      }
+    },
+    {
+      "sequence": "19",
+      "partition": "fit",
+      "samples": 99,
+      "valid_samples": 36,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 2,
+          "no_positive_area": 0,
+          "semantic_excluded": 45,
+          "area_excluded": 4,
+          "no_joint_candidate": 2,
+          "candidate_available": 46
+        },
+        "target": {
+          "no_raw_candidate": 10,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 89
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 4,
+        "candidate_available|candidate_available": 36,
+        "candidate_available|no_raw_candidate": 10,
+        "no_joint_candidate|candidate_available": 2,
+        "no_raw_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 45
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 53,
+          "prior_candidate_absent": 1,
+          "retained": 44
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 10,
+          "prior_candidate_absent": 4,
+          "retained": 84
+        }
+      }
+    },
+    {
+      "sequence": "20",
+      "partition": "fit",
+      "samples": 101,
+      "valid_samples": 32,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 49,
+          "area_excluded": 0,
+          "no_joint_candidate": 3,
+          "candidate_available": 49
+        },
+        "target": {
+          "no_raw_candidate": 17,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 1,
+          "no_joint_candidate": 0,
+          "candidate_available": 83
+        }
+      },
+      "failure_combinations": {
+        "candidate_available|area_excluded": 1,
+        "candidate_available|candidate_available": 32,
+        "candidate_available|no_raw_candidate": 16,
+        "no_joint_candidate|candidate_available": 3,
+        "semantic_excluded|candidate_available": 48,
+        "semantic_excluded|no_raw_candidate": 1
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 52,
+          "prior_candidate_absent": 1,
+          "prior_candidate_filtered": 2,
+          "retained": 45
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 18,
+          "prior_candidate_absent": 3,
+          "retained": 79
+        }
+      }
+    },
+    {
+      "sequence": "21",
+      "partition": "fit",
+      "samples": 105,
+      "valid_samples": 48,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 43,
+          "area_excluded": 2,
+          "no_joint_candidate": 6,
+          "candidate_available": 54
+        },
+        "target": {
+          "no_raw_candidate": 6,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 99
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 2,
+        "candidate_available|candidate_available": 48,
+        "candidate_available|no_raw_candidate": 6,
+        "no_joint_candidate|candidate_available": 6,
+        "semantic_excluded|candidate_available": 43
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 51,
+          "prior_candidate_absent": 1,
+          "prior_candidate_filtered": 1,
+          "retained": 51
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 6,
+          "prior_candidate_absent": 4,
+          "retained": 94
+        }
+      }
+    },
+    {
+      "sequence": "22",
+      "partition": "fit",
+      "samples": 95,
+      "valid_samples": 38,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 40,
+          "area_excluded": 2,
+          "no_joint_candidate": 7,
+          "candidate_available": 46
+        },
+        "target": {
+          "no_raw_candidate": 8,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 87
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 2,
+        "candidate_available|candidate_available": 38,
+        "candidate_available|no_raw_candidate": 8,
+        "no_joint_candidate|candidate_available": 7,
+        "semantic_excluded|candidate_available": 40
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 49,
+          "prior_candidate_absent": 2,
+          "prior_candidate_filtered": 1,
+          "retained": 42
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 8,
+          "prior_candidate_absent": 5,
+          "retained": 81
+        }
+      }
+    },
+    {
+      "sequence": "23",
+      "partition": "fit",
+      "samples": 95,
+      "valid_samples": 54,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 6,
+          "no_positive_area": 0,
+          "semantic_excluded": 23,
+          "area_excluded": 4,
+          "no_joint_candidate": 0,
+          "candidate_available": 62
+        },
+        "target": {
+          "no_raw_candidate": 7,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 1,
+          "no_joint_candidate": 0,
+          "candidate_available": 87
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 4,
+        "candidate_available|area_excluded": 1,
+        "candidate_available|candidate_available": 54,
+        "candidate_available|no_raw_candidate": 7,
+        "no_raw_candidate|candidate_available": 6,
+        "semantic_excluded|candidate_available": 23
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 33,
+          "prior_candidate_absent": 1,
+          "retained": 60
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 8,
+          "prior_candidate_absent": 6,
+          "retained": 80
+        }
+      }
+    },
+    {
+      "sequence": "24",
+      "partition": "fit",
+      "samples": 92,
+      "valid_samples": 79,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 1,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 1,
+          "candidate_available": 90
+        },
+        "target": {
+          "no_raw_candidate": 7,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 4,
+          "no_joint_candidate": 0,
+          "candidate_available": 81
+        }
+      },
+      "failure_combinations": {
+        "candidate_available|area_excluded": 4,
+        "candidate_available|candidate_available": 79,
+        "candidate_available|no_raw_candidate": 7,
+        "no_joint_candidate|candidate_available": 1,
+        "no_raw_candidate|candidate_available": 1
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 2,
+          "prior_candidate_absent": 1,
+          "prior_candidate_filtered": 1,
+          "retained": 87
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 11,
+          "prior_candidate_absent": 4,
+          "retained": 76
+        }
+      }
+    },
+    {
+      "sequence": "25",
+      "partition": "fit",
+      "samples": 101,
+      "valid_samples": 81,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 5,
+          "area_excluded": 5,
+          "no_joint_candidate": 0,
+          "candidate_available": 91
+        },
+        "target": {
+          "no_raw_candidate": 7,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 3,
+          "no_joint_candidate": 0,
+          "candidate_available": 91
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 5,
+        "candidate_available|area_excluded": 3,
+        "candidate_available|candidate_available": 81,
+        "candidate_available|no_raw_candidate": 7,
+        "semantic_excluded|candidate_available": 5
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 10,
+          "prior_candidate_absent": 2,
+          "retained": 88
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 10,
+          "prior_candidate_absent": 8,
+          "retained": 82
+        }
+      }
+    },
+    {
+      "sequence": "02",
+      "partition": "calibration",
+      "samples": 103,
+      "valid_samples": 56,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 2,
+          "no_positive_area": 0,
+          "semantic_excluded": 23,
+          "area_excluded": 20,
+          "no_joint_candidate": 1,
+          "candidate_available": 57
+        },
+        "target": {
+          "no_raw_candidate": 4,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 99
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 17,
+        "area_excluded|no_raw_candidate": 3,
+        "candidate_available|candidate_available": 56,
+        "candidate_available|no_raw_candidate": 1,
+        "no_joint_candidate|candidate_available": 1,
+        "no_raw_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 23
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 46,
+          "prior_candidate_absent": 13,
+          "prior_candidate_filtered": 4,
+          "retained": 39
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 4,
+          "prior_candidate_absent": 5,
+          "retained": 93
+        }
+      }
+    },
+    {
+      "sequence": "08",
+      "partition": "calibration",
+      "samples": 104,
+      "valid_samples": 82,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 2,
+          "no_positive_area": 0,
+          "semantic_excluded": 6,
+          "area_excluded": 4,
+          "no_joint_candidate": 0,
+          "candidate_available": 92
+        },
+        "target": {
+          "no_raw_candidate": 10,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 94
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 4,
+        "candidate_available|candidate_available": 82,
+        "candidate_available|no_raw_candidate": 10,
+        "no_raw_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 6
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 12,
+          "prior_candidate_absent": 2,
+          "prior_candidate_filtered": 1,
+          "retained": 88
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 10,
+          "prior_candidate_absent": 2,
+          "retained": 91
+        }
+      }
+    },
+    {
+      "sequence": "10",
+      "partition": "calibration",
+      "samples": 94,
+      "valid_samples": 55,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 21,
+          "area_excluded": 5,
+          "no_joint_candidate": 2,
+          "candidate_available": 66
+        },
+        "target": {
+          "no_raw_candidate": 11,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 83
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 5,
+        "candidate_available|candidate_available": 55,
+        "candidate_available|no_raw_candidate": 11,
+        "no_joint_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 21
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 28,
+          "prior_candidate_absent": 2,
+          "retained": 63
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 11,
+          "prior_candidate_absent": 3,
+          "retained": 79
+        }
+      }
+    },
+    {
+      "sequence": "12",
+      "partition": "calibration",
+      "samples": 96,
+      "valid_samples": 51,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 0,
+          "no_positive_area": 0,
+          "semantic_excluded": 35,
+          "area_excluded": 2,
+          "no_joint_candidate": 4,
+          "candidate_available": 55
+        },
+        "target": {
+          "no_raw_candidate": 4,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 0,
+          "no_joint_candidate": 0,
+          "candidate_available": 92
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 2,
+        "candidate_available|candidate_available": 51,
+        "candidate_available|no_raw_candidate": 4,
+        "no_joint_candidate|candidate_available": 4,
+        "semantic_excluded|candidate_available": 35
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 41,
+          "prior_candidate_absent": 2,
+          "prior_candidate_filtered": 2,
+          "retained": 50
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 4,
+          "prior_candidate_absent": 2,
+          "retained": 89
+        }
+      }
+    },
+    {
+      "sequence": "15",
+      "partition": "calibration",
+      "samples": 85,
+      "valid_samples": 53,
+      "role_reasons": {
+        "anchor": {
+          "no_raw_candidate": 2,
+          "no_positive_area": 0,
+          "semantic_excluded": 18,
+          "area_excluded": 6,
+          "no_joint_candidate": 2,
+          "candidate_available": 57
+        },
+        "target": {
+          "no_raw_candidate": 3,
+          "no_positive_area": 0,
+          "semantic_excluded": 0,
+          "area_excluded": 1,
+          "no_joint_candidate": 0,
+          "candidate_available": 81
+        }
+      },
+      "failure_combinations": {
+        "area_excluded|candidate_available": 6,
+        "candidate_available|area_excluded": 1,
+        "candidate_available|candidate_available": 53,
+        "candidate_available|no_raw_candidate": 3,
+        "no_joint_candidate|candidate_available": 2,
+        "no_raw_candidate|candidate_available": 2,
+        "semantic_excluded|candidate_available": 18
+      },
+      "selection_events": {
+        "anchor": {
+          "first_selection": 1,
+          "no_selection": 28,
+          "prior_candidate_absent": 2,
+          "retained": 54
+        },
+        "target": {
+          "first_selection": 1,
+          "no_selection": 4,
+          "prior_candidate_absent": 5,
+          "retained": 75
+        }
+      }
+    }
+  ],
+  "all_cached_phases_descriptors_selection_valid_and_margins_reproduced": true,
+  "score_or_model_changes": false,
+  "diagnostic_reason_order": [
+    "no_raw_candidate",
+    "no_positive_area",
+    "semantic_excluded",
+    "area_excluded",
+    "no_joint_candidate",
+    "candidate_available"
+  ],
+  "raw_candidate_definition": "Cached post-detector-threshold/NMS/role candidates, before relation-only semantic/area gates. Not all raw detector proposals."
+}

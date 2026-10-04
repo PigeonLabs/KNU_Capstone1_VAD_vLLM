@@ -1,0 +1,178 @@
+{
+  "reviewer": "Codex assistant exploratory visual inspection",
+  "normal_only": true,
+  "selection_frozen_before_review": true,
+  "source_images_published": false,
+  "accuracy_estimation": false,
+  "scope": "24 purposively sampled boundaries, three sampled frames each; qualitative observations, not human-validated object or action ground truth. Next frame is posthoc context only.",
+  "cases": [
+    {
+      "case_id": "02_0192",
+      "observation": "188에서 바이스로 보이는 anchor가 선택됐다가 192/196에서 같은 후보의 temporal margin이 음수가 되어 제외된다. target은 아래쪽 절단 cardboard로 보인다.",
+      "uncertainty": "칼날이 화면에 보이더라도 해당 raw anchor 후보가 없어 실제 객체 부재나 칼날의 semantic 탈락으로 해석할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "04_0352",
+      "observation": "348의 선택 anchor는 바이스로 보인다. 352/356의 horizontal/diagonal blade 후보는 margin 양수지만 면적 .227/.276으로 상한 .21158을 넘어 제외된다.",
+      "uncertainty": "선택 누락의 코드 원인은 면적이지만 후보의 정확한 역할과 동작 경계에는 정답 주석이 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "05_0320",
+      "observation": "바이스로 보이는 같은 anchor 후보의 margin이 +.0005, -.0006, +.0005로 바뀌며 320 한 sample에서 선택이 끊긴다. target box는 위아래 cardboard를 함께 포함한다.",
+      "uncertainty": "바이스 제외는 역할 검증의 바람직한 작동일 수 있어 이 누락을 무조건 복구 대상으로 볼 수 없다. target의 단일 객체 범위도 모호하다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "06_0256",
+      "observation": "252 바이스 anchor가 256에서 음수 margin으로 제외된다. 260에는 blade로 보이는 큰 후보(.245)는 semantic 통과/면적 실패, 바이스 후보(.205)는 면적 통과/semantic 실패다.",
+      "uncertainty": "교집합 부재를 확인했지만 칼날의 정확한 bbox 및 역할 정답은 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "08_0152",
+      "observation": "148 선택 바이스 anchor가 152/156 음수 margin으로 제외된다. 칼날은 기울어진 상태에서 세워지는 것으로 보이지만 이 세 frame의 anchor raw 후보는 바이스다. target은 아래쪽 cardboard다.",
+      "uncertainty": "semantic gate를 완화하면 바이스 선택을 되살릴 수 있다. 검출되지 않은 칼날의 원인은 이 사례만으로 확정할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "12_0144",
+      "observation": "140에서 바이스로 보이는 anchor가 선택되고 144/148 음수 margin으로 제외된다. target box는 위아래 cardboard를 함께 포함한다.",
+      "uncertainty": "칼날은 화면에 보이나 anchor 후보로 연결되지 않는다. 관측 소실을 실제 동작 소실로 볼 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "01_0100",
+      "observation": "96/100/104의 blade로 보이는 후보는 양수 margin이나 면적 .236/.229/.248로 제외된다. 100부터 바이스로 보이는 후보가 선택되어 relation이 재관측된다.",
+      "uncertainty": "관측 복구가 의도한 anchor 복구를 보장하지 않는 사례이며 정확도 추정용 표본은 아니다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "02_0012",
+      "observation": "8에는 target 후보가 없고 12에서 화면 맨 위 오른쪽의 아주 작은 영역이 target으로 선택되며 16에서 다시 없다. anchor는 바이스로 보이며 16에는 면적 상한을 넘는다.",
+      "uncertainty": "작고 잘린 target이 cardboard 조각인지 고정부인지 판단 불가다. 실제 제품 출현이라는 의미를 부여하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "03_0092",
+      "observation": "88에는 바이스 후보가 면적 .213으로 제외된다. 92에는 세워진 blade로 보이는 track4가 선택된다. 96에 바이스도 gate를 통과하지만 이전 blade track이 유지된다. target은 위쪽 cardboard다.",
+      "uncertainty": "의도한 역할에 부합해 보이는 재관측 사례이나 GT가 없고 지속 구간 전체를 검증한 것은 아니다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "04_0028",
+      "observation": "24에서 target 후보가 없고 28/32에는 움직이는 blade/trough 영역을 target box가 감싼다. anchor는 바이스가 유지된다. 뚜렷한 큰 cardboard는 보이지 않는다.",
+      "uncertainty": "금속 칼날이 target으로 혼동된 것으로 보이나 가림이나 작은 제품의 실제 부재를 GT로 선언하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "05_0012",
+      "observation": "8에는 target이 없고 12/16에는 왼쪽 trough/blade와 작업대 영역이 target으로 선택된다. anchor는 바이스로 보인다.",
+      "uncertainty": "뚜렷한 cardboard가 보이지 않으나 작은 물체/가림 여부는 판단 불가다. 재관측을 올바른 역할 선택과 동일시할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "06_0028",
+      "observation": "24에는 target이 없고 28/32에는 움직이는 blade로 보이는 영역이 target으로 선택된다. 바이스 anchor는 유지된다.",
+      "uncertainty": "target 역할 혼동이 의심되지만 bbox/action GT 없이 정확도를 계산하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "01_0024",
+      "observation": "20에서 오른쪽 위 작은 고정부 영역이던 target track0이 24/28 위쪽 cardboard track4로 바뀐다. anchor는 바이스 track1이다. blade 후보는 더 큰 양수 margin(.0777)이지만 기존 바이스 track이 유지된다.",
+      "uncertainty": "target 교체는 잘못 선택한 대상에서 제품으로 복구한 것일 수 있다. track 변경 자체를 오류나 실제 객체 교체로 단정하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "02_0040",
+      "observation": "36 cardboard target track4가 40에서 blade와 trough를 넓게 감싸는 track5로 바뀌고 44에서 cardboard track4로 돌아온다. anchor는 바이스이며 40의 blade 후보는 면적 .228로 제외된다.",
+      "uncertainty": "움직임/가림/box 혼합으로 인한 target 혼동으로 보이나 정확한 원인은 정답 없이 확정하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "03_0036",
+      "observation": "32 바이스 anchor track1이 36에서 화면 왼쪽 가장자리의 매우 좁은 trough/칼날 영역 track3으로 바뀌고 40에서 바이스 track1로 돌아온다. target은 오른쪽 위 작은 고정부 영역이다.",
+      "uncertainty": "가장자리 anchor의 실제 물체 역할은 판단 불가다. 이 변화는 객체의 실제 교체를 보장하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "04_0060",
+      "observation": "56에는 세워진 blade로 보이는 anchor track7이 선택되며 바이스는 면적 .214로 제외된다. 60에는 blade 후보가 사라지고 바이스 track0(.208)이 선택된다. target cardboard track6은 유지된다.",
+      "uncertainty": "blade는 60에도 화면에서 보이는 듯하나 캐시 후보 소실의 원인을 검출 false negative로 확정할 GT는 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "05_0032",
+      "observation": "28의 위쪽 cardboard target track3이 32에서 움직이는 blade 영역 track5로 바뀌고 36에서 cardboard track3으로 돌아온다. anchor는 바이스 track0을 유지한다.",
+      "uncertainty": "32의 motion blur와 가림이 혼동에 기여했을 수 있으나 인과관계는 검증하지 않았다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "06_0384",
+      "observation": "380/384/388 모두 아래쪽 cardboard 더미를 감싸는 target이지만 ID는 10에서 17로 바뀐다. 위쪽 제품은 별도 후보로 보인다. anchor는 바이스 track16이다.",
+      "uncertainty": "box 크기/위치가 바뀌며 같은 더미를 다시 연결한 것으로 보이나 실제 물체 동일성은 GT 없이 확정할 수 없다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "02_0176",
+      "observation": "172/176/180에서 바이스 anchor track15와 아래쪽 절단 cardboard target track9가 유지되며 phase는 1→3→1이다. 172/176에는 gate를 통과한 blade 후보도 있지만 바이스가 선택된다. 바이스 box 면적은 .164→.204→.165다.",
+      "uncertainty": "complete는 코드상의 연속 track episode다. 실제 칼날 동작의 완결을 의미하지 않으며 bbox 변동이 phase 변화와 함께 나타난다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "08_0308",
+      "observation": "바이스 anchor track10과 위아래 cardboard를 함께 감싼 target track7이 유지된다. phase가 304의 1에서 308/312의 3으로 바뀐다.",
+      "uncertainty": "같은 target ID라도 두 조각이 함께 포함된 영역으로 보인다. 완결 episode의 실제 공정 의미는 미확인이다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "12_0244",
+      "observation": "바이스 anchor track1과 위아래 cardboard를 함께 감싼 target track4가 유지된다. phase는 240의 1에서 244/248의 3으로 바뀐다.",
+      "uncertainty": "진입/종료를 관측한 코드상의 episode와 실제 공정 단계의 경계는 구분해야 한다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "13_0124",
+      "observation": "바이스 anchor track0와 아래쪽 cardboard target track4가 유지된다. 바이스 box 면적 .164→.164→.204와 함께 phase 3→1→1이다. blade 후보는 120/124 면적 .238로 제외되고 128에는 통과하지만 바이스가 유지된다.",
+      "uncertainty": "면적 gate와 이전 track 우선 선택이 함께 작용하는 사례다. 실제 blade 상태와 잠재 phase의 대응은 검증하지 않았다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "14_0288",
+      "observation": "바이스 anchor track14와 아래쪽 cardboard 더미 target track12가 유지된다. 위쪽 cardboard는 화면 밖으로 나가는 것으로 보인다. 바이스 box 면적 .142→.203→.139이며 phase는 1→3→3이다.",
+      "uncertainty": "선택 bbox가 흔들려도 ID는 같을 수 있다. 이번 세 frame만으로 완결 의미나 phase 정확도를 판단하지 않는다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    },
+    {
+      "case_id": "25_0132",
+      "observation": "바이스 anchor track1와 아래쪽 세워진 cardboard target track7이 유지된다. 움직이는 blade와 위쪽 cardboard는 선택되지 않는다. 바이스 box 면적 .156→.202→.202이며 phase는 1→1→3이다.",
+      "uncertainty": "complete 조건을 만족해도 선택된 역할이 의도한 blade인지 별도 검증이 필요하다.",
+      "semantic_ground_truth": null,
+      "action_boundary_ground_truth": null
+    }
+  ]
+}

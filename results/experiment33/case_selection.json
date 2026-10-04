@@ -1,0 +1,423 @@
+{
+  "selection_rule": "At most six per group, video round-robin in sequence/source-frame order, before visual review. Duplicate boundaries share a case with all memberships.",
+  "groups": {
+    "censored_missing": [
+      "02_0192",
+      "04_0352",
+      "05_0320",
+      "06_0256",
+      "08_0152",
+      "12_0144"
+    ],
+    "unknown_reacquired": [
+      "01_0100",
+      "02_0012",
+      "03_0092",
+      "04_0028",
+      "05_0012",
+      "06_0028"
+    ],
+    "unknown_track_change": [
+      "01_0024",
+      "02_0040",
+      "03_0036",
+      "04_0060",
+      "05_0032",
+      "06_0384"
+    ],
+    "complete_control": [
+      "02_0176",
+      "08_0308",
+      "12_0244",
+      "13_0124",
+      "14_0288",
+      "25_0132"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "02_0192",
+      "sequence": "02",
+      "partition": "calibration",
+      "sample": 48,
+      "source_frame": 192,
+      "groups": [
+        "censored_missing"
+      ],
+      "episode_links": [
+        {
+          "group": "censored_missing",
+          "episode_id": 17
+        }
+      ]
+    },
+    {
+      "case_id": "04_0352",
+      "sequence": "04",
+      "partition": "fit",
+      "sample": 88,
+      "source_frame": 352,
+      "groups": [
+        "censored_missing"
+      ],
+      "episode_links": [
+        {
+          "group": "censored_missing",
+          "episode_id": 14
+        }
+      ]
+    },
+    {
+      "case_id": "05_0320",
+      "sequence": "05",
+      "partition": "fit",
+      "sample": 80,
+      "source_frame": 320,
+      "groups": [
+        "censored_missing"
+      ],
+      "episode_links": [
+        {
+          "group": "censored_missing",
+          "episode_id": 11
+        }
+      ]
+    },
+    {
+      "case_id": "06_0256",
+      "sequence": "06",
+      "partition": "fit",
+      "sample": 64,
+      "source_frame": 256,
+      "groups": [
+        "censored_missing"
+      ],
+      "episode_links": [
+        {
+          "group": "censored_missing",
+          "episode_id": 6
+        }
+      ]
+    },
+    {
+      "case_id": "08_0152",
+      "sequence": "08",
+      "partition": "calibration",
+      "sample": 38,
+      "source_frame": 152,
+      "groups": [
+        "censored_missing"
+      ],
+      "episode_links": [
+        {
+          "group": "censored_missing",
+          "episode_id": 3
+        }
+      ]
+    },
+    {
+      "case_id": "12_0144",
+      "sequence": "12",
+      "partition": "calibration",
+      "sample": 36,
+      "source_frame": 144,
+      "groups": [
+        "censored_missing"
+      ],
+      "episode_links": [
+        {
+          "group": "censored_missing",
+          "episode_id": 8
+        }
+      ]
+    },
+    {
+      "case_id": "01_0100",
+      "sequence": "01",
+      "partition": "fit",
+      "sample": 25,
+      "source_frame": 100,
+      "groups": [
+        "unknown_reacquired"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_reacquired",
+          "episode_id": 4
+        }
+      ]
+    },
+    {
+      "case_id": "02_0012",
+      "sequence": "02",
+      "partition": "calibration",
+      "sample": 3,
+      "source_frame": 12,
+      "groups": [
+        "unknown_reacquired"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_reacquired",
+          "episode_id": 1
+        }
+      ]
+    },
+    {
+      "case_id": "03_0092",
+      "sequence": "03",
+      "partition": "fit",
+      "sample": 23,
+      "source_frame": 92,
+      "groups": [
+        "unknown_reacquired"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_reacquired",
+          "episode_id": 8
+        }
+      ]
+    },
+    {
+      "case_id": "04_0028",
+      "sequence": "04",
+      "partition": "fit",
+      "sample": 7,
+      "source_frame": 28,
+      "groups": [
+        "unknown_reacquired"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_reacquired",
+          "episode_id": 0
+        }
+      ]
+    },
+    {
+      "case_id": "05_0012",
+      "sequence": "05",
+      "partition": "fit",
+      "sample": 3,
+      "source_frame": 12,
+      "groups": [
+        "unknown_reacquired"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_reacquired",
+          "episode_id": 0
+        }
+      ]
+    },
+    {
+      "case_id": "06_0028",
+      "sequence": "06",
+      "partition": "fit",
+      "sample": 7,
+      "source_frame": 28,
+      "groups": [
+        "unknown_reacquired"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_reacquired",
+          "episode_id": 0
+        }
+      ]
+    },
+    {
+      "case_id": "01_0024",
+      "sequence": "01",
+      "partition": "fit",
+      "sample": 6,
+      "source_frame": 24,
+      "groups": [
+        "unknown_track_change"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_track_change",
+          "episode_id": 1
+        }
+      ]
+    },
+    {
+      "case_id": "02_0040",
+      "sequence": "02",
+      "partition": "calibration",
+      "sample": 10,
+      "source_frame": 40,
+      "groups": [
+        "unknown_track_change"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_track_change",
+          "episode_id": 4
+        }
+      ]
+    },
+    {
+      "case_id": "03_0036",
+      "sequence": "03",
+      "partition": "fit",
+      "sample": 9,
+      "source_frame": 36,
+      "groups": [
+        "unknown_track_change"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_track_change",
+          "episode_id": 1
+        }
+      ]
+    },
+    {
+      "case_id": "04_0060",
+      "sequence": "04",
+      "partition": "fit",
+      "sample": 15,
+      "source_frame": 60,
+      "groups": [
+        "unknown_track_change"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_track_change",
+          "episode_id": 3
+        }
+      ]
+    },
+    {
+      "case_id": "05_0032",
+      "sequence": "05",
+      "partition": "fit",
+      "sample": 8,
+      "source_frame": 32,
+      "groups": [
+        "unknown_track_change"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_track_change",
+          "episode_id": 2
+        }
+      ]
+    },
+    {
+      "case_id": "06_0384",
+      "sequence": "06",
+      "partition": "fit",
+      "sample": 96,
+      "source_frame": 384,
+      "groups": [
+        "unknown_track_change"
+      ],
+      "episode_links": [
+        {
+          "group": "unknown_track_change",
+          "episode_id": 8
+        }
+      ]
+    },
+    {
+      "case_id": "02_0176",
+      "sequence": "02",
+      "partition": "calibration",
+      "sample": 44,
+      "source_frame": 176,
+      "groups": [
+        "complete_control"
+      ],
+      "episode_links": [
+        {
+          "group": "complete_control",
+          "episode_id": 14
+        }
+      ]
+    },
+    {
+      "case_id": "08_0308",
+      "sequence": "08",
+      "partition": "calibration",
+      "sample": 77,
+      "source_frame": 308,
+      "groups": [
+        "complete_control"
+      ],
+      "episode_links": [
+        {
+          "group": "complete_control",
+          "episode_id": 10
+        }
+      ]
+    },
+    {
+      "case_id": "12_0244",
+      "sequence": "12",
+      "partition": "calibration",
+      "sample": 61,
+      "source_frame": 244,
+      "groups": [
+        "complete_control"
+      ],
+      "episode_links": [
+        {
+          "group": "complete_control",
+          "episode_id": 13
+        }
+      ]
+    },
+    {
+      "case_id": "13_0124",
+      "sequence": "13",
+      "partition": "fit",
+      "sample": 31,
+      "source_frame": 124,
+      "groups": [
+        "complete_control"
+      ],
+      "episode_links": [
+        {
+          "group": "complete_control",
+          "episode_id": 2
+        }
+      ]
+    },
+    {
+      "case_id": "14_0288",
+      "sequence": "14",
+      "partition": "fit",
+      "sample": 72,
+      "source_frame": 288,
+      "groups": [
+        "complete_control"
+      ],
+      "episode_links": [
+        {
+          "group": "complete_control",
+          "episode_id": 13
+        }
+      ]
+    },
+    {
+      "case_id": "25_0132",
+      "sequence": "25",
+      "partition": "fit",
+      "sample": 33,
+      "source_frame": 132,
+      "groups": [
+        "complete_control"
+      ],
+      "episode_links": [
+        {
+          "group": "complete_control",
+          "episode_id": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "33",
+  "normal_only": true,
+  "feature_source": "artifacts/experiment30/reset/features/R04",
+  "relation_config": "configs/experiment18.json",
+  "relation_model": "artifacts/experiment18/normal_relation_model.npz",
+  "episode_source": "results/experiment32/episodes.json",
+  "data_root": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset",
+  "case_limit_per_group": 6,
+  "score_or_model_changes": false,
+  "publish_images": false,
+  "failure_precedence": ["no_raw_candidate", "no_positive_area", "semantic_excluded", "area_excluded", "no_joint_candidate", "candidate_available"]
+}

@@ -1,0 +1,102 @@
+{
+  "local_only": true,
+  "renderer_sha256": "1cc7b5a2158f6af122859c7d3717dda4a74373a3fd37ab475af7250bc8a66a36",
+  "pages": [
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_01.jpg",
+      "case_ids": [
+        "02_0192",
+        "04_0352"
+      ],
+      "sha256": "86fee5cf3920cfaccc7c2884802e075738f359fe5c5b4603e5cac886e2ba775d"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_02.jpg",
+      "case_ids": [
+        "05_0320",
+        "06_0256"
+      ],
+      "sha256": "cdabe276e02332662b9403593f9867b0e44911ff64e3c6e0f1d8b69bb1b6df54"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_03.jpg",
+      "case_ids": [
+        "08_0152",
+        "12_0144"
+      ],
+      "sha256": "d5d11f56312e5bd31ddc67271c6cde9139470594bef2062ae3ad88dc6c9fe885"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_04.jpg",
+      "case_ids": [
+        "01_0100",
+        "02_0012"
+      ],
+      "sha256": "436858a2cf50053844387a961be8ef4cb347dc8f164f9eb1cef12ffdf0ac11ad"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_05.jpg",
+      "case_ids": [
+        "03_0092",
+        "04_0028"
+      ],
+      "sha256": "f6374e5d40c1c394f3766820275557bc435adaa903ddf2479e217636273e172a"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_06.jpg",
+      "case_ids": [
+        "05_0012",
+        "06_0028"
+      ],
+      "sha256": "8910d2be1f10ce33aa822b1bf8bacc7fc396ef073bb30e296b9d0c73bd219814"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_07.jpg",
+      "case_ids": [
+        "01_0024",
+        "02_0040"
+      ],
+      "sha256": "5cb9d49942389ef5108ed1b4de35175946ffe91bd51beb9a7298c14c912801ea"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_08.jpg",
+      "case_ids": [
+        "03_0036",
+        "04_0060"
+      ],
+      "sha256": "3ca9f5565c063b776b36e44cf4e568e138f37fbc8844c73bd7aeb3e8ebfa3236"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_09.jpg",
+      "case_ids": [
+        "05_0032",
+        "06_0384"
+      ],
+      "sha256": "3b4e595cf8f8ea4915d923fae60f606315f3255033c34a2cc6f85e4d181a5c16"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_10.jpg",
+      "case_ids": [
+        "02_0176",
+        "08_0308"
+      ],
+      "sha256": "9aa0125adc7ea7bf51ea66cb7b416fc821280c84e021471d03e0a2e2af9a94ae"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_11.jpg",
+      "case_ids": [
+        "12_0244",
+        "13_0124"
+      ],
+      "sha256": "f4bec5726db2c4c525f19c3f0caa0ef159103272d6147822b454839573ac48eb"
+    },
+    {
+      "path": "artifacts/experiment33/contact_sheets/cases_12.jpg",
+      "case_ids": [
+        "14_0288",
+        "25_0132"
+      ],
+      "sha256": "2f24bbee32aed891aef0be0a22b9e8a4b22659fae8e7756504c11f26159e6261"
+    }
+  ]
+}

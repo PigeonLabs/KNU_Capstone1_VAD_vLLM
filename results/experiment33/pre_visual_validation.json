@@ -1,0 +1,15 @@
+{
+  "normal_sequences": 25,
+  "samples_independently_checked": 2442,
+  "episode_boundaries_checked": 335,
+  "missing_gaps_checked": 210,
+  "consecutive_pair_changes_checked": 85,
+  "selected_unique_cases": 24,
+  "source_images_hashed": 72,
+  "reviewed_contact_sheets": 0,
+  "raw_temporal_margins_selection_phase_descriptors_exact": true,
+  "filter_counts_and_disjoint_reason_totals_reconstructed": true,
+  "protected_normal_files_unchanged": 105,
+  "score_or_model_changes": false,
+  "test_data_opened": false
+}
