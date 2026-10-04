@@ -1,0 +1,121 @@
+{
+  "normal_only": true,
+  "fit_sequences": [
+    "01",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "09",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+  ],
+  "calibration_sequences": [
+    "02",
+    "08",
+    "10",
+    "12",
+    "15"
+  ],
+  "calibration_samples": 482,
+  "parameters": {
+    "1->2": {
+      "complete_runs": 29,
+      "mu": 3.1555545928026443,
+      "sigma": 0.699700213453193,
+      "fit_max_duration": 60.0
+    },
+    "2->1": {
+      "complete_runs": 26,
+      "mu": 2.820262040804656,
+      "sigma": 1.1246663761994342,
+      "fit_max_duration": 76.0
+    }
+  },
+  "sigma_floor": 0.05,
+  "all_branch_scores_finite": true,
+  "all_branch_scores_in_unit_interval": true,
+  "normal_q99": 0.997457627118644,
+  "normal_q99_below_closed_upper_bound": true,
+  "alarm_not_structurally_blocked": true,
+  "dwell_at_one": 0,
+  "combined_at_one": 0,
+  "old_ceiling_samples": {
+    "count": 5,
+    "ages": [
+      64.0,
+      68.0,
+      72.0,
+      76.0,
+      80.0
+    ],
+    "new_dwell_scores": [
+      0.924205381851872,
+      0.9358178970102726,
+      0.9454524942420047,
+      0.9534771664837521,
+      0.960186430509257
+    ],
+    "new_combined_scores": [
+      0.924205381851872,
+      0.9358178970102726,
+      0.9454524942420047,
+      0.9534771664837521,
+      0.960186430509257
+    ]
+  },
+  "videos": [
+    {
+      "sequence": "02",
+      "samples": 103,
+      "dwell_at_one": 0,
+      "combined_at_one": 0,
+      "sample_alarm_count": 3
+    },
+    {
+      "sequence": "08",
+      "samples": 104,
+      "dwell_at_one": 0,
+      "combined_at_one": 0,
+      "sample_alarm_count": 0
+    },
+    {
+      "sequence": "10",
+      "samples": 94,
+      "dwell_at_one": 0,
+      "combined_at_one": 0,
+      "sample_alarm_count": 0
+    },
+    {
+      "sequence": "12",
+      "samples": 96,
+      "dwell_at_one": 0,
+      "combined_at_one": 0,
+      "sample_alarm_count": 0
+    },
+    {
+      "sequence": "15",
+      "samples": 85,
+      "dwell_at_one": 0,
+      "combined_at_one": 0,
+      "sample_alarm_count": 1
+    }
+  ],
+  "limitations": [
+    "Necessary feasibility diagnostic, not a guarantee of useful test alarms.",
+    "Lognormal shape is a modelling assumption; no claim of independently verified distribution fit.",
+    "Normal validation does not change sigma floor, threshold rule or model choice."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "q99": 0.997457627118644,
+  "contexts": {
+    "1->2": {
+      "max_age": 104.0,
+      "max_score": 0.9833240065038665,
+      "exceed_q99": 0,
+      "age_at_q99": 166.6416103067938
+    },
+    "2->1": {
+      "max_age": 332.0,
+      "max_score": 0.9960228963277606,
+      "exceed_q99": 0,
+      "age_at_q99": 391.95405982203584
+    }
+  },
+  "note": "Age at q99 is an analytic diagnostic, not a selected decision threshold. Source-frame units; no FPS assumed."
+}

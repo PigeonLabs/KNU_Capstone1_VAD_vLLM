@@ -1,0 +1,58 @@
+{
+  "comparisons": {
+    "15": {
+      "added": {
+        "normal": 326,
+        "anomaly": 527
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    },
+    "15_base": {
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    }
+  },
+  "q99_before": 1.0,
+  "q99_after": 0.997457627118644,
+  "q99_no_dwell": 0.997457627118644,
+  "test_dwell_at_one": {
+    "normal": 0,
+    "anomaly": 0
+  },
+  "test_combined_at_one": {
+    "normal": 157,
+    "anomaly": 233
+  },
+  "added_contexts": {
+    "1->2": {
+      "valid_frames": {
+        "normal": 473,
+        "anomaly": 574
+      },
+      "added_over_no_dwell": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    },
+    "2->1": {
+      "valid_frames": {
+        "normal": 742,
+        "anomaly": 1622
+      },
+      "added_over_no_dwell": {
+        "normal": 0,
+        "anomaly": 0
+      }
+    }
+  },
+  "note": "Shared features/support; each normal q99. Development R04, inherited grounding errors unchanged."
+}

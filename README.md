@@ -22,7 +22,8 @@
 | 실험 13 | 정상 영상 단위 보정 holdout 검증 | 완료: 정상 FIT 범위 안의 체류 오탐 반례 확인 | [결과·의의·추천 3개](docs/EXPERIMENT13.md) |
 | 실험 14 | 완결 정상 길이 기준 체류 percentile | 완료: 정상 holdout 반례 교정, R03 체류 효용은 미확인 | [결과·의의·추천 3개](docs/EXPERIMENT14.md) |
 | 실험 15 | R04에서 고정 파이프라인 적용성 | 완료: 역할 오검출·q99=1 경보 불능 확인 | [결과·의의·추천 3개](docs/EXPERIMENT15.md) |
-| 다음 실험 16 | 연속 체류 꼬리 점수·경보 가능성 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT16_PLAN.md) |
+| 실험 16 | 연속 체류 꼬리 점수·경보 가능성 | 완료: 경보 복구, 체류 없는 기준선과 동일 경보 | [결과·의의·추천 3개](docs/EXPERIMENT16.md) |
+| 다음 실험 17 | 혼동 객체와 대조하는 anchor 역할 검증 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT17_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -556,6 +557,35 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **미관측 관계 상태의 명시적 처리** | latent 0의 FIT 유효 관측 3개 대비 전체 할당 127개. 직접 관측과 초기/유지 상태를 구분한 fallback 검증 |
 
 [상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT15.md) · [체류 지표](results/experiment15/metrics.json) · [체류 없는 지표](results/experiment15_base/metrics.json) · [정상 포화 진단](results/experiment15/threshold_ceiling.json) · [실험 16 계획](docs/EXPERIMENT16_PLAN.md)
+
+## 실험 16 결과 — 연속 체류 점수와 경보 복구
+
+객체·특징·관계 상태·체류 지원 구간을 고정하고 체류 점수만 정상 FIT 완결 길이의 lognormal CDF로 바꿨습니다. 먼저 정상 calibration에서 포화 여부를 확인한 뒤 같은 설정으로 평가했습니다.
+
+| R04 지표 | 체류 없음 (15_base) | empirical 체류 (15) | 연속 체류 (16) |
+|---|---:|---:|---:|
+| Combined AUROC | 0.6692 | 0.7061 | 0.6851 |
+| Combined AP | 0.6614 | 0.7191 | 0.6712 |
+| 정상 q99 | 0.997458 | 1.000000 | 0.997458 |
+| 정상 오탐률 | 9.12% | 0% | 9.12% |
+| 이상 프레임 recall | 11.51% | 0% | 11.51% |
+| 경보가 발생한 GT 이상 구간 | 12 / 26 | 0 / 26 | 12 / 26 |
+
+**의의:** 정상 calibration의 체류 점수 1 포화가 5개→0개가 되어 경보 불능을 해소했습니다. 그러나 복구된 경보는 체류 없는 기준선과 프레임별로 완전히 같습니다. 포화 교정과 체류의 추가 효용을 구분했으며, 새로운 탐지 성능이나 CDF 자체의 novelty를 입증한 결과는 아닙니다.
+
+![연속 체류 점수와 관측 범위](results/experiment16/duration_scores.png)
+
+**보완할 점:** 테스트 체류 최대 점수 0.983324/0.996023이 모두 q99보다 낮아 추가 경보가 없었습니다. 기준선 대비 ranking은 조금 높지만 실험 15보다 AUROC/AP가 낮아졌습니다. 역할 오검출·체류 가용성 41.83%·미관측 phase 할당도 그대로입니다. lognormal 가정과 작은 정상 길이 표본의 일반화는 미검증이며, R04는 개발 장면입니다.
+
+### 실험 16 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **혼동 객체와 대조하는 anchor 역할 검증** | 기존 CLIP crop과 금속판/바이스 문장을 대조해 관계 후보를 필터링. 실제 부품 누락과 지원 붕괴도 평가 |
+| 2 | **미관측 관계 상태의 명시적 처리** | 직접 관측과 초기/유지된 상태를 구분. 정상·추론에 같은 fallback을 적용하고 가용성·오탐/미탐 비교 |
+| 3 | **정상 영상 단위 경보 지점 안정성** | calibration 영상 제외에 따른 q99·포화·branch 기여 점검. 테스트 기반 임계값·가중치 탐색 금지 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT16.md) · [지표](results/experiment16/metrics.json) · [정상 경보 가능성](results/experiment16/normal_feasibility.json) · [경보 비교](results/experiment16/lognormal_diagnostic.json) · [실험 17 계획](docs/EXPERIMENT17_PLAN.md)
 
 ## 로컬 VLM
 

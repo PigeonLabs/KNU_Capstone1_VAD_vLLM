@@ -1,0 +1,10 @@
+{
+  "feature_sequences_checked": 44,
+  "test_sequences_checked": 19,
+  "frozen_input_and_code_hashes_match": true,
+  "same_features_duration_banks_visual_transition_masks_ages_and_labels": true,
+  "parameters_and_scores_reconstructed": true,
+  "cdf_reconstruction_absolute_tolerance": 1e-14,
+  "normal_preflight_scores_match_final_calibration": true,
+  "normal_q99_and_metrics_recomputed": true
+}

@@ -25,6 +25,8 @@ def main():
             maximum=max(maximum,float(d['combined'].max()));alarms+=int(np.sum(d['combined']>q))
             for value,name in [(0,'normal'),(1,'anomaly')]:counts[name]+=int(np.sum((d['labels']==value)&(d['combined']==1)))
     result={'calibration_samples':n,'quantile_higher_sorted_zero_based_index':int(np.ceil(.99*(n-1))),'normal_q99':q,'calibration_branches':branches,'calibration_at_one_fraction':branches['combined']['at_one']/n,'calibration_by_video':rows,'test_score_max':maximum,'test_at_one':counts,'strict_threshold_test_alarms':alarms,'declared_score_upper_bound':1.,'alarm_impossible_for_bounded_scores':q>=1.,'interpretation':'Empirical complete-run percentile saturates beyond FIT maximum. A normal q99 equal to its closed upper bound makes strict > alarms impossible, regardless of ranking. No threshold comparison operator or tie rule was changed.'}
+    if q<1:
+        result['interpretation']='Normal q99 is below the closed score upper bound, so strict alarms are not structurally impossible. This does not establish useful incremental detection. No threshold comparison operator or tie rule was changed.'
     assert maximum<=1
     if q>=1:assert alarms==0
     (out/'threshold_ceiling.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

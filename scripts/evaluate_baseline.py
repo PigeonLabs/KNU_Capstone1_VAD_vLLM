@@ -14,6 +14,7 @@ from ipad_vad.process_calibration import StateCalibratedBaseline
 from ipad_vad.dwell_scoring import DwellBaseline
 from ipad_vad.context_dwell_scoring import ContextDwellBaseline
 from ipad_vad.completed_dwell import CompletedDwellBaseline
+from ipad_vad.lognormal_dwell import LognormalDwellBaseline
 
 
 def metrics(labels,scores):
@@ -41,8 +42,9 @@ def main():
         if cfg['process_calibration']['mode']!='previous_state':raise ValueError('Unknown process calibration mode')
         if 'dwell_context' in cfg and 'normal_dwell' not in cfg:raise ValueError('Entry context requires dwell config')
         if 'dwell_score' in cfg:
-            if cfg['dwell_score']!='fit_complete_percentile':raise ValueError('Unknown dwell score')
-            model=CompletedDwellBaseline(cfg,process)
+            factories={'fit_complete_percentile':CompletedDwellBaseline,'fit_lognormal_cdf':LognormalDwellBaseline}
+            if cfg['dwell_score'] not in factories:raise ValueError('Unknown dwell score')
+            model=factories[cfg['dwell_score']](cfg,process)
         else:model=ContextDwellBaseline(cfg,process) if 'dwell_context' in cfg else DwellBaseline(cfg,process) if 'normal_dwell' in cfg else StateCalibratedBaseline(cfg,process)
     else:model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
     if 'normal_dwell' in cfg and 'process_calibration' not in cfg:raise ValueError('Dwell experiment requires previous-state process calibration')
@@ -135,6 +137,9 @@ def main():
             result['dwell']['context_distribution']=model.dwell.distribution
             result['dwell']['complete_context_support']=model.dwell.context_support
             result['dwell']['supported_contexts']=[f'{a}->{b}' for a,b in sorted(model.dwell.context_durations)]
+        if 'dwell_lognormal' in cfg:
+            result['dwell']['lognormal_parameters']={f'{a}->{b}':{'mu':mu,'sigma':sigma} for (a,b),(mu,sigma) in model.dwell.log_parameters.items()}
+            result['dwell']['sigma_floor']=model.dwell.sigma_floor
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -150,6 +155,8 @@ def main():
         for state,durations in model.dwell.durations.items():arrays[f'dwell_durations_state_{state}']=durations
         if 'dwell_context' in cfg:
             for (a,b),durations in model.dwell.context_durations.items():arrays[f'dwell_context_durations_{a}_{b}']=durations
+        if 'dwell_lognormal' in cfg:
+            for (a,b),parameters in model.dwell.log_parameters.items():arrays[f'dwell_log_parameters_{a}_{b}']=np.array(parameters)
     if 'normal_progress' in cfg:
         arrays['motion_reference']=model.motion.reference
         for phase,parameters in model.motion.models.items():

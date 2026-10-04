@@ -1,0 +1,75 @@
+{
+  "calibration_samples": 482,
+  "quantile_higher_sorted_zero_based_index": 477,
+  "normal_q99": 0.997457627118644,
+  "calibration_branches": {
+    "visual": {
+      "at_one": 0,
+      "maximum": 0.9991525423728813
+    },
+    "transition": {
+      "at_one": 0,
+      "maximum": 0.9940828402366864
+    },
+    "dwell": {
+      "at_one": 0,
+      "maximum": 0.960186430509257
+    },
+    "combined": {
+      "at_one": 0,
+      "maximum": 0.9991525423728813
+    }
+  },
+  "calibration_at_one_fraction": 0.0,
+  "calibration_by_video": [
+    {
+      "sequence": "02",
+      "samples": 103,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "08",
+      "samples": 104,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "10",
+      "samples": 94,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "12",
+      "samples": 96,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    },
+    {
+      "sequence": "15",
+      "samples": 85,
+      "combined_at_one": 0,
+      "dwell_ages_at_ceiling": [],
+      "phases_at_ceiling": [],
+      "entry_contexts_at_ceiling": []
+    }
+  ],
+  "test_score_max": 1.0,
+  "test_at_one": {
+    "normal": 157,
+    "anomaly": 233
+  },
+  "strict_threshold_test_alarms": 853,
+  "declared_score_upper_bound": 1.0,
+  "alarm_impossible_for_bounded_scores": false,
+  "interpretation": "Normal q99 is below the closed score upper bound, so strict alarms are not structurally impossible. This does not establish useful incremental detection. No threshold comparison operator or tie rule was changed."
+}
