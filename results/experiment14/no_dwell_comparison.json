@@ -1,0 +1,15 @@
+{
+  "thresholds": {
+    "10": 0.9973544973544973,
+    "14": 0.9973544973544973
+  },
+  "added": {
+    "normal": 308,
+    "anomaly": 32
+  },
+  "removed": {
+    "normal": 0,
+    "anomaly": 0
+  },
+  "note": "Paired frame alarms on development R03; no test threshold tuning."
+}

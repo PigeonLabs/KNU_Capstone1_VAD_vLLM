@@ -1,0 +1,92 @@
+{
+  "scene": "R03",
+  "folds": [
+    {
+      "held_out": "07",
+      "calibration_ids": [
+        "08",
+        "15",
+        "22"
+      ],
+      "frames": 689,
+      "false_positive_frames": 20,
+      "frame_fpr": 0.02902757619738752,
+      "sampled_fpr": 0.028901734104046242,
+      "q99": 0.9972118959107806,
+      "baseline_false_positive_frames": 20,
+      "baseline_frame_fpr": 0.02902757619738752,
+      "baseline_q99": 0.9972118959107806,
+      "added_alarms": 0,
+      "removed_alarms": 0,
+      "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+      "dwell_reference_source": "FIT complete context durations; no calibration-age CDF"
+    },
+    {
+      "held_out": "08",
+      "calibration_ids": [
+        "07",
+        "15",
+        "22"
+      ],
+      "frames": 708,
+      "false_positive_frames": 8,
+      "frame_fpr": 0.011299435028248588,
+      "sampled_fpr": 0.011299435028248588,
+      "q99": 0.9972324723247232,
+      "baseline_false_positive_frames": 8,
+      "baseline_frame_fpr": 0.011299435028248588,
+      "baseline_q99": 0.9972324723247232,
+      "added_alarms": 0,
+      "removed_alarms": 0,
+      "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+      "dwell_reference_source": "FIT complete context durations; no calibration-age CDF"
+    },
+    {
+      "held_out": "15",
+      "calibration_ids": [
+        "07",
+        "08",
+        "22"
+      ],
+      "frames": 706,
+      "false_positive_frames": 4,
+      "frame_fpr": 0.0056657223796034,
+      "sampled_fpr": 0.005649717514124294,
+      "q99": 0.997148288973384,
+      "baseline_false_positive_frames": 4,
+      "baseline_frame_fpr": 0.0056657223796034,
+      "baseline_q99": 0.997148288973384,
+      "added_alarms": 0,
+      "removed_alarms": 0,
+      "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+      "dwell_reference_source": "FIT complete context durations; no calibration-age CDF"
+    },
+    {
+      "held_out": "22",
+      "calibration_ids": [
+        "07",
+        "08",
+        "15"
+      ],
+      "frames": 703,
+      "false_positive_frames": 12,
+      "frame_fpr": 0.017069701280227598,
+      "sampled_fpr": 0.017045454545454544,
+      "q99": 0.9972375690607734,
+      "baseline_false_positive_frames": 52,
+      "baseline_frame_fpr": 0.07396870554765292,
+      "baseline_q99": 0.9972375690607734,
+      "added_alarms": 0,
+      "removed_alarms": 40,
+      "fit_fingerprint": "7aff405db21057819628d0e0a9f267ebdc6b53d4fbfa24fc3b167192a4ca5302",
+      "dwell_reference_source": "FIT complete context durations; no calibration-age CDF"
+    }
+  ],
+  "frames": 2806,
+  "false_positive_frames": 44,
+  "micro_frame_fpr": 0.015680684248039915,
+  "macro_video_frame_fpr": 0.015765608721366776,
+  "existing_fit_models_references_and_visual_transition_preserved": true,
+  "same_dwell_valid_masks": true,
+  "limitations": "Same four normal development videos used to motivate this change. This is a regression check, not a newly untouched independent validation."
+}

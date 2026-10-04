@@ -13,6 +13,7 @@ from ipad_vad.kinematic_scoring import KinematicBaseline
 from ipad_vad.process_calibration import StateCalibratedBaseline
 from ipad_vad.dwell_scoring import DwellBaseline
 from ipad_vad.context_dwell_scoring import ContextDwellBaseline
+from ipad_vad.completed_dwell import CompletedDwellBaseline
 
 
 def metrics(labels,scores):
@@ -39,7 +40,10 @@ def main():
         if 'normal_progress' in cfg:raise ValueError('Conditional process calibration with motion is not specified')
         if cfg['process_calibration']['mode']!='previous_state':raise ValueError('Unknown process calibration mode')
         if 'dwell_context' in cfg and 'normal_dwell' not in cfg:raise ValueError('Entry context requires dwell config')
-        model=ContextDwellBaseline(cfg,process) if 'dwell_context' in cfg else DwellBaseline(cfg,process) if 'normal_dwell' in cfg else StateCalibratedBaseline(cfg,process)
+        if 'dwell_score' in cfg:
+            if cfg['dwell_score']!='fit_complete_percentile':raise ValueError('Unknown dwell score')
+            model=CompletedDwellBaseline(cfg,process)
+        else:model=ContextDwellBaseline(cfg,process) if 'dwell_context' in cfg else DwellBaseline(cfg,process) if 'normal_dwell' in cfg else StateCalibratedBaseline(cfg,process)
     else:model=KinematicBaseline(cfg,process) if 'normal_progress' in cfg else Baseline(cfg,process)
     if 'normal_dwell' in cfg and 'process_calibration' not in cfg:raise ValueError('Dwell experiment requires previous-state process calibration')
     with threadpool_limits(limits=4):
@@ -120,6 +124,7 @@ def main():
     if 'normal_dwell' in cfg:
         dwell=np.concatenate([p['dwell'] for p in predictions]);valid=np.concatenate([p['dwell_valid'] for p in predictions]).astype(bool)
         result['dwell']={'complete_run_support':model.dwell.support,'supported_states':sorted(model.dwell.durations),
+            'score_reference':cfg.get('dwell_score','normal_calibration_raw_scores'),
             'normal_calibration_samples':len(model.dwell.reference),'test_dense_valid_fraction':float(valid.mean()),
             'valid_only_metrics':metrics(np.where(valid,y,-1),dwell),
             'reason_counts':{str(i):int((np.concatenate([p['dwell_reason'] for p in predictions])==i).sum()) for i in range(4)},

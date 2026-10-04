@@ -1,0 +1,12 @@
+{
+  "feature_sequences_checked": 39,
+  "test_predictions_checked": 17,
+  "normal_holdout_folds_checked": 4,
+  "same_features_visual_transition_masks_ages_objects_and_labels": true,
+  "same_fitted_duration_banks": true,
+  "complete_run_scores_reconstructed": true,
+  "normal_q99_reconstructed": true,
+  "empty_unused_calibration_age_reference": true,
+  "config_code_source_hashes_match": true,
+  "artifact_validation_only": true
+}
