@@ -1,0 +1,7 @@
+{
+  "frozen_at_utc": "2026-10-04T16:54:56.570696+00:00",
+  "config_sha256": "f895ffef591de2dcf369f06d1a60de7b76b0ad996560f8e4881c1048638babe9",
+  "normal_diagnostic": "results/experiment08/normal_relation_diagnostic.json",
+  "test_evaluation_started": false,
+  "decision": "Replace phase with normal relation clusters; preserve all detector and appearance observations and numeric four-state transition template."
+}

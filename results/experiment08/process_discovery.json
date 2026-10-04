@@ -1,0 +1,61 @@
+{
+  "scene": "R03",
+  "sources": [
+    "R03/training/frames/01/000.jpg",
+    "R03/training/frames/01/133.jpg",
+    "R03/training/frames/01/266.jpg",
+    "R03/training/frames/01/400.jpg",
+    "R03/training/frames/01/533.jpg",
+    "R03/training/frames/01/667.jpg",
+    "R03/training/frames/02/000.jpg",
+    "R03/training/frames/02/138.jpg",
+    "R03/training/frames/02/276.jpg",
+    "R03/training/frames/02/414.jpg",
+    "R03/training/frames/02/552.jpg",
+    "R03/training/frames/02/691.jpg"
+  ],
+  "derived_from": "results/experiment07/process_discovery.json",
+  "process": {
+    "objects": [
+      {
+        "id": "forklift",
+        "detection_prompt": "yellow and black toy forklift",
+        "description": "The mobile machine with two front forks that moves across the mat and positions its forks at the pallet."
+      },
+      {
+        "id": "pallet",
+        "detection_prompt": "black pallet tray holding white cups",
+        "description": "The transported product: a black slatted tray carrying four white cups, moved from the left side to the center of the mat."
+      }
+    ],
+    "phases": [
+      {
+        "id": "latent_0",
+        "description": "Normal relation cluster 0; no verified action label."
+      },
+      {
+        "id": "latent_1",
+        "description": "Normal relation cluster 1; no verified action label."
+      },
+      {
+        "id": "latent_2",
+        "description": "Normal relation cluster 2; no verified action label."
+      },
+      {
+        "id": "latent_3",
+        "description": "Normal relation cluster 3; no verified action label."
+      }
+    ],
+    "normal_order": [
+      "latent_0",
+      "latent_1",
+      "latent_2",
+      "latent_3"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "Cluster order uses normal median relative position; original four-state self/next/cycle scoring template retained."
+    ]
+  },
+  "note": "Derived normal relation states, not a new VLM generation. Sources refer to original normal object vocabulary discovery."
+}

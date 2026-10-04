@@ -1,0 +1,722 @@
+{
+  "scene": "R03",
+  "fit_only": false,
+  "model": {
+    "descriptor_names": [
+      "relative_center_x",
+      "relative_center_y",
+      "log_area_ratio",
+      "iou",
+      "anchor_center_x",
+      "anchor_center_y"
+    ],
+    "area_gates": {
+      "0": {
+        "normal_boxes": 3304,
+        "area_upper": 0.687665681890705,
+        "excluded_fraction": 0.04055690072639225
+      },
+      "1": {
+        "normal_boxes": 4435,
+        "area_upper": 0.10604615995851628,
+        "excluded_fraction": 0.06133032694475761
+      }
+    },
+    "normal_valid_pairs": 3136,
+    "median": [
+      -0.43233609199523926,
+      0.3011970520019531,
+      -1.5730611085891724,
+      0.10135303810238838,
+      0.587478905916214,
+      0.24185503274202347
+    ],
+    "scale_iqr_with_floor": [
+      0.6274120286107063,
+      0.5271802060306072,
+      0.3925982117652893,
+      0.15167619287967682,
+      0.30589961260557175,
+      0.08308848366141319
+    ],
+    "cluster_centers_scaled": [
+      [
+        -0.8821360734621437,
+        0.7518246402391907,
+        0.29120391780615473,
+        -0.6590319024591739,
+        0.10852566611466855,
+        -0.1309461858461902
+      ],
+      [
+        0.08373902021306201,
+        -0.14690029431315618,
+        -0.9031540167943307,
+        0.1289011573580167,
+        -0.904820513248209,
+        1.0832780873497379
+      ],
+      [
+        0.1481890963862998,
+        -0.4764485056348582,
+        0.3414040682760403,
+        0.6902801960033306,
+        0.1390817981554431,
+        -0.18712556366028357
+      ],
+      [
+        0.13166555976057642,
+        -0.15047564273977146,
+        -1.3516505883156582,
+        0.038303462876830986,
+        0.24978922736197715,
+        -0.06660145937334974
+      ]
+    ],
+    "normal_cluster_samples": [
+      1186,
+      972,
+      747,
+      231
+    ],
+    "median_normal_relative_position_for_label_permutation": [
+      0.1861121840826312,
+      0.47142763845350055,
+      0.753956834532374,
+      0.8693181818181818
+    ],
+    "ordering_note": "Normal FIT relative frame position ONLY orders cluster IDs. It is not a phase label or a test-time input.",
+    "semantic_note": "latent_0..k-1 have no verified mapping to actions or original VLM phases."
+  },
+  "groups": {
+    "fit": {
+      "samples": 3142,
+      "valid_relations": 3136,
+      "valid_fraction": 0.9980903882877148,
+      "phase_counts": [
+        1189,
+        975,
+        747,
+        231
+      ]
+    },
+    "calibration": {
+      "samples": 703,
+      "valid_relations": 703,
+      "valid_fraction": 1.0,
+      "phase_counts": [
+        268,
+        211,
+        208,
+        16
+      ]
+    },
+    "test": {
+      "samples": 3007,
+      "valid_relations": 3007,
+      "valid_fraction": 1.0,
+      "phase_counts": [
+        1253,
+        801,
+        788,
+        165
+      ]
+    }
+  },
+  "sequences": [
+    {
+      "sequence_key": "testing_01",
+      "group": "test",
+      "samples": 180,
+      "valid_relations": 180,
+      "phase_counts": [
+        66,
+        54,
+        60,
+        0
+      ],
+      "changed_phase_samples": 121,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "testing_02",
+      "group": "test",
+      "samples": 169,
+      "valid_relations": 169,
+      "phase_counts": [
+        62,
+        46,
+        7,
+        54
+      ],
+      "changed_phase_samples": 100,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "testing_03",
+      "group": "test",
+      "samples": 169,
+      "valid_relations": 169,
+      "phase_counts": [
+        64,
+        51,
+        51,
+        3
+      ],
+      "changed_phase_samples": 115,
+      "phase_transitions": 7
+    },
+    {
+      "sequence_key": "testing_04",
+      "group": "test",
+      "samples": 171,
+      "valid_relations": 171,
+      "phase_counts": [
+        69,
+        40,
+        59,
+        3
+      ],
+      "changed_phase_samples": 111,
+      "phase_transitions": 7
+    },
+    {
+      "sequence_key": "testing_05",
+      "group": "test",
+      "samples": 144,
+      "valid_relations": 144,
+      "phase_counts": [
+        62,
+        39,
+        3,
+        40
+      ],
+      "changed_phase_samples": 84,
+      "phase_transitions": 4
+    },
+    {
+      "sequence_key": "testing_06",
+      "group": "test",
+      "samples": 146,
+      "valid_relations": 146,
+      "phase_counts": [
+        107,
+        39,
+        0,
+        0
+      ],
+      "changed_phase_samples": 44,
+      "phase_transitions": 2
+    },
+    {
+      "sequence_key": "testing_07",
+      "group": "test",
+      "samples": 172,
+      "valid_relations": 172,
+      "phase_counts": [
+        163,
+        9,
+        0,
+        0
+      ],
+      "changed_phase_samples": 15,
+      "phase_transitions": 2
+    },
+    {
+      "sequence_key": "testing_08",
+      "group": "test",
+      "samples": 174,
+      "valid_relations": 174,
+      "phase_counts": [
+        78,
+        49,
+        47,
+        0
+      ],
+      "changed_phase_samples": 97,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "testing_09",
+      "group": "test",
+      "samples": 178,
+      "valid_relations": 178,
+      "phase_counts": [
+        55,
+        54,
+        53,
+        16
+      ],
+      "changed_phase_samples": 116,
+      "phase_transitions": 11
+    },
+    {
+      "sequence_key": "testing_10",
+      "group": "test",
+      "samples": 162,
+      "valid_relations": 162,
+      "phase_counts": [
+        61,
+        55,
+        8,
+        38
+      ],
+      "changed_phase_samples": 106,
+      "phase_transitions": 7
+    },
+    {
+      "sequence_key": "testing_11",
+      "group": "test",
+      "samples": 177,
+      "valid_relations": 177,
+      "phase_counts": [
+        55,
+        53,
+        62,
+        7
+      ],
+      "changed_phase_samples": 94,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "testing_12",
+      "group": "test",
+      "samples": 211,
+      "valid_relations": 211,
+      "phase_counts": [
+        107,
+        52,
+        52,
+        0
+      ],
+      "changed_phase_samples": 110,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "testing_13",
+      "group": "test",
+      "samples": 192,
+      "valid_relations": 192,
+      "phase_counts": [
+        62,
+        47,
+        83,
+        0
+      ],
+      "changed_phase_samples": 114,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "testing_14",
+      "group": "test",
+      "samples": 227,
+      "valid_relations": 227,
+      "phase_counts": [
+        62,
+        75,
+        90,
+        0
+      ],
+      "changed_phase_samples": 172,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "testing_15",
+      "group": "test",
+      "samples": 173,
+      "valid_relations": 173,
+      "phase_counts": [
+        55,
+        50,
+        67,
+        1
+      ],
+      "changed_phase_samples": 118,
+      "phase_transitions": 4
+    },
+    {
+      "sequence_key": "testing_16",
+      "group": "test",
+      "samples": 183,
+      "valid_relations": 183,
+      "phase_counts": [
+        59,
+        48,
+        76,
+        0
+      ],
+      "changed_phase_samples": 129,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "testing_17",
+      "group": "test",
+      "samples": 179,
+      "valid_relations": 179,
+      "phase_counts": [
+        66,
+        40,
+        70,
+        3
+      ],
+      "changed_phase_samples": 122,
+      "phase_transitions": 9
+    },
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 167,
+      "valid_relations": 167,
+      "phase_counts": [
+        56,
+        58,
+        32,
+        21
+      ],
+      "changed_phase_samples": 114,
+      "phase_transitions": 4
+    },
+    {
+      "sequence_key": "training_02",
+      "group": "fit",
+      "samples": 173,
+      "valid_relations": 173,
+      "phase_counts": [
+        68,
+        56,
+        31,
+        18
+      ],
+      "changed_phase_samples": 114,
+      "phase_transitions": 6
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 181,
+      "valid_relations": 178,
+      "phase_counts": [
+        75,
+        57,
+        22,
+        27
+      ],
+      "changed_phase_samples": 114,
+      "phase_transitions": 6
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 172,
+      "valid_relations": 172,
+      "phase_counts": [
+        68,
+        54,
+        26,
+        24
+      ],
+      "changed_phase_samples": 111,
+      "phase_transitions": 10
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 177,
+      "valid_relations": 177,
+      "phase_counts": [
+        65,
+        52,
+        29,
+        31
+      ],
+      "changed_phase_samples": 123,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 177,
+      "valid_relations": 177,
+      "phase_counts": [
+        62,
+        57,
+        52,
+        6
+      ],
+      "changed_phase_samples": 114,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_07",
+      "group": "calibration",
+      "samples": 173,
+      "valid_relations": 173,
+      "phase_counts": [
+        64,
+        55,
+        47,
+        7
+      ],
+      "changed_phase_samples": 119,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_08",
+      "group": "calibration",
+      "samples": 177,
+      "valid_relations": 177,
+      "phase_counts": [
+        67,
+        54,
+        47,
+        9
+      ],
+      "changed_phase_samples": 119,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_09",
+      "group": "fit",
+      "samples": 186,
+      "valid_relations": 186,
+      "phase_counts": [
+        67,
+        58,
+        61,
+        0
+      ],
+      "changed_phase_samples": 129,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "training_10",
+      "group": "fit",
+      "samples": 175,
+      "valid_relations": 175,
+      "phase_counts": [
+        63,
+        61,
+        15,
+        36
+      ],
+      "changed_phase_samples": 118,
+      "phase_transitions": 7
+    },
+    {
+      "sequence_key": "training_11",
+      "group": "fit",
+      "samples": 174,
+      "valid_relations": 174,
+      "phase_counts": [
+        63,
+        53,
+        37,
+        21
+      ],
+      "changed_phase_samples": 118,
+      "phase_transitions": 7
+    },
+    {
+      "sequence_key": "training_12",
+      "group": "fit",
+      "samples": 187,
+      "valid_relations": 184,
+      "phase_counts": [
+        67,
+        55,
+        43,
+        22
+      ],
+      "changed_phase_samples": 127,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_13",
+      "group": "fit",
+      "samples": 180,
+      "valid_relations": 180,
+      "phase_counts": [
+        71,
+        55,
+        54,
+        0
+      ],
+      "changed_phase_samples": 120,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "training_14",
+      "group": "fit",
+      "samples": 158,
+      "valid_relations": 158,
+      "phase_counts": [
+        59,
+        49,
+        45,
+        5
+      ],
+      "changed_phase_samples": 107,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_15",
+      "group": "calibration",
+      "samples": 177,
+      "valid_relations": 177,
+      "phase_counts": [
+        72,
+        49,
+        56,
+        0
+      ],
+      "changed_phase_samples": 112,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_16",
+      "group": "fit",
+      "samples": 164,
+      "valid_relations": 164,
+      "phase_counts": [
+        65,
+        52,
+        47,
+        0
+      ],
+      "changed_phase_samples": 109,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "training_17",
+      "group": "fit",
+      "samples": 172,
+      "valid_relations": 172,
+      "phase_counts": [
+        66,
+        51,
+        55,
+        0
+      ],
+      "changed_phase_samples": 114,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 173,
+      "valid_relations": 173,
+      "phase_counts": [
+        64,
+        52,
+        57,
+        0
+      ],
+      "changed_phase_samples": 117,
+      "phase_transitions": 7
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 174,
+      "valid_relations": 174,
+      "phase_counts": [
+        69,
+        52,
+        45,
+        8
+      ],
+      "changed_phase_samples": 117,
+      "phase_transitions": 5
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 173,
+      "valid_relations": 173,
+      "phase_counts": [
+        72,
+        48,
+        41,
+        12
+      ],
+      "changed_phase_samples": 94,
+      "phase_transitions": 8
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 179,
+      "valid_relations": 179,
+      "phase_counts": [
+        69,
+        55,
+        55,
+        0
+      ],
+      "changed_phase_samples": 98,
+      "phase_transitions": 3
+    },
+    {
+      "sequence_key": "training_22",
+      "group": "calibration",
+      "samples": 176,
+      "valid_relations": 176,
+      "phase_counts": [
+        65,
+        53,
+        58,
+        0
+      ],
+      "changed_phase_samples": 117,
+      "phase_transitions": 3
+    }
+  ],
+  "source_sha256": {
+    "testing_01.npz": "3c42b84531941e139a38d7188f9569909f42281a10e2fc372c2f00e7265d7b7e",
+    "testing_02.npz": "e867c1f28fd1d34a61495f3fadcdf47e5687c63d3f3d0d8ab48c7e4f30b5921f",
+    "testing_03.npz": "fe578998d205064114eba194c041c88c84a4db040c2887eed3bd5f67507947a7",
+    "testing_04.npz": "04bd6d582ad0548a9ac4f1da2f46e8a8bee2c794569546f4a804696cc5ea49f3",
+    "testing_05.npz": "264a0e788da516c2993fa7e1b57d2edf9e2e88f8aca558b50a938227029b039b",
+    "testing_06.npz": "a03fa81074095f6d8df0602036cd5993ae22cf18253488c441d3bb6ad18c1d00",
+    "testing_07.npz": "66a01c2ee68358104dfbd31e893bbb9a3cfbbd7c8fe9d74d0268a6d43bed1894",
+    "testing_08.npz": "0da55ba0272cffe3d00130b9d20163686fa71408cd68679261ab7a1584ad53a3",
+    "testing_09.npz": "57687b69b430d86a8243901aefe333110fe2bec5c91a69920c70e8cfffa6b9fa",
+    "testing_10.npz": "5036e234b948047f0b6f120a6ab5dc0537d5ef314f9ff2656ffb2f91118aaba2",
+    "testing_11.npz": "e1180834bef9ee1cb4e521c88725ea1c90c6622f013f3963894653584798aca3",
+    "testing_12.npz": "847fb6ff89d074ced2d9ad741e69f0296770f522951de1c448e565cbf0728edf",
+    "testing_13.npz": "edc210a77f1d74b53ffb252df5221a37cbed89eb8ab65a1595d98978871d864b",
+    "testing_14.npz": "66b79951ae3437828343641d037aa7ac8f2dd25520a36e8eea76a57d9add90f3",
+    "testing_15.npz": "c9f015e575a59946ad8d7b6dbba8dbfe50ee7512ecf0986bbcc9a169f5c5a8c6",
+    "testing_16.npz": "b7ed1adc37d5cfd0c07097652bb154dd6703fa2244dee785c1a2b446a81a8560",
+    "testing_17.npz": "f8dcf46e2b7a4cb29d6256cf1c26f920db843f0362826087b735b400acd5c356",
+    "training_01.npz": "90ac370b1fd291d5b9a504bf5c88ea71bc3a2177290259b9cd29ffcaedbc0db0",
+    "training_02.npz": "5278bdd797ebca632fbcdb6e67ac394ca85ae6b6429ca3d0fb7e9fc3a7035b0a",
+    "training_03.npz": "67e4c1124a0e09eb5c75b0165285ff59960aa16b4b883e5a7376e34ab5a340f2",
+    "training_04.npz": "5b6f532802072d886b951f5e2df86f59cd6fceda48f19b8fa6c6a44d2f133b24",
+    "training_05.npz": "2cfdbcb3e9c1c330db16eb9d04c1ba5f32f443dd45702c55645803abe5ea3426",
+    "training_06.npz": "af30e26d1900dcd56c4e9901afedb0e45b3214d07b9db92e790df62702d93cf2",
+    "training_07.npz": "2ae284bb5ee8e65761bf544ef2c14c3e7d14b406420e677a7bec48e600d0be8e",
+    "training_08.npz": "782b2a012c6ac7bfecea0a35639c3949189f47979c2c641c1a455b756a31ab3e",
+    "training_09.npz": "7813fa1a6e965f3fb02b2c3f239d4c58a36b7b98c824dfe42d8824d5957cf68f",
+    "training_10.npz": "03fefcee2b0ab37468048f08598517157629fd77372da5dd8be98eaaafd7d1d3",
+    "training_11.npz": "5186f779bda75c95bf57f13ede39761c9eac2afeb7ed9f2befe7d6e5fbb6a7c9",
+    "training_12.npz": "108b361c17a1fd7c99abbf74ec078e8030bfda5fced4021f27a709abb776ac97",
+    "training_13.npz": "b5c249ac5e885977d6b87b0564400366a3170fa648257326828922b079c315a8",
+    "training_14.npz": "ef5930fdf321dd977b28b8d03798e24fa720d90cec6e910a46ba52d5f4256020",
+    "training_15.npz": "bfb8318c936ca424542d6605bba8dc4fd78867560618ed514b939b4d2697688d",
+    "training_16.npz": "2b1078e28709ee4b18577d52b4f8d1df59437440649b5f399891878a13b0fb9f",
+    "training_17.npz": "6d9e4ced0fe46d4b042c195c8c2236173f8c962ffb714e53b9c38c85ea3244df",
+    "training_18.npz": "c4c60f17f394ced544583c65b2f1bea3827e9278aee89de4526ef6c6058713b0",
+    "training_19.npz": "204fd464206d498f29e01d836850582c327ed6adf8746026b959b32565d7642d",
+    "training_20.npz": "88e75bd6c2cb49b74a09414473899066b9c489d7bf80ce44c5147f8bf70cf689",
+    "training_21.npz": "924e3546ded52d321073884e4fa0d4da3af0189e1cf9699631b58272bd18376f",
+    "training_22.npz": "0d5117da991c593734528af1a4b81e3f2e129b1ed0048dbe66285cbed6b1bf3d"
+  },
+  "source_arrays_preserved_except_phases": true,
+  "missing_policy": "Hold last phase, initial latent_0; mark invalid and clear descriptor smoothing history. Invalid sentinel excluded from clustering.",
+  "limitations": [
+    "No independent object/phase GT.",
+    "Normal temporal ordering is a heuristic, not semantic supervision.",
+    "Area gates affect phase anchors only; appearance boxes remain unchanged."
+  ]
+}

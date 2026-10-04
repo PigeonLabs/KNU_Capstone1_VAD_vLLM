@@ -1,0 +1,13 @@
+{
+  "tests_passed": 27,
+  "feature_sequences_checked": 39,
+  "test_predictions_checked": 17,
+  "only_phase_changed_among_original_arrays": true,
+  "existing_boxes_and_embeddings_preserved": true,
+  "numeric_self_next_cycle_template_preserved": true,
+  "labels_identical": true,
+  "finite_scores_and_valid_descriptors": true,
+  "config_unchanged_since_pre_evaluation_freeze": true,
+  "unit_tests": "Future observation causality, inference independent of test time/length, background anchor rejection, explicit missingness and history reset.",
+  "limitations": "No semantic cluster mapping or bbox accuracy claim."
+}

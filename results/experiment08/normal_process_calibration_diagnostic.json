@@ -1,0 +1,35 @@
+{
+  "scene": "R03",
+  "source": "experiment08 held-out NORMAL calibration only",
+  "rows": [
+    {
+      "previous_phase": 0,
+      "normal_calibration_transitions": 264,
+      "self_transition_fraction": 0.9810606060606061,
+      "median_raw_nll_plus_penalty": 0.02150620522096362,
+      "median_global_percentile": 0.18990042674253202
+    },
+    {
+      "previous_phase": 1,
+      "normal_calibration_transitions": 211,
+      "self_transition_fraction": 0.981042654028436,
+      "median_raw_nll_plus_penalty": 0.021683864559649862,
+      "median_global_percentile": 0.5213371266002845
+    },
+    {
+      "previous_phase": 2,
+      "normal_calibration_transitions": 208,
+      "self_transition_fraction": 0.9663461538461539,
+      "median_raw_nll_plus_penalty": 0.05332774035215902,
+      "median_global_percentile": 0.8115220483641536
+    },
+    {
+      "previous_phase": 3,
+      "normal_calibration_transitions": 16,
+      "self_transition_fraction": 0.875,
+      "median_raw_nll_plus_penalty": 0.12686672087878983,
+      "median_global_percentile": 0.9644381223328592
+    }
+  ],
+  "note": "Descriptive state-dependent offsets under GLOBAL calibration; no test labels or experiment parameter tuning."
+}

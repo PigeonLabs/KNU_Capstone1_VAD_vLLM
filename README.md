@@ -14,7 +14,8 @@
 | 실험 05 | 여러 연속 관측의 진행량 | 완료: 오탐 감소, 관측 가용성 감소 | [결과·의의·추천 3개](docs/EXPERIMENT05.md) |
 | 실험 06 | 진행량 phase 조건화 제거 비교 | 완료: 단순화 가능성, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT06.md) |
 | 실험 07 | 실제 장면 R03 적용성 | 완료: 진행량 추가로 ranking 저하, 상태 관측 실패 확인 | [결과·의의·추천 3개](docs/EXPERIMENT07.md) |
-| 다음 실험 08 | R03 객체 관계 기반 상태 grounding | 계획 완료, 미실행 | [계획](docs/EXPERIMENT08_PLAN.md) |
+| 실험 08 | R03 객체 관계 기반 잠재 상태 | 완료: 외형 ranking 상승, 결합 ranking 하락 | [결과·의의·추천 3개](docs/EXPERIMENT08.md) |
+| 다음 실험 09 | 이전 상태별 공정 점수 보정 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT09_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -309,7 +310,39 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 2 | **역할별 검출 품질·관측 불확실성** | 큰 배경 박스, 부분/중복 팔레트 진단. coverage를 GT recall로 해석하지 않음 |
 | 3 | **공정 모듈의 조건부 사용·결합 검증** | 약한 공정 점수가 외형 신호를 희석하는지 검증. 정상 support로 규칙을 정하고 test 가중치 탐색 금지 |
 
-[상세 보고서](docs/EXPERIMENT07.md) · [기본 지표](results/experiment07/metrics.json) · [진행량 추가 지표](results/experiment07_motion/metrics.json) · [다음 실험 08 계획](docs/EXPERIMENT08_PLAN.md)
+[상세 보고서](docs/EXPERIMENT07.md) · [기본 지표](results/experiment07/metrics.json) · [진행량 추가 지표](results/experiment07_motion/metrics.json) · [실험 08 사전 계획](docs/EXPERIMENT08_PLAN.md)
+
+## 실험 08 결과 — 객체 관계 기반 잠재 상태
+
+지게차–팔레트의 상대 위치·면적비·겹침과 지게차 위치로 정상 관계 군집 4개를 적합했습니다. 실험 07의 bbox/CLIP 특징을 보존하고 phase와 그에 종속된 정상 모델만 바꿨습니다. 관계 관측률은 정상 FIT 99.81%, calibration/test 100%지만 검출·semantic phase 정확도를 뜻하지 않습니다.
+
+| R03 지표 | 실험 07 | 실험 08 |
+|---|---:|---:|
+| Visual AUROC | 0.6968 | 0.7330 |
+| Visual AP | 0.6374 | 0.6778 |
+| Process AUROC | 0.4980 | 0.5520 |
+| Process AP | 0.4223 | 0.4693 |
+| Combined AUROC | 0.6747 | 0.6361 |
+| Combined AP | 0.5664 | 0.5496 |
+| 정상 q99 기준 정상 오탐률 | 3.85% | 3.36% |
+| 정상 q99 기준 이상 프레임 recall | 5.56% | 10.36% |
+| 경보가 발생한 GT 이상 구간 | 10 / 17 | 11 / 17 |
+
+![실험 07–08 비교](results/comparison07_08/comparison.png)
+
+**의의:** 외형 입력을 보존한 관계 phase 교체로 Visual AUROC가 +0.0362 상승했습니다. 두 branch의 개별 ranking이 올라도 고정 결합은 악화될 수 있음을 확인했습니다. 정상 calibration에서 공정 percentile 중앙값이 이전 상태별 0.190~0.964로 달라 다음 보정 실험의 근거를 확보했습니다. novelty·semantic grounding 성공·일반화가 입증된 것은 아닙니다.
+
+**보완할 점:** Combined AUROC는 -0.0385이며 여전히 GT 이상 구간 6개를 놓쳤습니다. 상태 군집에는 독립 의미 정답이 없고, 정상 시간 순서에 따른 군집 번호와 self/next/cycle prior도 heuristic입니다. 각자의 정상 q99로 비교했습니다. 공통 탐지 9개 구간의 지연 변화 중앙값은 -104프레임이지만 신규 탐지 2개·탐지 손실 1개, 시작 전부터 경보가 켜진 구간 1개를 함께 고려해야 합니다. R03은 개발 장면입니다.
+
+### 실험 08 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **이전 상태별 공정 점수 보정** | 정상 상태별 percentile 차이 진단에 근거. phase·외형·raw 전이·결합 고정 후 조건부 CDF만 비교 |
+| 2 | **공정 결합 기여 분리** | branch 개선과 Combined 하락의 불일치 확인. Visual 단독·정상 신뢰도 결합을 test 가중치 탐색 없이 검증 |
+| 3 | **잠재 상태·관측 신뢰성 검증** | 상태 support를 의미 정확도와 구분. 정상 대표 관측·bbox/관계 품질 및 순서 안정성 점검 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT08.md) · [지표](results/experiment08/metrics.json) · [정상 보정 진단](results/experiment08/normal_process_calibration_diagnostic.json) · [실험 09 계획](docs/EXPERIMENT09_PLAN.md)
 
 ## 로컬 VLM
 
