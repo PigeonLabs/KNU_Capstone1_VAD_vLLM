@@ -1,0 +1,15 @@
+{
+  "tests_passed": 20,
+  "feature_sequences_checked": 49,
+  "prediction_sequences_checked": 15,
+  "all_experiment03_arrays_preserved": true,
+  "lag1_matches_experiment04_exactly": true,
+  "valid_lag3_is_subset_of_valid_lag1": true,
+  "visual_and_transition_predictions_unchanged": true,
+  "invalid_motion_dense_frames": 335,
+  "invalid_motion_equals_experiment03_combined": true,
+  "scores_finite": true,
+  "labels_identical": true,
+  "event_tests": "Explicit missed-event denominator, onset preexisting alarms, boundary censoring",
+  "limitations": "No localization or semantic phase accuracy proof; causal score behavior does not establish real-world latency."
+}

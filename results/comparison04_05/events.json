@@ -1,0 +1,308 @@
+{
+  "experiments": [
+    "04",
+    "05"
+  ],
+  "time_unit": "source_frame_index",
+  "summaries": {
+    "04": {
+      "events": 8,
+      "detected_events": 8,
+      "missed_events": 0,
+      "event_coverage": 1.0,
+      "median_delay_detected_only_frames": 38.5,
+      "short_event_limit_frames": 12,
+      "short_events": 0,
+      "detected_short_events": 0,
+      "detected_with_alarm_already_active": 1,
+      "left_boundary_censored_events": 0
+    },
+    "05": {
+      "events": 8,
+      "detected_events": 8,
+      "missed_events": 0,
+      "event_coverage": 1.0,
+      "median_delay_detected_only_frames": 38.5,
+      "short_event_limit_frames": 12,
+      "short_events": 0,
+      "detected_short_events": 0,
+      "detected_with_alarm_already_active": 0,
+      "left_boundary_censored_events": 0
+    }
+  },
+  "paired_both_detected": [
+    {
+      "sequence_key": "R01_01",
+      "start_frame": 43,
+      "end_frame_exclusive": 184,
+      "delay_before": 13,
+      "delay_after": 13,
+      "delay_change_frames": 0
+    },
+    {
+      "sequence_key": "R01_02",
+      "start_frame": 46,
+      "end_frame_exclusive": 173,
+      "delay_before": 50,
+      "delay_after": 50,
+      "delay_change_frames": 0
+    },
+    {
+      "sequence_key": "R01_03",
+      "start_frame": 65,
+      "end_frame_exclusive": 260,
+      "delay_before": 31,
+      "delay_after": 31,
+      "delay_change_frames": 0
+    },
+    {
+      "sequence_key": "R01_04",
+      "start_frame": 54,
+      "end_frame_exclusive": 144,
+      "delay_before": 18,
+      "delay_after": 18,
+      "delay_change_frames": 0
+    },
+    {
+      "sequence_key": "R01_05",
+      "start_frame": 94,
+      "end_frame_exclusive": 186,
+      "delay_before": 0,
+      "delay_after": 2,
+      "delay_change_frames": 2
+    },
+    {
+      "sequence_key": "R01_06",
+      "start_frame": 10,
+      "end_frame_exclusive": 230,
+      "delay_before": 66,
+      "delay_after": 66,
+      "delay_change_frames": 0
+    },
+    {
+      "sequence_key": "R01_07",
+      "start_frame": 5,
+      "end_frame_exclusive": 200,
+      "delay_before": 71,
+      "delay_after": 71,
+      "delay_change_frames": 0
+    },
+    {
+      "sequence_key": "R01_08",
+      "start_frame": 30,
+      "end_frame_exclusive": 224,
+      "delay_before": 46,
+      "delay_after": 46,
+      "delay_change_frames": 0
+    }
+  ],
+  "lost_events": [],
+  "gained_events": [],
+  "both_missed": [],
+  "median_paired_delay_change_frames": 0.0,
+  "events": {
+    "04": [
+      {
+        "start_frame": 43,
+        "end_frame_exclusive": 184,
+        "length_frames": 141,
+        "detected": true,
+        "first_alarm_delay_frames": 13,
+        "alarmed_fraction": 0.7943262411347518,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_01"
+      },
+      {
+        "start_frame": 46,
+        "end_frame_exclusive": 173,
+        "length_frames": 127,
+        "detected": true,
+        "first_alarm_delay_frames": 50,
+        "alarmed_fraction": 0.5354330708661418,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 260,
+        "length_frames": 195,
+        "detected": true,
+        "first_alarm_delay_frames": 31,
+        "alarmed_fraction": 0.8205128205128205,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_03"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 144,
+        "length_frames": 90,
+        "detected": true,
+        "first_alarm_delay_frames": 18,
+        "alarmed_fraction": 0.6666666666666666,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_04"
+      },
+      {
+        "start_frame": 94,
+        "end_frame_exclusive": 186,
+        "length_frames": 92,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 1.0,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_05"
+      },
+      {
+        "start_frame": 10,
+        "end_frame_exclusive": 230,
+        "length_frames": 220,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.08181818181818182,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_06"
+      },
+      {
+        "start_frame": 5,
+        "end_frame_exclusive": 200,
+        "length_frames": 195,
+        "detected": true,
+        "first_alarm_delay_frames": 71,
+        "alarmed_fraction": 0.041025641025641026,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_07"
+      },
+      {
+        "start_frame": 30,
+        "end_frame_exclusive": 224,
+        "length_frames": 194,
+        "detected": true,
+        "first_alarm_delay_frames": 46,
+        "alarmed_fraction": 0.041237113402061855,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_08"
+      }
+    ],
+    "05": [
+      {
+        "start_frame": 43,
+        "end_frame_exclusive": 184,
+        "length_frames": 141,
+        "detected": true,
+        "first_alarm_delay_frames": 13,
+        "alarmed_fraction": 0.7943262411347518,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_01"
+      },
+      {
+        "start_frame": 46,
+        "end_frame_exclusive": 173,
+        "length_frames": 127,
+        "detected": true,
+        "first_alarm_delay_frames": 50,
+        "alarmed_fraction": 0.5669291338582677,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 260,
+        "length_frames": 195,
+        "detected": true,
+        "first_alarm_delay_frames": 31,
+        "alarmed_fraction": 0.841025641025641,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_03"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 144,
+        "length_frames": 90,
+        "detected": true,
+        "first_alarm_delay_frames": 18,
+        "alarmed_fraction": 0.7111111111111111,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_04"
+      },
+      {
+        "start_frame": 94,
+        "end_frame_exclusive": 186,
+        "length_frames": 92,
+        "detected": true,
+        "first_alarm_delay_frames": 2,
+        "alarmed_fraction": 0.9782608695652174,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_05"
+      },
+      {
+        "start_frame": 10,
+        "end_frame_exclusive": 230,
+        "length_frames": 220,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.05454545454545454,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_06"
+      },
+      {
+        "start_frame": 5,
+        "end_frame_exclusive": 200,
+        "length_frames": 195,
+        "detected": true,
+        "first_alarm_delay_frames": 71,
+        "alarmed_fraction": 0.041025641025641026,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_07"
+      },
+      {
+        "start_frame": 30,
+        "end_frame_exclusive": 224,
+        "length_frames": 194,
+        "detected": true,
+        "first_alarm_delay_frames": 46,
+        "alarmed_fraction": 0.041237113402061855,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence_key": "R01_08"
+      }
+    ]
+  },
+  "limitations": [
+    "Each model uses its own normal q99; not equal test FPR.",
+    "Event coverage means any alarm overlaps a contiguous positive GT interval. It is not point-adjusted frame AUROC.",
+    "An alarm already active before onset can yield zero delay; flagged explicitly.",
+    "Misses have null delay and remain in counts. Detected-only latency is conditional, not overall latency.",
+    "Clip-boundary/unknown-label censoring flagged; FPS unavailable. Repeated R01 development data."
+  ]
+}

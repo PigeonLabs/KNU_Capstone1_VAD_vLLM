@@ -11,7 +11,8 @@
 | 실험 02 | 정상 trajectory 기반 phase 추정 | 완료: phase만 교체한 비교 | [결과와 한계](docs/EXPERIMENT02.md) |
 | 실험 03 | 정상 이동 영역 기반 제품 재검출 | 완료: 관측 개선, 최종 결합 성능 저하 | [결과·의의·추천 3개](docs/EXPERIMENT03.md) |
 | 실험 04 | 정상 phase별 진행량 기반 공정 점수 | 완료: AUROC/AP·recall 상승, 오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT04.md) |
-| 다음 실험 05 | 여러 연속 관측의 진행량 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT05_PLAN.md) |
+| 실험 05 | 여러 연속 관측의 진행량 | 완료: 오탐 감소, 관측 가용성 감소 | [결과·의의·추천 3개](docs/EXPERIMENT05.md) |
+| 다음 실험 06 | 진행량 phase 조건화 제거 비교 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT06_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -108,7 +109,7 @@ export PYTHONPATH=src
 
 [후보별 변경 내용·검증 기준](docs/EXPERIMENT01.md)에 따라 1순위를 실험 02로 선택했습니다.
 
-**실험 02의 단일 변경:** detector, crop 특징, encoder, split, sampling, PCA/scoring 규칙은 그대로 유지하고 phase 추정만 바꿉니다. 정상 FIT에서 실제로 이동한 product-role track으로 이동 경로와 3개 공간 상태를 적합하고, test-time에는 현재 bbox와 과거 상태만 사용합니다. 누락 시 이전 phase를 유지하며 그 비율을 공개합니다. 위치 정답·test label·미래 프레임은 사용하지 않습니다. 이는 R01의 공간적 진행 proxy이며 일반 공정 grammar 학습으로 주장하지 않습니다. 그 이후 실험은 아직 설계하지 않습니다.
+**실험 02의 단일 변경:** detector, crop 특징, encoder, split, sampling, PCA/scoring 규칙은 그대로 유지하고 phase 추정만 바꿉니다. 정상 FIT에서 실제로 이동한 product-role track으로 이동 경로와 3개 공간 상태를 적합하고, test-time에는 현재 bbox와 과거 상태만 사용합니다. 누락 시 이전 phase를 유지하며 그 비율을 공개합니다. 위치 정답·test label·미래 프레임은 사용하지 않습니다. 이는 R01의 공간적 진행 proxy이며 일반 공정 grammar 학습으로 주장하지 않습니다. 당시 그 이후 실험은 미리 설계하지 않았습니다.
 
 ## 실험 02 결과와 비교
 
@@ -208,7 +209,38 @@ export PYTHONPATH=src
 | 2 | **phase 조건의 필요성 분리 검증** | phase별/pooled 진행량 모델만 교체해 추가 복잡성의 기여 확인 |
 | 3 | **미사용 장면 적용성과 검증 분리** | 테스트 성능과 무관하게 다른 장면을 선택하고 정상 데이터로만 파이프라인 적합 |
 
-[상세 보고서](docs/EXPERIMENT04.md) · [지표](results/experiment04/metrics.json) · [오류 진단](results/experiment04/error_diagnosis.json) · [다음 실험 05 계획](docs/EXPERIMENT05_PLAN.md)
+[상세 보고서](docs/EXPERIMENT04.md) · [지표](results/experiment04/metrics.json) · [오류 진단](results/experiment04/error_diagnosis.json) · [실험 05 계획](docs/EXPERIMENT05_PLAN.md)
+
+## 실험 05 결과 — 여러 연속 관측의 진행량
+
+진행량 계산을 4프레임 간격에서 12프레임 변위로 변경했습니다. 연속 4개 관측의 track ID가 같을 때만 사용하며, 나머지 특징·phase·점수 규칙은 유지했습니다.
+
+| 지표 | 실험 04 | 실험 05 |
+|---|---:|---:|
+| Visual AUROC | 0.6514 | 0.6514 |
+| Visual AP | 0.4260 | 0.4260 |
+| Process AUROC | 0.6738 | 0.6889 |
+| Process AP | 0.6167 | 0.6502 |
+| Combined AUROC | 0.6846 | 0.6992 |
+| Combined AP | 0.6298 | 0.6584 |
+| 정상 q99 기준 테스트 정상 오탐률 | 9.95% | 5.92% |
+| 정상 q99 기준 테스트 이상 recall | 41.95% | 42.26% |
+
+![실험 04–05 비교](results/comparison04_05/comparison.png)
+
+**의의:** R01에서 정상 오탐 프레임이 242→144로 줄고 AUROC/AP가 소폭 상승했습니다. 8개 GT 이상 구간 모두 경보가 있었으며 첫 경보 지연 중앙값은 두 실험 모두 38.5프레임입니다. 각자의 정상 q99 기준으로 비교했으며 동일 테스트 오탐률 비교가 아닙니다.
+
+**보완할 점:** 테스트 진행량 가용성은 sampled 기준 93.85%→90.40%로 줄었습니다. 구간 안에 경보가 있다는 사실은 이상 프레임 전체를 탐지했다는 뜻이 아닙니다. 12프레임 이하 GT 이상 구간은 0개여서 짧은 이상 보존은 검증하지 못했습니다. 단일 장면 개발 결과이며 novelty·일반화 입증은 아직입니다.
+
+### 실험 05 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **진행량 phase 조건의 필요성 분리** | phase별/pooled 진행량 모델만 교체해 구성 요소의 기여와 복잡성 확인 |
+| 2 | **미사용 장면·짧은 이상 검증** | 다른 공정과 이상 길이에서 정상 데이터만으로 적합하고 적용 한계 평가 |
+| 3 | **초기·미관측 구간의 이상 신호 보완** | 긴 첫 경보 지연과 관측 부재를 진단하고 정상 빈 벨트/실제 누락 구분 |
+
+[상세 보고서](docs/EXPERIMENT05.md) · [지표](results/experiment05/metrics.json) · [이벤트별 지연](results/comparison04_05/events.json) · [다음 실험 06 계획](docs/EXPERIMENT06_PLAN.md)
 
 ## 로컬 VLM
 

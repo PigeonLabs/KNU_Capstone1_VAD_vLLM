@@ -2,20 +2,22 @@
 import numpy as np
 
 
-def progress_signal(data, chosen, axis):
+def progress_signal(data, chosen, axis, lag_samples=1):
     """Signed normalized coordinate / source frame. Invalid values are masked, never stops."""
+    if not isinstance(lag_samples,int) or isinstance(lag_samples,bool) or lag_samples<1:raise ValueError('lag_samples must be a positive integer')
     indices=np.asarray(data['indices']);chosen=np.asarray(chosen,dtype=int)
     if len(chosen)!=len(indices) or np.any(np.diff(indices)<=0):raise ValueError('Invalid sample chronology')
     velocity=np.zeros(len(indices),dtype=float);valid=np.zeros(len(indices),dtype=bool)
-    # 0 valid; 1 first sample; 2 no current anchor; 3 prior anchor absent; 4 ID change.
+    # 0 valid; 1 insufficient history; 2 no current anchor; 3 missing history anchor; 4 ID change.
     reason=np.ones(len(indices),dtype=int)
-    for step in range(1,len(indices)):
-        a,b=chosen[step-1],chosen[step]
+    for step in range(lag_samples,len(indices)):
+        window=chosen[step-lag_samples:step+1]
+        a,b=window[0],window[-1]
         if b<0:reason[step]=2;continue
-        if a<0:reason[step]=3;continue
-        if data['tracks'][a]!=data['tracks'][b]:reason[step]=4;continue
+        if np.any(window<0):reason[step]=3;continue
+        if np.any(data['tracks'][window]!=data['tracks'][b]):reason[step]=4;continue
         boxes=data['boxes'][[a,b]];centers=(boxes[:,axis]+boxes[:,axis+2])/2
-        velocity[step]=(float(centers[1])-float(centers[0]))/int(indices[step]-indices[step-1])
+        velocity[step]=(float(centers[1])-float(centers[0]))/int(indices[step]-indices[step-lag_samples])
         valid[step]=True;reason[step]=0
     return velocity,valid,reason
 

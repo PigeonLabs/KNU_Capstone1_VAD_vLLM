@@ -51,3 +51,16 @@ def test_augmented_fusion_preserves_visual_and_abstains_exactly():
     assert np.all(b['process'][1::2]>=a['process'][1::2])
     q=np.quantile(augmented.score(cal[0])['combined'],.99,method='higher')
     assert augmented.threshold==q
+
+
+def test_longer_progress_requires_entire_track_window_and_is_causal():
+    d=data();d['tracks'][:]=0;d['indices']=np.array([0,4,12,16,20,24])
+    v,valid,_=progress_signal(d,np.arange(6),0,lag_samples=3)
+    assert valid.tolist()==[False,False,False,True,True,True]
+    np.testing.assert_allclose(v[3],.12/16)
+    earlier=v.copy();d['boxes'][5]=[.9,.2,1,.4]
+    np.testing.assert_array_equal(earlier[:5],progress_signal(d,np.arange(6),0,lag_samples=3)[0][:5])
+    chosen=np.arange(6);chosen[2]=-1
+    assert not progress_signal(d,chosen,0,lag_samples=3)[1].any()
+    d['tracks'][2]=1
+    assert not progress_signal(d,np.arange(6),0,lag_samples=3)[1].any()

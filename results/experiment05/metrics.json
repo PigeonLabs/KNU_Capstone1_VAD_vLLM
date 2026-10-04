@@ -1,0 +1,239 @@
+{
+  "scene": "R01",
+  "scope": "R01_three_interval_normal_progress",
+  "seed": 42,
+  "fit_sequences": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "10",
+    "12",
+    "15",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "32",
+    "33",
+    "34"
+  ],
+  "calibration_sequences": [
+    "09",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "31"
+  ],
+  "test_sequences": 15,
+  "metrics": {
+    "visual": {
+      "frames": 3685,
+      "positive_frames": 1254,
+      "auroc": 0.6514108370286249,
+      "average_precision": 0.4260380160477114
+    },
+    "process": {
+      "frames": 3685,
+      "positive_frames": 1254,
+      "auroc": 0.6889276405178459,
+      "average_precision": 0.650235452327941
+    },
+    "combined": {
+      "frames": 3685,
+      "positive_frames": 1254,
+      "auroc": 0.6992193471225275,
+      "average_precision": 0.6584240734640607
+    }
+  },
+  "normal_q99_threshold": 0.9846381889233257,
+  "normal_calibration_sample_alarm_rate": 0.00975609756097561,
+  "test_normal_frame_alarm_rate": 0.059234882764294526,
+  "test_anomaly_frame_recall_at_q99": 0.4226475279106858,
+  "phase_fit_counts": [
+    500,
+    512,
+    544
+  ],
+  "phase_calibration_counts": [
+    133,
+    127,
+    150
+  ],
+  "phase_test_counts": [
+    287,
+    318,
+    322
+  ],
+  "subspaces": [
+    {
+      "role": -1,
+      "phase": -1,
+      "samples": 1556,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 0,
+      "samples": 500,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 1,
+      "samples": 512,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 2,
+      "samples": 544,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": -1,
+      "samples": 1685,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 0,
+      "samples": 524,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 1,
+      "samples": 546,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 2,
+      "samples": 615,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": -1,
+      "samples": 1764,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 0,
+      "samples": 545,
+      "rank": 31
+    },
+    {
+      "role": 1,
+      "phase": 1,
+      "samples": 610,
+      "rank": 30
+    },
+    {
+      "role": 1,
+      "phase": 2,
+      "samples": 609,
+      "rank": 31
+    },
+    {
+      "role": 2,
+      "phase": -1,
+      "samples": 1559,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 0,
+      "samples": 500,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 1,
+      "samples": 514,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 2,
+      "samples": 545,
+      "rank": 32
+    }
+  ],
+  "transition_probabilities": [
+    [
+      0.9423459244532804,
+      0.055666003976143144,
+      0.0019880715705765406
+    ],
+    [
+      0.0019455252918287938,
+      0.9455252918287937,
+      0.05252918287937743
+    ],
+    [
+      0.0019193857965451055,
+      0.0019193857965451055,
+      0.9961612284069098
+    ]
+  ],
+  "limitations": [
+    "Single R01 scene, single split/seed; not full IPAD.",
+    "No phase/object ground truth; no localization accuracy claimed.",
+    "Appearance scoring uses CLIP residuals; optional normal geometry/motion branches are specified in the experiment config.",
+    "Missed objects have no crop score; global branch remains.",
+    "PCA fallback pools normal phases if support is insufficient.",
+    "Phase assignments are proxies, not ground truth.",
+    "Frame-level AUPRC is reported as average precision (step integral).",
+    "Q99 alarm uses strict >; no per-test-video normalization.",
+    "Motion-only metrics cover valid dense intervals only, not the full test set. Invalid motion retains transition score."
+  ],
+  "motion_valid_only_metrics": {
+    "frames": 3350,
+    "positive_frames": 1229,
+    "auroc": 0.6668767016187844,
+    "average_precision": 0.6629561325250831
+  },
+  "motion_test_valid_fraction": 0.9090909090909091,
+  "motion_model": {
+    "-1": {
+      "median": 0.004905276000499725,
+      "scale": 0.0002408704265952106,
+      "samples": 1374
+    },
+    "0": {
+      "median": 0.004679722090562184,
+      "scale": 0.00042558917999267575,
+      "samples": 369
+    },
+    "1": {
+      "median": 0.004926254351933798,
+      "scale": 0.00010965961515903451,
+      "samples": 482
+    },
+    "2": {
+      "median": 0.005025029182434082,
+      "scale": 0.00022540202140808148,
+      "samples": 523
+    }
+  },
+  "motion_calibration_samples": 362
+}
