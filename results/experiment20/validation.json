@@ -1,0 +1,15 @@
+{
+  "feature_sequences_checked": 44,
+  "normal_holdout_folds_checked": 10,
+  "test_sequences_checked": 19,
+  "protocol_hashes_match": true,
+  "feature_arrays_byte_identical": true,
+  "all_pca_and_raw_residuals_preserved": true,
+  "independent_route_cdf_reconstruction": true,
+  "holdout_exclusion_references_q99_verified": true,
+  "raw_and_calibrated_process_unchanged": true,
+  "legacy_experiment19_reproduced": true,
+  "preflight_and_final_calibration_identical": true,
+  "scores_and_source_labels_reproduced": true,
+  "metrics_recomputed": true
+}

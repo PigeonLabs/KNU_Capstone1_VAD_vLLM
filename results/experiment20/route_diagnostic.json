@@ -1,0 +1,195 @@
+{
+  "normal_q99": {
+    "19": 0.997457627118644,
+    "20": 0.9976076555023924
+  },
+  "added_alarms": {
+    "normal": 8,
+    "anomaly": 76
+  },
+  "removed_alarms": {
+    "normal": 0,
+    "anomaly": 72
+  },
+  "strata_relation_observed": {
+    "False": {
+      "frames": 2555,
+      "normal_frames": 1334,
+      "anomaly_frames": 1221,
+      "alarms_before": {
+        "normal": 48,
+        "anomaly": 134
+      },
+      "alarms_after": {
+        "normal": 56,
+        "anomaly": 194
+      },
+      "added": {
+        "normal": 8,
+        "anomaly": 76
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 16
+      },
+      "metrics": {
+        "19": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7801860740391475,
+            "average_precision": 0.6990423777468455
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7801860740391475,
+            "average_precision": 0.6990423777468455
+          }
+        },
+        "20": {
+          "visual": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7831299338045965,
+            "average_precision": 0.7095085461325189
+          },
+          "process": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7245689194714682,
+            "average_precision": 0.6237758020142415
+          },
+          "combined": {
+            "frames": 2555,
+            "positive_frames": 1221,
+            "auroc": 0.7831299338045965,
+            "average_precision": 0.709508546132519
+          }
+        }
+      }
+    },
+    "True": {
+      "frames": 5599,
+      "normal_frames": 2242,
+      "anomaly_frames": 3357,
+      "alarms_before": {
+        "normal": 240,
+        "anomaly": 467
+      },
+      "alarms_after": {
+        "normal": 240,
+        "anomaly": 411
+      },
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 0,
+        "anomaly": 56
+      },
+      "metrics": {
+        "19": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6526156483436822,
+            "average_precision": 0.6939108320880583
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6247909025225094,
+            "average_precision": 0.6715597256506958
+          }
+        },
+        "20": {
+          "visual": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6521114228141657,
+            "average_precision": 0.6955850613172303
+          },
+          "process": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.4811674754205002,
+            "average_precision": 0.5878638534233406
+          },
+          "combined": {
+            "frames": 5599,
+            "positive_frames": 3357,
+            "auroc": 0.6228219649409796,
+            "average_precision": 0.6728384693621845
+          }
+        }
+      }
+    }
+  },
+  "branch_exceedances": {
+    "visual": {
+      "normal": 264,
+      "anomaly": 597
+    },
+    "transition": {
+      "normal": 32,
+      "anomaly": 12
+    },
+    "dwell": {
+      "normal": 0,
+      "anomaly": 0
+    },
+    "process_only_over_visual": {
+      "normal": 32,
+      "anomaly": 8
+    }
+  },
+  "test_route_usage_observations": {
+    "-1:0": {
+      "observations": 652,
+      "role_cdf_fallback": 0
+    },
+    "-1:1": {
+      "observations": 1395,
+      "role_cdf_fallback": 0
+    },
+    "0:0": {
+      "observations": 618,
+      "role_cdf_fallback": 0
+    },
+    "0:1": {
+      "observations": 1815,
+      "role_cdf_fallback": 0
+    },
+    "1:0": {
+      "observations": 671,
+      "role_cdf_fallback": 0
+    },
+    "1:1": {
+      "observations": 1628,
+      "role_cdf_fallback": 0
+    },
+    "2:0": {
+      "observations": 655,
+      "role_cdf_fallback": 0
+    },
+    "2:1": {
+      "observations": 1398,
+      "role_cdf_fallback": 0
+    }
+  },
+  "note": "Each model uses its own normal q99. PCA, raw residuals, masks and process scores preserved. CDF path only changes; bank usage counts global/crop observations, not unique frames."
+}

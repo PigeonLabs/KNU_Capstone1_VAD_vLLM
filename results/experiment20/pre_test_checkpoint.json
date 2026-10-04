@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-04T19:44:12.466220+00:00",
+  "stage": "After normal holdout and full normal calibration, before experiment20 test scores",
+  "file_sha256": {
+    "results/experiment20/pre_normal_protocol.json": "78fb739827ab9438abea5ed914b378fb3a2b5a11753cf411982069c48c26b240",
+    "results/experiment20/normal_holdout.json": "73c2c8f19a4c5bac46145413a060dcdebd80cf272e38cbcd45567b856d01b389",
+    "results/experiment20/normal_feasibility.json": "3a0d54d6024946d4507d30b4490d3359a1e11cda7aaee269bdf6a116d2f746e1",
+    "artifacts/experiment20/preflight_calibration_scores.npz": "134d604922920a2ea058c4d23c51bc52c622c4baf8a1adcf42e90bfd4d95017c",
+    "scripts/validate_route_calibration.py": "35285bdede1263cc6c3bc922516ef058e3dc7a834cf1168b44500c38a39b16fc"
+  },
+  "decision": "Normal holdout false alarms increased 44 to 68 frames. Report as negative evidence; do not change guards or select parameters. Full normal q99 finite and below 1; evaluate the frozen candidate unchanged."
+}

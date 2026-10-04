@@ -55,6 +55,27 @@ class Baseline:
         if key not in self.spaces:key=(-1,-1)
         return key
 
+    def appearance_routes(self,data,role,frames):
+        phases=self.appearance_phases(data)[frames]
+        return np.array([int(self.appearance_space_key(role,p)[1]>=0) for p in phases],dtype=np.int8)
+
+    def fit_appearance_calibration(self,caches,raw):
+        self.route_calibration=None
+        if 'appearance_route_calibration' not in self.cfg:return
+        from ipad_vad.route_calibration import RouteCalibration
+        ids=[d['sequence_id'] for d in caches]
+        if any(not isinstance(s,str) or not s for s in ids) or len(set(ids))!=len(ids):
+            raise ValueError('Calibration caches need distinct explicit sequence IDs')
+        self.route_calibration=RouteCalibration(**self.cfg['appearance_route_calibration'])
+        rows=[(role,self.appearance_routes(d,role,frames),r,seq)
+              for d,seq,(obs,_) in zip(caches,ids,raw) for role,frames,r in obs]
+        self.route_calibration.fit(rows)
+
+    def calibrate_appearance(self,data,role,frames,residual):
+        if role not in self.calibration:raise ValueError(f'Role {role} absent from normal calibration')
+        if self.route_calibration is None:return empirical_percentile(self.calibration[role],residual)
+        return self.route_calibration.score(role,self.appearance_routes(data,role,frames),residual,self.calibration[role])
+
     def fit(self,caches):
         buckets={};counts=np.ones((self.k,self.k))*self.cfg['transition_laplace_alpha']
         for data in caches:
@@ -98,6 +119,7 @@ class Baseline:
         raw=[self.raw(c) for c in caches]
         roles={role for obs,_ in raw for role,_,_ in obs}
         self.calibration={role:np.concatenate([r for obs,_ in raw for current,_,r in obs if current==role]) for role in roles}
+        self.fit_appearance_calibration(caches,raw)
         self.process_reference=np.concatenate([p for _,p in raw])
         self.fit_process_calibration(caches,raw)
         fused=np.concatenate([self.score(c)['combined'] for c in caches])
@@ -121,8 +143,7 @@ class Baseline:
         raw,process=self.raw(data);visual=np.zeros(len(data['indices']));objects=[]
         for role,frames,residual in raw:
             # Missing calibration role has no justified percentile: explicitly fail.
-            if role not in self.calibration:raise ValueError(f'Role {role} absent from normal calibration')
-            score=empirical_percentile(self.calibration[role],residual)
+            score=self.calibrate_appearance(data,role,frames,residual)
             np.maximum.at(visual,frames,score)
             objects.append((role,frames,score))
         process=self.calibrate_process(data,process)

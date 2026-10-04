@@ -26,7 +26,8 @@
 | 실험 17 | 혼동 객체와 대조하는 anchor 역할 검증 | 완료: 일부 오검출 차단, ranking·체류 가용성 저하 | [결과·의의·추천 3개](docs/EXPERIMENT17.md) |
 | 실험 18 | track 단위 인과적 semantic margin 집계 | 완료: 짧은 변동 감소, ranking 저하·오탐 증가 | [결과·의의·추천 3개](docs/EXPERIMENT18.md) |
 | 실험 19 | 관계 관측 여부를 반영하는 외형 subspace 선택 | 완료: ranking·오탐 개선, recall·구간 탐지 감소 | [결과·의의·추천 3개](docs/EXPERIMENT19.md) |
-| 다음 실험 20 | 외형 bank 경로별 정상 보정·영상 holdout 검증 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT20_PLAN.md) |
+| 실험 20 | 외형 bank 경로별 정상 보정·영상 holdout 검증 | 완료: 정상 holdout 오탐 증가, 테스트 효과 제한적 | [결과·의의·추천 3개](docs/EXPERIMENT20.md) |
+| 다음 실험 21 | 관측 FIT 제한·추론 fallback의 2×2 대조 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT21_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -680,6 +681,36 @@ R03의 정상 영상으로 로컬 Qwen discovery와 정상 모델을 새로 적�
 | 3 | **정상 객체 역할·관측 누락 검증**: 기존 역할 오류와 낮은 체류 지원 지속 | 별도 정상 사례의 부품 누락·혼동 검토. 주석 범위/비용 공개, 관측률과 의미 정확도 구분 |
 
 [상세 결과·의의·한계·검증 기준](docs/EXPERIMENT19.md) · [지표](results/experiment19/metrics.json) · [관측별/bank 진단](results/experiment19/appearance_diagnostic.json) · [재현 검증](results/experiment19/validation.json) · [실험 20 계획](docs/EXPERIMENT20_PLAN.md)
+
+## 실험 20 결과 — 외형 bank 경로별 정상 보정
+
+PCA·raw residual·관계 mask·공정 점수를 유지하고 외형 CDF만 역할×실제 phase/pooled bank로 나눴습니다. 정상 관측 50개·서로 다른 영상 2개 이상일 때만 경로별 보정을 쓰며, 부족하면 역할 전체 CDF를 사용합니다.
+
+| 지표 | 실험 19 | 실험 20 |
+|---|---:|---:|
+| 정상 영상 holdout 오탐 | 44/1,920 (2.29%) | **68/1,920 (3.54%)** |
+| 테스트 Combined AUROC / AP | 0.6792 / 0.6767 | 0.6780 / 0.6802 |
+| 테스트 정상 오탐률 | 8.05% (288) | 8.28% (296) |
+| 테스트 이상 recall | 13.13% (601) | 13.22% (605) |
+| 탐지한 GT 이상 구간 | 14/26 | 14/26 |
+
+R04 정상 FIT 20개/calibration 5개, 테스트 19개·8,154프레임입니다. 모델별 정상 q99는 0.997457627 / 0.997607656으로 다릅니다. 탐지 구간 총수는 같지만 **두 구간을 얻고 두 구간을 잃었습니다.**
+
+![실험 20 정상 holdout과 꼬리 반례](results/experiment20/route_holdout.png)
+
+**의의:** 지원 guard를 통과해도 경로별 보정이 안정적이지 않을 수 있음을 정상 holdout에서 확인했습니다. 추가 정상 오탐 6 samples는 모두 해당 경로 최대 밖이지만 역할 전체 정상 범위 안에 있었습니다. 보정의 실패 조건을 재현한 결과이며 AP 상승을 novelty로 주장하지 않습니다.
+
+**보완할 점:** 미관측 이상 탐지 순 +60개가 관측 탐지 −56개로 대부분 상쇄됐습니다. 정상 holdout·테스트 오탐이 모두 늘어 이번 CDF를 기본 구성으로 승격하지 않습니다. 관측 FIT 제한과 추론 fallback의 개별 기여, 객체 역할 오류·낮은 체류 지원은 미해결이며 R04는 반복 개발 장면입니다.
+
+### 실험 20 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 근거 | 변경·검증 방향 |
+|---|---|---|
+| 1 | **관측 FIT 제한·추론 fallback의 2×2 분리 대조**: CDF 분리의 전체 탐지 순증가는 4개, 기존 외형 변경의 개별 효과는 미분리 | 역할 전체 CDF를 유지하고 두 요소의 단독/결합 구성 모두 공개. 정상 holdout·전체/관측별 지표 검증, 유리한 셀만 보고하지 않음 |
+| 2 | **경로·역할 전체 reference의 부분 공유**: 추가 정상 6 samples가 역할 전체 범위 안 | 공유 규칙을 별도 실행 전에 고정하고 정상 꼬리·오탐과 이상 탐지 손실 평가. 테스트 가중치 탐색 금지 |
+| 3 | **정상 역할·누락 검증 확대**: 기존 역할 오류와 체류 가용성 5.11% 지속 | 별도 정상 자세/배경 사례 검토와 보조 주석 범위·비용 공개. coverage와 의미 정확도 구분 |
+
+[상세 결과·의의·한계·검증 기준](docs/EXPERIMENT20.md) · [정상 holdout](results/experiment20/normal_holdout.json) · [지표](results/experiment20/metrics.json) · [관측·경로 진단](results/experiment20/route_diagnostic.json) · [재현 검증](results/experiment20/validation.json) · [실험 21 계획](docs/EXPERIMENT21_PLAN.md)
 
 ## 로컬 VLM
 

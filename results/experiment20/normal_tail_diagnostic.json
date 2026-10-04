@@ -1,0 +1,135 @@
+{
+  "normal_holdout_only": true,
+  "added_alarm_samples": 6,
+  "removed_alarm_samples": 0,
+  "added_alarms": [
+    {
+      "sequence": "10",
+      "source_frame_index": 68,
+      "relation_observed": true,
+      "combined_before": 0.9976905311778291,
+      "combined_after": 1.0,
+      "new_visual_exceedances": [
+        {
+          "role": 1,
+          "route": "phase",
+          "raw_residual": 0.0926837471596309,
+          "route_reference_max": 0.07788443916032689,
+          "role_reference_max": 0.10080113187003514,
+          "route_reference_samples": 286,
+          "route_percentile": 1.0,
+          "role_percentile": 0.9976905311778291,
+          "beyond_route_max": true,
+          "within_role_range": true
+        }
+      ]
+    },
+    {
+      "sequence": "12",
+      "source_frame_index": 260,
+      "relation_observed": false,
+      "combined_before": 0.9895397489539749,
+      "combined_after": 1.0,
+      "new_visual_exceedances": [
+        {
+          "role": 0,
+          "route": "pooled",
+          "raw_residual": 0.06287961451754445,
+          "route_reference_max": 0.04934235901670722,
+          "role_reference_max": 0.12594186242115257,
+          "route_reference_samples": 157,
+          "route_percentile": 1.0,
+          "role_percentile": 0.9895397489539749,
+          "beyond_route_max": true,
+          "within_role_range": true
+        }
+      ]
+    },
+    {
+      "sequence": "12",
+      "source_frame_index": 300,
+      "relation_observed": false,
+      "combined_before": 0.9853556485355649,
+      "combined_after": 1.0,
+      "new_visual_exceedances": [
+        {
+          "role": 0,
+          "route": "pooled",
+          "raw_residual": 0.057929948876025955,
+          "route_reference_max": 0.04934235901670722,
+          "role_reference_max": 0.12594186242115257,
+          "route_reference_samples": 157,
+          "route_percentile": 1.0,
+          "role_percentile": 0.9853556485355649,
+          "beyond_route_max": true,
+          "within_role_range": true
+        }
+      ]
+    },
+    {
+      "sequence": "12",
+      "source_frame_index": 308,
+      "relation_observed": false,
+      "combined_before": 0.9948186528497409,
+      "combined_after": 1.0,
+      "new_visual_exceedances": [
+        {
+          "role": 2,
+          "route": "pooled",
+          "raw_residual": 0.02402305112337129,
+          "route_reference_max": 0.023447941010499213,
+          "role_reference_max": 0.026782738297399244,
+          "route_reference_samples": 140,
+          "route_percentile": 1.0,
+          "role_percentile": 0.9948186528497409,
+          "beyond_route_max": true,
+          "within_role_range": true
+        }
+      ]
+    },
+    {
+      "sequence": "12",
+      "source_frame_index": 352,
+      "relation_observed": false,
+      "combined_before": 0.9974093264248705,
+      "combined_after": 1.0,
+      "new_visual_exceedances": [
+        {
+          "role": 2,
+          "route": "pooled",
+          "raw_residual": 0.026200634059588238,
+          "route_reference_max": 0.023447941010499213,
+          "role_reference_max": 0.026782738297399244,
+          "route_reference_samples": 140,
+          "route_percentile": 1.0,
+          "role_percentile": 0.9974093264248705,
+          "beyond_route_max": true,
+          "within_role_range": true
+        }
+      ]
+    },
+    {
+      "sequence": "15",
+      "source_frame_index": 196,
+      "relation_observed": false,
+      "combined_before": 0.9874055415617129,
+      "combined_after": 1.0,
+      "new_visual_exceedances": [
+        {
+          "role": -1,
+          "route": "pooled",
+          "raw_residual": 0.019003649729468823,
+          "route_reference_max": 0.018172251203814792,
+          "role_reference_max": 0.024167988510122113,
+          "route_reference_samples": 153,
+          "route_percentile": 1.0,
+          "role_percentile": 0.9874055415617129,
+          "beyond_route_max": true,
+          "within_role_range": true
+        }
+      ]
+    }
+  ],
+  "all_extra_samples_have_route_tail_crossing_inside_role_range": true,
+  "note": "Descriptive check of fixed holdout predictions. Different normal q99 values retained. No model adjustment."
+}

@@ -12,7 +12,9 @@ def main():
     cfg=json.loads(Path(f'configs/experiment{args.experiment}.json').read_text());assert cfg['dwell_score']=='fit_lognormal_cdf'
     split=json.loads(Path('results/stage00/splits.json').read_text())[cfg['scene']];root=Path(f'artifacts/experiment{args.experiment}')
     def load(seq):
-        with np.load(root/'features'/cfg['scene']/f'training_{seq}.npz',allow_pickle=False) as f:return dict(f)
+        with np.load(root/'features'/cfg['scene']/f'training_{seq}.npz',allow_pickle=False) as f:data=dict(f)
+        data['sequence_id']=f'{cfg["scene"]}/training_{seq}'
+        return data
     fit=[load(s) for s in split['fit']];cal=[load(s) for s in split['calibration']]
     with threadpool_limits(limits=4):
         model=LognormalDwellBaseline(cfg,load_process(cfg));model.fit(fit);model.calibrate(cal);results=[model.score(d) for d in cal]

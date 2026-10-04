@@ -34,7 +34,9 @@ def main():
     split=json.loads(Path('results/stage00/splits.json').read_text())[scene]
     root=Path('artifacts')/experiment/'features'/scene
     def load(part,seq):
-        with np.load(root/f'{part}_{seq}.npz',allow_pickle=False) as f:return dict(f)
+        with np.load(root/f'{part}_{seq}.npz',allow_pickle=False) as f:data=dict(f)
+        data['sequence_id']=f'{scene}/{part}_{seq}'
+        return data
     fit=[load('training',seq) for seq in split['fit']]
     cal=[load('training',seq) for seq in split['calibration']]
     if 'process_calibration' in cfg:
@@ -140,6 +142,11 @@ def main():
         if 'dwell_lognormal' in cfg:
             result['dwell']['lognormal_parameters']={f'{a}->{b}':{'mu':mu,'sigma':sigma} for (a,b),(mu,sigma) in model.dwell.log_parameters.items()}
             result['dwell']['sigma_floor']=model.dwell.sigma_floor
+    if model.route_calibration is not None:
+        result['appearance_route_calibration']={'requirements':cfg['appearance_route_calibration'],
+            'route_codes':{'0':'pooled','1':'phase'},
+            'support':{str(k):v for k,v in model.route_calibration.support.items()},
+            'fallback':'Role-wide normal CDF when route support is insufficient.'}
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
@@ -148,6 +155,8 @@ def main():
     for (role,phase),space in model.spaces.items():
         arrays[f'mean_{role}_{phase}']=space.mean;arrays[f'basis_{role}_{phase}']=space.basis
     for role,reference in model.calibration.items():arrays[f'calibration_{role}']=reference
+    if model.route_calibration is not None:
+        for (role,route),reference in model.route_calibration.references.items():arrays[f'route_calibration_{role}_{route}']=reference
     if 'process_calibration' in cfg:
         for state,reference in model.state_process_references.items():arrays[f'process_reference_state_{state}']=reference
     if 'normal_dwell' in cfg:
