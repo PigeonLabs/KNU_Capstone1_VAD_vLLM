@@ -1,0 +1,428 @@
+[
+  {
+    "scene": "R02",
+    "partition": "testing",
+    "sequence": "12",
+    "relative_directory": "R02/testing/frames/12",
+    "frames": 806,
+    "first_frame_id": 0,
+    "last_frame_id": 805,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "a0f504d91556f2604e371bf3240d2b6743f5499d5a8f29d703c4b684336da6a6",
+    "archive_frames": 806,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "R02/test_label/012.npy",
+    "label_sha256": "7a28529e301be23be7072835c18527afeb0633d735347f31b099ee76fad2c43a",
+    "label_count": 805,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 270,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        287,
+        557
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "R02",
+    "partition": "testing",
+    "sequence": "13",
+    "relative_directory": "R02/testing/frames/13",
+    "frames": 609,
+    "first_frame_id": 0,
+    "last_frame_id": 608,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "6c3a5f7d874d10452895fc76636d745faa8d3b078ab4d4ca84272651bdbe6378",
+    "archive_frames": 609,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "R02/test_label/013.npy",
+    "label_sha256": "9918c0a71ed8277e78b5d1bb353767df4fbce7b2d45aa9045fd1a9e3d5719c18",
+    "label_count": 608,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 31,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        11,
+        28
+      ],
+      [
+        303,
+        317
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "R02",
+    "partition": "testing",
+    "sequence": "14",
+    "relative_directory": "R02/testing/frames/14",
+    "frames": 497,
+    "first_frame_id": 0,
+    "last_frame_id": 496,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "33fbaed7a504994062b4e3f6896d812dab66ecbbddb32917051bed8732e22a22",
+    "archive_frames": 497,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "R02/test_label/014.npy",
+    "label_sha256": "6587f368313ddfbe739d314e7a67889d9984387c30ca39beb13df295c815e59a",
+    "label_count": 498,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 100,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        134,
+        184
+      ],
+      [
+        340,
+        390
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "09",
+    "relative_directory": "S05/testing/frames/09",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/009.npy",
+    "label_sha256": "6ec6d1fb2511f3f1b44379c95fc3bd4a9efddc6b5b430a459d38eb8ec155b896",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 76,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        0,
+        76
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "10",
+    "relative_directory": "S05/testing/frames/10",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/010.npy",
+    "label_sha256": "465f0a6db11a476b4fbb8eff8878288697ae1dd7f2b3a894e229da27bebb129d",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 377,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        0,
+        377
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "11",
+    "relative_directory": "S05/testing/frames/11",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/011.npy",
+    "label_sha256": "465f0a6db11a476b4fbb8eff8878288697ae1dd7f2b3a894e229da27bebb129d",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 377,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        0,
+        377
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "12",
+    "relative_directory": "S05/testing/frames/12",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/012.npy",
+    "label_sha256": "7cd810b1172503075d556a028fb32b472fc3953f689f1e10aa5f0aa190a96c1d",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 202,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        100,
+        302
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "13",
+    "relative_directory": "S05/testing/frames/13",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/013.npy",
+    "label_sha256": "e3d2f7549dadc7f6d3a3f30902f3287224ea7b5f5087c37859e42b5687514d5b",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 225,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        151,
+        376
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "14",
+    "relative_directory": "S05/testing/frames/14",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/014.npy",
+    "label_sha256": "7aea3bcd9445326a3851f59d5299ef04858a55ccfa2ca70814e73742574e5857",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 676,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        0,
+        676
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S05",
+    "partition": "testing",
+    "sequence": "15",
+    "relative_directory": "S05/testing/frames/15",
+    "frames": 626,
+    "first_frame_id": 0,
+    "last_frame_id": 625,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "34b55e2b52cf3478e30dd0e2c2ec9bbbfb4826cd3c61a021e317a5ebed240b02",
+    "archive_frames": 626,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S05/test_label/015.npy",
+    "label_sha256": "7aea3bcd9445326a3851f59d5299ef04858a55ccfa2ca70814e73742574e5857",
+    "label_count": 676,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 676,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        0,
+        676
+      ]
+    ],
+    "archive_label_equal": true
+  },
+  {
+    "scene": "S12",
+    "partition": "testing",
+    "sequence": "13",
+    "relative_directory": "S12/testing/frames/13",
+    "frames": 1000,
+    "first_frame_id": 0,
+    "last_frame_id": 999,
+    "time_unit": "source_frame_index",
+    "fps": null,
+    "timestamp_seconds": null,
+    "cycle_boundaries": null,
+    "phase_ground_truth": null,
+    "lexicographic_order_differs": false,
+    "filenames_sha256": "d3006c0f5228ba1ec0b725cb9eb1a143a65129770aa23b82d47dcab7681c3d73",
+    "archive_frames": 1000,
+    "archive_sample_content_equal": true,
+    "sample_dimensions": [
+      [
+        256,
+        256
+      ]
+    ],
+    "label_file": "S12/test_label/013.npy",
+    "label_sha256": "9acb61e8c7671eccc06f5e3dec870e4611d1cf7ae0ea3c0a98cfc322524ee825",
+    "label_count": 1001,
+    "alignment_status": "unresolved_quarantined",
+    "valid_evaluation_frames": 0,
+    "original_positive_labels": 350,
+    "anomaly_frames_in_strict_evaluation": 0,
+    "anomaly_intervals_source_label_indices": [
+      [
+        625,
+        975
+      ]
+    ],
+    "archive_label_equal": true
+  }
+]

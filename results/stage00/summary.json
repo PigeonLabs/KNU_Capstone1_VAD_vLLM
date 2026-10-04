@@ -1,0 +1,30 @@
+{
+  "stage": "00",
+  "status": "safe_data_interface_complete_exact_relabeling_unresolved",
+  "totals": {
+    "training_sequences": 776,
+    "training_frames": 430867,
+    "lexicographic_order_differences": 0,
+    "strict_evaluation_frames": 159818,
+    "quarantined_frames": 7294,
+    "strict_positive_frames": 43819,
+    "testing_sequences": 292,
+    "testing_frames": 167112
+  },
+  "unresolved_sequences": 11,
+  "fps_status": "not_available_in_supplied_frame_archive_or_official_loader",
+  "official_source_commit": "22764cbeeda3946303d236babdd2664fd6241b91",
+  "official_loader_note": "index = frame_name * 200 // sequence_length is a relative position proxy, not semantic phase GT or cycle annotation",
+  "archive": {
+    "basename": "IPAD_dataset-001.zip",
+    "bytes": 8920232221,
+    "entries": 599436
+  },
+  "checks": {
+    "all_frame_names_and_counts": true,
+    "all_test_label_bytes_compared_to_archive": true,
+    "decoded_images": "first/middle/last per sequence only",
+    "archive_frame_content": "first/middle/last per sequence only"
+  },
+  "policy": "Original files preserved. Equal-length labels use frame index correspondence. Entire mismatched sequences receive -1 unknown labels in primary evaluation. No truncation, stretching, inferred FPS, or test-based phase generation."
+}
