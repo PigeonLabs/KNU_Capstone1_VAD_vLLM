@@ -1,0 +1,44 @@
+{
+  "context_per_request": 65536,
+  "slots": 1,
+  "temperature": 0.20000000298023224,
+  "model": "Qwen3.8-27B-Q8_0.gguf",
+  "modalities": {
+    "vision": true,
+    "audio": false
+  },
+  "thinking_template": {
+    "supports_object_arguments": true,
+    "supports_parallel_tool_calls": true,
+    "supports_preserve_reasoning": true,
+    "supports_string_content": true,
+    "supports_system_role": true,
+    "supports_tool_calls": true,
+    "supports_tools": true,
+    "supports_typed_content": false
+  },
+  "build_info": "b9336-1506d39e7",
+  "command_flags": [
+    "--ctx-size",
+    "65536",
+    "--temp",
+    "0.2",
+    "--gpu-layers",
+    "all",
+    "--reasoning",
+    "on",
+    "--parallel",
+    "1"
+  ],
+  "llama_cpp_commit": "1506d39e76d1a6694a3a9412ed3116feb7b37ac1",
+  "gpu_offload_note": "all explicitly requested; VRAM allocation observed separately; model metadata hash pending",
+  "gguf_metadata": {
+    "architecture": "qwen35",
+    "name": "Qwen3.8-27B",
+    "file_type": 7,
+    "quantization": "Q8_0"
+  },
+  "observed_llama_gpu_memory_mib": 32614,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "llama_cpp_worktree_note": "Two pre-existing deleted, unrelated template files observed; not modified by this experiment."
+}

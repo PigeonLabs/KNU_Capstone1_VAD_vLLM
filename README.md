@@ -7,8 +7,8 @@
 | 단계 | 범위 | 상태 | 결과 |
 |---|---|---|---|
 | 데이터 정리 (Stage 00) | IPAD 16개 장면 전체 | 안전한 로더·평가 마스크 완료, 정확한 재라벨링은 미해결 | 아래 표 및 [기계 판독 결과](results/stage00/summary.json) |
-| 실험 01 | R01 전체 학습/테스트를 사용하는 기본 파이프라인 pilot | 준비 중; 성능 미측정 | [고정 설정](configs/experiment01.json) |
-| 실험 02 | 미정 | 실험 01 결과 검토 후 결정 | 사전 실험 계획 없음 |
+| 실험 01 | R01 전체 학습/테스트를 사용하는 기본 파이프라인 pilot | 완료: R01 15개 테스트 영상 평가 | [결과](results/experiment01/metrics.json) · [설정](configs/experiment01.json) |
+| 실험 02 | 정상 trajectory 기반 phase 추정 | 실험 01 결과에 따라 설계 | 아래 Recommended improvements |
 
 ## Stage 00 — 데이터 정합성과 시간축
 
@@ -64,6 +64,32 @@ export PYTHONPATH=src
 첫 실험은 R01의 모든 시퀀스에서 실행합니다. 4프레임 간격 sampling, 정상 calibration, 현재 관측 기반 phase 추정을 사용합니다. 다른 장면의 결과나 전체 IPAD 재현으로 확대 해석하지 않습니다. 제안 파이프라인에는 원래 완전한 구현 명세가 없으므로 이 설정은 **우리의 명시적 baseline 구현**이며, 기존 논문 수치 재현은 아닙니다.
 
 추후 개선은 실험 01 결과를 확인한 뒤 Recommended improvements로 기록합니다. phase 추정·누락 객체·좌표/관계 특징 등에 대한 개선을 미리 성능 기여로 주장하지 않습니다.
+
+## 실험 01 결과
+
+정상 fit 27개 / calibration 7개, 테스트 15개 영상의 **3,685프레임**을 평가했습니다. 이상 프레임은 1,254개입니다. seed 42 한 번의 R01 pilot이며 전체 IPAD 성능을 의미하지 않습니다.
+
+| 점수 | Frame AUROC | Average precision |
+|---|---:|---:|
+| Visual | 0.5727 | 0.3766 |
+| Process | 0.4942 | 0.3377 |
+| Combined (0.5/0.5) | 0.5371 | 0.3636 |
+
+정상 calibration q99 임계값은 0.9810입니다. 이 임계값에서 테스트 정상 프레임 오탐률은 **6.95%**, 이상 프레임 recall은 **5.98%**입니다. AUROC/AP만 보고 실사용 가능한 성능으로 해석하지 않습니다.
+
+![실험 01 점수와 phase 분포](results/experiment01/summary.png)
+
+![실험 01 고정 사례의 시간 점수](results/experiment01/timelines.png)
+
+[상세 방법](docs/EXPERIMENT01.md) · [전체 지표](results/experiment01/metrics.json) · [영상별 지표](results/experiment01/per_sequence.csv) · [검출/추출 진단](results/experiment01/extraction.json)
+
+### 관찰한 실패와 Recommended improvements
+
+- **Phase collapse:** FIT 샘플의 phase 분포가 `[1363, 0, 193]`입니다. 왼쪽/중앙/오른쪽이라는 언어적 설명만으로 CLIP 전체 프레임 특징이 중앙 상태를 분리하지 못했습니다. Calibration/Test에서도 중앙은 각각 1샘플뿐입니다. Process AUROC 0.4942와 함께 볼 때 현 phase proxy의 유효성이 부족합니다.
+- **객체 오검출:** 정상 영상 01의 bbox 직접 점검에서 하단 고정 빨간 부품도 product 역할로 검출되었습니다. `role_frame_coverage=1.0`은 해당 역할의 박스가 있다는 뜻이며, 실제 제품 recall 100%가 아닙니다.
+- **외형 정보의 한계:** crop 정규화로 위치 정보를 잃으며, motion/관계는 아직 scoring에 사용하지 않습니다.
+
+**실험 02의 단일 변경:** detector, crop 특징, encoder, split, sampling, PCA/scoring 규칙은 그대로 유지하고 phase 추정만 바꿉니다. 정상 FIT에서 실제로 이동한 product-role track으로 이동 경로와 3개 공간 상태를 적합하고, test-time에는 현재 bbox와 과거 상태만 사용합니다. 누락 시 이전 phase를 유지하며 그 비율을 공개합니다. 위치 정답·test label·미래 프레임은 사용하지 않습니다. 이는 R01의 공간적 진행 proxy이며 일반 공정 grammar 학습으로 주장하지 않습니다. 그 이후 실험은 아직 설계하지 않습니다.
 
 ## 로컬 VLM
 

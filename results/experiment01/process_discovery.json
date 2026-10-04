@@ -1,0 +1,74 @@
+{
+  "scene": "R01",
+  "sources": [
+    "R01/training/frames/01/000.jpg",
+    "R01/training/frames/01/041.jpg",
+    "R01/training/frames/01/082.jpg",
+    "R01/training/frames/01/123.jpg",
+    "R01/training/frames/01/164.jpg",
+    "R01/training/frames/01/206.jpg",
+    "R01/training/frames/02/000.jpg",
+    "R01/training/frames/02/042.jpg",
+    "R01/training/frames/02/085.jpg",
+    "R01/training/frames/02/127.jpg",
+    "R01/training/frames/02/170.jpg",
+    "R01/training/frames/02/213.jpg"
+  ],
+  "prompt": "You are documenting only the VISIBLE normal operation of an industrial device.\nThe supplied images are two normal training sequences, each sampled in temporal order.\nUse no test data or imagined defects. Do not infer hidden actions such as grasping if not visible.\nReturn ONLY a JSON object, no markdown. Schema:\n{\"objects\":[{\"id\":\"short_ascii_role\",\"detection_prompt\":\"short concrete English noun phrase\",\"description\":\"visible role\"}],\n\"phases\":[{\"id\":\"short_ascii_state\",\"description\":\"A photo of ... (a concrete visually discriminable normal state)\"}],\n\"normal_order\":[\"phase_id\"],\"cyclic\":true,\"uncertainties\":[\"limitations\"]}.\nUse 1-3 object roles (include transported product and relevant machine part), 2-4 observable phases.\nPhases must describe distinct VISIBLE positions/states, not defect types. Vocabulary must work as object detection prompts.\nWhen a fine-grained action is not observable, use spatial progression states instead. Do not invent numeric period or FPS.",
+  "process": {
+    "objects": [
+      {
+        "id": "product",
+        "detection_prompt": "small black object with red top",
+        "description": "the item being carried along the belt surface"
+      },
+      {
+        "id": "conveyor_belt",
+        "detection_prompt": "green conveyor belt",
+        "description": "the moving green belt surface that transports the product"
+      },
+      {
+        "id": "front_rail",
+        "detection_prompt": "horizontal metal bar",
+        "description": "the fixed horizontal metal bar spanning the front of the conveyor"
+      }
+    ],
+    "phases": [
+      {
+        "id": "product_left",
+        "description": "A photo of the small black object with red top positioned at the left end of the green conveyor belt."
+      },
+      {
+        "id": "product_center",
+        "description": "A photo of the small black object with red top positioned in the middle of the green conveyor belt."
+      },
+      {
+        "id": "product_right",
+        "description": "A photo of the small black object with red top positioned at the right end of the green conveyor belt."
+      }
+    ],
+    "normal_order": [
+      "product_left",
+      "product_center",
+      "product_right"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "The exact identity of the small black-and-red item is not identifiable from the images (could be a battery pack or small component).",
+      "Belt speed, cycle period, and frame rate cannot be measured from the stills.",
+      "At the left and right ends the product is partially cut off by the frame edge, so its full shape is not always visible.",
+      "No grasping, stopping, or other manipulation of the product is visible; only translation along the belt is observable."
+    ]
+  },
+  "elapsed_seconds": 45.92465989201446,
+  "usage": {
+    "completion_tokens": 1805,
+    "prompt_tokens": 1264,
+    "total_tokens": 3069,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "note": "Generated normal-state hypotheses, not ground truth. Reasoning text is not persisted."
+}
