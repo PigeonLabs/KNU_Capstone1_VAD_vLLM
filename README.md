@@ -9,6 +9,8 @@
 | 데이터 정리 (Stage 00) | IPAD 16개 장면 전체 | 안전한 로더·평가 마스크 완료, 정확한 재라벨링은 미해결 | 아래 표 및 [기계 판독 결과](results/stage00/summary.json) |
 | 실험 01 | R01 전체 학습/테스트를 사용하는 기본 파이프라인 pilot | 완료: R01 15개 테스트 영상 평가 | [결과](results/experiment01/metrics.json) · [설정](configs/experiment01.json) |
 | 실험 02 | 정상 trajectory 기반 phase 추정 | 완료: phase만 교체한 비교 | [결과와 한계](docs/EXPERIMENT02.md) |
+| 실험 03 | 정상 이동 영역 기반 제품 재검출 | 완료: 관측 개선, 최종 결합 성능 저하 | [결과·의의·추천 3개](docs/EXPERIMENT03.md) |
+| 다음 실험 04 | 정상 궤적의 진행량 기반 공정 점수 | 다음 단계 계획, 미실행 | [계획](docs/EXPERIMENT04_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -140,9 +142,41 @@ export PYTHONPATH=src
 | 2 | **누락 관측을 반영한 phase 불확실성** | 오래된 phase 유지 가능. 관측 경과 프레임 수·unknown·재관측 처리를 비교하고 오탐/recall 확인 |
 | 3 | **신뢰도 기반 결합·정상 calibration 개선** | 정상 오탐률 14.85%. 정상 데이터로 결합/임계값 규칙을 결정하고 경보 품질 비교 |
 
-[후보별 변경 내용·검증 기준과 주의점](docs/EXPERIMENT02.md)을 기록했습니다. 다음 실험의 최우선 후보는 제품 grounding 개선이며, 세 후보를 확정된 후속 실험으로 취급하지 않습니다. 실험 03은 아직 실행하지 않았습니다. R01은 개발 장면이며 최종 검증 결과로 간주하지 않습니다.
+[후보별 변경 내용·검증 기준과 주의점](docs/EXPERIMENT02.md)을 기록했습니다. 다음 실험의 최우선 후보는 제품 grounding 개선이며, 세 후보를 확정된 후속 실험으로 취급하지 않습니다. 이후 1순위의 정상 이동 영역을 이용한 제품 재검출을 실험 03에서 실행했습니다. R01은 개발 장면이며 최종 검증 결과로 간주하지 않습니다.
 
 [실험 02 지표](results/experiment02/metrics.json) · [phase 관측 진단](results/experiment02/phase_grounding.json) · [비교 CSV](results/comparison01_02/metrics.csv)
+
+## 실험 03 결과 — 정상 이동 영역 기반 제품 재검출
+
+정상 FIT의 이동 track으로 제품 검출 영역을 정했습니다. detector/prompt는 유지하고, 다른 역할 및 전체 프레임 특징과 phase 공간 지도는 고정했습니다. R01·seed 42, 테스트 15개 영상/3,685프레임으로 실험 02와 비교했습니다.
+
+| 지표 | 실험 02 | 실험 03 |
+|---|---:|---:|
+| Visual AUROC | 0.5787 | 0.6514 |
+| Visual AP | 0.3798 | 0.4260 |
+| Process AUROC | 0.5471 | 0.5388 |
+| Process AP | 0.3749 | 0.3603 |
+| Combined AUROC | 0.5959 | 0.5814 |
+| Combined AP | 0.4031 | 0.4018 |
+| 정상 q99 기준 테스트 정상 오탐률 | 14.85% | 2.96% |
+| 정상 q99 기준 테스트 이상 recall | 23.37% | 3.83% |
+| 직접 phase 관측률 (전체 sampled 시점) | 13.24% | 94.75% |
+
+![실험 02–03 비교](results/comparison02_03/comparison.png)
+
+**의의:** 정상 trajectory를 검출 입력에 연결해 공간 phase 관측을 늘리고 Visual AUROC를 높일 가능성을 확인했습니다. 다만 Combined AUROC는 하락했습니다. 관측 품질 개선을 최종 탐지 개선이나 novelty 입증으로 확대 해석하지 않습니다.
+
+**보완할 점:** 오탐 감소와 함께 recall도 23.37%→3.83%로 줄었습니다. 전이 빈도 점수에는 phase 내 실제 진행·정지 정보가 없고, 제품 없는 정상 구간의 배경 오검출도 남았습니다. 관측률은 제품 recall이 아니며 독립 bbox GT와 다른 장면 검증이 필요합니다. ROI의 경로 밖 이상 누락 가능성도 있습니다.
+
+### 실험 03 이후 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보 | 검증 방향 |
+|---|---|---|
+| 1 | **정상 궤적의 진행량 기반 공정 점수** | 동일 track의 프레임당 이동량으로 실제 진행·정지 신호 추가. 정상 FIT 진단 후 규칙 고정 |
+| 2 | **관측 상태와 실제 부재 구분** | 빈 벨트·검출 누락·재관측을 구분하고 정상 오탐과 제품 누락 이상을 함께 점검 |
+| 3 | **공정 기여를 검증하는 결합·보정** | Visual 단독/고정 결합/정상 신뢰도 결합 비교. test 지표로 가중치 탐색 금지 |
+
+[상세 결과·의의·한계·후보별 검증 기준](docs/EXPERIMENT03.md) · [다음 실험 04 계획](docs/EXPERIMENT04_PLAN.md) · [지표](results/experiment03/metrics.json) · [관측 진단](results/experiment03/observations.json)
 
 ## 로컬 VLM
 

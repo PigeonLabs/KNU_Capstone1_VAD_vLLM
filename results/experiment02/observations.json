@@ -1,0 +1,788 @@
+{
+  "experiment": "02",
+  "phase_map_source": "experiment02 frozen, fitted only on original normal FIT tracks",
+  "not_detection_recall": true,
+  "time_unit": "source_frame_index",
+  "aggregate": {
+    "fit": {
+      "samples": 1556,
+      "observations": 262,
+      "observation_fraction": 0.16838046272493573,
+      "missing_run_count": 132,
+      "max_gap_source_frames": 236,
+      "median_gap_source_frames": 12.0
+    },
+    "calibration": {
+      "samples": 410,
+      "observations": 16,
+      "observation_fraction": 0.03902439024390244,
+      "missing_run_count": 14,
+      "max_gap_source_frames": 235,
+      "median_gap_source_frames": 78.5
+    },
+    "test": {
+      "samples": 927,
+      "observations": 105,
+      "observation_fraction": 0.11326860841423948,
+      "missing_run_count": 61,
+      "max_gap_source_frames": 290,
+      "median_gap_source_frames": 12.0
+    },
+    "all": {
+      "samples": 2893,
+      "observations": 383,
+      "observation_fraction": 0.132388524023505,
+      "missing_run_count": 207,
+      "max_gap_source_frames": 290,
+      "median_gap_source_frames": 12.0
+    }
+  },
+  "sequences": [
+    {
+      "sequence_key": "testing_01",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 1,
+      "observation_fraction": 0.017241379310344827,
+      "missing_run_lengths_source_frames": [
+        176,
+        50
+      ],
+      "maximum_missing_run_source_frames": 176,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "testing_02",
+      "group": "test",
+      "samples": 64,
+      "direct_observations": 22,
+      "observation_fraction": 0.34375,
+      "missing_run_lengths_source_frames": [
+        4,
+        8,
+        12,
+        12,
+        4,
+        4,
+        4,
+        4,
+        8,
+        108
+      ],
+      "maximum_missing_run_source_frames": 108,
+      "product_boxes": 86
+    },
+    {
+      "sequence_key": "testing_03",
+      "group": "test",
+      "samples": 103,
+      "direct_observations": 9,
+      "observation_fraction": 0.08737864077669903,
+      "missing_run_lengths_source_frames": [
+        16,
+        96,
+        148,
+        4,
+        109
+      ],
+      "maximum_missing_run_source_frames": 148,
+      "product_boxes": 112
+    },
+    {
+      "sequence_key": "testing_04",
+      "group": "test",
+      "samples": 48,
+      "direct_observations": 7,
+      "observation_fraction": 0.14583333333333334,
+      "missing_run_lengths_source_frames": [
+        20,
+        8,
+        92,
+        43
+      ],
+      "maximum_missing_run_source_frames": 92,
+      "product_boxes": 55
+    },
+    {
+      "sequence_key": "testing_05",
+      "group": "test",
+      "samples": 73,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        290
+      ],
+      "maximum_missing_run_source_frames": 290,
+      "product_boxes": 73
+    },
+    {
+      "sequence_key": "testing_06",
+      "group": "test",
+      "samples": 59,
+      "direct_observations": 16,
+      "observation_fraction": 0.2711864406779661,
+      "missing_run_lengths_source_frames": [
+        96,
+        4,
+        36,
+        4,
+        4,
+        8,
+        8,
+        4,
+        5
+      ],
+      "maximum_missing_run_source_frames": 96,
+      "product_boxes": 75
+    },
+    {
+      "sequence_key": "testing_07",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 3,
+      "observation_fraction": 0.05172413793103448,
+      "missing_run_lengths_source_frames": [
+        188,
+        8,
+        23
+      ],
+      "maximum_missing_run_source_frames": 188,
+      "product_boxes": 61
+    },
+    {
+      "sequence_key": "testing_08",
+      "group": "test",
+      "samples": 59,
+      "direct_observations": 20,
+      "observation_fraction": 0.3389830508474576,
+      "missing_run_lengths_source_frames": [
+        8,
+        8,
+        4,
+        44,
+        91
+      ],
+      "maximum_missing_run_source_frames": 91,
+      "product_boxes": 79
+    },
+    {
+      "sequence_key": "testing_09",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 6,
+      "observation_fraction": 0.10344827586206896,
+      "missing_run_lengths_source_frames": [
+        16,
+        4,
+        80,
+        4,
+        84,
+        17
+      ],
+      "maximum_missing_run_source_frames": 84,
+      "product_boxes": 64
+    },
+    {
+      "sequence_key": "testing_10",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        231
+      ],
+      "maximum_missing_run_source_frames": 231,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "testing_11",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 5,
+      "observation_fraction": 0.08620689655172414,
+      "missing_run_lengths_source_frames": [
+        8,
+        8,
+        4,
+        4,
+        188
+      ],
+      "maximum_missing_run_source_frames": 188,
+      "product_boxes": 63
+    },
+    {
+      "sequence_key": "testing_12",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        231
+      ],
+      "maximum_missing_run_source_frames": 231,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "testing_13",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        229
+      ],
+      "maximum_missing_run_source_frames": 229,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "testing_14",
+      "group": "test",
+      "samples": 58,
+      "direct_observations": 7,
+      "observation_fraction": 0.1206896551724138,
+      "missing_run_lengths_source_frames": [
+        8,
+        4,
+        40,
+        124,
+        26
+      ],
+      "maximum_missing_run_source_frames": 124,
+      "product_boxes": 65
+    },
+    {
+      "sequence_key": "testing_15",
+      "group": "test",
+      "samples": 57,
+      "direct_observations": 9,
+      "observation_fraction": 0.15789473684210525,
+      "missing_run_lengths_source_frames": [
+        8,
+        4,
+        180
+      ],
+      "maximum_missing_run_source_frames": 180,
+      "product_boxes": 66
+    },
+    {
+      "sequence_key": "training_01",
+      "group": "fit",
+      "samples": 52,
+      "direct_observations": 9,
+      "observation_fraction": 0.17307692307692307,
+      "missing_run_lengths_source_frames": [
+        48,
+        4,
+        24,
+        8,
+        76,
+        11
+      ],
+      "maximum_missing_run_source_frames": 76,
+      "product_boxes": 61
+    },
+    {
+      "sequence_key": "training_02",
+      "group": "fit",
+      "samples": 54,
+      "direct_observations": 25,
+      "observation_fraction": 0.46296296296296297,
+      "missing_run_lengths_source_frames": [
+        4,
+        4,
+        8,
+        28,
+        4,
+        8,
+        4,
+        4,
+        12,
+        4,
+        4,
+        8,
+        8,
+        14
+      ],
+      "maximum_missing_run_source_frames": 28,
+      "product_boxes": 79
+    },
+    {
+      "sequence_key": "training_03",
+      "group": "fit",
+      "samples": 51,
+      "direct_observations": 7,
+      "observation_fraction": 0.13725490196078433,
+      "missing_run_lengths_source_frames": [
+        16,
+        140,
+        19
+      ],
+      "maximum_missing_run_source_frames": 140,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_04",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 28,
+      "observation_fraction": 0.4827586206896552,
+      "missing_run_lengths_source_frames": [
+        8,
+        4,
+        20,
+        4,
+        24,
+        28,
+        4,
+        28
+      ],
+      "maximum_missing_run_source_frames": 28,
+      "product_boxes": 86
+    },
+    {
+      "sequence_key": "training_05",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 8,
+      "observation_fraction": 0.13559322033898305,
+      "missing_run_lengths_source_frames": [
+        12,
+        4,
+        4,
+        44,
+        24,
+        84,
+        29
+      ],
+      "maximum_missing_run_source_frames": 84,
+      "product_boxes": 67
+    },
+    {
+      "sequence_key": "training_06",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 30,
+      "observation_fraction": 0.5172413793103449,
+      "missing_run_lengths_source_frames": [
+        8,
+        24,
+        24,
+        8,
+        20,
+        27
+      ],
+      "maximum_missing_run_source_frames": 27,
+      "product_boxes": 88
+    },
+    {
+      "sequence_key": "training_07",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 11,
+      "observation_fraction": 0.1864406779661017,
+      "missing_run_lengths_source_frames": [
+        8,
+        40,
+        8,
+        4,
+        12,
+        20,
+        16,
+        81
+      ],
+      "maximum_missing_run_source_frames": 81,
+      "product_boxes": 70
+    },
+    {
+      "sequence_key": "training_08",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 26,
+      "observation_fraction": 0.4482758620689655,
+      "missing_run_lengths_source_frames": [
+        12,
+        12,
+        36,
+        28,
+        4,
+        12,
+        4,
+        20
+      ],
+      "maximum_missing_run_source_frames": 36,
+      "product_boxes": 84
+    },
+    {
+      "sequence_key": "training_09",
+      "group": "calibration",
+      "samples": 59,
+      "direct_observations": 12,
+      "observation_fraction": 0.2033898305084746,
+      "missing_run_lengths_source_frames": [
+        8,
+        32,
+        4,
+        143
+      ],
+      "maximum_missing_run_source_frames": 143,
+      "product_boxes": 71
+    },
+    {
+      "sequence_key": "training_10",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 27,
+      "observation_fraction": 0.4576271186440678,
+      "missing_run_lengths_source_frames": [
+        8,
+        4,
+        4,
+        4,
+        4,
+        64,
+        4,
+        8,
+        28
+      ],
+      "maximum_missing_run_source_frames": 64,
+      "product_boxes": 86
+    },
+    {
+      "sequence_key": "training_11",
+      "group": "calibration",
+      "samples": 59,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        235
+      ],
+      "maximum_missing_run_source_frames": 235,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "training_12",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        231
+      ],
+      "maximum_missing_run_source_frames": 231,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_13",
+      "group": "calibration",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        232
+      ],
+      "maximum_missing_run_source_frames": 232,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_14",
+      "group": "calibration",
+      "samples": 58,
+      "direct_observations": 1,
+      "observation_fraction": 0.017241379310344827,
+      "missing_run_lengths_source_frames": [
+        180,
+        48
+      ],
+      "maximum_missing_run_source_frames": 180,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "training_15",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        236
+      ],
+      "maximum_missing_run_source_frames": 236,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "training_16",
+      "group": "calibration",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        230
+      ],
+      "maximum_missing_run_source_frames": 230,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_17",
+      "group": "calibration",
+      "samples": 59,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        234
+      ],
+      "maximum_missing_run_source_frames": 234,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "training_18",
+      "group": "fit",
+      "samples": 57,
+      "direct_observations": 1,
+      "observation_fraction": 0.017543859649122806,
+      "missing_run_lengths_source_frames": [
+        196,
+        28
+      ],
+      "maximum_missing_run_source_frames": 196,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_19",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        233
+      ],
+      "maximum_missing_run_source_frames": 233,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "training_20",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        229
+      ],
+      "maximum_missing_run_source_frames": 229,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_21",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 16,
+      "observation_fraction": 0.27586206896551724,
+      "missing_run_lengths_source_frames": [
+        8,
+        4,
+        4,
+        8,
+        4,
+        40,
+        97
+      ],
+      "maximum_missing_run_source_frames": 97,
+      "product_boxes": 74
+    },
+    {
+      "sequence_key": "training_22",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 10,
+      "observation_fraction": 0.1694915254237288,
+      "missing_run_lengths_source_frames": [
+        12,
+        12,
+        8,
+        24,
+        4,
+        8,
+        126
+      ],
+      "maximum_missing_run_source_frames": 126,
+      "product_boxes": 69
+    },
+    {
+      "sequence_key": "training_23",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 7,
+      "observation_fraction": 0.11864406779661017,
+      "missing_run_lengths_source_frames": [
+        12,
+        32,
+        20,
+        141
+      ],
+      "maximum_missing_run_source_frames": 141,
+      "product_boxes": 66
+    },
+    {
+      "sequence_key": "training_24",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 8,
+      "observation_fraction": 0.13793103448275862,
+      "missing_run_lengths_source_frames": [
+        12,
+        4,
+        48,
+        4,
+        12,
+        76,
+        43
+      ],
+      "maximum_missing_run_source_frames": 76,
+      "product_boxes": 66
+    },
+    {
+      "sequence_key": "training_25",
+      "group": "fit",
+      "samples": 57,
+      "direct_observations": 12,
+      "observation_fraction": 0.21052631578947367,
+      "missing_run_lengths_source_frames": [
+        12,
+        4,
+        4,
+        12,
+        145
+      ],
+      "maximum_missing_run_source_frames": 145,
+      "product_boxes": 69
+    },
+    {
+      "sequence_key": "training_26",
+      "group": "fit",
+      "samples": 60,
+      "direct_observations": 3,
+      "observation_fraction": 0.05,
+      "missing_run_lengths_source_frames": [
+        12,
+        20,
+        20,
+        174
+      ],
+      "maximum_missing_run_source_frames": 174,
+      "product_boxes": 66
+    },
+    {
+      "sequence_key": "training_27",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        231
+      ],
+      "maximum_missing_run_source_frames": 231,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_28",
+      "group": "fit",
+      "samples": 57,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        228
+      ],
+      "maximum_missing_run_source_frames": 228,
+      "product_boxes": 57
+    },
+    {
+      "sequence_key": "training_29",
+      "group": "fit",
+      "samples": 59,
+      "direct_observations": 2,
+      "observation_fraction": 0.03389830508474576,
+      "missing_run_lengths_source_frames": [
+        8,
+        8,
+        209
+      ],
+      "maximum_missing_run_source_frames": 209,
+      "product_boxes": 61
+    },
+    {
+      "sequence_key": "training_30",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 31,
+      "observation_fraction": 0.5344827586206896,
+      "missing_run_lengths_source_frames": [
+        12,
+        4,
+        4,
+        4,
+        4,
+        8,
+        4,
+        4,
+        12,
+        4,
+        4,
+        4,
+        8,
+        29
+      ],
+      "maximum_missing_run_source_frames": 29,
+      "product_boxes": 89
+    },
+    {
+      "sequence_key": "training_31",
+      "group": "calibration",
+      "samples": 59,
+      "direct_observations": 3,
+      "observation_fraction": 0.05084745762711865,
+      "missing_run_lengths_source_frames": [
+        8,
+        56,
+        64,
+        93
+      ],
+      "maximum_missing_run_source_frames": 93,
+      "product_boxes": 62
+    },
+    {
+      "sequence_key": "training_32",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        230
+      ],
+      "maximum_missing_run_source_frames": 230,
+      "product_boxes": 58
+    },
+    {
+      "sequence_key": "training_33",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 1,
+      "observation_fraction": 0.017241379310344827,
+      "missing_run_lengths_source_frames": [
+        132,
+        93
+      ],
+      "maximum_missing_run_source_frames": 132,
+      "product_boxes": 59
+    },
+    {
+      "sequence_key": "training_34",
+      "group": "fit",
+      "samples": 58,
+      "direct_observations": 0,
+      "observation_fraction": 0.0,
+      "missing_run_lengths_source_frames": [
+        229
+      ],
+      "maximum_missing_run_source_frames": 229,
+      "product_boxes": 58
+    }
+  ]
+}

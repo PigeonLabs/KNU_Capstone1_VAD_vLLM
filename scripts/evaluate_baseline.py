@@ -66,7 +66,7 @@ def main():
                 'subspaces':[{'role':k[0],'phase':k[1],'samples':v.n,'rank':v.rank} for k,v in sorted(model.spaces.items())],
                 'transition_probabilities':model.transition.tolist(),
                 'limitations':['Single R01 scene, single split/seed; not full IPAD.','No phase/object ground truth; no localization accuracy claimed.',
-                               'Appearance scoring excludes direct geometry residuals; experiment 02 uses geometry only for phase estimation.',
+                               'Appearance scoring excludes direct geometry residuals; spatial experiments use normal geometry for phase and optionally product ROI.',
                                'Missed objects have no crop score; global branch remains.','PCA fallback pools normal phases if support is insufficient.',
                                'Phase assignments are proxies, not ground truth.','Frame-level AUPRC is reported as average precision (step integral).',
                                'Q99 alarm uses strict >; no per-test-video normalization.']}

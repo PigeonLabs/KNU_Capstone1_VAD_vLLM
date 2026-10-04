@@ -1,0 +1,48 @@
+{
+  "type": "assistant_visual_review_not_independent_ground_truth",
+  "selection": "Uniform sampled positions; FIT01 eight frames and calibration09/11 four frames each. No anomaly labels used. Review did not change configuration.",
+  "frames": [
+    {
+      "partition": "fit",
+      "sequence": "01",
+      "source_frame_indices": [
+        0,
+        28,
+        56,
+        84,
+        116,
+        144,
+        172,
+        204
+      ],
+      "finding": "ROI product boxes visually follow the moving product at all eight inspected positions; frame204 also has a small background box near belt edge. Original full-image product detections selected the lower fixed red component."
+    },
+    {
+      "partition": "calibration",
+      "sequence": "09",
+      "source_frame_indices": [
+        0,
+        76,
+        152,
+        232
+      ],
+      "finding": "Visible moving product is boxed at76/152; product is not visibly on belt at0/232 and a belt-edge background box is present."
+    },
+    {
+      "partition": "calibration",
+      "sequence": "11",
+      "source_frame_indices": [
+        0,
+        76,
+        152,
+        232
+      ],
+      "finding": "Visible moving product is boxed at76/152; product is not visibly on belt at0/232 and a belt-edge background box is present."
+    }
+  ],
+  "limitations": [
+    "Qualitative visual inspection only, no independently annotated IoU/precision/recall.",
+    "No detected product may indicate natural empty-belt intervals, not necessarily detector failure.",
+    "Raw images remain local and are not published."
+  ]
+}

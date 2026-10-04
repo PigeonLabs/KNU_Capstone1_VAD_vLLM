@@ -1,0 +1,10 @@
+{
+  "sequences_checked": 49,
+  "unchanged_full_frame_arrays": true,
+  "unchanged_nonproduct_arrays": true,
+  "finite_features": true,
+  "normalized_boxes_in_bounds": true,
+  "distinct_product_track_ids": true,
+  "tests_passed": 14,
+  "roi_extraction_seconds": 248.6755236640165
+}
