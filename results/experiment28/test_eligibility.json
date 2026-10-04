@@ -1,0 +1,9 @@
+{
+  "eligible": [
+    "28_hold",
+    "28_pool",
+    "28_age"
+  ],
+  "failed_normal_gate": [],
+  "rule": "All full-normal and five holdout calibrations finite, in unit interval, q99<1 and successful minimum global support checks."
+}

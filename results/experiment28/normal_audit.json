@@ -1,0 +1,359 @@
+{
+  "normal_only": true,
+  "variants": {
+    "27_hold": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "process_support": {
+        "global": {
+          "samples": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        "previous_state": {
+          "0": {
+            "samples": 20,
+            "videos": [
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_15"
+            ]
+          },
+          "1": {
+            "samples": 206,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "2": {
+            "samples": 88,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "3": {
+            "samples": 163,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          }
+        }
+      },
+      "observed_pair_samples": 247
+    },
+    "27_pool": {
+      "normal_q99": 0.9968879668049793,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "process_support": {
+        "global": {
+          "samples": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        "previous_state": {
+          "0": {
+            "samples": 20,
+            "videos": [
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_15"
+            ]
+          },
+          "1": {
+            "samples": 206,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "2": {
+            "samples": 88,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "3": {
+            "samples": 163,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          }
+        }
+      },
+      "observed_pair_samples": 247
+    },
+    "27_age": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "process_support": {
+        "global": {
+          "samples": 482,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        "previous_state": {
+          "0": {
+            "samples": 20,
+            "videos": [
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_15"
+            ]
+          },
+          "1": {
+            "samples": 206,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "2": {
+            "samples": 88,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "3": {
+            "samples": 163,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          }
+        }
+      },
+      "observed_pair_samples": 247
+    },
+    "28_hold": {
+      "normal_q99": 0.997457627118644,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "process_support": {
+        "global": {
+          "samples": 247,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        "previous_state": {
+          "0": {
+            "samples": 0,
+            "videos": []
+          },
+          "1": {
+            "samples": 127,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "2": {
+            "samples": 20,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08"
+            ]
+          },
+          "3": {
+            "samples": 100,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          }
+        }
+      },
+      "observed_pair_samples": 247
+    },
+    "28_pool": {
+      "normal_q99": 0.9968879668049793,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "process_support": {
+        "global": {
+          "samples": 247,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        "previous_state": {
+          "0": {
+            "samples": 0,
+            "videos": []
+          },
+          "1": {
+            "samples": 127,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "2": {
+            "samples": 20,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08"
+            ]
+          },
+          "3": {
+            "samples": 100,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          }
+        }
+      },
+      "observed_pair_samples": 247
+    },
+    "28_age": {
+      "normal_q99": 0.9972375690607734,
+      "finite": true,
+      "unit_interval": true,
+      "alarm_not_structurally_blocked": true,
+      "combined_at_one": 0,
+      "sample_alarms": 4,
+      "samples": 482,
+      "process_support": {
+        "global": {
+          "samples": 247,
+          "videos": [
+            "R04/training_02",
+            "R04/training_08",
+            "R04/training_10",
+            "R04/training_12",
+            "R04/training_15"
+          ]
+        },
+        "previous_state": {
+          "0": {
+            "samples": 0,
+            "videos": []
+          },
+          "1": {
+            "samples": 127,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          },
+          "2": {
+            "samples": 20,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08"
+            ]
+          },
+          "3": {
+            "samples": 100,
+            "videos": [
+              "R04/training_02",
+              "R04/training_08",
+              "R04/training_10",
+              "R04/training_12",
+              "R04/training_15"
+            ]
+          }
+        }
+      },
+      "observed_pair_samples": 247
+    }
+  },
+  "all_paired_visual_raw_transition_gate_and_dwell_preserved": true,
+  "references_independently_reconstructed": true,
+  "old_calibration_exactly_reproduced": true
+}

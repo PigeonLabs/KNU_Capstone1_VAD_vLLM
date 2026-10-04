@@ -1,0 +1,253 @@
+{
+  "normal_only": true,
+  "post_evaluation_diagnostic": true,
+  "rows": [
+    {
+      "variant": "28_hold",
+      "held_out": "02",
+      "old_q99": 0.9986807387862797,
+      "new_q99": 0.9986807387862797,
+      "added_dense_frames": 8,
+      "removed_dense_frames": 0,
+      "changed_samples": [
+        {
+          "sample": 38,
+          "source_frame": 152,
+          "end_frame_exclusive": 156,
+          "added": true,
+          "previous_state": 3,
+          "current_state": 2,
+          "observed_pair": true,
+          "state_reference_samples": 88,
+          "selected_reference": "previous_state",
+          "selected_reference_samples": 88,
+          "selected_reference_max": 3.8590212280120886,
+          "raw_transition": 4.669951444228417,
+          "raw_above_reference_max": true,
+          "old_transition_score": 0.9926470588235294,
+          "new_transition_score": 1.0,
+          "visual_score": 0.9383886255924171
+        },
+        {
+          "sample": 94,
+          "source_frame": 376,
+          "end_frame_exclusive": 380,
+          "added": true,
+          "previous_state": 3,
+          "current_state": 2,
+          "observed_pair": true,
+          "state_reference_samples": 88,
+          "selected_reference": "previous_state",
+          "selected_reference_samples": 88,
+          "selected_reference_max": 3.8590212280120886,
+          "raw_transition": 4.669951444228417,
+          "raw_above_reference_max": true,
+          "old_transition_score": 0.9926470588235294,
+          "new_transition_score": 1.0,
+          "visual_score": 0.8554502369668247
+        }
+      ]
+    },
+    {
+      "variant": "28_hold",
+      "held_out": "08",
+      "old_q99": 0.9986772486772487,
+      "new_q99": 0.9986772486772487,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_hold",
+      "held_out": "10",
+      "old_q99": 0.9987113402061856,
+      "new_q99": 0.9987113402061856,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_hold",
+      "held_out": "12",
+      "old_q99": 0.9987046632124352,
+      "new_q99": 0.9987046632124352,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_hold",
+      "held_out": "15",
+      "old_q99": 0.9987405541561712,
+      "new_q99": 0.9987405541561712,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_pool",
+      "held_out": "02",
+      "old_q99": 0.9964454976303317,
+      "new_q99": 0.9964454976303317,
+      "added_dense_frames": 8,
+      "removed_dense_frames": 0,
+      "changed_samples": [
+        {
+          "sample": 38,
+          "source_frame": 152,
+          "end_frame_exclusive": 156,
+          "added": true,
+          "previous_state": 3,
+          "current_state": 2,
+          "observed_pair": true,
+          "state_reference_samples": 88,
+          "selected_reference": "previous_state",
+          "selected_reference_samples": 88,
+          "selected_reference_max": 3.8590212280120886,
+          "raw_transition": 4.669951444228417,
+          "raw_above_reference_max": true,
+          "old_transition_score": 0.9926470588235294,
+          "new_transition_score": 1.0,
+          "visual_score": 0.9383886255924171
+        },
+        {
+          "sample": 94,
+          "source_frame": 376,
+          "end_frame_exclusive": 380,
+          "added": true,
+          "previous_state": 3,
+          "current_state": 2,
+          "observed_pair": true,
+          "state_reference_samples": 88,
+          "selected_reference": "previous_state",
+          "selected_reference_samples": 88,
+          "selected_reference_max": 3.8590212280120886,
+          "raw_transition": 4.669951444228417,
+          "raw_above_reference_max": true,
+          "old_transition_score": 0.9926470588235294,
+          "new_transition_score": 1.0,
+          "visual_score": 0.8554502369668247
+        }
+      ]
+    },
+    {
+      "variant": "28_pool",
+      "held_out": "08",
+      "old_q99": 0.9986772486772487,
+      "new_q99": 0.9986772486772487,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_pool",
+      "held_out": "10",
+      "old_q99": 0.9969072164948454,
+      "new_q99": 0.9969072164948454,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_pool",
+      "held_out": "12",
+      "old_q99": 0.9961139896373057,
+      "new_q99": 0.9961139896373057,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_pool",
+      "held_out": "15",
+      "old_q99": 0.9968553459119497,
+      "new_q99": 0.9968553459119497,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_age",
+      "held_out": "02",
+      "old_q99": 0.9967320261437909,
+      "new_q99": 0.9967320261437909,
+      "added_dense_frames": 8,
+      "removed_dense_frames": 0,
+      "changed_samples": [
+        {
+          "sample": 38,
+          "source_frame": 152,
+          "end_frame_exclusive": 156,
+          "added": true,
+          "previous_state": 3,
+          "current_state": 2,
+          "observed_pair": true,
+          "state_reference_samples": 88,
+          "selected_reference": "previous_state",
+          "selected_reference_samples": 88,
+          "selected_reference_max": 3.8590212280120886,
+          "raw_transition": 4.669951444228417,
+          "raw_above_reference_max": true,
+          "old_transition_score": 0.9926470588235294,
+          "new_transition_score": 1.0,
+          "visual_score": 0.9383886255924171
+        },
+        {
+          "sample": 94,
+          "source_frame": 376,
+          "end_frame_exclusive": 380,
+          "added": true,
+          "previous_state": 3,
+          "current_state": 2,
+          "observed_pair": true,
+          "state_reference_samples": 88,
+          "selected_reference": "previous_state",
+          "selected_reference_samples": 88,
+          "selected_reference_max": 3.8590212280120886,
+          "raw_transition": 4.669951444228417,
+          "raw_above_reference_max": true,
+          "old_transition_score": 0.9926470588235294,
+          "new_transition_score": 1.0,
+          "visual_score": 0.8554502369668247
+        }
+      ]
+    },
+    {
+      "variant": "28_age",
+      "held_out": "08",
+      "old_q99": 0.9967462039045553,
+      "new_q99": 0.9967462039045553,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_age",
+      "held_out": "10",
+      "old_q99": 0.9969072164948454,
+      "new_q99": 0.9969072164948454,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_age",
+      "held_out": "12",
+      "old_q99": 0.9968619246861925,
+      "new_q99": 0.9968619246861925,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    },
+    {
+      "variant": "28_age",
+      "held_out": "15",
+      "old_q99": 0.9987405541561712,
+      "new_q99": 0.9987405541561712,
+      "added_dense_frames": 0,
+      "removed_dense_frames": 0,
+      "changed_samples": []
+    }
+  ],
+  "note": "Counterpart q99 and sample/dense scores are saved before test evaluation; no cutoff or reference is changed."
+}

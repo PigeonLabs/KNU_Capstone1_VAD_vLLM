@@ -79,10 +79,12 @@ def main():
                 assert f'R04/training_{held}' not in {s for v in row['route_support'] for s in v['videos']}
                 rows.append(row)
             for e in variants[1:]:
-                for key in ['transition','dwell','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']:np.testing.assert_array_equal(scores_by_variant[variants[0]][key],scores_by_variant[e][key])
-            groups={}
+                for key in ['dwell','dwell_valid','dwell_age','dwell_reason','dwell_entry_context']:np.testing.assert_array_equal(scores_by_variant[variants[0]][key],scores_by_variant[e][key])
+            groups={};calibration_groups={}
             for e in variants:
-                mode=configs[e].get('transition_evidence_gate');r=scores_by_variant[e]
+                population=json.dumps(configs[e].get('process_calibration'),sort_keys=True);mode=(configs[e].get('transition_evidence_gate'),population);r=scores_by_variant[e]
+                if population in calibration_groups:np.testing.assert_array_equal(r['transition'],calibration_groups[population])
+                else:calibration_groups[population]=r['transition']
                 if mode in groups:np.testing.assert_array_equal(r['process'],groups[mode])
                 else:groups[mode]=r['process']
     totals={}
