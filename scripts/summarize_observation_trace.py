@@ -35,7 +35,7 @@ def main():
         summary[part]={'samples':stats['samples'],'valid_samples':stats['valid_samples'],'valid_rate':stats['valid_samples']/stats['samples'],'diagnostics':dict(c),'missing_gaps':len(gaps),'complete_gaps':sum(r['complete_gap'] for r in gaps),'same_pair_reacquired_complete_gaps':sum(r['same_pair_reacquired'] is True for r in gaps),'changed_pair_reacquired_complete_gaps':sum(r['same_pair_reacquired'] is False for r in gaps),'consecutive_pair_changes':dict(Counter(','.join(r['changed_roles']) for r in changes)),'change_selection_events':dict(Counter(role+'|'+r['current']['roles'][role]['selection_event'] for r in changes for role in r['changed_roles'])),'known_entry_censor_missing_boundary_reasons':dict(Counter(r['at_end_boundary']['failure_combination'] for r in eps if r['status']=='right_censored' and r['end_reason']=='relation_missing')),'unknown_reacquisition_previous_reasons':dict(Counter(r['before_start']['failure_combination'] for r in eps if r['start_reason']=='reacquired'))}
     save('diagnostic_summary.json',{'normal_only':True,'posthoc_metadata_summary':True,'candidate_margin_is_not_role_ground_truth':True,'potential_area_recovery_is_not_an_executed_intervention':True,'partitions':summary})
     with (OUT/'candidate_reasons.csv').open('w') as f:
-        w=csv.writer(f);w.writerow(['partition','role','reason','samples','denominator','fraction'])
+        w=csv.writer(f,lineterminator="\n");w.writerow(['partition','role','reason','samples','denominator','fraction'])
         for part,s in audit['partitions'].items():
             for role,counts in s['role_reasons'].items():
                 for reason,n in counts.items():w.writerow([part,role,reason,n,s['samples'],n/s['samples']])

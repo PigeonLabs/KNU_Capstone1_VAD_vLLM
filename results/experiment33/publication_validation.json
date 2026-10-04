@@ -16,11 +16,11 @@
     "README.md": "46286dfef5726eef2f2da3449bed79327d8e9d73c3d71cf70a377634df189f35",
     "docs/EXPERIMENT33.md": "af270283bd824644270a56e775f3320c3d844c652357892498cee626e98bc403",
     "docs/EXPERIMENT34_PLAN.md": "af9bc264c2ec700701f1a0c0e20bac6a0e99c355088d175143f313a030b754b5",
-    "scripts/summarize_observation_trace.py": "c4e8d24b2686445982829d35af1b88489edd31a808214919abdb3d6ce2d7fc2c",
+    "scripts/summarize_observation_trace.py": "238a211f4214b9038a2d120454a4e43b6ed30df029528ec2de9139b2b12d3ae0",
     "results/experiment33/audit_access_log.json": "f9f0b20dbf9d204bb93634bc3fb307c4fc311846817ce37ec4ebb7d90fa2004b",
     "results/experiment33/candidate_audit.json": "e0a4314dbfa05baa24dadfc1c77b85a2df5e19287e20fb2625c442ff13778d9e",
     "results/experiment33/candidate_availability.png": "027f3a1091ef7ce9b46801be4cfe0c88fbf1ca5a7ae17f320796382c55486917",
-    "results/experiment33/candidate_reasons.csv": "e3fea1a5a04bd4a930d6b537f77d7de8618acdde78dedbe01cc05e4f7cc7e58f",
+    "results/experiment33/candidate_reasons.csv": "9463bb0f06530ee28c4ccf54ae8dc624f2981491f7ec96c8eff14c5693be8e83",
     "results/experiment33/case_context.json": "e260d92ec6e4c021610c94140c2ffa4acb5a58aebbee2c1a4bf1f642b7da5176",
     "results/experiment33/case_selection.json": "aece744499da840336b00b07e7d83032c756da8b7399672b968c8e4b23cb2044",
     "results/experiment33/diagnostic_summary.json": "6ea4bdef0519688f195c152bd7fd2ce1b752123c420853042081b9dca353cd36",
@@ -35,5 +35,6 @@
     "results/experiment33/validation.json": "2c46fd995f57047e850617738546d9954bd894ece75d1caf3585bb459a422396",
     "results/experiment33/validation_access.json": "ecb157b837f5953d7672a208c2a4c4bbdd8de02446e9b0efffa41430b9b8d991",
     "results/experiment33/visual_review.json": "e5dfd8cc4f72098e40579568e30d8129dcf22767ab4c359420b737463939e27c"
-  }
+  },
+  "csv_line_endings": "LF to match Git checkout and publication hashes"
 }
