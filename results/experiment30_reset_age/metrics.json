@@ -1,0 +1,1888 @@
+{
+  "scene": "R04",
+  "scope": "R04_track_boundary_reset_age",
+  "seed": 42,
+  "fit_sequences": [
+    "01",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "09",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+  ],
+  "calibration_sequences": [
+    "02",
+    "08",
+    "10",
+    "12",
+    "15"
+  ],
+  "test_sequences": 19,
+  "metrics": {
+    "visual": {
+      "frames": 8154,
+      "positive_frames": 4578,
+      "auroc": 0.6902059553374127,
+      "average_precision": 0.6886392206278444
+    },
+    "process": {
+      "frames": 8154,
+      "positive_frames": 4578,
+      "auroc": 0.594639839598586,
+      "average_precision": 0.6614558237173961
+    },
+    "combined": {
+      "frames": 8154,
+      "positive_frames": 4578,
+      "auroc": 0.7155995066376201,
+      "average_precision": 0.7074495578972961
+    }
+  },
+  "normal_q99_threshold": 0.997457627118644,
+  "normal_calibration_sample_alarm_rate": 0.008298755186721992,
+  "score_fusion": "max",
+  "test_normal_frame_alarm_rate": 0.09088366890380313,
+  "test_anomaly_frame_recall_at_q99": 0.1837046745303626,
+  "phase_fit_counts": [
+    124,
+    1094,
+    312,
+    430
+  ],
+  "phase_calibration_counts": [
+    20,
+    211,
+    89,
+    162
+  ],
+  "phase_test_counts": [
+    177,
+    963,
+    141,
+    766
+  ],
+  "subspaces": [
+    {
+      "role": -1,
+      "phase": -1,
+      "samples": 1960,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 1,
+      "samples": 712,
+      "rank": 32
+    },
+    {
+      "role": -1,
+      "phase": 2,
+      "samples": 93,
+      "rank": 30
+    },
+    {
+      "role": -1,
+      "phase": 3,
+      "samples": 317,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": -1,
+      "samples": 2462,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 1,
+      "samples": 855,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 2,
+      "samples": 136,
+      "rank": 32
+    },
+    {
+      "role": 0,
+      "phase": 3,
+      "samples": 463,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": -1,
+      "samples": 2162,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 1,
+      "samples": 803,
+      "rank": 32
+    },
+    {
+      "role": 1,
+      "phase": 2,
+      "samples": 139,
+      "rank": 29
+    },
+    {
+      "role": 1,
+      "phase": 3,
+      "samples": 376,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": -1,
+      "samples": 1960,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 1,
+      "samples": 712,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 2,
+      "samples": 93,
+      "rank": 32
+    },
+    {
+      "role": 2,
+      "phase": 3,
+      "samples": 317,
+      "rank": 32
+    }
+  ],
+  "transition_probabilities": [
+    [
+      0.8359375,
+      0.140625,
+      0.0078125,
+      0.015625
+    ],
+    [
+      0.0009157509157509158,
+      0.9487179487179487,
+      0.0173992673992674,
+      0.03296703296703297
+    ],
+    [
+      0.003215434083601286,
+      0.04180064308681672,
+      0.9003215434083601,
+      0.05466237942122187
+    ],
+    [
+      0.004705882352941176,
+      0.07058823529411765,
+      0.03764705882352941,
+      0.8870588235294118
+    ]
+  ],
+  "limitations": [
+    "Single R04 scene, single split/seed; not full IPAD.",
+    "No phase/object ground truth; no localization accuracy claimed.",
+    "Appearance scoring uses CLIP residuals; optional normal geometry/motion branches are specified in the experiment config.",
+    "Missed objects have no crop score; global branch remains.",
+    "PCA fallback pools normal phases if support is insufficient.",
+    "Phase assignments are proxies, not ground truth.",
+    "Frame-level AUPRC is reported as average precision (step integral).",
+    "Q99 alarm uses strict >; no per-test-video normalization.",
+    "Dwell-only metrics cover valid intervals only. Unsupported, missing and unobserved-entry intervals retain the transition branch; cluster duration is not action-duration ground truth."
+  ],
+  "process_calibration": {
+    "mode": "previous_state",
+    "minimum_support": 10,
+    "normal_transition_support": {
+      "0": 20,
+      "1": 211,
+      "2": 88,
+      "3": 158
+    },
+    "test_sampled_conditional_fraction": 0.9907181240840254,
+    "fallback": "Global reference for first observation or insufficient previous-state support."
+  },
+  "dwell": {
+    "complete_run_support": {
+      "1": 10,
+      "3": 19,
+      "0": 1,
+      "2": 6
+    },
+    "supported_states": [
+      1,
+      3
+    ],
+    "score_reference": "fit_lognormal_cdf",
+    "normal_calibration_samples": 0,
+    "test_dense_valid_fraction": 0.2983811626195732,
+    "valid_only_metrics": {
+      "frames": 2433,
+      "positive_frames": 1565,
+      "auroc": 0.7371578745895967,
+      "average_precision": 0.84760439890549
+    },
+    "reason_counts": {
+      "0": 2433,
+      "1": 2555,
+      "2": 2919,
+      "3": 247
+    },
+    "reason_codes": {
+      "0": "valid",
+      "1": "relation_missing",
+      "2": "entry_not_observed",
+      "3": "unsupported_entry_context"
+    },
+    "context_distribution": "entry",
+    "complete_context_support": {
+      "3->1": 10,
+      "1->3": 14,
+      "3->0": 1,
+      "0->3": 1,
+      "3->2": 5,
+      "2->3": 4,
+      "1->2": 1
+    },
+    "supported_contexts": [
+      "1->3",
+      "3->1"
+    ],
+    "lognormal_parameters": {
+      "3->1": {
+        "mu": 2.3533237276567323,
+        "sigma": 0.9624451028307243
+      },
+      "1->3": {
+        "mu": 2.55117903093428,
+        "sigma": 0.7339062914121455
+      }
+    },
+    "sigma_floor": 0.05
+  },
+  "appearance_missing_age": {
+    "quantile": 0.9,
+    "method": "higher",
+    "tau_frames": 56,
+    "complete_runs": [
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 24,
+        "end_sample_exclusive": 25,
+        "samples": 1,
+        "start_frame": 96,
+        "last_missing_frame": 96,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 29,
+        "end_sample_exclusive": 31,
+        "samples": 2,
+        "start_frame": 116,
+        "last_missing_frame": 120,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 32,
+        "end_sample_exclusive": 46,
+        "samples": 14,
+        "start_frame": 128,
+        "last_missing_frame": 180,
+        "duration_frames": 56
+      },
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 47,
+        "end_sample_exclusive": 48,
+        "samples": 1,
+        "start_frame": 188,
+        "last_missing_frame": 188,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 50,
+        "end_sample_exclusive": 57,
+        "samples": 7,
+        "start_frame": 200,
+        "last_missing_frame": 224,
+        "duration_frames": 28
+      },
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 58,
+        "end_sample_exclusive": 64,
+        "samples": 6,
+        "start_frame": 232,
+        "last_missing_frame": 252,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_01",
+        "start_sample": 65,
+        "end_sample_exclusive": 68,
+        "samples": 3,
+        "start_frame": 260,
+        "last_missing_frame": 268,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 22,
+        "end_sample_exclusive": 23,
+        "samples": 1,
+        "start_frame": 88,
+        "last_missing_frame": 88,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 29,
+        "end_sample_exclusive": 33,
+        "samples": 4,
+        "start_frame": 116,
+        "last_missing_frame": 128,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 35,
+        "end_sample_exclusive": 38,
+        "samples": 3,
+        "start_frame": 140,
+        "last_missing_frame": 148,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 40,
+        "end_sample_exclusive": 42,
+        "samples": 2,
+        "start_frame": 160,
+        "last_missing_frame": 164,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 43,
+        "end_sample_exclusive": 44,
+        "samples": 1,
+        "start_frame": 172,
+        "last_missing_frame": 172,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 45,
+        "end_sample_exclusive": 62,
+        "samples": 17,
+        "start_frame": 180,
+        "last_missing_frame": 244,
+        "duration_frames": 68
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 63,
+        "end_sample_exclusive": 68,
+        "samples": 5,
+        "start_frame": 252,
+        "last_missing_frame": 268,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 69,
+        "end_sample_exclusive": 72,
+        "samples": 3,
+        "start_frame": 276,
+        "last_missing_frame": 284,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 79,
+        "end_sample_exclusive": 80,
+        "samples": 1,
+        "start_frame": 316,
+        "last_missing_frame": 316,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 81,
+        "end_sample_exclusive": 82,
+        "samples": 1,
+        "start_frame": 324,
+        "last_missing_frame": 324,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 83,
+        "end_sample_exclusive": 84,
+        "samples": 1,
+        "start_frame": 332,
+        "last_missing_frame": 332,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 91,
+        "end_sample_exclusive": 93,
+        "samples": 2,
+        "start_frame": 364,
+        "last_missing_frame": 368,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 94,
+        "end_sample_exclusive": 98,
+        "samples": 4,
+        "start_frame": 376,
+        "last_missing_frame": 388,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_03",
+        "start_sample": 100,
+        "end_sample_exclusive": 104,
+        "samples": 4,
+        "start_frame": 400,
+        "last_missing_frame": 412,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 9,
+        "end_sample_exclusive": 12,
+        "samples": 3,
+        "start_frame": 36,
+        "last_missing_frame": 44,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 13,
+        "end_sample_exclusive": 14,
+        "samples": 1,
+        "start_frame": 52,
+        "last_missing_frame": 52,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 20,
+        "end_sample_exclusive": 21,
+        "samples": 1,
+        "start_frame": 80,
+        "last_missing_frame": 80,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 24,
+        "end_sample_exclusive": 25,
+        "samples": 1,
+        "start_frame": 96,
+        "last_missing_frame": 96,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 27,
+        "end_sample_exclusive": 28,
+        "samples": 1,
+        "start_frame": 108,
+        "last_missing_frame": 108,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 30,
+        "end_sample_exclusive": 31,
+        "samples": 1,
+        "start_frame": 120,
+        "last_missing_frame": 120,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 33,
+        "end_sample_exclusive": 37,
+        "samples": 4,
+        "start_frame": 132,
+        "last_missing_frame": 144,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 54,
+        "end_sample_exclusive": 59,
+        "samples": 5,
+        "start_frame": 216,
+        "last_missing_frame": 232,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 60,
+        "end_sample_exclusive": 86,
+        "samples": 26,
+        "start_frame": 240,
+        "last_missing_frame": 340,
+        "duration_frames": 104
+      },
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 88,
+        "end_sample_exclusive": 90,
+        "samples": 2,
+        "start_frame": 352,
+        "last_missing_frame": 356,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 5,
+        "end_sample_exclusive": 6,
+        "samples": 1,
+        "start_frame": 20,
+        "last_missing_frame": 20,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 35,
+        "end_sample_exclusive": 36,
+        "samples": 1,
+        "start_frame": 140,
+        "last_missing_frame": 140,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 37,
+        "end_sample_exclusive": 38,
+        "samples": 1,
+        "start_frame": 148,
+        "last_missing_frame": 148,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 60,
+        "end_sample_exclusive": 66,
+        "samples": 6,
+        "start_frame": 240,
+        "last_missing_frame": 260,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 67,
+        "end_sample_exclusive": 73,
+        "samples": 6,
+        "start_frame": 268,
+        "last_missing_frame": 288,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 80,
+        "end_sample_exclusive": 81,
+        "samples": 1,
+        "start_frame": 320,
+        "last_missing_frame": 320,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 82,
+        "end_sample_exclusive": 94,
+        "samples": 12,
+        "start_frame": 328,
+        "last_missing_frame": 372,
+        "duration_frames": 48
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 96,
+        "end_sample_exclusive": 97,
+        "samples": 1,
+        "start_frame": 384,
+        "last_missing_frame": 384,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 10,
+        "end_sample_exclusive": 13,
+        "samples": 3,
+        "start_frame": 40,
+        "last_missing_frame": 48,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 32,
+        "end_sample_exclusive": 33,
+        "samples": 1,
+        "start_frame": 128,
+        "last_missing_frame": 128,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 39,
+        "end_sample_exclusive": 41,
+        "samples": 2,
+        "start_frame": 156,
+        "last_missing_frame": 160,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 43,
+        "end_sample_exclusive": 44,
+        "samples": 1,
+        "start_frame": 172,
+        "last_missing_frame": 172,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 45,
+        "end_sample_exclusive": 62,
+        "samples": 17,
+        "start_frame": 180,
+        "last_missing_frame": 244,
+        "duration_frames": 68
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 64,
+        "end_sample_exclusive": 93,
+        "samples": 29,
+        "start_frame": 256,
+        "last_missing_frame": 368,
+        "duration_frames": 116
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 54,
+        "end_sample_exclusive": 60,
+        "samples": 6,
+        "start_frame": 216,
+        "last_missing_frame": 236,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 75,
+        "end_sample_exclusive": 76,
+        "samples": 1,
+        "start_frame": 300,
+        "last_missing_frame": 300,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 77,
+        "end_sample_exclusive": 81,
+        "samples": 4,
+        "start_frame": 308,
+        "last_missing_frame": 320,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 82,
+        "end_sample_exclusive": 84,
+        "samples": 2,
+        "start_frame": 328,
+        "last_missing_frame": 332,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 85,
+        "end_sample_exclusive": 86,
+        "samples": 1,
+        "start_frame": 340,
+        "last_missing_frame": 340,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 87,
+        "end_sample_exclusive": 90,
+        "samples": 3,
+        "start_frame": 348,
+        "last_missing_frame": 356,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 5,
+        "end_sample_exclusive": 8,
+        "samples": 3,
+        "start_frame": 20,
+        "last_missing_frame": 28,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 10,
+        "end_sample_exclusive": 11,
+        "samples": 1,
+        "start_frame": 40,
+        "last_missing_frame": 40,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 35,
+        "end_sample_exclusive": 61,
+        "samples": 26,
+        "start_frame": 140,
+        "last_missing_frame": 240,
+        "duration_frames": 104
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 62,
+        "end_sample_exclusive": 81,
+        "samples": 19,
+        "start_frame": 248,
+        "last_missing_frame": 320,
+        "duration_frames": 76
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 82,
+        "end_sample_exclusive": 87,
+        "samples": 5,
+        "start_frame": 328,
+        "last_missing_frame": 344,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 88,
+        "end_sample_exclusive": 93,
+        "samples": 5,
+        "start_frame": 352,
+        "last_missing_frame": 368,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 95,
+        "end_sample_exclusive": 96,
+        "samples": 1,
+        "start_frame": 380,
+        "last_missing_frame": 380,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 97,
+        "end_sample_exclusive": 98,
+        "samples": 1,
+        "start_frame": 388,
+        "last_missing_frame": 388,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 99,
+        "end_sample_exclusive": 100,
+        "samples": 1,
+        "start_frame": 396,
+        "last_missing_frame": 396,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 9,
+        "end_sample_exclusive": 11,
+        "samples": 2,
+        "start_frame": 36,
+        "last_missing_frame": 40,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 26,
+        "end_sample_exclusive": 50,
+        "samples": 24,
+        "start_frame": 104,
+        "last_missing_frame": 196,
+        "duration_frames": 96
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 51,
+        "end_sample_exclusive": 54,
+        "samples": 3,
+        "start_frame": 204,
+        "last_missing_frame": 212,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 55,
+        "end_sample_exclusive": 60,
+        "samples": 5,
+        "start_frame": 220,
+        "last_missing_frame": 236,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 62,
+        "end_sample_exclusive": 65,
+        "samples": 3,
+        "start_frame": 248,
+        "last_missing_frame": 256,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 66,
+        "end_sample_exclusive": 72,
+        "samples": 6,
+        "start_frame": 264,
+        "last_missing_frame": 284,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 10,
+        "end_sample_exclusive": 12,
+        "samples": 2,
+        "start_frame": 40,
+        "last_missing_frame": 44,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 53,
+        "end_sample_exclusive": 55,
+        "samples": 2,
+        "start_frame": 212,
+        "last_missing_frame": 216,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 57,
+        "end_sample_exclusive": 59,
+        "samples": 2,
+        "start_frame": 228,
+        "last_missing_frame": 232,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 61,
+        "end_sample_exclusive": 62,
+        "samples": 1,
+        "start_frame": 244,
+        "last_missing_frame": 244,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 63,
+        "end_sample_exclusive": 64,
+        "samples": 1,
+        "start_frame": 252,
+        "last_missing_frame": 252,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 65,
+        "end_sample_exclusive": 69,
+        "samples": 4,
+        "start_frame": 260,
+        "last_missing_frame": 272,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 71,
+        "end_sample_exclusive": 73,
+        "samples": 2,
+        "start_frame": 284,
+        "last_missing_frame": 288,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 74,
+        "end_sample_exclusive": 81,
+        "samples": 7,
+        "start_frame": 296,
+        "last_missing_frame": 320,
+        "duration_frames": 28
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 84,
+        "end_sample_exclusive": 85,
+        "samples": 1,
+        "start_frame": 336,
+        "last_missing_frame": 336,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 90,
+        "end_sample_exclusive": 91,
+        "samples": 1,
+        "start_frame": 360,
+        "last_missing_frame": 360,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_14",
+        "start_sample": 32,
+        "end_sample_exclusive": 33,
+        "samples": 1,
+        "start_frame": 128,
+        "last_missing_frame": 128,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_14",
+        "start_sample": 42,
+        "end_sample_exclusive": 43,
+        "samples": 1,
+        "start_frame": 168,
+        "last_missing_frame": 168,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_14",
+        "start_sample": 44,
+        "end_sample_exclusive": 48,
+        "samples": 4,
+        "start_frame": 176,
+        "last_missing_frame": 188,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_14",
+        "start_sample": 61,
+        "end_sample_exclusive": 63,
+        "samples": 2,
+        "start_frame": 244,
+        "last_missing_frame": 248,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 1,
+        "end_sample_exclusive": 8,
+        "samples": 7,
+        "start_frame": 4,
+        "last_missing_frame": 28,
+        "duration_frames": 28
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 10,
+        "end_sample_exclusive": 12,
+        "samples": 2,
+        "start_frame": 40,
+        "last_missing_frame": 44,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 31,
+        "end_sample_exclusive": 45,
+        "samples": 14,
+        "start_frame": 124,
+        "last_missing_frame": 176,
+        "duration_frames": 56
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 54,
+        "end_sample_exclusive": 56,
+        "samples": 2,
+        "start_frame": 216,
+        "last_missing_frame": 220,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 58,
+        "end_sample_exclusive": 61,
+        "samples": 3,
+        "start_frame": 232,
+        "last_missing_frame": 240,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 75,
+        "end_sample_exclusive": 77,
+        "samples": 2,
+        "start_frame": 300,
+        "last_missing_frame": 304,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_16",
+        "start_sample": 92,
+        "end_sample_exclusive": 93,
+        "samples": 1,
+        "start_frame": 368,
+        "last_missing_frame": 368,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 7,
+        "end_sample_exclusive": 8,
+        "samples": 1,
+        "start_frame": 28,
+        "last_missing_frame": 28,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 9,
+        "end_sample_exclusive": 10,
+        "samples": 1,
+        "start_frame": 36,
+        "last_missing_frame": 36,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 55,
+        "end_sample_exclusive": 60,
+        "samples": 5,
+        "start_frame": 220,
+        "last_missing_frame": 236,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 62,
+        "end_sample_exclusive": 63,
+        "samples": 1,
+        "start_frame": 248,
+        "last_missing_frame": 248,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 65,
+        "end_sample_exclusive": 77,
+        "samples": 12,
+        "start_frame": 260,
+        "last_missing_frame": 304,
+        "duration_frames": 48
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 79,
+        "end_sample_exclusive": 80,
+        "samples": 1,
+        "start_frame": 316,
+        "last_missing_frame": 316,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_18",
+        "start_sample": 13,
+        "end_sample_exclusive": 14,
+        "samples": 1,
+        "start_frame": 52,
+        "last_missing_frame": 52,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_18",
+        "start_sample": 34,
+        "end_sample_exclusive": 51,
+        "samples": 17,
+        "start_frame": 136,
+        "last_missing_frame": 200,
+        "duration_frames": 68
+      },
+      {
+        "sequence_id": "R04/training_18",
+        "start_sample": 52,
+        "end_sample_exclusive": 55,
+        "samples": 3,
+        "start_frame": 208,
+        "last_missing_frame": 216,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_18",
+        "start_sample": 78,
+        "end_sample_exclusive": 79,
+        "samples": 1,
+        "start_frame": 312,
+        "last_missing_frame": 312,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_18",
+        "start_sample": 83,
+        "end_sample_exclusive": 84,
+        "samples": 1,
+        "start_frame": 332,
+        "last_missing_frame": 332,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 9,
+        "end_sample_exclusive": 10,
+        "samples": 1,
+        "start_frame": 36,
+        "last_missing_frame": 36,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 12,
+        "end_sample_exclusive": 13,
+        "samples": 1,
+        "start_frame": 48,
+        "last_missing_frame": 48,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 14,
+        "end_sample_exclusive": 15,
+        "samples": 1,
+        "start_frame": 56,
+        "last_missing_frame": 56,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 27,
+        "end_sample_exclusive": 30,
+        "samples": 3,
+        "start_frame": 108,
+        "last_missing_frame": 116,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 35,
+        "end_sample_exclusive": 60,
+        "samples": 25,
+        "start_frame": 140,
+        "last_missing_frame": 236,
+        "duration_frames": 100
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 62,
+        "end_sample_exclusive": 68,
+        "samples": 6,
+        "start_frame": 248,
+        "last_missing_frame": 268,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 74,
+        "end_sample_exclusive": 78,
+        "samples": 4,
+        "start_frame": 296,
+        "last_missing_frame": 308,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 81,
+        "end_sample_exclusive": 84,
+        "samples": 3,
+        "start_frame": 324,
+        "last_missing_frame": 332,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_20",
+        "start_sample": 17,
+        "end_sample_exclusive": 19,
+        "samples": 2,
+        "start_frame": 68,
+        "last_missing_frame": 72,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_20",
+        "start_sample": 22,
+        "end_sample_exclusive": 24,
+        "samples": 2,
+        "start_frame": 88,
+        "last_missing_frame": 92,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_20",
+        "start_sample": 47,
+        "end_sample_exclusive": 52,
+        "samples": 5,
+        "start_frame": 188,
+        "last_missing_frame": 204,
+        "duration_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_20",
+        "start_sample": 55,
+        "end_sample_exclusive": 87,
+        "samples": 32,
+        "start_frame": 220,
+        "last_missing_frame": 344,
+        "duration_frames": 128
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 12,
+        "end_sample_exclusive": 13,
+        "samples": 1,
+        "start_frame": 48,
+        "last_missing_frame": 48,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 33,
+        "end_sample_exclusive": 36,
+        "samples": 3,
+        "start_frame": 132,
+        "last_missing_frame": 140,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 37,
+        "end_sample_exclusive": 43,
+        "samples": 6,
+        "start_frame": 148,
+        "last_missing_frame": 168,
+        "duration_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 51,
+        "end_sample_exclusive": 64,
+        "samples": 13,
+        "start_frame": 204,
+        "last_missing_frame": 252,
+        "duration_frames": 52
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 65,
+        "end_sample_exclusive": 91,
+        "samples": 26,
+        "start_frame": 260,
+        "last_missing_frame": 360,
+        "duration_frames": 104
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 100,
+        "end_sample_exclusive": 101,
+        "samples": 1,
+        "start_frame": 400,
+        "last_missing_frame": 400,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 102,
+        "end_sample_exclusive": 103,
+        "samples": 1,
+        "start_frame": 408,
+        "last_missing_frame": 408,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 12,
+        "end_sample_exclusive": 13,
+        "samples": 1,
+        "start_frame": 48,
+        "last_missing_frame": 48,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 27,
+        "end_sample_exclusive": 28,
+        "samples": 1,
+        "start_frame": 108,
+        "last_missing_frame": 108,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 29,
+        "end_sample_exclusive": 33,
+        "samples": 4,
+        "start_frame": 116,
+        "last_missing_frame": 128,
+        "duration_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 43,
+        "end_sample_exclusive": 74,
+        "samples": 31,
+        "start_frame": 172,
+        "last_missing_frame": 292,
+        "duration_frames": 124
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 75,
+        "end_sample_exclusive": 87,
+        "samples": 12,
+        "start_frame": 300,
+        "last_missing_frame": 344,
+        "duration_frames": 48
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 88,
+        "end_sample_exclusive": 89,
+        "samples": 1,
+        "start_frame": 352,
+        "last_missing_frame": 352,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 26,
+        "end_sample_exclusive": 29,
+        "samples": 3,
+        "start_frame": 104,
+        "last_missing_frame": 112,
+        "duration_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 32,
+        "end_sample_exclusive": 33,
+        "samples": 1,
+        "start_frame": 128,
+        "last_missing_frame": 128,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 36,
+        "end_sample_exclusive": 38,
+        "samples": 2,
+        "start_frame": 144,
+        "last_missing_frame": 148,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 51,
+        "end_sample_exclusive": 53,
+        "samples": 2,
+        "start_frame": 204,
+        "last_missing_frame": 208,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 55,
+        "end_sample_exclusive": 56,
+        "samples": 1,
+        "start_frame": 220,
+        "last_missing_frame": 220,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 59,
+        "end_sample_exclusive": 60,
+        "samples": 1,
+        "start_frame": 236,
+        "last_missing_frame": 236,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 63,
+        "end_sample_exclusive": 64,
+        "samples": 1,
+        "start_frame": 252,
+        "last_missing_frame": 252,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 66,
+        "end_sample_exclusive": 68,
+        "samples": 2,
+        "start_frame": 264,
+        "last_missing_frame": 268,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_24",
+        "start_sample": 13,
+        "end_sample_exclusive": 15,
+        "samples": 2,
+        "start_frame": 52,
+        "last_missing_frame": 56,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_24",
+        "start_sample": 76,
+        "end_sample_exclusive": 77,
+        "samples": 1,
+        "start_frame": 304,
+        "last_missing_frame": 304,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_24",
+        "start_sample": 79,
+        "end_sample_exclusive": 80,
+        "samples": 1,
+        "start_frame": 316,
+        "last_missing_frame": 316,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_25",
+        "start_sample": 11,
+        "end_sample_exclusive": 12,
+        "samples": 1,
+        "start_frame": 44,
+        "last_missing_frame": 44,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_25",
+        "start_sample": 56,
+        "end_sample_exclusive": 58,
+        "samples": 2,
+        "start_frame": 224,
+        "last_missing_frame": 228,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_25",
+        "start_sample": 60,
+        "end_sample_exclusive": 61,
+        "samples": 1,
+        "start_frame": 240,
+        "last_missing_frame": 240,
+        "duration_frames": 4
+      },
+      {
+        "sequence_id": "R04/training_25",
+        "start_sample": 82,
+        "end_sample_exclusive": 84,
+        "samples": 2,
+        "start_frame": 328,
+        "last_missing_frame": 332,
+        "duration_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_25",
+        "start_sample": 88,
+        "end_sample_exclusive": 93,
+        "samples": 5,
+        "start_frame": 352,
+        "last_missing_frame": 368,
+        "duration_frames": 20
+      }
+    ],
+    "censored_runs": [
+      {
+        "sequence_id": "R04/training_04",
+        "start_sample": 0,
+        "end_sample_exclusive": 7,
+        "samples": 7,
+        "start_frame": 0,
+        "last_missing_frame": 24,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_05",
+        "start_sample": 0,
+        "end_sample_exclusive": 3,
+        "samples": 3,
+        "start_frame": 0,
+        "last_missing_frame": 8,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 8
+      },
+      {
+        "sequence_id": "R04/training_06",
+        "start_sample": 0,
+        "end_sample_exclusive": 7,
+        "samples": 7,
+        "start_frame": 0,
+        "last_missing_frame": 24,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_07",
+        "start_sample": 0,
+        "end_sample_exclusive": 8,
+        "samples": 8,
+        "start_frame": 0,
+        "last_missing_frame": 28,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 28
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 0,
+        "end_sample_exclusive": 4,
+        "samples": 4,
+        "start_frame": 0,
+        "last_missing_frame": 12,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_09",
+        "start_sample": 101,
+        "end_sample_exclusive": 105,
+        "samples": 4,
+        "start_frame": 404,
+        "last_missing_frame": 416,
+        "left_censored": false,
+        "right_censored": true,
+        "observed_span_lower_bound_frames": 12
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 0,
+        "end_sample_exclusive": 6,
+        "samples": 6,
+        "start_frame": 0,
+        "last_missing_frame": 20,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 20
+      },
+      {
+        "sequence_id": "R04/training_11",
+        "start_sample": 73,
+        "end_sample_exclusive": 85,
+        "samples": 12,
+        "start_frame": 292,
+        "last_missing_frame": 336,
+        "left_censored": false,
+        "right_censored": true,
+        "observed_span_lower_bound_frames": 44
+      },
+      {
+        "sequence_id": "R04/training_13",
+        "start_sample": 0,
+        "end_sample_exclusive": 7,
+        "samples": 7,
+        "start_frame": 0,
+        "last_missing_frame": 24,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_14",
+        "start_sample": 0,
+        "end_sample_exclusive": 5,
+        "samples": 5,
+        "start_frame": 0,
+        "last_missing_frame": 16,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_17",
+        "start_sample": 0,
+        "end_sample_exclusive": 5,
+        "samples": 5,
+        "start_frame": 0,
+        "last_missing_frame": 16,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_18",
+        "start_sample": 0,
+        "end_sample_exclusive": 11,
+        "samples": 11,
+        "start_frame": 0,
+        "last_missing_frame": 40,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 40
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 0,
+        "end_sample_exclusive": 7,
+        "samples": 7,
+        "start_frame": 0,
+        "last_missing_frame": 24,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_19",
+        "start_sample": 87,
+        "end_sample_exclusive": 99,
+        "samples": 12,
+        "start_frame": 348,
+        "last_missing_frame": 392,
+        "left_censored": false,
+        "right_censored": true,
+        "observed_span_lower_bound_frames": 44
+      },
+      {
+        "sequence_id": "R04/training_20",
+        "start_sample": 0,
+        "end_sample_exclusive": 15,
+        "samples": 15,
+        "start_frame": 0,
+        "last_missing_frame": 56,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 56
+      },
+      {
+        "sequence_id": "R04/training_20",
+        "start_sample": 88,
+        "end_sample_exclusive": 101,
+        "samples": 13,
+        "start_frame": 352,
+        "last_missing_frame": 400,
+        "left_censored": false,
+        "right_censored": true,
+        "observed_span_lower_bound_frames": 48
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 0,
+        "end_sample_exclusive": 5,
+        "samples": 5,
+        "start_frame": 0,
+        "last_missing_frame": 16,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 16
+      },
+      {
+        "sequence_id": "R04/training_21",
+        "start_sample": 104,
+        "end_sample_exclusive": 105,
+        "samples": 1,
+        "start_frame": 416,
+        "last_missing_frame": 416,
+        "left_censored": false,
+        "right_censored": true,
+        "observed_span_lower_bound_frames": 0
+      },
+      {
+        "sequence_id": "R04/training_22",
+        "start_sample": 0,
+        "end_sample_exclusive": 7,
+        "samples": 7,
+        "start_frame": 0,
+        "last_missing_frame": 24,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 24
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 0,
+        "end_sample_exclusive": 8,
+        "samples": 8,
+        "start_frame": 0,
+        "last_missing_frame": 28,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 28
+      },
+      {
+        "sequence_id": "R04/training_23",
+        "start_sample": 75,
+        "end_sample_exclusive": 95,
+        "samples": 20,
+        "start_frame": 300,
+        "last_missing_frame": 376,
+        "left_censored": false,
+        "right_censored": true,
+        "observed_span_lower_bound_frames": 76
+      },
+      {
+        "sequence_id": "R04/training_24",
+        "start_sample": 0,
+        "end_sample_exclusive": 9,
+        "samples": 9,
+        "start_frame": 0,
+        "last_missing_frame": 32,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 32
+      },
+      {
+        "sequence_id": "R04/training_25",
+        "start_sample": 0,
+        "end_sample_exclusive": 9,
+        "samples": 9,
+        "start_frame": 0,
+        "last_missing_frame": 32,
+        "left_censored": true,
+        "right_censored": false,
+        "observed_span_lower_bound_frames": 32
+      }
+    ],
+    "time_unit": "source_frame_index",
+    "fit_only": true
+  },
+  "appearance_request_calibration": {
+    "mode": "dual_full_normal",
+    "request_codes": {
+      "0": "explicit_pooled_request",
+      "1": "phase_request_including_support_fallback"
+    },
+    "support": {
+      "(-1, 0)": {
+        "observations": 482,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(-1, 1)": {
+        "observations": 482,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(0, 0)": {
+        "observations": 590,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(0, 1)": {
+        "observations": 590,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(1, 0)": {
+        "observations": 543,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(1, 1)": {
+        "observations": 543,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(2, 0)": {
+        "observations": 482,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      },
+      "(2, 1)": {
+        "observations": 482,
+        "videos": [
+          "R04/training_02",
+          "R04/training_08",
+          "R04/training_10",
+          "R04/training_12",
+          "R04/training_15"
+        ]
+      }
+    },
+    "dispatch": "actual_bank"
+  }
+}

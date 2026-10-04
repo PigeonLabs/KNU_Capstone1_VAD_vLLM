@@ -1,0 +1,365 @@
+{
+  "post_result_diagnostic": true,
+  "no_parameter_or_score_changes": true,
+  "historical27_models_exact": true,
+  "historical27_prediction_files_exact": 57,
+  "fit_complete_context_support": {
+    "control": {
+      "(0, 3)": {
+        "complete_runs": 1,
+        "distinct_videos": 1,
+        "videos": [
+          "03"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "supported": false
+      },
+      "(1, 2)": {
+        "complete_runs": 1,
+        "distinct_videos": 1,
+        "videos": [
+          "13"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "supported": false
+      },
+      "(1, 3)": {
+        "complete_runs": 12,
+        "distinct_videos": 9,
+        "videos": [
+          "01",
+          "04",
+          "05",
+          "07",
+          "13",
+          "14",
+          "17",
+          "23",
+          "25"
+        ],
+        "min_median_max_frames": [
+          8.0,
+          22.0,
+          40.0
+        ],
+        "supported": true
+      },
+      "(2, 3)": {
+        "complete_runs": 2,
+        "distinct_videos": 2,
+        "videos": [
+          "03",
+          "17"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          14.0,
+          24.0
+        ],
+        "supported": false
+      },
+      "(3, 0)": {
+        "complete_runs": 1,
+        "distinct_videos": 1,
+        "videos": [
+          "03"
+        ],
+        "min_median_max_frames": [
+          12.0,
+          12.0,
+          12.0
+        ],
+        "supported": false
+      },
+      "(3, 1)": {
+        "complete_runs": 8,
+        "distinct_videos": 5,
+        "videos": [
+          "01",
+          "13",
+          "14",
+          "16",
+          "25"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          8.0,
+          68.0
+        ],
+        "supported": false
+      },
+      "(3, 2)": {
+        "complete_runs": 2,
+        "distinct_videos": 2,
+        "videos": [
+          "03",
+          "17"
+        ],
+        "min_median_max_frames": [
+          8.0,
+          14.0,
+          20.0
+        ],
+        "supported": false
+      }
+    },
+    "reset": {
+      "(0, 3)": {
+        "complete_runs": 1,
+        "distinct_videos": 1,
+        "videos": [
+          "03"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "supported": false
+      },
+      "(1, 2)": {
+        "complete_runs": 1,
+        "distinct_videos": 1,
+        "videos": [
+          "13"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "supported": false
+      },
+      "(1, 3)": {
+        "complete_runs": 14,
+        "distinct_videos": 10,
+        "videos": [
+          "01",
+          "04",
+          "05",
+          "07",
+          "13",
+          "14",
+          "17",
+          "20",
+          "23",
+          "25"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          14.0,
+          40.0
+        ],
+        "supported": true
+      },
+      "(2, 3)": {
+        "complete_runs": 4,
+        "distinct_videos": 3,
+        "videos": [
+          "03",
+          "14",
+          "17"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          12.0,
+          24.0
+        ],
+        "supported": false
+      },
+      "(3, 0)": {
+        "complete_runs": 1,
+        "distinct_videos": 1,
+        "videos": [
+          "03"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "supported": false
+      },
+      "(3, 1)": {
+        "complete_runs": 10,
+        "distinct_videos": 6,
+        "videos": [
+          "01",
+          "05",
+          "13",
+          "14",
+          "16",
+          "25"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          10.0,
+          60.0
+        ],
+        "supported": true
+      },
+      "(3, 2)": {
+        "complete_runs": 5,
+        "distinct_videos": 4,
+        "videos": [
+          "03",
+          "14",
+          "17",
+          "20"
+        ],
+        "min_median_max_frames": [
+          4.0,
+          4.0,
+          16.0
+        ],
+        "supported": false
+      }
+    }
+  },
+  "reset_context_branch_contribution": {
+    "30_reset_hold": {
+      "contexts": {
+        "1->3": {
+          "valid_normal": 166,
+          "valid_anomaly": 267,
+          "dwell_only_normal": 0,
+          "dwell_only_anomaly": 0,
+          "dwell_alarm_normal": 0,
+          "dwell_alarm_anomaly": 0
+        },
+        "3->1": {
+          "valid_normal": 702,
+          "valid_anomaly": 1298,
+          "dwell_only_normal": 12,
+          "dwell_only_anomaly": 180,
+          "dwell_alarm_normal": 12,
+          "dwell_alarm_anomaly": 196
+        }
+      },
+      "dwell_only_false_alarm_intervals": [
+        {
+          "sequence": "R04_08",
+          "start": 244,
+          "end_exclusive": 256,
+          "entry_context": 3,
+          "phase": 1,
+          "age_at_start": 172.0
+        }
+      ]
+    },
+    "30_reset_pool": {
+      "contexts": {
+        "1->3": {
+          "valid_normal": 166,
+          "valid_anomaly": 267,
+          "dwell_only_normal": 0,
+          "dwell_only_anomaly": 0,
+          "dwell_alarm_normal": 0,
+          "dwell_alarm_anomaly": 0
+        },
+        "3->1": {
+          "valid_normal": 702,
+          "valid_anomaly": 1298,
+          "dwell_only_normal": 12,
+          "dwell_only_anomaly": 196,
+          "dwell_alarm_normal": 12,
+          "dwell_alarm_anomaly": 212
+        }
+      },
+      "dwell_only_false_alarm_intervals": [
+        {
+          "sequence": "R04_08",
+          "start": 244,
+          "end_exclusive": 256,
+          "entry_context": 3,
+          "phase": 1,
+          "age_at_start": 172.0
+        }
+      ]
+    },
+    "30_reset_age": {
+      "contexts": {
+        "1->3": {
+          "valid_normal": 166,
+          "valid_anomaly": 267,
+          "dwell_only_normal": 0,
+          "dwell_only_anomaly": 0,
+          "dwell_alarm_normal": 0,
+          "dwell_alarm_anomaly": 0
+        },
+        "3->1": {
+          "valid_normal": 702,
+          "valid_anomaly": 1298,
+          "dwell_only_normal": 12,
+          "dwell_only_anomaly": 180,
+          "dwell_alarm_normal": 12,
+          "dwell_alarm_anomaly": 196
+        }
+      },
+      "dwell_only_false_alarm_intervals": [
+        {
+          "sequence": "R04_08",
+          "start": 244,
+          "end_exclusive": 256,
+          "entry_context": 3,
+          "phase": 1,
+          "age_at_start": 172.0
+        }
+      ]
+    }
+  },
+  "new_normal_transition_failures": [
+    {
+      "held_out": "02",
+      "frame": 76,
+      "edge": [
+        2,
+        1
+      ],
+      "raw_transition": 4.174843554717698,
+      "previous_state_reference_samples": 31,
+      "reference_max": 2.906579568123018,
+      "remaining_calibration_same_edge_all": 0,
+      "remaining_calibration_same_edge_observed": 0,
+      "calibrated_transition": 1.0,
+      "selected_previous_pair": [
+        7,
+        4
+      ],
+      "selected_current_pair": [
+        1,
+        4
+      ]
+    },
+    {
+      "held_out": "02",
+      "frame": 252,
+      "edge": [
+        2,
+        1
+      ],
+      "raw_transition": 4.174843554717698,
+      "previous_state_reference_samples": 31,
+      "reference_max": 2.906579568123018,
+      "remaining_calibration_same_edge_all": 0,
+      "remaining_calibration_same_edge_observed": 0,
+      "calibrated_transition": 1.0,
+      "selected_previous_pair": [
+        18,
+        9
+      ],
+      "selected_current_pair": [
+        19,
+        9
+      ]
+    }
+  ]
+}

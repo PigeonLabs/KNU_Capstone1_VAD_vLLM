@@ -8,10 +8,12 @@ class RelationalPhase:
     names=['relative_center_x','relative_center_y','log_area_ratio','iou','anchor_center_x','anchor_center_y']
 
     def __init__(self, anchor_role=0, target_role=1, k=4, area_iqr_multiplier=1.5,
-                 scale_floor=.05, smoothing=3, seed=42):
+                 scale_floor=.05, smoothing=3, seed=42, reset_on_track_change=False):
         self.anchor_role=anchor_role;self.target_role=target_role;self.k=k
         self.area_iqr_multiplier=area_iqr_multiplier;self.scale_floor=scale_floor
         self.smoothing=smoothing;self.seed=seed
+        if type(reset_on_track_change) is not bool:raise ValueError('Track reset must be boolean')
+        self.reset_on_track_change=reset_on_track_change
 
     def fit_gates(self,caches):
         self.area_upper={};self.gate_evidence={}
@@ -29,7 +31,7 @@ class RelationalPhase:
 
     def descriptors(self,data):
         n=len(data['indices']);features=np.zeros((n,6));valid=np.zeros(n,bool);chosen=np.full((n,2),-1,int)
-        prior=[None,None];history=deque(maxlen=self.smoothing)
+        prior=[None,None];history=deque(maxlen=self.smoothing);previous_pair=None
         for step in range(n):
             for j,role in enumerate((self.anchor_role,self.target_role)):
                 ids=np.flatnonzero((data['object_frames']==step)&(data['roles']==role))
@@ -40,7 +42,10 @@ class RelationalPhase:
                     chosen[step,j]=pool[np.argmax(data['confidence'][pool])]
                     prior[j]=data['tracks'][chosen[step,j]]
             if np.any(chosen[step]<0):
-                history.clear();continue
+                history.clear();previous_pair=None;continue
+            pair=tuple(data['tracks'][chosen[step]])
+            if self.reset_on_track_change and pair!=previous_pair:history.clear()
+            previous_pair=pair
             a,b=data['boxes'][chosen[step]];size_a=a[2:]-a[:2];size_b=b[2:]-b[:2]
             center_a=(a[:2]+a[2:])/2;center_b=(b[:2]+b[2:])/2
             relative=(center_b-center_a)/np.maximum(size_a,1e-8)

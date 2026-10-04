@@ -1,0 +1,2456 @@
+{
+  "normal_only": true,
+  "rows": [
+    {
+      "sequence": "01",
+      "part": "training",
+      "partition": "fit",
+      "samples": 78,
+      "frames": 309,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 7,
+      "groups": {
+        "control": {
+          "mixed_windows": 7,
+          "valid_samples": 44,
+          "track_boundaries": 4,
+          "phase_counts": [
+            0,
+            22,
+            32,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            19,
+            4,
+            21
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              16
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 44,
+          "track_boundaries": 4,
+          "phase_counts": [
+            0,
+            23,
+            32,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            20,
+            4,
+            20
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              17,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              15
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "03",
+      "part": "training",
+      "partition": "fit",
+      "samples": 116,
+      "frames": 461,
+      "phase_changed_samples": 6,
+      "phase_changed_frames": 24,
+      "descriptor_changed_samples": 16,
+      "groups": {
+        "control": {
+          "mixed_windows": 16,
+          "valid_samples": 67,
+          "track_boundaries": 11,
+          "phase_counts": [
+            3,
+            24,
+            70,
+            19
+          ],
+          "observed_phase_counts": [
+            3,
+            9,
+            41,
+            14
+          ],
+          "observed_transition_counts": [
+            [
+              2,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              31,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              9
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 67,
+          "track_boundaries": 11,
+          "phase_counts": [
+            1,
+            27,
+            68,
+            20
+          ],
+          "observed_phase_counts": [
+            1,
+            12,
+            39,
+            15
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              27,
+              2
+            ],
+            [
+              1,
+              0,
+              3,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "04",
+      "part": "training",
+      "partition": "fit",
+      "samples": 102,
+      "frames": 408,
+      "phase_changed_samples": 1,
+      "phase_changed_frames": 4,
+      "descriptor_changed_samples": 7,
+      "groups": {
+        "control": {
+          "mixed_windows": 7,
+          "valid_samples": 50,
+          "track_boundaries": 4,
+          "phase_counts": [
+            7,
+            71,
+            14,
+            10
+          ],
+          "observed_phase_counts": [
+            0,
+            29,
+            13,
+            8
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              19,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              10,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              5
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 50,
+          "track_boundaries": 4,
+          "phase_counts": [
+            7,
+            72,
+            14,
+            9
+          ],
+          "observed_phase_counts": [
+            0,
+            30,
+            13,
+            7
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              20,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              10,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "05",
+      "part": "training",
+      "partition": "fit",
+      "samples": 110,
+      "frames": 437,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 7,
+      "groups": {
+        "control": {
+          "mixed_windows": 7,
+          "valid_samples": 78,
+          "track_boundaries": 4,
+          "phase_counts": [
+            3,
+            52,
+            9,
+            46
+          ],
+          "observed_phase_counts": [
+            0,
+            44,
+            2,
+            32
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              40,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              27
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 78,
+          "track_boundaries": 4,
+          "phase_counts": [
+            3,
+            54,
+            9,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            46,
+            2,
+            30
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              41,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "06",
+      "part": "training",
+      "partition": "fit",
+      "samples": 112,
+      "frames": 448,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 2,
+      "groups": {
+        "control": {
+          "mixed_windows": 2,
+          "valid_samples": 52,
+          "track_boundaries": 1,
+          "phase_counts": [
+            7,
+            27,
+            21,
+            57
+          ],
+          "observed_phase_counts": [
+            0,
+            23,
+            3,
+            26
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              20,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              23
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 52,
+          "track_boundaries": 1,
+          "phase_counts": [
+            7,
+            27,
+            21,
+            57
+          ],
+          "observed_phase_counts": [
+            0,
+            23,
+            3,
+            26
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              20,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              23
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "07",
+      "part": "training",
+      "partition": "fit",
+      "samples": 97,
+      "frames": 385,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 10,
+      "groups": {
+        "control": {
+          "mixed_windows": 10,
+          "valid_samples": 72,
+          "track_boundaries": 5,
+          "phase_counts": [
+            8,
+            42,
+            4,
+            43
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            3,
+            33
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              27
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 72,
+          "track_boundaries": 5,
+          "phase_counts": [
+            8,
+            42,
+            3,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            2,
+            34
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "09",
+      "part": "training",
+      "partition": "fit",
+      "samples": 105,
+      "frames": 417,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 1,
+      "groups": {
+        "control": {
+          "mixed_windows": 1,
+          "valid_samples": 35,
+          "track_boundaries": 1,
+          "phase_counts": [
+            4,
+            57,
+            44,
+            0
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            8,
+            0
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              24,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 35,
+          "track_boundaries": 1,
+          "phase_counts": [
+            4,
+            57,
+            44,
+            0
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            8,
+            0
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              24,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "11",
+      "part": "training",
+      "partition": "fit",
+      "samples": 85,
+      "frames": 340,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 0,
+      "groups": {
+        "control": {
+          "mixed_windows": 0,
+          "valid_samples": 24,
+          "track_boundaries": 0,
+          "phase_counts": [
+            6,
+            44,
+            30,
+            5
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            4,
+            2
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 24,
+          "track_boundaries": 0,
+          "phase_counts": [
+            6,
+            44,
+            30,
+            5
+          ],
+          "observed_phase_counts": [
+            0,
+            18,
+            4,
+            2
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "13",
+      "part": "training",
+      "partition": "fit",
+      "samples": 96,
+      "frames": 382,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "mixed_windows": 3,
+          "valid_samples": 66,
+          "track_boundaries": 3,
+          "phase_counts": [
+            7,
+            56,
+            9,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            40,
+            4,
+            22
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              29,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              20
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 66,
+          "track_boundaries": 3,
+          "phase_counts": [
+            7,
+            58,
+            7,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            41,
+            3,
+            22
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              29,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "14",
+      "part": "training",
+      "partition": "fit",
+      "samples": 81,
+      "frames": 323,
+      "phase_changed_samples": 4,
+      "phase_changed_frames": 16,
+      "descriptor_changed_samples": 13,
+      "groups": {
+        "control": {
+          "mixed_windows": 13,
+          "valid_samples": 68,
+          "track_boundaries": 7,
+          "phase_counts": [
+            5,
+            50,
+            0,
+            26
+          ],
+          "observed_phase_counts": [
+            0,
+            43,
+            0,
+            25
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              35,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              20
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 68,
+          "track_boundaries": 7,
+          "phase_counts": [
+            5,
+            51,
+            1,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            44,
+            1,
+            23
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              36,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              4,
+              1,
+              17
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "16",
+      "part": "training",
+      "partition": "fit",
+      "samples": 94,
+      "frames": 373,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 6,
+      "groups": {
+        "control": {
+          "mixed_windows": 6,
+          "valid_samples": 63,
+          "track_boundaries": 4,
+          "phase_counts": [
+            0,
+            61,
+            0,
+            33
+          ],
+          "observed_phase_counts": [
+            0,
+            38,
+            0,
+            25
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              33,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              19
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 63,
+          "track_boundaries": 4,
+          "phase_counts": [
+            0,
+            62,
+            2,
+            30
+          ],
+          "observed_phase_counts": [
+            0,
+            39,
+            1,
+            23
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              17
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "17",
+      "part": "training",
+      "partition": "fit",
+      "samples": 93,
+      "frames": 372,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 6,
+      "groups": {
+        "control": {
+          "mixed_windows": 6,
+          "valid_samples": 67,
+          "track_boundaries": 3,
+          "phase_counts": [
+            5,
+            45,
+            19,
+            24
+          ],
+          "observed_phase_counts": [
+            0,
+            38,
+            6,
+            23
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              33,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              1,
+              19
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 67,
+          "track_boundaries": 3,
+          "phase_counts": [
+            5,
+            46,
+            19,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            39,
+            6,
+            22
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              1,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "18",
+      "part": "training",
+      "partition": "fit",
+      "samples": 103,
+      "frames": 412,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 2,
+      "groups": {
+        "control": {
+          "mixed_windows": 2,
+          "valid_samples": 69,
+          "track_boundaries": 1,
+          "phase_counts": [
+            11,
+            69,
+            4,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            66,
+            1,
+            2
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              61,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 69,
+          "track_boundaries": 1,
+          "phase_counts": [
+            11,
+            69,
+            4,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            66,
+            1,
+            2
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              61,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "19",
+      "part": "training",
+      "partition": "fit",
+      "samples": 99,
+      "frames": 396,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "mixed_windows": 3,
+          "valid_samples": 36,
+          "track_boundaries": 2,
+          "phase_counts": [
+            7,
+            91,
+            0,
+            1
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            0,
+            1
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              26,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 36,
+          "track_boundaries": 2,
+          "phase_counts": [
+            7,
+            91,
+            0,
+            1
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            0,
+            1
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              26,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "20",
+      "part": "training",
+      "partition": "fit",
+      "samples": 101,
+      "frames": 404,
+      "phase_changed_samples": 7,
+      "phase_changed_frames": 28,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "mixed_windows": 3,
+          "valid_samples": 32,
+          "track_boundaries": 3,
+          "phase_counts": [
+            15,
+            62,
+            14,
+            10
+          ],
+          "observed_phase_counts": [
+            0,
+            26,
+            1,
+            5
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              22,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              3
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 32,
+          "track_boundaries": 3,
+          "phase_counts": [
+            15,
+            68,
+            15,
+            3
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            2,
+            3
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              22,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "21",
+      "part": "training",
+      "partition": "fit",
+      "samples": 105,
+      "frames": 417,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 3,
+      "groups": {
+        "control": {
+          "mixed_windows": 3,
+          "valid_samples": 48,
+          "track_boundaries": 2,
+          "phase_counts": [
+            5,
+            59,
+            27,
+            14
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            1,
+            11
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 48,
+          "track_boundaries": 2,
+          "phase_counts": [
+            5,
+            59,
+            27,
+            14
+          ],
+          "observed_phase_counts": [
+            0,
+            36,
+            1,
+            11
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "22",
+      "part": "training",
+      "partition": "fit",
+      "samples": 95,
+      "frames": 380,
+      "phase_changed_samples": 32,
+      "phase_changed_frames": 128,
+      "descriptor_changed_samples": 1,
+      "groups": {
+        "control": {
+          "mixed_windows": 1,
+          "valid_samples": 38,
+          "track_boundaries": 1,
+          "phase_counts": [
+            7,
+            24,
+            15,
+            49
+          ],
+          "observed_phase_counts": [
+            0,
+            19,
+            2,
+            17
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              14
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 38,
+          "track_boundaries": 1,
+          "phase_counts": [
+            7,
+            56,
+            15,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            20,
+            2,
+            16
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              13
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "23",
+      "part": "training",
+      "partition": "fit",
+      "samples": 95,
+      "frames": 377,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 8,
+      "groups": {
+        "control": {
+          "mixed_windows": 8,
+          "valid_samples": 54,
+          "track_boundaries": 4,
+          "phase_counts": [
+            8,
+            77,
+            0,
+            10
+          ],
+          "observed_phase_counts": [
+            0,
+            47,
+            0,
+            7
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              37,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              3
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 54,
+          "track_boundaries": 4,
+          "phase_counts": [
+            8,
+            75,
+            0,
+            12
+          ],
+          "observed_phase_counts": [
+            0,
+            45,
+            0,
+            9
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              35,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "24",
+      "part": "training",
+      "partition": "fit",
+      "samples": 92,
+      "frames": 368,
+      "phase_changed_samples": 3,
+      "phase_changed_frames": 12,
+      "descriptor_changed_samples": 6,
+      "groups": {
+        "control": {
+          "mixed_windows": 6,
+          "valid_samples": 79,
+          "track_boundaries": 4,
+          "phase_counts": [
+            9,
+            68,
+            1,
+            14
+          ],
+          "observed_phase_counts": [
+            0,
+            65,
+            1,
+            13
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              63,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              11
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 79,
+          "track_boundaries": 4,
+          "phase_counts": [
+            9,
+            65,
+            1,
+            17
+          ],
+          "observed_phase_counts": [
+            0,
+            64,
+            1,
+            14
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "25",
+      "part": "training",
+      "partition": "fit",
+      "samples": 101,
+      "frames": 403,
+      "phase_changed_samples": 6,
+      "phase_changed_frames": 24,
+      "descriptor_changed_samples": 10,
+      "groups": {
+        "control": {
+          "mixed_windows": 10,
+          "valid_samples": 81,
+          "track_boundaries": 5,
+          "phase_counts": [
+            9,
+            44,
+            0,
+            48
+          ],
+          "observed_phase_counts": [
+            0,
+            40,
+            0,
+            41
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              34
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 81,
+          "track_boundaries": 5,
+          "phase_counts": [
+            9,
+            48,
+            0,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            44,
+            0,
+            37
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              37,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "02",
+      "part": "training",
+      "partition": "calibration",
+      "samples": 103,
+      "frames": 409,
+      "phase_changed_samples": 10,
+      "phase_changed_frames": 40,
+      "descriptor_changed_samples": 13,
+      "groups": {
+        "control": {
+          "mixed_windows": 13,
+          "valid_samples": 56,
+          "track_boundaries": 9,
+          "phase_counts": [
+            0,
+            19,
+            57,
+            27
+          ],
+          "observed_phase_counts": [
+            0,
+            14,
+            25,
+            17
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              16,
+              2
+            ],
+            [
+              0,
+              1,
+              2,
+              9
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 56,
+          "track_boundaries": 9,
+          "phase_counts": [
+            0,
+            22,
+            58,
+            23
+          ],
+          "observed_phase_counts": [
+            0,
+            17,
+            25,
+            14
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              14,
+              1
+            ],
+            [
+              0,
+              2,
+              1,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "08",
+      "part": "training",
+      "partition": "calibration",
+      "samples": 104,
+      "frames": 413,
+      "phase_changed_samples": 2,
+      "phase_changed_frames": 8,
+      "descriptor_changed_samples": 4,
+      "groups": {
+        "control": {
+          "mixed_windows": 4,
+          "valid_samples": 82,
+          "track_boundaries": 2,
+          "phase_counts": [
+            8,
+            39,
+            2,
+            55
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            2,
+            46
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              28,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              2,
+              0,
+              39
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 82,
+          "track_boundaries": 2,
+          "phase_counts": [
+            8,
+            40,
+            1,
+            55
+          ],
+          "observed_phase_counts": [
+            0,
+            35,
+            1,
+            46
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              29,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              0,
+              39
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "10",
+      "part": "training",
+      "partition": "calibration",
+      "samples": 94,
+      "frames": 376,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 2,
+      "groups": {
+        "control": {
+          "mixed_windows": 2,
+          "valid_samples": 55,
+          "track_boundaries": 1,
+          "phase_counts": [
+            10,
+            60,
+            3,
+            21
+          ],
+          "observed_phase_counts": [
+            0,
+            38,
+            1,
+            16
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              35,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              12
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 55,
+          "track_boundaries": 1,
+          "phase_counts": [
+            10,
+            60,
+            3,
+            21
+          ],
+          "observed_phase_counts": [
+            0,
+            38,
+            1,
+            16
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              35,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "12",
+      "part": "training",
+      "partition": "calibration",
+      "samples": 96,
+      "frames": 382,
+      "phase_changed_samples": 0,
+      "phase_changed_frames": 0,
+      "descriptor_changed_samples": 2,
+      "groups": {
+        "control": {
+          "mixed_windows": 2,
+          "valid_samples": 51,
+          "track_boundaries": 1,
+          "phase_counts": [
+            0,
+            44,
+            8,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            2,
+            22
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              19,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              15
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 51,
+          "track_boundaries": 1,
+          "phase_counts": [
+            0,
+            44,
+            8,
+            44
+          ],
+          "observed_phase_counts": [
+            0,
+            27,
+            2,
+            22
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              19,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              15
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "15",
+      "part": "training",
+      "partition": "calibration",
+      "samples": 85,
+      "frames": 340,
+      "phase_changed_samples": 1,
+      "phase_changed_frames": 4,
+      "descriptor_changed_samples": 5,
+      "groups": {
+        "control": {
+          "mixed_windows": 5,
+          "valid_samples": 53,
+          "track_boundaries": 3,
+          "phase_counts": [
+            2,
+            44,
+            19,
+            20
+          ],
+          "observed_phase_counts": [
+            0,
+            33,
+            1,
+            19
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              30,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              16
+            ]
+          ]
+        },
+        "reset": {
+          "mixed_windows": 0,
+          "valid_samples": 53,
+          "track_boundaries": 3,
+          "phase_counts": [
+            2,
+            45,
+            19,
+            19
+          ],
+          "observed_phase_counts": [
+            0,
+            34,
+            1,
+            18
+          ],
+          "observed_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              15
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "unchanged_selection_valid_raw_features_and_frozen_centers": true
+}

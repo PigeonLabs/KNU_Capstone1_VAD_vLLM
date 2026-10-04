@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-04T21:41:53.750348+00:00",
+  "file_sha256": {
+    "artifacts/experiment19/features/R04/testing_01.npz": "8cd37377b6189bea6a50adc6875695e1e2213e8834589b002c6bf6980ed3a817",
+    "artifacts/experiment19/features/R04/testing_02.npz": "7775816d253c00b3732b3caf3599f14c3349199e3e01ecb9d072a53eb9c41109",
+    "artifacts/experiment19/features/R04/testing_03.npz": "fd6a0d9ba35e84071a62ef88c0ba7c935e2c4e489b2d5a7484896aa7aaf71882",
+    "artifacts/experiment19/features/R04/testing_04.npz": "3cdc7b361b38fabe4a02892b7ee5844f81fe1f4aca93c6eb70a7f71e6164f407",
+    "artifacts/experiment19/features/R04/testing_05.npz": "d97f21260b161db9161c89f699eaa9cad53ea8d2f818fddc5a26e7f6bf758935",
+    "artifacts/experiment19/features/R04/testing_06.npz": "9692113a352268301fc78f13bd1b2e25308952959e48b5653496257c363e1fbd",
+    "artifacts/experiment19/features/R04/testing_07.npz": "8152bc11068a65a3cf2fd0dfc6260103aa4b8e5414bc98f7c1f9bb046de4285a",
+    "artifacts/experiment19/features/R04/testing_08.npz": "e2a0eb970b6b369362117158a91152665c2f6fe365089afd33ab54e45d0bcf43",
+    "artifacts/experiment19/features/R04/testing_09.npz": "c85ba370d438b058aad0df6c769ec5cb4ab1a920b8cbd8ef39d6b6da361c3b36",
+    "artifacts/experiment19/features/R04/testing_10.npz": "5e7d56e9a5366e106a82e9e26083b38be2a5aec9ef7562a3232dd3c23e521d34",
+    "artifacts/experiment19/features/R04/testing_11.npz": "8a257fcc9e1a41a036c19716abfa1c5a902f59a5a49acfd85d6a0dd7f774ceca",
+    "artifacts/experiment19/features/R04/testing_12.npz": "5f88ee2b2dc557088a299e840e8141bb4a3069ff1988c37af62bfe7bb807274a",
+    "artifacts/experiment19/features/R04/testing_13.npz": "ee80368faeea2d9effc15c32253e7b04ece566c889b1113de6d36e80fb904fc3",
+    "artifacts/experiment19/features/R04/testing_14.npz": "5a1b66ccc829ec9f95fdc7d845a256e1d2457ac4cdb10ae941012331072dd04f",
+    "artifacts/experiment19/features/R04/testing_15.npz": "1405782725d45805c67210600c611f642409761c1d6564891e349c3306683bf4",
+    "artifacts/experiment19/features/R04/testing_16.npz": "cfbd411aa4bb0256c80e33f06fb4035f0d1876b558f8cd51fcebbc86f59a1290",
+    "artifacts/experiment19/features/R04/testing_17.npz": "8d3bfa098a8a923d56c7f61afe9bc18b26f636d753686ce2a94f7ddaaac9ca59",
+    "artifacts/experiment19/features/R04/testing_18.npz": "425b53d1e0ef1a6b20c87e8d5c691b78afbc6b3b1a77c42b54dbfdb19a97dfc9",
+    "artifacts/experiment19/features/R04/testing_19.npz": "39431f5878077441f479c87f5a80df7fb8665b79350bca988e19c165573d000a"
+  }
+}

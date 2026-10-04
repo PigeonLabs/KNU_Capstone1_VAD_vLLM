@@ -1,0 +1,31 @@
+{
+  "unit_tests_passed": 107,
+  "normal_holdout_cells_reconstructed": 30,
+  "test_prediction_files_reconstructed": 114,
+  "historical_control_prediction_files_exact": 57,
+  "figure_visually_inspected": true,
+  "markdown_links_checked": true,
+  "recommendations_exactly_three_in_report_and_readme": true,
+  "frozen_inputs_and_code_rechecked_before_upload": true,
+  "public_files_exclude_originals_weights_features_and_logs": true,
+  "file_sha256": {
+    "README.md": "180ddb44db53d6f53d1ff16e6bb280f5407e22cff80e5ab800578f53048289ec",
+    "docs/EXPERIMENT30.md": "1578102f06b9009381375792509d2481df22529acce4f5ebe1a6ba8c0fafbf1d",
+    "docs/EXPERIMENT31_PLAN.md": "47a02728b7b1f2ce76e37a8547da7346277b8cde1db9a5d90e144e1d76f1d1a2",
+    "results/experiment30/comparison.csv": "e99e4f820e4c68b61c4bb52dcba0c0c6f1d7f2a6adf129655f7f8c3b51851e1d",
+    "results/experiment30/diagnostic.json": "3b3cbac97f16684129290f865ad5fc455da702b6ed14a3b5210ae139a05bbd00",
+    "results/experiment30/fit_rank_control.json": "77fc6d6f9ec9cefc0928a554db17257a0b44addf57c13e2f07c59aafa7ed4926",
+    "results/experiment30/mechanism_audit.json": "481498641191af39d03781a7ff617cb66f0fc474c87bb909fb1a50ead9883004",
+    "results/experiment30/normal_audit.json": "71d1923e722b694eaafa19fd074ff1ab3525d559e0215620b5ae3d5b7e28b567",
+    "results/experiment30/normal_transform.json": "f21307e8c22a12e701443412c1c261aed98ab68b58ff451523d0ce8ae7f2b62a",
+    "results/experiment30/pre_calibration_checkpoint.json": "97a2e110e4b40bed2c6e404102e6471f7ea7281d8307b1d18df68757f17e2201",
+    "results/experiment30/pre_normal_attempt01.json": "7de51a9560dda47bd46c8c3906f5865806b717cce6f909419b40741826a37ba9",
+    "results/experiment30/pre_normal_protocol.json": "d0d2247caf1fb4f284ae144c64dfce9d9b074e08ed7133e874dcaf18fae8ec34",
+    "results/experiment30/pre_test_checkpoint.json": "c16f884193023ae15ac33ee54f82f9d005b8f57ba0c4643c77b1b13cfc50bf5d",
+    "results/experiment30/preparation_repair.json": "136715188a7e8dc080667c2ecf520170b1ac9b5a61c74b88068a470055df8d7d",
+    "results/experiment30/test_input_checkpoint.json": "81d4f60e7577323fc471f0a7b9f410daa5c181156cf8edaa311c3e7793ad2d98",
+    "results/experiment30/test_transform.json": "9873415a7f85e276f695e3bed43ea9410bea20bc2d2a4ee1bb6dbe82f1ec751d",
+    "results/experiment30/track_reset_comparison.png": "cab3053a62ed83cc77e7f5dbb9c5a3e201384303971ac06a58918eb83e4a218b",
+    "results/experiment30/validation.json": "b1db8d10724fae5d06b46f9edd1d2801ec1ad51075ad3c41f48a8c704e5d4eb9"
+  }
+}

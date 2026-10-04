@@ -1,0 +1,7 @@
+{
+  "stage": "before completed normal transform, before PCA fitting/calibration/test",
+  "reason": "Independent verifier promoted the smoothing=1 descriptor output to float64; production means accumulate float32 geometry. Exact equality differed by at most 1.1920929e-7 at the first failing check.",
+  "repair": "Restore source box dtype in independently reconstructed raw-descriptor history. No change to production descriptor/scoring algorithm or experiment parameters.",
+  "initial_protocol": "pre_normal_attempt01.json",
+  "replacement_protocol": "pre_normal_protocol.json"
+}
