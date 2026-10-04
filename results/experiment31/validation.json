@@ -1,0 +1,12 @@
+{
+  "protocol_hashes_verified": true,
+  "source_feature_files_checked": 44,
+  "normal_holdout_cells_reconstructed": 30,
+  "test_prediction_files_reconstructed": 114,
+  "old_normal_holdout_scores_reproduced": true,
+  "old_full_normal_models_scores_and_test_predictions_reproduced": true,
+  "unchanged_pca_appearance_transition_references_dwell_verified": true,
+  "normal_references_and_q99_independently_reconstructed": true,
+  "same_pair_gate_subset_and_causal_prefix_verified": true,
+  "scores_metrics_events_and_threshold_effects_recomputed": true
+}

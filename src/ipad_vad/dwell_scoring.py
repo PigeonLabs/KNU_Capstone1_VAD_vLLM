@@ -4,7 +4,7 @@ from ipad_vad.process_calibration import StateCalibratedBaseline
 from ipad_vad.dwell import NormalDwell
 
 
-from ipad_vad.transition_evidence import observed_transition_mask
+from ipad_vad.transition_evidence import observed_transition_mask, same_track_pair_transition_mask
 
 
 class DwellBaseline(StateCalibratedBaseline):
@@ -24,8 +24,10 @@ class DwellBaseline(StateCalibratedBaseline):
         effective=transition
         gate=self.cfg.get('transition_evidence_gate')
         if gate is not None:
-            if gate!='consecutive_observed':raise ValueError('Unknown transition evidence gate')
-            mask=observed_transition_mask(data);effective=np.where(mask,transition,0.)
+            if gate=='consecutive_observed':mask=observed_transition_mask(data)
+            elif gate=='same_track_pair':mask=same_track_pair_transition_mask(data)
+            else:raise ValueError('Unknown transition evidence gate')
+            effective=np.where(mask,transition,0.)
             result.update(transition_raw=self.raw(data)[1],transition_valid=mask,transition_gated=effective)
         result['process']=np.where(valid,np.maximum(effective,score),effective)
         result['combined']=self.fuse(result['visual'],result['process'])

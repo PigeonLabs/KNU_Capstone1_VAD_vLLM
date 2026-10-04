@@ -1,0 +1,7795 @@
+{
+  "variants": {
+    "30_reset_hold": {
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6905235915764825,
+          "average_precision": 0.6895518589275792
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.594639839598586,
+          "average_precision": 0.6614558237173961
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7157917987300414,
+          "average_precision": 0.7082816683074495
+        }
+      },
+      "q99": 0.997457627118644,
+      "alarms": {
+        "normal": 325,
+        "anomaly": 833
+      },
+      "normal_fpr": 0.09088366890380313,
+      "anomaly_recall": 0.1819571865443425,
+      "normal_holdout_fp": 32,
+      "events": {
+        "events": 26,
+        "detected_events": 16,
+        "missed_events": 10,
+        "event_coverage": 0.6153846153846154,
+        "median_delay_detected_only_frames": 70.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "transition_gate_open_frames": 4975,
+      "dwell_valid_frames": 2433
+    },
+    "30_reset_pool": {
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.688867026963896,
+          "average_precision": 0.6861294085618788
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.594639839598586,
+          "average_precision": 0.6614558237173961
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7154051071509202,
+          "average_precision": 0.7064326149081006
+        }
+      },
+      "q99": 0.9968879668049793,
+      "alarms": {
+        "normal": 289,
+        "anomaly": 768
+      },
+      "normal_fpr": 0.0808165548098434,
+      "anomaly_recall": 0.16775884665792923,
+      "normal_holdout_fp": 40,
+      "events": {
+        "events": 26,
+        "detected_events": 17,
+        "missed_events": 9,
+        "event_coverage": 0.6538461538461539,
+        "median_delay_detected_only_frames": 65.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "transition_gate_open_frames": 4975,
+      "dwell_valid_frames": 2433
+    },
+    "30_reset_age": {
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6902059553374127,
+          "average_precision": 0.6886392206278444
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.594639839598586,
+          "average_precision": 0.6614558237173961
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7155995066376201,
+          "average_precision": 0.7074495578972961
+        }
+      },
+      "q99": 0.997457627118644,
+      "alarms": {
+        "normal": 325,
+        "anomaly": 841
+      },
+      "normal_fpr": 0.09088366890380313,
+      "anomaly_recall": 0.1837046745303626,
+      "normal_holdout_fp": 32,
+      "events": {
+        "events": 26,
+        "detected_events": 16,
+        "missed_events": 10,
+        "event_coverage": 0.6153846153846154,
+        "median_delay_detected_only_frames": 70.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "transition_gate_open_frames": 4975,
+      "dwell_valid_frames": 2433
+    },
+    "31_hold": {
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6905235915764825,
+          "average_precision": 0.6895518589275792
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5995183962692892,
+          "average_precision": 0.6751976081959734
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7210459907953906,
+          "average_precision": 0.7139034161825262
+        }
+      },
+      "q99": 0.997457627118644,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 829
+      },
+      "normal_fpr": 0.08640939597315436,
+      "anomaly_recall": 0.18108344255133246,
+      "normal_holdout_fp": 24,
+      "events": {
+        "events": 26,
+        "detected_events": 16,
+        "missed_events": 10,
+        "event_coverage": 0.6153846153846154,
+        "median_delay_detected_only_frames": 70.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "transition_gate_open_frames": 4699,
+      "dwell_valid_frames": 2433
+    },
+    "31_pool": {
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.688867026963896,
+          "average_precision": 0.6861294085618788
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5995183962692892,
+          "average_precision": 0.6751976081959734
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7206975377327418,
+          "average_precision": 0.7123516880559404
+        }
+      },
+      "q99": 0.9968879668049793,
+      "alarms": {
+        "normal": 273,
+        "anomaly": 764
+      },
+      "normal_fpr": 0.07634228187919463,
+      "anomaly_recall": 0.16688510266491918,
+      "normal_holdout_fp": 32,
+      "events": {
+        "events": 26,
+        "detected_events": 17,
+        "missed_events": 9,
+        "event_coverage": 0.6538461538461539,
+        "median_delay_detected_only_frames": 65.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "transition_gate_open_frames": 4699,
+      "dwell_valid_frames": 2433
+    },
+    "31_age": {
+      "metrics": {
+        "visual": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.6902059553374127,
+          "average_precision": 0.6886392206278444
+        },
+        "process": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.5995183962692892,
+          "average_precision": 0.6751976081959734
+        },
+        "combined": {
+          "frames": 8154,
+          "positive_frames": 4578,
+          "auroc": 0.7208412375889748,
+          "average_precision": 0.7130707206575645
+        }
+      },
+      "q99": 0.997457627118644,
+      "alarms": {
+        "normal": 309,
+        "anomaly": 837
+      },
+      "normal_fpr": 0.08640939597315436,
+      "anomaly_recall": 0.18283093053735255,
+      "normal_holdout_fp": 24,
+      "events": {
+        "events": 26,
+        "detected_events": 16,
+        "missed_events": 10,
+        "event_coverage": 0.6153846153846154,
+        "median_delay_detected_only_frames": 70.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      },
+      "transition_gate_open_frames": 4699,
+      "dwell_valid_frames": 2433
+    }
+  },
+  "paired_contrasts": {
+    "31_hold": {
+      "baseline": "30_reset_hold",
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "changed_combined_frames": {
+        "normal": 76,
+        "anomaly": 64
+      },
+      "closed_transition_signal_frames": {
+        "normal": 131,
+        "anomaly": 145
+      },
+      "closed_transition_alarms_at_baseline_q99": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "closed_boundary_still_alarm_at_own_q99": {
+        "normal": 16,
+        "anomaly": 32
+      },
+      "event_changes": {
+        "gained": [],
+        "lost": []
+      },
+      "same_new_scores_at_old_q99": {
+        "q99": 0.997457627118644,
+        "alarms": {
+          "normal": 309,
+          "anomaly": 829
+        },
+        "events": {
+          "events": 26,
+          "detected_events": 16,
+          "missed_events": 10,
+          "event_coverage": 0.6153846153846154,
+          "median_delay_detected_only_frames": 70.5,
+          "short_event_limit_frames": 12,
+          "short_events": 0,
+          "detected_short_events": 0,
+          "detected_with_alarm_already_active": 2,
+          "left_boundary_censored_events": 0
+        },
+        "own_q99_added": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "own_q99_removed": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "states": {
+        "first": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "missing": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "reacquired": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "same_pair": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "anchor_changed": {
+          "removed": {
+            "normal": 16,
+            "anomaly": 4
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 16,
+            "anomaly": 28
+          }
+        },
+        "target_changed": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 60,
+            "anomaly": 36
+          }
+        },
+        "both_changed": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        }
+      }
+    },
+    "31_pool": {
+      "baseline": "30_reset_pool",
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "changed_combined_frames": {
+        "normal": 76,
+        "anomaly": 64
+      },
+      "closed_transition_signal_frames": {
+        "normal": 131,
+        "anomaly": 145
+      },
+      "closed_transition_alarms_at_baseline_q99": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "closed_boundary_still_alarm_at_own_q99": {
+        "normal": 16,
+        "anomaly": 32
+      },
+      "event_changes": {
+        "gained": [],
+        "lost": []
+      },
+      "same_new_scores_at_old_q99": {
+        "q99": 0.9968879668049793,
+        "alarms": {
+          "normal": 273,
+          "anomaly": 764
+        },
+        "events": {
+          "events": 26,
+          "detected_events": 17,
+          "missed_events": 9,
+          "event_coverage": 0.6538461538461539,
+          "median_delay_detected_only_frames": 65.0,
+          "short_event_limit_frames": 12,
+          "short_events": 0,
+          "detected_short_events": 0,
+          "detected_with_alarm_already_active": 2,
+          "left_boundary_censored_events": 0
+        },
+        "own_q99_added": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "own_q99_removed": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "states": {
+        "first": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "missing": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "reacquired": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "same_pair": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "anchor_changed": {
+          "removed": {
+            "normal": 16,
+            "anomaly": 4
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 16,
+            "anomaly": 28
+          }
+        },
+        "target_changed": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 60,
+            "anomaly": 36
+          }
+        },
+        "both_changed": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        }
+      }
+    },
+    "31_age": {
+      "baseline": "30_reset_age",
+      "added": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "removed": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "changed_combined_frames": {
+        "normal": 76,
+        "anomaly": 64
+      },
+      "closed_transition_signal_frames": {
+        "normal": 131,
+        "anomaly": 145
+      },
+      "closed_transition_alarms_at_baseline_q99": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "closed_boundary_still_alarm_at_own_q99": {
+        "normal": 16,
+        "anomaly": 32
+      },
+      "event_changes": {
+        "gained": [],
+        "lost": []
+      },
+      "same_new_scores_at_old_q99": {
+        "q99": 0.997457627118644,
+        "alarms": {
+          "normal": 309,
+          "anomaly": 837
+        },
+        "events": {
+          "events": 26,
+          "detected_events": 16,
+          "missed_events": 10,
+          "event_coverage": 0.6153846153846154,
+          "median_delay_detected_only_frames": 70.5,
+          "short_event_limit_frames": 12,
+          "short_events": 0,
+          "detected_short_events": 0,
+          "detected_with_alarm_already_active": 2,
+          "left_boundary_censored_events": 0
+        },
+        "own_q99_added": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "own_q99_removed": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "states": {
+        "first": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "missing": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "reacquired": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "same_pair": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        },
+        "anchor_changed": {
+          "removed": {
+            "normal": 16,
+            "anomaly": 4
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 16,
+            "anomaly": 28
+          }
+        },
+        "target_changed": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 60,
+            "anomaly": 36
+          }
+        },
+        "both_changed": {
+          "removed": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "added": {
+            "normal": 0,
+            "anomaly": 0
+          },
+          "changed_combined": {
+            "normal": 0,
+            "anomaly": 0
+          }
+        }
+      }
+    }
+  },
+  "branch_contribution": {
+    "30_reset_hold": {
+      "visual_alarms": {
+        "normal": 297,
+        "anomaly": 649
+      },
+      "transition_only_alarms": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "dwell_only_alarms": {
+        "normal": 12,
+        "anomaly": 180
+      },
+      "both_process_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_added_over_visual": {
+        "normal": 28,
+        "anomaly": 184
+      },
+      "process_added_events": {
+        "gained": [
+          {
+            "sequence": "08",
+            "start_frame": 134
+          }
+        ],
+        "lost": []
+      },
+      "visual_events_at_combined_q99": {
+        "events": 26,
+        "detected_events": 15,
+        "missed_events": 11,
+        "event_coverage": 0.5769230769230769,
+        "median_delay_detected_only_frames": 66.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "30_reset_pool": {
+      "visual_alarms": {
+        "normal": 261,
+        "anomaly": 568
+      },
+      "transition_only_alarms": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "dwell_only_alarms": {
+        "normal": 12,
+        "anomaly": 196
+      },
+      "both_process_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_added_over_visual": {
+        "normal": 28,
+        "anomaly": 200
+      },
+      "process_added_events": {
+        "gained": [
+          {
+            "sequence": "08",
+            "start_frame": 134
+          }
+        ],
+        "lost": []
+      },
+      "visual_events_at_combined_q99": {
+        "events": 26,
+        "detected_events": 16,
+        "missed_events": 10,
+        "event_coverage": 0.6153846153846154,
+        "median_delay_detected_only_frames": 64.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "30_reset_age": {
+      "visual_alarms": {
+        "normal": 297,
+        "anomaly": 657
+      },
+      "transition_only_alarms": {
+        "normal": 16,
+        "anomaly": 4
+      },
+      "dwell_only_alarms": {
+        "normal": 12,
+        "anomaly": 180
+      },
+      "both_process_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_added_over_visual": {
+        "normal": 28,
+        "anomaly": 184
+      },
+      "process_added_events": {
+        "gained": [
+          {
+            "sequence": "08",
+            "start_frame": 134
+          }
+        ],
+        "lost": []
+      },
+      "visual_events_at_combined_q99": {
+        "events": 26,
+        "detected_events": 15,
+        "missed_events": 11,
+        "event_coverage": 0.5769230769230769,
+        "median_delay_detected_only_frames": 66.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "31_hold": {
+      "visual_alarms": {
+        "normal": 297,
+        "anomaly": 649
+      },
+      "transition_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "dwell_only_alarms": {
+        "normal": 12,
+        "anomaly": 180
+      },
+      "both_process_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_added_over_visual": {
+        "normal": 12,
+        "anomaly": 180
+      },
+      "process_added_events": {
+        "gained": [
+          {
+            "sequence": "08",
+            "start_frame": 134
+          }
+        ],
+        "lost": []
+      },
+      "visual_events_at_combined_q99": {
+        "events": 26,
+        "detected_events": 15,
+        "missed_events": 11,
+        "event_coverage": 0.5769230769230769,
+        "median_delay_detected_only_frames": 66.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "31_pool": {
+      "visual_alarms": {
+        "normal": 261,
+        "anomaly": 568
+      },
+      "transition_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "dwell_only_alarms": {
+        "normal": 12,
+        "anomaly": 196
+      },
+      "both_process_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_added_over_visual": {
+        "normal": 12,
+        "anomaly": 196
+      },
+      "process_added_events": {
+        "gained": [
+          {
+            "sequence": "08",
+            "start_frame": 134
+          }
+        ],
+        "lost": []
+      },
+      "visual_events_at_combined_q99": {
+        "events": 26,
+        "detected_events": 16,
+        "missed_events": 10,
+        "event_coverage": 0.6153846153846154,
+        "median_delay_detected_only_frames": 64.5,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    },
+    "31_age": {
+      "visual_alarms": {
+        "normal": 297,
+        "anomaly": 657
+      },
+      "transition_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "dwell_only_alarms": {
+        "normal": 12,
+        "anomaly": 180
+      },
+      "both_process_only_alarms": {
+        "normal": 0,
+        "anomaly": 0
+      },
+      "process_added_over_visual": {
+        "normal": 12,
+        "anomaly": 180
+      },
+      "process_added_events": {
+        "gained": [
+          {
+            "sequence": "08",
+            "start_frame": 134
+          }
+        ],
+        "lost": []
+      },
+      "visual_events_at_combined_q99": {
+        "events": 26,
+        "detected_events": 15,
+        "missed_events": 11,
+        "event_coverage": 0.5769230769230769,
+        "median_delay_detected_only_frames": 66.0,
+        "short_event_limit_frames": 12,
+        "short_events": 0,
+        "detected_short_events": 0,
+        "detected_with_alarm_already_active": 2,
+        "left_boundary_censored_events": 0
+      }
+    }
+  },
+  "evidence_strata": {
+    "30_reset_hold": {
+      "first": {
+        "frames": 76,
+        "label_counts": {
+          "normal": 76,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "missing": {
+        "frames": 2479,
+        "label_counts": {
+          "normal": 1258,
+          "anomaly": 1221
+        },
+        "alarms": {
+          "normal": 92,
+          "anomaly": 287
+        }
+      },
+      "reacquired": {
+        "frames": 624,
+        "label_counts": {
+          "normal": 316,
+          "anomaly": 308
+        },
+        "alarms": {
+          "normal": 28,
+          "anomaly": 40
+        }
+      },
+      "same_pair": {
+        "frames": 4699,
+        "label_counts": {
+          "normal": 1795,
+          "anomaly": 2904
+        },
+        "alarms": {
+          "normal": 173,
+          "anomaly": 470
+        }
+      },
+      "anchor_changed": {
+        "frames": 80,
+        "label_counts": {
+          "normal": 20,
+          "anomaly": 60
+        },
+        "alarms": {
+          "normal": 20,
+          "anomaly": 24
+        }
+      },
+      "target_changed": {
+        "frames": 196,
+        "label_counts": {
+          "normal": 111,
+          "anomaly": 85
+        },
+        "alarms": {
+          "normal": 12,
+          "anomaly": 12
+        }
+      },
+      "both_changed": {
+        "frames": 0,
+        "label_counts": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      }
+    },
+    "30_reset_pool": {
+      "first": {
+        "frames": 76,
+        "label_counts": {
+          "normal": 76,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "missing": {
+        "frames": 2479,
+        "label_counts": {
+          "normal": 1258,
+          "anomaly": 1221
+        },
+        "alarms": {
+          "normal": 56,
+          "anomaly": 206
+        }
+      },
+      "reacquired": {
+        "frames": 624,
+        "label_counts": {
+          "normal": 316,
+          "anomaly": 308
+        },
+        "alarms": {
+          "normal": 28,
+          "anomaly": 40
+        }
+      },
+      "same_pair": {
+        "frames": 4699,
+        "label_counts": {
+          "normal": 1795,
+          "anomaly": 2904
+        },
+        "alarms": {
+          "normal": 173,
+          "anomaly": 486
+        }
+      },
+      "anchor_changed": {
+        "frames": 80,
+        "label_counts": {
+          "normal": 20,
+          "anomaly": 60
+        },
+        "alarms": {
+          "normal": 20,
+          "anomaly": 24
+        }
+      },
+      "target_changed": {
+        "frames": 196,
+        "label_counts": {
+          "normal": 111,
+          "anomaly": 85
+        },
+        "alarms": {
+          "normal": 12,
+          "anomaly": 12
+        }
+      },
+      "both_changed": {
+        "frames": 0,
+        "label_counts": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      }
+    },
+    "30_reset_age": {
+      "first": {
+        "frames": 76,
+        "label_counts": {
+          "normal": 76,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "missing": {
+        "frames": 2479,
+        "label_counts": {
+          "normal": 1258,
+          "anomaly": 1221
+        },
+        "alarms": {
+          "normal": 92,
+          "anomaly": 295
+        }
+      },
+      "reacquired": {
+        "frames": 624,
+        "label_counts": {
+          "normal": 316,
+          "anomaly": 308
+        },
+        "alarms": {
+          "normal": 28,
+          "anomaly": 40
+        }
+      },
+      "same_pair": {
+        "frames": 4699,
+        "label_counts": {
+          "normal": 1795,
+          "anomaly": 2904
+        },
+        "alarms": {
+          "normal": 173,
+          "anomaly": 470
+        }
+      },
+      "anchor_changed": {
+        "frames": 80,
+        "label_counts": {
+          "normal": 20,
+          "anomaly": 60
+        },
+        "alarms": {
+          "normal": 20,
+          "anomaly": 24
+        }
+      },
+      "target_changed": {
+        "frames": 196,
+        "label_counts": {
+          "normal": 111,
+          "anomaly": 85
+        },
+        "alarms": {
+          "normal": 12,
+          "anomaly": 12
+        }
+      },
+      "both_changed": {
+        "frames": 0,
+        "label_counts": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      }
+    },
+    "31_hold": {
+      "first": {
+        "frames": 76,
+        "label_counts": {
+          "normal": 76,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "missing": {
+        "frames": 2479,
+        "label_counts": {
+          "normal": 1258,
+          "anomaly": 1221
+        },
+        "alarms": {
+          "normal": 92,
+          "anomaly": 287
+        }
+      },
+      "reacquired": {
+        "frames": 624,
+        "label_counts": {
+          "normal": 316,
+          "anomaly": 308
+        },
+        "alarms": {
+          "normal": 28,
+          "anomaly": 40
+        }
+      },
+      "same_pair": {
+        "frames": 4699,
+        "label_counts": {
+          "normal": 1795,
+          "anomaly": 2904
+        },
+        "alarms": {
+          "normal": 173,
+          "anomaly": 470
+        }
+      },
+      "anchor_changed": {
+        "frames": 80,
+        "label_counts": {
+          "normal": 20,
+          "anomaly": 60
+        },
+        "alarms": {
+          "normal": 4,
+          "anomaly": 20
+        }
+      },
+      "target_changed": {
+        "frames": 196,
+        "label_counts": {
+          "normal": 111,
+          "anomaly": 85
+        },
+        "alarms": {
+          "normal": 12,
+          "anomaly": 12
+        }
+      },
+      "both_changed": {
+        "frames": 0,
+        "label_counts": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      }
+    },
+    "31_pool": {
+      "first": {
+        "frames": 76,
+        "label_counts": {
+          "normal": 76,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "missing": {
+        "frames": 2479,
+        "label_counts": {
+          "normal": 1258,
+          "anomaly": 1221
+        },
+        "alarms": {
+          "normal": 56,
+          "anomaly": 206
+        }
+      },
+      "reacquired": {
+        "frames": 624,
+        "label_counts": {
+          "normal": 316,
+          "anomaly": 308
+        },
+        "alarms": {
+          "normal": 28,
+          "anomaly": 40
+        }
+      },
+      "same_pair": {
+        "frames": 4699,
+        "label_counts": {
+          "normal": 1795,
+          "anomaly": 2904
+        },
+        "alarms": {
+          "normal": 173,
+          "anomaly": 486
+        }
+      },
+      "anchor_changed": {
+        "frames": 80,
+        "label_counts": {
+          "normal": 20,
+          "anomaly": 60
+        },
+        "alarms": {
+          "normal": 4,
+          "anomaly": 20
+        }
+      },
+      "target_changed": {
+        "frames": 196,
+        "label_counts": {
+          "normal": 111,
+          "anomaly": 85
+        },
+        "alarms": {
+          "normal": 12,
+          "anomaly": 12
+        }
+      },
+      "both_changed": {
+        "frames": 0,
+        "label_counts": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      }
+    },
+    "31_age": {
+      "first": {
+        "frames": 76,
+        "label_counts": {
+          "normal": 76,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      },
+      "missing": {
+        "frames": 2479,
+        "label_counts": {
+          "normal": 1258,
+          "anomaly": 1221
+        },
+        "alarms": {
+          "normal": 92,
+          "anomaly": 295
+        }
+      },
+      "reacquired": {
+        "frames": 624,
+        "label_counts": {
+          "normal": 316,
+          "anomaly": 308
+        },
+        "alarms": {
+          "normal": 28,
+          "anomaly": 40
+        }
+      },
+      "same_pair": {
+        "frames": 4699,
+        "label_counts": {
+          "normal": 1795,
+          "anomaly": 2904
+        },
+        "alarms": {
+          "normal": 173,
+          "anomaly": 470
+        }
+      },
+      "anchor_changed": {
+        "frames": 80,
+        "label_counts": {
+          "normal": 20,
+          "anomaly": 60
+        },
+        "alarms": {
+          "normal": 4,
+          "anomaly": 20
+        }
+      },
+      "target_changed": {
+        "frames": 196,
+        "label_counts": {
+          "normal": 111,
+          "anomaly": 85
+        },
+        "alarms": {
+          "normal": 12,
+          "anomaly": 12
+        }
+      },
+      "both_changed": {
+        "frames": 0,
+        "label_counts": {
+          "normal": 0,
+          "anomaly": 0
+        },
+        "alarms": {
+          "normal": 0,
+          "anomaly": 0
+        }
+      }
+    }
+  },
+  "normal_holdout_changes": [
+    {
+      "variant": "31_hold",
+      "held_out": "02",
+      "old_q99": 0.9986807387862797,
+      "new_q99": 0.9986807387862797,
+      "removed_frames": 8,
+      "added_frames": 0,
+      "removed_sample_source_frames": [
+        76,
+        252
+      ],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 36
+    },
+    {
+      "variant": "31_pool",
+      "held_out": "02",
+      "old_q99": 0.9964454976303317,
+      "new_q99": 0.9964454976303317,
+      "removed_frames": 8,
+      "added_frames": 0,
+      "removed_sample_source_frames": [
+        76,
+        252
+      ],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 36
+    },
+    {
+      "variant": "31_age",
+      "held_out": "02",
+      "old_q99": 0.9986807387862797,
+      "new_q99": 0.9986807387862797,
+      "removed_frames": 8,
+      "added_frames": 0,
+      "removed_sample_source_frames": [
+        76,
+        252
+      ],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 36
+    },
+    {
+      "variant": "31_hold",
+      "held_out": "08",
+      "old_q99": 0.9986772486772487,
+      "new_q99": 0.9986772486772487,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 8
+    },
+    {
+      "variant": "31_pool",
+      "held_out": "08",
+      "old_q99": 0.9986772486772487,
+      "new_q99": 0.9986772486772487,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 8
+    },
+    {
+      "variant": "31_age",
+      "held_out": "08",
+      "old_q99": 0.9986772486772487,
+      "new_q99": 0.9986772486772487,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 8
+    },
+    {
+      "variant": "31_hold",
+      "held_out": "10",
+      "old_q99": 0.9987113402061856,
+      "new_q99": 0.9987113402061856,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 4
+    },
+    {
+      "variant": "31_pool",
+      "held_out": "10",
+      "old_q99": 0.9969072164948454,
+      "new_q99": 0.9969072164948454,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 4
+    },
+    {
+      "variant": "31_age",
+      "held_out": "10",
+      "old_q99": 0.9987113402061856,
+      "new_q99": 0.9987113402061856,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 4
+    },
+    {
+      "variant": "31_hold",
+      "held_out": "12",
+      "old_q99": 0.9987046632124352,
+      "new_q99": 0.9987046632124352,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 4
+    },
+    {
+      "variant": "31_pool",
+      "held_out": "12",
+      "old_q99": 0.9961139896373057,
+      "new_q99": 0.9961139896373057,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 4
+    },
+    {
+      "variant": "31_age",
+      "held_out": "12",
+      "old_q99": 0.9987046632124352,
+      "new_q99": 0.9987046632124352,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 4
+    },
+    {
+      "variant": "31_hold",
+      "held_out": "15",
+      "old_q99": 0.9987405541561712,
+      "new_q99": 0.9987405541561712,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 12
+    },
+    {
+      "variant": "31_pool",
+      "held_out": "15",
+      "old_q99": 0.9968553459119497,
+      "new_q99": 0.9968553459119497,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 12
+    },
+    {
+      "variant": "31_age",
+      "held_out": "15",
+      "old_q99": 0.9987405541561712,
+      "new_q99": 0.9987405541561712,
+      "removed_frames": 0,
+      "added_frames": 0,
+      "removed_sample_source_frames": [],
+      "added_sample_source_frames": [],
+      "closed_pair_boundary_frames": 12
+    }
+  ],
+  "normal_counterexamples": [
+    {
+      "variant": "30_reset_hold",
+      "frame": 76,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.5065963060686016,
+      "transition": 1.0,
+      "transition_gated": 1.0,
+      "dwell": 0.0,
+      "process": 1.0,
+      "combined": 1.0
+    },
+    {
+      "variant": "30_reset_hold",
+      "frame": 252,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.9261213720316622,
+      "transition": 1.0,
+      "transition_gated": 1.0,
+      "dwell": 0.0,
+      "process": 1.0,
+      "combined": 1.0
+    },
+    {
+      "variant": "30_reset_pool",
+      "frame": 76,
+      "evidence": "anchor_changed",
+      "q99": 0.9964454976303317,
+      "visual": 0.5065963060686016,
+      "transition": 1.0,
+      "transition_gated": 1.0,
+      "dwell": 0.0,
+      "process": 1.0,
+      "combined": 1.0
+    },
+    {
+      "variant": "30_reset_pool",
+      "frame": 252,
+      "evidence": "anchor_changed",
+      "q99": 0.9964454976303317,
+      "visual": 0.9261213720316622,
+      "transition": 1.0,
+      "transition_gated": 1.0,
+      "dwell": 0.0,
+      "process": 1.0,
+      "combined": 1.0
+    },
+    {
+      "variant": "30_reset_age",
+      "frame": 76,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.5065963060686016,
+      "transition": 1.0,
+      "transition_gated": 1.0,
+      "dwell": 0.0,
+      "process": 1.0,
+      "combined": 1.0
+    },
+    {
+      "variant": "30_reset_age",
+      "frame": 252,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.9261213720316622,
+      "transition": 1.0,
+      "transition_gated": 1.0,
+      "dwell": 0.0,
+      "process": 1.0,
+      "combined": 1.0
+    },
+    {
+      "variant": "31_hold",
+      "frame": 76,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.5065963060686016,
+      "transition": 1.0,
+      "transition_gated": 0.0,
+      "dwell": 0.0,
+      "process": 0.0,
+      "combined": 0.5065963060686016
+    },
+    {
+      "variant": "31_hold",
+      "frame": 252,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.9261213720316622,
+      "transition": 1.0,
+      "transition_gated": 0.0,
+      "dwell": 0.0,
+      "process": 0.0,
+      "combined": 0.9261213720316622
+    },
+    {
+      "variant": "31_pool",
+      "frame": 76,
+      "evidence": "anchor_changed",
+      "q99": 0.9964454976303317,
+      "visual": 0.5065963060686016,
+      "transition": 1.0,
+      "transition_gated": 0.0,
+      "dwell": 0.0,
+      "process": 0.0,
+      "combined": 0.5065963060686016
+    },
+    {
+      "variant": "31_pool",
+      "frame": 252,
+      "evidence": "anchor_changed",
+      "q99": 0.9964454976303317,
+      "visual": 0.9261213720316622,
+      "transition": 1.0,
+      "transition_gated": 0.0,
+      "dwell": 0.0,
+      "process": 0.0,
+      "combined": 0.9261213720316622
+    },
+    {
+      "variant": "31_age",
+      "frame": 76,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.5065963060686016,
+      "transition": 1.0,
+      "transition_gated": 0.0,
+      "dwell": 0.0,
+      "process": 0.0,
+      "combined": 0.5065963060686016
+    },
+    {
+      "variant": "31_age",
+      "frame": 252,
+      "evidence": "anchor_changed",
+      "q99": 0.9986807387862797,
+      "visual": 0.9261213720316622,
+      "transition": 1.0,
+      "transition_gated": 0.0,
+      "dwell": 0.0,
+      "process": 0.0,
+      "combined": 0.9261213720316622
+    }
+  ],
+  "test_coverage": [
+    {
+      "sequence": "01",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 27,
+          "frames": 108,
+          "edge_counts": [
+            [
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              13
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 10,
+          "frames": 40,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              2
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 63,
+          "frames": 251,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              44,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              15
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "02",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 59,
+          "frames": 236,
+          "edge_counts": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              49
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 10,
+          "frames": 40,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 27,
+          "frames": 106,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              17,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              9
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "03",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 32,
+          "frames": 125,
+          "edge_counts": [
+            [
+              5,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              13,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 6,
+          "frames": 24,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 56,
+          "frames": 224,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              19
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "04",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 43,
+          "frames": 172,
+          "edge_counts": [
+            [
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              31
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 9,
+          "frames": 36,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              5
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 41,
+          "frames": 163,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              23,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              17
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "05",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 45,
+          "frames": 180,
+          "edge_counts": [
+            [
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              31
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 15,
+          "frames": 60,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              10
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 54,
+          "frames": 213,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              17
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "06",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 15,
+          "frames": 60,
+          "edge_counts": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 10,
+          "frames": 40,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 92,
+          "frames": 365,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              32
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 8,
+          "frames": 32,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "07",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 55,
+          "frames": 220,
+          "edge_counts": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              31
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 9,
+          "frames": 36,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 68,
+          "frames": 270,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              37,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              30
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 3,
+          "frames": 12,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "08",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 23,
+          "frames": 92,
+          "edge_counts": [
+            [
+              11,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              7
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 8,
+          "frames": 32,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 130,
+          "frames": 517,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              59,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              70
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "09",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 45,
+          "frames": 178,
+          "edge_counts": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              29,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 4,
+          "frames": 16,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 33,
+          "frames": 132,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              30,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "10",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 11,
+          "frames": 44,
+          "edge_counts": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 40,
+          "frames": 159,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              19,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              20
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "11",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 45,
+          "frames": 180,
+          "edge_counts": [
+            [
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              15,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 9,
+          "frames": 36,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              4
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 49,
+          "frames": 196,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              24,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              13
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "12",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 57,
+          "frames": 228,
+          "edge_counts": [
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              21,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              24
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 11,
+          "frames": 44,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 100,
+          "frames": 398,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              68,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              28
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "13",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 15,
+          "frames": 60,
+          "edge_counts": [
+            [
+              9,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 5,
+          "frames": 20,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 88,
+          "frames": 352,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              81,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 5,
+          "frames": 20,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "14",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 14,
+          "frames": 56,
+          "edge_counts": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 5,
+          "frames": 20,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 72,
+          "frames": 285,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              25,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              45
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 3,
+          "frames": 12,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "15",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 19,
+          "frames": 76,
+          "edge_counts": [
+            [
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 9,
+          "frames": 36,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 60,
+          "frames": 240,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              24,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              27
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 5,
+          "frames": 20,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "16",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 44,
+          "frames": 174,
+          "edge_counts": [
+            [
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              20,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              17,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 7,
+          "frames": 28,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 49,
+          "frames": 196,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              46,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "17",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 44,
+          "frames": 174,
+          "edge_counts": [
+            [
+              14,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              25
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 13,
+          "frames": 52,
+          "edge_counts": [
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              6
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 80,
+          "frames": 320,
+          "edge_counts": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              47,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              31
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 6,
+          "frames": 24,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "18",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 16,
+          "frames": 64,
+          "edge_counts": [
+            [
+              5,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              5
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 7,
+          "frames": 28,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 34,
+          "frames": 135,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              21,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              10
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 3,
+          "frames": 12,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "sequence": "19",
+      "partition": "test",
+      "states": {
+        "first": {
+          "samples": 1,
+          "frames": 4,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "missing": {
+          "samples": 13,
+          "frames": 52,
+          "edge_counts": [
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "reacquired": {
+          "samples": 7,
+          "frames": 28,
+          "edge_counts": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "same_pair": {
+          "samples": 45,
+          "frames": 177,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              22,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              22
+            ]
+          ]
+        },
+        "anchor_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "target_changed": {
+          "samples": 2,
+          "frames": 8,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "both_changed": {
+          "samples": 0,
+          "frames": 0,
+          "edge_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "events": {
+    "30_reset_hold": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 78,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3916083916083916,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": true,
+        "first_alarm_delay_frames": 94,
+        "alarmed_fraction": 0.14545454545454545,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 144,
+        "alarmed_fraction": 0.05825242718446602,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": true,
+        "first_alarm_delay_frames": 38,
+        "alarmed_fraction": 0.05714285714285714,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.512,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.1875,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6657060518731989,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.05,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.036036036036036036,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "19"
+      }
+    ],
+    "30_reset_pool": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.22,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3076923076923077,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.0379746835443038,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": true,
+        "first_alarm_delay_frames": 23,
+        "alarmed_fraction": 0.03389830508474576,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.21818181818181817,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 64,
+        "alarmed_fraction": 0.019417475728155338,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": true,
+        "first_alarm_delay_frames": 38,
+        "alarmed_fraction": 0.05714285714285714,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.5333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.1875,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6195965417867435,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.15,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.036036036036036036,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "19"
+      }
+    ],
+    "30_reset_age": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 78,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.43356643356643354,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": true,
+        "first_alarm_delay_frames": 94,
+        "alarmed_fraction": 0.14545454545454545,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 144,
+        "alarmed_fraction": 0.038834951456310676,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": true,
+        "first_alarm_delay_frames": 38,
+        "alarmed_fraction": 0.05714285714285714,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.512,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.1875,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6657060518731989,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.05,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.036036036036036036,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "19"
+      }
+    ],
+    "31_hold": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 78,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.3776223776223776,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": true,
+        "first_alarm_delay_frames": 94,
+        "alarmed_fraction": 0.14545454545454545,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 144,
+        "alarmed_fraction": 0.05825242718446602,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": true,
+        "first_alarm_delay_frames": 38,
+        "alarmed_fraction": 0.05714285714285714,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.512,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.1875,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6657060518731989,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.05,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.036036036036036036,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "19"
+      }
+    ],
+    "31_pool": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.22,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.2937062937062937,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.0379746835443038,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": true,
+        "first_alarm_delay_frames": 23,
+        "alarmed_fraction": 0.03389830508474576,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": true,
+        "first_alarm_delay_frames": 86,
+        "alarmed_fraction": 0.21818181818181817,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 64,
+        "alarmed_fraction": 0.019417475728155338,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": true,
+        "first_alarm_delay_frames": 38,
+        "alarmed_fraction": 0.05714285714285714,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.5333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.1875,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6195965417867435,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.15,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.036036036036036036,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "19"
+      }
+    ],
+    "31_age": [
+      {
+        "start_frame": 78,
+        "end_frame_exclusive": 378,
+        "length_frames": 300,
+        "detected": true,
+        "first_alarm_delay_frames": 78,
+        "alarmed_fraction": 0.24666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "01"
+      },
+      {
+        "start_frame": 67,
+        "end_frame_exclusive": 353,
+        "length_frames": 286,
+        "detected": true,
+        "first_alarm_delay_frames": 65,
+        "alarmed_fraction": 0.4195804195804196,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "02"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 381,
+        "length_frames": 316,
+        "detected": true,
+        "first_alarm_delay_frames": 231,
+        "alarmed_fraction": 0.14240506329113925,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "03"
+      },
+      {
+        "start_frame": 261,
+        "end_frame_exclusive": 379,
+        "length_frames": 118,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "04"
+      },
+      {
+        "start_frame": 135,
+        "end_frame_exclusive": 465,
+        "length_frames": 330,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "05"
+      },
+      {
+        "start_frame": 92,
+        "end_frame_exclusive": 505,
+        "length_frames": 413,
+        "detected": true,
+        "first_alarm_delay_frames": 356,
+        "alarmed_fraction": 0.1089588377723971,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "06"
+      },
+      {
+        "start_frame": 122,
+        "end_frame_exclusive": 204,
+        "length_frames": 82,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 412,
+        "end_frame_exclusive": 481,
+        "length_frames": 69,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "07"
+      },
+      {
+        "start_frame": 134,
+        "end_frame_exclusive": 244,
+        "length_frames": 110,
+        "detected": true,
+        "first_alarm_delay_frames": 94,
+        "alarmed_fraction": 0.14545454545454545,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 371,
+        "end_frame_exclusive": 416,
+        "length_frames": 45,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 500,
+        "end_frame_exclusive": 575,
+        "length_frames": 75,
+        "detected": true,
+        "first_alarm_delay_frames": 32,
+        "alarmed_fraction": 0.10666666666666667,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "08"
+      },
+      {
+        "start_frame": 128,
+        "end_frame_exclusive": 334,
+        "length_frames": 206,
+        "detected": true,
+        "first_alarm_delay_frames": 144,
+        "alarmed_fraction": 0.038834951456310676,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "09"
+      },
+      {
+        "start_frame": 88,
+        "end_frame_exclusive": 223,
+        "length_frames": 135,
+        "detected": true,
+        "first_alarm_delay_frames": 100,
+        "alarmed_fraction": 0.02962962962962963,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "10"
+      },
+      {
+        "start_frame": 170,
+        "end_frame_exclusive": 240,
+        "length_frames": 70,
+        "detected": true,
+        "first_alarm_delay_frames": 38,
+        "alarmed_fraction": 0.05714285714285714,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 279,
+        "end_frame_exclusive": 335,
+        "length_frames": 56,
+        "detected": true,
+        "first_alarm_delay_frames": 5,
+        "alarmed_fraction": 0.07142857142857142,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "11"
+      },
+      {
+        "start_frame": 155,
+        "end_frame_exclusive": 240,
+        "length_frames": 85,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 370,
+        "end_frame_exclusive": 430,
+        "length_frames": 60,
+        "detected": true,
+        "first_alarm_delay_frames": 6,
+        "alarmed_fraction": 0.3333333333333333,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 531,
+        "end_frame_exclusive": 610,
+        "length_frames": 79,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "12"
+      },
+      {
+        "start_frame": 89,
+        "end_frame_exclusive": 464,
+        "length_frames": 375,
+        "detected": true,
+        "first_alarm_delay_frames": 75,
+        "alarmed_fraction": 0.512,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "13"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 385,
+        "length_frames": 320,
+        "detected": true,
+        "first_alarm_delay_frames": 99,
+        "alarmed_fraction": 0.1875,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "14"
+      },
+      {
+        "start_frame": 54,
+        "end_frame_exclusive": 376,
+        "length_frames": 322,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "15"
+      },
+      {
+        "start_frame": 71,
+        "end_frame_exclusive": 418,
+        "length_frames": 347,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.6657060518731989,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "16"
+      },
+      {
+        "start_frame": 95,
+        "end_frame_exclusive": 182,
+        "length_frames": 87,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 510,
+        "end_frame_exclusive": 550,
+        "length_frames": 40,
+        "detected": true,
+        "first_alarm_delay_frames": 0,
+        "alarmed_fraction": 0.05,
+        "alarm_active_before_onset": true,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "17"
+      },
+      {
+        "start_frame": 65,
+        "end_frame_exclusive": 206,
+        "length_frames": 141,
+        "detected": false,
+        "first_alarm_delay_frames": null,
+        "alarmed_fraction": 0.0,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": false,
+        "sequence": "18"
+      },
+      {
+        "start_frame": 166,
+        "end_frame_exclusive": 277,
+        "length_frames": 111,
+        "detected": true,
+        "first_alarm_delay_frames": 66,
+        "alarmed_fraction": 0.036036036036036036,
+        "alarm_active_before_onset": false,
+        "left_boundary_censored": false,
+        "right_boundary_censored": true,
+        "sequence": "19"
+      }
+    ]
+  },
+  "note": "R04 repeated development. Fixed score components and references; only transition fusion gate changes and normal q99 is recomputed. Detection delay is conditional on detected GT intervals. Same track IDs do not prove semantic identity."
+}

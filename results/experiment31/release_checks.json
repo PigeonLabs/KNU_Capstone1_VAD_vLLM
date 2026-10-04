@@ -1,0 +1,26 @@
+{
+  "unit_tests_passed": 119,
+  "normal_holdout_cells_reconstructed": 30,
+  "test_prediction_files_reconstructed": 114,
+  "source_feature_files_checked": 44,
+  "figure_visually_inspected": true,
+  "markdown_links_checked": true,
+  "recommendations_exactly_three_in_report_and_readme": true,
+  "frozen_inputs_and_code_rechecked_before_upload": true,
+  "public_files_exclude_originals_weights_features_and_logs": true,
+  "file_sha256": {
+    "README.md": "55b4ae10b266f60dfa98762ee5d1eb68ffc2eae243fe05bfd99a40f394fbc22d",
+    "docs/EXPERIMENT31.md": "1977abbdc03241f9e89ca3143d5624b48ad4a6a8f23341194949c379d80b81f1",
+    "docs/EXPERIMENT32_PLAN.md": "62de5be11979d2c392f9edc89c08b76486e620e2d71ceebbe0531ab5b7826a4d",
+    "results/experiment31/comparison.csv": "47b615c01db00408ff20dbcbdc5cce21f743dd0e3ca038e350cd05a417a8e051",
+    "results/experiment31/diagnostic.json": "dc748111f217be5d5a8135fa29739c49814ca214f295b6b70cf13d421ae81ea0",
+    "results/experiment31/normal_audit.json": "910af4ff9535f36a347dffcfc407fae537da287c1f0ef1dd534813b9852215c5",
+    "results/experiment31/normal_dwell_identity_audit.json": "3592ad904fe5a0d76615dfb849048b6ee63a972e1798d7437847c599be357ddc",
+    "results/experiment31/normal_holdout.json": "800244733414d5d60230e3c3ac7f7a97601ce9c7fe56f081a9340e733769960d",
+    "results/experiment31/pair_gate_comparison.png": "815a0c154911000760e522117b3b2d5e61a14cdebb3dafb89e2e3be69a8e51e2",
+    "results/experiment31/pre_normal_protocol.json": "10747062d866f978875e01ddc20f356bd659649f29d376d0c7c1b4c4ea20ff24",
+    "results/experiment31/pre_test_checkpoint.json": "714193bbf36386c732277114e6e94382e328f226fabe6523bfeaf2d594d7bda6",
+    "results/experiment31/test_eligibility.json": "5c48e26192224fa5ee1fb27873d4bf2e8e226a0cd8ae813ed11f96d966dfafa9",
+    "results/experiment31/validation.json": "aa753e721f22d034457f0890a45d16a316c03fb8c802d0b04fa43e26b02feac1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "eligible": [
+    "31_hold",
+    "31_pool",
+    "31_age"
+  ],
+  "failed": [],
+  "rule": "Full normal and all five calibration-video holdout folds finite, bounded and q99<1; fixed FIT support."
+}
