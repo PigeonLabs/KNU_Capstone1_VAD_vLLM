@@ -71,7 +71,7 @@ def main():
                                'Q99 alarm uses strict >; no per-test-video normalization.']}
     (out/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     with (out/'per_sequence.csv').open('w') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
     # Normal model artifacts are locally persisted to make inference reproducible.
     arrays={'transition':model.transition,'process_reference':model.process_reference,'threshold':np.array(model.threshold)}
     for (role,phase),space in model.spaces.items():

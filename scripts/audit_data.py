@@ -106,7 +106,7 @@ def main():
         (args.out / f"{name}.json").write_text(json.dumps(obj, indent=2)+"\n")
     with (args.out / "sequences.csv").open("w") as f:
         fields = ["scene","partition","sequence","frames","label_count","alignment_status","valid_evaluation_frames","fps","time_unit"]
-        writer=csv.DictWriter(f, fieldnames=fields, extrasaction="ignore");writer.writeheader();writer.writerows(rows)
+        writer=csv.DictWriter(f, fieldnames=fields, extrasaction="ignore", lineterminator="\n");writer.writeheader();writer.writerows(rows)
     print(json.dumps(summary, indent=2))
 
 
