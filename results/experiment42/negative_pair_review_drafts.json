@@ -1,0 +1,2630 @@
+[
+  {
+    "id": "R02_14_1_221_222_negative_candidate",
+    "scene": "R02",
+    "sequence": "14",
+    "partition": "representation_validation",
+    "role": 1,
+    "kind": "negative_candidate",
+    "detection_a": 221,
+    "detection_b": 222,
+    "sample_a": 75,
+    "sample_b": 75,
+    "frame_a": 300,
+    "frame_b": 300,
+    "image_path": "R02/training/frames/14/300.jpg",
+    "source_image_sha256": "fc11a0109e282a9e49e3bfd29b87119a132240320f3cf7caa8acf6e8e9654bd3",
+    "boxes": [
+      [
+        0.40355223417282104,
+        0.5382012128829956,
+        0.736506998538971,
+        0.826656699180603
+      ],
+      [
+        0.43765002489089966,
+        0.0880962610244751,
+        0.7889284491539001,
+        0.33768337965011597
+      ]
+    ],
+    "confidence": [
+      0.8893569111824036,
+      0.5740022659301758
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_03_0_121_122_negative_candidate",
+    "scene": "R04",
+    "sequence": "03",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 121,
+    "detection_b": 122,
+    "sample_a": 39,
+    "sample_b": 39,
+    "frame_a": 156,
+    "frame_b": 156,
+    "image_path": "R04/training/frames/03/156.jpg",
+    "source_image_sha256": "903e307ad9d79c1a3e2baa771bb6d240e417918bb2f9b1d8649fd948342e294b",
+    "boxes": [
+      [
+        0.4225027561187744,
+        0.46424365043640137,
+        0.6644097566604614,
+        0.8115518093109131
+      ],
+      [
+        0.2532239556312561,
+        0.0016808807849884033,
+        0.5750834345817566,
+        0.38771870732307434
+      ]
+    ],
+    "confidence": [
+      0.6059234738349915,
+      0.5301660299301147
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_03_0_256_257_negative_candidate",
+    "scene": "R04",
+    "sequence": "03",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 256,
+    "detection_b": 257,
+    "sample_a": 77,
+    "sample_b": 77,
+    "frame_a": 308,
+    "frame_b": 308,
+    "image_path": "R04/training/frames/03/308.jpg",
+    "source_image_sha256": "e5cc04644500aa7be6af802a946290da99425251ae3f6a783333fa1483f3dbd2",
+    "boxes": [
+      [
+        0.42417559027671814,
+        0.5465550422668457,
+        0.7197200059890747,
+        0.8957548141479492
+      ],
+      [
+        0.30491843819618225,
+        0.02033427357673645,
+        0.6131528615951538,
+        0.3355698883533478
+      ]
+    ],
+    "confidence": [
+      0.6322214007377625,
+      0.5689098834991455
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_03_0_325_326_negative_candidate",
+    "scene": "R04",
+    "sequence": "03",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 325,
+    "detection_b": 326,
+    "sample_a": 95,
+    "sample_b": 95,
+    "frame_a": 380,
+    "frame_b": 380,
+    "image_path": "R04/training/frames/03/380.jpg",
+    "source_image_sha256": "0c5c8467b662c9d74f4735f4e6aa1c6433d3262fe91983a0b75a6b879c97c577",
+    "boxes": [
+      [
+        0.4243864417076111,
+        0.5462174415588379,
+        0.7196258902549744,
+        0.8953835964202881
+      ],
+      [
+        0.3556130528450012,
+        0.2642805576324463,
+        0.6707455515861511,
+        0.5181272029876709
+      ]
+    ],
+    "confidence": [
+      0.5510832071304321,
+      0.5369890928268433
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_04_0_108_109_negative_candidate",
+    "scene": "R04",
+    "sequence": "04",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 108,
+    "detection_b": 109,
+    "sample_a": 37,
+    "sample_b": 37,
+    "frame_a": 148,
+    "frame_b": 148,
+    "image_path": "R04/training/frames/04/148.jpg",
+    "source_image_sha256": "cb4fef78a898c276a8b491134f2bdbf21c50f81614f5f200f6df0447b191c5b2",
+    "boxes": [
+      [
+        0.4358506202697754,
+        0.6080334186553955,
+        0.7073425054550171,
+        0.936318039894104
+      ],
+      [
+        0.26522499322891235,
+        0.00020179152488708496,
+        0.5899199843406677,
+        0.3796881437301636
+      ]
+    ],
+    "confidence": [
+      0.6573768854141235,
+      0.5127972960472107
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_04_0_181_182_negative_candidate",
+    "scene": "R04",
+    "sequence": "04",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 181,
+    "detection_b": 182,
+    "sample_a": 56,
+    "sample_b": 56,
+    "frame_a": 224,
+    "frame_b": 224,
+    "image_path": "R04/training/frames/04/224.jpg",
+    "source_image_sha256": "b76222cb67d1da654bf8cd55ac6b3b1e8c72fceb02ade3befae2956540775304",
+    "boxes": [
+      [
+        0.4357055127620697,
+        0.6078970432281494,
+        0.7074421644210815,
+        0.9361906051635742
+      ],
+      [
+        0.36954790353775024,
+        0.2742817997932434,
+        0.6895399689674377,
+        0.5578904747962952
+      ]
+    ],
+    "confidence": [
+      0.6119887232780457,
+      0.5452886819839478
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_04_0_223_224_negative_candidate",
+    "scene": "R04",
+    "sequence": "04",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 223,
+    "detection_b": 224,
+    "sample_a": 67,
+    "sample_b": 67,
+    "frame_a": 268,
+    "frame_b": 268,
+    "image_path": "R04/training/frames/04/268.jpg",
+    "source_image_sha256": "5bbdd7274688dc75a467aca70d231e0ced50930918f79fb10b6465405760aa21",
+    "boxes": [
+      [
+        0.40751343965530396,
+        0.3922714293003082,
+        0.7145839333534241,
+        0.9367780685424805
+      ],
+      [
+        0.3304952085018158,
+        0.033886924386024475,
+        0.6344890594482422,
+        0.3376331925392151
+      ]
+    ],
+    "confidence": [
+      0.6453722715377808,
+      0.5556384325027466
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_06_0_123_124_negative_candidate",
+    "scene": "R04",
+    "sequence": "06",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 123,
+    "detection_b": 124,
+    "sample_a": 40,
+    "sample_b": 40,
+    "frame_a": 160,
+    "frame_b": 160,
+    "image_path": "R04/training/frames/06/160.jpg",
+    "source_image_sha256": "07f8e66f8e448caa1e7c273d5e1cb1bda23b634e5f34dcac0ce4d2a75975e760",
+    "boxes": [
+      [
+        0.2806892991065979,
+        0.0022889822721481323,
+        0.6011143922805786,
+        0.37455183267593384
+      ],
+      [
+        0.40995365381240845,
+        0.4308661222457886,
+        0.6577804684638977,
+        0.7973421812057495
+      ]
+    ],
+    "confidence": [
+      0.652320921421051,
+      0.5427883863449097
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_06_0_131_132_negative_candidate",
+    "scene": "R04",
+    "sequence": "06",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 131,
+    "detection_b": 132,
+    "sample_a": 42,
+    "sample_b": 42,
+    "frame_a": 168,
+    "frame_b": 168,
+    "image_path": "R04/training/frames/06/168.jpg",
+    "source_image_sha256": "952cfd2e347bfd3bb7dfdf5602f4b0f74482550d83819547e34f0ccb6467ad18",
+    "boxes": [
+      [
+        0.27837905287742615,
+        0.0009651333093643188,
+        0.6006540060043335,
+        0.37561625242233276
+      ],
+      [
+        0.4099576473236084,
+        0.4297459125518799,
+        0.6579575538635254,
+        0.7973390817642212
+      ]
+    ],
+    "confidence": [
+      0.668157696723938,
+      0.5145590305328369
+    ],
+    "status": "unreviewed",
+    "board": "negative_00.jpg"
+  },
+  {
+    "id": "R04_06_0_135_136_negative_candidate",
+    "scene": "R04",
+    "sequence": "06",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 135,
+    "detection_b": 136,
+    "sample_a": 43,
+    "sample_b": 43,
+    "frame_a": 172,
+    "frame_b": 172,
+    "image_path": "R04/training/frames/06/172.jpg",
+    "source_image_sha256": "f8fb0e493a212bb20920fbc39f44737ff93b682fe4cb8fce5a649785b55c57c7",
+    "boxes": [
+      [
+        0.2542720437049866,
+        0.0007780939340591431,
+        0.6146715879440308,
+        0.3267115354537964
+      ],
+      [
+        0.4100160598754883,
+        0.4296826124191284,
+        0.6580173969268799,
+        0.7973490953445435
+      ]
+    ],
+    "confidence": [
+      0.7380279302597046,
+      0.5320781469345093
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_07_0_95_96_negative_candidate",
+    "scene": "R04",
+    "sequence": "07",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 95,
+    "detection_b": 96,
+    "sample_a": 31,
+    "sample_b": 31,
+    "frame_a": 124,
+    "frame_b": 124,
+    "image_path": "R04/training/frames/07/124.jpg",
+    "source_image_sha256": "92cad2d200c864d8d58c3d0bf2c8d74162743a06c9976b9052bec8fa6510611d",
+    "boxes": [
+      [
+        0.4378393292427063,
+        0.603197455406189,
+        0.7105538249015808,
+        0.9458311796188354
+      ],
+      [
+        0.2637801170349121,
+        0.0002961158752441406,
+        0.5447043180465698,
+        0.26630252599716187
+      ]
+    ],
+    "confidence": [
+      0.567855179309845,
+      0.5148881673812866
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_07_0_223_224_negative_candidate",
+    "scene": "R04",
+    "sequence": "07",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 223,
+    "detection_b": 224,
+    "sample_a": 66,
+    "sample_b": 66,
+    "frame_a": 264,
+    "frame_b": 264,
+    "image_path": "R04/training/frames/07/264.jpg",
+    "source_image_sha256": "a98c9934f23fa68a417c253f4a8abe8e1153795e6fcd1e92dbeb5cbd259fa412",
+    "boxes": [
+      [
+        0.41854041814804077,
+        0.6004688739776611,
+        0.708301842212677,
+        0.9674370288848877
+      ],
+      [
+        0.3296692371368408,
+        0.056297942996025085,
+        0.6397892832756042,
+        0.3819936513900757
+      ]
+    ],
+    "confidence": [
+      0.6647359132766724,
+      0.5523927807807922
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_07_0_267_268_negative_candidate",
+    "scene": "R04",
+    "sequence": "07",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 267,
+    "detection_b": 268,
+    "sample_a": 79,
+    "sample_b": 79,
+    "frame_a": 316,
+    "frame_b": 316,
+    "image_path": "R04/training/frames/07/316.jpg",
+    "source_image_sha256": "3b1f4220c034869f285c91b0dc955dfc278d94def30de5d001a20eb989a34a6a",
+    "boxes": [
+      [
+        0.41880977153778076,
+        0.6014682054519653,
+        0.7066072225570679,
+        0.9646594524383545
+      ],
+      [
+        0.41155582666397095,
+        0.3308582901954651,
+        0.6632915139198303,
+        0.5968633890151978
+      ]
+    ],
+    "confidence": [
+      0.5761474370956421,
+      0.575939416885376
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_09_0_114_115_negative_candidate",
+    "scene": "R04",
+    "sequence": "09",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 114,
+    "detection_b": 115,
+    "sample_a": 37,
+    "sample_b": 37,
+    "frame_a": 148,
+    "frame_b": 148,
+    "image_path": "R04/training/frames/09/148.jpg",
+    "source_image_sha256": "b5a96e70261df608f9ed235e145a7e213b28d80cbeddcbe0c9c280a1f236d34c",
+    "boxes": [
+      [
+        0.3922029733657837,
+        0.6705726981163025,
+        0.659229040145874,
+        1.0
+      ],
+      [
+        0.254759281873703,
+        0.001206040382385254,
+        0.5618970394134521,
+        0.39888903498649597
+      ]
+    ],
+    "confidence": [
+      0.6483541131019592,
+      0.5394061803817749
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_09_0_151_152_negative_candidate",
+    "scene": "R04",
+    "sequence": "09",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 151,
+    "detection_b": 152,
+    "sample_a": 47,
+    "sample_b": 47,
+    "frame_a": 188,
+    "frame_b": 188,
+    "image_path": "R04/training/frames/09/188.jpg",
+    "source_image_sha256": "3f472046a5673cfb7d1c7fc6f45a7060be9a0c0121db047d9014dd55f17f1904",
+    "boxes": [
+      [
+        0.28629690408706665,
+        0.061744123697280884,
+        0.6445197463035583,
+        0.578726053237915
+      ],
+      [
+        0.39244747161865234,
+        0.6725220084190369,
+        0.6584699153900146,
+        1.0
+      ]
+    ],
+    "confidence": [
+      0.7646092772483826,
+      0.5412077903747559
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_09_0_187_188_negative_candidate",
+    "scene": "R04",
+    "sequence": "09",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 187,
+    "detection_b": 188,
+    "sample_a": 57,
+    "sample_b": 57,
+    "frame_a": 228,
+    "frame_b": 228,
+    "image_path": "R04/training/frames/09/228.jpg",
+    "source_image_sha256": "b6faf263738e07843ccaf9f401299ef92c3c3bf0e092ad50b96f1ea79332ac37",
+    "boxes": [
+      [
+        0.36204952001571655,
+        0.3355926275253296,
+        0.6488600373268127,
+        0.5866819024085999
+      ],
+      [
+        0.3922629952430725,
+        0.6729536056518555,
+        0.6607099175453186,
+        1.0
+      ]
+    ],
+    "confidence": [
+      0.6352947354316711,
+      0.5298492312431335
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_13_0_94_95_negative_candidate",
+    "scene": "R04",
+    "sequence": "13",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 94,
+    "detection_b": 95,
+    "sample_a": 33,
+    "sample_b": 33,
+    "frame_a": 132,
+    "frame_b": 132,
+    "image_path": "R04/training/frames/13/132.jpg",
+    "source_image_sha256": "1b5b32d2f3e918c24e8457ced0e7aafcd2e780e244711c40167c2a6252624da3",
+    "boxes": [
+      [
+        0.2802303433418274,
+        0.0005553364753723145,
+        0.5882375836372375,
+        0.3766564726829529
+      ],
+      [
+        0.40054523944854736,
+        0.625961184501648,
+        0.665601372718811,
+        0.9609431028366089
+      ]
+    ],
+    "confidence": [
+      0.6024119257926941,
+      0.5680332779884338
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_13_0_133_134_negative_candidate",
+    "scene": "R04",
+    "sequence": "13",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 133,
+    "detection_b": 134,
+    "sample_a": 43,
+    "sample_b": 43,
+    "frame_a": 172,
+    "frame_b": 172,
+    "image_path": "R04/training/frames/13/172.jpg",
+    "source_image_sha256": "76cbf96c5888987a42f4f119c942de45264135639b0290f0b3e30fc39a2e6425",
+    "boxes": [
+      [
+        0.3306557834148407,
+        0.04791131615638733,
+        0.6900928020477295,
+        0.5612711906433105
+      ],
+      [
+        0.3998577892780304,
+        0.624824047088623,
+        0.6650116443634033,
+        0.9600033760070801
+      ]
+    ],
+    "confidence": [
+      0.770810604095459,
+      0.5680482983589172
+    ],
+    "status": "unreviewed",
+    "board": "negative_01.jpg"
+  },
+  {
+    "id": "R04_13_0_164_165_negative_candidate",
+    "scene": "R04",
+    "sequence": "13",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 164,
+    "detection_b": 165,
+    "sample_a": 52,
+    "sample_b": 52,
+    "frame_a": 208,
+    "frame_b": 208,
+    "image_path": "R04/training/frames/13/208.jpg",
+    "source_image_sha256": "a534306f7f89958e39f7a4b5182bd49f3be7dbf72ceb24b8f1b47bae8912ebc7",
+    "boxes": [
+      [
+        0.3613211512565613,
+        0.1828266829252243,
+        0.6920585036277771,
+        0.5539306998252869
+      ],
+      [
+        0.3999210000038147,
+        0.6258401274681091,
+        0.6649262309074402,
+        0.9599224925041199
+      ]
+    ],
+    "confidence": [
+      0.6327345967292786,
+      0.5325748920440674
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_14_0_70_71_negative_candidate",
+    "scene": "R04",
+    "sequence": "14",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 70,
+    "detection_b": 71,
+    "sample_a": 26,
+    "sample_b": 26,
+    "frame_a": 104,
+    "frame_b": 104,
+    "image_path": "R04/training/frames/14/104.jpg",
+    "source_image_sha256": "cdc6b7e32413dc5ff7dbaebc8655a2390fc41ffbb70c317187059fbfbf503a62",
+    "boxes": [
+      [
+        0.27163010835647583,
+        0.000441528856754303,
+        0.5480855703353882,
+        0.22611060738563538
+      ],
+      [
+        0.4559617042541504,
+        0.6116468906402588,
+        0.7397314310073853,
+        0.9885168075561523
+      ]
+    ],
+    "confidence": [
+      0.5437807440757751,
+      0.5196396708488464
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_14_0_160_161_negative_candidate",
+    "scene": "R04",
+    "sequence": "14",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 160,
+    "detection_b": 161,
+    "sample_a": 52,
+    "sample_b": 52,
+    "frame_a": 208,
+    "frame_b": 208,
+    "image_path": "R04/training/frames/14/208.jpg",
+    "source_image_sha256": "b6b5c0eed316e5eeff8ce0fc7eb785bbcab2845f320d5136e3584ea9f3cb231c",
+    "boxes": [
+      [
+        0.3295098543167114,
+        0.04355664551258087,
+        0.6498435139656067,
+        0.39068812131881714
+      ],
+      [
+        0.47868865728378296,
+        0.5525827407836914,
+        0.7613869309425354,
+        0.8450322151184082
+      ]
+    ],
+    "confidence": [
+      0.6921151876449585,
+      0.5079338550567627
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_14_0_195_196_negative_candidate",
+    "scene": "R04",
+    "sequence": "14",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 195,
+    "detection_b": 196,
+    "sample_a": 61,
+    "sample_b": 61,
+    "frame_a": 244,
+    "frame_b": 244,
+    "image_path": "R04/training/frames/14/244.jpg",
+    "source_image_sha256": "c2421dab7fe8561e2b4c8df657a09d25a22e3696fed333d2275ddd1eb2de75c8",
+    "boxes": [
+      [
+        0.39980876445770264,
+        0.27877122163772583,
+        0.7038533687591553,
+        0.5333098769187927
+      ],
+      [
+        0.4796994924545288,
+        0.5535193681716919,
+        0.7601000070571899,
+        0.8445752859115601
+      ]
+    ],
+    "confidence": [
+      0.6290594339370728,
+      0.5316980481147766
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_16_0_110_111_negative_candidate",
+    "scene": "R04",
+    "sequence": "16",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 110,
+    "detection_b": 111,
+    "sample_a": 36,
+    "sample_b": 36,
+    "frame_a": 144,
+    "frame_b": 144,
+    "image_path": "R04/training/frames/16/144.jpg",
+    "source_image_sha256": "d4eafe74e8b8d8cec590b8f6fa24ee216f6f6fe8486a3b18d5e8c123e8b2194f",
+    "boxes": [
+      [
+        0.259237140417099,
+        0.0004552304744720459,
+        0.5971266031265259,
+        0.3857051730155945
+      ],
+      [
+        0.4429171085357666,
+        0.4021477699279785,
+        0.6785722970962524,
+        0.7623152732849121
+      ]
+    ],
+    "confidence": [
+      0.6345704197883606,
+      0.5387639999389648
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_16_0_185_186_negative_candidate",
+    "scene": "R04",
+    "sequence": "16",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 185,
+    "detection_b": 186,
+    "sample_a": 58,
+    "sample_b": 58,
+    "frame_a": 232,
+    "frame_b": 232,
+    "image_path": "R04/training/frames/16/232.jpg",
+    "source_image_sha256": "8262398807649015ca143bd3cd7bcbbee0c35db0af083b195cc17d7830065f54",
+    "boxes": [
+      [
+        0.43423134088516235,
+        0.4222719073295593,
+        0.687974750995636,
+        0.8227607607841492
+      ],
+      [
+        0.32687824964523315,
+        0.04247131943702698,
+        0.6105501651763916,
+        0.3783397078514099
+      ]
+    ],
+    "confidence": [
+      0.5825825929641724,
+      0.5652718544006348
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_16_0_259_260_negative_candidate",
+    "scene": "R04",
+    "sequence": "16",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 259,
+    "detection_b": 260,
+    "sample_a": 82,
+    "sample_b": 82,
+    "frame_a": 328,
+    "frame_b": 328,
+    "image_path": "R04/training/frames/16/328.jpg",
+    "source_image_sha256": "6ab5df961c2fb30736c6c1fc697881a04b84dd1f3bd5fe3b499520e8b9c894db",
+    "boxes": [
+      [
+        0.4258166551589966,
+        0.4341166019439697,
+        0.6959207057952881,
+        0.8485145568847656
+      ],
+      [
+        0.35202762484550476,
+        0.14763306081295013,
+        0.5967881679534912,
+        0.37772005796432495
+      ]
+    ],
+    "confidence": [
+      0.6171215176582336,
+      0.549924373626709
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_18_0_102_103_negative_candidate",
+    "scene": "R04",
+    "sequence": "18",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 102,
+    "detection_b": 103,
+    "sample_a": 36,
+    "sample_b": 36,
+    "frame_a": 144,
+    "frame_b": 144,
+    "image_path": "R04/training/frames/18/144.jpg",
+    "source_image_sha256": "2e207c4e9ee6b2bfbf6df45e4a16ed69a23e659da63b84fcbaf4e5b3af17be60",
+    "boxes": [
+      [
+        0.4457152485847473,
+        0.67452073097229,
+        0.7022286057472229,
+        0.9822961091995239
+      ],
+      [
+        0.26967132091522217,
+        0.0011497288942337036,
+        0.5805282592773438,
+        0.3791607618331909
+      ]
+    ],
+    "confidence": [
+      0.5934044718742371,
+      0.550342321395874
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_18_0_121_122_negative_candidate",
+    "scene": "R04",
+    "sequence": "18",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 121,
+    "detection_b": 122,
+    "sample_a": 41,
+    "sample_b": 41,
+    "frame_a": 164,
+    "frame_b": 164,
+    "image_path": "R04/training/frames/18/164.jpg",
+    "source_image_sha256": "07d659b81ac39e1ccaa29f22a185272dd08c1e3136a46cb064a2125f8aecf008",
+    "boxes": [
+      [
+        0.4450535178184509,
+        0.6729524731636047,
+        0.7020936608314514,
+        0.9811093211174011
+      ],
+      [
+        0.25102871656417847,
+        0.0008797049522399902,
+        0.5940523743629456,
+        0.3604239821434021
+      ]
+    ],
+    "confidence": [
+      0.6158657073974609,
+      0.5110494494438171
+    ],
+    "status": "unreviewed",
+    "board": "negative_02.jpg"
+  },
+  {
+    "id": "R04_18_0_230_231_negative_candidate",
+    "scene": "R04",
+    "sequence": "18",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 230,
+    "detection_b": 231,
+    "sample_a": 71,
+    "sample_b": 71,
+    "frame_a": 284,
+    "frame_b": 284,
+    "image_path": "R04/training/frames/18/284.jpg",
+    "source_image_sha256": "a97a2b75c62689aa3bbc360dbc87a513ba6c7400edf71b831fc56dc7259f6de4",
+    "boxes": [
+      [
+        0.35630136728286743,
+        0.15204741060733795,
+        0.654707133769989,
+        0.5298513770103455
+      ],
+      [
+        0.39936044812202454,
+        0.6087928414344788,
+        0.6974616050720215,
+        0.9994218945503235
+      ]
+    ],
+    "confidence": [
+      0.7488940358161926,
+      0.5048457384109497
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_19_0_104_105_negative_candidate",
+    "scene": "R04",
+    "sequence": "19",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 104,
+    "detection_b": 105,
+    "sample_a": 38,
+    "sample_b": 38,
+    "frame_a": 152,
+    "frame_b": 152,
+    "image_path": "R04/training/frames/19/152.jpg",
+    "source_image_sha256": "e7964b9ad8ff79f44ec5427f7b172b5adff9ebdea4c74f6612f6bfef73674b74",
+    "boxes": [
+      [
+        0.37301546335220337,
+        0.644731879234314,
+        0.6570126414299011,
+        1.0
+      ],
+      [
+        0.2277037501335144,
+        0.00047791004180908203,
+        0.5628471374511719,
+        0.39421647787094116
+      ]
+    ],
+    "confidence": [
+      0.6324053406715393,
+      0.5089637637138367
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_19_0_131_132_negative_candidate",
+    "scene": "R04",
+    "sequence": "19",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 131,
+    "detection_b": 132,
+    "sample_a": 45,
+    "sample_b": 45,
+    "frame_a": 180,
+    "frame_b": 180,
+    "image_path": "R04/training/frames/19/180.jpg",
+    "source_image_sha256": "12ece68c4cb9f2c333f52e1516f1a3fcb0eafd587c2bf19f09900ce0e10559cb",
+    "boxes": [
+      [
+        0.2906251847743988,
+        0.011874794960021973,
+        0.6704785823822021,
+        0.5664477348327637
+      ],
+      [
+        0.3742556869983673,
+        0.6452206969261169,
+        0.6540662050247192,
+        1.0
+      ]
+    ],
+    "confidence": [
+      0.7395434975624084,
+      0.566228985786438
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_19_0_256_257_negative_candidate",
+    "scene": "R04",
+    "sequence": "19",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 256,
+    "detection_b": 257,
+    "sample_a": 80,
+    "sample_b": 80,
+    "frame_a": 320,
+    "frame_b": 320,
+    "image_path": "R04/training/frames/19/320.jpg",
+    "source_image_sha256": "3692aba76e001e99078cb249ffb35b446b31464b70d3e563f498a192cbde70b7",
+    "boxes": [
+      [
+        0.4074546694755554,
+        0.35210421681404114,
+        0.6561772227287292,
+        0.6598052978515625
+      ],
+      [
+        0.39854317903518677,
+        0.6177116632461548,
+        0.6676847338676453,
+        0.9447336196899414
+      ]
+    ],
+    "confidence": [
+      0.5496826767921448,
+      0.5366687178611755
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_20_0_116_117_negative_candidate",
+    "scene": "R04",
+    "sequence": "20",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 116,
+    "detection_b": 117,
+    "sample_a": 42,
+    "sample_b": 42,
+    "frame_a": 168,
+    "frame_b": 168,
+    "image_path": "R04/training/frames/20/168.jpg",
+    "source_image_sha256": "f93052a248c9d98e8824e6b7962fa7b2ae5d279cc61ef4618845f93b1208aec8",
+    "boxes": [
+      [
+        0.25424379110336304,
+        0.000901244580745697,
+        0.5146263837814331,
+        0.22477266192436218
+      ],
+      [
+        0.39363643527030945,
+        0.4039976894855499,
+        0.668834924697876,
+        0.6268446445465088
+      ]
+    ],
+    "confidence": [
+      0.7358166575431824,
+      0.5532618165016174
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_20_0_223_224_negative_candidate",
+    "scene": "R04",
+    "sequence": "20",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 223,
+    "detection_b": 224,
+    "sample_a": 73,
+    "sample_b": 73,
+    "frame_a": 292,
+    "frame_b": 292,
+    "image_path": "R04/training/frames/20/292.jpg",
+    "source_image_sha256": "d1cc4fa8c1502fd676b0acb91590b3c7c763a7769a4c2602649a2e2e635f1f00",
+    "boxes": [
+      [
+        0.3391653597354889,
+        0.12075266242027283,
+        0.6525689363479614,
+        0.5199767351150513
+      ],
+      [
+        0.37965330481529236,
+        0.6388451457023621,
+        0.7055195569992065,
+        1.0
+      ]
+    ],
+    "confidence": [
+      0.747668445110321,
+      0.5426954627037048
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_20_0_269_270_negative_candidate",
+    "scene": "R04",
+    "sequence": "20",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 269,
+    "detection_b": 270,
+    "sample_a": 85,
+    "sample_b": 85,
+    "frame_a": 340,
+    "frame_b": 340,
+    "image_path": "R04/training/frames/20/340.jpg",
+    "source_image_sha256": "e2e7e62234b2bbee294a9a4054995069ecfbdc6983981170b3637519e6248839",
+    "boxes": [
+      [
+        0.37934610247612,
+        0.6402390003204346,
+        0.7038842439651489,
+        1.0
+      ],
+      [
+        0.40948486328125,
+        0.3993244469165802,
+        0.6642699241638184,
+        0.6716853380203247
+      ]
+    ],
+    "confidence": [
+      0.546137273311615,
+      0.5377799868583679
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_21_0_109_110_negative_candidate",
+    "scene": "R04",
+    "sequence": "21",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 109,
+    "detection_b": 110,
+    "sample_a": 36,
+    "sample_b": 36,
+    "frame_a": 144,
+    "frame_b": 144,
+    "image_path": "R04/training/frames/21/144.jpg",
+    "source_image_sha256": "033112781b87a6972b99be5d809db7b66094980fcc4d7000fe2c8e534a5ad842",
+    "boxes": [
+      [
+        0.37344637513160706,
+        0.44447195529937744,
+        0.6166972517967224,
+        0.809829592704773
+      ],
+      [
+        0.2483624666929245,
+        0.0015389621257781982,
+        0.5620602369308472,
+        0.3996075689792633
+      ]
+    ],
+    "confidence": [
+      0.6306192278862,
+      0.5712008476257324
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_21_0_210_211_negative_candidate",
+    "scene": "R04",
+    "sequence": "21",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 210,
+    "detection_b": 211,
+    "sample_a": 66,
+    "sample_b": 66,
+    "frame_a": 264,
+    "frame_b": 264,
+    "image_path": "R04/training/frames/21/264.jpg",
+    "source_image_sha256": "d0c31178f5cc01b79e22bf19d63b6751163c27c69c4edcbdf6420c617b2493e7",
+    "boxes": [
+      [
+        0.3721098303794861,
+        0.6278648376464844,
+        0.681988537311554,
+        1.0
+      ],
+      [
+        0.2902486026287079,
+        0.08043411374092102,
+        0.5658330917358398,
+        0.39184966683387756
+      ]
+    ],
+    "confidence": [
+      0.6637957096099854,
+      0.5552880764007568
+    ],
+    "status": "unreviewed",
+    "board": "negative_03.jpg"
+  },
+  {
+    "id": "R04_21_0_286_287_negative_candidate",
+    "scene": "R04",
+    "sequence": "21",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 286,
+    "detection_b": 287,
+    "sample_a": 85,
+    "sample_b": 85,
+    "frame_a": 340,
+    "frame_b": 340,
+    "image_path": "R04/training/frames/21/340.jpg",
+    "source_image_sha256": "7b1a05275405283166b506f1e722cb13eb698b12402b3bc561542411cef835a2",
+    "boxes": [
+      [
+        0.3732415437698364,
+        0.6280338764190674,
+        0.6789981126785278,
+        1.0
+      ],
+      [
+        0.3806392550468445,
+        0.39344877004623413,
+        0.6525327563285828,
+        0.6844680905342102
+      ]
+    ],
+    "confidence": [
+      0.5671910643577576,
+      0.5003000497817993
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_22_0_101_102_negative_candidate",
+    "scene": "R04",
+    "sequence": "22",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 101,
+    "detection_b": 102,
+    "sample_a": 34,
+    "sample_b": 34,
+    "frame_a": 136,
+    "frame_b": 136,
+    "image_path": "R04/training/frames/22/136.jpg",
+    "source_image_sha256": "8ec3acea725b4d75e6b410706fef4c7485b20f6bcbb311a9f05e6049ea98cfd8",
+    "boxes": [
+      [
+        0.4392133355140686,
+        0.6112722754478455,
+        0.7278566956520081,
+        1.0
+      ],
+      [
+        0.25645312666893005,
+        0.00021004676818847656,
+        0.5800275802612305,
+        0.3915031850337982
+      ]
+    ],
+    "confidence": [
+      0.6324533820152283,
+      0.5275292992591858
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_22_0_118_119_negative_candidate",
+    "scene": "R04",
+    "sequence": "22",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 118,
+    "detection_b": 119,
+    "sample_a": 39,
+    "sample_b": 39,
+    "frame_a": 156,
+    "frame_b": 156,
+    "image_path": "R04/training/frames/22/156.jpg",
+    "source_image_sha256": "478a34b1bbaef1ed1b41ad8df24b4c311b58a5063bf460f01e455f0bc9c646b8",
+    "boxes": [
+      [
+        0.21909372508525848,
+        0.00015904009342193604,
+        0.5301929712295532,
+        0.37907183170318604
+      ],
+      [
+        0.4400341808795929,
+        0.6122621297836304,
+        0.7271430492401123,
+        1.0
+      ]
+    ],
+    "confidence": [
+      0.6063746809959412,
+      0.5169907212257385
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_22_0_268_269_negative_candidate",
+    "scene": "R04",
+    "sequence": "22",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 268,
+    "detection_b": 269,
+    "sample_a": 85,
+    "sample_b": 85,
+    "frame_a": 340,
+    "frame_b": 340,
+    "image_path": "R04/training/frames/22/340.jpg",
+    "source_image_sha256": "f771dfc9446753e4f64d9956c91f73679f0c6e6044d413e10867a0e2a6e63255",
+    "boxes": [
+      [
+        0.37616533041000366,
+        0.5938931703567505,
+        0.7286655306816101,
+        1.0
+      ],
+      [
+        0.31586557626724243,
+        0.139475017786026,
+        0.5601931810379028,
+        0.3659493029117584
+      ]
+    ],
+    "confidence": [
+      0.5945945978164673,
+      0.5366723537445068
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_23_0_108_109_negative_candidate",
+    "scene": "R04",
+    "sequence": "23",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 108,
+    "detection_b": 109,
+    "sample_a": 35,
+    "sample_b": 35,
+    "frame_a": 140,
+    "frame_b": 140,
+    "image_path": "R04/training/frames/23/140.jpg",
+    "source_image_sha256": "1ab43c4c76bfaf40df98403a0859b6f024a163d28690a3c1d96d866aa5d75906",
+    "boxes": [
+      [
+        0.2528250813484192,
+        0.0,
+        0.5940911769866943,
+        0.39441680908203125
+      ],
+      [
+        0.400037944316864,
+        0.5975772738456726,
+        0.6875919699668884,
+        0.9912077784538269
+      ]
+    ],
+    "confidence": [
+      0.6150372624397278,
+      0.564592719078064
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_23_0_144_145_negative_candidate",
+    "scene": "R04",
+    "sequence": "23",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 144,
+    "detection_b": 145,
+    "sample_a": 44,
+    "sample_b": 44,
+    "frame_a": 176,
+    "frame_b": 176,
+    "image_path": "R04/training/frames/23/176.jpg",
+    "source_image_sha256": "3f56c84805415466f0e48ba2f87617b9362871b6fcd3c6314e55c942c1d4e28a",
+    "boxes": [
+      [
+        0.2849247455596924,
+        0.03439590334892273,
+        0.6795759797096252,
+        0.5985703468322754
+      ],
+      [
+        0.39931240677833557,
+        0.5974140763282776,
+        0.6877192258834839,
+        0.9908939003944397
+      ]
+    ],
+    "confidence": [
+      0.8160451650619507,
+      0.509585976600647
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_23_0_211_212_negative_candidate",
+    "scene": "R04",
+    "sequence": "23",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 211,
+    "detection_b": 212,
+    "sample_a": 62,
+    "sample_b": 62,
+    "frame_a": 248,
+    "frame_b": 248,
+    "image_path": "R04/training/frames/23/248.jpg",
+    "source_image_sha256": "a026d3432f8917555898a8ba15e06c1ac0bdce170d933aba88b6b70462a482b2",
+    "boxes": [
+      [
+        0.38211482763290405,
+        0.4403887987136841,
+        0.6903311610221863,
+        0.9912209510803223
+      ],
+      [
+        0.2889453172683716,
+        0.0398421436548233,
+        0.6183988451957703,
+        0.3843865990638733
+      ]
+    ],
+    "confidence": [
+      0.5862731337547302,
+      0.543675422668457
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_24_0_94_95_negative_candidate",
+    "scene": "R04",
+    "sequence": "24",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 94,
+    "detection_b": 95,
+    "sample_a": 32,
+    "sample_b": 32,
+    "frame_a": 128,
+    "frame_b": 128,
+    "image_path": "R04/training/frames/24/128.jpg",
+    "source_image_sha256": "7fde926ae1b8228d16421c5a862a9a5c4b26db59908380c4333227b5981495db",
+    "boxes": [
+      [
+        0.4061272442340851,
+        0.38817107677459717,
+        0.652348518371582,
+        0.5857768058776855
+      ],
+      [
+        0.2774033546447754,
+        0.000838547945022583,
+        0.5489404797554016,
+        0.28872185945510864
+      ]
+    ],
+    "confidence": [
+      0.6068132519721985,
+      0.5115463733673096
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_24_0_170_171_negative_candidate",
+    "scene": "R04",
+    "sequence": "24",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 170,
+    "detection_b": 171,
+    "sample_a": 55,
+    "sample_b": 55,
+    "frame_a": 220,
+    "frame_b": 220,
+    "image_path": "R04/training/frames/24/220.jpg",
+    "source_image_sha256": "b7995192087ff4d4bb930b8779301f2751e2d945cfb0dfb01051ad90997a5a08",
+    "boxes": [
+      [
+        0.4024496078491211,
+        0.3712472915649414,
+        0.6717350482940674,
+        0.58222895860672
+      ],
+      [
+        0.30765125155448914,
+        0.06997092813253403,
+        0.5528176426887512,
+        0.3055454194545746
+      ]
+    ],
+    "confidence": [
+      0.6640564203262329,
+      0.5680610537528992
+    ],
+    "status": "unreviewed",
+    "board": "negative_04.jpg"
+  },
+  {
+    "id": "R04_24_0_195_196_negative_candidate",
+    "scene": "R04",
+    "sequence": "24",
+    "partition": "representation_train",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 195,
+    "detection_b": 196,
+    "sample_a": 63,
+    "sample_b": 63,
+    "frame_a": 252,
+    "frame_b": 252,
+    "image_path": "R04/training/frames/24/252.jpg",
+    "source_image_sha256": "f4e6ff181be2da54d0fde6a2ba7b84f93cc13f980809bdaba3c6732ccb7221b2",
+    "boxes": [
+      [
+        0.2996880114078522,
+        0.04315926134586334,
+        0.5848079919815063,
+        0.3575515151023865
+      ],
+      [
+        0.4020577073097229,
+        0.3733561038970947,
+        0.6670919060707092,
+        0.5857332348823547
+      ]
+    ],
+    "confidence": [
+      0.628243625164032,
+      0.53121417760849
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_01_0_111_112_negative_candidate",
+    "scene": "R04",
+    "sequence": "01",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 111,
+    "detection_b": 112,
+    "sample_a": 36,
+    "sample_b": 36,
+    "frame_a": 144,
+    "frame_b": 144,
+    "image_path": "R04/training/frames/01/144.jpg",
+    "source_image_sha256": "fb2a15ab2de00f43c03c2716ffcca29730c06fe06561d58772244ed4a7565ffd",
+    "boxes": [
+      [
+        0.2353792041540146,
+        0.05404728651046753,
+        0.6122876405715942,
+        0.5202152729034424
+      ],
+      [
+        0.35686296224594116,
+        0.6021640300750732,
+        0.6702547669410706,
+        0.9875516891479492
+      ]
+    ],
+    "confidence": [
+      0.6190848350524902,
+      0.6099668145179749
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_01_0_135_136_negative_candidate",
+    "scene": "R04",
+    "sequence": "01",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 135,
+    "detection_b": 136,
+    "sample_a": 42,
+    "sample_b": 42,
+    "frame_a": 168,
+    "frame_b": 168,
+    "image_path": "R04/training/frames/01/168.jpg",
+    "source_image_sha256": "8533d37f759efc527a014fdcb3757e95f1da2684f92b0b9358705bbeec205502",
+    "boxes": [
+      [
+        0.3558637499809265,
+        0.6035712361335754,
+        0.6712610125541687,
+        0.9894354939460754
+      ],
+      [
+        0.2905292510986328,
+        0.255942165851593,
+        0.6385883688926697,
+        0.600225031375885
+      ]
+    ],
+    "confidence": [
+      0.6197701692581177,
+      0.5861492156982422
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_01_0_169_170_negative_candidate",
+    "scene": "R04",
+    "sequence": "01",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 169,
+    "detection_b": 170,
+    "sample_a": 52,
+    "sample_b": 52,
+    "frame_a": 208,
+    "frame_b": 208,
+    "image_path": "R04/training/frames/01/208.jpg",
+    "source_image_sha256": "d37504f9ddf46589078516da3d4445ef1bc49957b426232caadc31d2333c524e",
+    "boxes": [
+      [
+        0.26484304666519165,
+        0.06588293612003326,
+        0.5949742794036865,
+        0.3954697251319885
+      ],
+      [
+        0.36867964267730713,
+        0.41852205991744995,
+        0.6491901874542236,
+        0.8089575171470642
+      ]
+    ],
+    "confidence": [
+      0.574516773223877,
+      0.5233315229415894
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_05_0_121_122_negative_candidate",
+    "scene": "R04",
+    "sequence": "05",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 121,
+    "detection_b": 122,
+    "sample_a": 39,
+    "sample_b": 39,
+    "frame_a": 156,
+    "frame_b": 156,
+    "image_path": "R04/training/frames/05/156.jpg",
+    "source_image_sha256": "e09a178863eb5701b2e26985b98600fc9a61c9d8e630564357168f69840ebe5d",
+    "boxes": [
+      [
+        0.4525192379951477,
+        0.6371839046478271,
+        0.6936928629875183,
+        0.9144333600997925
+      ],
+      [
+        0.2584013342857361,
+        0.000876694917678833,
+        0.5641366839408875,
+        0.39158350229263306
+      ]
+    ],
+    "confidence": [
+      0.5763140320777893,
+      0.575087308883667
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_05_0_209_210_negative_candidate",
+    "scene": "R04",
+    "sequence": "05",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 209,
+    "detection_b": 210,
+    "sample_a": 61,
+    "sample_b": 61,
+    "frame_a": 244,
+    "frame_b": 244,
+    "image_path": "R04/training/frames/05/244.jpg",
+    "source_image_sha256": "ab9eaaf949128b663ab34fccf2bac1aa1e3c26450fec1f64683e57be2bc4c22d",
+    "boxes": [
+      [
+        0.37648850679397583,
+        0.32151293754577637,
+        0.6605344414710999,
+        0.576137125492096
+      ],
+      [
+        0.45297151803970337,
+        0.638768196105957,
+        0.693202793598175,
+        0.9137686491012573
+      ]
+    ],
+    "confidence": [
+      0.6144906878471375,
+      0.5314863324165344
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_05_0_338_339_negative_candidate",
+    "scene": "R04",
+    "sequence": "05",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 338,
+    "detection_b": 339,
+    "sample_a": 99,
+    "sample_b": 99,
+    "frame_a": 396,
+    "frame_b": 396,
+    "image_path": "R04/training/frames/05/396.jpg",
+    "source_image_sha256": "30f13c8c7b6bfb68fb582b597ebcfd2e0156b0febecaeeac00f053b3670b50ca",
+    "boxes": [
+      [
+        0.4291977882385254,
+        0.6374123096466064,
+        0.7248772382736206,
+        0.961084246635437
+      ],
+      [
+        0.3477860987186432,
+        0.1707059144973755,
+        0.5779291987419128,
+        0.38205182552337646
+      ]
+    ],
+    "confidence": [
+      0.5893517136573792,
+      0.5130026936531067
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_11_0_84_85_negative_candidate",
+    "scene": "R04",
+    "sequence": "11",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 84,
+    "detection_b": 85,
+    "sample_a": 29,
+    "sample_b": 29,
+    "frame_a": 116,
+    "frame_b": 116,
+    "image_path": "R04/training/frames/11/116.jpg",
+    "source_image_sha256": "bf59c42490139886e77c1beddc77a3df6b926796db550e1f309034a33991a8b7",
+    "boxes": [
+      [
+        0.4056812524795532,
+        0.41933906078338623,
+        0.6386882066726685,
+        0.7771060466766357
+      ],
+      [
+        0.239882692694664,
+        0.0003304034471511841,
+        0.5808794498443604,
+        0.35627734661102295
+      ]
+    ],
+    "confidence": [
+      0.6140044331550598,
+      0.5967034697532654
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_11_0_163_164_negative_candidate",
+    "scene": "R04",
+    "sequence": "11",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 163,
+    "detection_b": 164,
+    "sample_a": 53,
+    "sample_b": 53,
+    "frame_a": 212,
+    "frame_b": 212,
+    "image_path": "R04/training/frames/11/212.jpg",
+    "source_image_sha256": "65d4b4fd5ee87545d14f20d3c0e1ad6c02be5d6f9ea4f1fe5b0f34ffda90240f",
+    "boxes": [
+      [
+        0.3005750775337219,
+        0.058025822043418884,
+        0.5818228721618652,
+        0.3823355436325073
+      ],
+      [
+        0.4086480438709259,
+        0.5925154685974121,
+        0.693851113319397,
+        0.9409477710723877
+      ]
+    ],
+    "confidence": [
+      0.6216794848442078,
+      0.5279308557510376
+    ],
+    "status": "unreviewed",
+    "board": "negative_05.jpg"
+  },
+  {
+    "id": "R04_11_0_175_176_negative_candidate",
+    "scene": "R04",
+    "sequence": "11",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 175,
+    "detection_b": 176,
+    "sample_a": 56,
+    "sample_b": 56,
+    "frame_a": 224,
+    "frame_b": 224,
+    "image_path": "R04/training/frames/11/224.jpg",
+    "source_image_sha256": "7d1eeb5e9aa670bc3b01b61ba7c556a8806f59f10c9ed4772ca42665b247393f",
+    "boxes": [
+      [
+        0.3154601454734802,
+        0.09028945863246918,
+        0.6224721670150757,
+        0.470081627368927
+      ],
+      [
+        0.4079798460006714,
+        0.5904251933097839,
+        0.6947463750839233,
+        0.9426731467247009
+      ]
+    ],
+    "confidence": [
+      0.7149248123168945,
+      0.5297929048538208
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_17_0_108_109_negative_candidate",
+    "scene": "R04",
+    "sequence": "17",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 108,
+    "detection_b": 109,
+    "sample_a": 36,
+    "sample_b": 36,
+    "frame_a": 144,
+    "frame_b": 144,
+    "image_path": "R04/training/frames/17/144.jpg",
+    "source_image_sha256": "d93bc6ccf745d41a66494dd9d7480be1a64d48dfdf944641bb17ebec9f708090",
+    "boxes": [
+      [
+        0.2524644732475281,
+        0.0010372847318649292,
+        0.5764667391777039,
+        0.39239615201950073
+      ],
+      [
+        0.42265522480010986,
+        0.6175783276557922,
+        0.7189236879348755,
+        1.0
+      ]
+    ],
+    "confidence": [
+      0.6070088744163513,
+      0.548939049243927
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_17_0_197_198_negative_candidate",
+    "scene": "R04",
+    "sequence": "17",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 197,
+    "detection_b": 198,
+    "sample_a": 59,
+    "sample_b": 59,
+    "frame_a": 236,
+    "frame_b": 236,
+    "image_path": "R04/training/frames/17/236.jpg",
+    "source_image_sha256": "18855fc4e23b055d92a559061312f32f4d1635a35c9263ba33d70fb76f3949b2",
+    "boxes": [
+      [
+        0.409532755613327,
+        0.5955970287322998,
+        0.7126510143280029,
+        1.0
+      ],
+      [
+        0.28261393308639526,
+        0.07198271155357361,
+        0.5670351386070251,
+        0.39930805563926697
+      ]
+    ],
+    "confidence": [
+      0.5521173477172852,
+      0.5192549824714661
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_17_0_283_284_negative_candidate",
+    "scene": "R04",
+    "sequence": "17",
+    "partition": "representation_validation",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 283,
+    "detection_b": 284,
+    "sample_a": 82,
+    "sample_b": 82,
+    "frame_a": 328,
+    "frame_b": 328,
+    "image_path": "R04/training/frames/17/328.jpg",
+    "source_image_sha256": "23f7d76671b179644fb4fd65d4c0a50cda2587e6d907ce3d689553eb0def850d",
+    "boxes": [
+      [
+        0.41014063358306885,
+        0.5852553248405457,
+        0.7160027027130127,
+        0.9926667809486389
+      ],
+      [
+        0.31620922684669495,
+        0.16635867953300476,
+        0.5605518817901611,
+        0.40447524189949036
+      ]
+    ],
+    "confidence": [
+      0.5944215059280396,
+      0.543766438961029
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_02_0_115_116_negative_candidate",
+    "scene": "R04",
+    "sequence": "02",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 115,
+    "detection_b": 116,
+    "sample_a": 39,
+    "sample_b": 39,
+    "frame_a": 156,
+    "frame_b": 156,
+    "image_path": "R04/training/frames/02/156.jpg",
+    "source_image_sha256": "139f5ff9930fb5cbc53a1466d0ff314e44661afba9effeb6fa362f104b2a1b9f",
+    "boxes": [
+      [
+        0.23734961450099945,
+        0.0004642307758331299,
+        0.5835692286491394,
+        0.34647512435913086
+      ],
+      [
+        0.38841819763183594,
+        0.6267178654670715,
+        0.663875937461853,
+        0.9778364300727844
+      ]
+    ],
+    "confidence": [
+      0.6130161881446838,
+      0.5394344329833984
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_02_0_151_152_negative_candidate",
+    "scene": "R04",
+    "sequence": "02",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 151,
+    "detection_b": 152,
+    "sample_a": 48,
+    "sample_b": 48,
+    "frame_a": 192,
+    "frame_b": 192,
+    "image_path": "R04/training/frames/02/192.jpg",
+    "source_image_sha256": "83c7c5a4af8e454b371679d0cac529335a345582ab90b8e7694b1788c988c325",
+    "boxes": [
+      [
+        0.31986814737319946,
+        0.06344041228294373,
+        0.6839503645896912,
+        0.5826758146286011
+      ],
+      [
+        0.3883042335510254,
+        0.6257404088973999,
+        0.6631366014480591,
+        0.9776004552841187
+      ]
+    ],
+    "confidence": [
+      0.8009721040725708,
+      0.5515668988227844
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_02_0_201_202_negative_candidate",
+    "scene": "R04",
+    "sequence": "02",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 201,
+    "detection_b": 202,
+    "sample_a": 61,
+    "sample_b": 61,
+    "frame_a": 244,
+    "frame_b": 244,
+    "image_path": "R04/training/frames/02/244.jpg",
+    "source_image_sha256": "4ce71b2e0f99053b6eb96cc139f77a16c88ae010097b11a694cc93b5a0e4d2a3",
+    "boxes": [
+      [
+        0.39408308267593384,
+        0.36237454414367676,
+        0.6694245934486389,
+        0.6640818119049072
+      ],
+      [
+        0.3882284164428711,
+        0.6265764236450195,
+        0.6634622812271118,
+        0.9762572050094604
+      ]
+    ],
+    "confidence": [
+      0.5509523153305054,
+      0.5330223441123962
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_08_0_98_99_negative_candidate",
+    "scene": "R04",
+    "sequence": "08",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 98,
+    "detection_b": 99,
+    "sample_a": 34,
+    "sample_b": 34,
+    "frame_a": 136,
+    "frame_b": 136,
+    "image_path": "R04/training/frames/08/136.jpg",
+    "source_image_sha256": "043e38b658e44feb01531821625771505248d9dbc68fb8744b40c4599f63eee6",
+    "boxes": [
+      [
+        0.3967246413230896,
+        0.4375365674495697,
+        0.654957115650177,
+        0.773918628692627
+      ],
+      [
+        0.2587442398071289,
+        0.018127068877220154,
+        0.5401213765144348,
+        0.2867664098739624
+      ]
+    ],
+    "confidence": [
+      0.656571626663208,
+      0.5755497217178345
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_08_0_196_197_negative_candidate",
+    "scene": "R04",
+    "sequence": "08",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 196,
+    "detection_b": 197,
+    "sample_a": 60,
+    "sample_b": 60,
+    "frame_a": 240,
+    "frame_b": 240,
+    "image_path": "R04/training/frames/08/240.jpg",
+    "source_image_sha256": "bb80566fe78b4a11d22125c426ec0f86c3bbfb3fa380f58444519725c2910722",
+    "boxes": [
+      [
+        0.3877910375595093,
+        0.3587193787097931,
+        0.6847485303878784,
+        0.6076493859291077
+      ],
+      [
+        0.3769221305847168,
+        0.6083214282989502,
+        0.6688647270202637,
+        0.966516375541687
+      ]
+    ],
+    "confidence": [
+      0.5791007876396179,
+      0.5073376297950745
+    ],
+    "status": "unreviewed",
+    "board": "negative_06.jpg"
+  },
+  {
+    "id": "R04_08_0_240_241_negative_candidate",
+    "scene": "R04",
+    "sequence": "08",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 240,
+    "detection_b": 241,
+    "sample_a": 71,
+    "sample_b": 71,
+    "frame_a": 284,
+    "frame_b": 284,
+    "image_path": "R04/training/frames/08/284.jpg",
+    "source_image_sha256": "bc4245f3225fb027fcdea6eae5a050517ae6ac89ff982cbaa27bbf41a62b67da",
+    "boxes": [
+      [
+        0.3072417974472046,
+        0.06185908615589142,
+        0.6258910894393921,
+        0.3869074583053589
+      ],
+      [
+        0.4370284080505371,
+        0.42472314834594727,
+        0.7107601165771484,
+        0.8052414655685425
+      ]
+    ],
+    "confidence": [
+      0.6276578307151794,
+      0.5176555514335632
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_10_0_85_86_negative_candidate",
+    "scene": "R04",
+    "sequence": "10",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 85,
+    "detection_b": 86,
+    "sample_a": 32,
+    "sample_b": 32,
+    "frame_a": 128,
+    "frame_b": 128,
+    "image_path": "R04/training/frames/10/128.jpg",
+    "source_image_sha256": "18f59dabf149a9b009d1525416974536367985df0ece6e7e415b09aa86e2f9d3",
+    "boxes": [
+      [
+        0.26935094594955444,
+        0.00890890508890152,
+        0.5246410369873047,
+        0.2280023694038391
+      ],
+      [
+        0.39693132042884827,
+        0.3821488618850708,
+        0.6696707010269165,
+        0.622130274772644
+      ]
+    ],
+    "confidence": [
+      0.6933416724205017,
+      0.6182304620742798
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_10_0_110_111_negative_candidate",
+    "scene": "R04",
+    "sequence": "10",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 110,
+    "detection_b": 111,
+    "sample_a": 39,
+    "sample_b": 39,
+    "frame_a": 156,
+    "frame_b": 156,
+    "image_path": "R04/training/frames/10/156.jpg",
+    "source_image_sha256": "c27291cd199b179c26014df1365fd2f202e909781ba0c023f413a02f0366598c",
+    "boxes": [
+      [
+        0.26624947786331177,
+        0.00029240548610687256,
+        0.6013304591178894,
+        0.33942168951034546
+      ],
+      [
+        0.43810850381851196,
+        0.6371088027954102,
+        0.7023835778236389,
+        0.9984971284866333
+      ]
+    ],
+    "confidence": [
+      0.5874610543251038,
+      0.5289367437362671
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_10_0_169_170_negative_candidate",
+    "scene": "R04",
+    "sequence": "10",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 169,
+    "detection_b": 170,
+    "sample_a": 55,
+    "sample_b": 55,
+    "frame_a": 220,
+    "frame_b": 220,
+    "image_path": "R04/training/frames/10/220.jpg",
+    "source_image_sha256": "c584179ad5116366739707e940b78e0fd648c459b88a3c1df1a8af4dda0c5b6e",
+    "boxes": [
+      [
+        0.41841018199920654,
+        0.3774937689304352,
+        0.7005308866500854,
+        0.6452487707138062
+      ],
+      [
+        0.43914926052093506,
+        0.639116108417511,
+        0.7001571655273438,
+        0.9969273209571838
+      ]
+    ],
+    "confidence": [
+      0.5807681679725647,
+      0.5202213525772095
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_12_0_91_92_negative_candidate",
+    "scene": "R04",
+    "sequence": "12",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 91,
+    "detection_b": 92,
+    "sample_a": 31,
+    "sample_b": 31,
+    "frame_a": 124,
+    "frame_b": 124,
+    "image_path": "R04/training/frames/12/124.jpg",
+    "source_image_sha256": "0ab4e4e43571fe04938322014497dbd1168f2da567a081ab7e814bde85c121d6",
+    "boxes": [
+      [
+        0.2658006548881531,
+        0.0004762113094329834,
+        0.5984134078025818,
+        0.3853156566619873
+      ],
+      [
+        0.43700578808784485,
+        0.39836814999580383,
+        0.6874872446060181,
+        0.7756681442260742
+      ]
+    ],
+    "confidence": [
+      0.6451958417892456,
+      0.5704124569892883
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_12_0_161_162_negative_candidate",
+    "scene": "R04",
+    "sequence": "12",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 161,
+    "detection_b": 162,
+    "sample_a": 53,
+    "sample_b": 53,
+    "frame_a": 212,
+    "frame_b": 212,
+    "image_path": "R04/training/frames/12/212.jpg",
+    "source_image_sha256": "e67dde70c154663aeeb4a99ba0152da69bde25ac81a7433e52b0e763ae40582b",
+    "boxes": [
+      [
+        0.4298529624938965,
+        0.33305948972702026,
+        0.6883106231689453,
+        0.79729825258255
+      ],
+      [
+        0.319075345993042,
+        0.06314307451248169,
+        0.6087489724159241,
+        0.3742374777793884
+      ]
+    ],
+    "confidence": [
+      0.628330409526825,
+      0.5894302129745483
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_12_0_173_174_negative_candidate",
+    "scene": "R04",
+    "sequence": "12",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 173,
+    "detection_b": 174,
+    "sample_a": 56,
+    "sample_b": 56,
+    "frame_a": 224,
+    "frame_b": 224,
+    "image_path": "R04/training/frames/12/224.jpg",
+    "source_image_sha256": "eeb5a71daeb5a77c258baf23407dab5c8493b0e66424e38d601b2c47b822fc67",
+    "boxes": [
+      [
+        0.43066689372062683,
+        0.3329717814922333,
+        0.6900591850280762,
+        0.7978564500808716
+      ],
+      [
+        0.3075980544090271,
+        0.02370661497116089,
+        0.6136058568954468,
+        0.32970479130744934
+      ]
+    ],
+    "confidence": [
+      0.6586917638778687,
+      0.6277974247932434
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_15_0_97_98_negative_candidate",
+    "scene": "R04",
+    "sequence": "15",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 97,
+    "detection_b": 98,
+    "sample_a": 32,
+    "sample_b": 32,
+    "frame_a": 128,
+    "frame_b": 128,
+    "image_path": "R04/training/frames/15/128.jpg",
+    "source_image_sha256": "cfcf7a7fd8b7d82367598c6dc3cb3e6b05fba10a1765f1788f1aadc4aae8ff84",
+    "boxes": [
+      [
+        0.25312674045562744,
+        0.00038336217403411865,
+        0.5955608487129211,
+        0.3514459729194641
+      ],
+      [
+        0.47838473320007324,
+        0.6180245876312256,
+        0.7256722450256348,
+        0.9322937726974487
+      ]
+    ],
+    "confidence": [
+      0.614682137966156,
+      0.5523826479911804
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_15_0_147_148_negative_candidate",
+    "scene": "R04",
+    "sequence": "15",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 147,
+    "detection_b": 148,
+    "sample_a": 45,
+    "sample_b": 45,
+    "frame_a": 180,
+    "frame_b": 180,
+    "image_path": "R04/training/frames/15/180.jpg",
+    "source_image_sha256": "9264387b866cc1cc0608de020abdfad6ba47f986fbfb1a47086c20956a0e8a6b",
+    "boxes": [
+      [
+        0.406168669462204,
+        0.3026122450828552,
+        0.6868582963943481,
+        0.5591830015182495
+      ],
+      [
+        0.47842836380004883,
+        0.6181313395500183,
+        0.7253104448318481,
+        0.9300752282142639
+      ]
+    ],
+    "confidence": [
+      0.7051380276679993,
+      0.5472005605697632
+    ],
+    "status": "unreviewed",
+    "board": "negative_07.jpg"
+  },
+  {
+    "id": "R04_15_0_173_174_negative_candidate",
+    "scene": "R04",
+    "sequence": "15",
+    "partition": "normal_calibration",
+    "role": 0,
+    "kind": "negative_candidate",
+    "detection_a": 173,
+    "detection_b": 174,
+    "sample_a": 53,
+    "sample_b": 53,
+    "frame_a": 212,
+    "frame_b": 212,
+    "image_path": "R04/training/frames/15/212.jpg",
+    "source_image_sha256": "cd604b1d4dc293b1e332ea8b8bb7c425d6184473e18157260822d657de0edce8",
+    "boxes": [
+      [
+        0.43704667687416077,
+        0.4486690163612366,
+        0.7282729148864746,
+        0.9333216547966003
+      ],
+      [
+        0.32120418548583984,
+        0.07067929208278656,
+        0.595116913318634,
+        0.3771458864212036
+      ]
+    ],
+    "confidence": [
+      0.5485492944717407,
+      0.5254760980606079
+    ],
+    "status": "unreviewed",
+    "board": "negative_08.jpg"
+  }
+]

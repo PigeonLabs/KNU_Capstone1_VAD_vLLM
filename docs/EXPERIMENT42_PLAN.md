@@ -32,3 +32,11 @@ Train70/val19/calibration22 영상 분할을 유지한다. Pair 후보는 정상
 4. 개선이 없거나 오연결이 늘면 실패/무변화 결과로 보고한다. 결과·의의·보완점·추천순3개를 정리해 GitHub에 업로드한 뒤, 그 결과를 바탕으로 다음 한 단계만 설계한다.
 
 42는 ReID 효과의 파일럿이며 독립 녹화 그룹 일반화나 새로운 metric-learning 알고리즘의 제안이 아니다. 기존 test를 반복 관찰한 개발 실험이라는 범위를 유지한다.
+
+## 학습 전 정상 감사 확정
+
+73개 negative 후보 프레임을 Codex가 시각 검수하여 train26/val5/cal11개를 수용했다. 모두 R04 material이며 cal은5개 영상, val은4개 영상에 분포한다. 사람 identity GT가 아니다. Positive의 confidence/IoU 극단44쌍을 점검했으며 R04 material에서 집합 박스/물리 범위 변경을 확인하여 **해당 역할의 자동 positive 전체를 제외**했다. 그 외에는 temporal region/object consistency라는 약한 감독만 주장한다. Train positive15,618, val4,216; calibration positive4,919는 학습/체크포인트에 사용하지 않는다.
+
+공유 rank8 head8,192변수,20epochs×64steps, batch256(128positive/128negative), seed42. Positive는 scene-role 균등 표집, negative는26개를 복원 표집한다. Loss=`mean(1-cos_positive)+mean(relu(cos_negative-0.5)^2)+0.1*mean(||z-x||²)`; 두 endpoint의 preservation 평균. Val positive는 scene-role macro, negative는평균, preservation은positive/negative각평균의1:1평균. Epoch0포함 최저val을 고른다. 이 감독/목적함수는 원천 ReID 논문 재현이나 identity accuracy가 아니다.
+
+Association은기존IoU우선, 남은box만 cosine게이트, 양끝confidence≥0.5, 정규화중심거리≤0.25, 면적비[0.25,4], 행/열대안보다cosine차≥0.05이다. Max-age2유지. Role별train/valnegative지원과cal≥10쌍·≥3영상이 있어야활성화하고 게이트=max(calnegativecosine)+0.01로고정한다. 1을초과하면사용불가이며이를낮추지않는다. 따라서 R04material만활성화가능하다. 지원이작고simultaneousnegative는실제시점간재연결과다르므로무오연결보장을하지않는다. 체크포인트이후calibration수치,그다음normal모델을순서대로동결한다.

@@ -1357,3 +1357,38 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **상태 균형 detector 약지도와 독립 검증 자료 확충**: 낮아진/움직이는 blade, 분리·겹친 material 및 identity/phase 경계를 포함한 정상 주석을 보강 | R04 60개 검수 프레임 중34개 제외, val5개는 upright 편중. 정상 holdout에서 잘린 종이 누락·손/금속 오검출이 남음. 약지도 box 일치 상승에도 전체 C AUROC와 recall 하락 | 최적화 주석·checkpoint validation·독립 진단을 구분. 기존 pseudo-box 일치를 detector 정확도로 대체하지 않으며 주석 변경과 모델 구조 변경을 동시에 넣지 않음. 독립 사람 GT와 별도 녹화 그룹이 없으면 그 제한을 유지 |
 
 [상세 결과·의의·한계](docs/EXPERIMENT41.md) · [전체 공정/seed 표](results/experiment41/report_tables.md) · [학습 곡선](results/experiment41/figures/training.png) · [경보 비교](results/experiment41/figures/operating_points.png) · [영상별 CSV](results/experiment41/per_sequence.csv) · [지표](results/experiment41/metrics.json) · [검증](results/experiment41/validation.json) · [정상 적합 실패·복구](docs/EXPERIMENT41_NORMAL_RECOVERY.md) · [구현 명세](docs/EXPERIMENT41_METHODS.md) · [다음42 계획](docs/EXPERIMENT42_PLAN.md)
+
+## 실험 42 — 공유 learned association adapter
+
+**완료: 학습 loss는 감소했지만 이상탐지 경보 개선은 없었다.** Detector41와 8개 visual encoder를 고정하고, IoU-only / frozen-feature association / learned association을 비교했다. Rank8 metric head 8,192개 변수를 정상 pair로 20 epochs 학습했다. Weak val objective는 0.1848→0.0365, 선택 epoch는20이다. 정상 train70/val19/calibration22, test66영상 중31,550 valid frames·66events를 평가했다.
+
+| branch | arm | Visual AUC | Combined AUC | Combined AP | FPR% | recall% | event% |
+|---|---|---|---|---|---|---|---|
+| 41 IoU | A | 0.6680 | 0.6113 | 0.5081 | 3.99 | 9.47 | 63.18 |
+| 42 learned | A | 0.6680 | 0.6113 | 0.5080 | 3.99 | 9.47 | 63.18 |
+| 41 IoU | B | 0.6775 | 0.6348 | 0.5332 | 2.65 | 7.91 | 61.51 |
+| 42 learned | B | 0.6774 | 0.6345 | 0.5328 | 2.65 | 7.91 | 61.51 |
+| 41 IoU | C | 0.6862 ± 0.0009 | 0.6421 ± 0.0005 | 0.5394 ± 0.0007 | 2.16 ± 0.08 | 6.93 ± 0.16 | 58.54 ± 0.84 |
+| 42 learned | C | 0.6860 ± 0.0009 | 0.6418 ± 0.0005 | 0.5391 ± 0.0007 | 2.16 ± 0.08 | 6.93 ± 0.16 | 58.54 ± 0.84 |
+| 41 IoU | D | 0.6762 ± 0.0026 | 0.6261 ± 0.0053 | 0.5240 ± 0.0051 | 3.34 ± 0.98 | 10.90 ± 1.72 | 56.12 ± 3.09 |
+| 42 learned | D | 0.6761 ± 0.0026 | 0.6258 ± 0.0052 | 0.5236 ± 0.0050 | 3.34 ± 0.98 | 10.90 ± 1.72 | 56.12 ± 3.09 |
+
+공정별 지표의 동일 가중 macro다. C/D는 기존 visual3seed 평균±표본 SD이고 association은 seed42 하나다. **42 raw는41과 정확히 같아 표에서 생략했다.** 공정·run별 정상 q99를 재적합했으며 이번에는41과 임계값도 정확히 같다. 모든 arm에서 추가/제거 FP·TP는0, 탐지 구간 수는 그대로다.
+
+![실험42 연결 후보와 실제 연결](results/experiment42/figures/association_funnel.png)
+
+**의의:** 공유 metric 학습과 매칭 정책의 효과를 분리했다. Learned 경로가 정상1/test2개의 연결을 추가했지만 phase 변화는 test1sample뿐이었다. Loss 감소가 ReID 정확도나 AD 개선을 뜻하지 않음을 확인한 파이프라인 구현 실험이다. 새로운 metric-learning 알고리즘이나 SOTA를 주장하지 않는다.
+
+**보완할 점:** 검수한 negative는 train26/val5/cal11개로 모두 R04 material에 한정됐다. 지원 없는 다른 역할은 IoU를 유지했다. R04 material positive의 집합 박스 문제로 해당 역할의 자동 positive는 전부 제외했다. 추가 연결 중 화면 경계의 한 건은 identity를 확정하기 어렵고, 이 연결에서만 phase가 바뀌었다. R04 AUROC는 소폭 낮아졌으며 정상 phase3 편중과 dwell unavailable는 그대로다. 사람 identity/phase GT와 독립 녹화 그룹은 없다. Normal holdout은 association 게이트까지 제외한 독립 검증이 아니라 CDF/q99만 제외한 조건부 진단이다.
+
+187개 테스트, 정상 control 모델/score 416파일과 새64 full·352 holdout, test control528개·새 예측1,056파일을 검증했다. AUROC/AP 384개 독립 계산과 이벤트·object-index 검사를 통과했으며, 모든 test score를 라벨 전에 고정했다.
+
+**다음 Recommended improvements — 추천순3개**
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **공정별 learned phase head**: 동결 공유 특징 위의 process별 linear probe/저랭크 adapter head 비교. Transition/dwell은 통계 모델 유지 | 연결은3건 늘었지만 정상 phase 변화0, test1sample, 경보 개선0. R04 phase 편중과 dwell 지원 부족이 남음 | 다음43에서 이 요소만 변경. 정상 weak target의 의미·지원·모호성부터 감사하고 normal val로 checkpoint 선택. Phase 점유/완결 지원과 FPR·recall을 함께 평가하며 latent cluster를 action GT로 부르지 않음 |
+| 2 | **Identity 감독 및 독립 검증 확충**: 공정별 동시 개체·재등장·occlusion을 영상 단위로 분리 주석 | Negative가 R04 material에 집중되고 test geometry 통과 후보는4쌍뿐. 경계 연결의 identity 불확실 | 사람 ID GT와 새 녹화 그룹에서 false link/IDF1/HOTA·coverage 검증. 게이트 선정과 평가 자료 분리, track 수 감소를 정확도 개선으로 취급하지 않음 |
+| 3 | **경계·집합 박스의 관측 신뢰도 처리**: 모호한 물리 범위와 역할 혼동을 정상 자료에서 구분 | Negative31개 제외 및 R04 material automatic positive 전체 제외. 유일한 test phase 변화가 경계 박스에서 발생 | 정상 coverage·오연결·누락을 먼저 검증. 현재 test 사례에 맞춘 마스크/threshold 조정 금지, recall 손실도 함께 평가 |
+
+[상세 결과·의의·한계](docs/EXPERIMENT42.md) · [전체 표](results/experiment42/report_tables.md) · [학습 곡선](results/experiment42/figures/training.png) · [영상별 CSV](results/experiment42/per_sequence.csv) · [지표](results/experiment42/metrics.json) · [검증](results/experiment42/validation.json) · [구현·재현](docs/EXPERIMENT42_METHODS.md) · [다음43 계획](docs/EXPERIMENT43_PLAN.md)

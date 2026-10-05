@@ -1,0 +1,11 @@
+{
+  "seed": 42, "rank": 8, "dim": 512, "device": "cuda",
+  "epochs": 20, "steps_per_epoch": 64, "batch_size": 256,
+  "lr": 0.001, "weight_decay": 0.0001, "clip_grad": 1.0,
+  "negative_margin": 0.5, "preservation_weight": 0.1,
+  "positive_sampling": "equal scene-role probability then uniform pair; R04 material excluded",
+  "negative_sampling": "128 per batch with replacement from 26 reviewed train pairs",
+  "checkpoint": "minimum normal-validation objective including epoch0; macro positive scene-role + mean negative hinge squared + 0.1 balanced preservation",
+  "association": {"threshold": 0.2, "max_age": 2, "confidence": 0.5, "max_center_distance": 0.25, "max_area_ratio": 4.0, "ambiguity_margin": 0.05},
+  "calibration": {"minimum_negative_pairs": 10, "minimum_negative_videos": 3, "similarity_gate": "max reviewed negative cosine + 0.01; >1 disables appearance", "margin": 0.01, "require_train_and_validation_negatives": true}
+}

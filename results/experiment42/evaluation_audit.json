@@ -1,0 +1,12 @@
+{
+  "normal_models_refitted_exact": 64,
+  "predictions_frozen_before_labels": 1056,
+  "control_sequences_exact_to_41": 528,
+  "new_score_sequences_exact_to_41": {
+    "raw": 528,
+    "learned": 520
+  },
+  "prediction_hashes_unchanged_after_labels": true,
+  "per_sequence_rows": 1056,
+  "metrics_rows": 64
+}

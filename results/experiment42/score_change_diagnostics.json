@@ -1,0 +1,145 @@
+{
+  "sequence": "R04/testing_17",
+  "rows": [
+    {
+      "run": "A",
+      "changed_frame_counts": {
+        "visual": 0,
+        "process": 8,
+        "combined": 4
+      },
+      "combined_changed_frames": [
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "B",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "C_s42",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "D_s42",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "C_s43",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "D_s43",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "C_s44",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "run": "D_s44",
+      "changed_frame_counts": {
+        "visual": 4,
+        "process": 8,
+        "combined": 8
+      },
+      "combined_changed_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    }
+  ]
+}

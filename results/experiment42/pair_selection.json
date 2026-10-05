@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "representation_train/positive_candidate": 15618,
+    "representation_validation/positive_candidate": 4216,
+    "normal_calibration/positive_candidate": 4919,
+    "representation_train/negative_candidate": 26,
+    "representation_validation/negative_candidate": 5,
+    "normal_calibration/negative_candidate": 11
+  },
+  "all_R04_material_automatic_positives_excluded": true,
+  "calibration_excluded_from_gradient_and_checkpoint": true,
+  "accepted_sha256": "c9fdc90345b4871ff92be801016406ff5d052eeb41ca32a9d09d9395a70c709b",
+  "review_sha256": {
+    "results/experiment42/negative_pair_review.json": "a99471a5a417e306d627ea63bf91f8d231ab481d765f354897058711f6fdf532",
+    "results/experiment42/positive_pair_review.json": "aada014eca054154c6d8783cfc60bf62fb53dc2518f53721bad8f9e6a208d00b"
+  },
+  "limitations": "Shared temporal-consistency supervision covers all processes; direct same-role identity separation only R04 material. Negative validation: 5 frames across 4 videos; not identity GT. No R04 material temporal-positive recall validation."
+}

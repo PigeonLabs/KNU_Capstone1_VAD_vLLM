@@ -1,0 +1,317 @@
+[
+  {
+    "epoch": 0,
+    "train": {
+      "loss": 0.17064663115888837,
+      "positive_group_macro": 0.02086158934980631,
+      "negative": 0.14978504180908203,
+      "preservation": 1.706050484269963e-16
+    },
+    "validation": {
+      "loss": 0.18482860624790196,
+      "positive_group_macro": 0.022189375758171082,
+      "negative": 0.16263923048973083,
+      "preservation": 1.9657691162205056e-16
+    }
+  },
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 0.03431665408425033,
+      "positive_group_macro": 0.02357358355075121,
+      "negative": 0.001077399356290698,
+      "preservation": 0.09665671177208424
+    },
+    "validation": {
+      "loss": 0.05385831315070391,
+      "positive_group_macro": 0.025203394889831542,
+      "negative": 0.019691631197929382,
+      "preservation": 0.08963287062942982
+    }
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 0.02749819166492671,
+      "positive_group_macro": 0.018928615003824235,
+      "negative": 0.0006064026383683085,
+      "preservation": 0.07963174022734165
+    },
+    "validation": {
+      "loss": 0.046151396725326775,
+      "positive_group_macro": 0.02024845452979207,
+      "negative": 0.01801159791648388,
+      "preservation": 0.07891344279050827
+    }
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "loss": 0.023901498824125157,
+      "positive_group_macro": 0.014766872860491276,
+      "negative": 0.0003028580395039171,
+      "preservation": 0.08831767924129963
+    },
+    "validation": {
+      "loss": 0.04499409096315503,
+      "positive_group_macro": 0.015879499074071646,
+      "negative": 0.01993565261363983,
+      "preservation": 0.09178939275443554
+    }
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "loss": 0.02176180282549467,
+      "positive_group_macro": 0.01258715270087123,
+      "negative": 0.0002373627939959988,
+      "preservation": 0.08937287330627441
+    },
+    "validation": {
+      "loss": 0.044639762956649065,
+      "positive_group_macro": 0.013581644464284181,
+      "negative": 0.02150854282081127,
+      "preservation": 0.09549575671553612
+    }
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "loss": 0.01984406589763239,
+      "positive_group_macro": 0.01094852965325117,
+      "negative": 0.00017606961773708463,
+      "preservation": 0.08719466626644135
+    },
+    "validation": {
+      "loss": 0.04323353986255825,
+      "positive_group_macro": 0.011849748669192195,
+      "negative": 0.021922558546066284,
+      "preservation": 0.09461232647299767
+    }
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "loss": 0.01809813031286467,
+      "positive_group_macro": 0.009438329562544822,
+      "negative": 0.0001862630742834881,
+      "preservation": 0.08473537676036358
+    },
+    "validation": {
+      "loss": 0.04182704496197402,
+      "positive_group_macro": 0.010253500705584884,
+      "negative": 0.022236010059714317,
+      "preservation": 0.09337534196674824
+    }
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "loss": 0.01678769290156197,
+      "positive_group_macro": 0.008119127992540599,
+      "negative": 0.0001623568095965311,
+      "preservation": 0.08506208099424839
+    },
+    "validation": {
+      "loss": 0.040478349383920434,
+      "positive_group_macro": 0.008851497899740934,
+      "negative": 0.022171616554260254,
+      "preservation": 0.09455234929919243
+    }
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "loss": 0.01584130553819705,
+      "positive_group_macro": 0.00710131311789155,
+      "negative": 0.00013271924399305135,
+      "preservation": 0.08607273176312447
+    },
+    "validation": {
+      "loss": 0.039512926572933794,
+      "positive_group_macro": 0.007762802625074982,
+      "negative": 0.02212018333375454,
+      "preservation": 0.09629940614104271
+    }
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "loss": 0.015085078356787563,
+      "positive_group_macro": 0.00630120555870235,
+      "negative": 0.0001295376569032669,
+      "preservation": 0.08654335141181946
+    },
+    "validation": {
+      "loss": 0.0388472837395966,
+      "positive_group_macro": 0.006903242599219084,
+      "negative": 0.022223586216568947,
+      "preservation": 0.09720454923808575
+    }
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "loss": 0.014491854366497137,
+      "positive_group_macro": 0.005731030320748687,
+      "negative": 0.00011500193795654923,
+      "preservation": 0.086458221077919
+    },
+    "validation": {
+      "loss": 0.037732131266966465,
+      "positive_group_macro": 0.006291238637641072,
+      "negative": 0.02162345126271248,
+      "preservation": 0.09817441366612911
+    }
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "loss": 0.0139907892618794,
+      "positive_group_macro": 0.005196922947652638,
+      "negative": 0.00012773615890182555,
+      "preservation": 0.08666130155324936
+    },
+    "validation": {
+      "loss": 0.03771916097030044,
+      "positive_group_macro": 0.005718050058931112,
+      "negative": 0.022080762311816216,
+      "preservation": 0.09920348599553108
+    }
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "loss": 0.013564650021726264,
+      "positive_group_macro": 0.004843914462253451,
+      "negative": 0.00011313418508507311,
+      "preservation": 0.08607601374387741
+    },
+    "validation": {
+      "loss": 0.037337953108362854,
+      "positive_group_macro": 0.005340425553731621,
+      "negative": 0.02201652154326439,
+      "preservation": 0.09981006011366844
+    }
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "loss": 0.013223495255806484,
+      "positive_group_macro": 0.004501487105153501,
+      "negative": 0.00012303063704166561,
+      "preservation": 0.08598977513611317
+    },
+    "validation": {
+      "loss": 0.03710105859208852,
+      "positive_group_macro": 0.004978580703027547,
+      "negative": 0.022114736959338188,
+      "preservation": 0.10007740929722786
+    }
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "loss": 0.012893859087489546,
+      "positive_group_macro": 0.004257597937248647,
+      "negative": 0.00013441964983940125,
+      "preservation": 0.08501841500401497
+    },
+    "validation": {
+      "loss": 0.037014296301640576,
+      "positive_group_macro": 0.004721430526115,
+      "negative": 0.022341055795550346,
+      "preservation": 0.09951809979975224
+    }
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "loss": 0.01262547046353575,
+      "positive_group_macro": 0.004044749215245247,
+      "negative": 8.880205859895796e-05,
+      "preservation": 0.08491919189691544
+    },
+    "validation": {
+      "loss": 0.03663049847818911,
+      "positive_group_macro": 0.004498769948258996,
+      "negative": 0.0221274234354496,
+      "preservation": 0.10004305094480515
+    }
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "loss": 0.012371362939302345,
+      "positive_group_macro": 0.0038489807397127152,
+      "negative": 0.0001050056962412782,
+      "preservation": 0.0841737650334835
+    },
+    "validation": {
+      "loss": 0.03672155975364148,
+      "positive_group_macro": 0.004297644039615989,
+      "negative": 0.022419780492782593,
+      "preservation": 0.10004135221242905
+    }
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "loss": 0.012132451593060978,
+      "positive_group_macro": 0.003699503722600639,
+      "negative": 0.00011646452185232192,
+      "preservation": 0.08316483348608017
+    },
+    "validation": {
+      "loss": 0.03677620070520789,
+      "positive_group_macro": 0.004147000261582434,
+      "negative": 0.022631673142313957,
+      "preservation": 0.09997527301311493
+    }
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "loss": 0.011940763294114733,
+      "positive_group_macro": 0.003536530933342874,
+      "negative": 0.00013282800500746816,
+      "preservation": 0.08271404355764389
+    },
+    "validation": {
+      "loss": 0.03678877695929259,
+      "positive_group_macro": 0.003979578870348633,
+      "negative": 0.02277371659874916,
+      "preservation": 0.10035481490194798
+    }
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "loss": 0.011756592847814318,
+      "positive_group_macro": 0.003404320031404495,
+      "negative": 0.00010377787839388475,
+      "preservation": 0.08248494938015938
+    },
+    "validation": {
+      "loss": 0.03660313538275659,
+      "positive_group_macro": 0.0038478401955217125,
+      "negative": 0.022657016292214394,
+      "preservation": 0.10098278895020485
+    }
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "loss": 0.011603449545509648,
+      "positive_group_macro": 0.0032863848842680453,
+      "negative": 0.00010057928011519834,
+      "preservation": 0.08216485381126404
+    },
+    "validation": {
+      "loss": 0.03651322301011532,
+      "positive_group_macro": 0.0037272634683176873,
+      "negative": 0.022646095603704453,
+      "preservation": 0.10139863938093185
+    }
+  }
+]

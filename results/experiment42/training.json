@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "selected_epoch": 20,
+  "selected_val": 0.03651322301011532,
+  "epochs_completed": 20,
+  "optimizer_steps": 1280,
+  "seconds_training_and_validation": 3.700813378993189,
+  "parameters": 8192,
+  "max_gradient_norm": 0.1267736256122589,
+  "parameter_delta_l2": {
+    "down.weight": 8.559982299804688,
+    "up.weight": 3.824352502822876
+  },
+  "checkpoint": "artifacts/experiment42/adapter/best.pt",
+  "checkpoint_sha256": "65186da553bb7eb049e942b0f1fb53272f12f95355aaaad495d9dd933d3fbb82",
+  "normal_feature_sha256_unchanged": true,
+  "frozen_backbones_not_loaded_or_updated": true,
+  "history_sha256": "be082119a04d5d39d214f547df3dc61b5df4f9863d258ad7e77aa331f1b1bd0a",
+  "training_protocol_sha256": "a9700857a7bf151e97f00f31cad06e1942d226610206c83971e4d612d1eb3bf7",
+  "device": "cuda",
+  "peak_cuda_allocated_bytes": 291059712
+}

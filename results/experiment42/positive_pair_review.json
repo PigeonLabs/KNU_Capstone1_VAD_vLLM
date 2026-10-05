@@ -1,0 +1,1736 @@
+{
+  "draft_sha256": "5fd56bd9b06ffa3862d28cb8c56199db366f5c104520ef4ebe6a17dd7eab53b9",
+  "reviewed_boards": {
+    "artifacts/experiment42/pair_review/positive_00.jpg": "3e918636b5ae738993713aecb002bf0d107118722bd7550053e3100d4df95b59",
+    "artifacts/experiment42/pair_review/positive_01.jpg": "67b515a80dba2fc5949c1a88cbde8ce6de06c0518320a7c13ea4373d941687ab",
+    "artifacts/experiment42/pair_review/positive_02.jpg": "4c3af3a40f5b2db006fdae66cd78326199c4a93d66f6d614cbea146bb648c59a",
+    "artifacts/experiment42/pair_review/positive_03.jpg": "8d64f269e5e14ee7730989d88e1644699f72b59642036f82dc1863f309966fc4",
+    "artifacts/experiment42/pair_review/positive_04.jpg": "9e8cb08663de1497e142d270ad8821d098907e2626b918fc28d580c0b75f546c",
+    "artifacts/experiment42/pair_review/positive_05.jpg": "7d779faf56248d5bc4676a20edc10ceac8b8660a80ca5995e11e77927ce1fc0f"
+  },
+  "sample_policy": "Worst confidence and lowest IoU per scene-role/train-or-val; 44 pairs. Stress audit, not random error-rate estimate; other pairs NOT individually inspected.",
+  "excluded_positive_roles": [
+    [
+      "R04",
+      0
+    ]
+  ],
+  "pairs": [
+    {
+      "id": "R01_05_0_162_165_positive_candidate",
+      "scene": "R01",
+      "sequence": "05",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "162",
+      "detection_b": "165",
+      "sample_a": "53",
+      "sample_b": "54",
+      "frame_a": "212",
+      "frame_b": "216",
+      "minimum_confidence": 0.5085781216621399,
+      "iou": 0.7730927467346191,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R01/training/frames/05/212.jpg": "7d70b2c0d25d2c654272aec9ca47b567e90fb1f3c39d5235bb54c3dbb8277b5b",
+        "R01/training/frames/05/216.jpg": "d270a81838e371df43579310ebfd5d1750b5169008c357fd30e70f7a1e7012dd"
+      },
+      "boxes": [
+        [
+          0.8984930515289307,
+          0.2617546319961548,
+          1.0,
+          0.4568769335746765
+        ],
+        [
+          0.9178569912910461,
+          0.2615876793861389,
+          1.0,
+          0.4679824709892273
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_27_0_96_99_positive_candidate",
+      "scene": "R01",
+      "sequence": "27",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "96",
+      "detection_b": "99",
+      "sample_a": "30",
+      "sample_b": "31",
+      "frame_a": "120",
+      "frame_b": "124",
+      "minimum_confidence": 0.8389236927032471,
+      "iou": 0.7001526355743408,
+      "selection": "iou",
+      "image_sha256": {
+        "R01/training/frames/27/120.jpg": "9cf700dff9cac6d8b7ea90c979af37cfe2f450deb603e8b134b9ba4687135d59",
+        "R01/training/frames/27/124.jpg": "97293d2358dfd258b36e263519a90fe4718b7160bf522da5ff870669068680c1"
+      },
+      "boxes": [
+        [
+          0.4562285542488098,
+          0.29560649394989014,
+          0.5692339539527893,
+          0.4827192425727844
+        ],
+        [
+          0.4746640622615814,
+          0.2962707281112671,
+          0.5906113982200623,
+          0.48225194215774536
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_10_0_160_163_positive_candidate",
+      "scene": "R01",
+      "sequence": "10",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "160",
+      "detection_b": "163",
+      "sample_a": "53",
+      "sample_b": "54",
+      "frame_a": "212",
+      "frame_b": "216",
+      "minimum_confidence": 0.5792756080627441,
+      "iou": 0.8073617815971375,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R01/training/frames/10/212.jpg": "2bb2020cc0fae320cbcedb999f83d076d8960d6261885113f98672283c94c753",
+        "R01/training/frames/10/216.jpg": "75330eec33344ea2e5fe0b664b55ae7df2e4a287eefa7ef706f31a1bbc39033b"
+      },
+      "boxes": [
+        [
+          0.883966326713562,
+          0.2493320107460022,
+          1.0,
+          0.4496682286262512
+        ],
+        [
+          0.9039971828460693,
+          0.25403064489364624,
+          1.0,
+          0.44952207803726196
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_24_0_100_103_positive_candidate",
+      "scene": "R01",
+      "sequence": "24",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "100",
+      "detection_b": "103",
+      "sample_a": "33",
+      "sample_b": "34",
+      "frame_a": "132",
+      "frame_b": "136",
+      "minimum_confidence": 0.859786868095398,
+      "iou": 0.7003633975982666,
+      "selection": "iou",
+      "image_sha256": {
+        "R01/training/frames/24/132.jpg": "c3afa364c468022febe7381c9e0d2524d36cce4a559b8686f16f41aac30a9525",
+        "R01/training/frames/24/136.jpg": "3346394200295ebf093d82e50c17982cb355977f278d5a9f8f6dec9cd0d63c4e"
+      },
+      "boxes": [
+        [
+          0.5065873265266418,
+          0.29082655906677246,
+          0.6297004818916321,
+          0.47695040702819824
+        ],
+        [
+          0.5264282822608948,
+          0.29516348242759705,
+          0.6504238247871399,
+          0.4779495894908905
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_05_1_124_127_positive_candidate",
+      "scene": "R01",
+      "sequence": "05",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "124",
+      "detection_b": "127",
+      "sample_a": "40",
+      "sample_b": "41",
+      "frame_a": "160",
+      "frame_b": "164",
+      "minimum_confidence": 0.5000879764556885,
+      "iou": 0.9650341868400574,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R01/training/frames/05/160.jpg": "4f104cc8f2e48612516d52af49807b49253f88b336958fe72e94eb3bf114d82e",
+        "R01/training/frames/05/164.jpg": "c194afc912f2aa6aae276b5f7b584390a98bb2ebefd5d4d3a669d52a82a49b37"
+      },
+      "boxes": [
+        [
+          1.8775463104248047e-05,
+          0.2539904713630676,
+          1.0,
+          0.6177851557731628
+        ],
+        [
+          0.0003688335418701172,
+          0.2534574568271637,
+          1.0,
+          0.6057021617889404
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_28_1_28_31_positive_candidate",
+      "scene": "R01",
+      "sequence": "28",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "28",
+      "detection_b": "31",
+      "sample_a": "9",
+      "sample_b": "10",
+      "frame_a": "36",
+      "frame_b": "40",
+      "minimum_confidence": 0.6608220338821411,
+      "iou": 0.8505385518074036,
+      "selection": "iou",
+      "image_sha256": {
+        "R01/training/frames/28/036.jpg": "c85d5429277f4811742f91ece60306c19019af4efa60d22f68ee01934c07bf70",
+        "R01/training/frames/28/040.jpg": "d2025fedb174aeff9a4a75a9b06b344755df89f9b186548ebaa046be03b9e786"
+      },
+      "boxes": [
+        [
+          0.0007596015930175781,
+          0.18229132890701294,
+          1.0,
+          0.6262184381484985
+        ],
+        [
+          0.0002924799919128418,
+          0.2477654218673706,
+          1.0,
+          0.6254927515983582
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_04_1_151_154_positive_candidate",
+      "scene": "R01",
+      "sequence": "04",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "151",
+      "detection_b": "154",
+      "sample_a": "50",
+      "sample_b": "51",
+      "frame_a": "200",
+      "frame_b": "204",
+      "minimum_confidence": 0.5050545334815979,
+      "iou": 0.9700144529342651,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R01/training/frames/04/200.jpg": "2fe4e916c2bb260df857e01d2a69b948cbaafeb0c883947a84eda3908252ba2e",
+        "R01/training/frames/04/204.jpg": "e8948b7d2a6921e46ada30a4f8ad63aa031b7cc9f5409096e4d380dc27e8c6e1"
+      },
+      "boxes": [
+        [
+          0.00027054548263549805,
+          0.24622026085853577,
+          1.0,
+          0.6242016553878784
+        ],
+        [
+          0.0005475878715515137,
+          0.2537683844566345,
+          1.0,
+          0.6279997825622559
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_18_1_15_18_positive_candidate",
+      "scene": "R01",
+      "sequence": "18",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "15",
+      "detection_b": "18",
+      "sample_a": "4",
+      "sample_b": "5",
+      "frame_a": "16",
+      "frame_b": "20",
+      "minimum_confidence": 0.6115007400512695,
+      "iou": 0.8404029011726379,
+      "selection": "iou",
+      "image_sha256": {
+        "R01/training/frames/18/016.jpg": "bd3ff4b6b944a1755b2ae3899fcf753a8671e1e74666e8f0411fdb94b814c824",
+        "R01/training/frames/18/020.jpg": "acc2e19f0c437722328eca140cdffa9f77db4f9ec0b0ab70593f7f89b186aecb"
+      },
+      "boxes": [
+        [
+          0.0010561943054199219,
+          0.17657418549060822,
+          1.0,
+          0.6278142333030701
+        ],
+        [
+          0.0,
+          0.2465168982744217,
+          0.9999913573265076,
+          0.6298726797103882
+        ]
+      ],
+      "board": "positive_00.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_33_2_161_164_positive_candidate",
+      "scene": "R01",
+      "sequence": "33",
+      "partition": "representation_train",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "161",
+      "detection_b": "164",
+      "sample_a": "53",
+      "sample_b": "54",
+      "frame_a": "212",
+      "frame_b": "216",
+      "minimum_confidence": 0.8618305921554565,
+      "iou": 0.8657405376434326,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R01/training/frames/33/212.jpg": "53291bdcc2349e3927e3e8dd535fb3f97a034778d9abe0ae486dcec353ad264a",
+        "R01/training/frames/33/216.jpg": "764d7ad596c4dfad7e428bda40ff64a614db264d85d96e90d57792e678b84a72"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.630122184753418,
+          0.9989357590675354,
+          0.7630810737609863
+        ],
+        [
+          0.0,
+          0.6361478567123413,
+          0.9980127811431885,
+          0.7766172885894775
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_30_2_77_80_positive_candidate",
+      "scene": "R01",
+      "sequence": "30",
+      "partition": "representation_train",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "77",
+      "detection_b": "80",
+      "sample_a": "25",
+      "sample_b": "26",
+      "frame_a": "100",
+      "frame_b": "104",
+      "minimum_confidence": 0.8896815180778503,
+      "iou": 0.7503197193145752,
+      "selection": "iou",
+      "image_sha256": {
+        "R01/training/frames/30/100.jpg": "cdf44fe8783b347ed8d5e091d9b17f63b0e2c88c8333cf51751d18159249da35",
+        "R01/training/frames/30/104.jpg": "4b551433c2655e121407063539f12952121f9bcfa7091f7bd8449982b9ed7899"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.6225368976593018,
+          0.9999281167984009,
+          0.766562819480896
+        ],
+        [
+          0.0006291866302490234,
+          0.6308253407478333,
+          1.0,
+          0.8033400177955627
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_18_2_105_108_positive_candidate",
+      "scene": "R01",
+      "sequence": "18",
+      "partition": "representation_validation",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "105",
+      "detection_b": "108",
+      "sample_a": "33",
+      "sample_b": "34",
+      "frame_a": "132",
+      "frame_b": "136",
+      "minimum_confidence": 0.8743133544921875,
+      "iou": 0.93435138463974,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R01/training/frames/18/132.jpg": "bfef64f8a809943834bb5104c522208744d687116457517d398dbc7af76de018",
+        "R01/training/frames/18/136.jpg": "64be13137214702a027e791b662be70ab045b700946a1e4994ceede546f172a6"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.624056339263916,
+          0.9995601177215576,
+          0.7918791770935059
+        ],
+        [
+          0.0,
+          0.6270420551300049,
+          0.9978857040405273,
+          0.7841106653213501
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R01_24_2_15_18_positive_candidate",
+      "scene": "R01",
+      "sequence": "24",
+      "partition": "representation_validation",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "15",
+      "detection_b": "18",
+      "sample_a": "4",
+      "sample_b": "5",
+      "frame_a": "16",
+      "frame_b": "20",
+      "minimum_confidence": 0.8815580010414124,
+      "iou": 0.7841443419456482,
+      "selection": "iou",
+      "image_sha256": {
+        "R01/training/frames/24/016.jpg": "88b44769c9bcc4b5d2c0f888bd21e1acedc4b3a8f8a1081e75a1453b2ad0126c",
+        "R01/training/frames/24/020.jpg": "624f5f4bb3a0885d76f668ecde9f05904fd74616dd6ec877afa825adc685fdef"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.6217753887176514,
+          0.9990643262863159,
+          0.7892608642578125
+        ],
+        [
+          1.6093254089355469e-06,
+          0.6162280440330505,
+          1.0,
+          0.7575621008872986
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_03_0_12_15_positive_candidate",
+      "scene": "R02",
+      "sequence": "03",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "12",
+      "detection_b": "15",
+      "sample_a": "5",
+      "sample_b": "6",
+      "frame_a": "20",
+      "frame_b": "24",
+      "minimum_confidence": 0.7031795382499695,
+      "iou": 0.9944524765014648,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R02/training/frames/03/020.jpg": "ede18d3b5202b0febf682e33e4dc0fa337504c69206854e5ad3227b5471d0e59",
+        "R02/training/frames/03/024.jpg": "e389d322e9297f1f5bba35288d423de8d0de7c5fb4b8d3df23190f2b9c2bffa9"
+      },
+      "boxes": [
+        [
+          0.3004598617553711,
+          0.27481940388679504,
+          0.7663282155990601,
+          0.7221957445144653
+        ],
+        [
+          0.29966455698013306,
+          0.2745290696620941,
+          0.7674759030342102,
+          0.7218579053878784
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_25_0_12_15_positive_candidate",
+      "scene": "R02",
+      "sequence": "25",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "12",
+      "detection_b": "15",
+      "sample_a": "5",
+      "sample_b": "6",
+      "frame_a": "20",
+      "frame_b": "24",
+      "minimum_confidence": 0.903586208820343,
+      "iou": 0.9521373510360718,
+      "selection": "iou",
+      "image_sha256": {
+        "R02/training/frames/25/020.jpg": "9eca245cad0a7f999a404e7a793d125cdc8432ab075bde4074fc0bfe4cd77b2b",
+        "R02/training/frames/25/024.jpg": "b345f6f650dc9512e962f6f53e001357354c540025f017443c8502d462a1c027"
+      },
+      "boxes": [
+        [
+          0.3072216510772705,
+          0.35288378596305847,
+          0.739983081817627,
+          0.8187108039855957
+        ],
+        [
+          0.31648463010787964,
+          0.36386746168136597,
+          0.7404505610466003,
+          0.8175767064094543
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_12_0_225_228_positive_candidate",
+      "scene": "R02",
+      "sequence": "12",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "225",
+      "detection_b": "228",
+      "sample_a": "78",
+      "sample_b": "79",
+      "frame_a": "312",
+      "frame_b": "316",
+      "minimum_confidence": 0.8814591765403748,
+      "iou": 0.9937208294868469,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R02/training/frames/12/312.jpg": "335253c5dbbc6c37269e377fa756778099a4d91fb094a9e18072d8b9d89da12c",
+        "R02/training/frames/12/316.jpg": "9eafbac4df9119b5b9e3b6125792a4eebf1b8fd2702c940d19a4160f67b05d41"
+      },
+      "boxes": [
+        [
+          0.2837222218513489,
+          0.12589015066623688,
+          0.8145986199378967,
+          0.5664478540420532
+        ],
+        [
+          0.28246772289276123,
+          0.1266074925661087,
+          0.8156400918960571,
+          0.5666068196296692
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_12_0_356_357_positive_candidate",
+      "scene": "R02",
+      "sequence": "12",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "356",
+      "detection_b": "357",
+      "sample_a": "142",
+      "sample_b": "143",
+      "frame_a": "568",
+      "frame_b": "572",
+      "minimum_confidence": 0.9371927380561829,
+      "iou": 0.9612223505973816,
+      "selection": "iou",
+      "image_sha256": {
+        "R02/training/frames/12/568.jpg": "de252c2eef5850b4655b7faa315eb5ead7288b8ddc8b0715d24e49f7f576381a",
+        "R02/training/frames/12/572.jpg": "4d0bcd4fbfe06c1e384bf033c6854057888a8e9f9c402d2ffd732234e93f82a5"
+      },
+      "boxes": [
+        [
+          0.31361114978790283,
+          0.34489625692367554,
+          0.7472083568572998,
+          0.7995203137397766
+        ],
+        [
+          0.3149629235267639,
+          0.3520764708518982,
+          0.7447318434715271,
+          0.8063412308692932
+        ]
+      ],
+      "board": "positive_01.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_07_1_347_349_positive_candidate",
+      "scene": "R02",
+      "sequence": "07",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "347",
+      "detection_b": "349",
+      "sample_a": "138",
+      "sample_b": "139",
+      "frame_a": "552",
+      "frame_b": "556",
+      "minimum_confidence": 0.5012238025665283,
+      "iou": 0.908309817314148,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R02/training/frames/07/552.jpg": "e63b362960745058de6f9f191fe584870f4ff6b2f018e758e07dc62a1fc90cab",
+        "R02/training/frames/07/556.jpg": "de79b5890bc5cd16a8fec52d2dcbff3fef6037846d0a36a4fc231d6b82155cb7"
+      },
+      "boxes": [
+        [
+          0.3821007013320923,
+          0.7520397305488586,
+          0.667751669883728,
+          0.8337888121604919
+        ],
+        [
+          0.38293081521987915,
+          0.7571055889129639,
+          0.6646386981010437,
+          0.8323984146118164
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_15_1_260_262_positive_candidate",
+      "scene": "R02",
+      "sequence": "15",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "260",
+      "detection_b": "262",
+      "sample_a": "94",
+      "sample_b": "95",
+      "frame_a": "376",
+      "frame_b": "380",
+      "minimum_confidence": 0.5679768323898315,
+      "iou": 0.7903127670288086,
+      "selection": "iou",
+      "image_sha256": {
+        "R02/training/frames/15/376.jpg": "c08b01df5dac498a3d05d89163ee2b41119e07851ccfa453f79f343368d77ebf",
+        "R02/training/frames/15/380.jpg": "8ad9041c88bf4449039fbdef602554e2c82f3323506a2316e100d4638565a4de"
+      },
+      "boxes": [
+        [
+          0.3976272642612457,
+          0.5619539022445679,
+          0.7391678094863892,
+          0.8341430425643921
+        ],
+        [
+          0.40093135833740234,
+          0.5752776861190796,
+          0.691756010055542,
+          0.8279052972793579
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_12_1_3_5_positive_candidate",
+      "scene": "R02",
+      "sequence": "12",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "3",
+      "detection_b": "5",
+      "sample_a": "1",
+      "sample_b": "2",
+      "frame_a": "4",
+      "frame_b": "8",
+      "minimum_confidence": 0.5004197359085083,
+      "iou": 0.9942586421966553,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R02/training/frames/12/004.jpg": "cfb827c4c7518defe62c3b8ca9a79fb47cb3a4ad853d74505c02a7f80388c388",
+        "R02/training/frames/12/008.jpg": "ccb2261c294827922a569975c89a332b75e4e8748fc038b00add56bff00548d5"
+      },
+      "boxes": [
+        [
+          0.3765735626220703,
+          0.7978793382644653,
+          0.6700642108917236,
+          0.935448408126831
+        ],
+        [
+          0.37594082951545715,
+          0.7979092001914978,
+          0.6702837944030762,
+          0.9350845217704773
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_14_1_252_254_positive_candidate",
+      "scene": "R02",
+      "sequence": "14",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "252",
+      "detection_b": "254",
+      "sample_a": "90",
+      "sample_b": "91",
+      "frame_a": "360",
+      "frame_b": "364",
+      "minimum_confidence": 0.617843508720398,
+      "iou": 0.7926178574562073,
+      "selection": "iou",
+      "image_sha256": {
+        "R02/training/frames/14/360.jpg": "423f3a6d714d1e9810fe8e6f214bffa648ea8f33274407325bbcd41e86cdc072",
+        "R02/training/frames/14/364.jpg": "a23b1909537abf851e46f76132ba79d79e3d2761a0ff1bdd7febb7096b6f290f"
+      },
+      "boxes": [
+        [
+          0.3975709080696106,
+          0.5734382271766663,
+          0.7373515963554382,
+          0.8354268670082092
+        ],
+        [
+          0.40149393677711487,
+          0.584479570388794,
+          0.6891368627548218,
+          0.8297760486602783
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_02_2_16_18_positive_candidate",
+      "scene": "R02",
+      "sequence": "02",
+      "partition": "representation_train",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "16",
+      "detection_b": "18",
+      "sample_a": "5",
+      "sample_b": "6",
+      "frame_a": "20",
+      "frame_b": "24",
+      "minimum_confidence": 0.868156373500824,
+      "iou": 0.8217601180076599,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R02/training/frames/02/020.jpg": "77e4a05e16c88430e178c1226adaa1384f08cbf22f7513c8fd4cd443a4d650cb",
+        "R02/training/frames/02/024.jpg": "493bbf2f7151c536d58fb5f62c6eae8e3887809df2eb2b555ca6be8264a7dc76"
+      },
+      "boxes": [
+        [
+          0.4057918190956116,
+          0.46022549271583557,
+          0.6788217425346375,
+          0.6752517223358154
+        ],
+        [
+          0.40681779384613037,
+          0.4820164442062378,
+          0.6726300716400146,
+          0.6895349025726318
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_28_2_223_226_positive_candidate",
+      "scene": "R02",
+      "sequence": "28",
+      "partition": "representation_train",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "223",
+      "detection_b": "226",
+      "sample_a": "76",
+      "sample_b": "77",
+      "frame_a": "304",
+      "frame_b": "308",
+      "minimum_confidence": 0.9219841957092285,
+      "iou": 0.7184431552886963,
+      "selection": "iou",
+      "image_sha256": {
+        "R02/training/frames/28/304.jpg": "d6df6b9ab6e222cf204a626de4f98fa9fb371ede77da9c7fca7534c763ea407c",
+        "R02/training/frames/28/308.jpg": "54728e021d1b0f8db7c894915763dbbeedf01d244c93fbd3563f93d41e0d00c1"
+      },
+      "boxes": [
+        [
+          0.39832210540771484,
+          0.19117295742034912,
+          0.725975751876831,
+          0.411135733127594
+        ],
+        [
+          0.4050910472869873,
+          0.151108518242836,
+          0.7343002557754517,
+          0.3856935501098633
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_29_2_14_17_positive_candidate",
+      "scene": "R02",
+      "sequence": "29",
+      "partition": "representation_validation",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "14",
+      "detection_b": "17",
+      "sample_a": "4",
+      "sample_b": "5",
+      "frame_a": "16",
+      "frame_b": "20",
+      "minimum_confidence": 0.864902138710022,
+      "iou": 0.9593597650527954,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R02/training/frames/29/016.jpg": "16a9809824baccf7df78f3e5d8166c7a32d4782b6218ca28d52f342f2a2e693e",
+        "R02/training/frames/29/020.jpg": "1e2a69ac788115d4e4b3d94424780dfcc8fb6e75bb158bf16a85e9a50798515b"
+      },
+      "boxes": [
+        [
+          0.39172327518463135,
+          0.47803208231925964,
+          0.6642314195632935,
+          0.693602442741394
+        ],
+        [
+          0.39045172929763794,
+          0.48415184020996094,
+          0.6645881533622742,
+          0.6950949430465698
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R02_04_2_225_228_positive_candidate",
+      "scene": "R02",
+      "sequence": "04",
+      "partition": "representation_validation",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "225",
+      "detection_b": "228",
+      "sample_a": "77",
+      "sample_b": "78",
+      "frame_a": "308",
+      "frame_b": "312",
+      "minimum_confidence": 0.9304590821266174,
+      "iou": 0.7857621312141418,
+      "selection": "iou",
+      "image_sha256": {
+        "R02/training/frames/04/308.jpg": "9e12d0497862a2033ea2d95e0f74c99a9d7780ee5fe6ac79616677c7bc61f5ff",
+        "R02/training/frames/04/312.jpg": "181997dbd4b707c26d7195ffd860be38bfaf37f0460c2d7d410133d2025a07ea"
+      },
+      "boxes": [
+        [
+          0.4025733470916748,
+          0.1911546289920807,
+          0.7298740148544312,
+          0.41508975625038147
+        ],
+        [
+          0.4151642322540283,
+          0.16753825545310974,
+          0.7420599460601807,
+          0.39977702498435974
+        ]
+      ],
+      "board": "positive_02.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_14_0_303_306_positive_candidate",
+      "scene": "R03",
+      "sequence": "14",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "303",
+      "detection_b": "306",
+      "sample_a": "145",
+      "sample_b": "146",
+      "frame_a": "580",
+      "frame_b": "584",
+      "minimum_confidence": 0.5039502382278442,
+      "iou": 0.8151220083236694,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R03/training/frames/14/580.jpg": "471717ad9a2b6061f4f516064ba18475f6737e0e9a87118245cd885e0350bbd5",
+        "R03/training/frames/14/584.jpg": "32755ebafba47416009968b8979f39debea2a1089638d024489f35e5c286c676"
+      },
+      "boxes": [
+        [
+          0.5376421809196472,
+          0.0014550387859344482,
+          0.8562843203544617,
+          0.4045257568359375
+        ],
+        [
+          0.5611927509307861,
+          0.0014467090368270874,
+          0.8876054286956787,
+          0.3898370862007141
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_14_0_194_196_positive_candidate",
+      "scene": "R03",
+      "sequence": "14",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "194",
+      "detection_b": "196",
+      "sample_a": "97",
+      "sample_b": "98",
+      "frame_a": "388",
+      "frame_b": "392",
+      "minimum_confidence": 0.8969786763191223,
+      "iou": 0.7008202075958252,
+      "selection": "iou",
+      "image_sha256": {
+        "R03/training/frames/14/388.jpg": "0f8b6aab746c6526d9cd61170010104cf385dfbac6c0bcf2d1a798a2a0e61152",
+        "R03/training/frames/14/392.jpg": "48a43042d8417d084044d942456203199949949f6ab6cef794dd8e15a27f48cd"
+      },
+      "boxes": [
+        [
+          0.18416182696819305,
+          0.00018614530563354492,
+          0.6097049713134766,
+          0.5610227584838867
+        ],
+        [
+          0.26223069429397583,
+          0.0,
+          0.6528804898262024,
+          0.5276148319244385
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_16_0_114_116_positive_candidate",
+      "scene": "R03",
+      "sequence": "16",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "114",
+      "detection_b": "116",
+      "sample_a": "57",
+      "sample_b": "58",
+      "frame_a": "228",
+      "frame_b": "232",
+      "minimum_confidence": 0.5018906593322754,
+      "iou": 0.9159992337226868,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R03/training/frames/16/228.jpg": "60d35545956a247f2cb0a5dec8012e3a67bcf7ba21d6179c98a0f8ee1b6d40c2",
+        "R03/training/frames/16/232.jpg": "aa89c07534456392d38e27efcaf0b05e497116c36e7f42d7f416922f9cd2fe4a"
+      },
+      "boxes": [
+        [
+          0.2681428790092468,
+          0.0,
+          0.6463086605072021,
+          0.52935391664505
+        ],
+        [
+          0.25328829884529114,
+          0.0,
+          0.6330714225769043,
+          0.5368438363075256
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_16_0_208_210_positive_candidate",
+      "scene": "R03",
+      "sequence": "16",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "208",
+      "detection_b": "210",
+      "sample_a": "104",
+      "sample_b": "105",
+      "frame_a": "416",
+      "frame_b": "420",
+      "minimum_confidence": 0.8258122205734253,
+      "iou": 0.7018768191337585,
+      "selection": "iou",
+      "image_sha256": {
+        "R03/training/frames/16/416.jpg": "7f738c41547010e102286181649205d52e2c4c28b007c39a502dba9d4dd2d1e8",
+        "R03/training/frames/16/420.jpg": "20c2cfc72802844d12e3aa1cc2a57c8d427b908d3c895292404c8201a8d6e1fc"
+      },
+      "boxes": [
+        [
+          0.16574464738368988,
+          0.0,
+          0.6115346550941467,
+          0.5510408878326416
+        ],
+        [
+          0.24984478950500488,
+          0.0,
+          0.6543118357658386,
+          0.5198460221290588
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_04_1_303_306_positive_candidate",
+      "scene": "R03",
+      "sequence": "04",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "303",
+      "detection_b": "306",
+      "sample_a": "150",
+      "sample_b": "151",
+      "frame_a": "600",
+      "frame_b": "604",
+      "minimum_confidence": 0.5004057884216309,
+      "iou": 0.7593051791191101,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R03/training/frames/04/600.jpg": "01da59c9d143ca3a75301366f154a5402d91b39c1945a197b247fc3f90d359a2",
+        "R03/training/frames/04/604.jpg": "75714de1c56403637404589bb461ddf09d8c7cb7a246e2fd9efcb20976c9c15b"
+      },
+      "boxes": [
+        [
+          0.36101406812667847,
+          0.18764160573482513,
+          0.5951969623565674,
+          0.552171528339386
+        ],
+        [
+          0.4117034673690796,
+          0.1761176437139511,
+          0.5964412689208984,
+          0.5529457926750183
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_06_1_237_239_positive_candidate",
+      "scene": "R03",
+      "sequence": "06",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "237",
+      "detection_b": "239",
+      "sample_a": "118",
+      "sample_b": "119",
+      "frame_a": "472",
+      "frame_b": "476",
+      "minimum_confidence": 0.8565884232521057,
+      "iou": 0.7001018524169922,
+      "selection": "iou",
+      "image_sha256": {
+        "R03/training/frames/06/472.jpg": "ef70aa9881d1dc9ca81d01d2df29d6781accf84a98e403d7bbfebb0f825697bf",
+        "R03/training/frames/06/476.jpg": "8d69b9bdf00751652ce9b873f652b82e683a8ac1b8c7268a8c8cc4771f409691"
+      },
+      "boxes": [
+        [
+          0.37840303778648376,
+          0.014030784368515015,
+          0.5634734630584717,
+          0.3005675673484802
+        ],
+        [
+          0.4008163511753082,
+          0.024357378482818604,
+          0.5933935046195984,
+          0.2863433361053467
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_17_1_337_339_positive_candidate",
+      "scene": "R03",
+      "sequence": "17",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "337",
+      "detection_b": "339",
+      "sample_a": "167",
+      "sample_b": "168",
+      "frame_a": "668",
+      "frame_b": "672",
+      "minimum_confidence": 0.5299338102340698,
+      "iou": 0.988673985004425,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R03/training/frames/17/668.jpg": "7db5eb149b93f21171aed5af0617ac13a9299318c4ee8419a4fc521f60e3e667",
+        "R03/training/frames/17/672.jpg": "716acf4135c9086683b7678f401e87ddbc0c88586abc3afa24ac75d6c45951c3"
+      },
+      "boxes": [
+        [
+          0.43041884899139404,
+          0.2596731185913086,
+          0.5913275480270386,
+          0.48421305418014526
+        ],
+        [
+          0.4301465153694153,
+          0.259020060300827,
+          0.5918580889701843,
+          0.4850046932697296
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R03_19_1_221_223_positive_candidate",
+      "scene": "R03",
+      "sequence": "19",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "221",
+      "detection_b": "223",
+      "sample_a": "110",
+      "sample_b": "111",
+      "frame_a": "440",
+      "frame_b": "444",
+      "minimum_confidence": 0.9196499586105347,
+      "iou": 0.7015080451965332,
+      "selection": "iou",
+      "image_sha256": {
+        "R03/training/frames/19/440.jpg": "c0412be8e6c3332f8d7fd7a405d16aa8e6d20e8a20fec17be58c7dae404e78a4",
+        "R03/training/frames/19/444.jpg": "1e86e27460bf3a5ab2548c825fdc3dd5caaea28713a9ee5987ce732b3dbc3392"
+      },
+      "boxes": [
+        [
+          0.3740895986557007,
+          0.02654491364955902,
+          0.5649346709251404,
+          0.28066420555114746
+        ],
+        [
+          0.40425729751586914,
+          0.02295079082250595,
+          0.5898663401603699,
+          0.26741281151771545
+        ]
+      ],
+      "board": "positive_03.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R04_20_0_247_251_positive_candidate",
+      "scene": "R04",
+      "sequence": "20",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "247",
+      "detection_b": "251",
+      "sample_a": "79",
+      "sample_b": "80",
+      "frame_a": "316",
+      "frame_b": "320",
+      "minimum_confidence": 0.5009515881538391,
+      "iou": 0.9966346025466919,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R04/training/frames/20/316.jpg": "f8d123bdd0423344d5b3292e009fe238b4603d1fe2027f7bc617c0f1e753f864",
+        "R04/training/frames/20/320.jpg": "3d646cc595ced6efcb94218d79e35cec5d71d57a25c44024a436a03296db4189"
+      },
+      "boxes": [
+        [
+          0.37958991527557373,
+          0.6388063430786133,
+          0.7057089805603027,
+          1.0
+        ],
+        [
+          0.3797588050365448,
+          0.6392652988433838,
+          0.7051938772201538,
+          1.0
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Material box may aggregate cut pieces or change physical coverage; exclude ALL R04 material automatic positives.",
+      "used_role": false
+    },
+    {
+      "id": "R04_22_0_70_74_positive_candidate",
+      "scene": "R04",
+      "sequence": "22",
+      "partition": "representation_train",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "70",
+      "detection_b": "74",
+      "sample_a": "25",
+      "sample_b": "26",
+      "frame_a": "100",
+      "frame_b": "104",
+      "minimum_confidence": 0.9654650092124939,
+      "iou": 0.7001218795776367,
+      "selection": "iou",
+      "image_sha256": {
+        "R04/training/frames/22/100.jpg": "572989116f14bcd21771da737b959d91dd661b7259f4c38f0e2d89da268a821b",
+        "R04/training/frames/22/104.jpg": "aaf2621b1489f02450884252b91e3f4f41664dca644c500c3e1ae47325c99cd0"
+      },
+      "boxes": [
+        [
+          0.3248271346092224,
+          0.2055891752243042,
+          0.6614795923233032,
+          0.5638501644134521
+        ],
+        [
+          0.35350751876831055,
+          0.28444063663482666,
+          0.6599609851837158,
+          0.5599842667579651
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Material box may aggregate cut pieces or change physical coverage; exclude ALL R04 material automatic positives.",
+      "used_role": false
+    },
+    {
+      "id": "R04_17_0_250_253_positive_candidate",
+      "scene": "R04",
+      "sequence": "17",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "250",
+      "detection_b": "253",
+      "sample_a": "72",
+      "sample_b": "73",
+      "frame_a": "288",
+      "frame_b": "292",
+      "minimum_confidence": 0.5020160675048828,
+      "iou": 0.9959831833839417,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R04/training/frames/17/288.jpg": "2b0bb74e74a6590ed20f71874f718974a64eb1f47acb19956e225a893bdaec46",
+        "R04/training/frames/17/292.jpg": "06a424b5d970ce9c1b4b48221215960f8b694a9090f5ca7689c4c8baeac2cbfd"
+      },
+      "boxes": [
+        [
+          0.41018393635749817,
+          0.5949979424476624,
+          0.7133541107177734,
+          1.0
+        ],
+        [
+          0.4097083806991577,
+          0.5950331687927246,
+          0.7126362323760986,
+          1.0
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Material box may aggregate cut pieces or change physical coverage; exclude ALL R04 material automatic positives.",
+      "used_role": false
+    },
+    {
+      "id": "R04_11_0_113_116_positive_candidate",
+      "scene": "R04",
+      "sequence": "11",
+      "partition": "representation_validation",
+      "role": "0",
+      "kind": "positive_candidate",
+      "detection_a": "113",
+      "detection_b": "116",
+      "sample_a": "37",
+      "sample_b": "38",
+      "frame_a": "148",
+      "frame_b": "152",
+      "minimum_confidence": 0.5895024538040161,
+      "iou": 0.7074228525161743,
+      "selection": "iou",
+      "image_sha256": {
+        "R04/training/frames/11/148.jpg": "64e5b18f8295210354a4ea1a40b9bbc01c11da30a020afe53b9c0a8cf7c8d077",
+        "R04/training/frames/11/152.jpg": "8bfb533b6855fd65f21bae5a00f6a5750f9a0f8d96bd48439f84d9920ec1d4d4"
+      },
+      "boxes": [
+        [
+          0.29712533950805664,
+          0.04543003439903259,
+          0.6702753305435181,
+          0.7745189666748047
+        ],
+        [
+          0.30092954635620117,
+          0.05297401547431946,
+          0.6705330014228821,
+          0.5743178129196167
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Material box may aggregate cut pieces or change physical coverage; exclude ALL R04 material automatic positives.",
+      "used_role": false
+    },
+    {
+      "id": "R04_06_1_67_70_positive_candidate",
+      "scene": "R04",
+      "sequence": "06",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "67",
+      "detection_b": "70",
+      "sample_a": "23",
+      "sample_b": "24",
+      "frame_a": "92",
+      "frame_b": "96",
+      "minimum_confidence": 0.501308798789978,
+      "iou": 0.9895139932632446,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R04/training/frames/06/092.jpg": "c28722fc3a4d4a7dc98764f18d7f4f3edcc03f6f6f0acb429864858f24540c38",
+        "R04/training/frames/06/096.jpg": "4596ed9a636aa5de5c622d828e27a6c1172998830f541c53fae26419f5c3ccc4"
+      },
+      "boxes": [
+        [
+          0.5740718841552734,
+          0.001230686902999878,
+          0.7951145172119141,
+          0.371918261051178
+        ],
+        [
+          0.5725734233856201,
+          0.0010630041360855103,
+          0.7957515716552734,
+          0.37174081802368164
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R04_03_1_331_335_positive_candidate",
+      "scene": "R04",
+      "sequence": "03",
+      "partition": "representation_train",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "331",
+      "detection_b": "335",
+      "sample_a": "96",
+      "sample_b": "97",
+      "frame_a": "384",
+      "frame_b": "388",
+      "minimum_confidence": 0.5924634337425232,
+      "iou": 0.8011531233787537,
+      "selection": "iou",
+      "image_sha256": {
+        "R04/training/frames/03/384.jpg": "f9010d9c4bbd4702743428d9d49c11c065ffc2a6557e17e657e753ce70c421f8",
+        "R04/training/frames/03/388.jpg": "c4ee94dbf39f793eaa214b4cc1d41dec9a6492168fd7faec28a04192a62bf204"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.09586742520332336,
+          0.7915160059928894,
+          0.38456568121910095
+        ],
+        [
+          0.0,
+          0.13252142071723938,
+          0.7932388782501221,
+          0.4098655879497528
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R04_05_1_83_86_positive_candidate",
+      "scene": "R04",
+      "sequence": "05",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "83",
+      "detection_b": "86",
+      "sample_a": "27",
+      "sample_b": "28",
+      "frame_a": "108",
+      "frame_b": "112",
+      "minimum_confidence": 0.5045315623283386,
+      "iou": 0.8825133442878723,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R04/training/frames/05/108.jpg": "d0a24e4e78f59eaa1e01ec0e938eb622ed77f65fee3bd407574ca5278a7d0e76",
+        "R04/training/frames/05/112.jpg": "00bf35527f156bd8d5aa9abe17591d618e50582bf9f6adc079b6dc0252249a51"
+      },
+      "boxes": [
+        [
+          0.5500624775886536,
+          0.0011716634035110474,
+          0.796735942363739,
+          0.3683066964149475
+        ],
+        [
+          0.5217576622962952,
+          0.0008244067430496216,
+          0.7954874634742737,
+          0.3641023635864258
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R04_01_1_74_77_positive_candidate",
+      "scene": "R04",
+      "sequence": "01",
+      "partition": "representation_validation",
+      "role": "1",
+      "kind": "positive_candidate",
+      "detection_a": "74",
+      "detection_b": "77",
+      "sample_a": "24",
+      "sample_b": "25",
+      "frame_a": "96",
+      "frame_b": "100",
+      "minimum_confidence": 0.5735877156257629,
+      "iou": 0.7464800477027893,
+      "selection": "iou",
+      "image_sha256": {
+        "R04/training/frames/01/096.jpg": "59d256d17b2d1c2c6d3735919016e1972f11f165526d0307524cf6524edd7601",
+        "R04/training/frames/01/100.jpg": "66d4fdbfb2a7f4d87a17f0b8c65b4633bad9565f361384488c7361617724e05f"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.08736549317836761,
+          0.8199145197868347,
+          0.38238126039505005
+        ],
+        [
+          0.0,
+          0.12633341550827026,
+          0.781722903251648,
+          0.4159592390060425
+        ]
+      ],
+      "board": "positive_04.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Same visible object/fixture or assembled cargo across adjacent samples; weak temporal consistency, not independent identity GT.",
+      "used_role": true
+    },
+    {
+      "id": "R04_19_2_309_312_positive_candidate",
+      "scene": "R04",
+      "sequence": "19",
+      "partition": "representation_train",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "309",
+      "detection_b": "312",
+      "sample_a": "93",
+      "sample_b": "94",
+      "frame_a": "372",
+      "frame_b": "376",
+      "minimum_confidence": 0.5000265836715698,
+      "iou": 0.9599836468696594,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R04/training/frames/19/372.jpg": "bdca6464fbccbdbabb92296b8c9e6cdfae665183d59b2bf0c0761c1233b6f383",
+        "R04/training/frames/19/376.jpg": "fd414b2601fc657a5a1ac5c6bc5b19cd33e65d9dfb329cd4192d26c058c30a13"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.0013332664966583252,
+          0.790989875793457,
+          0.9531474113464355
+        ],
+        [
+          0.0,
+          0.0,
+          0.792023777961731,
+          0.9901957511901855
+        ]
+      ],
+      "board": "positive_05.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Broad stationary apparatus crop includes changing contents; used only as weak region/fixture consistency.",
+      "used_role": true
+    },
+    {
+      "id": "R04_04_2_213_218_positive_candidate",
+      "scene": "R04",
+      "sequence": "04",
+      "partition": "representation_train",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "213",
+      "detection_b": "218",
+      "sample_a": "64",
+      "sample_b": "65",
+      "frame_a": "256",
+      "frame_b": "260",
+      "minimum_confidence": 0.5161324739456177,
+      "iou": 0.7026146054267883,
+      "selection": "iou",
+      "image_sha256": {
+        "R04/training/frames/04/256.jpg": "c03ba2727f19b7fccd9f394971a653db95866d267d86ed46f52c7644ae52d03f",
+        "R04/training/frames/04/260.jpg": "bd4234b7fbfa8567aec19375fc4fc31c5bb1c5be282cbd3d2f3a33a99b8ba170"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.25697141885757446,
+          0.7804998159408569,
+          0.9400307536125183
+        ],
+        [
+          0.0,
+          0.0005410909652709961,
+          0.7958022952079773,
+          0.9540150761604309
+        ]
+      ],
+      "board": "positive_05.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Broad stationary apparatus crop includes changing contents; used only as weak region/fixture consistency.",
+      "used_role": true
+    },
+    {
+      "id": "R04_01_2_72_75_positive_candidate",
+      "scene": "R04",
+      "sequence": "01",
+      "partition": "representation_validation",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "72",
+      "detection_b": "75",
+      "sample_a": "23",
+      "sample_b": "24",
+      "frame_a": "92",
+      "frame_b": "96",
+      "minimum_confidence": 0.5012786388397217,
+      "iou": 0.9872488975524902,
+      "selection": "minimum_confidence",
+      "image_sha256": {
+        "R04/training/frames/01/092.jpg": "dcc12334922e34985d86ce06742199b020c24ce9bba90c9e9ab3c27696914bcd",
+        "R04/training/frames/01/096.jpg": "59d256d17b2d1c2c6d3735919016e1972f11f165526d0307524cf6524edd7601"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.3310328423976898,
+          0.7741785049438477,
+          0.9922887086868286
+        ],
+        [
+          0.0,
+          0.335197776556015,
+          0.7709340453147888,
+          0.9938278198242188
+        ]
+      ],
+      "board": "positive_05.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Broad stationary apparatus crop includes changing contents; used only as weak region/fixture consistency.",
+      "used_role": true
+    },
+    {
+      "id": "R04_05_2_243_248_positive_candidate",
+      "scene": "R04",
+      "sequence": "05",
+      "partition": "representation_validation",
+      "role": "2",
+      "kind": "positive_candidate",
+      "detection_a": "243",
+      "detection_b": "248",
+      "sample_a": "70",
+      "sample_b": "71",
+      "frame_a": "280",
+      "frame_b": "284",
+      "minimum_confidence": 0.5321072936058044,
+      "iou": 0.705529510974884,
+      "selection": "iou",
+      "image_sha256": {
+        "R04/training/frames/05/280.jpg": "069a81d903a75d24b09e9fdd192999b24ad569fd94f677d9db7dfa662766a930",
+        "R04/training/frames/05/284.jpg": "cdd74a30a8c06159ec1004f04a4bff18576400b697012d98dc72732175702d9d"
+      },
+      "boxes": [
+        [
+          0.0,
+          0.2556847929954529,
+          0.7835225462913513,
+          0.9338759779930115
+        ],
+        [
+          0.0,
+          0.0011851489543914795,
+          0.793853759765625,
+          0.9499268531799316
+        ]
+      ],
+      "board": "positive_05.jpg",
+      "reviewer": "Codex visual inspection; not human identity ground truth",
+      "observation": "Broad stationary apparatus crop includes changing contents; used only as weak region/fixture consistency.",
+      "used_role": true
+    }
+  ]
+}

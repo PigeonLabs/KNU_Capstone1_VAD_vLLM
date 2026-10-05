@@ -1,0 +1,30 @@
+{
+  "pairs": [
+    {
+      "split": "training",
+      "scene": "R04",
+      "sequence": "05",
+      "branch": "learned",
+      "role": 0,
+      "previous_sample": 33,
+      "sample": 34,
+      "previous_detection": 100,
+      "detection": 104,
+      "track": 8,
+      "cosine": 0.9057135581970215,
+      "gate": 0.8608383536338806,
+      "center_distance": 0.19164082407951355,
+      "area_ratio": 0.7356560826301575,
+      "status": "plausible_same_cut_piece",
+      "image_sha256": {
+        "R04/training/frames/05/132.jpg": "e316a9c929cf68e150f9f73c031846b73f6da81c7706124b19fa3f81430ac9bc",
+        "R04/training/frames/05/136.jpg": "1a3fdca4d93e97a51801ae257ca5009585bbbaec9bf19058caed4d6fcbeb8928"
+      },
+      "board": "edges_00.jpg",
+      "reviewer": "Codex visual inspection, not human track identity GT",
+      "reason": "Adjacent observed frames show the cut piece falling from the blade to the floor; consistent single-piece appearance and motion. No definitive identity accuracy metric."
+    }
+  ],
+  "inspected_image_sha256": "cf61bd8b4ed828bab36f06a4254c85ad03da0fb3452d09787cf6c025565b15e6",
+  "decisions_change_protocol": false
+}

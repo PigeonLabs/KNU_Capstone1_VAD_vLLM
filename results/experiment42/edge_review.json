@@ -1,0 +1,80 @@
+{
+  "pairs": [
+    {
+      "split": "training",
+      "scene": "R04",
+      "sequence": "05",
+      "branch": "learned",
+      "role": 0,
+      "previous_sample": 33,
+      "sample": 34,
+      "previous_detection": 100,
+      "detection": 104,
+      "track": 8,
+      "cosine": 0.9057135581970215,
+      "gate": 0.8608383536338806,
+      "center_distance": 0.19164082407951355,
+      "area_ratio": 0.7356560826301575,
+      "status": "plausible_same_cut_piece",
+      "image_sha256": {
+        "R04/training/frames/05/132.jpg": "e316a9c929cf68e150f9f73c031846b73f6da81c7706124b19fa3f81430ac9bc",
+        "R04/training/frames/05/136.jpg": "1a3fdca4d93e97a51801ae257ca5009585bbbaec9bf19058caed4d6fcbeb8928"
+      },
+      "board": "edges_00.jpg",
+      "reviewer": "Codex visual inspection, not human identity GT",
+      "reason": "Single cut piece appears to fall from the blade to the floor between observed frames."
+    },
+    {
+      "split": "testing",
+      "scene": "R04",
+      "sequence": "11",
+      "branch": "learned",
+      "role": 0,
+      "previous_sample": 35,
+      "sample": 36,
+      "previous_detection": 101,
+      "detection": 105,
+      "track": 7,
+      "cosine": 0.8795222640037537,
+      "gate": 0.8608383536338806,
+      "center_distance": 0.23679718375205994,
+      "area_ratio": 0.8275420665740967,
+      "status": "plausible_same_cut_piece",
+      "image_sha256": {
+        "R04/testing/frames/11/140.jpg": "d604aa7c27427b5735389b6e248ff2b6651ac68b04f1595648e7c6afcb55979b",
+        "R04/testing/frames/11/144.jpg": "05d6d21c5adc39373cf40f68fad38535a29877b49ffabd91234e9bcdcd88021f"
+      },
+      "board": "edges_00.jpg",
+      "reviewer": "Codex visual inspection, not human identity GT",
+      "reason": "Single cut piece appears to fall from the blade to the floor between observed frames."
+    },
+    {
+      "split": "testing",
+      "scene": "R04",
+      "sequence": "17",
+      "branch": "learned",
+      "role": 0,
+      "previous_sample": 18,
+      "sample": 19,
+      "previous_detection": 52,
+      "detection": 55,
+      "track": 6,
+      "cosine": 0.9812331199645996,
+      "gate": 0.8608383536338806,
+      "center_distance": 0.11437730491161346,
+      "area_ratio": 0.3342837989330292,
+      "status": "identity_uncertain_border_truncation",
+      "image_sha256": {
+        "R04/testing/frames/17/072.jpg": "140f0796608dd7efd0ec287548a9639cd17044f9ab1c5571e64b17e85ca27ad0",
+        "R04/testing/frames/17/076.jpg": "426a8b3055bc441815dd4d508c30478e3dd11f4ff0ffe6fedf07c2f192cde76d"
+      },
+      "board": "edges_00.jpg",
+      "reviewer": "Codex visual inspection, not human identity GT",
+      "reason": "Small partly visible material enters along image border. Same-piece motion is plausible, but reliable physical identity cannot be established from these views."
+    }
+  ],
+  "board_sha256": "a171aef681825f679322f5df2c054baa36cb450302990aa862f5a1924a6f288b",
+  "all_added_edges_reviewed": true,
+  "protocol_changed_after_review": false,
+  "identity_accuracy_claimed": false
+}

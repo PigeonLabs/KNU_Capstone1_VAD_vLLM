@@ -1,0 +1,363 @@
+{
+  "normal_only": true,
+  "checkpoint_sha256": "65186da553bb7eb049e942b0f1fb53272f12f95355aaaad495d9dd933d3fbb82",
+  "branches": {
+    "raw": {
+      "gates": {
+        "R01/0": null,
+        "R01/1": null,
+        "R01/2": null,
+        "R02/0": null,
+        "R02/1": null,
+        "R02/2": null,
+        "R03/0": null,
+        "R03/1": null,
+        "R04/0": 0.9381027221679688,
+        "R04/1": null,
+        "R04/2": null
+      },
+      "diagnostics": [
+        {
+          "scene": "R01",
+          "role": 0,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R01",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R01",
+          "role": 2,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R02",
+          "role": 0,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R02",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R02",
+          "role": 2,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R03",
+          "role": 0,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R03",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R04",
+          "role": 0,
+          "cal_negative_pairs": 11,
+          "cal_negative_videos": 5,
+          "training_support": {
+            "representation_train": 26,
+            "representation_validation": 5
+          },
+          "gate": 0.9381027221679688,
+          "enabled": true,
+          "negative_cosine": [
+            0.8837531805038452,
+            0.9281027317047119,
+            0.9213535189628601,
+            0.8547349572181702,
+            0.9013497233390808,
+            0.8995094895362854,
+            0.8874114155769348,
+            0.8975452780723572,
+            0.9020552635192871,
+            0.8593499660491943,
+            0.8849671483039856
+          ]
+        },
+        {
+          "scene": "R04",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R04",
+          "role": 2,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        }
+      ]
+    },
+    "learned": {
+      "gates": {
+        "R01/0": null,
+        "R01/1": null,
+        "R01/2": null,
+        "R02/0": null,
+        "R02/1": null,
+        "R02/2": null,
+        "R03/0": null,
+        "R03/1": null,
+        "R04/0": 0.8608383536338806,
+        "R04/1": null,
+        "R04/2": null
+      },
+      "diagnostics": [
+        {
+          "scene": "R01",
+          "role": 0,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R01",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R01",
+          "role": 2,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R02",
+          "role": 0,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R02",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R02",
+          "role": 2,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R03",
+          "role": 0,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R03",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R04",
+          "role": 0,
+          "cal_negative_pairs": 11,
+          "cal_negative_videos": 5,
+          "training_support": {
+            "representation_train": 26,
+            "representation_validation": 5
+          },
+          "gate": 0.8608383536338806,
+          "enabled": true,
+          "negative_cosine": [
+            0.6191983819007874,
+            0.7323512434959412,
+            0.8508383631706238,
+            0.599912703037262,
+            0.8031268119812012,
+            0.5877206921577454,
+            0.4365999102592468,
+            0.7509117722511292,
+            0.4355830252170563,
+            0.45186683535575867,
+            0.49124208092689514
+          ]
+        },
+        {
+          "scene": "R04",
+          "role": 1,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        },
+        {
+          "scene": "R04",
+          "role": 2,
+          "cal_negative_pairs": 0,
+          "cal_negative_videos": 0,
+          "training_support": {
+            "representation_train": 0,
+            "representation_validation": 0
+          },
+          "gate": null,
+          "enabled": false,
+          "negative_cosine": []
+        }
+      ]
+    }
+  },
+  "calibration_policy": {
+    "minimum_negative_pairs": 10,
+    "minimum_negative_videos": 3,
+    "similarity_gate": "max reviewed negative cosine + 0.01; >1 disables appearance",
+    "margin": 0.01,
+    "require_train_and_validation_negatives": true
+  },
+  "source_sha256": {
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/calibrate_association42.py": "2180aa0cd431bcc28e33daad79dd5b83412ae3eb8de1f52b7cac480f922cc7db",
+    "results/experiment42/training.json": "56c65f427645092e65ceb573ac1d9029851ef0621a790e10472d9fa17287a05c",
+    "results/experiment42/training_protocol.json": "a9700857a7bf151e97f00f31cad06e1942d226610206c83971e4d612d1eb3bf7",
+    "results/experiment42/negative_pair_review.json": "a99471a5a417e306d627ea63bf91f8d231ab481d765f354897058711f6fdf532"
+  }
+}
