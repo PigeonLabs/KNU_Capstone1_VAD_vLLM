@@ -1,0 +1,16 @@
+{
+  "candidate": "dinov2_L",
+  "partition": "normal",
+  "labels_opened": false,
+  "file_sha256": {
+    "configs/experiment45_candidates.json": "7abae5105879ac3b044389e8449bec5ed07e73ab28e132dec08a0669bb0bb624",
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/extract_candidates45.py": "4820e1b0a72c348959b074061156d8bc89d18bd370c344bf0f1e96259c14508f",
+    "scripts/candidates45_common.py": "e5a53293d117ea9d9b8f0c0bbcf2e6d7fb5bb1a35aa0fc511a25a3096e9061d7",
+    "src/ipad_vad/large_visual.py": "0d82413523d5ab6d3834ba986a7bc8287a0715437d79adc430237332d2e12c3b",
+    "src/ipad_vad/representation_data.py": "de9f7fc9e514d18515785040c7237fd6ddce73f93e7652eccc2b3ce41b657ab6",
+    "docs/EXPERIMENT45_PLAN.md": "ac6906f36ae292e41ac5ed3b41d490bf4e92b9ca616b57a3aabeb0350c515909",
+    "results/experiment40/data_manifest.json": "f2144fa49b05eb82cfab85929477a4ea0b693f3b22e80808a1d2ee22cb6d4e90",
+    "artifacts/experiment40/normal_views.jsonl": "7805683b1ac244b53951dd94f15fa1bae6ffefea0e4dc825d36188a5595c0018",
+    "results/experiment45/dinov2_L_model.json": "cbdf8d3d8edd1f4e3d22287ffc32a6043cad5c65ec23e59f63799f7e38c98694"
+  }
+}

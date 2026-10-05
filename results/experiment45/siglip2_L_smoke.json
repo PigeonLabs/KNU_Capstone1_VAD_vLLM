@@ -1,0 +1,41 @@
+{
+  "candidate": "siglip2_L",
+  "family": "siglip",
+  "parameters": 316283904,
+  "processor": {
+    "_processor_class": "SiglipProcessor",
+    "image_processor_type": "SiglipImageProcessor",
+    "do_resize": true,
+    "size": {
+      "height": 384,
+      "width": 384
+    },
+    "resample": 2,
+    "do_rescale": true,
+    "rescale_factor": 0.00392156862745098,
+    "do_normalize": true,
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "do_convert_rgb": null
+  },
+  "precision": "float32_forward_and_normalization",
+  "missing_keys": [],
+  "unused_checkpoint_keys": 392,
+  "input_shape": [
+    32,
+    3,
+    384,
+    384
+  ],
+  "feature_dimension": 1024,
+  "batch32_seconds": 0.3574360186001286,
+  "peak_allocated_bytes": 2237432320
+}

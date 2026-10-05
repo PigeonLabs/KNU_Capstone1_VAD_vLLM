@@ -1,0 +1,1418 @@
+{
+  "summary": [
+    {
+      "group": "A",
+      "label": "CLIP-B frozen",
+      "runs": [
+        "A"
+      ],
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6934307116179586,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6395300628684037,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5247291242139236,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.07602085363507263,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.16305615385260036,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5672134238310709,
+          "sample_std": null
+        }
+      }
+    },
+    {
+      "group": "B",
+      "label": "MobileCLIP2-S2 frozen",
+      "runs": [
+        "B"
+      ],
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7081911003579524,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6584079559842815,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5510307068228845,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.0658438248643644,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.1628653025768011,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5768288084464555,
+          "sample_std": null
+        }
+      }
+    },
+    {
+      "group": "C",
+      "label": "MobileCLIP2-S2 LoRA",
+      "runs": [
+        "C_s42",
+        "C_s43",
+        "C_s44"
+      ],
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7226299606699939,
+          "sample_std": 0.0010684863985243765
+        },
+        "combined_auroc": {
+          "mean": 0.670155306775961,
+          "sample_std": 0.00091630461570125
+        },
+        "combined_average_precision": {
+          "mean": 0.5575737598720191,
+          "sample_std": 0.0008778851350926126
+        },
+        "normal_fpr": {
+          "mean": 0.06927428137873543,
+          "sample_std": 0.0015344458496237647
+        },
+        "anomaly_recall": {
+          "mean": 0.17011828912396532,
+          "sample_std": 0.0037095539302007927
+        },
+        "event_coverage": {
+          "mean": 0.6049962292609352,
+          "sample_std": 0.014687742612037957
+        }
+      }
+    },
+    {
+      "group": "clip_L",
+      "label": "CLIP-L frozen",
+      "runs": [
+        "clip_L"
+      ],
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6847344964284303,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.639123309831694,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5296962749454351,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.06615344881982424,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.13684706693972126,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5505467571644042,
+          "sample_std": null
+        }
+      }
+    },
+    {
+      "group": "siglip2_L",
+      "label": "SigLIP2-L frozen",
+      "runs": [
+        "siglip2_L"
+      ],
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6884975416513109,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6398207846797922,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.520735997643898,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.05606589968364641,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.09474381699155426,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5575980392156863,
+          "sample_std": null
+        }
+      }
+    },
+    {
+      "group": "dinov2_L",
+      "label": "DINOv2-L frozen",
+      "runs": [
+        "dinov2_L"
+      ],
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6888660928645365,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6376669605725669,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5197970346338576,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.06175618636456099,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.09883113958624004,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.6203808446455505,
+          "sample_std": null
+        }
+      }
+    }
+  ],
+  "process": [
+    {
+      "group": "A",
+      "scene": "R01",
+      "label": "CLIP-B frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.5737677277221324,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.5916517575678848,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.40127624454677074,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.14685314685314685,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.23365231259968103,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.75,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 97.0,
+      "normal_holdout_frames": 1631,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "A",
+      "scene": "R02",
+      "label": "CLIP-B frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7814048416567911,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.5710791785188833,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.41025145898636517,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.004711425206124852,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.02450229709035222,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.3333333333333333,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 40.0,
+      "normal_holdout_frames": 3626,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "A",
+      "scene": "R03",
+      "label": "CLIP-B frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7331787758560839,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.7048901268252701,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.6051783047409229,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.06890586708951997,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.2590765588003157,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.6470588235294118,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 44.0,
+      "normal_holdout_frames": 2806,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "A",
+      "scene": "R04",
+      "label": "CLIP-B frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6853715012368266,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.690499188561577,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.6822104885816358,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.08361297539149888,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.1349934469200524,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5384615384615384,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 36.0,
+      "normal_holdout_frames": 1920,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "B",
+      "scene": "R01",
+      "label": "MobileCLIP2-S2 frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.5822178571967483,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6012729647686024,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.40532644786211436,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.15014397367338544,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.23365231259968103,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.75,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 105.0,
+      "normal_holdout_frames": 1631,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "B",
+      "scene": "R02",
+      "label": "MobileCLIP2-S2 frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.727541289605343,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.5434832048754472,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.40423643235367923,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.010404397330192383,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.04555895865237366,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.3333333333333333,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 44.0,
+      "normal_holdout_frames": 3626,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "B",
+      "scene": "R03",
+      "label": "MobileCLIP2-S2 frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7854038187184491,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.7495609373753794,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.6506182270851102,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.08101484791696699,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.2833464877663773,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.6470588235294118,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 48.0,
+      "normal_holdout_frames": 2806,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "B",
+      "scene": "R04",
+      "label": "MobileCLIP2-S2 frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.737601435911269,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.739314716917697,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.7439417199906341,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.02181208053691275,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.08890345128877239,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5769230769230769,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 24.0,
+      "normal_holdout_frames": 1920,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "C",
+      "scene": "R01",
+      "label": "MobileCLIP2-S2 LoRA",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6035067599942354,
+          "sample_std": 0.001877702630312366
+        },
+        "combined_auroc": {
+          "mean": 0.6156303120840132,
+          "sample_std": 0.0015751442637437418
+        },
+        "combined_average_precision": {
+          "mean": 0.41440832433762864,
+          "sample_std": 0.0010621199523796207
+        },
+        "normal_fpr": {
+          "mean": 0.15014397367338544,
+          "sample_std": 0.0
+        },
+        "anomaly_recall": {
+          "mean": 0.23365231259968103,
+          "sample_std": 0.0
+        },
+        "event_coverage": {
+          "mean": 0.75,
+          "sample_std": 0.0
+        }
+      },
+      "normal_holdout_fp_mean": 107.66666666666667,
+      "normal_holdout_frames": 1631,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "C",
+      "scene": "R02",
+      "label": "MobileCLIP2-S2 LoRA",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7318345177032183,
+          "sample_std": 0.0020400875940397327
+        },
+        "combined_auroc": {
+          "mean": 0.5464228602327293,
+          "sample_std": 0.0019892539970479558
+        },
+        "combined_average_precision": {
+          "mean": 0.40524930071637694,
+          "sample_std": 0.0007656216673425803
+        },
+        "normal_fpr": {
+          "mean": 0.010666143174977097,
+          "sample_std": 0.001199470146566114
+        },
+        "anomaly_recall": {
+          "mean": 0.0501531393568147,
+          "sample_std": 0.0015313935681470145
+        },
+        "event_coverage": {
+          "mean": 0.4000000000000001,
+          "sample_std": 6.798699777552591e-17
+        }
+      },
+      "normal_holdout_fp_mean": 42.666666666666664,
+      "normal_holdout_frames": 3626,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "C",
+      "scene": "R03",
+      "label": "MobileCLIP2-S2 LoRA",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.80023294837891,
+          "sample_std": 0.002988271641753233
+        },
+        "combined_auroc": {
+          "mean": 0.7629049264252479,
+          "sample_std": 0.00230443194785786
+        },
+        "combined_average_precision": {
+          "mean": 0.6611271532500331,
+          "sample_std": 0.0019760895528451554
+        },
+        "normal_fpr": {
+          "mean": 0.07760319062034501,
+          "sample_std": 0.002844389714468071
+        },
+        "anomaly_recall": {
+          "mean": 0.28242567745330177,
+          "sample_std": 0.011344125578716327
+        },
+        "event_coverage": {
+          "mean": 0.7058823529411765,
+          "sample_std": 0.0
+        }
+      },
+      "normal_holdout_fp_mean": 40.0,
+      "normal_holdout_frames": 2806,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "C",
+      "scene": "R04",
+      "label": "MobileCLIP2-S2 LoRA",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7549456166036118,
+          "sample_std": 0.00033335036565590735
+        },
+        "combined_auroc": {
+          "mean": 0.7556631283618538,
+          "sample_std": 0.00013027384649602923
+        },
+        "combined_average_precision": {
+          "mean": 0.7495102611840377,
+          "sample_std": 0.0008793036123829894
+        },
+        "normal_fpr": {
+          "mean": 0.03868381804623416,
+          "sample_std": 0.004344213347401584
+        },
+        "anomaly_recall": {
+          "mean": 0.11424202708606378,
+          "sample_std": 0.013329966188197774
+        },
+        "event_coverage": {
+          "mean": 0.5641025641025641,
+          "sample_std": 0.0587509704481518
+        }
+      },
+      "normal_holdout_fp_mean": 25.333333333333332,
+      "normal_holdout_frames": 1920,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "clip_L",
+      "scene": "R01",
+      "label": "CLIP-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.508520492548075,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.5514368828469588,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.3796798307882132,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.12710818593171536,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.1634768740031898,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.75,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 37.0,
+      "normal_holdout_frames": 1631,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "clip_L",
+      "scene": "R02",
+      "label": "CLIP-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7643216413508731,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.564211581832754,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.4016653761220378,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.011189634864546525,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.034839203675344564,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.26666666666666666,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 32.0,
+      "normal_holdout_frames": 3626,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "clip_L",
+      "scene": "R03",
+      "label": "CLIP-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7784454327304062,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.7432272968840434,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.6409492903277634,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.06703185815193888,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.2590765588003157,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.6470588235294118,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 107.0,
+      "normal_holdout_frames": 2806,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "clip_L",
+      "scene": "R04",
+      "label": "CLIP-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6876504190843671,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6976174777630199,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.6964906025437262,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.0592841163310962,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.08999563128003495,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5384615384615384,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 24.0,
+      "normal_holdout_frames": 1920,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "siglip2_L",
+      "scene": "R01",
+      "label": "SigLIP2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.5637020358382587,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.5863769873057798,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.39906292768439444,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.12834224598930483,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.18899521531100477,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.75,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 28.0,
+      "normal_holdout_frames": 1631,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "siglip2_L",
+      "scene": "R02",
+      "label": "SigLIP2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7083028948569345,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.52824825891915,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.37906080248546414,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.012760109933254809,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.034839203675344564,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.3333333333333333,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 48.0,
+      "normal_holdout_frames": 3626,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "siglip2_L",
+      "scene": "R03",
+      "label": "SigLIP2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7933285207867539,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.754104094933099,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.6012952882506903,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.05939166786795445,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.09135753749013417,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.6470588235294118,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 79.0,
+      "normal_holdout_frames": 2806,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "siglip2_L",
+      "scene": "R04",
+      "label": "SigLIP2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6886567151232966,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6905537975611401,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.703524972155043,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.02376957494407159,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.06378331148973351,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.5,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 40.0,
+      "normal_holdout_frames": 1920,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "dinov2_L",
+      "scene": "R01",
+      "label": "DINOv2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6032093434288762,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6121869499297026,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.41343845994614975,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.15014397367338544,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.23365231259968103,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.75,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 61.0,
+      "normal_holdout_frames": 1631,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "dinov2_L",
+      "scene": "R02",
+      "label": "DINOv2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7336741540809204,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.5441666801948783,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.40127893386901825,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.008048684727129957,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.044027565084226644,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.3333333333333333,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 32.0,
+      "normal_holdout_frames": 3626,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "dinov2_L",
+      "scene": "R03",
+      "label": "DINOv2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7185593785267088,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.684750191115689,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5540061847537822,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.061986449473835956,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.06412786108918705,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.7058823529411765,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 30.0,
+      "normal_holdout_frames": 2806,
+      "normal_eligible_all": true
+    },
+    {
+      "group": "dinov2_L",
+      "scene": "R04",
+      "label": "DINOv2-L frozen",
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.7000214954216402,
+          "sample_std": null
+        },
+        "combined_auroc": {
+          "mean": 0.7095640210499978,
+          "sample_std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.7104645599664804,
+          "sample_std": null
+        },
+        "normal_fpr": {
+          "mean": 0.026845637583892617,
+          "sample_std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.053516819571865444,
+          "sample_std": null
+        },
+        "event_coverage": {
+          "mean": 0.6923076923076923,
+          "sample_std": null
+        }
+      },
+      "normal_holdout_fp_mean": 66.0,
+      "normal_holdout_frames": 1920,
+      "normal_eligible_all": true
+    }
+  ],
+  "models": [
+    {
+      "candidate": "clip_L",
+      "visual_parameters": 303966208,
+      "dimension": 768,
+      "native_input": [
+        224,
+        224
+      ],
+      "proxy_auroc": 0.9908905029296875,
+      "proxy_encoder_ms_per_view": 4.960590109772056,
+      "normal_views": 54047,
+      "test_views": 35340,
+      "normal_extraction_seconds": 316.57311371777905,
+      "test_extraction_seconds": 197.33274883008562,
+      "peak_allocated_GiB": 1.6628022193908691
+    },
+    {
+      "candidate": "siglip2_L",
+      "visual_parameters": 316283904,
+      "dimension": 1024,
+      "native_input": [
+        384,
+        384
+      ],
+      "proxy_auroc": 0.9812825520833334,
+      "proxy_encoder_ms_per_view": 11.39690808352043,
+      "normal_views": 54047,
+      "test_views": 35340,
+      "normal_extraction_seconds": 637.4889503220911,
+      "test_extraction_seconds": 429.34336768381763,
+      "peak_allocated_GiB": 2.083771228790283
+    },
+    {
+      "candidate": "dinov2_L",
+      "visual_parameters": 304368640,
+      "dimension": 1024,
+      "native_input": [
+        224,
+        224
+      ],
+      "proxy_auroc": 0.8835093180338541,
+      "proxy_encoder_ms_per_view": 4.871548708638329,
+      "normal_views": 54047,
+      "test_views": 35340,
+      "normal_extraction_seconds": 289.68686601205263,
+      "test_extraction_seconds": 180.71911892323988,
+      "peak_allocated_GiB": 1.6003913879394531
+    }
+  ],
+  "ranks": [
+    {
+      "run": "A",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 20,
+      "rank_max": 32,
+      "rank_mean": 30.5625,
+      "at_rank_cap": 13,
+      "q99": 0.9573170731707317
+    },
+    {
+      "run": "B",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 8,
+      "rank_max": 32,
+      "rank_mean": 24.375,
+      "at_rank_cap": 6,
+      "q99": 0.9549925569678233
+    },
+    {
+      "run": "C_s42",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 9,
+      "rank_max": 32,
+      "rank_mean": 26.5625,
+      "at_rank_cap": 7,
+      "q99": 0.956166265888011
+    },
+    {
+      "run": "C_s43",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 9,
+      "rank_max": 32,
+      "rank_mean": 26.5,
+      "at_rank_cap": 6,
+      "q99": 0.956166265888011
+    },
+    {
+      "run": "C_s44",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 9,
+      "rank_max": 32,
+      "rank_mean": 26.5625,
+      "at_rank_cap": 7,
+      "q99": 0.956166265888011
+    },
+    {
+      "run": "clip_L",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 28,
+      "rank_max": 32,
+      "rank_mean": 31.75,
+      "at_rank_cap": 15,
+      "q99": 0.9548780487804878
+    },
+    {
+      "run": "siglip2_L",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 8,
+      "rank_max": 32,
+      "rank_mean": 29.9375,
+      "at_rank_cap": 12,
+      "q99": 0.9573170731707317
+    },
+    {
+      "run": "dinov2_L",
+      "scene": "R01",
+      "spaces": 16,
+      "rank_min": 22,
+      "rank_max": 32,
+      "rank_mean": 30.9375,
+      "at_rank_cap": 14,
+      "q99": 0.9548780487804878
+    },
+    {
+      "run": "A",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 7,
+      "rank_max": 32,
+      "rank_mean": 26.0,
+      "at_rank_cap": 10,
+      "q99": 0.9802378127790171
+    },
+    {
+      "run": "B",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 4,
+      "rank_max": 32,
+      "rank_mean": 11.842105263157896,
+      "at_rank_cap": 1,
+      "q99": 0.9685243769290268
+    },
+    {
+      "run": "C_s42",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 4,
+      "rank_max": 32,
+      "rank_mean": 12.052631578947368,
+      "at_rank_cap": 1,
+      "q99": 0.967996032455231
+    },
+    {
+      "run": "C_s43",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 4,
+      "rank_max": 32,
+      "rank_mean": 11.947368421052632,
+      "at_rank_cap": 1,
+      "q99": 0.9680968096809681
+    },
+    {
+      "run": "C_s44",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 4,
+      "rank_max": 32,
+      "rank_mean": 12.0,
+      "at_rank_cap": 1,
+      "q99": 0.9691969196919692
+    },
+    {
+      "run": "clip_L",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 9,
+      "rank_max": 32,
+      "rank_mean": 27.68421052631579,
+      "at_rank_cap": 14,
+      "q99": 0.9738679192829031
+    },
+    {
+      "run": "siglip2_L",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 6,
+      "rank_max": 32,
+      "rank_mean": 23.105263157894736,
+      "at_rank_cap": 7,
+      "q99": 0.9719430496176973
+    },
+    {
+      "run": "dinov2_L",
+      "scene": "R02",
+      "spaces": 19,
+      "rank_min": 5,
+      "rank_max": 32,
+      "rank_mean": 24.05263157894737,
+      "at_rank_cap": 8,
+      "q99": 0.9724972497249724
+    },
+    {
+      "run": "A",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 32,
+      "rank_max": 32,
+      "rank_mean": 32.0,
+      "at_rank_cap": 15,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "B",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 20,
+      "rank_max": 32,
+      "rank_mean": 29.666666666666668,
+      "at_rank_cap": 10,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "C_s42",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 26,
+      "rank_max": 32,
+      "rank_mean": 30.733333333333334,
+      "at_rank_cap": 10,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "C_s43",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 26,
+      "rank_max": 32,
+      "rank_mean": 30.866666666666667,
+      "at_rank_cap": 10,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "C_s44",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 26,
+      "rank_max": 32,
+      "rank_mean": 30.8,
+      "at_rank_cap": 10,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "clip_L",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 32,
+      "rank_max": 32,
+      "rank_mean": 32.0,
+      "at_rank_cap": 15,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "siglip2_L",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 29,
+      "rank_max": 32,
+      "rank_mean": 31.8,
+      "at_rank_cap": 14,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "dinov2_L",
+      "scene": "R03",
+      "spaces": 15,
+      "rank_min": 29,
+      "rank_max": 32,
+      "rank_mean": 31.8,
+      "at_rank_cap": 14,
+      "q99": 0.9973544973544973
+    },
+    {
+      "run": "A",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 20,
+      "rank_max": 32,
+      "rank_mean": 31.35,
+      "at_rank_cap": 18,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "B",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 10,
+      "rank_max": 32,
+      "rank_mean": 28.0,
+      "at_rank_cap": 10,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "C_s42",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 12,
+      "rank_max": 32,
+      "rank_mean": 28.8,
+      "at_rank_cap": 12,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "C_s43",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 11,
+      "rank_max": 32,
+      "rank_mean": 28.7,
+      "at_rank_cap": 12,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "C_s44",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 11,
+      "rank_max": 32,
+      "rank_mean": 28.8,
+      "at_rank_cap": 12,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "clip_L",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 25,
+      "rank_max": 32,
+      "rank_mean": 31.65,
+      "at_rank_cap": 19,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "siglip2_L",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 21,
+      "rank_max": 32,
+      "rank_mean": 31.45,
+      "at_rank_cap": 19,
+      "q99": 0.997457627118644
+    },
+    {
+      "run": "dinov2_L",
+      "scene": "R04",
+      "spaces": 20,
+      "rank_min": 18,
+      "rank_max": 32,
+      "rank_mean": 31.15,
+      "at_rank_cap": 18,
+      "q99": 0.997457627118644
+    }
+  ],
+  "source_sha256": {
+    "results/experiment45/metrics.json": "9fc9b49cb1ebc6c3e42627716472a48be7c91bfde1c4826195afa3baa69797a2",
+    "results/experiment45/selection.json": "d289ba686863d7031dda0ab1bda9e317918038650aed837836a701d36bc80c0e",
+    "results/experiment45/validation.json": "457bd0dfb6e81d156c7aa77526422fddcd8d5aa55abcc73ac4b001a504b452de",
+    "results/experiment45/normal_models_audit.json": "99ff71f91613458064a9af8b35927fdb8154fb5ec8381d7ca16a572e0af54ae0",
+    "results/experiment45/clip_L_smoke.json": "5d86d2e583a77523c082124b10783a7d8d8ff79d3549ddf9c4f54dfff489a2ea",
+    "results/experiment45/clip_L_probe.json": "2463feeb1a3a95a37bb17f562109fdcc14a9dbdf16778e31e86a4a860b1ec381",
+    "results/experiment45/clip_L_normal_extraction.json": "f1d150abd1e056a456517de87028a0f77f500416cb2843289ed03df665dc00b2",
+    "results/experiment45/clip_L_test_extraction.json": "9bfc06e151fbfc7e4d5aa4c22423ae0ca991a22e38db9805ab7a75984988e672",
+    "results/experiment45/siglip2_L_smoke.json": "ba3c0c685d66387a272db9f9ef52657df290b2351db0495dadb2b7b1bf9af05e",
+    "results/experiment45/siglip2_L_probe.json": "c74e67ae454146eab291c44563a8934d0f1dde91f39757cfc92a11e3747d0346",
+    "results/experiment45/siglip2_L_normal_extraction.json": "c26a899c760fd81ce9930b88e7708768afa427e6cf5b65d8ea12de3c9f3fe2ff",
+    "results/experiment45/siglip2_L_test_extraction.json": "7b4a79aa53f63370c9d1c8658eb89bbb00f612cc8d575c7c12b8d9babbc85e61",
+    "results/experiment45/dinov2_L_smoke.json": "788387d5ba9b93326a5ff7defa3d2967ca86907fc3c9e38f97b75c7a46c99059",
+    "results/experiment45/dinov2_L_probe.json": "46156b848842ab924fb412929e73611aa61aaadf5ac33cdb76bc2d661d9a36f7",
+    "results/experiment45/dinov2_L_normal_extraction.json": "cbe606602ec87ac9719f174fab23b4d39ce0d7d965ccb0c664182c7b3649e119",
+    "results/experiment45/dinov2_L_test_extraction.json": "23cafb9557d528a1a310f364f70814890effeed2ba8ac7e0249136bbb9410a1e"
+  },
+  "notes": [
+    "Macro across four process-specific evaluations; development data, not independent confirmation.",
+    "C error bars are sample SD across three historical visual seeds, not a confidence interval.",
+    "Each model/process uses its own normal q99; FPR and recall comparisons are not at matched FPR.",
+    "Proxy is synthetic local appearance, not actual defects; heldout video selection is fixed before test."
+  ]
+}

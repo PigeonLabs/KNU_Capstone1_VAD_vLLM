@@ -1,0 +1,14 @@
+{
+  "normal_files_verified": 888,
+  "full_and_holdout_normal_models_scores_reconstructed": 208,
+  "test_predictions_reconstructed": 528,
+  "auroc_recomputed_from_midranks": true,
+  "ap_recomputed_from_tied_thresholds": true,
+  "alarms_events_recomputed": true,
+  "protocols_verified": true,
+  "new_training_runs": 0,
+  "probe_aurocs_independently_recomputed": 72,
+  "selected_candidate": "clip_L",
+  "selection_normal_only": true,
+  "independent_recording_groups_available": false
+}

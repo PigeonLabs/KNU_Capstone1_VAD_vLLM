@@ -1,5 +1,7 @@
 # 산업 공정 영상 이상탐지 파이프라인
 
+**대형 모델 비교45 완료:** CLIP-L/SigLIP2-L/DINOv2-L 실제 비교에서 단순 확대의 성능 이득은 없었다. Normal proxy로 선정한 CLIP-L의 적응 학습을46에서 검증한다. [45 결과](docs/EXPERIMENT45.md) · [46 계획](docs/EXPERIMENT46_PLAN.md) · [전체 목표 진행](docs/MODEL_SCALING_PROGRESS.md)
+
 **모듈별 학습40~43 완료:** shared visual LoRA/full FT → detector partial FT → shared association adapter → 공정별 phase head. [학습 종합](docs/LEARNED_PIPELINE_SUMMARY.md) · [최신43 결과](docs/EXPERIMENT43.md) · [다음 독립 검증 계획](docs/EXPERIMENT44_PLAN.md)
 
 정상 영상으로 공정 패턴을 학습하고 객체별 외형·공정 흐름의 이상을 찾는 학부 캡스톤 연구입니다. 특정 논문 주제를 미리 고정하지 않고, 기본 파이프라인의 관측 결과를 바탕으로 다음 실험을 설계합니다.
@@ -53,6 +55,8 @@
 | 실험 42 | 공유 저랭크 association adapter | 완료: 정상1/test2 연결 추가, 경보 개선 없음 | [결과·의의·추천 3개](docs/EXPERIMENT42.md) |
 | 실험 43 | 공정별 linear / 저랭크 adapter phase head | 완료: teacher 재적합과 head 효과 분리, AUROC·recall 상충 | [결과·의의·추천 3개](docs/EXPERIMENT43.md) |
 | 다음 44 | 독립 녹화 그룹과 사람 phase/identity 주석 검증 | 계획, 독립 자료 미확보·미실행 | [다음 검증 계획](docs/EXPERIMENT44_PLAN.md) |
+| 실험 45 | 세 대형 frozen visual encoder 비교·정상 기준 선정 | 완료: 단순 확대 성능 이득 없음, CLIP-L 선정 | [결과·의의·추천3개](docs/EXPERIMENT45.md) |
+| 실험 46 | 선정 CLIP-L LoRA/partial/full FT | 계획:9학습run·normal-val early stopping | [계획](docs/EXPERIMENT46_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1440,3 +1444,30 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **정상 오탐 예산·seed·dwell 근거 정합성 점검**: 같은 정상 예산과 독립 그룹에서 경보 및 체류 지원 비교 | R03 linear의 AUC와 adapter의 recall/FPR 순위가 다르고 R04 dwell 가용성 회복이 AD 개선을 보장하지 않음 | Test label 기반 threshold 선택 금지. Paired FP/TP·events 및 identity 경계에 맞는 지원을 확인하고 잠재 상태를 물리 동작으로 해석하지 않음 |
 
 [상세 결과·의의·한계](docs/EXPERIMENT43.md) · [전체 표](results/experiment43/report_tables.md) · [학습 곡선](results/experiment43/figures/training.png) · [영상별 CSV](results/experiment43/per_sequence.csv) · [지표](results/experiment43/metrics.json) · [검증](results/experiment43/validation.json) · [구현·재현](docs/EXPERIMENT43_METHODS.md) · [40~43 학습 종합](docs/LEARNED_PIPELINE_SUMMARY.md) · [다음44 계획](docs/EXPERIMENT44_PLAN.md)
+
+## 실험 45 — 큰 모델의 실제 비교와 선정
+
+동일40의 boxes/tracks/phase/process score에서 CLIP-L·SigLIP2-L·DINOv2-L을 정상111/test66영상 전체로 비교했다. **세 큰 frozen 모델 모두 MobileCLIP frozen의 Combined AUROC를 넘지 못했다.** 정상 proxy로 CLIP-L을 선정했지만 test 결과로 선택을 바꾸지 않았다.
+
+| Encoder | Visual AUROC | Combined AUROC | Combined AP | 정상 FPR | 이상 recall | Event coverage |
+|---|---:|---:|---:|---:|---:|---:|
+| CLIP-B frozen | 0.6934 | 0.6395 | 0.5247 | 7.60% | 16.31% | 56.72% |
+| MobileCLIP2-S2 frozen | 0.7082 | 0.6584 | 0.5510 | 6.58% | 16.29% | 57.68% |
+| MobileCLIP2-S2 LoRA | 0.7226 ± 0.0011 | 0.6702 ± 0.0009 | 0.5576 ± 0.0009 | 6.93 ± 0.15% | 17.01 ± 0.37% | 60.50 ± 1.47% |
+| CLIP-L frozen **(normal proxy 선정)** | 0.6847 | 0.6391 | 0.5297 | 6.62% | 13.68% | 55.05% |
+| SigLIP2-L frozen | 0.6885 | 0.6398 | 0.5207 | 5.61% | 9.47% | 55.76% |
+| DINOv2-L frozen | 0.6889 | 0.6377 | 0.5198 | 6.18% | 9.88% | 62.04% |
+
+![45 encoder 비교](results/experiment45/encoder_comparison.png)
+
+**의의:** 큰 모델 교체 효과와 normal proxy의 전이 한계를 실제 대조로 확인했다. CLIP-L63/70개 정상 bank가rank32상한에서95%분산 목표에 못 미쳐 용량 조정의 후속 근거도 얻었다. **보완점:** 입력 전처리·사전학습 차이, 반복 개발 평가, 실제 phase/identity GT 부재가 남는다. 각 군의q99가 달라 matched-FPR 비교가 아니며 DINOv2의 높은event coverage62.04%는 낮은frame recall9.88%와 함께 해석해야 한다.
+
+190회귀 테스트,208normal모델/score와528test prediction 재구성,192개독립 AUROC/AP 및72개proxy AUROC 검증을 완료했다. 세 대형 모델에 대한 신규 neural adaptation은 아직 수행하지 않았으며46에서 진행한다.
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | 선정 CLIP-L에 LoRA / 마지막2block partial FT / full FT를 각각 적용하고 normal-val early stopping·3seed로 비교 | Frozen CLIP-L Combined0.6391로 Mobile frozen0.6584보다 낮음;40의 작은 모델 LoRA는0.6702. 대형 모델의 domain adaptation 효과는 미측정 | 같은 관측·rank32에서9학습run, epoch0 포함 선택·train/val curve·collapse/teacher drift·FP/TP/events 비교. Normal loss 개선을 실제 AD 개선으로 대체하지 않음. **46에서 선택** |
+| 2 | PCA rank cap/보존분산 목표와 local patch/object feature 수를 단계적으로 비교 | CLIP-L63/70개 bank가95%분산을 못 담고 평균90.16%; R04 crop proxy가 global보다 낮음 | 먼저 한 용량 요소만 변경하고 support·실제 보존분산·normal holdout·AD를 함께 확인. Rank/feature 수 증가가 이상까지 정상으로 흡수하거나 잡음을 늘릴 가능성. 다음 번호는46결과 후 결정 |
+| 3 | 시간 학습 단위와 관측 품질을 분리 진단하고 필요시 larger detector·causal temporal representation 비교 | DINOv2는 event coverage62.04%지만 frame recall9.88%; 기존 phase/box는 그대로여서 encoder 확대만으로 순서·짧은 구간 관측을 개선하지 못함 | Frame-index 기반 causality·identity 경계·관측률/누락 길이·event delay와 FP/TP를 함께 측정. 시각·detector·시간 window를 한꺼번에 바꾸지 않으며 독립 phase/identity GT 부재를 명시 |
+
+[상세 보고서](docs/EXPERIMENT45.md) · [구현·재현](docs/EXPERIMENT45_METHODS.md) · [공정별 표](results/experiment45/process_table.md) · [영상별 결과](results/experiment45/per_sequence.csv) · [다음46 계획](docs/EXPERIMENT46_PLAN.md)

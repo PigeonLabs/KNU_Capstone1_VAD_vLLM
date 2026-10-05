@@ -1,0 +1,8 @@
+{
+  "reason": "Original shared xlabel overlapped footer at native figure size; label/legend positions refined and exact R01 overlap annotated.",
+  "metrics_changed": false,
+  "report_data_sha256": "ffbe9bc68b9e6e53f8cff78e2c7fcdbb418cb7d3f5325df5e0fdd1772ab491e8",
+  "script_sha256": "4d95cdb40f1c73691daa4acae4035168b2e48383a4c2f918854b6a4e4f8f8873",
+  "output_sha256": "0371494fd26f2dffff4d7767541eb0ae741415e3ed3577479cba9780d2cd4e7c",
+  "original_report_source_retained": true
+}

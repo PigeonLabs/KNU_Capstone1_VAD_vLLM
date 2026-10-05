@@ -1,0 +1,13 @@
+{
+  "inspected": [
+    "encoder_comparison.png",
+    "alarm_tradeoffs.png"
+  ],
+  "passed": true,
+  "sha256": {
+    "encoder_comparison.png": "39695ebc29854e781cc7662ee3817020b698e38b0595d2237f2eb0bc48c5454c",
+    "alarm_tradeoffs.png": "0371494fd26f2dffff4d7767541eb0ae741415e3ed3577479cba9780d2cd4e7c"
+  },
+  "inspection": "Viewed actual rendered PNGs. Encoder bars zero-based, labels readable, SD stated; alarm xlabel/footer collision repaired by plot_alarm45.py, re-render viewed; same-scale panels and exact R01 overlap annotation verified.",
+  "layout_refinement_sha256": "c372ab9ce782349214ca00325b4bda5359e010b2f6701788eacce9eb6683f727"
+}

@@ -1,0 +1,8 @@
+{
+  "command": "PYTHONPATH=src:scripts .venv/bin/python -m pytest -q",
+  "exit_code": 0,
+  "passed": 190,
+  "elapsed_seconds": 6.78,
+  "source_commit": "d7c28825bde30d4b477d1ab0aa721616046a757b",
+  "scope": "Existing repository regression tests; experiment45 large_visual.py was present. New experiment workflows also require their own artifact/metric validations; test count alone does not verify experiment completion."
+}

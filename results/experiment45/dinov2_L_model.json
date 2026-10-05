@@ -1,0 +1,12 @@
+{
+  "repo": "facebook/dinov2-large",
+  "revision": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+  "family": "dinov2",
+  "local_path": "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/.cache/huggingface/hub/models--facebook--dinov2-large/snapshots/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+  "sha256": {
+    "README.md": "0be39948cdb4f4c364c505c039cffe26ba8097b7300bf55f361952c8b17a5fee",
+    "config.json": "12df51c069a2dc1305e34ba71ef58bc2407ea553b75f4722a1715c1bce3bbed0",
+    "model.safetensors": "399fba97a95f22c36834418bc69373364a99af3a1153da1c0fb31db567c92e23",
+    "preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+  }
+}

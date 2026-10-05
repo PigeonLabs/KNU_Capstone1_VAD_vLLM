@@ -1,0 +1,16 @@
+{
+  "candidate": "siglip2_L",
+  "partition": "test",
+  "labels_opened": false,
+  "file_sha256": {
+    "configs/experiment45_candidates.json": "7abae5105879ac3b044389e8449bec5ed07e73ab28e132dec08a0669bb0bb624",
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/extract_candidates45.py": "4820e1b0a72c348959b074061156d8bc89d18bd370c344bf0f1e96259c14508f",
+    "scripts/candidates45_common.py": "e5a53293d117ea9d9b8f0c0bbcf2e6d7fb5bb1a35aa0fc511a25a3096e9061d7",
+    "src/ipad_vad/large_visual.py": "0d82413523d5ab6d3834ba986a7bc8287a0715437d79adc430237332d2e12c3b",
+    "src/ipad_vad/representation_data.py": "de9f7fc9e514d18515785040c7237fd6ddce73f93e7652eccc2b3ce41b657ab6",
+    "docs/EXPERIMENT45_PLAN.md": "ac6906f36ae292e41ac5ed3b41d490bf4e92b9ca616b57a3aabeb0350c515909",
+    "results/experiment40/test_data_manifest.json": "a15a20f5f0b4e3cfe44ee6905d08dde94e69a94bd29fc2c98b491c90e2dabdd8",
+    "artifacts/experiment40/test_views.jsonl": "5453bde2eaee2317f7edb037d41fd34c0f899b03fca94a28f9cde31cce18b60a",
+    "results/experiment45/siglip2_L_model.json": "4d41f50262d59c696a084f4d24a438a3ab56622320deeacb8173bd7cedb1de9b"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "selection_frozen_before_test": true,
+  "labels_opened": false,
+  "file_sha256": {
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/run_candidates45_test.py": "02ff3791184f2ae145aa607d915c1711657850b6fcfe8a1f3075d0cae8513bae",
+    "results/experiment45/normal_models_checkpoint.json": "9b41d08a5750acb3cff76172385f137c7f96d2aa3c0a55d809c83ce4ce194a7e",
+    "results/experiment45/selection_checkpoint.json": "1edb16837c56ff9bb31c96c72b48bab692935df26ca331c33ade872656de17d6",
+    "scripts/evaluate_candidates45.py": "2e13f62669aad3b2abf20bd7383ae7cd6aceb5a6351ef5de2fcd4fac9c68d1bd",
+    "scripts/validate_candidates45.py": "d3de0a21b769987dd757e5f64860c9cd334ef4def010be60d9176b847c318913",
+    "scripts/report_candidates45.py": "b32c12a39f91b64e279942207ac2660a92e418e6aeed75db771b05527508cf04"
+  }
+}

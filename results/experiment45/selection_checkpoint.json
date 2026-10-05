@@ -1,0 +1,16 @@
+{
+  "normal_only": true,
+  "selected": "clip_L",
+  "file_sha256": {
+    "configs/experiment45_candidates.json": "7abae5105879ac3b044389e8449bec5ed07e73ab28e132dec08a0669bb0bb624",
+    "results/experiment45/probe_protocol.json": "6616d6fc2e1dcb863c5c35abf0c6ac842f11f19742c6f2767e3c6c37bc7892c6",
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/probe_candidates45.py": "651e50c8fd938cfc56810ff5207cc927591c1e13e592d465bb0a23a835edcdb4",
+    "results/experiment45/clip_L_probe.json": "2463feeb1a3a95a37bb17f562109fdcc14a9dbdf16778e31e86a4a860b1ec381",
+    "artifacts/experiment45/clip_L/probe.npz": "548ffbd98a85ce0622805b616959dc739a5b2d7d7c640388b93b6216415ef534",
+    "results/experiment45/siglip2_L_probe.json": "c74e67ae454146eab291c44563a8934d0f1dde91f39757cfc92a11e3747d0346",
+    "artifacts/experiment45/siglip2_L/probe.npz": "d2e0d259524a4f1202d051830486d7ffc95243e2b99109f8876512c050153717",
+    "results/experiment45/dinov2_L_probe.json": "46156b848842ab924fb412929e73611aa61aaadf5ac33cdb76bc2d661d9a36f7",
+    "artifacts/experiment45/dinov2_L/probe.npz": "af7d8cff82a0879cc0ec740fb0fe7160aec2f0cedf43c7f25e8ca68f396cd296",
+    "results/experiment45/selection.json": "d289ba686863d7031dda0ab1bda9e317918038650aed837836a701d36bc80c0e"
+  }
+}

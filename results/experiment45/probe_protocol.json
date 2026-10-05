@@ -1,0 +1,357 @@
+{
+  "normal_only": true,
+  "calibration_excluded": true,
+  "test_excluded": true,
+  "counts": [
+    {
+      "split": "train",
+      "scene": "R01",
+      "kind": "global",
+      "views": 512,
+      "unique_views": 436,
+      "videos": [
+        "01",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "12",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "32",
+        "33",
+        "34"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R01",
+      "kind": "crop",
+      "views": 512,
+      "unique_views": 478,
+      "videos": [
+        "01",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "12",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "32",
+        "33",
+        "34"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R02",
+      "kind": "global",
+      "views": 512,
+      "unique_views": 474,
+      "videos": [
+        "02",
+        "03",
+        "06",
+        "07",
+        "09",
+        "10",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "28",
+        "30"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R02",
+      "kind": "crop",
+      "views": 512,
+      "unique_views": 500,
+      "videos": [
+        "02",
+        "03",
+        "06",
+        "07",
+        "09",
+        "10",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "28",
+        "30"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R03",
+      "kind": "global",
+      "views": 512,
+      "unique_views": 462,
+      "videos": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "20",
+        "21"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R03",
+      "kind": "crop",
+      "views": 512,
+      "unique_views": 491,
+      "videos": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "20",
+        "21"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R04",
+      "kind": "global",
+      "views": 512,
+      "unique_views": 443,
+      "videos": [
+        "03",
+        "04",
+        "06",
+        "07",
+        "09",
+        "13",
+        "14",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "train",
+      "scene": "R04",
+      "kind": "crop",
+      "views": 512,
+      "unique_views": 492,
+      "videos": [
+        "03",
+        "04",
+        "06",
+        "07",
+        "09",
+        "13",
+        "14",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R01",
+      "kind": "global",
+      "views": 64,
+      "unique_views": 55,
+      "videos": [
+        "02",
+        "04",
+        "10",
+        "15",
+        "18",
+        "24"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R01",
+      "kind": "crop",
+      "views": 64,
+      "unique_views": 62,
+      "videos": [
+        "02",
+        "04",
+        "10",
+        "15",
+        "18",
+        "24"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R02",
+      "kind": "global",
+      "views": 64,
+      "unique_views": 62,
+      "videos": [
+        "04",
+        "08",
+        "12",
+        "14",
+        "29"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R02",
+      "kind": "crop",
+      "views": 64,
+      "unique_views": 62,
+      "videos": [
+        "04",
+        "08",
+        "12",
+        "14",
+        "29"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R03",
+      "kind": "global",
+      "views": 64,
+      "unique_views": 62,
+      "videos": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R03",
+      "kind": "crop",
+      "views": 64,
+      "unique_views": 63,
+      "videos": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R04",
+      "kind": "global",
+      "views": 64,
+      "unique_views": 58,
+      "videos": [
+        "01",
+        "05",
+        "11",
+        "17"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    },
+    {
+      "split": "validation",
+      "scene": "R04",
+      "kind": "crop",
+      "views": 64,
+      "unique_views": 64,
+      "videos": [
+        "01",
+        "05",
+        "11",
+        "17"
+      ],
+      "sampling": "video_balanced_with_replacement"
+    }
+  ],
+  "proxy_not_ground_truth": true,
+  "file_sha256": {
+    "configs/experiment45_candidates.json": "7abae5105879ac3b044389e8449bec5ed07e73ab28e132dec08a0669bb0bb624",
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/probe_candidates45.py": "651e50c8fd938cfc56810ff5207cc927591c1e13e592d465bb0a23a835edcdb4",
+    "scripts/candidates45_common.py": "e5a53293d117ea9d9b8f0c0bbcf2e6d7fb5bb1a35aa0fc511a25a3096e9061d7",
+    "src/ipad_vad/large_visual.py": "0d82413523d5ab6d3834ba986a7bc8287a0715437d79adc430237332d2e12c3b",
+    "src/ipad_vad/scoring.py": "71b1513ea18c3abab2d397373222ee8ba507e27b22e8d186869c6e2c8a1ce3f0",
+    "src/ipad_vad/representation_data.py": "de9f7fc9e514d18515785040c7237fd6ddce73f93e7652eccc2b3ce41b657ab6",
+    "docs/EXPERIMENT45_PLAN.md": "ac6906f36ae292e41ac5ed3b41d490bf4e92b9ca616b57a3aabeb0350c515909",
+    "results/experiment40/data_manifest.json": "f2144fa49b05eb82cfab85929477a4ea0b693f3b22e80808a1d2ee22cb6d4e90",
+    "artifacts/experiment45/probe_views.json": "f9acad9bcf113b4aca5bf9292c25c6e7cb33f6816758b456aa31983e764436fd"
+  }
+}

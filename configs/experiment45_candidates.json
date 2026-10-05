@@ -1,0 +1,26 @@
+{
+  "experiment": "45",
+  "scenes": ["R01", "R02", "R03", "R04"],
+  "controls": ["A", "B", "C_s42", "C_s43", "C_s44"],
+  "candidates": {
+    "clip_L": {"repo": "openai/clip-vit-large-patch14", "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41", "family": "clip"},
+    "siglip2_L": {"repo": "google/siglip2-large-patch16-384", "revision": "1b426889ea62b5a72bf9839009a1b184bfc9c178", "family": "siglip"},
+    "dinov2_L": {"repo": "facebook/dinov2-large", "revision": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c", "family": "dinov2"}
+  },
+  "source_experiment": "40",
+  "batch_size": 32,
+  "workers": 2,
+  "precision": "float32",
+  "seed": 4545,
+  "probe": {
+    "train_views_per_scene_kind": 512,
+    "validation_views_per_scene_kind": 64,
+    "pca_variance": 0.95,
+    "pca_max_rank": 32,
+    "corruptions": ["occlusion", "local_shuffle", "local_noise"],
+    "patch_area_fraction": 0.16,
+    "benign_brightness": 1.05,
+    "selection": "highest_mean_scene_kind_corruption_AUROC_of_PCA_residual_vs_clean_and_benign_validation; ties_within_0.005_prefer_lower_measured_encoder_latency",
+    "selection_scope": "three_large_candidates_only; controls_reported; synthetic_proxy_not_real_anomaly_accuracy"
+  }
+}

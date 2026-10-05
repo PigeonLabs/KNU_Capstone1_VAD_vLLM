@@ -1,0 +1,31 @@
+{
+  "selected": "clip_L",
+  "normal_only": true,
+  "test_used": false,
+  "proxy_score": 0.9908905029296875,
+  "scores": [
+    {
+      "candidate": "clip_L",
+      "selection_score": 0.9908905029296875,
+      "encoder_seconds": 12.699110681016464,
+      "encoded_views": 2560
+    },
+    {
+      "candidate": "siglip2_L",
+      "selection_score": 0.9812825520833334,
+      "encoder_seconds": 29.1760846938123,
+      "encoded_views": 2560
+    },
+    {
+      "candidate": "dinov2_L",
+      "selection_score": 0.8835093180338541,
+      "encoder_seconds": 12.471164694114123,
+      "encoded_views": 2560
+    }
+  ],
+  "rule": "highest_mean_scene_kind_corruption_AUROC_of_PCA_residual_vs_clean_and_benign_validation; ties_within_0.005_prefer_lower_measured_encoder_latency",
+  "near_ties": [
+    "clip_L"
+  ],
+  "note": "Selection frozen before test extraction/evaluation; no real anomaly labels used. Synthetic proxy may not transfer."
+}

@@ -1,0 +1,12 @@
+{
+  "repo": "google/siglip2-large-patch16-384",
+  "revision": "1b426889ea62b5a72bf9839009a1b184bfc9c178",
+  "family": "siglip",
+  "local_path": "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/.cache/huggingface/hub/models--google--siglip2-large-patch16-384/snapshots/1b426889ea62b5a72bf9839009a1b184bfc9c178",
+  "sha256": {
+    "README.md": "c3ec8e8a7a4790063972e10721306e0b00523aa739fd55c5b0aa35fa487df03a",
+    "config.json": "7859ae71a2316c7104f9f64f8cf500ebaa53a7eb315ff28463422e18ce954721",
+    "model.safetensors": "11bdb3cf00c4dc4f87e437c9c75087ca16fa21aea437b3576c103670ee3c73be",
+    "preprocessor_config.json": "fb2817d3523ca3b666c859f15320c7138416bc38ffc515e2963f78c868c51c90"
+  }
+}
