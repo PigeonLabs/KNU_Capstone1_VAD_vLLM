@@ -1,0 +1,282 @@
+{
+  "rows": [
+    {
+      "partition": "fit",
+      "sequence": "01",
+      "samples": 78,
+      "frames": 309,
+      "initial_unobserved_samples": 0,
+      "initial_unobserved_frames": 0,
+      "first_observed_source_frame": 0,
+      "valid_samples": 44,
+      "original_initial_phase": 2
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "samples": 116,
+      "frames": 461,
+      "initial_unobserved_samples": 0,
+      "initial_unobserved_frames": 0,
+      "first_observed_source_frame": 0,
+      "valid_samples": 67,
+      "original_initial_phase": 2
+    },
+    {
+      "partition": "fit",
+      "sequence": "04",
+      "samples": 102,
+      "frames": 408,
+      "initial_unobserved_samples": 7,
+      "initial_unobserved_frames": 28,
+      "first_observed_source_frame": 28,
+      "valid_samples": 50,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "samples": 110,
+      "frames": 437,
+      "initial_unobserved_samples": 3,
+      "initial_unobserved_frames": 12,
+      "first_observed_source_frame": 12,
+      "valid_samples": 78,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "06",
+      "samples": 112,
+      "frames": 448,
+      "initial_unobserved_samples": 7,
+      "initial_unobserved_frames": 28,
+      "first_observed_source_frame": 28,
+      "valid_samples": 52,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "07",
+      "samples": 97,
+      "frames": 385,
+      "initial_unobserved_samples": 8,
+      "initial_unobserved_frames": 32,
+      "first_observed_source_frame": 32,
+      "valid_samples": 72,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "09",
+      "samples": 105,
+      "frames": 417,
+      "initial_unobserved_samples": 4,
+      "initial_unobserved_frames": 16,
+      "first_observed_source_frame": 16,
+      "valid_samples": 35,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "11",
+      "samples": 85,
+      "frames": 340,
+      "initial_unobserved_samples": 6,
+      "initial_unobserved_frames": 24,
+      "first_observed_source_frame": 24,
+      "valid_samples": 24,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "samples": 96,
+      "frames": 382,
+      "initial_unobserved_samples": 7,
+      "initial_unobserved_frames": 28,
+      "first_observed_source_frame": 28,
+      "valid_samples": 66,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "samples": 81,
+      "frames": 323,
+      "initial_unobserved_samples": 5,
+      "initial_unobserved_frames": 20,
+      "first_observed_source_frame": 20,
+      "valid_samples": 68,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "samples": 94,
+      "frames": 373,
+      "initial_unobserved_samples": 0,
+      "initial_unobserved_frames": 0,
+      "first_observed_source_frame": 0,
+      "valid_samples": 63,
+      "original_initial_phase": 1
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "samples": 93,
+      "frames": 372,
+      "initial_unobserved_samples": 5,
+      "initial_unobserved_frames": 20,
+      "first_observed_source_frame": 20,
+      "valid_samples": 67,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "18",
+      "samples": 103,
+      "frames": 412,
+      "initial_unobserved_samples": 11,
+      "initial_unobserved_frames": 44,
+      "first_observed_source_frame": 44,
+      "valid_samples": 69,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "samples": 99,
+      "frames": 396,
+      "initial_unobserved_samples": 7,
+      "initial_unobserved_frames": 28,
+      "first_observed_source_frame": 28,
+      "valid_samples": 36,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "samples": 101,
+      "frames": 404,
+      "initial_unobserved_samples": 15,
+      "initial_unobserved_frames": 60,
+      "first_observed_source_frame": 60,
+      "valid_samples": 32,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "21",
+      "samples": 105,
+      "frames": 417,
+      "initial_unobserved_samples": 5,
+      "initial_unobserved_frames": 20,
+      "first_observed_source_frame": 20,
+      "valid_samples": 48,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "22",
+      "samples": 95,
+      "frames": 380,
+      "initial_unobserved_samples": 7,
+      "initial_unobserved_frames": 28,
+      "first_observed_source_frame": 28,
+      "valid_samples": 38,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "samples": 95,
+      "frames": 377,
+      "initial_unobserved_samples": 8,
+      "initial_unobserved_frames": 32,
+      "first_observed_source_frame": 32,
+      "valid_samples": 54,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "samples": 92,
+      "frames": 368,
+      "initial_unobserved_samples": 9,
+      "initial_unobserved_frames": 36,
+      "first_observed_source_frame": 36,
+      "valid_samples": 79,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "samples": 101,
+      "frames": 403,
+      "initial_unobserved_samples": 9,
+      "initial_unobserved_frames": 36,
+      "first_observed_source_frame": 36,
+      "valid_samples": 81,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "samples": 103,
+      "frames": 409,
+      "initial_unobserved_samples": 0,
+      "initial_unobserved_frames": 0,
+      "first_observed_source_frame": 0,
+      "valid_samples": 56,
+      "original_initial_phase": 2
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "samples": 104,
+      "frames": 413,
+      "initial_unobserved_samples": 8,
+      "initial_unobserved_frames": 32,
+      "first_observed_source_frame": 32,
+      "valid_samples": 82,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "samples": 94,
+      "frames": 376,
+      "initial_unobserved_samples": 10,
+      "initial_unobserved_frames": 40,
+      "first_observed_source_frame": 40,
+      "valid_samples": 55,
+      "original_initial_phase": 0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "samples": 96,
+      "frames": 382,
+      "initial_unobserved_samples": 0,
+      "initial_unobserved_frames": 0,
+      "first_observed_source_frame": 0,
+      "valid_samples": 51,
+      "original_initial_phase": 1
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "samples": 85,
+      "frames": 340,
+      "initial_unobserved_samples": 2,
+      "initial_unobserved_frames": 8,
+      "first_observed_source_frame": 8,
+      "valid_samples": 53,
+      "original_initial_phase": 0
+    }
+  ],
+  "normal_only": true,
+  "source_features_unchanged": true,
+  "new_phase_fit": false
+}

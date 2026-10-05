@@ -1,0 +1,33 @@
+{
+  "paths": [
+    "artifacts/experiment37/asinh/features/R04/testing_01.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_02.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_03.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_04.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_05.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_06.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_07.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_08.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_09.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_10.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_11.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_12.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_13.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_14.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_15.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_16.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_17.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_18.npz",
+    "artifacts/experiment37/asinh/features/R04/testing_19.npz"
+  ],
+  "features_reused_exactly": true,
+  "no_new_phase_fit": true,
+  "eligible": [
+    "38_control_hold",
+    "38_control_pool",
+    "38_control_age",
+    "38_guarded_hold",
+    "38_guarded_pool",
+    "38_guarded_age"
+  ]
+}

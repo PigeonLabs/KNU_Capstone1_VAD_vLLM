@@ -41,6 +41,15 @@ class Baseline:
 
     def appearance_phases(self,data,stage='inference'):
         """Keep process states intact; -1 requests pooled appearance only."""
+        guard=self.cfg.get('appearance_initial_observation_gate',False)
+        if type(guard) is not bool:raise ValueError('Initial observation gate must be boolean')
+        requested=self._appearance_phases(data,stage)
+        if guard and stage=='inference':
+            from ipad_vad.initial_observation import initial_observation_route
+            return initial_observation_route(data,requested)
+        return requested
+
+    def _appearance_phases(self,data,stage):
         if stage not in ['fit','inference']:raise ValueError('Unknown appearance conditioning stage')
         mode=self.cfg.get(f'appearance_{stage}_conditioning',self.cfg.get('appearance_conditioning','phase'))
         if mode=='phase':return data['phases']

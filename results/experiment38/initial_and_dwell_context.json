@@ -1,0 +1,1258 @@
+{
+  "initial_mask_prefix_checks": 88,
+  "source_features_checked": 44,
+  "test_region_summary": {
+    "38_control_hold": {
+      "initial_frames": 652,
+      "fp_before": 60,
+      "tp_before": 0,
+      "fp_after": 295,
+      "tp_after": 619
+    },
+    "38_control_pool": {
+      "initial_frames": 652,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 267,
+      "tp_after": 562
+    },
+    "38_control_age": {
+      "initial_frames": 652,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 295,
+      "tp_after": 615
+    },
+    "38_guarded_hold": {
+      "initial_frames": 652,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 295,
+      "tp_after": 619
+    },
+    "38_guarded_pool": {
+      "initial_frames": 652,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 267,
+      "tp_after": 562
+    },
+    "38_guarded_age": {
+      "initial_frames": 652,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 295,
+      "tp_after": 615
+    }
+  },
+  "test_per_sequence": [
+    {
+      "variant": "38_control_hold",
+      "sequence": "01",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 45,
+      "tp_after": 46
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "01",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 45,
+      "tp_after": 46
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "01",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 45,
+      "tp_after": 46
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "01",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 45,
+      "tp_after": 46
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "01",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 45,
+      "tp_after": 46
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "01",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 45,
+      "tp_after": 46
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "02",
+      "initial_frames": 32,
+      "fp_before": 4,
+      "tp_before": 0,
+      "fp_after": 16,
+      "tp_after": 108
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "02",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 16,
+      "tp_after": 80
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "02",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 16,
+      "tp_after": 112
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "02",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 16,
+      "tp_after": 108
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "02",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 16,
+      "tp_after": 80
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "02",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 16,
+      "tp_after": 112
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "03",
+      "initial_frames": 24,
+      "fp_before": 12,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 25
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "03",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 12
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "03",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 25
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "03",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 25
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "03",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 12
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "03",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 25
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "04",
+      "initial_frames": 32,
+      "fp_before": 8,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "04",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "04",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "04",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "04",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "04",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "05",
+      "initial_frames": 32,
+      "fp_before": 4,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "05",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "05",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "05",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "05",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "05",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "06",
+      "initial_frames": 16,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 45
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "06",
+      "initial_frames": 16,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 45
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "06",
+      "initial_frames": 16,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 45
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "06",
+      "initial_frames": 16,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 45
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "06",
+      "initial_frames": 16,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 45
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "06",
+      "initial_frames": 16,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 45
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "07",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 68,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "07",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 60,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "07",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 68,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "07",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 68,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "07",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 60,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "07",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 68,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "08",
+      "initial_frames": 48,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 29,
+      "tp_after": 27
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "08",
+      "initial_frames": 48,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 29,
+      "tp_after": 27
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "08",
+      "initial_frames": 48,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 29,
+      "tp_after": 27
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "08",
+      "initial_frames": 48,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 29,
+      "tp_after": 27
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "08",
+      "initial_frames": 48,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 29,
+      "tp_after": 27
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "08",
+      "initial_frames": 48,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 29,
+      "tp_after": 27
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "09",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 8
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "09",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "09",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "09",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 8
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "09",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "09",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "10",
+      "initial_frames": 44,
+      "fp_before": 4,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "10",
+      "initial_frames": 44,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "10",
+      "initial_frames": 44,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "10",
+      "initial_frames": 44,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "10",
+      "initial_frames": 44,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "10",
+      "initial_frames": 44,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "11",
+      "initial_frames": 56,
+      "fp_before": 4,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 8
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "11",
+      "initial_frames": 56,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "11",
+      "initial_frames": 56,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 8
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "11",
+      "initial_frames": 56,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 8
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "11",
+      "initial_frames": 56,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 4
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "11",
+      "initial_frames": 56,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 8
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "12",
+      "initial_frames": 52,
+      "fp_before": 4,
+      "tp_before": 0,
+      "fp_after": 4,
+      "tp_after": 20
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "12",
+      "initial_frames": 52,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 4,
+      "tp_after": 20
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "12",
+      "initial_frames": 52,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 4,
+      "tp_after": 20
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "12",
+      "initial_frames": 52,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 4,
+      "tp_after": 20
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "12",
+      "initial_frames": 52,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 4,
+      "tp_after": 20
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "12",
+      "initial_frames": 52,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 4,
+      "tp_after": 20
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "13",
+      "initial_frames": 40,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 28
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "13",
+      "initial_frames": 40,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 28
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "13",
+      "initial_frames": 40,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 28
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "13",
+      "initial_frames": 40,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 28
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "13",
+      "initial_frames": 40,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 28
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "13",
+      "initial_frames": 40,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 28
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "14",
+      "initial_frames": 28,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 56
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "14",
+      "initial_frames": 28,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 56
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "14",
+      "initial_frames": 28,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 56
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "14",
+      "initial_frames": 28,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 56
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "14",
+      "initial_frames": 28,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 56
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "14",
+      "initial_frames": 28,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 56
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "15",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "15",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "15",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "15",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "15",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "15",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 0,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "16",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 20,
+      "tp_after": 238
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "16",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 20,
+      "tp_after": 226
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "16",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 20,
+      "tp_after": 238
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "16",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 20,
+      "tp_after": 238
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "16",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 20,
+      "tp_after": 226
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "16",
+      "initial_frames": 32,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 20,
+      "tp_after": 238
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "17",
+      "initial_frames": 36,
+      "fp_before": 12,
+      "tp_before": 0,
+      "fp_after": 46,
+      "tp_after": 6
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "17",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 42,
+      "tp_after": 10
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "17",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 46,
+      "tp_after": 6
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "17",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 46,
+      "tp_after": 6
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "17",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 42,
+      "tp_after": 10
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "17",
+      "initial_frames": 36,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 46,
+      "tp_after": 6
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "18",
+      "initial_frames": 24,
+      "fp_before": 8,
+      "tp_before": 0,
+      "fp_after": 35,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "18",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 35,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "18",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 35,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "18",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 35,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "18",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 35,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "18",
+      "initial_frames": 24,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 35,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_hold",
+      "sequence": "19",
+      "initial_frames": 20,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_pool",
+      "sequence": "19",
+      "initial_frames": 20,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_control_age",
+      "sequence": "19",
+      "initial_frames": 20,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_hold",
+      "sequence": "19",
+      "initial_frames": 20,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_pool",
+      "sequence": "19",
+      "initial_frames": 20,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 8,
+      "tp_after": 0
+    },
+    {
+      "variant": "38_guarded_age",
+      "sequence": "19",
+      "initial_frames": 20,
+      "fp_before": 0,
+      "tp_before": 0,
+      "fp_after": 12,
+      "tp_after": 0
+    }
+  ],
+  "guarded_hold_dwell_identity_provenance": [
+    {
+      "sequence": "01",
+      "dwell_valid_frames": 75,
+      "same_pair_since_entry_valid_frames": 75,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "02",
+      "dwell_valid_frames": 60,
+      "same_pair_since_entry_valid_frames": 60,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "03",
+      "dwell_valid_frames": 56,
+      "same_pair_since_entry_valid_frames": 56,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "04",
+      "dwell_valid_frames": 56,
+      "same_pair_since_entry_valid_frames": 56,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "05",
+      "dwell_valid_frames": 64,
+      "same_pair_since_entry_valid_frames": 56,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "06",
+      "dwell_valid_frames": 60,
+      "same_pair_since_entry_valid_frames": 56,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "07",
+      "dwell_valid_frames": 84,
+      "same_pair_since_entry_valid_frames": 84,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "08",
+      "dwell_valid_frames": 288,
+      "same_pair_since_entry_valid_frames": 288,
+      "dwell_only_fp_with_continuity": 13,
+      "dwell_only_tp_with_continuity": 19,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "09",
+      "dwell_valid_frames": 0,
+      "same_pair_since_entry_valid_frames": 0,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "10",
+      "dwell_valid_frames": 127,
+      "same_pair_since_entry_valid_frames": 127,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "11",
+      "dwell_valid_frames": 64,
+      "same_pair_since_entry_valid_frames": 48,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "12",
+      "dwell_valid_frames": 116,
+      "same_pair_since_entry_valid_frames": 116,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "13",
+      "dwell_valid_frames": 296,
+      "same_pair_since_entry_valid_frames": 220,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "14",
+      "dwell_valid_frames": 152,
+      "same_pair_since_entry_valid_frames": 148,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "15",
+      "dwell_valid_frames": 108,
+      "same_pair_since_entry_valid_frames": 108,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "16",
+      "dwell_valid_frames": 92,
+      "same_pair_since_entry_valid_frames": 84,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "17",
+      "dwell_valid_frames": 60,
+      "same_pair_since_entry_valid_frames": 52,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "18",
+      "dwell_valid_frames": 79,
+      "same_pair_since_entry_valid_frames": 59,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    },
+    {
+      "sequence": "19",
+      "dwell_valid_frames": 52,
+      "same_pair_since_entry_valid_frames": 52,
+      "dwell_only_fp_with_continuity": 0,
+      "dwell_only_tp_with_continuity": 0,
+      "dwell_only_fp_without_continuity": 0,
+      "dwell_only_tp_without_continuity": 0
+    }
+  ],
+  "dwell_identity_summary": {
+    "dwell_valid_frames": 1889,
+    "same_pair_since_entry_valid_frames": 1745,
+    "dwell_only_fp_with_continuity": 13,
+    "dwell_only_tp_with_continuity": 19,
+    "dwell_only_fp_without_continuity": 0,
+    "dwell_only_tp_without_continuity": 0
+  },
+  "note": "Post-result metadata audit only. No new gate or threshold applied. Same-track continuity is not identity/action ground truth; normal duration support is unchanged from experiment37."
+}

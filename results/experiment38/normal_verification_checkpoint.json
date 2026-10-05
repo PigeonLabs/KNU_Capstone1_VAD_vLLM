@@ -1,0 +1,8 @@
+{
+  "created_at_utc": "2026-10-04T23:55:31.985972+00:00",
+  "file_sha256": {
+    "results/experiment38/pre_test_checkpoint.json": "a3e05f4ede34a91ec5e4ce5b1b048973c44a97d13d2205cd7320151e2da72eed",
+    "results/experiment38/normal_routing_audit.json": "60628cb685c321dfd7d3cdded8ee17d6d9426c1c06ad9834b87b29d0ca91c8de",
+    "results/experiment38/normal_access.json": "744ecff14a76bd8891165a652333c3e1283ea97bebba732b51fed6b0099e9f0e"
+  }
+}

@@ -1,0 +1,3652 @@
+{
+  "rows": [
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "01",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "03",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "04",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 7,
+      "combined_changed_samples": 7,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 4,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 1,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "05",
+      "held_out": null,
+      "initial_samples": 3,
+      "initial_frames": 12,
+      "visual_changed_samples": 3,
+      "combined_changed_samples": 3,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 3,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 3,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 3,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "06",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 7,
+      "combined_changed_samples": 7,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "07",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 8,
+      "combined_changed_samples": 8,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "09",
+      "held_out": null,
+      "initial_samples": 4,
+      "initial_frames": 16,
+      "visual_changed_samples": 4,
+      "combined_changed_samples": 4,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 28,
+      "after_first_fp_guarded": 28,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 4,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 4,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 4,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "11",
+      "held_out": null,
+      "initial_samples": 6,
+      "initial_frames": 24,
+      "visual_changed_samples": 6,
+      "combined_changed_samples": 6,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 6,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 6,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 6,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "13",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 7,
+      "combined_changed_samples": 7,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "14",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 5,
+      "combined_changed_samples": 5,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "16",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "17",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 5,
+      "combined_changed_samples": 5,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "18",
+      "held_out": null,
+      "initial_samples": 11,
+      "initial_frames": 44,
+      "visual_changed_samples": 11,
+      "combined_changed_samples": 11,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 20,
+      "after_first_fp_guarded": 20,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 11,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 11,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 11,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "19",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 7,
+      "combined_changed_samples": 7,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 28,
+      "after_first_fp_guarded": 28,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "20",
+      "held_out": null,
+      "initial_samples": 15,
+      "initial_frames": 60,
+      "visual_changed_samples": 15,
+      "combined_changed_samples": 15,
+      "initial_fp_control": 4,
+      "initial_fp_guarded": 4,
+      "after_first_fp_control": 48,
+      "after_first_fp_guarded": 48,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 15,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 1,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 15,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 15,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "21",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 5,
+      "combined_changed_samples": 5,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 32,
+      "after_first_fp_guarded": 32,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 5,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "22",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 7,
+      "combined_changed_samples": 7,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 7,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "23",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 8,
+      "combined_changed_samples": 8,
+      "initial_fp_control": 8,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 1,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "24",
+      "held_out": null,
+      "initial_samples": 9,
+      "initial_frames": 36,
+      "visual_changed_samples": 9,
+      "combined_changed_samples": 9,
+      "initial_fp_control": 16,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 4,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "fit",
+      "sequence": "25",
+      "held_out": null,
+      "initial_samples": 9,
+      "initial_frames": 36,
+      "visual_changed_samples": 9,
+      "combined_changed_samples": 9,
+      "initial_fp_control": 12,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 3,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 9,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "calibration",
+      "sequence": "02",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "calibration",
+      "sequence": "08",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 8,
+      "combined_changed_samples": 8,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "calibration",
+      "sequence": "10",
+      "held_out": null,
+      "initial_samples": 10,
+      "initial_frames": 40,
+      "visual_changed_samples": 10,
+      "combined_changed_samples": 10,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 10,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 10,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 10,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "calibration",
+      "sequence": "12",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "calibration",
+      "sequence": "15",
+      "held_out": null,
+      "initial_samples": 2,
+      "initial_frames": 8,
+      "visual_changed_samples": 2,
+      "combined_changed_samples": 2,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 2,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 2,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 2,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "holdout",
+      "sequence": "02",
+      "held_out": "02",
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 8,
+      "after_first_fp_guarded": 8,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "holdout",
+      "sequence": "08",
+      "held_out": "08",
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 8,
+      "combined_changed_samples": 8,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 8,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "holdout",
+      "sequence": "10",
+      "held_out": "10",
+      "initial_samples": 10,
+      "initial_frames": 40,
+      "visual_changed_samples": 10,
+      "combined_changed_samples": 10,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 10,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 10,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 10,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "holdout",
+      "sequence": "12",
+      "held_out": "12",
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 24,
+      "after_first_fp_guarded": 24,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "hold",
+      "partition": "holdout",
+      "sequence": "15",
+      "held_out": "15",
+      "initial_samples": 2,
+      "initial_frames": 8,
+      "visual_changed_samples": 2,
+      "combined_changed_samples": 2,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 8,
+      "after_first_fp_guarded": 8,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 2,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 2,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 2,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "01",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "03",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "04",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 4,
+      "initial_fp_guarded": 4,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "05",
+      "held_out": null,
+      "initial_samples": 3,
+      "initial_frames": 12,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "06",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "07",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "09",
+      "held_out": null,
+      "initial_samples": 4,
+      "initial_frames": 16,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "11",
+      "held_out": null,
+      "initial_samples": 6,
+      "initial_frames": 24,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "13",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "14",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "16",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "17",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "18",
+      "held_out": null,
+      "initial_samples": 11,
+      "initial_frames": 44,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "19",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "20",
+      "held_out": null,
+      "initial_samples": 15,
+      "initial_frames": 60,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 4,
+      "initial_fp_guarded": 4,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "21",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "22",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "23",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 8,
+      "after_first_fp_guarded": 8,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "24",
+      "held_out": null,
+      "initial_samples": 9,
+      "initial_frames": 36,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "fit",
+      "sequence": "25",
+      "held_out": null,
+      "initial_samples": 9,
+      "initial_frames": 36,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "calibration",
+      "sequence": "02",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "calibration",
+      "sequence": "08",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "calibration",
+      "sequence": "10",
+      "held_out": null,
+      "initial_samples": 10,
+      "initial_frames": 40,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "calibration",
+      "sequence": "12",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "calibration",
+      "sequence": "15",
+      "held_out": null,
+      "initial_samples": 2,
+      "initial_frames": 8,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "holdout",
+      "sequence": "02",
+      "held_out": "02",
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 8,
+      "after_first_fp_guarded": 8,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "holdout",
+      "sequence": "08",
+      "held_out": "08",
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "holdout",
+      "sequence": "10",
+      "held_out": "10",
+      "initial_samples": 10,
+      "initial_frames": 40,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "holdout",
+      "sequence": "12",
+      "held_out": "12",
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 24,
+      "after_first_fp_guarded": 24,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "pool",
+      "partition": "holdout",
+      "sequence": "15",
+      "held_out": "15",
+      "initial_samples": 2,
+      "initial_frames": 8,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "01",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "03",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "04",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 4,
+      "initial_fp_guarded": 4,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "05",
+      "held_out": null,
+      "initial_samples": 3,
+      "initial_frames": 12,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "06",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "07",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "09",
+      "held_out": null,
+      "initial_samples": 4,
+      "initial_frames": 16,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 16,
+      "after_first_fp_guarded": 16,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "11",
+      "held_out": null,
+      "initial_samples": 6,
+      "initial_frames": 24,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 6,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "13",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "14",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "16",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "17",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "18",
+      "held_out": null,
+      "initial_samples": 11,
+      "initial_frames": 44,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 20,
+      "after_first_fp_guarded": 20,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 11,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "19",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 28,
+      "after_first_fp_guarded": 28,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "20",
+      "held_out": null,
+      "initial_samples": 15,
+      "initial_frames": 60,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 4,
+      "initial_fp_guarded": 4,
+      "after_first_fp_control": 48,
+      "after_first_fp_guarded": 48,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 15,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "21",
+      "held_out": null,
+      "initial_samples": 5,
+      "initial_frames": 20,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 28,
+      "after_first_fp_guarded": 28,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 5,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "22",
+      "held_out": null,
+      "initial_samples": 7,
+      "initial_frames": 28,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 7,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "23",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 1,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "24",
+      "held_out": null,
+      "initial_samples": 9,
+      "initial_frames": 36,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 4,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "fit",
+      "sequence": "25",
+      "held_out": null,
+      "initial_samples": 9,
+      "initial_frames": 36,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 3,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 9,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "calibration",
+      "sequence": "02",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "calibration",
+      "sequence": "08",
+      "held_out": null,
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "calibration",
+      "sequence": "10",
+      "held_out": null,
+      "initial_samples": 10,
+      "initial_frames": 40,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "calibration",
+      "sequence": "12",
+      "held_out": null,
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "calibration",
+      "sequence": "15",
+      "held_out": null,
+      "initial_samples": 2,
+      "initial_frames": 8,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "holdout",
+      "sequence": "02",
+      "held_out": "02",
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 8,
+      "after_first_fp_guarded": 8,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "holdout",
+      "sequence": "08",
+      "held_out": "08",
+      "initial_samples": 8,
+      "initial_frames": 32,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 4,
+      "after_first_fp_guarded": 4,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 8,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "holdout",
+      "sequence": "10",
+      "held_out": "10",
+      "initial_samples": 10,
+      "initial_frames": 40,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 0,
+      "after_first_fp_guarded": 0,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 10,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "holdout",
+      "sequence": "12",
+      "held_out": "12",
+      "initial_samples": 0,
+      "initial_frames": 0,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 24,
+      "after_first_fp_guarded": 24,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    },
+    {
+      "gate": "age",
+      "partition": "holdout",
+      "sequence": "15",
+      "held_out": "15",
+      "initial_samples": 2,
+      "initial_frames": 8,
+      "visual_changed_samples": 0,
+      "combined_changed_samples": 0,
+      "initial_fp_control": 0,
+      "initial_fp_guarded": 0,
+      "after_first_fp_control": 8,
+      "after_first_fp_guarded": 8,
+      "requests_by_role": [
+        {
+          "role": -1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 0,
+          "initial_observations": 0,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 1,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        },
+        {
+          "role": 2,
+          "initial_observations": 2,
+          "initial_phase_requests_before": 0,
+          "initial_phase_requests_after": 0
+        }
+      ]
+    }
+  ],
+  "allowed_array_changes": {
+    "hold_full": [
+      "calibration_1",
+      "calibration_2",
+      "calibration_-1"
+    ],
+    "hold_02": [
+      "calibration_1",
+      "calibration_2",
+      "calibration_-1"
+    ],
+    "hold_08": [
+      "calibration_1",
+      "calibration_2",
+      "calibration_-1"
+    ],
+    "hold_10": [
+      "calibration_1",
+      "calibration_2",
+      "calibration_-1"
+    ],
+    "hold_12": [
+      "calibration_1",
+      "calibration_2",
+      "calibration_-1"
+    ],
+    "hold_15": [
+      "calibration_1",
+      "calibration_2",
+      "calibration_-1"
+    ],
+    "pool_full": [],
+    "pool_02": [],
+    "pool_08": [],
+    "pool_10": [],
+    "pool_12": [],
+    "pool_15": [],
+    "age_full": [],
+    "age_02": [],
+    "age_08": [],
+    "age_10": [],
+    "age_12": [],
+    "age_15": []
+  },
+  "control_normal_models_and_scores_exact_to37": 3,
+  "used_request_cdf_pca_process_unchanged": true,
+  "post_first_scores_unchanged": true,
+  "pool_age_scores_unchanged": true
+}

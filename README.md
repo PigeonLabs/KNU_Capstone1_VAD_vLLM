@@ -44,7 +44,8 @@
 | 실험 35 | 자발적 anchor 교체의 연속 우위 확인 | 완료: 왕복 감소·구간 증가, ranking/recall·정상 오탐 악화 | [결과·의의·추천 3개](docs/EXPERIMENT35.md) |
 | 실험 36 | 현재 선택 정책에 맞춘 정상 phase 재학습 | 완료: 오탐 감소·recall 감소, 동일 쌍 공정 전환 소실 | [결과·의의·추천 3개](docs/EXPERIMENT36.md) |
 | 실험 37 | asinh phase 거리의 극단값 영향 완화 | 완료: phase 지원/전환 증가, 정상·test 오탐 증가 및 초기 phase0 문제 확인 | [결과·의의·추천 3개](docs/EXPERIMENT37.md) |
-| 다음 실험 38 | 첫 관측 전 phase 미확정 처리 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT38_PLAN.md) |
+| 실험 38 | 첫 관측 전 phase 미확정 처리 | 완료: hold 초기 FP60 제거·TP 유지, pool/age 출력 동일 | [결과·의의·추천 3개](docs/EXPERIMENT38.md) |
+| 다음 실험 39 | 체류 결합에 동일 객체 쌍 진입 근거 적용 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT39_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1230,3 +1231,31 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **역할 및 phase 의미의 정상 근거 검증**: 새 상태 분할이 역할 혼동/정적 외형과 실제 관계 변화 중 무엇을 반영하는지 확인 | 정상 동일 쌍 전환51/14와 strict complete17/4를 확보했지만 action GT 없음. 예전 희소 상태와 phase2는 모두 새 phase3으로 합쳐지고 24개 사례의 선택은 그대로 | 정상 보조 역할/경계 주석과 sequence별 관찰을 분리하고 실제 의미 정확도·영상 집중·후속 탐지를 검증. balanced cluster, track 동일성, median 시간 순서를 동작 정답으로 쓰지 않음 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT37.md) · [비교 CSV](results/experiment37/comparison.csv) · [정상 phase 교차표](results/experiment37/normal_phase_contingency.png) · [검증](results/experiment37/validation.json) · [1순위를 구체화한 실험 38 계획](docs/EXPERIMENT38_PLAN.md)
+
+
+## 실험 38 — 첫 관계 관측 전 phase 미확정 처리
+
+| 구성 | Visual AUROC / AP | Combined AUROC / AP | 정상 FPR (FP) | 이상 recall (TP) | 탐지 / 26 |
+|---|---:|---:|---:|---:|---:|
+| control_hold | 0.6187 / 0.6363 | 0.6245 / 0.6377 | 9.93% (355) | 13.52% (619) | 14 |
+| control_pool | 0.6860 / 0.6814 | 0.6916 / 0.6815 | 7.47% (267) | 12.28% (562) | 14 |
+| control_age | 0.6852 / 0.6809 | 0.6906 / 0.6812 | 8.25% (295) | 13.43% (615) | 13 |
+| guarded_hold | 0.6856 / 0.6822 | 0.6910 / 0.6826 | 8.25% (295) | 13.52% (619) | 14 |
+| guarded_pool | 0.6860 / 0.6814 | 0.6916 / 0.6815 | 7.47% (267) | 12.28% (562) | 14 |
+| guarded_age | 0.6852 / 0.6809 | 0.6906 / 0.6812 | 8.25% (295) | 13.43% (615) | 13 |
+
+![실험 38 비교](results/experiment38/initial_observation_comparison.png)
+
+**의의:** 첫 관계 관측 전에는 pooled 외형을 요청하도록 했다. 같은 PCA·공정·실제 CDF·q99에서 hold FP355→295, TP619와 탐지14구간은 그대로다. 첫 관측 이후 점수는 정확히 같고 pool/age 예측도 완전히 동일하다. 임의 초기 phase ID와 관측한 상태를 구분하는 교정의 효과를 확인했다.
+
+**보완할 점:** 초기 test652프레임은 모두 정상이라 초기 이상 recall은 미측정이다. 정상 holdout44/40/44와 이후 오탐은 그대로이며, 체류 가용1,889 중144프레임은 동일 쌍 진입 근거가 없다. 반면 체류 독자 FP13/TP19는 이미 동일 쌍 근거를 가져 단순 gate로 제거할 오류가 아니다. strict 체류 지원9/4의 부족과 단일 R04 반복 개발 한계가 남는다. 테스트165개 통과, 비용은 미측정이다.
+
+### 다음 Recommended improvements — 추천순 3개
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **체류 결합의 관측 근거를 동일 객체 쌍으로 제한**: 기존 분포·점수는 유지하고 실제 phase 진입 이후 같은 쌍의 연속성을 결합 gate로 요구 | 현재 체류 가용1,889 frames 중144는 진입 이후 동일 쌍 근거 없음. 외형 초기 상태를 고쳤지만 공정 근거 문제는 그대로 | 전이/외형/CDF·학습을 고정하고 결합만 비교. 독자 FP13/TP19는 이미 같은 쌍 근거가 있으므로 제거를 약속하지 않음. 정상 q99와 ranking·가용성·차단 이상을 분리 검증 |
+| 2 | **체류 학습 표본의 관측 정의 정렬**: 완결·검열·진입 미확인을 분리하고 실제 동일 쌍 자료로 분포를 학습할 수 있는지 검증 | 기존 0→1/1→2 지원13/16 대비 strict complete9/4. 결합 gate만으로 학습 분포 오염은 해결되지 않음 | support10을9로 낮추지 않으며 자료 부족·검열 가정을 명시. 결합 변경과 별도 실험으로 분리하고 분포의 불확실성 및 정상 holdout 검증 |
+| 3 | **다른 장면·초기 이상 구간에서 적용성 확인**: 고정 파이프라인의 관측 초기화/공정 근거 원칙을 별도 평가 범위로 검증 | R04 초기 test652 frames는 모두 정상. 반복 개발에서 FP60 감소를 관측했지만 초기 이상 recall·장면 일반화는 미측정 | 다음 적용 장면/그룹과 규칙을 test 확인 전에 고정하고 정상 FIT만으로 장면별 적합. 근접 녹화 그룹 독립성 부재·미지원 객체/phase·실패도 보고 |
+
+[상세 결과·의의·한계·재현](docs/EXPERIMENT38.md) · [비교 CSV](results/experiment38/comparison.csv) · [검증](results/experiment38/validation.json) · [1순위를 구체화한 실험 39 계획](docs/EXPERIMENT39_PLAN.md)

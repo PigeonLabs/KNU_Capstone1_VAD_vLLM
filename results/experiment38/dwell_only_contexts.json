@@ -1,0 +1,56 @@
+{
+  "38_control_hold": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "38_control_pool": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "38_control_age": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "38_guarded_hold": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "38_guarded_pool": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "38_guarded_age": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  }
+}
