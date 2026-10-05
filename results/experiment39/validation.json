@@ -1,0 +1,14 @@
+{
+  "frozen_protocols_verified": true,
+  "normal_holdout_cells_reconstructed": 30,
+  "test_predictions_reconstructed": 114,
+  "source_feature_files_reused": 44,
+  "control_test_prediction_files_all_prior_arrays_exact": 57,
+  "test_mask_prefix_checks": 38,
+  "raw_visual_transition_dwell_arrays_exact": true,
+  "all_non_threshold_model_arrays_exact": true,
+  "gated_scores_nonincreasing": true,
+  "pooled_pca_unchanged": true,
+  "normal_reference_q99_same_pair_process_gate_independently_reconstructed": true,
+  "labels_metrics_events_recomputed": true
+}

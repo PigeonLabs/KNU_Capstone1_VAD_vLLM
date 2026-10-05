@@ -29,7 +29,17 @@ class DwellBaseline(StateCalibratedBaseline):
             else:raise ValueError('Unknown transition evidence gate')
             effective=np.where(mask,transition,0.)
             result.update(transition_raw=self.raw(data)[1],transition_valid=mask,transition_gated=effective)
-        result['process']=np.where(valid,np.maximum(effective,score),effective)
+        dwell_effective=np.where(valid,score,0.)
+        dwell_gate=self.cfg.get('dwell_evidence_gate')
+        if dwell_gate is not None:
+            if dwell_gate not in ['ungated','same_track_pair_since_entry']:
+                raise ValueError('Unknown dwell evidence gate')
+            from ipad_vad.dwell_evidence import same_pair_since_entry_mask
+            evidence=same_pair_since_entry_mask(data)
+            if dwell_gate=='same_track_pair_since_entry':
+                dwell_effective=np.where(evidence,dwell_effective,0.)
+            result.update(dwell_evidence_valid=evidence,dwell_gated=dwell_effective)
+        result['process']=np.maximum(effective,dwell_effective)
         result['combined']=self.fuse(result['visual'],result['process'])
         result.update(transition=transition,dwell=score,dwell_valid=valid,dwell_age=age,dwell_reason=reason)
         return result

@@ -1,0 +1,56 @@
+{
+  "39_control_hold": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "39_control_pool": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "39_control_age": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "39_gated_hold": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "39_gated_pool": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  },
+  "39_gated_age": {
+    "1->2": {
+      "fp": 13,
+      "tp": 19,
+      "sequences": [
+        "R04_08"
+      ]
+    }
+  }
+}

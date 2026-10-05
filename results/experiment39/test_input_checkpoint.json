@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-05T00:14:15.134714+00:00",
+  "file_sha256": {
+    "artifacts/experiment37/asinh/features/R04/testing_01.npz": "d974360a69767e9973e98cabc30a1ad9fa575553fcb600786273e8e2492dfb7d",
+    "artifacts/experiment37/asinh/features/R04/testing_02.npz": "ec53ec550a2b0777174f331a592e2b47cc7a635188d10510bf1dc40ec873efac",
+    "artifacts/experiment37/asinh/features/R04/testing_03.npz": "8034457816a9c0a6635de6f15140dc004268ebc9c862ff5b0c53d3191f0a8df4",
+    "artifacts/experiment37/asinh/features/R04/testing_04.npz": "554293a0f8580bf5330a79c915f10d5282df560198c3c7267206bbaca030a920",
+    "artifacts/experiment37/asinh/features/R04/testing_05.npz": "0de797f966fe94aac0eabb4caa06730b6192e0a962ffadf8564526f19a683e06",
+    "artifacts/experiment37/asinh/features/R04/testing_06.npz": "b75981becb18c8a579956584e1450be4c021e0ed17bc56e0a8a91ed56aeb25c4",
+    "artifacts/experiment37/asinh/features/R04/testing_07.npz": "0663bfcfcba05455d968ec9d0ed5611eaa46839da001e5308728e9874a4a5301",
+    "artifacts/experiment37/asinh/features/R04/testing_08.npz": "9905c7cd8fa74db43e7318a8bb6dede5aa293448db59c0867a32e57e06db8a4d",
+    "artifacts/experiment37/asinh/features/R04/testing_09.npz": "ba274e352054ecd46a9c0839bbecaa112f7d8b63334d6a35f2c29ccee31b8aba",
+    "artifacts/experiment37/asinh/features/R04/testing_10.npz": "a18893653cf637ec552f985428d52b780750c3e7258b5e4a7462d02ff6f25b9a",
+    "artifacts/experiment37/asinh/features/R04/testing_11.npz": "cf942c79acb32870402c75a1226054dbc60cba8efab004990bb7f38cb3d15ccb",
+    "artifacts/experiment37/asinh/features/R04/testing_12.npz": "6b0b319fbacbf4d81e84212d21416dff2e08fe68bb9d7f5a198686f36780bf4b",
+    "artifacts/experiment37/asinh/features/R04/testing_13.npz": "89facf6e0ae761928b2dea784512b44c1b599be90e9d368a687816a14f2968bc",
+    "artifacts/experiment37/asinh/features/R04/testing_14.npz": "599b8dd395e44e82ed625e14111527014d0ea52bbeaeccac61cbdfeec0b3e1aa",
+    "artifacts/experiment37/asinh/features/R04/testing_15.npz": "c53ab2cb9957be61e4b20ba51706f5dff5c46a6823c0d0793139e6666499bdcf",
+    "artifacts/experiment37/asinh/features/R04/testing_16.npz": "022723dea1fb63adb14ed2abccfcb88c23ceb5edb89ed740fdf6dc031cafa512",
+    "artifacts/experiment37/asinh/features/R04/testing_17.npz": "d433497ad1315641dda12bd323b908603cbd429f1c718d1936efa6aa46a52642",
+    "artifacts/experiment37/asinh/features/R04/testing_18.npz": "29b50ff9bc6451e23c3eccb1c6caa4c6875ec5f416c8f6902ab6960d217f6f7b",
+    "artifacts/experiment37/asinh/features/R04/testing_19.npz": "ce663a7778a7057c309f6a50651d748a4419252f9965d50faa5605cca46971cb"
+  }
+}

@@ -1,0 +1,3462 @@
+{
+  "normal_only_duration_fit_audit": true,
+  "no_distribution_refit": true,
+  "normal_duration_support": {
+    "fit": {
+      "0->1": {
+        "legacy_complete": 13,
+        "same_pair_complete": 9,
+        "same_pair_complete_videos": [
+          "09",
+          "13",
+          "14",
+          "16",
+          "17",
+          "18",
+          "20",
+          "21",
+          "24"
+        ],
+        "same_pair_right_censored": 10,
+        "right_censored_with_positive_lower_bound": 10,
+        "right_censor_causes": {
+          "relation_missing": 8,
+          "target_changed": 1,
+          "anchor_changed": 1
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": [
+          44,
+          48,
+          48,
+          52,
+          60,
+          60,
+          60,
+          64,
+          64
+        ]
+      },
+      "0->3": {
+        "legacy_complete": 1,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "1->0": {
+        "legacy_complete": 2,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "1->2": {
+        "legacy_complete": 16,
+        "same_pair_complete": 4,
+        "same_pair_complete_videos": [
+          "13",
+          "14",
+          "19"
+        ],
+        "same_pair_right_censored": 22,
+        "right_censored_with_positive_lower_bound": 11,
+        "right_censor_causes": {
+          "relation_missing": 13,
+          "anchor_changed": 4,
+          "target_changed": 5
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": [
+          8,
+          12,
+          12,
+          16
+        ]
+      },
+      "1->3": {
+        "legacy_complete": 3,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "2->0": {
+        "legacy_complete": 5,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "2->1": {
+        "legacy_complete": 7,
+        "same_pair_complete": 4,
+        "same_pair_complete_videos": [
+          "13",
+          "14",
+          "19"
+        ],
+        "same_pair_right_censored": 2,
+        "right_censored_with_positive_lower_bound": 1,
+        "right_censor_causes": {
+          "video_end": 1,
+          "target_changed": 1
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": [
+          4,
+          4,
+          4,
+          12
+        ]
+      },
+      "2->3": {
+        "legacy_complete": 9,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "3->0": {
+        "legacy_complete": 3,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "3->1": {
+        "legacy_complete": 2,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "3->2": {
+        "legacy_complete": 8,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      }
+    },
+    "calibration": {
+      "0->1": {
+        "legacy_complete": 4,
+        "same_pair_complete": 2,
+        "same_pair_complete_videos": [
+          "08",
+          "15"
+        ],
+        "same_pair_right_censored": 1,
+        "right_censored_with_positive_lower_bound": 1,
+        "right_censor_causes": {
+          "anchor_changed": 1
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": [
+          60,
+          60
+        ]
+      },
+      "0->3": {
+        "legacy_complete": 3,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 1,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {
+          "anchor_changed": 1
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "1->0": {
+        "legacy_complete": 2,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "1->2": {
+        "legacy_complete": 2,
+        "same_pair_complete": 1,
+        "same_pair_complete_videos": [
+          "12"
+        ],
+        "same_pair_right_censored": 5,
+        "right_censored_with_positive_lower_bound": 4,
+        "right_censor_causes": {
+          "relation_missing": 4,
+          "target_changed": 1
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": [
+          8
+        ]
+      },
+      "1->3": {
+        "legacy_complete": 2,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "2->1": {
+        "legacy_complete": 1,
+        "same_pair_complete": 1,
+        "same_pair_complete_videos": [
+          "12"
+        ],
+        "same_pair_right_censored": 3,
+        "right_censored_with_positive_lower_bound": 2,
+        "right_censor_causes": {
+          "relation_missing": 3
+        },
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": [
+          12
+        ]
+      },
+      "2->3": {
+        "legacy_complete": 3,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "3->0": {
+        "legacy_complete": 2,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "3->1": {
+        "legacy_complete": 3,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      },
+      "3->2": {
+        "legacy_complete": 2,
+        "same_pair_complete": 0,
+        "same_pair_complete_videos": [],
+        "same_pair_right_censored": 0,
+        "right_censored_with_positive_lower_bound": 0,
+        "right_censor_causes": {},
+        "strict_meets_minimum10": false,
+        "strict_complete_durations": []
+      }
+    }
+  },
+  "normal_observed_entry_episodes": [
+    {
+      "partition": "fit",
+      "sequence": "01",
+      "episode_id": 5,
+      "start_sample": 13,
+      "first_observed_source_frame": 52,
+      "phase": 1,
+      "track_pair": [
+        1,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 52,
+      "end_sample_exclusive": 24,
+      "last_observed_sample": 23,
+      "last_observed_source_frame": 92,
+      "observed_samples": 11,
+      "observation_span_frames": 40,
+      "boundary_sample": 24,
+      "boundary_source_frame": 96,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 40
+    },
+    {
+      "partition": "fit",
+      "sequence": "04",
+      "episode_id": 14,
+      "start_sample": 87,
+      "first_observed_source_frame": 348,
+      "phase": 2,
+      "track_pair": [
+        24,
+        23
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 348,
+      "end_sample_exclusive": 88,
+      "last_observed_sample": 87,
+      "last_observed_source_frame": 348,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 88,
+      "boundary_source_frame": 352,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "episode_id": 6,
+      "start_sample": 17,
+      "first_observed_source_frame": 68,
+      "phase": 1,
+      "track_pair": [
+        0,
+        3
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 68,
+      "end_sample_exclusive": 35,
+      "last_observed_sample": 34,
+      "last_observed_source_frame": 136,
+      "observed_samples": 18,
+      "observation_span_frames": 68,
+      "boundary_sample": 35,
+      "boundary_source_frame": 140,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 68
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "episode_id": 9,
+      "start_sample": 39,
+      "first_observed_source_frame": 156,
+      "phase": 2,
+      "track_pair": [
+        15,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 156,
+      "end_sample_exclusive": 41,
+      "last_observed_sample": 40,
+      "last_observed_source_frame": 160,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 41,
+      "boundary_source_frame": 164,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "06",
+      "episode_id": 2,
+      "start_sample": 17,
+      "first_observed_source_frame": 68,
+      "phase": 1,
+      "track_pair": [
+        0,
+        3
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 68,
+      "end_sample_exclusive": 32,
+      "last_observed_sample": 31,
+      "last_observed_source_frame": 124,
+      "observed_samples": 15,
+      "observation_span_frames": 56,
+      "boundary_sample": 32,
+      "boundary_source_frame": 128,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 56
+    },
+    {
+      "partition": "fit",
+      "sequence": "06",
+      "episode_id": 7,
+      "start_sample": 63,
+      "first_observed_source_frame": 252,
+      "phase": 2,
+      "track_pair": [
+        0,
+        10
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 252,
+      "end_sample_exclusive": 64,
+      "last_observed_sample": 63,
+      "last_observed_source_frame": 252,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 64,
+      "boundary_source_frame": 256,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "07",
+      "episode_id": 4,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        5
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 29,
+      "last_observed_sample": 28,
+      "last_observed_source_frame": 112,
+      "observed_samples": 13,
+      "observation_span_frames": 48,
+      "boundary_sample": 29,
+      "boundary_source_frame": 116,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 48
+    },
+    {
+      "partition": "fit",
+      "sequence": "09",
+      "episode_id": 3,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 32,
+      "last_observed_sample": 31,
+      "last_observed_source_frame": 124,
+      "observed_samples": 16,
+      "observation_span_frames": 60,
+      "boundary_sample": 32,
+      "boundary_source_frame": 128,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 64,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "09",
+      "episode_id": 4,
+      "start_sample": 32,
+      "first_observed_source_frame": 128,
+      "phase": 2,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 128,
+      "end_sample_exclusive": 34,
+      "last_observed_sample": 33,
+      "last_observed_source_frame": 132,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 34,
+      "boundary_source_frame": 136,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "11",
+      "episode_id": 2,
+      "start_sample": 14,
+      "first_observed_source_frame": 56,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 56,
+      "end_sample_exclusive": 26,
+      "last_observed_sample": 25,
+      "last_observed_source_frame": 100,
+      "observed_samples": 12,
+      "observation_span_frames": 44,
+      "boundary_sample": 26,
+      "boundary_source_frame": 104,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 44
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "episode_id": 2,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 28,
+      "last_observed_sample": 27,
+      "last_observed_source_frame": 108,
+      "observed_samples": 12,
+      "observation_span_frames": 44,
+      "boundary_sample": 28,
+      "boundary_source_frame": 112,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 48,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "episode_id": 3,
+      "start_sample": 28,
+      "first_observed_source_frame": 112,
+      "phase": 2,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 112,
+      "end_sample_exclusive": 31,
+      "last_observed_sample": 30,
+      "last_observed_source_frame": 120,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 31,
+      "boundary_source_frame": 124,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 12,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "episode_id": 4,
+      "start_sample": 31,
+      "first_observed_source_frame": 124,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 124,
+      "end_sample_exclusive": 34,
+      "last_observed_sample": 33,
+      "last_observed_source_frame": 132,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 34,
+      "boundary_source_frame": 136,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 12,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "episode_id": 5,
+      "start_sample": 34,
+      "first_observed_source_frame": 136,
+      "phase": 2,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 136,
+      "end_sample_exclusive": 53,
+      "last_observed_sample": 52,
+      "last_observed_source_frame": 208,
+      "observed_samples": 19,
+      "observation_span_frames": 72,
+      "boundary_sample": 53,
+      "boundary_source_frame": 212,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 72
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 3,
+      "start_sample": 13,
+      "first_observed_source_frame": 52,
+      "phase": 1,
+      "track_pair": [
+        0,
+        2
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 52,
+      "end_sample_exclusive": 24,
+      "last_observed_sample": 23,
+      "last_observed_source_frame": 92,
+      "observed_samples": 11,
+      "observation_span_frames": 40,
+      "boundary_sample": 24,
+      "boundary_source_frame": 96,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 44,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 4,
+      "start_sample": 24,
+      "first_observed_source_frame": 96,
+      "phase": 2,
+      "track_pair": [
+        0,
+        2
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 96,
+      "end_sample_exclusive": 25,
+      "last_observed_sample": 24,
+      "last_observed_source_frame": 96,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 25,
+      "boundary_source_frame": 100,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 12,
+      "start_sample": 64,
+      "first_observed_source_frame": 256,
+      "phase": 2,
+      "track_pair": [
+        14,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 256,
+      "end_sample_exclusive": 65,
+      "last_observed_sample": 64,
+      "last_observed_source_frame": 256,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 65,
+      "boundary_source_frame": 260,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 15,
+      "start_sample": 71,
+      "first_observed_source_frame": 284,
+      "phase": 1,
+      "track_pair": [
+        14,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 284,
+      "end_sample_exclusive": 72,
+      "last_observed_sample": 71,
+      "last_observed_source_frame": 284,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 72,
+      "boundary_source_frame": 288,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 4,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 16,
+      "start_sample": 72,
+      "first_observed_source_frame": 288,
+      "phase": 2,
+      "track_pair": [
+        14,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 288,
+      "end_sample_exclusive": 75,
+      "last_observed_sample": 74,
+      "last_observed_source_frame": 296,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 75,
+      "boundary_source_frame": 300,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 12,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 17,
+      "start_sample": 75,
+      "first_observed_source_frame": 300,
+      "phase": 1,
+      "track_pair": [
+        14,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 300,
+      "end_sample_exclusive": 76,
+      "last_observed_sample": 75,
+      "last_observed_source_frame": 300,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 76,
+      "boundary_source_frame": 304,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 4,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 18,
+      "start_sample": 76,
+      "first_observed_source_frame": 304,
+      "phase": 2,
+      "track_pair": [
+        14,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 304,
+      "end_sample_exclusive": 80,
+      "last_observed_sample": 79,
+      "last_observed_source_frame": 316,
+      "observed_samples": 4,
+      "observation_span_frames": 12,
+      "boundary_sample": 80,
+      "boundary_source_frame": 320,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 16,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "episode_id": 19,
+      "start_sample": 80,
+      "first_observed_source_frame": 320,
+      "phase": 1,
+      "track_pair": [
+        14,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 320,
+      "end_sample_exclusive": 81,
+      "last_observed_sample": 80,
+      "last_observed_source_frame": 320,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": null,
+      "boundary_source_frame": null,
+      "end_reason": "video_end",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "episode_id": 4,
+      "start_sample": 17,
+      "first_observed_source_frame": 68,
+      "phase": 1,
+      "track_pair": [
+        1,
+        5
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 68,
+      "end_sample_exclusive": 30,
+      "last_observed_sample": 29,
+      "last_observed_source_frame": 116,
+      "observed_samples": 13,
+      "observation_span_frames": 48,
+      "boundary_sample": 30,
+      "boundary_source_frame": 120,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 52,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "episode_id": 5,
+      "start_sample": 30,
+      "first_observed_source_frame": 120,
+      "phase": 2,
+      "track_pair": [
+        1,
+        5
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 120,
+      "end_sample_exclusive": 31,
+      "last_observed_sample": 30,
+      "last_observed_source_frame": 120,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 31,
+      "boundary_source_frame": 124,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "episode_id": 7,
+      "start_sample": 52,
+      "first_observed_source_frame": 208,
+      "phase": 2,
+      "track_pair": [
+        1,
+        10
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 208,
+      "end_sample_exclusive": 54,
+      "last_observed_sample": 53,
+      "last_observed_source_frame": 212,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 54,
+      "boundary_source_frame": 216,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "episode_id": 3,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        2
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 31,
+      "last_observed_sample": 30,
+      "last_observed_source_frame": 120,
+      "observed_samples": 15,
+      "observation_span_frames": 56,
+      "boundary_sample": 31,
+      "boundary_source_frame": 124,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 60,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "episode_id": 4,
+      "start_sample": 31,
+      "first_observed_source_frame": 124,
+      "phase": 2,
+      "track_pair": [
+        0,
+        2
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 124,
+      "end_sample_exclusive": 37,
+      "last_observed_sample": 36,
+      "last_observed_source_frame": 144,
+      "observed_samples": 6,
+      "observation_span_frames": 20,
+      "boundary_sample": 37,
+      "boundary_source_frame": 148,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 20
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "episode_id": 8,
+      "start_sample": 54,
+      "first_observed_source_frame": 216,
+      "phase": 2,
+      "track_pair": [
+        0,
+        8
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 216,
+      "end_sample_exclusive": 55,
+      "last_observed_sample": 54,
+      "last_observed_source_frame": 216,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 55,
+      "boundary_source_frame": 220,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "18",
+      "episode_id": 3,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 31,
+      "last_observed_sample": 30,
+      "last_observed_source_frame": 120,
+      "observed_samples": 15,
+      "observation_span_frames": 56,
+      "boundary_sample": 31,
+      "boundary_source_frame": 124,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 60,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "18",
+      "episode_id": 4,
+      "start_sample": 31,
+      "first_observed_source_frame": 124,
+      "phase": 2,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 124,
+      "end_sample_exclusive": 34,
+      "last_observed_sample": 33,
+      "last_observed_source_frame": 132,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 34,
+      "boundary_source_frame": 136,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 8
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "episode_id": 6,
+      "start_sample": 20,
+      "first_observed_source_frame": 80,
+      "phase": 1,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 80,
+      "end_sample_exclusive": 27,
+      "last_observed_sample": 26,
+      "last_observed_source_frame": 104,
+      "observed_samples": 7,
+      "observation_span_frames": 24,
+      "boundary_sample": 27,
+      "boundary_source_frame": 108,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 24
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "episode_id": 8,
+      "start_sample": 31,
+      "first_observed_source_frame": 124,
+      "phase": 2,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 124,
+      "end_sample_exclusive": 33,
+      "last_observed_sample": 32,
+      "last_observed_source_frame": 128,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 33,
+      "boundary_source_frame": 132,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 8,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "episode_id": 9,
+      "start_sample": 33,
+      "first_observed_source_frame": 132,
+      "phase": 1,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 132,
+      "end_sample_exclusive": 34,
+      "last_observed_sample": 33,
+      "last_observed_source_frame": 132,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 34,
+      "boundary_source_frame": 136,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 4,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "episode_id": 10,
+      "start_sample": 34,
+      "first_observed_source_frame": 136,
+      "phase": 2,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 136,
+      "end_sample_exclusive": 35,
+      "last_observed_sample": 34,
+      "last_observed_source_frame": 136,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 35,
+      "boundary_source_frame": 140,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "episode_id": 12,
+      "start_sample": 61,
+      "first_observed_source_frame": 244,
+      "phase": 2,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 244,
+      "end_sample_exclusive": 62,
+      "last_observed_sample": 61,
+      "last_observed_source_frame": 244,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 62,
+      "boundary_source_frame": 248,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "episode_id": 3,
+      "start_sample": 27,
+      "first_observed_source_frame": 108,
+      "phase": 1,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 108,
+      "end_sample_exclusive": 42,
+      "last_observed_sample": 41,
+      "last_observed_source_frame": 164,
+      "observed_samples": 15,
+      "observation_span_frames": 56,
+      "boundary_sample": 42,
+      "boundary_source_frame": 168,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 60,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "episode_id": 4,
+      "start_sample": 42,
+      "first_observed_source_frame": 168,
+      "phase": 2,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 168,
+      "end_sample_exclusive": 45,
+      "last_observed_sample": 44,
+      "last_observed_source_frame": 176,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 45,
+      "boundary_source_frame": 180,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 8
+    },
+    {
+      "partition": "fit",
+      "sequence": "21",
+      "episode_id": 3,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 32,
+      "last_observed_sample": 31,
+      "last_observed_source_frame": 124,
+      "observed_samples": 16,
+      "observation_span_frames": 60,
+      "boundary_sample": 32,
+      "boundary_source_frame": 128,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 64,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "21",
+      "episode_id": 4,
+      "start_sample": 32,
+      "first_observed_source_frame": 128,
+      "phase": 2,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 128,
+      "end_sample_exclusive": 33,
+      "last_observed_sample": 32,
+      "last_observed_source_frame": 128,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 33,
+      "boundary_source_frame": 132,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "22",
+      "episode_id": 1,
+      "start_sample": 11,
+      "first_observed_source_frame": 44,
+      "phase": 2,
+      "track_pair": [
+        0,
+        2
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 44,
+      "end_sample_exclusive": 12,
+      "last_observed_sample": 11,
+      "last_observed_source_frame": 44,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 12,
+      "boundary_source_frame": 48,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "22",
+      "episode_id": 3,
+      "start_sample": 16,
+      "first_observed_source_frame": 64,
+      "phase": 1,
+      "track_pair": [
+        0,
+        3
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 64,
+      "end_sample_exclusive": 27,
+      "last_observed_sample": 26,
+      "last_observed_source_frame": 104,
+      "observed_samples": 11,
+      "observation_span_frames": 40,
+      "boundary_sample": 27,
+      "boundary_source_frame": 108,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 40
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "episode_id": 3,
+      "start_sample": 17,
+      "first_observed_source_frame": 68,
+      "phase": 1,
+      "track_pair": [
+        0,
+        5
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 68,
+      "end_sample_exclusive": 26,
+      "last_observed_sample": 25,
+      "last_observed_source_frame": 100,
+      "observed_samples": 9,
+      "observation_span_frames": 32,
+      "boundary_sample": 26,
+      "boundary_source_frame": 104,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 32
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "episode_id": 7,
+      "start_sample": 34,
+      "first_observed_source_frame": 136,
+      "phase": 2,
+      "track_pair": [
+        0,
+        8
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 136,
+      "end_sample_exclusive": 36,
+      "last_observed_sample": 35,
+      "last_observed_source_frame": 140,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 36,
+      "boundary_source_frame": 144,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "episode_id": 9,
+      "start_sample": 40,
+      "first_observed_source_frame": 160,
+      "phase": 1,
+      "track_pair": [
+        0,
+        8
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 160,
+      "end_sample_exclusive": 45,
+      "last_observed_sample": 44,
+      "last_observed_source_frame": 176,
+      "observed_samples": 5,
+      "observation_span_frames": 16,
+      "boundary_sample": 45,
+      "boundary_source_frame": 180,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 16
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "episode_id": 14,
+      "start_sample": 62,
+      "first_observed_source_frame": 248,
+      "phase": 2,
+      "track_pair": [
+        0,
+        8
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 248,
+      "end_sample_exclusive": 63,
+      "last_observed_sample": 62,
+      "last_observed_source_frame": 248,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 63,
+      "boundary_source_frame": 252,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "episode_id": 3,
+      "start_sample": 19,
+      "first_observed_source_frame": 76,
+      "phase": 1,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 76,
+      "end_sample_exclusive": 31,
+      "last_observed_sample": 30,
+      "last_observed_source_frame": 120,
+      "observed_samples": 12,
+      "observation_span_frames": 44,
+      "boundary_sample": 31,
+      "boundary_source_frame": 124,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 48,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "episode_id": 4,
+      "start_sample": 31,
+      "first_observed_source_frame": 124,
+      "phase": 2,
+      "track_pair": [
+        0,
+        6
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 124,
+      "end_sample_exclusive": 35,
+      "last_observed_sample": 34,
+      "last_observed_source_frame": 136,
+      "observed_samples": 4,
+      "observation_span_frames": 12,
+      "boundary_sample": 35,
+      "boundary_source_frame": 140,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 12
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "episode_id": 6,
+      "start_sample": 54,
+      "first_observed_source_frame": 216,
+      "phase": 2,
+      "track_pair": [
+        0,
+        8
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 216,
+      "end_sample_exclusive": 59,
+      "last_observed_sample": 58,
+      "last_observed_source_frame": 232,
+      "observed_samples": 5,
+      "observation_span_frames": 16,
+      "boundary_sample": 59,
+      "boundary_source_frame": 236,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 16
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "episode_id": 8,
+      "start_sample": 65,
+      "first_observed_source_frame": 260,
+      "phase": 1,
+      "track_pair": [
+        0,
+        12
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 260,
+      "end_sample_exclusive": 76,
+      "last_observed_sample": 75,
+      "last_observed_source_frame": 300,
+      "observed_samples": 11,
+      "observation_span_frames": 40,
+      "boundary_sample": 76,
+      "boundary_source_frame": 304,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 40
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "episode_id": 3,
+      "start_sample": 20,
+      "first_observed_source_frame": 80,
+      "phase": 1,
+      "track_pair": [
+        1,
+        5
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 80,
+      "end_sample_exclusive": 23,
+      "last_observed_sample": 22,
+      "last_observed_source_frame": 88,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 23,
+      "boundary_source_frame": 92,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 8
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "episode_id": 11,
+      "start_sample": 68,
+      "first_observed_source_frame": 272,
+      "phase": 2,
+      "track_pair": [
+        12,
+        14
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 272,
+      "end_sample_exclusive": 70,
+      "last_observed_sample": 69,
+      "last_observed_source_frame": 276,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 70,
+      "boundary_source_frame": 280,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "episode_id": 16,
+      "start_sample": 46,
+      "first_observed_source_frame": 184,
+      "phase": 2,
+      "track_pair": [
+        15,
+        9
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 184,
+      "end_sample_exclusive": 48,
+      "last_observed_sample": 47,
+      "last_observed_source_frame": 188,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 48,
+      "boundary_source_frame": 192,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "episode_id": 3,
+      "start_sample": 18,
+      "first_observed_source_frame": 72,
+      "phase": 1,
+      "track_pair": [
+        0,
+        3
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 72,
+      "end_sample_exclusive": 33,
+      "last_observed_sample": 32,
+      "last_observed_source_frame": 128,
+      "observed_samples": 15,
+      "observation_span_frames": 56,
+      "boundary_sample": 33,
+      "boundary_source_frame": 132,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 60,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "episode_id": 4,
+      "start_sample": 33,
+      "first_observed_source_frame": 132,
+      "phase": 2,
+      "track_pair": [
+        0,
+        3
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 132,
+      "end_sample_exclusive": 38,
+      "last_observed_sample": 37,
+      "last_observed_source_frame": 148,
+      "observed_samples": 5,
+      "observation_span_frames": 16,
+      "boundary_sample": 38,
+      "boundary_source_frame": 152,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 16
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "episode_id": 9,
+      "start_sample": 62,
+      "first_observed_source_frame": 248,
+      "phase": 2,
+      "track_pair": [
+        10,
+        7
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 248,
+      "end_sample_exclusive": 63,
+      "last_observed_sample": 62,
+      "last_observed_source_frame": 248,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 63,
+      "boundary_source_frame": 252,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "episode_id": 12,
+      "start_sample": 75,
+      "first_observed_source_frame": 300,
+      "phase": 1,
+      "track_pair": [
+        10,
+        7
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 300,
+      "end_sample_exclusive": 85,
+      "last_observed_sample": 84,
+      "last_observed_source_frame": 336,
+      "observed_samples": 10,
+      "observation_span_frames": 36,
+      "boundary_sample": 85,
+      "boundary_source_frame": 340,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 36
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "episode_id": 2,
+      "start_sample": 15,
+      "first_observed_source_frame": 60,
+      "phase": 3,
+      "track_pair": [
+        3,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 60,
+      "end_sample_exclusive": 16,
+      "last_observed_sample": 15,
+      "last_observed_source_frame": 60,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 16,
+      "boundary_source_frame": 64,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "episode_id": 4,
+      "start_sample": 17,
+      "first_observed_source_frame": 68,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 68,
+      "end_sample_exclusive": 21,
+      "last_observed_sample": 20,
+      "last_observed_source_frame": 80,
+      "observed_samples": 4,
+      "observation_span_frames": 12,
+      "boundary_sample": 21,
+      "boundary_source_frame": 84,
+      "end_reason": "anchor_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 12
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "episode_id": 7,
+      "start_sample": 32,
+      "first_observed_source_frame": 128,
+      "phase": 2,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 128,
+      "end_sample_exclusive": 36,
+      "last_observed_sample": 35,
+      "last_observed_source_frame": 140,
+      "observed_samples": 4,
+      "observation_span_frames": 12,
+      "boundary_sample": 36,
+      "boundary_source_frame": 144,
+      "end_reason": "target_changed",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 12
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "episode_id": 12,
+      "start_sample": 34,
+      "first_observed_source_frame": 136,
+      "phase": 1,
+      "track_pair": [
+        1,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 136,
+      "end_sample_exclusive": 36,
+      "last_observed_sample": 35,
+      "last_observed_source_frame": 140,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 36,
+      "boundary_source_frame": 144,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "episode_id": 17,
+      "start_sample": 59,
+      "first_observed_source_frame": 236,
+      "phase": 1,
+      "track_pair": [
+        1,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 236,
+      "end_sample_exclusive": 62,
+      "last_observed_sample": 61,
+      "last_observed_source_frame": 244,
+      "observed_samples": 3,
+      "observation_span_frames": 8,
+      "boundary_sample": 62,
+      "boundary_source_frame": 248,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 12,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "episode_id": 18,
+      "start_sample": 62,
+      "first_observed_source_frame": 248,
+      "phase": 2,
+      "track_pair": [
+        1,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 248,
+      "end_sample_exclusive": 64,
+      "last_observed_sample": 63,
+      "last_observed_source_frame": 252,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 64,
+      "boundary_source_frame": 256,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 8,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "episode_id": 19,
+      "start_sample": 64,
+      "first_observed_source_frame": 256,
+      "phase": 1,
+      "track_pair": [
+        1,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 2,
+      "entry_source_frame": 256,
+      "end_sample_exclusive": 65,
+      "last_observed_sample": 64,
+      "last_observed_source_frame": 256,
+      "observed_samples": 1,
+      "observation_span_frames": 0,
+      "boundary_sample": 65,
+      "boundary_source_frame": 260,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "episode_id": 4,
+      "start_sample": 11,
+      "first_observed_source_frame": 44,
+      "phase": 1,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 0,
+      "entry_source_frame": 44,
+      "end_sample_exclusive": 26,
+      "last_observed_sample": 25,
+      "last_observed_source_frame": 100,
+      "observed_samples": 15,
+      "observation_span_frames": 56,
+      "boundary_sample": 26,
+      "boundary_source_frame": 104,
+      "end_reason": "phase_change",
+      "exit_observed": true,
+      "status": "complete",
+      "duration_frames": 60,
+      "censor_lower_bound_frames": null
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "episode_id": 5,
+      "start_sample": 26,
+      "first_observed_source_frame": 104,
+      "phase": 2,
+      "track_pair": [
+        0,
+        4
+      ],
+      "start_reason": "phase_change",
+      "entry_observed": true,
+      "entry_context": 1,
+      "entry_source_frame": 104,
+      "end_sample_exclusive": 28,
+      "last_observed_sample": 27,
+      "last_observed_source_frame": 108,
+      "observed_samples": 2,
+      "observation_span_frames": 4,
+      "boundary_sample": 28,
+      "boundary_source_frame": 112,
+      "end_reason": "relation_missing",
+      "exit_observed": false,
+      "status": "right_censored",
+      "duration_frames": null,
+      "censor_lower_bound_frames": 4
+    }
+  ],
+  "normal_legacy_complete": [
+    {
+      "partition": "fit",
+      "sequence": "01",
+      "context": "2->3",
+      "duration": 24.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "01",
+      "context": "3->0",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "3->2",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "3->2",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "2->3",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "3->1",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "03",
+      "context": "3->2",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "04",
+      "context": "3->2",
+      "duration": 24.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "0->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "1->0",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "0->3",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "3->0",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "1->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "2->3",
+      "duration": 24.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "05",
+      "context": "3->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "07",
+      "context": "1->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "07",
+      "context": "3->0",
+      "duration": 20.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "07",
+      "context": "0->1",
+      "duration": 52.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "07",
+      "context": "1->2",
+      "duration": 44.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "09",
+      "context": "0->1",
+      "duration": 64.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "09",
+      "context": "1->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "0->1",
+      "duration": 48.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "1->2",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "2->1",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "1->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "0->1",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->0",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "0->1",
+      "duration": 44.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->2",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "2->0",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->2",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "3->2",
+      "duration": 20.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "2->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->2",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "2->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->2",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "context": "0->1",
+      "duration": 52.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "context": "3->2",
+      "duration": 20.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "context": "0->1",
+      "duration": 60.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "context": "1->2",
+      "duration": 24.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "context": "2->3",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "context": "3->2",
+      "duration": 24.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "context": "2->1",
+      "duration": 36.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "18",
+      "context": "0->1",
+      "duration": 60.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "context": "2->0",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "context": "1->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "context": "2->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "context": "0->1",
+      "duration": 60.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "context": "1->2",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "21",
+      "context": "0->1",
+      "duration": 64.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "context": "1->2",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "23",
+      "context": "2->0",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "context": "0->1",
+      "duration": 48.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "context": "1->2",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "context": "2->1",
+      "duration": 76.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "context": "1->2",
+      "duration": 20.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "context": "2->0",
+      "duration": 24.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "2->0",
+      "duration": 16.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "0->1",
+      "duration": 12.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "1->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "3->1",
+      "duration": 28.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "1->2",
+      "duration": 36.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "2->1",
+      "duration": 20.0
+    },
+    {
+      "partition": "fit",
+      "sequence": "25",
+      "context": "1->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "0->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "1->0",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "3->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "1->3",
+      "duration": 20.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "3->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "02",
+      "context": "3->1",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "context": "0->1",
+      "duration": 60.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "context": "0->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "context": "3->0",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "context": "0->1",
+      "duration": 16.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "context": "1->3",
+      "duration": 8.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "context": "3->1",
+      "duration": 36.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "10",
+      "context": "1->2",
+      "duration": 16.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "0->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "3->0",
+      "duration": 8.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "0->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "2->1",
+      "duration": 12.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "1->2",
+      "duration": 8.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "context": "1->0",
+      "duration": 16.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "context": "0->1",
+      "duration": 60.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "context": "2->3",
+      "duration": 4.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "context": "3->2",
+      "duration": 12.0
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "context": "2->3",
+      "duration": 8.0
+    }
+  ],
+  "normal_strict_complete": [
+    {
+      "partition": "fit",
+      "sequence": "09",
+      "context": "0->1",
+      "duration": 64
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "0->1",
+      "duration": 48
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "1->2",
+      "duration": 12
+    },
+    {
+      "partition": "fit",
+      "sequence": "13",
+      "context": "2->1",
+      "duration": 12
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "0->1",
+      "duration": 44
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "2->1",
+      "duration": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->2",
+      "duration": 12
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "2->1",
+      "duration": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "14",
+      "context": "1->2",
+      "duration": 16
+    },
+    {
+      "partition": "fit",
+      "sequence": "16",
+      "context": "0->1",
+      "duration": 52
+    },
+    {
+      "partition": "fit",
+      "sequence": "17",
+      "context": "0->1",
+      "duration": 60
+    },
+    {
+      "partition": "fit",
+      "sequence": "18",
+      "context": "0->1",
+      "duration": 60
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "context": "1->2",
+      "duration": 8
+    },
+    {
+      "partition": "fit",
+      "sequence": "19",
+      "context": "2->1",
+      "duration": 4
+    },
+    {
+      "partition": "fit",
+      "sequence": "20",
+      "context": "0->1",
+      "duration": 60
+    },
+    {
+      "partition": "fit",
+      "sequence": "21",
+      "context": "0->1",
+      "duration": 64
+    },
+    {
+      "partition": "fit",
+      "sequence": "24",
+      "context": "0->1",
+      "duration": 48
+    },
+    {
+      "partition": "calibration",
+      "sequence": "08",
+      "context": "0->1",
+      "duration": 60
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "2->1",
+      "duration": 12
+    },
+    {
+      "partition": "calibration",
+      "sequence": "12",
+      "context": "1->2",
+      "duration": 8
+    },
+    {
+      "partition": "calibration",
+      "sequence": "15",
+      "context": "0->1",
+      "duration": 60
+    }
+  ],
+  "test_gate_effect_per_sequence": [
+    {
+      "gate": "hold",
+      "sequence": "01",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "01",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "01",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "02",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "02",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "02",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "03",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "03",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "03",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "04",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "04",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "04",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "05",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 4,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "05",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 4,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "05",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 4,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "06",
+      "blocked_frames": 4,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "06",
+      "blocked_frames": 4,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "06",
+      "blocked_frames": 4,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "07",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "07",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "07",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "08",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "08",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "08",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "09",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "09",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "09",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "10",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "10",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "10",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "11",
+      "blocked_frames": 16,
+      "dwell_gated_changed_normal": 16,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 16,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 4,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "11",
+      "blocked_frames": 16,
+      "dwell_gated_changed_normal": 16,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 16,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 4,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "11",
+      "blocked_frames": 16,
+      "dwell_gated_changed_normal": 16,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 16,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 4,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "12",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "12",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "12",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "13",
+      "blocked_frames": 76,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 68,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 44,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 20
+    },
+    {
+      "gate": "pool",
+      "sequence": "13",
+      "blocked_frames": 76,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 68,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 44,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 20
+    },
+    {
+      "gate": "age",
+      "sequence": "13",
+      "blocked_frames": 76,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 68,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 44,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 20
+    },
+    {
+      "gate": "hold",
+      "sequence": "14",
+      "blocked_frames": 4,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "14",
+      "blocked_frames": 4,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "14",
+      "blocked_frames": 4,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "15",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "15",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "15",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "16",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 8,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 8,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "16",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 8,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 8,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "16",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 8,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 8,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "17",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 4,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "17",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 4,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "17",
+      "blocked_frames": 8,
+      "dwell_gated_changed_normal": 4,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "18",
+      "blocked_frames": 20,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 16,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 8,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "18",
+      "blocked_frames": 20,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 16,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 8,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "18",
+      "blocked_frames": 20,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 16,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 8,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "hold",
+      "sequence": "19",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "pool",
+      "sequence": "19",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    },
+    {
+      "gate": "age",
+      "sequence": "19",
+      "blocked_frames": 0,
+      "dwell_gated_changed_normal": 0,
+      "dwell_gated_changed_anomaly": 0,
+      "process_changed_normal": 0,
+      "process_changed_anomaly": 0,
+      "combined_changed_normal": 0,
+      "combined_changed_anomaly": 0
+    }
+  ],
+  "test_gate_effect_summary": {
+    "hold": {
+      "blocked_frames": 144,
+      "dwell_gated_changed_normal": 24,
+      "dwell_gated_changed_anomaly": 92,
+      "process_changed_normal": 16,
+      "process_changed_anomaly": 60,
+      "combined_changed_normal": 4,
+      "combined_changed_anomaly": 20
+    },
+    "pool": {
+      "blocked_frames": 144,
+      "dwell_gated_changed_normal": 24,
+      "dwell_gated_changed_anomaly": 92,
+      "process_changed_normal": 16,
+      "process_changed_anomaly": 60,
+      "combined_changed_normal": 4,
+      "combined_changed_anomaly": 20
+    },
+    "age": {
+      "blocked_frames": 144,
+      "dwell_gated_changed_normal": 24,
+      "dwell_gated_changed_anomaly": 92,
+      "process_changed_normal": 16,
+      "process_changed_anomaly": 60,
+      "combined_changed_normal": 4,
+      "combined_changed_anomaly": 20
+    }
+  },
+  "episode_parser_mask_equality_videos": 44,
+  "note": "Complete and right-censored observations remain separate. No missing interval is added as exposure. Censoring may depend on process/occlusion; no survival estimator or support threshold was selected."
+}
