@@ -1,0 +1,134 @@
+{
+  "R01": {
+    "fit_train_only": true,
+    "centers": [
+      [
+        0.1398010902097443
+      ],
+      [
+        0.47801401817677536
+      ],
+      [
+        0.8258340525515205
+      ]
+    ],
+    "cluster_fit_counts": [
+      383,
+      361,
+      355
+    ],
+    "median_train_relative_position": [
+      0.19298245614035087,
+      0.5063291139240507,
+      0.8138528138528138
+    ],
+    "ordering": "Increasing x for R01; normal-train median relative frame position permutes R03/R04 IDs only, never inference input.",
+    "selection_gates_scaler_unchanged": true
+  },
+  "R02": {
+    "text_teacher_unchanged": true,
+    "target": "Existing frozen CLIP description similarities, raw winner; confidence gap >=0.01 and agreement with historical causal-smoothed phase required."
+  },
+  "R03": {
+    "fit_train_only": true,
+    "centers": [
+      [
+        -0.8119363189134341,
+        0.7685177043490599,
+        0.20348193409057874,
+        -0.6616759622824958,
+        -0.048217288251699936,
+        0.0730928848303653
+      ],
+      [
+        0.08285258793552774,
+        -0.12810028278419217,
+        -0.8079788116989548,
+        0.11858998345960713,
+        -0.9020900679653692,
+        1.1102863418750695
+      ],
+      [
+        0.15342894764019227,
+        -0.36819062459459523,
+        0.23965971306887984,
+        0.614600510029706,
+        0.15914458989802618,
+        -0.1411559510237974
+      ],
+      [
+        -0.918065061543438,
+        0.6638810174297722,
+        1.2231769804983423,
+        -0.6066721503877092,
+        0.7768218695934358,
+        -0.7879018536149553
+      ]
+    ],
+    "cluster_fit_counts": [
+      842,
+      735,
+      731,
+      150
+    ],
+    "median_train_relative_position": [
+      0.1684496338937721,
+      0.48575712143928035,
+      0.7808988764044944,
+      0.9707385668867694
+    ],
+    "ordering": "Increasing x for R01; normal-train median relative frame position permutes R03/R04 IDs only, never inference input.",
+    "selection_gates_scaler_unchanged": true
+  },
+  "R04": {
+    "fit_train_only": true,
+    "centers": [
+      [
+        -1.243321839345165,
+        -0.4802549901923574,
+        0.05592772705294702,
+        -0.1976288731844919,
+        -0.05447640324180192,
+        0.020010482338371993
+      ],
+      [
+        0.22255783010111346,
+        0.9160330807951006,
+        1.089435897165769,
+        1.604032342795702,
+        -1.8025621895155661,
+        -3.104543040075096
+      ],
+      [
+        -1.2058172063066326,
+        0.9941014937563324,
+        0.7999623181730542,
+        0.11648531301357573,
+        -1.3671817954730903,
+        -3.107538574177404
+      ],
+      [
+        1.0649483451951065,
+        1.4605665256895726,
+        0.49710766664988915,
+        -0.1558768288232461,
+        -1.8927550233898156,
+        -3.03631836393597
+      ]
+    ],
+    "cluster_fit_counts": [
+      88,
+      282,
+      257,
+      474
+    ],
+    "median_train_relative_position": [
+      0.03712786095336431,
+      0.27003205128205127,
+      0.41160949868073876,
+      0.6564832089552239
+    ],
+    "ordering": "Increasing x for R01; normal-train median relative frame position permutes R03/R04 IDs only, never inference input.",
+    "selection_gates_scaler_unchanged": true
+  }
+}

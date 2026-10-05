@@ -1,0 +1,5 @@
+{
+  "scope": "New teacher cluster centers (and R02 new relation model) are fitted only on representation_train. R01/R03/R04 historical frozen gates/scalers/semantic-anchor policies originate in earlier normal FIT, which includes the representation-validation subset. Thus head validation is held out of the current optimizer/new-center fit, but is not wholly independent of all historical observation preprocessing. Calibration22 remains excluded from current teacher/head fitting and checkpoint selection.",
+  "interpretation": "Do not claim fully independent action-label validation or completely unseen visual scenes. Validation targets are weak geometry clusters. Detector41 and visual40 checkpoints also used their normal validation split for selection.",
+  "test_labels_used_for_training_or_selection": false
+}

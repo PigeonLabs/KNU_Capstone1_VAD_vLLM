@@ -1,0 +1,178 @@
+[
+  {
+    "scene": "R01",
+    "branch": "41 control",
+    "visual": "C",
+    "combined_auroc": 0.5487403424358112,
+    "combined_auroc_std": 0.00046173264272039456,
+    "combined_ap": 0.37068222180068827,
+    "normal_fpr": 0.029617441382147263,
+    "anomaly_recall": 0.03827751196172249,
+    "event_coverage": 0.875
+  },
+  {
+    "scene": "R01",
+    "branch": "43 teacher",
+    "visual": "C",
+    "combined_auroc": 0.6514874874008001,
+    "combined_auroc_std": 0.0010824333390959328,
+    "combined_ap": 0.44757501247628434,
+    "normal_fpr": 0.029617441382147263,
+    "anomaly_recall": 0.03827751196172249,
+    "event_coverage": 0.875
+  },
+  {
+    "scene": "R01",
+    "branch": "43 linear",
+    "visual": "C",
+    "combined_auroc": 0.6493214856569769,
+    "combined_auroc_std": 0.001018668755241686,
+    "combined_ap": 0.4500325904103546,
+    "normal_fpr": 0.03537638831756479,
+    "anomaly_recall": 0.046251993620414676,
+    "event_coverage": 0.875
+  },
+  {
+    "scene": "R01",
+    "branch": "43 adapter",
+    "visual": "C",
+    "combined_auroc": 0.6266645213310004,
+    "combined_auroc_std": 0.0009408626254884475,
+    "combined_ap": 0.4476601294237805,
+    "normal_fpr": 0.030440148087206912,
+    "anomaly_recall": 0.05263157894736842,
+    "event_coverage": 0.875
+  },
+  {
+    "scene": "R02",
+    "branch": "41 control",
+    "visual": "C",
+    "combined_auroc": 0.5755067116965721,
+    "combined_auroc_std": 0.0004095609217539137,
+    "combined_ap": 0.44011293823270553,
+    "normal_fpr": 0.01014265148540767,
+    "anomaly_recall": 0.058320571720265446,
+    "event_coverage": 0.4222222222222222
+  },
+  {
+    "scene": "R02",
+    "branch": "43 teacher",
+    "visual": "C",
+    "combined_auroc": 0.624418286895492,
+    "combined_auroc_std": 0.0014977515980152786,
+    "combined_ap": 0.5002052644669197,
+    "normal_fpr": 0.003402695982201283,
+    "anomaly_recall": 0.028075548749361922,
+    "event_coverage": 0.3111111111111111
+  },
+  {
+    "scene": "R02",
+    "branch": "43 linear",
+    "visual": "C",
+    "combined_auroc": 0.5346916710107258,
+    "combined_auroc_std": 0.0013339027398775296,
+    "combined_ap": 0.40789192512745,
+    "normal_fpr": 0.011647690092919777,
+    "anomaly_recall": 0.032924961715160794,
+    "event_coverage": 0.5333333333333333
+  },
+  {
+    "scene": "R02",
+    "branch": "43 adapter",
+    "visual": "C",
+    "combined_auroc": 0.6122099025307376,
+    "combined_auroc_std": 0.0013315941618184633,
+    "combined_ap": 0.4793524098149202,
+    "normal_fpr": 0.0053657898180866385,
+    "anomaly_recall": 0.02986217457886677,
+    "event_coverage": 0.3333333333333333
+  },
+  {
+    "scene": "R03",
+    "branch": "41 control",
+    "visual": "C",
+    "combined_auroc": 0.7603847536081964,
+    "combined_auroc_std": 0.0027257499976053633,
+    "combined_ap": 0.6674542993060201,
+    "normal_fpr": 0.04041132093604344,
+    "anomaly_recall": 0.15818205735332805,
+    "event_coverage": 0.6470588235294118
+  },
+  {
+    "scene": "R03",
+    "branch": "43 teacher",
+    "visual": "C",
+    "combined_auroc": 0.7318298159589195,
+    "combined_auroc_std": 0.0005720932559835322,
+    "combined_ap": 0.6014581280356383,
+    "normal_fpr": 0.05088655038200952,
+    "anomaly_recall": 0.0981978426729808,
+    "event_coverage": 0.607843137254902
+  },
+  {
+    "scene": "R03",
+    "branch": "43 linear",
+    "visual": "C",
+    "combined_auroc": 0.767580097640519,
+    "combined_auroc_std": 0.0010218382804913185,
+    "combined_ap": 0.6738511752122908,
+    "normal_fpr": 0.031713997405218394,
+    "anomaly_recall": 0.09589581689029203,
+    "event_coverage": 0.6470588235294118
+  },
+  {
+    "scene": "R03",
+    "branch": "43 adapter",
+    "visual": "C",
+    "combined_auroc": 0.7483979874570764,
+    "combined_auroc_std": 0.00035387385702999297,
+    "combined_ap": 0.6386003909923731,
+    "normal_fpr": 0.050550189803469314,
+    "anomaly_recall": 0.16535122336227306,
+    "event_coverage": 0.7058823529411765
+  },
+  {
+    "scene": "R04",
+    "branch": "41 control",
+    "visual": "C",
+    "combined_auroc": 0.6837336079339343,
+    "combined_auroc_std": 0.0007875096902123386,
+    "combined_ap": 0.6794709139277418,
+    "normal_fpr": 0.006245339299030574,
+    "anomaly_recall": 0.022353283821173728,
+    "event_coverage": 0.3974358974358974
+  },
+  {
+    "scene": "R04",
+    "branch": "43 teacher",
+    "visual": "C",
+    "combined_auroc": 0.6897243190286261,
+    "combined_auroc_std": 0.0008956622354344524,
+    "combined_ap": 0.6681124051843899,
+    "normal_fpr": 0.011465324384787472,
+    "anomaly_recall": 0.02257171981942624,
+    "event_coverage": 0.4743589743589744
+  },
+  {
+    "scene": "R04",
+    "branch": "43 linear",
+    "visual": "C",
+    "combined_auroc": 0.6893839799429818,
+    "combined_auroc_std": 0.0008514874494670255,
+    "combined_ap": 0.6642238138009807,
+    "normal_fpr": 0.027218493661446682,
+    "anomaly_recall": 0.0308722877530217,
+    "event_coverage": 0.44871794871794873
+  },
+  {
+    "scene": "R04",
+    "branch": "43 adapter",
+    "visual": "C",
+    "combined_auroc": 0.6816031850281589,
+    "combined_auroc_std": 0.0008301390949407617,
+    "combined_ap": 0.6779663834883419,
+    "normal_fpr": 0.005592841163310962,
+    "anomaly_recall": 0.024392019804863843,
+    "event_coverage": 0.4615384615384615
+  }
+]

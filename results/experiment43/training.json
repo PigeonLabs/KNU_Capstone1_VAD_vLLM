@@ -1,0 +1,639 @@
+{
+  "normal_only": true,
+  "rows": [
+    {
+      "scene": "R01",
+      "branch": "linear",
+      "seed": 42,
+      "selected_epoch": 30,
+      "parameters": 6147,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 3.9555292750010267,
+      "max_gradient_norm": 0.24395324289798737,
+      "parameter_delta_l2": {
+        "classifier.weight": 31.151416778564453,
+        "classifier.bias": 0.061626456677913666
+      },
+      "checkpoint": "artifacts/experiment43/heads/R01_linear.pt",
+      "checkpoint_sha256": "60cb88b470986f52c077015063dae77dc98161272514a1c272cbf398507d60eb",
+      "selected_train": {
+        "macro_cross_entropy": 0.2553056478500366,
+        "weak_target_agreement": 0.9731978178024292,
+        "macro_weak_target_recall": 0.9724665880203247,
+        "confusion": [
+          [
+            377,
+            2,
+            0
+          ],
+          [
+            1,
+            353,
+            0
+          ],
+          [
+            8,
+            18,
+            323
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.2776950001716614,
+        "weak_target_agreement": 0.977707028388977,
+        "macro_weak_target_recall": 0.9773737788200378,
+        "confusion": [
+          [
+            109,
+            0,
+            0
+          ],
+          [
+            2,
+            99,
+            0
+          ],
+          [
+            2,
+            3,
+            99
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "train_samples": 1082,
+      "validation_samples": 314
+    },
+    {
+      "scene": "R01",
+      "branch": "adapter",
+      "seed": 42,
+      "selected_epoch": 30,
+      "parameters": 38915,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.9971101540140808,
+      "max_gradient_norm": 0.7921087741851807,
+      "parameter_delta_l2": {
+        "classifier.weight": 15.690229415893555,
+        "classifier.bias": 0.029724936932325363,
+        "down.weight": 5.966283321380615,
+        "up.weight": 6.228607177734375
+      },
+      "checkpoint": "artifacts/experiment43/heads/R01_adapter.pt",
+      "checkpoint_sha256": "1aa676ad82e7cb7844601d75ab6e382390fc517178272fc01f82814b96bd20b1",
+      "selected_train": {
+        "macro_cross_entropy": 0.008709737099707127,
+        "weak_target_agreement": 1.0,
+        "macro_weak_target_recall": 1.0,
+        "confusion": [
+          [
+            379,
+            0,
+            0
+          ],
+          [
+            0,
+            354,
+            0
+          ],
+          [
+            0,
+            0,
+            349
+          ]
+        ],
+        "preservation": 0.16939900815486908
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.032583288848400116,
+        "weak_target_agreement": 0.9904458522796631,
+        "macro_weak_target_recall": 0.9904364347457886,
+        "confusion": [
+          [
+            108,
+            1,
+            0
+          ],
+          [
+            0,
+            100,
+            1
+          ],
+          [
+            0,
+            1,
+            103
+          ]
+        ],
+        "preservation": 0.16316327452659607
+      },
+      "train_samples": 1082,
+      "validation_samples": 314
+    },
+    {
+      "scene": "R02",
+      "branch": "linear",
+      "seed": 42,
+      "selected_epoch": 30,
+      "parameters": 8196,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.5331409639911726,
+      "max_gradient_norm": 0.18986088037490845,
+      "parameter_delta_l2": {
+        "classifier.weight": 35.726741790771484,
+        "classifier.bias": 0.03784331679344177
+      },
+      "checkpoint": "artifacts/experiment43/heads/R02_linear.pt",
+      "checkpoint_sha256": "57087c26a191e6dc503ae4eaeec84fef63e7fa12e1ca6e57bc87347e52a6ba36",
+      "selected_train": {
+        "macro_cross_entropy": 0.30704402923583984,
+        "weak_target_agreement": 0.9155793786048889,
+        "macro_weak_target_recall": 0.9385197162628174,
+        "confusion": [
+          [
+            37,
+            0,
+            0,
+            0
+          ],
+          [
+            199,
+            702,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            757,
+            13
+          ],
+          [
+            0,
+            1,
+            4,
+            890
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.2935572862625122,
+        "weak_target_agreement": 0.8955007195472717,
+        "macro_weak_target_recall": 0.9261062145233154,
+        "confusion": [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            62,
+            180,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            195,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            236
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "train_samples": 2606,
+      "validation_samples": 689
+    },
+    {
+      "scene": "R02",
+      "branch": "adapter",
+      "seed": 42,
+      "selected_epoch": 23,
+      "parameters": 40964,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.99062984198099,
+      "max_gradient_norm": 1.7620482444763184,
+      "parameter_delta_l2": {
+        "classifier.weight": 17.149822235107422,
+        "classifier.bias": 0.042465753853321075,
+        "down.weight": 7.4761881828308105,
+        "up.weight": 6.79768180847168
+      },
+      "checkpoint": "artifacts/experiment43/heads/R02_adapter.pt",
+      "checkpoint_sha256": "c18db0b4011a7118add90722a1a2a80abd79a4d4c4b6c6e1b7a9f6acabad1673",
+      "selected_train": {
+        "macro_cross_entropy": 0.023355402052402496,
+        "weak_target_agreement": 0.9976975917816162,
+        "macro_weak_target_recall": 0.9983351230621338,
+        "confusion": [
+          [
+            37,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            900,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            770,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            893
+          ]
+        ],
+        "preservation": 0.3013235926628113
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.03177601844072342,
+        "weak_target_agreement": 0.9927430748939514,
+        "macro_weak_target_recall": 0.9948538541793823,
+        "confusion": [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            244,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            199,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            235
+          ]
+        ],
+        "preservation": 0.30853715538978577
+      },
+      "train_samples": 2606,
+      "validation_samples": 689
+    },
+    {
+      "scene": "R03",
+      "branch": "linear",
+      "seed": 42,
+      "selected_epoch": 30,
+      "parameters": 8196,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.5218890919932164,
+      "max_gradient_norm": 0.2121742218732834,
+      "parameter_delta_l2": {
+        "classifier.weight": 33.06507110595703,
+        "classifier.bias": 0.07479972392320633
+      },
+      "checkpoint": "artifacts/experiment43/heads/R03_linear.pt",
+      "checkpoint_sha256": "41080fc6e8436e24ca5828bbf0c9beeabf51905851c352be6824d9a2d684af08",
+      "selected_train": {
+        "macro_cross_entropy": 0.17206892371177673,
+        "weak_target_agreement": 0.9827444553375244,
+        "macro_weak_target_recall": 0.9836537837982178,
+        "confusion": [
+          [
+            820,
+            7,
+            1,
+            10
+          ],
+          [
+            4,
+            715,
+            2,
+            0
+          ],
+          [
+            0,
+            12,
+            712,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            145
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.22460328042507172,
+        "weak_target_agreement": 0.9582712650299072,
+        "macro_weak_target_recall": 0.9595471620559692,
+        "confusion": [
+          [
+            216,
+            13,
+            1,
+            1
+          ],
+          [
+            0,
+            188,
+            0,
+            0
+          ],
+          [
+            1,
+            10,
+            195,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            44
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "train_samples": 2434,
+      "validation_samples": 671
+    },
+    {
+      "scene": "R03",
+      "branch": "adapter",
+      "seed": 42,
+      "selected_epoch": 15,
+      "parameters": 40964,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.9854367439984344,
+      "max_gradient_norm": 0.6167622208595276,
+      "parameter_delta_l2": {
+        "classifier.weight": 13.520594596862793,
+        "classifier.bias": 0.06093102693557739,
+        "down.weight": 5.1356587409973145,
+        "up.weight": 5.20601224899292
+      },
+      "checkpoint": "artifacts/experiment43/heads/R03_adapter.pt",
+      "checkpoint_sha256": "23bca5ab1ac47d54dbe17ad77c9c709789f52196f4b8178e822c2b3c9f7d30b6",
+      "selected_train": {
+        "macro_cross_entropy": 0.023006392642855644,
+        "weak_target_agreement": 0.9954807162284851,
+        "macro_weak_target_recall": 0.9965247511863708,
+        "confusion": [
+          [
+            831,
+            2,
+            0,
+            5
+          ],
+          [
+            2,
+            717,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            728,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            147
+          ]
+        ],
+        "preservation": 0.3259957730770111
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.05374744534492493,
+        "weak_target_agreement": 0.9910581111907959,
+        "macro_weak_target_recall": 0.9886285662651062,
+        "confusion": [
+          [
+            230,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            188,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            202,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            45
+          ]
+        ],
+        "preservation": 0.30534791946411133
+      },
+      "train_samples": 2434,
+      "validation_samples": 671
+    },
+    {
+      "scene": "R04",
+      "branch": "linear",
+      "seed": 42,
+      "selected_epoch": 30,
+      "parameters": 8196,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.4961697769758757,
+      "max_gradient_norm": 0.20856812596321106,
+      "parameter_delta_l2": {
+        "classifier.weight": 32.33753204345703,
+        "classifier.bias": 0.04103308916091919
+      },
+      "checkpoint": "artifacts/experiment43/heads/R04_linear.pt",
+      "checkpoint_sha256": "a45f75d3dc14f4a883d282201669d878ecb856bebaf148e7f8691d4a9c3b238d",
+      "selected_train": {
+        "macro_cross_entropy": 0.49319756031036377,
+        "weak_target_agreement": 0.8345588445663452,
+        "macro_weak_target_recall": 0.8590488433837891,
+        "confusion": [
+          [
+            85,
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            242,
+            19,
+            15
+          ],
+          [
+            5,
+            24,
+            196,
+            23
+          ],
+          [
+            8,
+            28,
+            51,
+            385
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.5641072988510132,
+        "weak_target_agreement": 0.7898832559585571,
+        "macro_weak_target_recall": 0.8231505155563354,
+        "confusion": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            44,
+            0,
+            5
+          ],
+          [
+            2,
+            6,
+            29,
+            5
+          ],
+          [
+            3,
+            21,
+            11,
+            115
+          ]
+        ],
+        "preservation": 0.0
+      },
+      "train_samples": 1088,
+      "validation_samples": 257
+    },
+    {
+      "scene": "R04",
+      "branch": "adapter",
+      "seed": 42,
+      "selected_epoch": 10,
+      "parameters": 40964,
+      "optimizer_steps": 960,
+      "seconds_training_validation": 1.9826932009891607,
+      "max_gradient_norm": 4.154994487762451,
+      "parameter_delta_l2": {
+        "classifier.weight": 11.12148380279541,
+        "classifier.bias": 0.028970155864953995,
+        "down.weight": 6.612579345703125,
+        "up.weight": 7.560954570770264
+      },
+      "checkpoint": "artifacts/experiment43/heads/R04_adapter.pt",
+      "checkpoint_sha256": "91c894085e0161124f787c230e829636fe313871a2e87d56485a94e482e3ffe8",
+      "selected_train": {
+        "macro_cross_entropy": 0.12452960014343262,
+        "weak_target_agreement": 0.9604779481887817,
+        "macro_weak_target_recall": 0.9702613353729248,
+        "confusion": [
+          [
+            88,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            274,
+            2,
+            1
+          ],
+          [
+            0,
+            7,
+            238,
+            3
+          ],
+          [
+            3,
+            8,
+            16,
+            445
+          ]
+        ],
+        "preservation": 0.5141071677207947
+      },
+      "selected_validation": {
+        "macro_cross_entropy": 0.269162118434906,
+        "weak_target_agreement": 0.8832684755325317,
+        "macro_weak_target_recall": 0.8905655145645142,
+        "confusion": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            42,
+            1,
+            6
+          ],
+          [
+            0,
+            1,
+            37,
+            4
+          ],
+          [
+            2,
+            6,
+            9,
+            133
+          ]
+        ],
+        "preservation": 0.4487917423248291
+      },
+      "train_samples": 1088,
+      "validation_samples": 257
+    }
+  ],
+  "source_feature_sha256_unchanged": true,
+  "all_backbones_frozen_not_loaded": true,
+  "peak_cuda_allocated_bytes": 160070144,
+  "training_protocol_sha256": "61600155a8c90d6fd22f3c8b987ef52b94d4d3b1a34eac20307bfded081fbce7",
+  "history_sha256": "3da25054ede6ec99d24079e782d99a03846e003ad980e33993b08296f52bafc2",
+  "interpretation": "Agreement with weak teacher targets only; no action GT accuracy. Four independent process heads per branch, one optimizer seed; downstream appearance encoders unchanged."
+}

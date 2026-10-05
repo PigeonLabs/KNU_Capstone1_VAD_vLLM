@@ -1,0 +1,57 @@
+{
+  "scene": "R03",
+  "sources": [
+    "R03/training/frames/09/164.jpg",
+    "R03/training/frames/12/248.jpg",
+    "R03/training/frames/12/320.jpg",
+    "R03/training/frames/01/584.jpg",
+    "R03/training/frames/04/512.jpg",
+    "R03/training/frames/21/448.jpg",
+    "R03/training/frames/11/672.jpg",
+    "R03/training/frames/06/660.jpg"
+  ],
+  "process": {
+    "objects": [
+      {
+        "id": "forklift",
+        "detection_prompt": "yellow and black toy forklift",
+        "description": "The mobile machine with two front forks that moves across the mat and positions its forks at the pallet."
+      },
+      {
+        "id": "pallet",
+        "detection_prompt": "black pallet tray holding white cups",
+        "description": "The transported product: a black slatted tray carrying four white cups, moved from the left side to the center of the mat."
+      }
+    ],
+    "phases": [
+      {
+        "id": "latent_0",
+        "description": "Normal relation cluster 0; no verified action label."
+      },
+      {
+        "id": "latent_1",
+        "description": "Normal relation cluster 1; no verified action label."
+      },
+      {
+        "id": "latent_2",
+        "description": "Normal relation cluster 2; no verified action label."
+      },
+      {
+        "id": "latent_3",
+        "description": "Normal relation cluster 3; no verified action label."
+      }
+    ],
+    "normal_order": [
+      "latent_0",
+      "latent_1",
+      "latent_2",
+      "latent_3"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "Cluster order uses normal median relative position; original four-state self/next/cycle scoring template retained."
+    ],
+    "phase_target_note": "Experiment43: normal-train relation/spatial centers, class definitions not action ground truth; same self/next/cycle template."
+  },
+  "teacher_fit": "normal representation_train only for new centers; frozen legacy gates/scalers retained for R01/R03/R04"
+}

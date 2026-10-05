@@ -1,0 +1,1222 @@
+{
+  "rows": [
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "teacher",
+      "partition": "normal_calibration",
+      "samples": 410,
+      "valid_emissions": 363,
+      "phase_counts": [
+        148,
+        123,
+        139
+      ],
+      "phase_changed_vs_41": 25,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 14,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "teacher",
+      "partition": "representation_train",
+      "samples": 1211,
+      "valid_emissions": 1099,
+      "phase_counts": [
+        435,
+        383,
+        393
+      ],
+      "phase_changed_vs_41": 72,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 41,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "teacher",
+      "partition": "representation_validation",
+      "samples": 345,
+      "valid_emissions": 321,
+      "phase_counts": [
+        127,
+        104,
+        114
+      ],
+      "phase_changed_vs_41": 22,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 12,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "linear",
+      "partition": "normal_calibration",
+      "samples": 410,
+      "valid_emissions": 363,
+      "phase_counts": [
+        152,
+        127,
+        131
+      ],
+      "phase_changed_vs_41": 37,
+      "phase_changed_vs_teacher": 14,
+      "transitions": 14,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "linear",
+      "partition": "representation_train",
+      "samples": 1211,
+      "valid_emissions": 1099,
+      "phase_counts": [
+        452,
+        405,
+        354
+      ],
+      "phase_changed_vs_41": 112,
+      "phase_changed_vs_teacher": 46,
+      "transitions": 46,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "linear",
+      "partition": "representation_validation",
+      "samples": 345,
+      "valid_emissions": 321,
+      "phase_counts": [
+        133,
+        106,
+        106
+      ],
+      "phase_changed_vs_41": 32,
+      "phase_changed_vs_teacher": 14,
+      "transitions": 13,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "adapter",
+      "partition": "normal_calibration",
+      "samples": 410,
+      "valid_emissions": 363,
+      "phase_counts": [
+        150,
+        120,
+        140
+      ],
+      "phase_changed_vs_41": 26,
+      "phase_changed_vs_teacher": 3,
+      "transitions": 14,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "adapter",
+      "partition": "representation_train",
+      "samples": 1211,
+      "valid_emissions": 1099,
+      "phase_counts": [
+        437,
+        383,
+        391
+      ],
+      "phase_changed_vs_41": 76,
+      "phase_changed_vs_teacher": 6,
+      "transitions": 41,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R01",
+      "branch": "adapter",
+      "partition": "representation_validation",
+      "samples": 345,
+      "valid_emissions": 321,
+      "phase_counts": [
+        127,
+        103,
+        115
+      ],
+      "phase_changed_vs_41": 21,
+      "phase_changed_vs_teacher": 5,
+      "transitions": 12,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "teacher",
+      "partition": "normal_calibration",
+      "samples": 909,
+      "valid_emissions": 862,
+      "phase_counts": [
+        48,
+        312,
+        259,
+        290
+      ],
+      "phase_changed_vs_41": 621,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 48,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "teacher",
+      "partition": "representation_train",
+      "samples": 2803,
+      "valid_emissions": 2656,
+      "phase_counts": [
+        70,
+        1041,
+        778,
+        914
+      ],
+      "phase_changed_vs_41": 1846,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 107,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "teacher",
+      "partition": "representation_validation",
+      "samples": 736,
+      "valid_emissions": 698,
+      "phase_counts": [
+        13,
+        281,
+        199,
+        243
+      ],
+      "phase_changed_vs_41": 501,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 24,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "linear",
+      "partition": "normal_calibration",
+      "samples": 909,
+      "valid_emissions": 862,
+      "phase_counts": [
+        134,
+        227,
+        246,
+        302
+      ],
+      "phase_changed_vs_41": 622,
+      "phase_changed_vs_teacher": 106,
+      "transitions": 40,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "linear",
+      "partition": "representation_train",
+      "samples": 2803,
+      "valid_emissions": 2656,
+      "phase_counts": [
+        357,
+        738,
+        767,
+        941
+      ],
+      "phase_changed_vs_41": 1838,
+      "phase_changed_vs_teacher": 330,
+      "transitions": 127,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "linear",
+      "partition": "representation_validation",
+      "samples": 736,
+      "valid_emissions": 698,
+      "phase_counts": [
+        101,
+        186,
+        197,
+        252
+      ],
+      "phase_changed_vs_41": 505,
+      "phase_changed_vs_teacher": 101,
+      "transitions": 30,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "adapter",
+      "partition": "normal_calibration",
+      "samples": 909,
+      "valid_emissions": 862,
+      "phase_counts": [
+        39,
+        326,
+        255,
+        289
+      ],
+      "phase_changed_vs_41": 623,
+      "phase_changed_vs_teacher": 37,
+      "transitions": 44,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "adapter",
+      "partition": "representation_train",
+      "samples": 2803,
+      "valid_emissions": 2656,
+      "phase_counts": [
+        91,
+        1022,
+        782,
+        908
+      ],
+      "phase_changed_vs_41": 1848,
+      "phase_changed_vs_teacher": 33,
+      "transitions": 106,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R02",
+      "branch": "adapter",
+      "partition": "representation_validation",
+      "samples": 736,
+      "valid_emissions": 698,
+      "phase_counts": [
+        20,
+        274,
+        202,
+        240
+      ],
+      "phase_changed_vs_41": 503,
+      "phase_changed_vs_teacher": 12,
+      "transitions": 28,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "teacher",
+      "partition": "normal_calibration",
+      "samples": 703,
+      "valid_emissions": 703,
+      "phase_counts": [
+        238,
+        199,
+        212,
+        54
+      ],
+      "phase_changed_vs_41": 70,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 14,
+      "episode_status": {
+        "unknown_entry": 5,
+        "complete": 9,
+        "right_censored": 5
+      },
+      "complete_episode_states": {
+        "1": 4,
+        "2": 4,
+        "3": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "teacher",
+      "partition": "representation_train",
+      "samples": 2459,
+      "valid_emissions": 2458,
+      "phase_counts": [
+        842,
+        735,
+        732,
+        150
+      ],
+      "phase_changed_vs_41": 217,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 54,
+      "episode_status": {
+        "unknown_entry": 38,
+        "complete": 31,
+        "right_censored": 23
+      },
+      "complete_episode_states": {
+        "1": 15,
+        "0": 7,
+        "2": 9
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "teacher",
+      "partition": "representation_validation",
+      "samples": 683,
+      "valid_emissions": 683,
+      "phase_counts": [
+        234,
+        191,
+        212,
+        46
+      ],
+      "phase_changed_vs_41": 57,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 18,
+      "episode_status": {
+        "unknown_entry": 4,
+        "complete": 14,
+        "right_censored": 4
+      },
+      "complete_episode_states": {
+        "1": 4,
+        "2": 6,
+        "0": 4
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "linear",
+      "partition": "normal_calibration",
+      "samples": 703,
+      "valid_emissions": 703,
+      "phase_counts": [
+        235,
+        208,
+        212,
+        48
+      ],
+      "phase_changed_vs_41": 78,
+      "phase_changed_vs_teacher": 27,
+      "transitions": 18,
+      "episode_status": {
+        "unknown_entry": 5,
+        "complete": 13,
+        "right_censored": 5
+      },
+      "complete_episode_states": {
+        "1": 4,
+        "2": 5,
+        "0": 1,
+        "3": 3
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "linear",
+      "partition": "representation_train",
+      "samples": 2459,
+      "valid_emissions": 2458,
+      "phase_counts": [
+        827,
+        739,
+        731,
+        162
+      ],
+      "phase_changed_vs_41": 253,
+      "phase_changed_vs_teacher": 55,
+      "transitions": 42,
+      "episode_status": {
+        "unknown_entry": 38,
+        "complete": 19,
+        "right_censored": 23
+      },
+      "complete_episode_states": {
+        "1": 13,
+        "2": 6
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "linear",
+      "partition": "representation_validation",
+      "samples": 683,
+      "valid_emissions": 683,
+      "phase_counts": [
+        217,
+        215,
+        206,
+        45
+      ],
+      "phase_changed_vs_41": 87,
+      "phase_changed_vs_teacher": 32,
+      "transitions": 14,
+      "episode_status": {
+        "unknown_entry": 4,
+        "complete": 10,
+        "right_censored": 4
+      },
+      "complete_episode_states": {
+        "1": 4,
+        "2": 5,
+        "0": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "adapter",
+      "partition": "normal_calibration",
+      "samples": 703,
+      "valid_emissions": 703,
+      "phase_counts": [
+        235,
+        200,
+        223,
+        45
+      ],
+      "phase_changed_vs_41": 64,
+      "phase_changed_vs_teacher": 14,
+      "transitions": 17,
+      "episode_status": {
+        "unknown_entry": 5,
+        "complete": 12,
+        "right_censored": 5
+      },
+      "complete_episode_states": {
+        "1": 4,
+        "2": 5,
+        "3": 3
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "adapter",
+      "partition": "representation_train",
+      "samples": 2459,
+      "valid_emissions": 2458,
+      "phase_counts": [
+        836,
+        729,
+        739,
+        155
+      ],
+      "phase_changed_vs_41": 228,
+      "phase_changed_vs_teacher": 17,
+      "transitions": 47,
+      "episode_status": {
+        "unknown_entry": 38,
+        "complete": 24,
+        "right_censored": 23
+      },
+      "complete_episode_states": {
+        "1": 14,
+        "2": 7,
+        "0": 3
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R03",
+      "branch": "adapter",
+      "partition": "representation_validation",
+      "samples": 683,
+      "valid_emissions": 683,
+      "phase_counts": [
+        230,
+        197,
+        211,
+        45
+      ],
+      "phase_changed_vs_41": 66,
+      "phase_changed_vs_teacher": 10,
+      "transitions": 13,
+      "episode_status": {
+        "unknown_entry": 4,
+        "complete": 9,
+        "right_censored": 4
+      },
+      "complete_episode_states": {
+        "1": 4,
+        "2": 4,
+        "0": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "teacher",
+      "partition": "normal_calibration",
+      "samples": 482,
+      "valid_emissions": 345,
+      "phase_counts": [
+        37,
+        171,
+        79,
+        195
+      ],
+      "phase_changed_vs_41": 279,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 46,
+      "episode_status": {
+        "unknown_entry": 72,
+        "right_censored": 9,
+        "complete": 5
+      },
+      "complete_episode_states": {
+        "2": 5
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "teacher",
+      "partition": "representation_train",
+      "samples": 1594,
+      "valid_emissions": 1101,
+      "phase_counts": [
+        146,
+        450,
+        308,
+        690
+      ],
+      "phase_changed_vs_41": 858,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 168,
+      "episode_status": {
+        "unknown_entry": 289,
+        "right_censored": 37,
+        "complete": 13
+      },
+      "complete_episode_states": {
+        "1": 3,
+        "2": 9,
+        "3": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "teacher",
+      "partition": "representation_validation",
+      "samples": 366,
+      "valid_emissions": 262,
+      "phase_counts": [
+        24,
+        78,
+        52,
+        212
+      ],
+      "phase_changed_vs_41": 149,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 34,
+      "episode_status": {
+        "unknown_entry": 67,
+        "complete": 2,
+        "right_censored": 5
+      },
+      "complete_episode_states": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "linear",
+      "partition": "normal_calibration",
+      "samples": 482,
+      "valid_emissions": 345,
+      "phase_counts": [
+        46,
+        193,
+        79,
+        164
+      ],
+      "phase_changed_vs_41": 297,
+      "phase_changed_vs_teacher": 103,
+      "transitions": 45,
+      "episode_status": {
+        "unknown_entry": 72,
+        "right_censored": 18,
+        "complete": 5
+      },
+      "complete_episode_states": {
+        "2": 5
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "linear",
+      "partition": "representation_train",
+      "samples": 1594,
+      "valid_emissions": 1101,
+      "phase_counts": [
+        177,
+        465,
+        317,
+        635
+      ],
+      "phase_changed_vs_41": 907,
+      "phase_changed_vs_teacher": 317,
+      "transitions": 152,
+      "episode_status": {
+        "unknown_entry": 289,
+        "right_censored": 61,
+        "complete": 17
+      },
+      "complete_episode_states": {
+        "1": 5,
+        "2": 10,
+        "3": 2
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "linear",
+      "partition": "representation_validation",
+      "samples": 366,
+      "valid_emissions": 262,
+      "phase_counts": [
+        28,
+        114,
+        43,
+        181
+      ],
+      "phase_changed_vs_41": 174,
+      "phase_changed_vs_teacher": 86,
+      "transitions": 30,
+      "episode_status": {
+        "unknown_entry": 67,
+        "right_censored": 10,
+        "complete": 3
+      },
+      "complete_episode_states": {
+        "2": 2,
+        "1": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "adapter",
+      "partition": "normal_calibration",
+      "samples": 482,
+      "valid_emissions": 345,
+      "phase_counts": [
+        49,
+        178,
+        71,
+        184
+      ],
+      "phase_changed_vs_41": 284,
+      "phase_changed_vs_teacher": 85,
+      "transitions": 51,
+      "episode_status": {
+        "unknown_entry": 72,
+        "right_censored": 14,
+        "complete": 12
+      },
+      "complete_episode_states": {
+        "2": 8,
+        "1": 3,
+        "3": 1
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "adapter",
+      "partition": "representation_train",
+      "samples": 1594,
+      "valid_emissions": 1101,
+      "phase_counts": [
+        152,
+        469,
+        314,
+        659
+      ],
+      "phase_changed_vs_41": 887,
+      "phase_changed_vs_teacher": 61,
+      "transitions": 170,
+      "episode_status": {
+        "unknown_entry": 289,
+        "right_censored": 48,
+        "complete": 19
+      },
+      "complete_episode_states": {
+        "1": 7,
+        "2": 10,
+        "3": 2
+      }
+    },
+    {
+      "split": "training",
+      "scene": "R04",
+      "branch": "adapter",
+      "partition": "representation_validation",
+      "samples": 366,
+      "valid_emissions": 262,
+      "phase_counts": [
+        21,
+        91,
+        62,
+        192
+      ],
+      "phase_changed_vs_41": 163,
+      "phase_changed_vs_teacher": 54,
+      "transitions": 44,
+      "episode_status": {
+        "unknown_entry": 67,
+        "right_censored": 12,
+        "complete": 7
+      },
+      "complete_episode_states": {
+        "3": 2,
+        "2": 3,
+        "1": 2
+      }
+    },
+    {
+      "split": "testing",
+      "scene": "R01",
+      "branch": "teacher",
+      "partition": "test",
+      "samples": 927,
+      "valid_emissions": 874,
+      "phase_counts": [
+        326,
+        301,
+        300
+      ],
+      "phase_changed_vs_41": 60,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 30,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "testing",
+      "scene": "R01",
+      "branch": "linear",
+      "partition": "test",
+      "samples": 927,
+      "valid_emissions": 874,
+      "phase_counts": [
+        327,
+        318,
+        282
+      ],
+      "phase_changed_vs_41": 115,
+      "phase_changed_vs_teacher": 75,
+      "transitions": 36,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "testing",
+      "scene": "R01",
+      "branch": "adapter",
+      "partition": "test",
+      "samples": 927,
+      "valid_emissions": 874,
+      "phase_counts": [
+        313,
+        285,
+        329
+      ],
+      "phase_changed_vs_41": 117,
+      "phase_changed_vs_teacher": 73,
+      "transitions": 35,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "testing",
+      "scene": "R02",
+      "branch": "teacher",
+      "partition": "test",
+      "samples": 2410,
+      "valid_emissions": 2291,
+      "phase_counts": [
+        58,
+        820,
+        732,
+        800
+      ],
+      "phase_changed_vs_41": 1609,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 87,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "testing",
+      "scene": "R02",
+      "branch": "linear",
+      "partition": "test",
+      "samples": 2410,
+      "valid_emissions": 2291,
+      "phase_counts": [
+        315,
+        584,
+        711,
+        800
+      ],
+      "phase_changed_vs_41": 1633,
+      "phase_changed_vs_teacher": 301,
+      "transitions": 99,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "testing",
+      "scene": "R02",
+      "branch": "adapter",
+      "partition": "test",
+      "samples": 2410,
+      "valid_emissions": 2291,
+      "phase_counts": [
+        80,
+        822,
+        714,
+        794
+      ],
+      "phase_changed_vs_41": 1614,
+      "phase_changed_vs_teacher": 73,
+      "transitions": 99,
+      "episode_status": {},
+      "complete_episode_states": {}
+    },
+    {
+      "split": "testing",
+      "scene": "R03",
+      "branch": "teacher",
+      "partition": "test",
+      "samples": 3007,
+      "valid_emissions": 3007,
+      "phase_counts": [
+        1256,
+        737,
+        885,
+        129
+      ],
+      "phase_changed_vs_41": 172,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 66,
+      "episode_status": {
+        "unknown_entry": 23,
+        "complete": 46,
+        "right_censored": 20
+      },
+      "complete_episode_states": {
+        "1": 19,
+        "2": 16,
+        "0": 7,
+        "3": 4
+      }
+    },
+    {
+      "split": "testing",
+      "scene": "R03",
+      "branch": "linear",
+      "partition": "test",
+      "samples": 3007,
+      "valid_emissions": 3007,
+      "phase_counts": [
+        1174,
+        853,
+        809,
+        171
+      ],
+      "phase_changed_vs_41": 333,
+      "phase_changed_vs_teacher": 199,
+      "transitions": 60,
+      "episode_status": {
+        "unknown_entry": 23,
+        "complete": 38,
+        "right_censored": 20
+      },
+      "complete_episode_states": {
+        "1": 18,
+        "2": 15,
+        "3": 3,
+        "0": 2
+      }
+    },
+    {
+      "split": "testing",
+      "scene": "R03",
+      "branch": "adapter",
+      "partition": "test",
+      "samples": 3007,
+      "valid_emissions": 3007,
+      "phase_counts": [
+        1197,
+        782,
+        871,
+        157
+      ],
+      "phase_changed_vs_41": 283,
+      "phase_changed_vs_teacher": 147,
+      "transitions": 55,
+      "episode_status": {
+        "unknown_entry": 23,
+        "complete": 34,
+        "right_censored": 21
+      },
+      "complete_episode_states": {
+        "3": 3,
+        "1": 17,
+        "2": 12,
+        "0": 2
+      }
+    },
+    {
+      "split": "testing",
+      "scene": "R04",
+      "branch": "teacher",
+      "partition": "test",
+      "samples": 2047,
+      "valid_emissions": 1384,
+      "phase_counts": [
+        166,
+        523,
+        528,
+        830
+      ],
+      "phase_changed_vs_41": 1183,
+      "phase_changed_vs_teacher": 0,
+      "transitions": 222,
+      "episode_status": {
+        "unknown_entry": 357,
+        "right_censored": 44,
+        "complete": 16
+      },
+      "complete_episode_states": {
+        "2": 9,
+        "1": 6,
+        "3": 1
+      }
+    },
+    {
+      "split": "testing",
+      "scene": "R04",
+      "branch": "linear",
+      "partition": "test",
+      "samples": 2047,
+      "valid_emissions": 1384,
+      "phase_counts": [
+        217,
+        608,
+        529,
+        693
+      ],
+      "phase_changed_vs_41": 1328,
+      "phase_changed_vs_teacher": 614,
+      "transitions": 212,
+      "episode_status": {
+        "unknown_entry": 357,
+        "right_censored": 78,
+        "complete": 34
+      },
+      "complete_episode_states": {
+        "1": 8,
+        "2": 21,
+        "3": 5
+      }
+    },
+    {
+      "split": "testing",
+      "scene": "R04",
+      "branch": "adapter",
+      "partition": "test",
+      "samples": 2047,
+      "valid_emissions": 1384,
+      "phase_counts": [
+        172,
+        587,
+        488,
+        800
+      ],
+      "phase_changed_vs_41": 1228,
+      "phase_changed_vs_teacher": 468,
+      "transitions": 233,
+      "episode_status": {
+        "unknown_entry": 357,
+        "right_censored": 82,
+        "complete": 32
+      },
+      "complete_episode_states": {
+        "1": 10,
+        "2": 16,
+        "3": 5,
+        "0": 1
+      }
+    }
+  ],
+  "target_support": [
+    {
+      "scene": "R01",
+      "partition": "representation_train",
+      "state_samples": [
+        379,
+        354,
+        349
+      ],
+      "state_videos": [
+        21,
+        21,
+        20
+      ]
+    },
+    {
+      "scene": "R01",
+      "partition": "representation_validation",
+      "state_samples": [
+        109,
+        101,
+        104
+      ],
+      "state_videos": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "scene": "R02",
+      "partition": "representation_train",
+      "state_samples": [
+        37,
+        904,
+        770,
+        895
+      ],
+      "state_videos": [
+        10,
+        19,
+        19,
+        19
+      ]
+    },
+    {
+      "scene": "R02",
+      "partition": "representation_validation",
+      "state_samples": [
+        6,
+        247,
+        199,
+        237
+      ],
+      "state_videos": [
+        2,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "scene": "R03",
+      "partition": "representation_train",
+      "state_samples": [
+        838,
+        721,
+        728,
+        147
+      ],
+      "state_videos": [
+        14,
+        14,
+        14,
+        14
+      ]
+    },
+    {
+      "scene": "R03",
+      "partition": "representation_validation",
+      "state_samples": [
+        231,
+        188,
+        206,
+        46
+      ],
+      "state_videos": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "scene": "R04",
+      "partition": "representation_train",
+      "state_samples": [
+        88,
+        280,
+        248,
+        472
+      ],
+      "state_videos": [
+        13,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "scene": "R04",
+      "partition": "representation_validation",
+      "state_samples": [
+        16,
+        49,
+        42,
+        150
+      ],
+      "state_videos": [
+        2,
+        4,
+        3,
+        4
+      ]
+    }
+  ],
+  "action_accuracy_measured": false,
+  "note": "State counts and complete episodes are properties of each learned/weak partition, not verified physical action counts. Refit teacher must be compared separately from learned heads."
+}

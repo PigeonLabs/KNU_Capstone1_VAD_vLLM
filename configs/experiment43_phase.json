@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "scenes": ["R01", "R02", "R03", "R04"],
+  "branches": ["teacher", "linear", "adapter"],
+  "input": "shared frozen auxiliary CLIP global plus highest-confidence crop per role 0/1/2; absent role zero; normalized trailing 3-sample mean",
+  "input_dim": 2048,
+  "window": 3,
+  "rank": 8,
+  "epochs": 30,
+  "steps_per_epoch": 32,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "preservation_weight": 0.1,
+  "device": "cuda",
+  "precision": "float32_no_tf32",
+  "sampling": "uniform class then uniform accepted train sample; same random batches for linear and adapter",
+  "selection": "lowest macro-per-class normal validation cross entropy, including epoch0; independently per process and branch",
+  "inference": "argmax at teacher-observable current sample, otherwise hold last state initialized0; no additional probability gate; no sequence time or future input",
+  "target": "normal-train geometric clusters with relative squared-distance gap >=0.1; R01 ordered spatially, R02-R04 IDs ordered by median normal-train relative position only",
+  "downstream": "all 8 frozen anomaly visual arms; process-specific statistical models/refit with original minimum support10 and unavailable R04 dwell handling"
+}

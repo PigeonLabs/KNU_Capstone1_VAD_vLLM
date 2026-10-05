@@ -1,0 +1,61 @@
+{
+  "experiment": "43_linear_D_s44_R03",
+  "scope": "R03_shared_learned_detector_frozen_visual_D_s44",
+  "scene": "R03",
+  "seed": 42,
+  "stride_frames": 4,
+  "detector": "IDEA-Research/grounding-dino-tiny",
+  "detector_threshold": 0.25,
+  "text_threshold": 0.25,
+  "encoder": "timm/MobileCLIP2-S2-OpenCLIP",
+  "encoder_frozen": true,
+  "tracker": "class_gated_hungarian_iou",
+  "tracker_iou_threshold": 0.2,
+  "tracker_max_age_samples": 2,
+  "phase_smoothing_samples": 3,
+  "pca_variance": 0.95,
+  "pca_max_rank": 32,
+  "minimum_phase_samples": 10,
+  "transition_laplace_alpha": 1.0,
+  "visual_process_weight": 0.5,
+  "calibration_quantile": 0.99,
+  "label_policy": "strict_length_matched_only",
+  "score_densification": "causal_zero_order_hold",
+  "time_unit": "source_frame_index",
+  "local_vlm_url": "http://127.0.0.1:8080",
+  "local_vlm": {
+    "model": "Qwen3.8-27B-Q8_0.gguf",
+    "context_per_request": 65536,
+    "temperature": 0.2,
+    "gpu_layers": "all",
+    "reasoning": "on",
+    "parallel": 1,
+    "other_server_options": "defaults"
+  },
+  "process_discovery": "results/experiment43/process_R03.json",
+  "feature_source_experiment": "41/D_s44",
+  "relational_phase": {
+    "anchor_role": 0,
+    "target_role": 1,
+    "k": 4,
+    "area_iqr_multiplier": 1.5,
+    "scale_floor": 0.05,
+    "smoothing": 3,
+    "seed": 42
+  },
+  "process_calibration": {
+    "mode": "previous_state",
+    "minimum_support": 10
+  },
+  "score_fusion": "max",
+  "normal_dwell": {
+    "minimum_complete_runs": 10
+  },
+  "dwell_context": {
+    "distribution": "entry"
+  },
+  "dwell_score": "fit_complete_percentile",
+  "representation_run": "D_s44",
+  "representation_checkpoint_experiment": "40",
+  "phase_model_branch": "linear"
+}

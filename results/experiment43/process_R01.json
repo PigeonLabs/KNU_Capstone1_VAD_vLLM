@@ -1,0 +1,58 @@
+{
+  "scene": "R01",
+  "sources": [
+    "R01/training/frames/21/048.jpg",
+    "R01/training/frames/33/080.jpg",
+    "R01/training/frames/20/116.jpg",
+    "R01/training/frames/19/152.jpg",
+    "R01/training/frames/07/188.jpg",
+    "R01/training/frames/03/140.jpg"
+  ],
+  "process": {
+    "objects": [
+      {
+        "id": "product",
+        "detection_prompt": "small black object with red top",
+        "description": "the item being carried along the belt surface"
+      },
+      {
+        "id": "conveyor_belt",
+        "detection_prompt": "green conveyor belt",
+        "description": "the moving green belt surface that transports the product"
+      },
+      {
+        "id": "front_rail",
+        "detection_prompt": "horizontal metal bar",
+        "description": "the fixed horizontal metal bar spanning the front of the conveyor"
+      }
+    ],
+    "phases": [
+      {
+        "id": "product_left",
+        "description": "A photo of the small black object with red top positioned at the left end of the green conveyor belt."
+      },
+      {
+        "id": "product_center",
+        "description": "A photo of the small black object with red top positioned in the middle of the green conveyor belt."
+      },
+      {
+        "id": "product_right",
+        "description": "A photo of the small black object with red top positioned at the right end of the green conveyor belt."
+      }
+    ],
+    "normal_order": [
+      "product_left",
+      "product_center",
+      "product_right"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "The exact identity of the small black-and-red item is not identifiable from the images (could be a battery pack or small component).",
+      "Belt speed, cycle period, and frame rate cannot be measured from the stills.",
+      "At the left and right ends the product is partially cut off by the frame edge, so its full shape is not always visible.",
+      "No grasping, stopping, or other manipulation of the product is visible; only translation along the belt is observable."
+    ],
+    "phase_target_note": "Experiment43: normal-train relation/spatial centers, class definitions not action ground truth; same self/next/cycle template."
+  },
+  "teacher_fit": "normal representation_train only for new centers; frozen legacy gates/scalers retained for R01/R03/R04"
+}

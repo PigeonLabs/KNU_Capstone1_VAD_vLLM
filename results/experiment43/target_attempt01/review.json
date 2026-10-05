@@ -1,0 +1,27 @@
+{
+  "all_48_anchor_frames_visually_inspected": true,
+  "reviewer": "Codex; not human action ground truth",
+  "R02_text_target_failure": {
+    "train_selected_counts": [
+      0,
+      17,
+      0,
+      0
+    ],
+    "validation_selected_counts": [
+      0,
+      8,
+      0,
+      0
+    ],
+    "inspected_indices": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "semantic_mismatch": "Three of four inspected instrument-present teacher anchors visibly have no instrument on the platform. Do not train these as action truth."
+  },
+  "other_scene_observations": "R01 shows left/center/right positions with broad boundary examples. R03 clusters mix approach/contact/carry visual arrangements. R04 clusters include empty, loaded and stacked-material states with different blade positions; cannot name them as verified action phases. Preserve as weak geometric-region clusters only.",
+  "decision": "Before any head training or calibration/test access, replace R02 textual targets with a separate train-only platform-scissor relation teacher; retain explicit teacher-only control."
+}

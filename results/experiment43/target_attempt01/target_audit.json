@@ -1,0 +1,2427 @@
+{
+  "normal_only": true,
+  "teacher_fit_only_train70": true,
+  "calibration_or_test_used": false,
+  "source_sha256": {
+    "artifacts/experiment41/detections/features/R01/training_01.npz": "7907f1b0d7610cfff3affc16aa6e7cd851b1fa8ef8ce5c491745c0429c8658b0",
+    "artifacts/experiment41/detections/features/R01/training_03.npz": "d588ad069b7d7a5c7e43a013c7cbd361ce0a3d8c488299cff47ea375822b10f4",
+    "artifacts/experiment41/detections/features/R01/training_05.npz": "bc215bfba02e42c06b66a240f865d977ba131ea016ff47551eea83574972a173",
+    "artifacts/experiment41/detections/features/R01/training_06.npz": "582ac6594fa907be550f2a9181892f703b6f2ea48f91adfcb73b0c944a674617",
+    "artifacts/experiment41/detections/features/R01/training_07.npz": "4bc066b9f5f2d007b3b11f73a930a1f03b24353dc11c91942cfda87fb6d0c3a5",
+    "artifacts/experiment41/detections/features/R01/training_08.npz": "403db426f2b5d0c76a0e890ef334baa3d1b55e91cf9f179d394ef789f4d00594",
+    "artifacts/experiment41/detections/features/R01/training_12.npz": "5e007ad2af420611dce5d9893d4e1ab5ed35db10ae0a27db66674f3c3a80e0d7",
+    "artifacts/experiment41/detections/features/R01/training_19.npz": "5ed8f24beeb48263014a8edbaa99c5978222972980b457cea17195febcb47c20",
+    "artifacts/experiment41/detections/features/R01/training_20.npz": "4ae19f228706c688a704f088a58feb4c2bab3dc4a1db5b39fe70a7d4467a682d",
+    "artifacts/experiment41/detections/features/R01/training_21.npz": "5b180b3132432600437dc4a55e46c80fe06bc2b6d15458374580fdb3935b56cd",
+    "artifacts/experiment41/detections/features/R01/training_22.npz": "f384d40bee8f6873eebf3c666c8d39cba2702b2c5595e6daf507ce2e37bdfcff",
+    "artifacts/experiment41/detections/features/R01/training_23.npz": "c908daa1fe763736a9ec11d73c702ba1192aa7df4d7ff1d87906dcd6acdbe74d",
+    "artifacts/experiment41/detections/features/R01/training_25.npz": "f6bd880a7f34a7bc578a4efe455e26dcc7c7d411bc450ab78f50feee27334aad",
+    "artifacts/experiment41/detections/features/R01/training_26.npz": "a22111c38d9af946547f15cdc7821e0366e446d577e3ec076a7e96d54ddfa5ac",
+    "artifacts/experiment41/detections/features/R01/training_27.npz": "13381b17a762352aa7f3dcb4ee0dd9f8422bc6beccb8da33c593db4ca55f8322",
+    "artifacts/experiment41/detections/features/R01/training_28.npz": "fb9f24833a9b300cc594bf00601376ed1c2c8d0d25f1a1a9ee18cc40537d2f9f",
+    "artifacts/experiment41/detections/features/R01/training_29.npz": "f75fef03448947553b0627fae01dec2905087f2641322cfaf3adeb979616d273",
+    "artifacts/experiment41/detections/features/R01/training_30.npz": "7cf82bcc117389b85101472da310093f3473b18f4a66643cdce87e1703690e1d",
+    "artifacts/experiment41/detections/features/R01/training_32.npz": "35716081faa7d96a33a3570f057261a68c50bf45718e6c00a93cc2bccadf7cbe",
+    "artifacts/experiment41/detections/features/R01/training_33.npz": "194bd417d5c2eaf7cb26fd6cb4157344cd920663ce01cd6ad727958e798e127e",
+    "artifacts/experiment41/detections/features/R01/training_34.npz": "2aec3e7370cdbe34408d600353dc99f290b91b36739837f7f7c779e6449ffc2a",
+    "artifacts/experiment41/detections/features/R01/training_02.npz": "505f1808be478b010769b900d02505257f513270f3a36bf50e83ca626571a88a",
+    "artifacts/experiment41/detections/features/R01/training_04.npz": "9d9b1ee04cf0904e96138a8d2cbbd29e34791af5c2d7f81f0753ce047e566128",
+    "artifacts/experiment41/detections/features/R01/training_10.npz": "49b424de4eb3a4322b4ed8e07c5db6cd795308a1501ec47a9d8ae5667cf36027",
+    "artifacts/experiment41/detections/features/R01/training_15.npz": "e2c23de0ac7a0de99890b53e178182dcdaffc1e12cc56892a24aaea6c3220f1a",
+    "artifacts/experiment41/detections/features/R01/training_18.npz": "7cf17b9298fff6dbb6f465e8e24415245474e832796675e27431c7d0cc36e407",
+    "artifacts/experiment41/detections/features/R01/training_24.npz": "1e8ea8d4fdac4f2583b195cb15470b4bf652ea8ca9079d643b648d15ca427f49",
+    "artifacts/experiment41/detections/features/R02/training_02.npz": "80303e596dc7dbabf204a9e442f3153909b5390c8c49d2003b9eb43ddaddd275",
+    "artifacts/experiment41/detections/features/R02/training_03.npz": "18c993618e88fcdad29ab81b3e5d82e94e501609740d74d899209e592123f413",
+    "artifacts/experiment41/detections/features/R02/training_06.npz": "55726008e2856d10b09bffe4033e4ff3bfeed96744a5cdb9dbd9f5a93bc888d5",
+    "artifacts/experiment41/detections/features/R02/training_07.npz": "4289d80975094e8826da9bf375c32c69587c13d9a2281449f413eaeca170a03f",
+    "artifacts/experiment41/detections/features/R02/training_09.npz": "f05aaeaa9e6b2a7502a8e6aa0befb5fbfc5a47d5a93690edf0fc4c490a465fee",
+    "artifacts/experiment41/detections/features/R02/training_10.npz": "6f7defc3f6f07f0b0595dd9d9b6daf527fd02cacea3604c4d21a93615795eb75",
+    "artifacts/experiment41/detections/features/R02/training_15.npz": "b506b083ce501f114131b57e3c39ee05164aefb3cc4919c40275d30b08f5b88f",
+    "artifacts/experiment41/detections/features/R02/training_16.npz": "01f4fd34bac2dcb0f619b9d29f2247cfad17936c2f87a928008d2daa0e290b16",
+    "artifacts/experiment41/detections/features/R02/training_17.npz": "f6ad4f40e4f1f184c55b5caed44b0e0b2a9c7a83178de053dc97c086c3b0963d",
+    "artifacts/experiment41/detections/features/R02/training_18.npz": "5ca8524cfaa817dce95ea6fe2f8c6ae9f9915c7d9ec2fd007a01ef446b4efbb8",
+    "artifacts/experiment41/detections/features/R02/training_20.npz": "a1e51543a20fd83f542a2009bd5dadba439def51a09c11a21c29735f5e7a735f",
+    "artifacts/experiment41/detections/features/R02/training_21.npz": "cdab185d8caec8399372a692da4cd044c719ee0d567d2b4e78a152d7060f9866",
+    "artifacts/experiment41/detections/features/R02/training_22.npz": "365359d2b19cb046a9c6ef0693251a9c0356373c66007cd713312e736516260d",
+    "artifacts/experiment41/detections/features/R02/training_23.npz": "75dbe525898e702be240b1156e20f9f8070a9180aa112c702c21b2c9c133b47d",
+    "artifacts/experiment41/detections/features/R02/training_24.npz": "a93adde33ef56bc273c40074dba4c74be5892c1ef2fb4a3f87ea559c0d26dc30",
+    "artifacts/experiment41/detections/features/R02/training_25.npz": "19e9071fd95ad646c0cd4caf6959f042fce423ef86c6f45f09b6bfc82b910138",
+    "artifacts/experiment41/detections/features/R02/training_26.npz": "aa2eb2b4c99587c4de137bb835979e9c79faf81dd920827c498755d9f4f3bc1b",
+    "artifacts/experiment41/detections/features/R02/training_28.npz": "a3d5120c1465be48ad3bbc13f21e1768bab42416cd9e4420bde6dc9fbe34c437",
+    "artifacts/experiment41/detections/features/R02/training_30.npz": "02af9367d662befd865ecd4ae182d953904232df9b6ab486df0e493fa7997550",
+    "artifacts/experiment41/detections/features/R02/training_04.npz": "be6a735f6ca53d53fdf3840d7494480d54404097e447cff51c449186fe30eb86",
+    "artifacts/experiment41/detections/features/R02/training_08.npz": "5fc41fe0babb62aca49af87728c73b2493e8d7e9517f34019bdefa1cea84bb97",
+    "artifacts/experiment41/detections/features/R02/training_12.npz": "17dbe17ee8bb46255205fdc788be54ddc88d1d77ac31ebd58d69139db93c42fc",
+    "artifacts/experiment41/detections/features/R02/training_14.npz": "5c16485711cfe6f3b420028bb8ec88b11ccba9890d1f299138d551f90704622c",
+    "artifacts/experiment41/detections/features/R02/training_29.npz": "7ba66ad022343fee40e9852da67bea69d02f78e890c270fe296c5a13e16edd22",
+    "artifacts/experiment41/detections/features/R03/training_01.npz": "bb06c655e1b091238e29d942d8b572fc01afe6a0d2b9782bff32f52f6df48b68",
+    "artifacts/experiment41/detections/features/R03/training_02.npz": "14b5683fa584be10dbe0a3d0d3d1517d626383f2548f3fa9511ca71db5365966",
+    "artifacts/experiment41/detections/features/R03/training_03.npz": "2526d666cfb75cc611e02282d645a37a7d68eb7847899a66b742599ea8016522",
+    "artifacts/experiment41/detections/features/R03/training_04.npz": "7a0d8cbe96d9e6c43ed1c89bdcb3825bc35c89df9aa83ab50534a2bfba98c3e9",
+    "artifacts/experiment41/detections/features/R03/training_05.npz": "94a4ca1d7e81fb701b2b81e0acffcd1110ea62dc233425047f565d98f2096375",
+    "artifacts/experiment41/detections/features/R03/training_06.npz": "b38ba1cd21ec6a11fe2a2a34ece5335ffb2ecbbd1a39ac03eeea5352376a461d",
+    "artifacts/experiment41/detections/features/R03/training_09.npz": "190cc80e7d7ca39893c38cd43e96f26dba14e5223ebc7b91f21bfa9bc05ae882",
+    "artifacts/experiment41/detections/features/R03/training_10.npz": "2cde28862499af6088db4652fe72e1fc9e6ca0ce1e8dff4bc17a2171490d3a0e",
+    "artifacts/experiment41/detections/features/R03/training_11.npz": "19ee6f2c246d2f27c5b1fa8f149e7848b6b8b1fac72747e2098cb464b06df326",
+    "artifacts/experiment41/detections/features/R03/training_12.npz": "843883695aa0364c0bf0cc05bc0853f4fdfa6f2ba737570d5375f25e6b63afa2",
+    "artifacts/experiment41/detections/features/R03/training_13.npz": "52c68a958d2aae964604c150c0320a8a5157b760938f1cb3be75b9eb50ca95f9",
+    "artifacts/experiment41/detections/features/R03/training_14.npz": "7b53af0c05b8833bfeabc5b657543723f3ebf2d66e29a15e645ffcda11bdc063",
+    "artifacts/experiment41/detections/features/R03/training_20.npz": "69ec2fde2ed70c0a0033ad2fb8007ee0d3658e18bfc5585e262c631c3c002958",
+    "artifacts/experiment41/detections/features/R03/training_21.npz": "f66ed2d51287a8539377bc2fd165cb44e85cf4f90ac32538aff077dbbc31efec",
+    "artifacts/experiment41/detections/features/R03/training_16.npz": "e5e525863aaea47eec7b50c1e0768b84df37563de5ae4d087a98b5744699b43a",
+    "artifacts/experiment41/detections/features/R03/training_17.npz": "d60a4b4ef25b351ecd4b822942425e2d3aacb260d34b309e72e80cf4acfe1363",
+    "artifacts/experiment41/detections/features/R03/training_18.npz": "0fd77d8bf260d7337ddc335ddc6d6326e45453a685a2f9e9e4d72014bff076fc",
+    "artifacts/experiment41/detections/features/R03/training_19.npz": "61687f952e19029be942f8fbd13141e3d5c5d4673c6e709a84be526caebbe26a",
+    "artifacts/experiment41/detections/features/R04/training_03.npz": "587a8896606e61101903056e23640d75737e29c7db8395579e23a48ef0625978",
+    "artifacts/experiment41/detections/features/R04/training_04.npz": "4669c9873a1b793e7b93e06ebbe82d8df9f0e8e9948397d58214aa77693c49a6",
+    "artifacts/experiment41/detections/features/R04/training_06.npz": "8374bb59f72d183065e6fea7f63aca3e61032f4d53a2f4bf64e80ab95a21a612",
+    "artifacts/experiment41/detections/features/R04/training_07.npz": "1e3b8b96ebc9899bbab829f68113311e9f7e60e9b44b608140633cbc461d4656",
+    "artifacts/experiment41/detections/features/R04/training_09.npz": "b3ef147ec011eea6ebe882d37ae51cf69e200d3d277ecd3e66cc90c01bc7defe",
+    "artifacts/experiment41/detections/features/R04/training_13.npz": "69821e5d30ed247f4b8774d9a7255f3d2fba6c3ffe065e44a723c486d968e375",
+    "artifacts/experiment41/detections/features/R04/training_14.npz": "cb5b08beec836358e4d1c3230da647ade46c9270940b50266d1da30f81ca0984",
+    "artifacts/experiment41/detections/features/R04/training_16.npz": "c08a50093e11746592e4cb9074a70c14ded82d0601046fac20303920e14daf13",
+    "artifacts/experiment41/detections/features/R04/training_18.npz": "fd331df1414f8f409c9a3cec6d6d68c0d82a6e251a2eab9f3493c86def2fe26d",
+    "artifacts/experiment41/detections/features/R04/training_19.npz": "f300ae39839a7551b1b044c15ac1284b7cdabcc47e7a60b25580b3ba4791fe8c",
+    "artifacts/experiment41/detections/features/R04/training_20.npz": "6682227030ef27a947a6dd9a3a1bf6b6dbc36508bece04df297379d1988e1107",
+    "artifacts/experiment41/detections/features/R04/training_21.npz": "b6d4b8f7581858fe36334a80e828970503fa14f5a1b4e90ce91e22d396d4d639",
+    "artifacts/experiment41/detections/features/R04/training_22.npz": "30e83b2852642f4b2bd1e4dcb2585b1ccae0d0c619933dc310772317b4e5c7d7",
+    "artifacts/experiment41/detections/features/R04/training_23.npz": "d9da97093da2f354110e3bf291de33517f254b4fc2eef4121377ab5344e6bde7",
+    "artifacts/experiment41/detections/features/R04/training_24.npz": "a85cfa4198d3f551cf2cbee6ff1076fa63f6c098203bb33736ce6ba5155bc1a8",
+    "artifacts/experiment41/detections/features/R04/training_25.npz": "feccf526283451f23b2e0c8ee2756edcf93f693a74f79a3b0ebe9f70a49c8a0c",
+    "artifacts/experiment41/detections/features/R04/training_01.npz": "68717d7d8aa3b1a66e845acdff765a7f4a74b7cc95fa5ec5bee6d14e8c79e75f",
+    "artifacts/experiment41/detections/features/R04/training_05.npz": "75283cf5a921f88221eac282b459cb9545e18c83d9076cde80e933a5872f4793",
+    "artifacts/experiment41/detections/features/R04/training_11.npz": "90b7ba4b07efabd9b923e4718ec22f1ca6b46bb7f066def66a7aff37a538455e",
+    "artifacts/experiment41/detections/features/R04/training_17.npz": "48a3d9576b66f2f03c2d9d9372cf70e70dc5c42ec8b9eea04dcd1128729b4ac0"
+  },
+  "teacher_centers_sha256": "ddf95ea7d2f10671a7a0095ca33a4777f98f90491b341380cf06fef5cae13af2",
+  "sequences": [
+    {
+      "scene": "R01",
+      "sequence": "01",
+      "partition": "representation_train",
+      "samples": 52,
+      "valid": 52,
+      "selected": 51,
+      "selected_state_counts": [
+        18,
+        17,
+        16
+      ],
+      "teacher_phase_counts": [
+        18,
+        17,
+        17
+      ],
+      "old_phase_counts": [
+        16,
+        18,
+        18
+      ],
+      "target_sha256": "65b39cc93d1da7b592f84c1d59261f1f05794c656331b4ce2b77384eee43ce4f"
+    },
+    {
+      "scene": "R01",
+      "sequence": "03",
+      "partition": "representation_train",
+      "samples": 51,
+      "valid": 51,
+      "selected": 50,
+      "selected_state_counts": [
+        17,
+        17,
+        16
+      ],
+      "teacher_phase_counts": [
+        18,
+        17,
+        16
+      ],
+      "old_phase_counts": [
+        15,
+        19,
+        17
+      ],
+      "target_sha256": "4140059d96460f02b4b46908afdbf1cf658aef8ac9864297dd7407740ffd79f6"
+    },
+    {
+      "scene": "R01",
+      "sequence": "05",
+      "partition": "representation_train",
+      "samples": 59,
+      "valid": 55,
+      "selected": 54,
+      "selected_state_counts": [
+        20,
+        17,
+        17
+      ],
+      "teacher_phase_counts": [
+        21,
+        18,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "target_sha256": "34422ef092759d8fc9efae17d48e3476a67c186b9794612fbd60ad9ef2c77f5c"
+    },
+    {
+      "scene": "R01",
+      "sequence": "06",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 56,
+      "selected": 56,
+      "selected_state_counts": [
+        20,
+        17,
+        19
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "be4bee5a4edc5b550869d151e288688c975e71cd1cb2f299025e396251aa57ba"
+    },
+    {
+      "scene": "R01",
+      "sequence": "07",
+      "partition": "representation_train",
+      "samples": 59,
+      "valid": 55,
+      "selected": 54,
+      "selected_state_counts": [
+        20,
+        17,
+        17
+      ],
+      "teacher_phase_counts": [
+        21,
+        18,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "target_sha256": "f1eb1871a66bd7e19126871a17a810fd8efcf18afcf028a25d95d6745be45fc9"
+    },
+    {
+      "scene": "R01",
+      "sequence": "08",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 56,
+      "selected": 55,
+      "selected_state_counts": [
+        20,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "8f9f77c5e36a685c31c9f3957cabdb297301b2d286e58345b42e802b1521a1b2"
+    },
+    {
+      "scene": "R01",
+      "sequence": "12",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 53,
+      "selected": 52,
+      "selected_state_counts": [
+        17,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "92cd68d0d26a5a0153f3caab4e35540c5d95e94fdd1a58c999acdb49f8943b95"
+    },
+    {
+      "scene": "R01",
+      "sequence": "19",
+      "partition": "representation_train",
+      "samples": 59,
+      "valid": 52,
+      "selected": 51,
+      "selected_state_counts": [
+        16,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        18,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "target_sha256": "93e847701ce1bfb3787bf2db32506a44b1c5135f8b61e0d6b91b49b0478928e1"
+    },
+    {
+      "scene": "R01",
+      "sequence": "20",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 47,
+      "selected": 47,
+      "selected_state_counts": [
+        14,
+        17,
+        16
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "e8ad3b15e7670ccdf4286635cd7460e06d25806391c7b5124155ad21ad05b6a2"
+    },
+    {
+      "scene": "R01",
+      "sequence": "21",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 55,
+      "selected": 55,
+      "selected_state_counts": [
+        20,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "6ed3223923e46ce395cbe7acb80fb05ca346efb43931e61b0f51bd40151065c3"
+    },
+    {
+      "scene": "R01",
+      "sequence": "22",
+      "partition": "representation_train",
+      "samples": 59,
+      "valid": 56,
+      "selected": 55,
+      "selected_state_counts": [
+        20,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        18,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "target_sha256": "b4ed572c89ff33f55375a80360449a1cec0d031dbde6b8f2e2086e44d6aec998"
+    },
+    {
+      "scene": "R01",
+      "sequence": "23",
+      "partition": "representation_train",
+      "samples": 59,
+      "valid": 53,
+      "selected": 51,
+      "selected_state_counts": [
+        19,
+        16,
+        16
+      ],
+      "teacher_phase_counts": [
+        21,
+        18,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "target_sha256": "2686a2d45053548c3e2e3e705efd9a0dc32ed0c517c5e9e4fe382a58168bd9f1"
+    },
+    {
+      "scene": "R01",
+      "sequence": "25",
+      "partition": "representation_train",
+      "samples": 57,
+      "valid": 54,
+      "selected": 52,
+      "selected_state_counts": [
+        19,
+        16,
+        17
+      ],
+      "teacher_phase_counts": [
+        20,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        18,
+        18,
+        21
+      ],
+      "target_sha256": "3408a4f34fad4dff309385ae2af653189b92b1761deb6d5b28cbc54d9f1d2e7d"
+    },
+    {
+      "scene": "R01",
+      "sequence": "26",
+      "partition": "representation_train",
+      "samples": 60,
+      "valid": 37,
+      "selected": 36,
+      "selected_state_counts": [
+        20,
+        16,
+        0
+      ],
+      "teacher_phase_counts": [
+        22,
+        38,
+        0
+      ],
+      "old_phase_counts": [
+        19,
+        41,
+        0
+      ],
+      "target_sha256": "96163ed3104a95901ad89bc21855c520109fefa8ef0bc60cafcb8dabaeffa5d2"
+    },
+    {
+      "scene": "R01",
+      "sequence": "27",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 52,
+      "selected": 51,
+      "selected_state_counts": [
+        16,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "02fe0dea82ea8a591ddbd3a2aac8347c15ab351dc6e3d0bc0e768807eb2ed8b1"
+    },
+    {
+      "scene": "R01",
+      "sequence": "28",
+      "partition": "representation_train",
+      "samples": 57,
+      "valid": 51,
+      "selected": 51,
+      "selected_state_counts": [
+        16,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        19
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        20
+      ],
+      "target_sha256": "8f69aba0cd62bf9850aa85d84b8d8d7ae24e65f2fcbe291df8b244c8f8b2a4c4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "29",
+      "partition": "representation_train",
+      "samples": 59,
+      "valid": 55,
+      "selected": 54,
+      "selected_state_counts": [
+        20,
+        17,
+        17
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        21
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "target_sha256": "43d26f3548eca8c376b27101e37bb1031af43dc4fc46b715d76a74353f239b8a"
+    },
+    {
+      "scene": "R01",
+      "sequence": "30",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 55,
+      "selected": 55,
+      "selected_state_counts": [
+        20,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        17,
+        22
+      ],
+      "target_sha256": "7dd11e050787e18b7e053bf614fa1bb3cf896ec241de472db611088a94abc8ec"
+    },
+    {
+      "scene": "R01",
+      "sequence": "32",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 51,
+      "selected": 50,
+      "selected_state_counts": [
+        15,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        18,
+        19,
+        21
+      ],
+      "target_sha256": "b9a5a3f73a9db816e7805f21f476cbe9051ba277580c974affd5b764a2dc9fa4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "33",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 52,
+      "selected": 52,
+      "selected_state_counts": [
+        17,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "6a3129f3a2598ddf497d1db3e49b9b16031fb6faf9f1b680df3ef90656b29f7c"
+    },
+    {
+      "scene": "R01",
+      "sequence": "34",
+      "partition": "representation_train",
+      "samples": 58,
+      "valid": 51,
+      "selected": 50,
+      "selected_state_counts": [
+        15,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        18,
+        19,
+        21
+      ],
+      "target_sha256": "0c065251d152a41e77cb3b74533aab782eb280d597a92403d7a1d7b592addb92"
+    },
+    {
+      "scene": "R01",
+      "sequence": "02",
+      "partition": "representation_validation",
+      "samples": 54,
+      "valid": 54,
+      "selected": 53,
+      "selected_state_counts": [
+        20,
+        17,
+        16
+      ],
+      "teacher_phase_counts": [
+        20,
+        18,
+        16
+      ],
+      "old_phase_counts": [
+        18,
+        18,
+        18
+      ],
+      "target_sha256": "3f538283705d85b959725463917e4516f098aaaadf4540e4d16c7edd166f1def"
+    },
+    {
+      "scene": "R01",
+      "sequence": "04",
+      "partition": "representation_validation",
+      "samples": 58,
+      "valid": 56,
+      "selected": 55,
+      "selected_state_counts": [
+        20,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "e225587bb2438f0ed17c492f5bfbf0427d3271c766d5053274e1fd3b5ed8dd22"
+    },
+    {
+      "scene": "R01",
+      "sequence": "10",
+      "partition": "representation_validation",
+      "samples": 59,
+      "valid": 55,
+      "selected": 54,
+      "selected_state_counts": [
+        20,
+        17,
+        17
+      ],
+      "teacher_phase_counts": [
+        22,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        19,
+        21
+      ],
+      "target_sha256": "fbb72edc3f4a2f9922d192fb5ea16d824cb5b8813da92178ec02cb13234465f2"
+    },
+    {
+      "scene": "R01",
+      "sequence": "15",
+      "partition": "representation_validation",
+      "samples": 59,
+      "valid": 51,
+      "selected": 49,
+      "selected_state_counts": [
+        14,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        22,
+        17,
+        20
+      ],
+      "old_phase_counts": [
+        19,
+        19,
+        21
+      ],
+      "target_sha256": "740d72a6a8e00e122e732632c026ccc09c58854e14076a0deec8c28ab59a663e"
+    },
+    {
+      "scene": "R01",
+      "sequence": "18",
+      "partition": "representation_validation",
+      "samples": 57,
+      "valid": 51,
+      "selected": 51,
+      "selected_state_counts": [
+        16,
+        17,
+        18
+      ],
+      "teacher_phase_counts": [
+        21,
+        17,
+        19
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        20
+      ],
+      "target_sha256": "74114c74fa369a966bdf5b0a657c3cfe4ba15c2b2834b2c4be4f2465c4778762"
+    },
+    {
+      "scene": "R01",
+      "sequence": "24",
+      "partition": "representation_validation",
+      "samples": 58,
+      "valid": 54,
+      "selected": 52,
+      "selected_state_counts": [
+        19,
+        16,
+        17
+      ],
+      "teacher_phase_counts": [
+        21,
+        18,
+        19
+      ],
+      "old_phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "target_sha256": "5e3405affebad7faa4dfaa85e9ce4b6e90a5d0596720b6a5bc9d2de2f9af35b3"
+    },
+    {
+      "scene": "R02",
+      "sequence": "02",
+      "partition": "representation_train",
+      "samples": 152,
+      "valid": 152,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        51,
+        10,
+        90
+      ],
+      "old_phase_counts": [
+        0,
+        52,
+        12,
+        88
+      ],
+      "target_sha256": "b565c8991af382c729c4e41bf8122ea19ee0a013c0830cb6e6727d8f5fb0152a"
+    },
+    {
+      "scene": "R02",
+      "sequence": "03",
+      "partition": "representation_train",
+      "samples": 138,
+      "valid": 138,
+      "selected": 1,
+      "selected_state_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        0,
+        40,
+        22,
+        76
+      ],
+      "old_phase_counts": [
+        1,
+        40,
+        15,
+        82
+      ],
+      "target_sha256": "fc31dc70a6027cd8082650b5f26da01bad591d96ca6c91c180ffa1863d572534"
+    },
+    {
+      "scene": "R02",
+      "sequence": "06",
+      "partition": "representation_train",
+      "samples": 153,
+      "valid": 153,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        43,
+        15,
+        94
+      ],
+      "old_phase_counts": [
+        0,
+        40,
+        14,
+        99
+      ],
+      "target_sha256": "fd469f0e6f8faf3567fea6c91536b3ba2750bf642c2b027b91c2fa7735372687"
+    },
+    {
+      "scene": "R02",
+      "sequence": "07",
+      "partition": "representation_train",
+      "samples": 147,
+      "valid": 147,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        2,
+        53,
+        11,
+        81
+      ],
+      "old_phase_counts": [
+        0,
+        49,
+        8,
+        90
+      ],
+      "target_sha256": "cc527cc735573d624d1df772d47411236902c32615190894977b90a504646434"
+    },
+    {
+      "scene": "R02",
+      "sequence": "09",
+      "partition": "representation_train",
+      "samples": 149,
+      "valid": 149,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        2,
+        53,
+        5,
+        89
+      ],
+      "old_phase_counts": [
+        2,
+        48,
+        5,
+        94
+      ],
+      "target_sha256": "8e9f1a067bfa4656abd8e8f32d07c43bd3f676bf4f7efe3b14da339d0dc6ae47"
+    },
+    {
+      "scene": "R02",
+      "sequence": "10",
+      "partition": "representation_train",
+      "samples": 149,
+      "valid": 149,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        2,
+        72,
+        12,
+        63
+      ],
+      "old_phase_counts": [
+        0,
+        71,
+        10,
+        68
+      ],
+      "target_sha256": "27951ca11f6af2f9f58b31b6c977529f0257317bf9a0ade084141d82325a7d40"
+    },
+    {
+      "scene": "R02",
+      "sequence": "15",
+      "partition": "representation_train",
+      "samples": 153,
+      "valid": 153,
+      "selected": 1,
+      "selected_state_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        0,
+        55,
+        10,
+        88
+      ],
+      "old_phase_counts": [
+        0,
+        54,
+        6,
+        93
+      ],
+      "target_sha256": "f96c69d0b6bc524ff66e4946301aa0df65caa27c6b6980d62446a0509f14aabe"
+    },
+    {
+      "scene": "R02",
+      "sequence": "16",
+      "partition": "representation_train",
+      "samples": 147,
+      "valid": 147,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        0,
+        48,
+        5,
+        94
+      ],
+      "old_phase_counts": [
+        0,
+        46,
+        6,
+        95
+      ],
+      "target_sha256": "8e65c180844724ca56eca054e25169f51dfbc2415dc5bd88210370fc5478d27c"
+    },
+    {
+      "scene": "R02",
+      "sequence": "17",
+      "partition": "representation_train",
+      "samples": 144,
+      "valid": 144,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        0,
+        29,
+        9,
+        106
+      ],
+      "old_phase_counts": [
+        0,
+        30,
+        8,
+        106
+      ],
+      "target_sha256": "a7d5e93986bcf1bab353c3320417e86759095037a34650520086c6414d6abfc0"
+    },
+    {
+      "scene": "R02",
+      "sequence": "18",
+      "partition": "representation_train",
+      "samples": 145,
+      "valid": 145,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        34,
+        12,
+        98
+      ],
+      "old_phase_counts": [
+        0,
+        32,
+        8,
+        105
+      ],
+      "target_sha256": "578cd32d6bae1b6ad99691ef80b83fcaabffce39654818fad7a7ef786c986041"
+    },
+    {
+      "scene": "R02",
+      "sequence": "20",
+      "partition": "representation_train",
+      "samples": 153,
+      "valid": 153,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        2,
+        42,
+        8,
+        101
+      ],
+      "old_phase_counts": [
+        1,
+        42,
+        7,
+        103
+      ],
+      "target_sha256": "29cea7980b9b7d0651ecf8492e8f5917d428ceaedb2137cbba28c8a7e8970b87"
+    },
+    {
+      "scene": "R02",
+      "sequence": "21",
+      "partition": "representation_train",
+      "samples": 146,
+      "valid": 146,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        2,
+        38,
+        6,
+        100
+      ],
+      "old_phase_counts": [
+        2,
+        37,
+        5,
+        102
+      ],
+      "target_sha256": "8d1828575f12bb38ba5c5cb27273cd425720e253a74ec74d1d4db067f2759f12"
+    },
+    {
+      "scene": "R02",
+      "sequence": "22",
+      "partition": "representation_train",
+      "samples": 151,
+      "valid": 151,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        41,
+        6,
+        103
+      ],
+      "old_phase_counts": [
+        0,
+        34,
+        7,
+        110
+      ],
+      "target_sha256": "b07f75fa3c94331887e0995bd5ace11671707dc1725e9b50e893beefc3c0a0cf"
+    },
+    {
+      "scene": "R02",
+      "sequence": "23",
+      "partition": "representation_train",
+      "samples": 153,
+      "valid": 153,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        62,
+        8,
+        82
+      ],
+      "old_phase_counts": [
+        0,
+        64,
+        7,
+        82
+      ],
+      "target_sha256": "7dafb5bdf7f80520077bc77d6b29b9377c7533e0c6b3e6d91c04d06a15e7869a"
+    },
+    {
+      "scene": "R02",
+      "sequence": "24",
+      "partition": "representation_train",
+      "samples": 142,
+      "valid": 142,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        2,
+        44,
+        11,
+        85
+      ],
+      "old_phase_counts": [
+        0,
+        46,
+        7,
+        89
+      ],
+      "target_sha256": "88d5cacd2df417012528cb2276e97faab142ab5678f524bd227b1908a31dc29c"
+    },
+    {
+      "scene": "R02",
+      "sequence": "25",
+      "partition": "representation_train",
+      "samples": 147,
+      "valid": 147,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        3,
+        51,
+        12,
+        81
+      ],
+      "old_phase_counts": [
+        5,
+        49,
+        7,
+        86
+      ],
+      "target_sha256": "b01733093873110d6c26e67bea1aef782fb81f99b112e60cf925d18a514930af"
+    },
+    {
+      "scene": "R02",
+      "sequence": "26",
+      "partition": "representation_train",
+      "samples": 144,
+      "valid": 144,
+      "selected": 1,
+      "selected_state_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        43,
+        8,
+        92
+      ],
+      "old_phase_counts": [
+        2,
+        43,
+        6,
+        93
+      ],
+      "target_sha256": "b059b0716a7dbaa568565506dbadfb4c3167f964ba21de99aaa69e69fbaf1073"
+    },
+    {
+      "scene": "R02",
+      "sequence": "28",
+      "partition": "representation_train",
+      "samples": 148,
+      "valid": 148,
+      "selected": 2,
+      "selected_state_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        49,
+        6,
+        92
+      ],
+      "old_phase_counts": [
+        0,
+        49,
+        8,
+        91
+      ],
+      "target_sha256": "4d3a626c4230a73b80cec7d77a8632b32aaabafe55ec53dc1d7a754010294809"
+    },
+    {
+      "scene": "R02",
+      "sequence": "30",
+      "partition": "representation_train",
+      "samples": 142,
+      "valid": 142,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        5,
+        37,
+        13,
+        87
+      ],
+      "old_phase_counts": [
+        3,
+        37,
+        12,
+        90
+      ],
+      "target_sha256": "22e0b854b19738f9b0f906444e9ca794a0e48288fd368fb81329ef1fa72b921d"
+    },
+    {
+      "scene": "R02",
+      "sequence": "04",
+      "partition": "representation_validation",
+      "samples": 149,
+      "valid": 149,
+      "selected": 1,
+      "selected_state_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        0,
+        60,
+        13,
+        76
+      ],
+      "old_phase_counts": [
+        0,
+        63,
+        10,
+        76
+      ],
+      "target_sha256": "31b7395c5d771fa4beb45dc79b96c24f4d8f2d5794da2bcd5ce07cb36cff4ee3"
+    },
+    {
+      "scene": "R02",
+      "sequence": "08",
+      "partition": "representation_validation",
+      "samples": 147,
+      "valid": 147,
+      "selected": 1,
+      "selected_state_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        0,
+        58,
+        6,
+        83
+      ],
+      "old_phase_counts": [
+        2,
+        54,
+        4,
+        87
+      ],
+      "target_sha256": "881a1c0a8a5628f227e1c43905b0f13c7443e19043a368f31e0fc9f6470a23f9"
+    },
+    {
+      "scene": "R02",
+      "sequence": "12",
+      "partition": "representation_validation",
+      "samples": 148,
+      "valid": 148,
+      "selected": 3,
+      "selected_state_counts": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        61,
+        6,
+        80
+      ],
+      "old_phase_counts": [
+        0,
+        57,
+        8,
+        83
+      ],
+      "target_sha256": "391fc3087b377c3573f9ad033d985a44cfac9cfa3465028720f0d960f76bfd2c"
+    },
+    {
+      "scene": "R02",
+      "sequence": "14",
+      "partition": "representation_validation",
+      "samples": 145,
+      "valid": 145,
+      "selected": 3,
+      "selected_state_counts": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        60,
+        10,
+        74
+      ],
+      "old_phase_counts": [
+        0,
+        61,
+        8,
+        76
+      ],
+      "target_sha256": "2922738cfa6015f2253d10833b4216f89d46d8bd8ae8c0445ba09869a2ee4324"
+    },
+    {
+      "scene": "R02",
+      "sequence": "29",
+      "partition": "representation_validation",
+      "samples": 147,
+      "valid": 147,
+      "selected": 0,
+      "selected_state_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "teacher_phase_counts": [
+        1,
+        24,
+        15,
+        107
+      ],
+      "old_phase_counts": [
+        0,
+        24,
+        13,
+        110
+      ],
+      "target_sha256": "4ace414fbba3abaed1cb5bae64c36c5a5ba31d4265abf08a4c394dc32ec69652"
+    },
+    {
+      "scene": "R03",
+      "sequence": "01",
+      "partition": "representation_train",
+      "samples": 167,
+      "valid": 167,
+      "selected": 154,
+      "selected_state_counts": [
+        54,
+        56,
+        37,
+        7
+      ],
+      "teacher_phase_counts": [
+        55,
+        67,
+        38,
+        7
+      ],
+      "old_phase_counts": [
+        61,
+        58,
+        31,
+        17
+      ],
+      "target_sha256": "61c6d8ed8589ceea7c5bb135a06b45b67256d496679b8074ae4c51624ff41419"
+    },
+    {
+      "scene": "R03",
+      "sequence": "02",
+      "partition": "representation_train",
+      "samples": 173,
+      "valid": 173,
+      "selected": 171,
+      "selected_state_counts": [
+        66,
+        47,
+        49,
+        9
+      ],
+      "teacher_phase_counts": [
+        66,
+        47,
+        50,
+        10
+      ],
+      "old_phase_counts": [
+        76,
+        49,
+        43,
+        5
+      ],
+      "target_sha256": "8c96a14d0b27112e2ab6cc2b0a853956c1ebed32593420cf2102b00413403bac"
+    },
+    {
+      "scene": "R03",
+      "sequence": "03",
+      "partition": "representation_train",
+      "samples": 181,
+      "valid": 181,
+      "selected": 179,
+      "selected_state_counts": [
+        64,
+        55,
+        49,
+        11
+      ],
+      "teacher_phase_counts": [
+        65,
+        56,
+        49,
+        11
+      ],
+      "old_phase_counts": [
+        78,
+        55,
+        48,
+        0
+      ],
+      "target_sha256": "c76e75d6230f2b6120eb0e1baa39cf4280b8903bb6400ca174ce26c1f63dbd78"
+    },
+    {
+      "scene": "R03",
+      "sequence": "04",
+      "partition": "representation_train",
+      "samples": 172,
+      "valid": 172,
+      "selected": 171,
+      "selected_state_counts": [
+        61,
+        52,
+        49,
+        9
+      ],
+      "teacher_phase_counts": [
+        62,
+        52,
+        49,
+        9
+      ],
+      "old_phase_counts": [
+        70,
+        53,
+        49,
+        0
+      ],
+      "target_sha256": "46ff326e7593369f6d065bb78fda25bdcdab4049db527bc4158399f466283804"
+    },
+    {
+      "scene": "R03",
+      "sequence": "05",
+      "partition": "representation_train",
+      "samples": 177,
+      "valid": 177,
+      "selected": 177,
+      "selected_state_counts": [
+        59,
+        51,
+        56,
+        11
+      ],
+      "teacher_phase_counts": [
+        59,
+        51,
+        56,
+        11
+      ],
+      "old_phase_counts": [
+        70,
+        51,
+        54,
+        2
+      ],
+      "target_sha256": "3890b81e9ef8a7d0e11daf63ffcb285329b4d3783d64bf3bfade67004715127c"
+    },
+    {
+      "scene": "R03",
+      "sequence": "06",
+      "partition": "representation_train",
+      "samples": 177,
+      "valid": 177,
+      "selected": 177,
+      "selected_state_counts": [
+        60,
+        54,
+        51,
+        12
+      ],
+      "teacher_phase_counts": [
+        60,
+        54,
+        51,
+        12
+      ],
+      "old_phase_counts": [
+        68,
+        56,
+        52,
+        1
+      ],
+      "target_sha256": "490fd7114485d2ccbaa4abc73ace8bc1cb86ded98fa08ddd1ed97af076f368a0"
+    },
+    {
+      "scene": "R03",
+      "sequence": "09",
+      "partition": "representation_train",
+      "samples": 186,
+      "valid": 186,
+      "selected": 185,
+      "selected_state_counts": [
+        61,
+        52,
+        61,
+        11
+      ],
+      "teacher_phase_counts": [
+        61,
+        52,
+        62,
+        11
+      ],
+      "old_phase_counts": [
+        73,
+        52,
+        61,
+        0
+      ],
+      "target_sha256": "5a5d6f22711f516ebd26ff7538b1e94e2a617fc2437c670ad484ef5f6a89cb65"
+    },
+    {
+      "scene": "R03",
+      "sequence": "10",
+      "partition": "representation_train",
+      "samples": 175,
+      "valid": 174,
+      "selected": 173,
+      "selected_state_counts": [
+        58,
+        55,
+        51,
+        9
+      ],
+      "teacher_phase_counts": [
+        58,
+        56,
+        52,
+        9
+      ],
+      "old_phase_counts": [
+        67,
+        56,
+        46,
+        6
+      ],
+      "target_sha256": "429b31c5c72becfdbaf676e04644aae1e19072691836dc11192f0d5de20871d2"
+    },
+    {
+      "scene": "R03",
+      "sequence": "11",
+      "partition": "representation_train",
+      "samples": 174,
+      "valid": 174,
+      "selected": 174,
+      "selected_state_counts": [
+        56,
+        51,
+        58,
+        9
+      ],
+      "teacher_phase_counts": [
+        56,
+        51,
+        58,
+        9
+      ],
+      "old_phase_counts": [
+        66,
+        51,
+        50,
+        7
+      ],
+      "target_sha256": "9a46440c27b99d7ec8f6f38f68189422584e181fd67f9bc75d5bfb3a22f60970"
+    },
+    {
+      "scene": "R03",
+      "sequence": "12",
+      "partition": "representation_train",
+      "samples": 187,
+      "valid": 187,
+      "selected": 186,
+      "selected_state_counts": [
+        63,
+        51,
+        56,
+        16
+      ],
+      "teacher_phase_counts": [
+        64,
+        51,
+        56,
+        16
+      ],
+      "old_phase_counts": [
+        77,
+        52,
+        57,
+        1
+      ],
+      "target_sha256": "7f79decfc32152da5139d2e0eb12ce5573fecaf849b992a02806cd79113593f7"
+    },
+    {
+      "scene": "R03",
+      "sequence": "13",
+      "partition": "representation_train",
+      "samples": 180,
+      "valid": 180,
+      "selected": 180,
+      "selected_state_counts": [
+        58,
+        55,
+        54,
+        13
+      ],
+      "teacher_phase_counts": [
+        58,
+        55,
+        54,
+        13
+      ],
+      "old_phase_counts": [
+        71,
+        55,
+        54,
+        0
+      ],
+      "target_sha256": "8ef973f817a500ad81702e7d6132f794fa18cf770ca49ca5445a298430ec902b"
+    },
+    {
+      "scene": "R03",
+      "sequence": "14",
+      "partition": "representation_train",
+      "samples": 158,
+      "valid": 158,
+      "selected": 155,
+      "selected_state_counts": [
+        54,
+        44,
+        48,
+        9
+      ],
+      "teacher_phase_counts": [
+        54,
+        45,
+        48,
+        11
+      ],
+      "old_phase_counts": [
+        65,
+        45,
+        48,
+        0
+      ],
+      "target_sha256": "7120e86ce302ea099d1305cdd874b46c7d47dd244f0f0efc546c264f4052593d"
+    },
+    {
+      "scene": "R03",
+      "sequence": "20",
+      "partition": "representation_train",
+      "samples": 173,
+      "valid": 173,
+      "selected": 173,
+      "selected_state_counts": [
+        62,
+        48,
+        54,
+        9
+      ],
+      "teacher_phase_counts": [
+        62,
+        48,
+        54,
+        9
+      ],
+      "old_phase_counts": [
+        72,
+        48,
+        42,
+        11
+      ],
+      "target_sha256": "210e3121d47b6024a78f5d171d94e0d60bae9fe7180029b01186fee20dcb45df"
+    },
+    {
+      "scene": "R03",
+      "sequence": "21",
+      "partition": "representation_train",
+      "samples": 179,
+      "valid": 179,
+      "selected": 179,
+      "selected_state_counts": [
+        62,
+        50,
+        55,
+        12
+      ],
+      "teacher_phase_counts": [
+        62,
+        50,
+        55,
+        12
+      ],
+      "old_phase_counts": [
+        74,
+        50,
+        55,
+        0
+      ],
+      "target_sha256": "30d901eb129efa9460bfd1300e5c0ef04b1cd13edbf073142bec389970c7328f"
+    },
+    {
+      "scene": "R03",
+      "sequence": "16",
+      "partition": "representation_validation",
+      "samples": 164,
+      "valid": 164,
+      "selected": 163,
+      "selected_state_counts": [
+        61,
+        44,
+        46,
+        12
+      ],
+      "teacher_phase_counts": [
+        61,
+        44,
+        47,
+        12
+      ],
+      "old_phase_counts": [
+        74,
+        44,
+        46,
+        0
+      ],
+      "target_sha256": "b39939f6a1a06022ecf3da771f3882157c3513898d68f2f56106822253be657d"
+    },
+    {
+      "scene": "R03",
+      "sequence": "17",
+      "partition": "representation_validation",
+      "samples": 172,
+      "valid": 172,
+      "selected": 168,
+      "selected_state_counts": [
+        58,
+        46,
+        54,
+        10
+      ],
+      "teacher_phase_counts": [
+        58,
+        49,
+        55,
+        10
+      ],
+      "old_phase_counts": [
+        68,
+        48,
+        56,
+        0
+      ],
+      "target_sha256": "ed1a9d8713e42f51ee1d270ab24a99102c2e9761dbf44379eccb7f28e0bea898"
+    },
+    {
+      "scene": "R03",
+      "sequence": "18",
+      "partition": "representation_validation",
+      "samples": 173,
+      "valid": 173,
+      "selected": 167,
+      "selected_state_counts": [
+        54,
+        49,
+        54,
+        10
+      ],
+      "teacher_phase_counts": [
+        56,
+        49,
+        58,
+        10
+      ],
+      "old_phase_counts": [
+        70,
+        49,
+        54,
+        0
+      ],
+      "target_sha256": "c1a0efedb96d26ccef7fa679934caf744b80260b2607a58d66839824d2cc4f4e"
+    },
+    {
+      "scene": "R03",
+      "sequence": "19",
+      "partition": "representation_validation",
+      "samples": 174,
+      "valid": 174,
+      "selected": 173,
+      "selected_state_counts": [
+        58,
+        49,
+        52,
+        14
+      ],
+      "teacher_phase_counts": [
+        59,
+        49,
+        52,
+        14
+      ],
+      "old_phase_counts": [
+        73,
+        49,
+        47,
+        5
+      ],
+      "target_sha256": "d64811c5c3b10e51bf8ab892a6e78b0c4cd242c49aa4ba7f90a9634c7fc0275b"
+    },
+    {
+      "scene": "R04",
+      "sequence": "03",
+      "partition": "representation_train",
+      "samples": 116,
+      "valid": 89,
+      "selected": 89,
+      "selected_state_counts": [
+        6,
+        27,
+        4,
+        52
+      ],
+      "teacher_phase_counts": [
+        8,
+        37,
+        4,
+        67
+      ],
+      "old_phase_counts": [
+        0,
+        0,
+        8,
+        108
+      ],
+      "target_sha256": "505291f508bf54eac7f12ae1dc5599ad3d6b385f6257aab2c4a43de2326e939f"
+    },
+    {
+      "scene": "R04",
+      "sequence": "04",
+      "partition": "representation_train",
+      "samples": 102,
+      "valid": 64,
+      "selected": 61,
+      "selected_state_counts": [
+        1,
+        11,
+        9,
+        40
+      ],
+      "teacher_phase_counts": [
+        7,
+        32,
+        11,
+        52
+      ],
+      "old_phase_counts": [
+        0,
+        7,
+        0,
+        95
+      ],
+      "target_sha256": "3b217054840e08c8fc89bf1123b6a312289852af1f8a817828b19665e745d101"
+    },
+    {
+      "scene": "R04",
+      "sequence": "06",
+      "partition": "representation_train",
+      "samples": 112,
+      "valid": 77,
+      "selected": 77,
+      "selected_state_counts": [
+        5,
+        33,
+        7,
+        32
+      ],
+      "teacher_phase_counts": [
+        8,
+        59,
+        7,
+        38
+      ],
+      "old_phase_counts": [
+        1,
+        8,
+        0,
+        103
+      ],
+      "target_sha256": "339799582689b250a2a394efbc82c1fb85e75a34589406e1b9c95d610b929fca"
+    },
+    {
+      "scene": "R04",
+      "sequence": "07",
+      "partition": "representation_train",
+      "samples": 97,
+      "valid": 68,
+      "selected": 67,
+      "selected_state_counts": [
+        8,
+        14,
+        15,
+        30
+      ],
+      "teacher_phase_counts": [
+        8,
+        17,
+        23,
+        49
+      ],
+      "old_phase_counts": [
+        1,
+        10,
+        0,
+        86
+      ],
+      "target_sha256": "71d7a9910a68073d8dfe27e865a7a3cff37541acccc5ecb9116ce2fd4c4981fd"
+    },
+    {
+      "scene": "R04",
+      "sequence": "09",
+      "partition": "representation_train",
+      "samples": 105,
+      "valid": 75,
+      "selected": 74,
+      "selected_state_counts": [
+        8,
+        16,
+        18,
+        32
+      ],
+      "teacher_phase_counts": [
+        8,
+        31,
+        20,
+        46
+      ],
+      "old_phase_counts": [
+        2,
+        8,
+        0,
+        95
+      ],
+      "target_sha256": "275747fbfb6a86827cd190cf210fe9bfcbdb6fd8187f484a93905b763b90ffa7"
+    },
+    {
+      "scene": "R04",
+      "sequence": "13",
+      "partition": "representation_train",
+      "samples": 96,
+      "valid": 58,
+      "selected": 58,
+      "selected_state_counts": [
+        0,
+        14,
+        22,
+        22
+      ],
+      "teacher_phase_counts": [
+        0,
+        29,
+        35,
+        32
+      ],
+      "old_phase_counts": [
+        1,
+        10,
+        0,
+        85
+      ],
+      "target_sha256": "f118d78d7077910bd652f61dab88f7504eeffdf29532cb79cca975ecbb1c02ff"
+    },
+    {
+      "scene": "R04",
+      "sequence": "14",
+      "partition": "representation_train",
+      "samples": 81,
+      "valid": 57,
+      "selected": 56,
+      "selected_state_counts": [
+        0,
+        23,
+        4,
+        29
+      ],
+      "teacher_phase_counts": [
+        8,
+        26,
+        4,
+        43
+      ],
+      "old_phase_counts": [
+        8,
+        2,
+        0,
+        71
+      ],
+      "target_sha256": "279624ce2bff5597236802793f19d2479e8cc89b37f7248d3dcbcfefcbeb14f7"
+    },
+    {
+      "scene": "R04",
+      "sequence": "16",
+      "partition": "representation_train",
+      "samples": 94,
+      "valid": 77,
+      "selected": 76,
+      "selected_state_counts": [
+        8,
+        24,
+        9,
+        35
+      ],
+      "teacher_phase_counts": [
+        8,
+        28,
+        11,
+        47
+      ],
+      "old_phase_counts": [
+        1,
+        10,
+        0,
+        83
+      ],
+      "target_sha256": "b287d5a4491d5292e6f1a4d0a9403be22ffebc6150ecb0529ca3a0b465ee6946"
+    },
+    {
+      "scene": "R04",
+      "sequence": "18",
+      "partition": "representation_train",
+      "samples": 103,
+      "valid": 70,
+      "selected": 69,
+      "selected_state_counts": [
+        5,
+        17,
+        18,
+        29
+      ],
+      "teacher_phase_counts": [
+        12,
+        20,
+        22,
+        49
+      ],
+      "old_phase_counts": [
+        0,
+        12,
+        0,
+        91
+      ],
+      "target_sha256": "18a718a6175b3ec1cec695d4581e92538c83b4255745e573902c4378b15461af"
+    },
+    {
+      "scene": "R04",
+      "sequence": "19",
+      "partition": "representation_train",
+      "samples": 99,
+      "valid": 53,
+      "selected": 53,
+      "selected_state_counts": [
+        0,
+        12,
+        12,
+        29
+      ],
+      "teacher_phase_counts": [
+        12,
+        17,
+        17,
+        53
+      ],
+      "old_phase_counts": [
+        12,
+        0,
+        0,
+        87
+      ],
+      "target_sha256": "c8974f5803ad79f93dd18d0fa8c093a2b965888f2d6b1fde1660e66eae268940"
+    },
+    {
+      "scene": "R04",
+      "sequence": "20",
+      "partition": "representation_train",
+      "samples": 101,
+      "valid": 74,
+      "selected": 74,
+      "selected_state_counts": [
+        12,
+        13,
+        14,
+        35
+      ],
+      "teacher_phase_counts": [
+        20,
+        16,
+        18,
+        47
+      ],
+      "old_phase_counts": [
+        20,
+        0,
+        0,
+        81
+      ],
+      "target_sha256": "46e4617ad657f4c8cc181a159c83fe712ccf82d304da0bb8c6fc781790c0fb05"
+    },
+    {
+      "scene": "R04",
+      "sequence": "21",
+      "partition": "representation_train",
+      "samples": 105,
+      "valid": 86,
+      "selected": 85,
+      "selected_state_counts": [
+        6,
+        12,
+        40,
+        27
+      ],
+      "teacher_phase_counts": [
+        7,
+        18,
+        40,
+        40
+      ],
+      "old_phase_counts": [
+        6,
+        1,
+        0,
+        98
+      ],
+      "target_sha256": "1a205ae6c3338bc618fb1932906bbd77e19bfb54b00e8cefc9c9bb609396e0b8"
+    },
+    {
+      "scene": "R04",
+      "sequence": "22",
+      "partition": "representation_train",
+      "samples": 95,
+      "valid": 59,
+      "selected": 57,
+      "selected_state_counts": [
+        10,
+        18,
+        9,
+        20
+      ],
+      "teacher_phase_counts": [
+        16,
+        32,
+        13,
+        34
+      ],
+      "old_phase_counts": [
+        0,
+        16,
+        0,
+        79
+      ],
+      "target_sha256": "d5213459399934e1bff34e7b77ff3ba1c50ac98a7368a98dc437605ae35149be"
+    },
+    {
+      "scene": "R04",
+      "sequence": "23",
+      "partition": "representation_train",
+      "samples": 95,
+      "valid": 66,
+      "selected": 66,
+      "selected_state_counts": [
+        5,
+        14,
+        31,
+        16
+      ],
+      "teacher_phase_counts": [
+        5,
+        28,
+        40,
+        22
+      ],
+      "old_phase_counts": [
+        0,
+        5,
+        0,
+        90
+      ],
+      "target_sha256": "12c1400be898e2afb349df87ebd83d4ce32d3a043e6ea9afd0f191cd5acab2ab"
+    },
+    {
+      "scene": "R04",
+      "sequence": "24",
+      "partition": "representation_train",
+      "samples": 92,
+      "valid": 64,
+      "selected": 64,
+      "selected_state_counts": [
+        8,
+        17,
+        23,
+        16
+      ],
+      "teacher_phase_counts": [
+        10,
+        24,
+        25,
+        33
+      ],
+      "old_phase_counts": [
+        1,
+        10,
+        0,
+        81
+      ],
+      "target_sha256": "2eeadf897afc6aa96677dccd345cef9ba9e9da38c4fe0215bb087e8af1ee090f"
+    },
+    {
+      "scene": "R04",
+      "sequence": "25",
+      "partition": "representation_train",
+      "samples": 101,
+      "valid": 64,
+      "selected": 62,
+      "selected_state_counts": [
+        6,
+        15,
+        13,
+        28
+      ],
+      "teacher_phase_counts": [
+        9,
+        36,
+        18,
+        38
+      ],
+      "old_phase_counts": [
+        1,
+        8,
+        0,
+        92
+      ],
+      "target_sha256": "9577f4878dfb9f5ff2664c97bf2f77eccd51583fe1ad8bdb27ac11d4b104623a"
+    },
+    {
+      "scene": "R04",
+      "sequence": "01",
+      "partition": "representation_validation",
+      "samples": 78,
+      "valid": 36,
+      "selected": 36,
+      "selected_state_counts": [
+        0,
+        13,
+        0,
+        23
+      ],
+      "teacher_phase_counts": [
+        0,
+        30,
+        0,
+        48
+      ],
+      "old_phase_counts": [
+        0,
+        0,
+        0,
+        78
+      ],
+      "target_sha256": "57ed8967159afe72a22bdc8cc1dc7f77a077c1364fde520b3bbe3ba0d170893f"
+    },
+    {
+      "scene": "R04",
+      "sequence": "05",
+      "partition": "representation_validation",
+      "samples": 110,
+      "valid": 94,
+      "selected": 93,
+      "selected_state_counts": [
+        9,
+        20,
+        12,
+        52
+      ],
+      "teacher_phase_counts": [
+        14,
+        25,
+        13,
+        58
+      ],
+      "old_phase_counts": [
+        1,
+        13,
+        0,
+        96
+      ],
+      "target_sha256": "49df4825d613b9ca67ce3c1bdc62d3d39af297eb853fc1145077fb5bfd88468b"
+    },
+    {
+      "scene": "R04",
+      "sequence": "11",
+      "partition": "representation_validation",
+      "samples": 85,
+      "valid": 62,
+      "selected": 58,
+      "selected_state_counts": [
+        0,
+        7,
+        21,
+        30
+      ],
+      "teacher_phase_counts": [
+        2,
+        13,
+        23,
+        47
+      ],
+      "old_phase_counts": [
+        2,
+        1,
+        0,
+        82
+      ],
+      "target_sha256": "a14762a1e781f0ce2d6243c01ec46fbd7b59d0a589d9ba0e763a575d493ffb42"
+    },
+    {
+      "scene": "R04",
+      "sequence": "17",
+      "partition": "representation_validation",
+      "samples": 93,
+      "valid": 70,
+      "selected": 70,
+      "selected_state_counts": [
+        7,
+        9,
+        9,
+        45
+      ],
+      "teacher_phase_counts": [
+        8,
+        10,
+        16,
+        59
+      ],
+      "old_phase_counts": [
+        3,
+        6,
+        0,
+        84
+      ],
+      "target_sha256": "737a7b3dfd1b3b759e26aa096f722292df7e49d85cc82060cfc3cefa26a5c5ef"
+    }
+  ],
+  "review_frames": 48,
+  "rules": {
+    "R01_R03_R04_relative_distance_gap": 0.1,
+    "R02_text_cosine_gap": 0.01
+  },
+  "interpretation": "Weak visual/spatial or latent relation targets, never human action GT. Teacher refit control required to separate target adaptation from learned classifier effects."
+}

@@ -1,5 +1,7 @@
 # 산업 공정 영상 이상탐지 파이프라인
 
+**모듈별 학습40~43 완료:** shared visual LoRA/full FT → detector partial FT → shared association adapter → 공정별 phase head. [학습 종합](docs/LEARNED_PIPELINE_SUMMARY.md) · [최신43 결과](docs/EXPERIMENT43.md) · [다음 독립 검증 계획](docs/EXPERIMENT44_PLAN.md)
+
 정상 영상으로 공정 패턴을 학습하고 객체별 외형·공정 흐름의 이상을 찾는 학부 캡스톤 연구입니다. 특정 논문 주제를 미리 고정하지 않고, 기본 파이프라인의 관측 결과를 바탕으로 다음 실험을 설계합니다.
 
 ## 진행 현황
@@ -47,7 +49,10 @@
 | 실험 38 | 첫 관측 전 phase 미확정 처리 | 완료: hold 초기 FP60 제거·TP 유지, pool/age 출력 동일 | [결과·의의·추천 3개](docs/EXPERIMENT38.md) |
 | 실험 39 | 동일 객체 쌍 진입 근거로 체류 결합 제한 | 완료: 가용144프레임 차단·경보 동일·AUROC/AP 소폭 감소 | [결과·의의·추천 3개](docs/EXPERIMENT39.md) |
 | 실험 40 | R01~R04 공유 시각 표현: frozen CLIP / frozen MobileCLIP2-S2 / LoRA / full FT | 완료: LoRA 평균 ranking 개선, full FT 일부 공정 퇴행·경보 상충 | [결과·의의·추천 3개](docs/EXPERIMENT40.md) |
-| 실험 41 | 정상 약지도 기반 공유 GroundingDINO 학습 | 계획 수립, 미실행 | [다음 계획](docs/EXPERIMENT41_PLAN.md) |
+| 실험 41 | 정상 약지도 기반 공유 GroundingDINO decoder·bbox head partial FT | 완료: 정상 loss 감소, 전체 AD 퇴행 및 R04 dwell 지원 부족 | [결과·의의·추천 3개](docs/EXPERIMENT41.md) |
+| 실험 42 | 공유 저랭크 association adapter | 완료: 정상1/test2 연결 추가, 경보 개선 없음 | [결과·의의·추천 3개](docs/EXPERIMENT42.md) |
+| 실험 43 | 공정별 linear / 저랭크 adapter phase head | 완료: teacher 재적합과 head 효과 분리, AUROC·recall 상충 | [결과·의의·추천 3개](docs/EXPERIMENT43.md) |
+| 다음 44 | 독립 녹화 그룹과 사람 phase/identity 주석 검증 | 계획, 독립 자료 미확보·미실행 | [다음 검증 계획](docs/EXPERIMENT44_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1392,3 +1397,46 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **경계·집합 박스의 관측 신뢰도 처리**: 모호한 물리 범위와 역할 혼동을 정상 자료에서 구분 | Negative31개 제외 및 R04 material automatic positive 전체 제외. 유일한 test phase 변화가 경계 박스에서 발생 | 정상 coverage·오연결·누락을 먼저 검증. 현재 test 사례에 맞춘 마스크/threshold 조정 금지, recall 손실도 함께 평가 |
 
 [상세 결과·의의·한계](docs/EXPERIMENT42.md) · [전체 표](results/experiment42/report_tables.md) · [학습 곡선](results/experiment42/figures/training.png) · [영상별 CSV](results/experiment42/per_sequence.csv) · [지표](results/experiment42/metrics.json) · [검증](results/experiment42/validation.json) · [구현·재현](docs/EXPERIMENT42_METHODS.md) · [다음43 계획](docs/EXPERIMENT43_PLAN.md)
+
+## 실험 43 — R01~R04 공정별 learned phase head
+
+**완료: 공유 시각 표현을 동결하고 공정별 linear/저랭크 adapter head 총8개를 학습했다.** 기존41, 정상 teacher 재적합, linear head, adapter head를 분리 비교했다. Teacher 변경의 효과를 head 학습 효과로 오해하지 않도록 별도 대조를 뒀다. 정상 train70/val19/calibration22, test66영상 중31,550 valid frames·66events다.
+
+| phase branch | visual arm | Visual AUC | Combined AUC | Combined AP | FPR% | recall% | event% |
+|---|---|---|---|---|---|---|---|
+| 41 control | A | 0.6680 | 0.6113 | 0.5081 | 3.99 | 9.47 | 63.18 |
+| 43 teacher | A | 0.6708 | 0.6505 | 0.5336 | 4.49 | 6.84 | 59.65 |
+| 43 linear | A | 0.6806 | 0.6376 | 0.5313 | 3.54 | 8.43 | 66.51 |
+| 43 adapter | A | 0.6762 | 0.6454 | 0.5463 | 3.53 | 9.11 | 59.65 |
+| 41 control | B | 0.6775 | 0.6348 | 0.5332 | 2.65 | 7.91 | 61.51 |
+| 43 teacher | B | 0.6721 | 0.6674 | 0.5524 | 2.63 | 5.42 | 58.18 |
+| 43 linear | B | 0.6788 | 0.6521 | 0.5454 | 2.32 | 5.38 | 66.26 |
+| 43 adapter | B | 0.6751 | 0.6601 | 0.5554 | 2.69 | 7.34 | 59.85 |
+| 41 control | C | 0.6862 ± 0.0009 | 0.6421 ± 0.0005 | 0.5394 ± 0.0007 | 2.16 ± 0.08 | 6.93 ± 0.16 | 58.54 ± 0.84 |
+| 43 teacher | C | 0.6867 ± 0.0013 | 0.6744 ± 0.0006 | 0.5543 ± 0.0013 | 2.38 ± 0.02 | 4.68 ± 0.28 | 56.71 ± 0.44 |
+| 43 linear | C | 0.6935 ± 0.0011 | 0.6602 ± 0.0004 | 0.5490 ± 0.0013 | 2.65 ± 0.05 | 5.15 ± 0.08 | 62.60 ± 0.56 |
+| 43 adapter | C | 0.6893 ± 0.0010 | 0.6672 ± 0.0003 | 0.5609 ± 0.0009 | 2.30 ± 0.12 | 6.81 ± 0.46 | 59.39 ± 1.47 |
+| 41 control | D | 0.6762 ± 0.0026 | 0.6261 ± 0.0053 | 0.5240 ± 0.0051 | 3.34 ± 0.98 | 10.90 ± 1.72 | 56.12 ± 3.09 |
+| 43 teacher | D | 0.6790 ± 0.0066 | 0.6645 ± 0.0043 | 0.5442 ± 0.0047 | 2.49 ± 0.05 | 4.06 ± 0.65 | 53.67 ± 1.40 |
+| 43 linear | D | 0.6851 ± 0.0038 | 0.6491 ± 0.0023 | 0.5334 ± 0.0024 | 2.55 ± 0.12 | 3.55 ± 0.92 | 56.84 ± 0.51 |
+| 43 adapter | D | 0.6771 ± 0.0047 | 0.6535 ± 0.0031 | 0.5461 ± 0.0026 | 2.67 ± 0.13 | 8.94 ± 0.53 | 56.31 ± 1.67 |
+
+공정별 동일 가중 macro. C/D는 기존 visual3seed 평균±표본 SD, phase head는 공정별 seed42 하나다. **Branch·공정·run별 정상 q99가 서로 다르므로 FPR/recall/event는 서로 다른 운영점 비교다.**
+
+![실험43 공정별 비교](results/experiment43/figures/process_comparison.png)
+
+**의의:** Adapter의 정상 weak-target agreement는 R01/R02/R03/R04에서99.04/99.27/99.11/88.33%로 linear보다 높았다. C의 평균 Combined AUROC는 기존0.6421→adapter0.6672지만 teacher-only0.6744보다 낮다. Adapter recall6.81%는 teacher4.68%보다 높고 기존6.93%와 비슷하다. 모듈별 학습과 teacher/정상 분포/경보 기준의 효과를 분리한 파이프라인 구현 결과이며, 새로운 phase 알고리즘이나 SOTA의 근거로 삼지 않는다.
+
+**보완할 점:** R02 텍스트 표적의 의미 불일치를 발견해 정상 platform–scissor 관계의 latent 표적으로 교체했다. R02~R04 상태는 실제 action GT가 아니며 일부 검증 상태는2영상뿐이다. 과거 frozen gate·scaler에는 현재 representation-validation 영상이 포함될 수 있어 완전히 독립인 검증이 아니다. R04 phase3 비중89.9→adapter42.4%, 일부 dwell context 지원은 회복됐지만 teacher만 재적합해도 지원이 회복된다. R03에서는 adapter가 linear보다 recall/FPR 모두 높아 일괄 우열을 정할 수 없다.
+
+190개 테스트, 정상96 full+528 holdout,1,584개 test 예측과576개 AUROC/AP 독립 계산을 통과했다. Box/track/visual feature는 고정했고 모든 test score를 라벨 전에 동결했다. 초기 process JSON 포맷 오류는 첫 통계 모델 fit 전에 교정하여 기록했으며 head 결과는 변경하지 않았다.
+
+**다음 Recommended improvements — 추천순3개**
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **독립 phase/identity 검증 자료 확보**: 새 녹화 그룹과 사람 주석으로 현재 모델을 고정 평가 | R02 teacher 의미 오류와 희소 상태, latent/action 구분. 높은 weak agreement만으로 실제 phase 정확도를 알 수 없음 | 다음44는 이 검증부터 시작. 새 자료 없이 기존 개발 test를 독립 test로 이름만 바꾸지 않음. 사람 GT와 weak-label agreement를 분리 |
+| 2 | **Phase 불확실성·unknown 경로**: 지원이 낮은 head 출력을 보류하고 pooled appearance 및 신뢰할 수 있는 전이만 사용 | R01 adapter agreement99.04%여도 AUC는 teacher보다 낮고, R02 recall은 기존보다 감소 | 정상 val/cal에서 선택 후 고정 평가. Confidence는 OOD 보장이 아니며 보류 coverage·process 누락·recall 손실을 함께 측정 |
+| 3 | **정상 오탐 예산·seed·dwell 근거 정합성 점검**: 같은 정상 예산과 독립 그룹에서 경보 및 체류 지원 비교 | R03 linear의 AUC와 adapter의 recall/FPR 순위가 다르고 R04 dwell 가용성 회복이 AD 개선을 보장하지 않음 | Test label 기반 threshold 선택 금지. Paired FP/TP·events 및 identity 경계에 맞는 지원을 확인하고 잠재 상태를 물리 동작으로 해석하지 않음 |
+
+[상세 결과·의의·한계](docs/EXPERIMENT43.md) · [전체 표](results/experiment43/report_tables.md) · [학습 곡선](results/experiment43/figures/training.png) · [영상별 CSV](results/experiment43/per_sequence.csv) · [지표](results/experiment43/metrics.json) · [검증](results/experiment43/validation.json) · [구현·재현](docs/EXPERIMENT43_METHODS.md) · [40~43 학습 종합](docs/LEARNED_PIPELINE_SUMMARY.md) · [다음44 계획](docs/EXPERIMENT44_PLAN.md)

@@ -1,0 +1,62 @@
+{
+  "scene": "R04",
+  "sources": [
+    "R04/training/frames/07/028.jpg",
+    "R04/training/frames/22/204.jpg",
+    "R04/training/frames/21/080.jpg",
+    "R04/training/frames/07/188.jpg",
+    "R04/training/frames/21/164.jpg",
+    "R04/training/frames/24/100.jpg",
+    "R04/training/frames/18/240.jpg",
+    "R04/training/frames/14/032.jpg"
+  ],
+  "process": {
+    "objects": [
+      {
+        "id": "cardboard",
+        "detection_prompt": "brown cardboard sheet",
+        "description": "the cardboard material loaded into the trough and accumulated as cut pieces on the green bench"
+      },
+      {
+        "id": "lid",
+        "detection_prompt": "hinged metal lid",
+        "description": "the hinged metal cover with a serrated lower edge that rotates over the trough"
+      },
+      {
+        "id": "trough",
+        "detection_prompt": "galvanized metal trough",
+        "description": "the long metal channel that holds the cardboard during the cycle"
+      }
+    ],
+    "phases": [
+      {
+        "id": "latent_0",
+        "description": "Normal relation cluster 0; no verified action label."
+      },
+      {
+        "id": "latent_1",
+        "description": "Normal relation cluster 1; no verified action label."
+      },
+      {
+        "id": "latent_2",
+        "description": "Normal relation cluster 2; no verified action label."
+      },
+      {
+        "id": "latent_3",
+        "description": "Normal relation cluster 3; no verified action label."
+      }
+    ],
+    "normal_order": [
+      "latent_0",
+      "latent_1",
+      "latent_2",
+      "latent_3"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "Cluster order uses normal median relative position; original four-state self/next/cycle scoring template retained."
+    ],
+    "phase_target_note": "Experiment43: normal-train relation/spatial centers, class definitions not action ground truth; same self/next/cycle template."
+  },
+  "teacher_fit": "normal representation_train only for new centers; frozen legacy gates/scalers retained for R01/R03/R04"
+}

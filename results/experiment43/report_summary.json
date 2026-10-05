@@ -1,0 +1,564 @@
+{
+  "groups": [
+    {
+      "arm": "A",
+      "branch": "41 control",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6680325423394009,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.5917498239979684,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6113342641918225,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5080560062175647,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.03985862680949851,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.09474114461916368,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.6317967571644042,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "branch": "43 teacher",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6708204731580023,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.5773513256620146,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6504786281240602,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5335619422152044,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.0448626176795959,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.06836016728106731,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.5965026395173454,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "branch": "43 linear",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6805896045010216,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.602412407166751,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6376359621303676,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5312536881474044,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.03538654994855579,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.08427314523653495,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.6651300904977375,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "branch": "43 adapter",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6762355110441812,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.6024415849336932,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6454143462343124,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5462792777351798,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.03534336750306301,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.09114721238616286,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.5965026395173454,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "branch": "41 control",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6775032227871538,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.6136174935892281,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6347567524354376,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5331567031335824,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.026506071259210347,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.07914078948698854,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.6151300904977375,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "branch": "43 teacher",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6721366235808075,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.6013819392196935,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.667381984037529,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.552415326823984,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.02631817937025534,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.05421583297985735,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.5817967571644042,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "branch": "43 linear",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6787786020688855,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.6162818024836576,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6521342177275066,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5453916848290767,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.02322842822141783,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.05375258876112209,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.6626036953242835,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "branch": "43 adapter",
+      "n_visual_seeds": 1,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6751124850024995,
+          "std": null
+        },
+        "visual_average_precision": {
+          "mean": 0.6128902297412376,
+          "std": null
+        },
+        "combined_auroc": {
+          "mean": 0.6600617469117813,
+          "std": null
+        },
+        "combined_average_precision": {
+          "mean": 0.5553776605653001,
+          "std": null
+        },
+        "normal_fpr": {
+          "mean": 0.02685959407327295,
+          "std": null
+        },
+        "anomaly_recall": {
+          "mean": 0.07341676413600777,
+          "std": null
+        },
+        "event_coverage": {
+          "mean": 0.5984634238310709,
+          "std": null
+        }
+      }
+    },
+    {
+      "arm": "C",
+      "branch": "41 control",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6861747563858418,
+          "std": 0.0008698774780160528
+        },
+        "visual_average_precision": {
+          "mean": 0.6215624925825693,
+          "std": 0.0008731195712782983
+        },
+        "combined_auroc": {
+          "mean": 0.6420913539186285,
+          "std": 0.0005278554357531778
+        },
+        "combined_average_precision": {
+          "mean": 0.5394300933167889,
+          "std": 0.00071112361558351
+        },
+        "normal_fpr": {
+          "mean": 0.021604188275657233,
+          "std": 0.0007915913025447386
+        },
+        "anomaly_recall": {
+          "mean": 0.06928335621412242,
+          "std": 0.0016112015040267024
+        },
+        "event_coverage": {
+          "mean": 0.5854292357968829,
+          "std": 0.008366141859167498
+        }
+      }
+    },
+    {
+      "arm": "C",
+      "branch": "43 teacher",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.68670339602588,
+          "std": 0.0013465315366307505
+        },
+        "visual_average_precision": {
+          "mean": 0.6089836182752667,
+          "std": 0.0016359050485875099
+        },
+        "combined_auroc": {
+          "mean": 0.6743649773209593,
+          "std": 0.0006406747560101616
+        },
+        "combined_average_precision": {
+          "mean": 0.554337702540808,
+          "std": 0.0013115538379581207
+        },
+        "normal_fpr": {
+          "mean": 0.023843003032786386,
+          "std": 0.0002322992649655136
+        },
+        "anomaly_recall": {
+          "mean": 0.04678065580087285,
+          "std": 0.0028321589618211175
+        },
+        "event_coverage": {
+          "mean": 0.5670783056812468,
+          "std": 0.004419385544701871
+        }
+      }
+    },
+    {
+      "arm": "C",
+      "branch": "43 linear",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6935321527826499,
+          "std": 0.001076357058600366
+        },
+        "visual_average_precision": {
+          "mean": 0.623131710988574,
+          "std": 0.0011880507019363475
+        },
+        "combined_auroc": {
+          "mean": 0.6602443085628008,
+          "std": 0.0004444393753269282
+        },
+        "combined_average_precision": {
+          "mean": 0.548999876137769,
+          "std": 0.001266189750700969
+        },
+        "normal_fpr": {
+          "mean": 0.02648914236928741,
+          "std": 0.00047288430673664235
+        },
+        "anomaly_recall": {
+          "mean": 0.0514862649947223,
+          "std": 0.0008243564072307965
+        },
+        "event_coverage": {
+          "mean": 0.6260275263951733,
+          "std": 0.005551444896054139
+        }
+      }
+    },
+    {
+      "arm": "C",
+      "branch": "43 adapter",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6892699685794307,
+          "std": 0.0010057644997892691
+        },
+        "visual_average_precision": {
+          "mean": 0.6217368639440913,
+          "std": 0.0010983453452521896
+        },
+        "combined_auroc": {
+          "mean": 0.6672188990867434,
+          "std": 0.0003131948868485077
+        },
+        "combined_average_precision": {
+          "mean": 0.5608948284298538,
+          "std": 0.000935804753718102
+        },
+        "normal_fpr": {
+          "mean": 0.02298724221801846,
+          "std": 0.001219793089974467
+        },
+        "anomaly_recall": {
+          "mean": 0.06805924917334304,
+          "std": 0.004553709894961856
+        },
+        "event_coverage": {
+          "mean": 0.5939385369532428,
+          "std": 0.014705882352941124
+        }
+      }
+    },
+    {
+      "arm": "D",
+      "branch": "41 control",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6761999519766638,
+          "std": 0.0026198064967871974
+        },
+        "visual_average_precision": {
+          "mean": 0.6022725052576084,
+          "std": 0.00411775445412247
+        },
+        "combined_auroc": {
+          "mean": 0.6260541321056214,
+          "std": 0.005265188947185713
+        },
+        "combined_average_precision": {
+          "mean": 0.5240182118053693,
+          "std": 0.005063808693088034
+        },
+        "normal_fpr": {
+          "mean": 0.03341420897468172,
+          "std": 0.009799954643993507
+        },
+        "anomaly_recall": {
+          "mean": 0.10902685653311146,
+          "std": 0.017218238869982354
+        },
+        "event_coverage": {
+          "mean": 0.5612085218702866,
+          "std": 0.030909137054464617
+        }
+      }
+    },
+    {
+      "arm": "D",
+      "branch": "43 teacher",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.678996457763895,
+          "std": 0.0065816768145402086
+        },
+        "visual_average_precision": {
+          "mean": 0.5926794080095705,
+          "std": 0.0045575585591273535
+        },
+        "combined_auroc": {
+          "mean": 0.6644779490676292,
+          "std": 0.004299639837492721
+        },
+        "combined_average_precision": {
+          "mean": 0.5441546102285454,
+          "std": 0.004674003655296456
+        },
+        "normal_fpr": {
+          "mean": 0.024920253169861063,
+          "std": 0.00045139066286684667
+        },
+        "anomaly_recall": {
+          "mean": 0.04064558291147993,
+          "std": 0.0064782308115540355
+        },
+        "event_coverage": {
+          "mean": 0.5367364253393665,
+          "std": 0.0140418900311956
+        }
+      }
+    },
+    {
+      "arm": "D",
+      "branch": "43 linear",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6851245539954842,
+          "std": 0.0038449049070066366
+        },
+        "visual_average_precision": {
+          "mean": 0.6054556705393482,
+          "std": 0.003185018093816534
+        },
+        "combined_auroc": {
+          "mean": 0.6490800458975499,
+          "std": 0.002319476165963699
+        },
+        "combined_average_precision": {
+          "mean": 0.5333738371416596,
+          "std": 0.002429621724065226
+        },
+        "normal_fpr": {
+          "mean": 0.02548014396344504,
+          "std": 0.0011948153702324956
+        },
+        "anomaly_recall": {
+          "mean": 0.035470666990411154,
+          "std": 0.009174992968744052
+        },
+        "event_coverage": {
+          "mean": 0.5683854952237305,
+          "std": 0.0050808989067697785
+        }
+      }
+    },
+    {
+      "arm": "D",
+      "branch": "43 adapter",
+      "n_visual_seeds": 3,
+      "metrics": {
+        "visual_auroc": {
+          "mean": 0.6770964028498784,
+          "std": 0.004695436288127643
+        },
+        "visual_average_precision": {
+          "mean": 0.6048277622639512,
+          "std": 0.0011229364111754868
+        },
+        "combined_auroc": {
+          "mean": 0.6534654932755299,
+          "std": 0.003082481297469273
+        },
+        "combined_average_precision": {
+          "mean": 0.5460647532744095,
+          "std": 0.0026086338646607566
+        },
+        "normal_fpr": {
+          "mean": 0.026669382242136736,
+          "std": 0.0012628173719421135
+        },
+        "anomaly_recall": {
+          "mean": 0.0893951913999252,
+          "std": 0.0052795294689839374
+        },
+        "event_coverage": {
+          "mean": 0.5631315987933635,
+          "std": 0.016654334688162287
+        }
+      }
+    }
+  ]
+}

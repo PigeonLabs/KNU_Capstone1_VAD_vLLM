@@ -1,0 +1,64 @@
+{
+  "scene": "R02",
+  "sources": [
+    "R02/training/frames/22/580.jpg",
+    "R02/training/frames/28/028.jpg",
+    "R02/training/frames/18/520.jpg",
+    "R02/training/frames/15/512.jpg",
+    "R02/training/frames/09/276.jpg",
+    "R02/training/frames/16/240.jpg",
+    "R02/training/frames/06/188.jpg",
+    "R02/training/frames/02/412.jpg"
+  ],
+  "process": {
+    "objects": [
+      {
+        "id": "lift_platform",
+        "detection_prompt": "white square platform top plate",
+        "description": "Flat white square top plate with a blue corner logo and a circular recessed area, mounted on the moving lift and carrying the instrument when present."
+      },
+      {
+        "id": "scissor_lift",
+        "detection_prompt": "black scissor lift mechanism",
+        "description": "Black X-shaped scissor mechanism beneath the platform that extends and retracts to change the platform height."
+      },
+      {
+        "id": "test_instrument",
+        "detection_prompt": "black digital multimeter device",
+        "description": "Black handheld digital instrument with a rotary dial and display, resting on the platform top during the elevated portion of the cycle."
+      }
+    ],
+    "phases": [
+      {
+        "id": "latent_0",
+        "description": "Normal platform-scissor relation cluster 0; not a verified action label."
+      },
+      {
+        "id": "latent_1",
+        "description": "Normal platform-scissor relation cluster 1; not a verified action label."
+      },
+      {
+        "id": "latent_2",
+        "description": "Normal platform-scissor relation cluster 2; not a verified action label."
+      },
+      {
+        "id": "latent_3",
+        "description": "Normal platform-scissor relation cluster 3; not a verified action label."
+      }
+    ],
+    "normal_order": [
+      "latent_0",
+      "latent_1",
+      "latent_2",
+      "latent_3"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "The instrument is visible only in elevated frames; the exact moment it is placed on or removed from the platform is not captured, so its presence is tied to the elevated state rather than a specific height.",
+      "Sparse sampling means intermediate empty rising frames are not always observed, so the empty mid state can appear on either the rising or descending part of the cycle.",
+      "No grasping or hand action is visible; the instrument's appearance/disappearance is recorded only as a visible presence/absence on the platform."
+    ],
+    "phase_target_note": "Experiment43: normal-train relation/spatial centers, class definitions not action ground truth; same self/next/cycle template."
+  },
+  "teacher_fit": "normal representation_train only for new centers; frozen legacy gates/scalers retained for R01/R03/R04"
+}

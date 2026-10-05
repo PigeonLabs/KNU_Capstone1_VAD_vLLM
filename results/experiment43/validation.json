@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "protocol_hash_sets_verified": 7,
+  "independent_auc_ap_checks": 576,
+  "prediction_object_alignment_checks": 1584,
+  "valid_frames": 31550,
+  "unknown_frames": 1912,
+  "all_events_and_operating_counts_independently_verified": true,
+  "no_duplicate_track_per_sample": true,
+  "all_original_tracking_metadata_unchanged": true,
+  "train_test_detector_boxes_and_confidence_unchanged": true
+}

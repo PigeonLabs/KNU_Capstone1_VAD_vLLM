@@ -1,0 +1,7 @@
+{
+  "error": "Initial process record serialized bare process payload; loader requires scene/sources/process envelope. KeyError scene occurred before first normal model fit.",
+  "normal_models_completed_before_fix": 0,
+  "change": "Wrap same process payload with explicit scene and audited normal-training image source paths; no phase, feature, checkpoint, target or statistical fitting rule changed.",
+  "archived_protocol": "results/experiment43/normal_fit_attempt01/pre_normal_models_protocol.json",
+  "test_data_or_labels_opened": false
+}
