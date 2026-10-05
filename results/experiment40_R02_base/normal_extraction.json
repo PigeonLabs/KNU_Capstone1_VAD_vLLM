@@ -1,0 +1,755 @@
+{
+  "sequences": [
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "01",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 642,
+      "sampled_frames": 161,
+      "detected_boxes": 639,
+      "tracks_created": 33,
+      "unmatched_text_detections": 27,
+      "elapsed_seconds": 23.346112371014897,
+      "phase_counts": [
+        0,
+        70,
+        13,
+        78
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6149068322981367
+      ],
+      "gpu_peak_allocated_bytes": 2220069376,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "02",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 608,
+      "sampled_frames": 152,
+      "detected_boxes": 570,
+      "tracks_created": 29,
+      "unmatched_text_detections": 26,
+      "elapsed_seconds": 14.188656250014901,
+      "phase_counts": [
+        0,
+        52,
+        12,
+        88
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.625
+      ],
+      "gpu_peak_allocated_bytes": 2220069376,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "03",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 550,
+      "sampled_frames": 138,
+      "detected_boxes": 538,
+      "tracks_created": 32,
+      "unmatched_text_detections": 28,
+      "elapsed_seconds": 12.951659635989927,
+      "phase_counts": [
+        1,
+        40,
+        15,
+        82
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5217391304347826
+      ],
+      "gpu_peak_allocated_bytes": 2220069376,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "04",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 596,
+      "sampled_frames": 149,
+      "detected_boxes": 599,
+      "tracks_created": 24,
+      "unmatched_text_detections": 29,
+      "elapsed_seconds": 15.56744571897434,
+      "phase_counts": [
+        0,
+        63,
+        10,
+        76
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6040268456375839
+      ],
+      "gpu_peak_allocated_bytes": 2220069376,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "05",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 602,
+      "sampled_frames": 151,
+      "detected_boxes": 589,
+      "tracks_created": 29,
+      "unmatched_text_detections": 30,
+      "elapsed_seconds": 15.45842484399327,
+      "phase_counts": [
+        0,
+        45,
+        12,
+        94
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5695364238410596
+      ],
+      "gpu_peak_allocated_bytes": 2220069376,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "06",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 610,
+      "sampled_frames": 153,
+      "detected_boxes": 599,
+      "tracks_created": 25,
+      "unmatched_text_detections": 25,
+      "elapsed_seconds": 14.206165909010451,
+      "phase_counts": [
+        0,
+        40,
+        14,
+        99
+      ],
+      "role_frame_coverage": [
+        1.0,
+        0.9934640522875817,
+        0.5555555555555556
+      ],
+      "gpu_peak_allocated_bytes": 2220616192,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "07",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 588,
+      "sampled_frames": 147,
+      "detected_boxes": 569,
+      "tracks_created": 30,
+      "unmatched_text_detections": 30,
+      "elapsed_seconds": 13.686179165000794,
+      "phase_counts": [
+        0,
+        49,
+        8,
+        90
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5714285714285714
+      ],
+      "gpu_peak_allocated_bytes": 2220616192,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "08",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 585,
+      "sampled_frames": 147,
+      "detected_boxes": 600,
+      "tracks_created": 34,
+      "unmatched_text_detections": 25,
+      "elapsed_seconds": 13.657938527001534,
+      "phase_counts": [
+        2,
+        54,
+        4,
+        87
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6054421768707483
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "09",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 595,
+      "sampled_frames": 149,
+      "detected_boxes": 601,
+      "tracks_created": 30,
+      "unmatched_text_detections": 22,
+      "elapsed_seconds": 13.931729165982688,
+      "phase_counts": [
+        2,
+        48,
+        5,
+        94
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.610738255033557
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "10",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 595,
+      "sampled_frames": 149,
+      "detected_boxes": 601,
+      "tracks_created": 27,
+      "unmatched_text_detections": 25,
+      "elapsed_seconds": 13.988259856007062,
+      "phase_counts": [
+        0,
+        71,
+        10,
+        68
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5906040268456376
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "11",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 600,
+      "sampled_frames": 150,
+      "detected_boxes": 589,
+      "tracks_created": 29,
+      "unmatched_text_detections": 28,
+      "elapsed_seconds": 14.039418693020707,
+      "phase_counts": [
+        1,
+        55,
+        4,
+        90
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5866666666666667
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "12",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 590,
+      "sampled_frames": 148,
+      "detected_boxes": 595,
+      "tracks_created": 28,
+      "unmatched_text_detections": 27,
+      "elapsed_seconds": 13.88389216401265,
+      "phase_counts": [
+        0,
+        57,
+        8,
+        83
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6081081081081081
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "13",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 591,
+      "sampled_frames": 148,
+      "detected_boxes": 599,
+      "tracks_created": 30,
+      "unmatched_text_detections": 28,
+      "elapsed_seconds": 13.749008193990448,
+      "phase_counts": [
+        0,
+        51,
+        6,
+        91
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6081081081081081
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "14",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 579,
+      "sampled_frames": 145,
+      "detected_boxes": 574,
+      "tracks_created": 26,
+      "unmatched_text_detections": 27,
+      "elapsed_seconds": 13.53376843399019,
+      "phase_counts": [
+        0,
+        61,
+        8,
+        76
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.593103448275862
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "15",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 612,
+      "sampled_frames": 153,
+      "detected_boxes": 567,
+      "tracks_created": 27,
+      "unmatched_text_detections": 30,
+      "elapsed_seconds": 14.137920386972837,
+      "phase_counts": [
+        0,
+        54,
+        6,
+        93
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5816993464052288
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "16",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 588,
+      "sampled_frames": 147,
+      "detected_boxes": 567,
+      "tracks_created": 28,
+      "unmatched_text_detections": 26,
+      "elapsed_seconds": 13.605545061989687,
+      "phase_counts": [
+        0,
+        46,
+        6,
+        95
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.564625850340136
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "17",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 574,
+      "sampled_frames": 144,
+      "detected_boxes": 551,
+      "tracks_created": 30,
+      "unmatched_text_detections": 31,
+      "elapsed_seconds": 13.378967188007664,
+      "phase_counts": [
+        0,
+        30,
+        8,
+        106
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5763888888888888
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "18",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 579,
+      "sampled_frames": 145,
+      "detected_boxes": 555,
+      "tracks_created": 35,
+      "unmatched_text_detections": 22,
+      "elapsed_seconds": 13.625927709013922,
+      "phase_counts": [
+        0,
+        32,
+        8,
+        105
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5517241379310345
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "19",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 602,
+      "sampled_frames": 151,
+      "detected_boxes": 560,
+      "tracks_created": 27,
+      "unmatched_text_detections": 19,
+      "elapsed_seconds": 13.921117538004182,
+      "phase_counts": [
+        1,
+        38,
+        7,
+        105
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.543046357615894
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "20",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 609,
+      "sampled_frames": 153,
+      "detected_boxes": 597,
+      "tracks_created": 33,
+      "unmatched_text_detections": 30,
+      "elapsed_seconds": 15.023168404994067,
+      "phase_counts": [
+        1,
+        42,
+        7,
+        103
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6078431372549019
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "21",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 584,
+      "sampled_frames": 146,
+      "detected_boxes": 547,
+      "tracks_created": 31,
+      "unmatched_text_detections": 23,
+      "elapsed_seconds": 13.515737809007987,
+      "phase_counts": [
+        2,
+        37,
+        5,
+        102
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5342465753424658
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "22",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 601,
+      "sampled_frames": 151,
+      "detected_boxes": 595,
+      "tracks_created": 34,
+      "unmatched_text_detections": 30,
+      "elapsed_seconds": 14.066070130997105,
+      "phase_counts": [
+        0,
+        34,
+        7,
+        110
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5629139072847682
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "23",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 612,
+      "sampled_frames": 153,
+      "detected_boxes": 592,
+      "tracks_created": 32,
+      "unmatched_text_detections": 22,
+      "elapsed_seconds": 14.196517022995977,
+      "phase_counts": [
+        0,
+        64,
+        7,
+        82
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5947712418300654
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "24",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 568,
+      "sampled_frames": 142,
+      "detected_boxes": 552,
+      "tracks_created": 34,
+      "unmatched_text_detections": 21,
+      "elapsed_seconds": 13.320952381996904,
+      "phase_counts": [
+        0,
+        46,
+        7,
+        89
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5845070422535211
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "25",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 588,
+      "sampled_frames": 147,
+      "detected_boxes": 572,
+      "tracks_created": 32,
+      "unmatched_text_detections": 40,
+      "elapsed_seconds": 13.971087507001357,
+      "phase_counts": [
+        5,
+        49,
+        7,
+        86
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6122448979591837
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "26",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 574,
+      "sampled_frames": 144,
+      "detected_boxes": 563,
+      "tracks_created": 29,
+      "unmatched_text_detections": 36,
+      "elapsed_seconds": 13.338221568992594,
+      "phase_counts": [
+        2,
+        43,
+        6,
+        93
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6319444444444444
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "27",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 589,
+      "sampled_frames": 148,
+      "detected_boxes": 547,
+      "tracks_created": 29,
+      "unmatched_text_detections": 29,
+      "elapsed_seconds": 13.582504474004963,
+      "phase_counts": [
+        0,
+        44,
+        3,
+        101
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5675675675675675
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "28",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 592,
+      "sampled_frames": 148,
+      "detected_boxes": 573,
+      "tracks_created": 34,
+      "unmatched_text_detections": 31,
+      "elapsed_seconds": 13.891923540999414,
+      "phase_counts": [
+        0,
+        49,
+        8,
+        91
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.6081081081081081
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "29",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 585,
+      "sampled_frames": 147,
+      "detected_boxes": 560,
+      "tracks_created": 40,
+      "unmatched_text_detections": 27,
+      "elapsed_seconds": 14.132186497998191,
+      "phase_counts": [
+        0,
+        24,
+        13,
+        110
+      ],
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        0.5238095238095238
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    },
+    {
+      "scene": "R02",
+      "partition": "training",
+      "sequence": "30",
+      "signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4",
+      "source_frames": 568,
+      "sampled_frames": 142,
+      "detected_boxes": 545,
+      "tracks_created": 38,
+      "unmatched_text_detections": 34,
+      "elapsed_seconds": 15.892457968002418,
+      "phase_counts": [
+        3,
+        37,
+        12,
+        90
+      ],
+      "role_frame_coverage": [
+        1.0,
+        0.9929577464788732,
+        0.5704225352112676
+      ],
+      "gpu_peak_allocated_bytes": 2221304320,
+      "timing_note": "Sequential sampled-frame extraction only; includes detector, tracker, CLIP and image IO; excludes model load, VLM discovery, fit and final scoring. Not camera streaming throughput."
+    }
+  ],
+  "model_signature": "76fb955081bb49e6c636462e0143fe86dbdbd923216558292e406bb02bdc0fb4"
+}

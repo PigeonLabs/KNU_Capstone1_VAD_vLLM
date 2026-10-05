@@ -46,7 +46,8 @@
 | 실험 37 | asinh phase 거리의 극단값 영향 완화 | 완료: phase 지원/전환 증가, 정상·test 오탐 증가 및 초기 phase0 문제 확인 | [결과·의의·추천 3개](docs/EXPERIMENT37.md) |
 | 실험 38 | 첫 관측 전 phase 미확정 처리 | 완료: hold 초기 FP60 제거·TP 유지, pool/age 출력 동일 | [결과·의의·추천 3개](docs/EXPERIMENT38.md) |
 | 실험 39 | 동일 객체 쌍 진입 근거로 체류 결합 제한 | 완료: 가용144프레임 차단·경보 동일·AUROC/AP 소폭 감소 | [결과·의의·추천 3개](docs/EXPERIMENT39.md) |
-| 다음 실험 40 | 동일 쌍 완결 체류 학습과 지원 부족 처리 | 계획 완료, 미실행 | [계획](docs/EXPERIMENT40_PLAN.md) |
+| 실험 40 | R01~R04 공유 시각 표현: frozen CLIP / frozen MobileCLIP2-S2 / LoRA / full FT | 완료: LoRA 평균 ranking 개선, full FT 일부 공정 퇴행·경보 상충 | [결과·의의·추천 3개](docs/EXPERIMENT40.md) |
+| 실험 41 | 정상 약지도 기반 공유 GroundingDINO 학습 | 계획 수립, 미실행 | [다음 계획](docs/EXPERIMENT41_PLAN.md) |
 
 각 실험을 마치면 **이번 결과 → 결과의 의의 → 보완할 점 → 다음 Recommended improvements(추천순 3개)**를 보고합니다. 각 추천에는 관측 근거·변경 내용·검증 기준을 포함하고, 다음 결과에 따라 우선순위를 갱신합니다. [보고 규칙](docs/EXPERIMENT_REPORTING.md)
 
@@ -1288,3 +1289,35 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **다른 장면/녹화 그룹에서 적용성 검증**: 관측 근거와 미지원 처리를 고정한 뒤 별도 범위에서 평가 | 단일 R04를 반복 개발했고 이번 gate는 경보를 개선하지 않음. 초기 이상·독립 그룹·역할 GT도 부족 | 장면·분할·실패 기준을 test 확인 전에 고정. 정상 FIT만 적합하고 학습 지원/가용성·경보·순위를 함께 보고. 미지원 상태를 숨기지 않고 일반화 여부를 검증 |
 
 [상세 결과·의의·한계·재현](docs/EXPERIMENT39.md) · [비교 CSV](results/experiment39/comparison.csv) · [검증](results/experiment39/validation.json) · [1순위를 구체화한 실험 40 계획](docs/EXPERIMENT40_PLAN.md)
+
+
+## 실험 40 — 공유 Learned Visual Representation
+
+**완료:** A frozen CLIP, B frozen MobileCLIP2-S2, C MobileCLIP2 LoRA, D visual tower full FT를 R01~R04에서 비교했다. C/D 각3개 seed(42/43/44), 정상 train70/val19/calibration22영상, test66영상 중 strict 평가31,550프레임·66이상 구간이다. R02 길이 불일치1912프레임은 제외했다. Detector/boxes/tracks/phase/process score는 동일하게 유지하고 공정별 정상 appearance·calibration을 재적합했다.
+
+| arm | Visual AUC | Combined AUC | Combined AP | FPR% | recall% | 구간 탐지% |
+|---|---|---|---|---|---|---|
+| A | 0.6934 | 0.6395 | 0.5247 | 7.60 | 16.31 | 56.72 |
+| B | 0.7082 | 0.6584 | 0.5510 | 6.58 | 16.29 | 57.68 |
+| C | 0.7226 ± 0.0011 | 0.6702 ± 0.0009 | 0.5576 ± 0.0009 | 6.93 ± 0.15 | 17.01 ± 0.37 | 60.50 ± 1.47 |
+| D | 0.6759 ± 0.0040 | 0.6354 ± 0.0016 | 0.5368 ± 0.0012 | 6.10 ± 0.24 | 16.58 ± 1.02 | 55.39 ± 1.52 |
+
+공정 안의 지표를 동일 가중 평균한 값이다. C/D는 같은 분할의3개 학습 seed 평균±표본 SD이며 신뢰구간이 아니다. FPR/recall/구간 탐지는 run·공정별 정상 q99에서 계산해 임계값이 서로 다르다.
+
+![실험40 공정별 비교](results/experiment40/figures/process_comparison.png)
+
+**의의:** 공유 visual encoder 학습과 공정별 정상 모델의 분리를 구현하고, LoRA의 평균 Combined AUROC0.6702가 frozen B0.6584와 full FT0.6354보다 높음을 확인했다. C는137,216개, D는35,815,232개 파라미터를 학습했고 학습 peak GPU allocated memory는1.59/26.02 GiB였다. D의 정상 val loss가 더 낮았지만 anomaly ranking은 낮아, 정상 loss와 탐지 품질을 별도로 검증할 필요가 확인됐다. 알려진 학습 기법의 조합·파이프라인 구현 성과이며 이 수치만으로 새로운 loss, SOTA, 일반화 또는 통계적 유의성을 주장하지 않는다.
+
+**보완할 점:** C는 B보다 평균 FPR가6.58→6.93%로 늘었다. R02 C는 Visual AUC0.7318→Combined0.5464, recall5.02%에 머물렀다. R04 C의 구간 탐지는16/13/15개로 B15개보다 일관되게 높지 않았다. D는 R01 Visual AUC0.4800, R04 recall4.24%로 퇴행했지만 R03 recall은 C보다 높고 오탐도 많았다. 이를 과적합의 확정 증거나 모든 LoRA/full-FT 설정의 우열로 일반화할 수 없다. Bbox/identity/phase 정답, 독립 녹화 그룹 및 새 공정 일반화는 미검증이다.
+
+177개 테스트, 정상 feature888파일, 정상 full/holdout208조합, test예측528파일 재검증 및 AUROC/AP 독립 재계산을 통과했다. 모든 점수는 test label 전에 동결했다. 초기 worker 메모리 문제의 중단·재시작도 별도 기록했다.
+
+**다음 Recommended improvements — 추천순3개**
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **공유 GroundingDINO 학습**: 정상 FIT의 검수 가능한 pseudo-box/role을 만들고 decoder·box head부터 보수적으로 적응. 시각 encoder와 tracker 알고리즘은 고정한다. | LoRA로 ranking은 개선됐지만 R02 recall5.02%, R04 11.42%에 머문다. 이번에는 boxes/roles/tracks를 모두 고정했으므로 남은 관측 오류를 개선하지 못했다. 이전33의 역할 혼동·선택 오류도 해결되지 않은 상태다. detector가 원인이라고 이번 수치만으로 확정하지는 않는다. | frozen detector 대조와 정상 video holdout, 역할별 누락/혼동 검수, 최종 FPR·recall·구간 탐지의 양면 평가. Teacher box를 정답으로 간주해 mAP를 주장하지 않는다. **다음41은 이 변경만 구체화한다.** |
+| 2 | **공유 learned ReID/association head**: 고정 encoder 위의 작은 head에 검증된 정상 track pair를 사용하고, 기존 IoU tracker와 비교한다. | R04 C의 AUROC는 seed 간 안정적이지만 구간 탐지는16/13/15개로 달랐다. 이번에 고정한 IoU 추적·관측 연속성은 새 표현 학습만으로 개선되지 않았다. 추적이 이 차이의 원인이라는 인과 주장은 아직 못 한다. | 정상 검수 pair의 잘못된 연결/재연결, 동일 pair 관측 길이, FPR·구간 미탐을 함께 확인. 현재 track ID를 무비판적으로 pseudo identity로 쓰지 않고, 다른 영상의 같은 상태를 negative로 미는 현재 목적의 한계도 점검한다. |
+| 3 | **공정별 learned phase head와 보정 진단**: 공유 시각 표현 위의 R01~R04 별도 head를 비교하고, transition/dwell/calibration은 공정별 통계 모델로 유지한다. | R02 C의 Visual AUC0.7318이 Combined0.5464로 낮아지고, R01 C는 정상 holdout FP105~109/1631 및 test FPR15.01%다. 기존 phase/grammar 결합 병목을 점검할 근거다. | 정상-only phase 약지도와 별도 검수 사례로 phase 품질을 구분하고, visual-only 대조·정상 holdout·이상 구간을 함께 평가. 잠재 cluster를 action 정답으로 취급하지 않으며 HSMM/transition/dwell에 LoRA를 억지로 적용하지 않는다. |
+
+[상세 결과·한계·공정별 표](docs/EXPERIMENT40.md) · [학습 곡선](results/experiment40/figures/training_diagnostics.png) · [경보 비교](results/experiment40/figures/operating_points.png) · [지표](results/experiment40/metrics.json) · [영상별 결과](results/experiment40/per_sequence.csv) · [검증](results/experiment40/validation.json) · [구현·재현 명세](docs/EXPERIMENT40_METHODS.md) · [실험41 계획](docs/EXPERIMENT41_PLAN.md)

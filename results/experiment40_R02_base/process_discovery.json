@@ -1,0 +1,78 @@
+{
+  "scene": "R02",
+  "sources": [
+    "R02/training/frames/02/000.jpg",
+    "R02/training/frames/02/121.jpg",
+    "R02/training/frames/02/242.jpg",
+    "R02/training/frames/02/364.jpg",
+    "R02/training/frames/02/485.jpg",
+    "R02/training/frames/02/607.jpg",
+    "R02/training/frames/03/000.jpg",
+    "R02/training/frames/03/109.jpg",
+    "R02/training/frames/03/219.jpg",
+    "R02/training/frames/03/329.jpg",
+    "R02/training/frames/03/439.jpg",
+    "R02/training/frames/03/549.jpg"
+  ],
+  "prompt": "You are documenting only the VISIBLE normal operation of an industrial device.\nThe supplied images are two normal training sequences, each sampled in temporal order.\nUse no test data or imagined defects. Do not infer hidden actions such as grasping if not visible.\nReturn ONLY a JSON object, no markdown. Schema:\n{\"objects\":[{\"id\":\"short_ascii_role\",\"detection_prompt\":\"short concrete English noun phrase\",\"description\":\"visible role\"}],\n\"phases\":[{\"id\":\"short_ascii_state\",\"description\":\"A photo of ... (a concrete visually discriminable normal state)\"}],\n\"normal_order\":[\"phase_id\"],\"cyclic\":true,\"uncertainties\":[\"limitations\"]}.\nUse 1-3 object roles (include transported product and relevant machine part), 2-4 observable phases.\nPhases must describe distinct VISIBLE positions/states, not defect types. Vocabulary must work as object detection prompts.\nWhen a fine-grained action is not observable, use spatial progression states instead. Do not invent numeric period or FPS.",
+  "process": {
+    "objects": [
+      {
+        "id": "lift_platform",
+        "detection_prompt": "white square platform top plate",
+        "description": "Flat white square top plate with a blue corner logo and a circular recessed area, mounted on the moving lift and carrying the instrument when present."
+      },
+      {
+        "id": "scissor_lift",
+        "detection_prompt": "black scissor lift mechanism",
+        "description": "Black X-shaped scissor mechanism beneath the platform that extends and retracts to change the platform height."
+      },
+      {
+        "id": "test_instrument",
+        "detection_prompt": "black digital multimeter device",
+        "description": "Black handheld digital instrument with a rotary dial and display, resting on the platform top during the elevated portion of the cycle."
+      }
+    ],
+    "phases": [
+      {
+        "id": "low_empty",
+        "description": "A photo of the white square platform at its lowest position just above the metal base, the scissor lift retracted, and the top plate showing the circular recess with no instrument on it."
+      },
+      {
+        "id": "elevated_instrument",
+        "description": "A photo of the white square platform raised to a mid-to-high position with the black digital instrument resting on its top surface and the scissor lift partially extended."
+      },
+      {
+        "id": "high_empty",
+        "description": "A photo of the white square platform at its highest position with the scissor lift fully extended and the top plate showing the circular recess with no instrument on it."
+      },
+      {
+        "id": "mid_empty",
+        "description": "A photo of the white square platform at an intermediate height with the scissor lift partially extended and the top plate showing the circular recess with no instrument on it."
+      }
+    ],
+    "normal_order": [
+      "low_empty",
+      "elevated_instrument",
+      "high_empty",
+      "mid_empty"
+    ],
+    "cyclic": true,
+    "uncertainties": [
+      "The instrument is visible only in elevated frames; the exact moment it is placed on or removed from the platform is not captured, so its presence is tied to the elevated state rather than a specific height.",
+      "Sparse sampling means intermediate empty rising frames are not always observed, so the empty mid state can appear on either the rising or descending part of the cycle.",
+      "No grasping or hand action is visible; the instrument's appearance/disappearance is recorded only as a visible presence/absence on the platform."
+    ]
+  },
+  "elapsed_seconds": 117.38513259598403,
+  "usage": {
+    "completion_tokens": 5202,
+    "prompt_tokens": 1268,
+    "total_tokens": 6470,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "note": "Generated normal-state hypotheses, not ground truth. Reasoning text is not persisted."
+}

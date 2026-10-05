@@ -1,0 +1,679 @@
+{
+  "run": "D_s44",
+  "normal_only": true,
+  "checkpoint_sha256": "6f0dfa8b47aea966594a860d49b0d7c4794865f99d028d73af1d3c0e931c5314",
+  "selected_epoch": 10,
+  "sequences": [
+    {
+      "scene": "R01",
+      "sequence": "01",
+      "views": 218,
+      "sha256": "11f7dc1eba5c9b51778e0904f9a64b3aa9897cc31e16832fd3cac30ce1899282"
+    },
+    {
+      "scene": "R01",
+      "sequence": "02",
+      "views": 242,
+      "sha256": "46a22a676b155c31ad4c648b2a0313ef29cef33b857f0626772e7df05a62f42b"
+    },
+    {
+      "scene": "R01",
+      "sequence": "03",
+      "views": 219,
+      "sha256": "8efc8a09d278430b2791ef804aa3ccb0aac8b000f7b287537694803449b1ec0e"
+    },
+    {
+      "scene": "R01",
+      "sequence": "04",
+      "views": 260,
+      "sha256": "2d7908ac1dabd03e58fc685d40e879a28ba0561ce73e89f01c81a179572d23d9"
+    },
+    {
+      "scene": "R01",
+      "sequence": "05",
+      "views": 246,
+      "sha256": "4b0bbc243ca728c09fd93fb405b242a85afdf004ebca7c8d536273b5583d7ae6"
+    },
+    {
+      "scene": "R01",
+      "sequence": "06",
+      "views": 262,
+      "sha256": "e8f914e737fc4ccc613b6e1b5ef064497d618c82bb1c7cf27521bec73fff7973"
+    },
+    {
+      "scene": "R01",
+      "sequence": "07",
+      "views": 252,
+      "sha256": "0672aeae945f17c79d301603767f198c3bbb3d27d5172364571b9e3ff10b9393"
+    },
+    {
+      "scene": "R01",
+      "sequence": "08",
+      "views": 258,
+      "sha256": "c487a14ef73985fa423e76605e1176e07ab68a46272ae1d0540fe9fe5beafa08"
+    },
+    {
+      "scene": "R01",
+      "sequence": "10",
+      "views": 263,
+      "sha256": "7cfad3502220978765ca12e143fb23827da00a151472e2410de7aa30cb6e8e64"
+    },
+    {
+      "scene": "R01",
+      "sequence": "12",
+      "views": 232,
+      "sha256": "4bf79b6b7911f63e8bddeaf9423f3bfa81fb2a8bf928935018ae65baf27546cc"
+    },
+    {
+      "scene": "R01",
+      "sequence": "15",
+      "views": 236,
+      "sha256": "8f31244e3fedf1827c907103af7aaa8139fdc738f956a2b70f1813addc16aef9"
+    },
+    {
+      "scene": "R01",
+      "sequence": "18",
+      "views": 229,
+      "sha256": "f57b2a2bf9536c9c6b9e5eefa0885701f6d484c0250aa92f3f9bf0d56a24d169"
+    },
+    {
+      "scene": "R01",
+      "sequence": "19",
+      "views": 238,
+      "sha256": "68052f43888295898e353d767a812bb570691012ea0c8015cca13f34263929c4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "20",
+      "views": 233,
+      "sha256": "442a9f09763cd734218ab80505753a3e679562c440efcb9c84c864471411323f"
+    },
+    {
+      "scene": "R01",
+      "sequence": "21",
+      "views": 248,
+      "sha256": "4ecc190ce9431d48f720f1474e3e774fa41a9766707cb62742c1aa553127a08f"
+    },
+    {
+      "scene": "R01",
+      "sequence": "22",
+      "views": 250,
+      "sha256": "8ebc0e2ba00ef804556a65063b2d2400fb8692d2386666f0574cbcaa52370528"
+    },
+    {
+      "scene": "R01",
+      "sequence": "23",
+      "views": 249,
+      "sha256": "ad48d3536234e979a0f983b3ba175135cd54f54cd2088e270c7476556e2ec60b"
+    },
+    {
+      "scene": "R01",
+      "sequence": "24",
+      "views": 241,
+      "sha256": "f850be9316d4eb3a33a6b12fbc4b9880c1d0b1794b0a92ac71d1ac2645a6f6a4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "25",
+      "views": 253,
+      "sha256": "cf97b11020eed5fc7c4b61794670b7b58ecf85f94b7780e8ce95234df575d40b"
+    },
+    {
+      "scene": "R01",
+      "sequence": "26",
+      "views": 246,
+      "sha256": "553b3edbcc4796d41b30610a2d975ae7cdcd671c211a5681f2c35f46e2a7175c"
+    },
+    {
+      "scene": "R01",
+      "sequence": "27",
+      "views": 232,
+      "sha256": "6fb277e42d01d6c19590a7b611b7cd1870e14c6146fc14069dc6efd956703a2b"
+    },
+    {
+      "scene": "R01",
+      "sequence": "28",
+      "views": 229,
+      "sha256": "4406712400e3a519b1cbf4cdfa99d8c0636b49d906fb1e14efb8a62bd682f2a0"
+    },
+    {
+      "scene": "R01",
+      "sequence": "29",
+      "views": 283,
+      "sha256": "540f59f962b578f725f73688c652ebb755d30d3c9a1075a052943ed28669a78a"
+    },
+    {
+      "scene": "R01",
+      "sequence": "30",
+      "views": 283,
+      "sha256": "5d6c0478a20cc63f6d1772609b2e7f2fb2c66d05c1e07f8616ebafb90e4a49d8"
+    },
+    {
+      "scene": "R01",
+      "sequence": "32",
+      "views": 263,
+      "sha256": "f270766f683c77131ca215638a873afa5a26d4034890efa317dc2e3542a4e13f"
+    },
+    {
+      "scene": "R01",
+      "sequence": "33",
+      "views": 273,
+      "sha256": "58ac0b6d4db646f539eed5cf8d49c2f151624c96d39c0eee8f7a9b95346e7ec7"
+    },
+    {
+      "scene": "R01",
+      "sequence": "34",
+      "views": 262,
+      "sha256": "ccddc2c042009148e70a1a9db0e8cc76139dcc6fe9a679f070da7b196a8ccc11"
+    },
+    {
+      "scene": "R01",
+      "sequence": "09",
+      "views": 252,
+      "sha256": "3034f0295fe349ebe6441a62e797c7612433d05a58415ac1ccb4f7f964eded78"
+    },
+    {
+      "scene": "R01",
+      "sequence": "11",
+      "views": 237,
+      "sha256": "5781f9474f0bc79b381a17ac0e247f98b61abe394b453a3e9ceef91856003c58"
+    },
+    {
+      "scene": "R01",
+      "sequence": "13",
+      "views": 232,
+      "sha256": "b2d32e4207745fb9bc4656178ea06b8ee0c1b51279b1237a90f23fbc17c002f4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "14",
+      "views": 233,
+      "sha256": "12aa5dad89f6275b906ecbb745533c5d698e2d3f4de34e4a7ad5372e915a961c"
+    },
+    {
+      "scene": "R01",
+      "sequence": "16",
+      "views": 232,
+      "sha256": "f904bcd542f04d0f9d86125da16e5d4f808e482e608e0953373186be50e70cac"
+    },
+    {
+      "scene": "R01",
+      "sequence": "17",
+      "views": 237,
+      "sha256": "ec84335349e6903677a7c5269ae6a5221a2d8e3fa8a06f5296e5d8403518690f"
+    },
+    {
+      "scene": "R01",
+      "sequence": "31",
+      "views": 280,
+      "sha256": "8fbc80d8d5142c182a63683cac29673d64aac72dbf2b94501d855c1a2590f550"
+    },
+    {
+      "scene": "R02",
+      "sequence": "02",
+      "views": 722,
+      "sha256": "9ffbc7089b875f965fe8d52ca9017373288e2091c61346d343d36b76bce23246"
+    },
+    {
+      "scene": "R02",
+      "sequence": "03",
+      "views": 676,
+      "sha256": "dc5e919a06b659774336a65ef6cd064b67c63dbe2dfb87320378f155ee12cfca"
+    },
+    {
+      "scene": "R02",
+      "sequence": "04",
+      "views": 748,
+      "sha256": "ac9c73d0e9f8936c25dd08cb2d0d85090848250462a62644a91f1174cd609fc9"
+    },
+    {
+      "scene": "R02",
+      "sequence": "06",
+      "views": 752,
+      "sha256": "89c43479c5f25a07a2a3e874105ba3ad9f18dd299be6be7ec5e9b7d786f7c86e"
+    },
+    {
+      "scene": "R02",
+      "sequence": "07",
+      "views": 716,
+      "sha256": "bda3f75e0188f2dc4a3b39bf53b9c0e4c6a086128e0a27838be2ac0aa152354e"
+    },
+    {
+      "scene": "R02",
+      "sequence": "08",
+      "views": 747,
+      "sha256": "d1a7ec5d8da2bc7f4d463a2340ff028ca830e521ae38f8e99bcf3475f6e90fea"
+    },
+    {
+      "scene": "R02",
+      "sequence": "09",
+      "views": 750,
+      "sha256": "e7ba705077a955d40e87ae880b12f8e0ae752ca7360845f5b726c0824d229ddc"
+    },
+    {
+      "scene": "R02",
+      "sequence": "10",
+      "views": 750,
+      "sha256": "ddc08dc98c8437b9bc2505c0cc4e24ca3b39b8f732db9639ea9593fbb836abf8"
+    },
+    {
+      "scene": "R02",
+      "sequence": "12",
+      "views": 743,
+      "sha256": "d0b48f03f24e4b7b8a70d28c5f846a788a9659d4aaffab3cf0937fef28e0c5ca"
+    },
+    {
+      "scene": "R02",
+      "sequence": "14",
+      "views": 719,
+      "sha256": "b7f8f3a1207cbece45a4b05667e0a1c06b3560037d34a722d056bd68a04f82b9"
+    },
+    {
+      "scene": "R02",
+      "sequence": "15",
+      "views": 720,
+      "sha256": "1ed4fcd6bd5944319b654f004a9b663893e2d54eb8fdaa32ee55cc4f6eb63b12"
+    },
+    {
+      "scene": "R02",
+      "sequence": "16",
+      "views": 714,
+      "sha256": "b72be95cfb7a5d17996dfaa5d34df9221ee53863054bc22bc5b0756fe40503b5"
+    },
+    {
+      "scene": "R02",
+      "sequence": "17",
+      "views": 695,
+      "sha256": "6722f05fd9454d02cd8a6da156558d6a01d550709dd9b4e87816ecdda1b8a174"
+    },
+    {
+      "scene": "R02",
+      "sequence": "18",
+      "views": 700,
+      "sha256": "2e1ae1a7b81af63859e8a8a347982ccd3da1d048101c8cc423d745068883331f"
+    },
+    {
+      "scene": "R02",
+      "sequence": "20",
+      "views": 750,
+      "sha256": "e154cb555e40557692ef82758e5253fa5dee85291061dd0adbd2107ac8c9a96e"
+    },
+    {
+      "scene": "R02",
+      "sequence": "21",
+      "views": 693,
+      "sha256": "e228396bc89b2ca059931a1fd0629061dc7c4b8e59508b209bee8ddfe3a5d44d"
+    },
+    {
+      "scene": "R02",
+      "sequence": "22",
+      "views": 746,
+      "sha256": "9509480e62a2e2da977ec9c91d4d9d75cf063a953c15e54a41d817d9befb4c8d"
+    },
+    {
+      "scene": "R02",
+      "sequence": "23",
+      "views": 745,
+      "sha256": "8737bd354835c38b806241cca607392babb3867f9749baa3ea5c88c9d37810ba"
+    },
+    {
+      "scene": "R02",
+      "sequence": "24",
+      "views": 694,
+      "sha256": "c4c4863858cd10786d7ca118ec981c6b4edad470b59e8be898aed6b5ed2d2c75"
+    },
+    {
+      "scene": "R02",
+      "sequence": "25",
+      "views": 719,
+      "sha256": "808b0ad140dc120140800d6dddbbec8e1351a836a142b39876c55d3226041547"
+    },
+    {
+      "scene": "R02",
+      "sequence": "26",
+      "views": 707,
+      "sha256": "d1f16107087c96dbb61a79a4ea8f2caa54043f4b95cb713d72861b7fdaf7aa73"
+    },
+    {
+      "scene": "R02",
+      "sequence": "28",
+      "views": 721,
+      "sha256": "92e12287e727412667617ada5d822ce4f2909800c0ebdb3d15f5121a125b514f"
+    },
+    {
+      "scene": "R02",
+      "sequence": "29",
+      "views": 707,
+      "sha256": "1ba984c503607773a1c599d43b0c59335a9dac16c247db8e6c3ae3d9a83477ee"
+    },
+    {
+      "scene": "R02",
+      "sequence": "30",
+      "views": 687,
+      "sha256": "2b6a7bcb4b9ec6da2efcc46c1df440ac56cb7da3c17e683dcb28b76f11a07fa9"
+    },
+    {
+      "scene": "R02",
+      "sequence": "01",
+      "views": 800,
+      "sha256": "9efd201a8dbf458b08d5f8451abd2082aeeafcc113147a8482325568f499079e"
+    },
+    {
+      "scene": "R02",
+      "sequence": "05",
+      "views": 740,
+      "sha256": "b7f458e9684fbd3b42827c1b4b2cac4776f7b441f29a2d6320a54decacaf50ae"
+    },
+    {
+      "scene": "R02",
+      "sequence": "11",
+      "views": 739,
+      "sha256": "c9771d833467ecabf99fad31649356b601784dd93b980263a5488994ac788e91"
+    },
+    {
+      "scene": "R02",
+      "sequence": "13",
+      "views": 747,
+      "sha256": "9c5ab7648acf7f6f7462d064379eb74a433d9445522bb9f5e8b810a91f5e7c24"
+    },
+    {
+      "scene": "R02",
+      "sequence": "19",
+      "views": 711,
+      "sha256": "2c9c28b6640ca749ab4f0537087b50fc0de528b4368724510658ae282924e7b4"
+    },
+    {
+      "scene": "R02",
+      "sequence": "27",
+      "views": 695,
+      "sha256": "8309cf3d35323e42f35442e27539e1d6ec37eabbfc273e2f7d6f78fc3224b81f"
+    },
+    {
+      "scene": "R03",
+      "sequence": "01",
+      "views": 637,
+      "sha256": "71c99a2539d8d113b90bbddcb31a39d59b7a07c852bc46278f4bb1ae3558cb17"
+    },
+    {
+      "scene": "R03",
+      "sequence": "02",
+      "views": 579,
+      "sha256": "66bf3aa277cac0b6182a2b473773aa4998aeb1a36138b70770248d9f5c12586c"
+    },
+    {
+      "scene": "R03",
+      "sequence": "03",
+      "views": 669,
+      "sha256": "9e9dd4fb133c73d2d0794dc77e2842023f6e5a5a17ba12d76366217b28e14a1d"
+    },
+    {
+      "scene": "R03",
+      "sequence": "04",
+      "views": 576,
+      "sha256": "510c531dd85dc1f37e3582478e6ab252f6802e00fe161c167cf631658bd3efcb"
+    },
+    {
+      "scene": "R03",
+      "sequence": "05",
+      "views": 602,
+      "sha256": "52832d351c34e86d8ca2250b0fb33e6c4fa4cc731ed0c85534b242cd97a19857"
+    },
+    {
+      "scene": "R03",
+      "sequence": "06",
+      "views": 619,
+      "sha256": "338153f04c1f773cfe6eb959f2998ce8a03861079d522debf33f6e1dbe2041f1"
+    },
+    {
+      "scene": "R03",
+      "sequence": "09",
+      "views": 619,
+      "sha256": "59fda9f9dabacd6dfeb76c8782a19dd1a68f4ba29ab14ac645ca055ad7de6fd9"
+    },
+    {
+      "scene": "R03",
+      "sequence": "10",
+      "views": 594,
+      "sha256": "24ee5a1ba96624f8289f0b4c2f15d45651510719b89e49957c3192206cbd5748"
+    },
+    {
+      "scene": "R03",
+      "sequence": "11",
+      "views": 583,
+      "sha256": "5c50105ccb2032f8b31873251575c76ac63bce077b4908129fb491b85b61fd05"
+    },
+    {
+      "scene": "R03",
+      "sequence": "12",
+      "views": 620,
+      "sha256": "b126b796fb0e354b3f50ef4132b45cbbfa86e42f0a1fa4557d7f740b09baae7f"
+    },
+    {
+      "scene": "R03",
+      "sequence": "13",
+      "views": 644,
+      "sha256": "022cd48909c4ba6abc1228c30446c8b9c42c792b76df511dc21705f962ccf948"
+    },
+    {
+      "scene": "R03",
+      "sequence": "14",
+      "views": 596,
+      "sha256": "a8e4d8eea0e8550ff598cb1190c7bd11ff0113a39f044cc1cffffceea6765cf4"
+    },
+    {
+      "scene": "R03",
+      "sequence": "16",
+      "views": 554,
+      "sha256": "146f826da36768157fa0002a28a4351c29ec2073102c1c48ef6deb3e77e33bc2"
+    },
+    {
+      "scene": "R03",
+      "sequence": "17",
+      "views": 582,
+      "sha256": "6716fc062ba7b952c41a01f86b29c085bb6d5c56ef3ac4ef249fe17dc8c6ae31"
+    },
+    {
+      "scene": "R03",
+      "sequence": "18",
+      "views": 574,
+      "sha256": "9ee12770e46d5bb5cdcf70a5c0dcda69c831188f3d1c5c108a20b474d6485831"
+    },
+    {
+      "scene": "R03",
+      "sequence": "19",
+      "views": 594,
+      "sha256": "6dc5458f3206d03873034eb7744274834ca50105148e2d44177f6ca53713c2ff"
+    },
+    {
+      "scene": "R03",
+      "sequence": "20",
+      "views": 577,
+      "sha256": "7ca0397a59fd4492a5428cc2a0cf4a598e69f58fefee2cd53106c7fd7cde260f"
+    },
+    {
+      "scene": "R03",
+      "sequence": "21",
+      "views": 662,
+      "sha256": "454ec7fc648d942d6aa9b704d164ec33d9a2256b48f0c0eafe6d881487cdb3b8"
+    },
+    {
+      "scene": "R03",
+      "sequence": "07",
+      "views": 586,
+      "sha256": "780950187b9dc592f9bc8d3516e2b9b36e3859d3034655d76cae1e18b74f954d"
+    },
+    {
+      "scene": "R03",
+      "sequence": "08",
+      "views": 543,
+      "sha256": "befe3ff2d3909cbb1cc1180a6cc8e0804bee9d7ace372d473132067e77681f03"
+    },
+    {
+      "scene": "R03",
+      "sequence": "15",
+      "views": 604,
+      "sha256": "c921413c9c0a7df2c2ffe75d266b564c11d6636bab2badc1c34100fbb719145a"
+    },
+    {
+      "scene": "R03",
+      "sequence": "22",
+      "views": 636,
+      "sha256": "506cad51148ce8a76cdf2951e2b509897e31fc7be077eff17fa06295ab998dc0"
+    },
+    {
+      "scene": "R04",
+      "sequence": "01",
+      "views": 353,
+      "sha256": "c52674ff59454bee6f7da694a33a921a1ad0a9073d6082746a8f02ac4b656b66"
+    },
+    {
+      "scene": "R04",
+      "sequence": "03",
+      "views": 532,
+      "sha256": "08ca86d5f7bce79fb3ed52b6fc7aeb62e6f743aeced4840fb5accb5b28dd9699"
+    },
+    {
+      "scene": "R04",
+      "sequence": "04",
+      "views": 424,
+      "sha256": "be813b4b954c082c573c735b6f264c6d0f87323b9c056eece601903619927f65"
+    },
+    {
+      "scene": "R04",
+      "sequence": "05",
+      "views": 498,
+      "sha256": "6a11754295423c863c79a474148ea19630c3965df4309b776c6e87dbe73a19e6"
+    },
+    {
+      "scene": "R04",
+      "sequence": "06",
+      "views": 484,
+      "sha256": "4713682123edb196079968c0bfcd461d59fcf3bf5b6328346fe75b042f82cf3b"
+    },
+    {
+      "scene": "R04",
+      "sequence": "07",
+      "views": 416,
+      "sha256": "b574ef24b01d015d9c5dc45423d4212f06885fc6362d8f84f856d88fcc827afb"
+    },
+    {
+      "scene": "R04",
+      "sequence": "09",
+      "views": 454,
+      "sha256": "e7a5960c2d64d36b5ca785ec09f14a2026f831bbf3e95c7ea7dd803c92a919b0"
+    },
+    {
+      "scene": "R04",
+      "sequence": "11",
+      "views": 368,
+      "sha256": "addf48b4c47c97d2f5c63d72ec6a673e176906d4af724c3fbb907c70f190b9aa"
+    },
+    {
+      "scene": "R04",
+      "sequence": "13",
+      "views": 413,
+      "sha256": "99b98adf5731df3e662d4400d18366f09f24d4765f0ff6b3f9cf563f7980667f"
+    },
+    {
+      "scene": "R04",
+      "sequence": "14",
+      "views": 345,
+      "sha256": "8a0d43c49a613eb585d77bffebbc41d009d767da000df6a8c858f359a4b36fff"
+    },
+    {
+      "scene": "R04",
+      "sequence": "16",
+      "views": 402,
+      "sha256": "db78fd20cf3a160c2d80e24e761bf1a203a37ac0c7546fd33834b499f3f5ed5a"
+    },
+    {
+      "scene": "R04",
+      "sequence": "17",
+      "views": 440,
+      "sha256": "3b2852f61d71d9527d6ac09e467f502179b95a20482eb6bdce5bdb7641ac9b4a"
+    },
+    {
+      "scene": "R04",
+      "sequence": "18",
+      "views": 442,
+      "sha256": "3ec7d0f6db7a5c1222f356b20348a9e8c7d950dc75a83d7fc6b86ee39358968c"
+    },
+    {
+      "scene": "R04",
+      "sequence": "19",
+      "views": 455,
+      "sha256": "0e78fef3e7a5fadd442edbdfade17bd79882bcf2aff87b9c6846b464198effbc"
+    },
+    {
+      "scene": "R04",
+      "sequence": "20",
+      "views": 433,
+      "sha256": "b086f7e933e41df47aed298a69b4bbd2c4f72b28393a1994c331f0de3880c812"
+    },
+    {
+      "scene": "R04",
+      "sequence": "21",
+      "views": 464,
+      "sha256": "a9f8992c0f091a7f62a8624f4c0a84149fe6fa0a4fc28a23957b709d45a7f48e"
+    },
+    {
+      "scene": "R04",
+      "sequence": "22",
+      "views": 407,
+      "sha256": "b304085c354f2755179f9840dd0ad0e9867340547dd1105f644cb0550382056b"
+    },
+    {
+      "scene": "R04",
+      "sequence": "23",
+      "views": 407,
+      "sha256": "a7163e55bae53090bbb3b9371c84976ad5d8b10d87071a4b89fbb05e9eaf0216"
+    },
+    {
+      "scene": "R04",
+      "sequence": "24",
+      "views": 382,
+      "sha256": "2992aae11df1eb3c9aa9f6f73a86a8c67025aef96c18ec66662d9ac8536383f5"
+    },
+    {
+      "scene": "R04",
+      "sequence": "25",
+      "views": 425,
+      "sha256": "9c7b22876a32d01a7edab3b6ad1ca005641a86dbf323a4b99fec4930d5d4297b"
+    },
+    {
+      "scene": "R04",
+      "sequence": "02",
+      "views": 458,
+      "sha256": "98ff718e4e600c44dc705f0919eee65a565dbf99c8ee4ba538e68930d5d62eed"
+    },
+    {
+      "scene": "R04",
+      "sequence": "08",
+      "views": 444,
+      "sha256": "a1d37dc568b78e926ebc245996bd186b35153147be098f14918800eb92c69fd1"
+    },
+    {
+      "scene": "R04",
+      "sequence": "10",
+      "views": 403,
+      "sha256": "5ff9326ac707720129d9a14be1f6d6e63b813d1115c1b46141ec6cf92103306c"
+    },
+    {
+      "scene": "R04",
+      "sequence": "12",
+      "views": 412,
+      "sha256": "78ca4f29b4803dbbffa7d39ecde999db3c56f8e2d48491c2a17310943595fee2"
+    },
+    {
+      "scene": "R04",
+      "sequence": "15",
+      "views": 380,
+      "sha256": "d9bf27c56af62b799e228eb66402363267b3f099e2a5c085c168a3e47d62fc9d"
+    }
+  ],
+  "views": 54047,
+  "elapsed_seconds": 111.41056970099453,
+  "gpu_peak_allocated_bytes": 1546933248,
+  "precision": "float32_forward_and_normalization",
+  "timing_scope": "model already loaded; includes sequential image IO/preprocessing/GPU/feature serialization; not camera streaming"
+}

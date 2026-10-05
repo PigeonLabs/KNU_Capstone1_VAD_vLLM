@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "completed": [
+    "C_s42_normal",
+    "D_s42_normal",
+    "C_s43_normal",
+    "D_s43_normal",
+    "C_s44_normal",
+    "D_s44_normal",
+    "normal_models",
+    "R02_test_base",
+    "test_prepare",
+    "A_test",
+    "B_test",
+    "C_s42_test",
+    "D_s42_test",
+    "C_s43_test",
+    "D_s43_test",
+    "C_s44_test",
+    "D_s44_test",
+    "scoring_and_metrics"
+  ],
+  "active": null
+}

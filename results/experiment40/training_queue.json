@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    "C_s42",
+    "D_s42",
+    "C_s43",
+    "D_s43",
+    "C_s44",
+    "D_s44"
+  ],
+  "completed": [
+    "C_s42",
+    "D_s42",
+    "C_s43",
+    "D_s43",
+    "C_s44",
+    "D_s44"
+  ],
+  "active": null,
+  "status": "complete"
+}

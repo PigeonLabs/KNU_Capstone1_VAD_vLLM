@@ -1,0 +1,37 @@
+[
+  {
+    "epoch": 0,
+    "step": 0,
+    "train": null,
+    "validation": {
+      "loss": 0.14094520919024944,
+      "teacher_cosine_loss": 0.012200586497783661,
+      "contrastive_loss": 1.2874462008476257,
+      "samples": 512,
+      "feature_mean_std": 0.02590543031692505,
+      "effective_rank": 17.42083168029785
+    },
+    "selected_so_far": 0,
+    "elapsed_seconds": 25.53374920398346
+  },
+  {
+    "epoch": 1,
+    "step": 64,
+    "train": {
+      "loss": 0.15893176733516157,
+      "teacher_cosine_loss": 0.012005242519080639,
+      "contrastive_loss": 1.4692652225494385,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.1298673851415515,
+      "teacher_cosine_loss": 0.013628698885440826,
+      "contrastive_loss": 1.1623868346214294,
+      "samples": 512,
+      "feature_mean_std": 0.02782934345304966,
+      "effective_rank": 18.11961555480957
+    },
+    "selected_so_far": 1,
+    "elapsed_seconds": 176.66683935298352
+  }
+]

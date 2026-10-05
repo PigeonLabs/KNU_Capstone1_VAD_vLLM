@@ -26,6 +26,7 @@ def main():
     p.add_argument('--config',type=Path,default=Path('configs/experiment01.json'))
     p.add_argument('--limit-sequences',type=int,default=None)
     p.add_argument('--fit-only',action='store_true')
+    p.add_argument('--partition',choices=['training','testing'],default=None)
     args=p.parse_args();cfg=json.loads(args.config.read_text());scene=cfg['scene']
     torch.manual_seed(cfg['seed']);np.random.seed(cfg['seed']);torch.set_num_threads(4)
     if not torch.cuda.is_available():raise RuntimeError('CUDA GPU required; no silent CPU substitution')
@@ -47,7 +48,9 @@ def main():
     root=Path('artifacts')/('experiment'+cfg['experiment'])/'features'/scene;root.mkdir(parents=True,exist_ok=True)
     logs=[];seen=0
     fit_ids=json.loads(Path('results/stage00/splits.json').read_text())[scene]['fit']
-    for partition in (('training',) if args.fit_only else ('training','testing')):
+    if args.fit_only and args.partition=='testing':raise ValueError('FIT-only extraction cannot use test videos')
+    partitions=(args.partition,) if args.partition else (('training',) if args.fit_only else ('training','testing'))
+    for partition in partitions:
         for seq in sorted((args.data_root/scene/partition/'frames').iterdir()):
             if not seq.is_dir() or (args.fit_only and seq.name not in fit_ids):continue
             out=root/f'{partition}_{seq.name}.npz';metadata=out.with_suffix('.json')

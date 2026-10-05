@@ -1,0 +1,70 @@
+{
+  "experiment": "40",
+  "scenes": [
+    "R01",
+    "R02",
+    "R03",
+    "R04"
+  ],
+  "source_features": {
+    "R01": "artifacts/experiment02/features/R01",
+    "R02": "artifacts/experiment40_R02_base/features/R02",
+    "R03": "artifacts/experiment14/features/R03",
+    "R04": "artifacts/experiment37/asinh/features/R04"
+  },
+  "model_record": "artifacts/experiment40/mobileclip_model.json",
+  "representation_validation_fraction": 0.2,
+  "split_seed": 4040,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "arms": {
+    "A": "frozen_clip",
+    "B": "frozen_mobileclip",
+    "C": "lora_mobileclip",
+    "D": "full_mobileclip"
+  },
+  "epochs": 10,
+  "samples_per_epoch": 4096,
+  "validation_samples": 512,
+  "batch_size": 64,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW",
+  "gradient_clip_norm": 1.0,
+  "warmup_epochs": 1,
+  "schedule": "cosine_after_warmup",
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "contrastive_temperature": 0.1,
+  "contrastive_weight": 0.1,
+  "teacher_cosine_weight": 1.0,
+  "negative_policy": "same_scene_different_video",
+  "batchnorm_running_statistics": "frozen",
+  "checkpoint_selection": "lowest_fixed_normal_representation_validation_loss_including_epoch0",
+  "augmentation": {
+    "crop_scale": [
+      0.9,
+      1.0
+    ],
+    "crop_ratio": [
+      0.95,
+      1.05
+    ],
+    "brightness": 0.1,
+    "contrast": 0.1,
+    "saturation": 0.05,
+    "hue": 0.0,
+    "horizontal_flip": false
+  },
+  "mixed_precision": "bfloat16",
+  "workers": 2,
+  "data_root": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset",
+  "training_labels": "none",
+  "calibration_used_for_encoder_or_checkpoint": false,
+  "test_used_for_encoder_or_checkpoint": false,
+  "validation_workers": 0,
+  "prefetch_factor": 1
+}

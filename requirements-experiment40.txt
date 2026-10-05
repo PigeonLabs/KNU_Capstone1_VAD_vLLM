@@ -1,0 +1,6 @@
+# Isolated additions to the existing .venv, installed under artifacts/experiment40/deps.
+# Existing torch==2.10.0, torchvision==0.25.0, transformers==4.57.6 are preserved.
+open_clip_torch==3.3.0
+timm==1.0.30
+ftfy==6.3.1
+wcwidth==0.9.2

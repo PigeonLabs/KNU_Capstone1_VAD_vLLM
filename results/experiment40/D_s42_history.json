@@ -1,0 +1,217 @@
+[
+  {
+    "epoch": 0,
+    "step": 0,
+    "train": null,
+    "validation": {
+      "loss": 0.14094520919024944,
+      "teacher_cosine_loss": 0.012200586497783661,
+      "contrastive_loss": 1.2874462008476257,
+      "samples": 512,
+      "feature_mean_std": 0.02590543031692505,
+      "effective_rank": 17.42083168029785
+    },
+    "selected_so_far": 0,
+    "elapsed_seconds": 4.288912246993277
+  },
+  {
+    "epoch": 1,
+    "step": 64,
+    "train": {
+      "loss": 0.13666779443155974,
+      "teacher_cosine_loss": 0.03712742496281862,
+      "contrastive_loss": 0.9954036697745323,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.12094397842884064,
+      "teacher_cosine_loss": 0.054760850965976715,
+      "contrastive_loss": 0.661831259727478,
+      "samples": 512,
+      "feature_mean_std": 0.03015109896659851,
+      "effective_rank": 28.61178207397461
+    },
+    "selected_so_far": 1,
+    "elapsed_seconds": 43.607956705003744
+  },
+  {
+    "epoch": 2,
+    "step": 128,
+    "train": {
+      "loss": 0.13289983326103538,
+      "teacher_cosine_loss": 0.049872489646077156,
+      "contrastive_loss": 0.8302734196186066,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.1219708127900958,
+      "teacher_cosine_loss": 0.05461280792951584,
+      "contrastive_loss": 0.6735800504684448,
+      "samples": 512,
+      "feature_mean_std": 0.02983691915869713,
+      "effective_rank": 27.454689025878906
+    },
+    "selected_so_far": 1,
+    "elapsed_seconds": 74.4821034189954
+  },
+  {
+    "epoch": 3,
+    "step": 192,
+    "train": {
+      "loss": 0.12520645651966333,
+      "teacher_cosine_loss": 0.04858387913554907,
+      "contrastive_loss": 0.7662257552146912,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.11527865659445524,
+      "teacher_cosine_loss": 0.05046537518501282,
+      "contrastive_loss": 0.6481328010559082,
+      "samples": 512,
+      "feature_mean_std": 0.029851282015442848,
+      "effective_rank": 27.680681228637695
+    },
+    "selected_so_far": 3,
+    "elapsed_seconds": 107.44250157699571
+  },
+  {
+    "epoch": 4,
+    "step": 256,
+    "train": {
+      "loss": 0.12215496879070997,
+      "teacher_cosine_loss": 0.04809755086898804,
+      "contrastive_loss": 0.7405741587281227,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.11344131641089916,
+      "teacher_cosine_loss": 0.04964960366487503,
+      "contrastive_loss": 0.6379171013832092,
+      "samples": 512,
+      "feature_mean_std": 0.029809191823005676,
+      "effective_rank": 28.41010856628418
+    },
+    "selected_so_far": 4,
+    "elapsed_seconds": 140.83316473499872
+  },
+  {
+    "epoch": 5,
+    "step": 320,
+    "train": {
+      "loss": 0.11746527533978224,
+      "teacher_cosine_loss": 0.04734816960990429,
+      "contrastive_loss": 0.7011710405349731,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.10974343679845333,
+      "teacher_cosine_loss": 0.04529643803834915,
+      "contrastive_loss": 0.6444699764251709,
+      "samples": 512,
+      "feature_mean_std": 0.02967878058552742,
+      "effective_rank": 28.42464828491211
+    },
+    "selected_so_far": 5,
+    "elapsed_seconds": 176.43037606199505
+  },
+  {
+    "epoch": 6,
+    "step": 384,
+    "train": {
+      "loss": 0.11292652995325625,
+      "teacher_cosine_loss": 0.04566911421716213,
+      "contrastive_loss": 0.6725741401314735,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.11044109519571066,
+      "teacher_cosine_loss": 0.046747058629989624,
+      "contrastive_loss": 0.6369403600692749,
+      "samples": 512,
+      "feature_mean_std": 0.029592445120215416,
+      "effective_rank": 28.831562042236328
+    },
+    "selected_so_far": 5,
+    "elapsed_seconds": 207.7473727230099
+  },
+  {
+    "epoch": 7,
+    "step": 448,
+    "train": {
+      "loss": 0.1118731857277453,
+      "teacher_cosine_loss": 0.0453838724642992,
+      "contrastive_loss": 0.6648931130766869,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.10410045739263296,
+      "teacher_cosine_loss": 0.04424960911273956,
+      "contrastive_loss": 0.5985084772109985,
+      "samples": 512,
+      "feature_mean_std": 0.030165890231728554,
+      "effective_rank": 29.50165367126465
+    },
+    "selected_so_far": 7,
+    "elapsed_seconds": 240.74914959599846
+  },
+  {
+    "epoch": 8,
+    "step": 512,
+    "train": {
+      "loss": 0.1088840231532231,
+      "teacher_cosine_loss": 0.04321887902915478,
+      "contrastive_loss": 0.6566514223814011,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.10179871693253517,
+      "teacher_cosine_loss": 0.0417235866189003,
+      "contrastive_loss": 0.6007512807846069,
+      "samples": 512,
+      "feature_mean_std": 0.03003782033920288,
+      "effective_rank": 29.393423080444336
+    },
+    "selected_so_far": 8,
+    "elapsed_seconds": 273.6586864470155
+  },
+  {
+    "epoch": 9,
+    "step": 576,
+    "train": {
+      "loss": 0.10688493505585939,
+      "teacher_cosine_loss": 0.04249152820557356,
+      "contrastive_loss": 0.6439340561628342,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.10116039402782917,
+      "teacher_cosine_loss": 0.04156814515590668,
+      "contrastive_loss": 0.5959224700927734,
+      "samples": 512,
+      "feature_mean_std": 0.029967758804559708,
+      "effective_rank": 30.144529342651367
+    },
+    "selected_so_far": 9,
+    "elapsed_seconds": 306.6794636659906
+  },
+  {
+    "epoch": 10,
+    "step": 640,
+    "train": {
+      "loss": 0.1069870030041784,
+      "teacher_cosine_loss": 0.04241918679326773,
+      "contrastive_loss": 0.6456781476736069,
+      "samples": 4096
+    },
+    "validation": {
+      "loss": 0.10098543483763933,
+      "teacher_cosine_loss": 0.04124099761247635,
+      "contrastive_loss": 0.5974443554878235,
+      "samples": 512,
+      "feature_mean_std": 0.03001180663704872,
+      "effective_rank": 29.93906593322754
+    },
+    "selected_so_far": 10,
+    "elapsed_seconds": 340.78736411599675
+  }
+]

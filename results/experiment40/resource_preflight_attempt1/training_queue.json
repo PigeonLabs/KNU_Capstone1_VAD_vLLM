@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    "C_s42",
+    "D_s42",
+    "C_s43",
+    "D_s43",
+    "C_s44",
+    "D_s44"
+  ],
+  "completed": [],
+  "active": "C_s42",
+  "status": "failed",
+  "failed_run": "C_s42",
+  "returncode": -2,
+  "log": "/tmp/experiment40_C_s42_train.log"
+}

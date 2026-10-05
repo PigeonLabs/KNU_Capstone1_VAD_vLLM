@@ -1,0 +1,33 @@
+{
+  "status": "aborted_for_host_memory_pressure",
+  "observed_host_memory": "58/62GiB used; 8GiB swap full",
+  "last_complete_epoch": 1,
+  "partial_optimizer_progress_not_used": true,
+  "training_process_confirmed_terminal": true,
+  "changes": {
+    "training_workers": [
+      4,
+      2
+    ],
+    "validation_workers": [
+      4,
+      0
+    ],
+    "prefetch_factor": [
+      2,
+      1
+    ]
+  },
+  "scientific_hyperparameters_unchanged": true,
+  "archive": "results/experiment40/resource_preflight_attempt1",
+  "checkpoint_archive": "artifacts/experiment40/resource_preflight_attempt1/C_s42",
+  "restarted_from": "original pretrained weights, same seeds and deterministic sampling",
+  "test_and_calibration_not_used_for_decision": true,
+  "last_complete_optimizer_step": 64,
+  "initial_stop_observation_last_epoch": 0,
+  "all_aborted_attempt_progress_discarded": true,
+  "archived_checkpoint_epoch": 1,
+  "archived_checkpoint_sha256": "842aff57e2c9b4b305960f0f9b90080b7722520aba0778ef618704df0d25b21c",
+  "first_completed_epoch_train_and_validation_exact_to_restarted_run": true,
+  "correction_note": "Final archive inspection found epoch1/64 updates completed before termination. The stop-time observation and frozen plan said epoch0; that preliminary observation was stale. The archived attempt is entirely excluded; successful C_s42 restarted from original pretrained with the same scientific settings. The frozen plan is retained unchanged as historical evidence."
+}

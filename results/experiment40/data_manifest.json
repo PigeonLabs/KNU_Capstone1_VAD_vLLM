@@ -1,0 +1,1597 @@
+{
+  "normal_only": true,
+  "subsplits": {
+    "R01": {
+      "representation_train": [
+        "01",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "12",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "32",
+        "33",
+        "34"
+      ],
+      "representation_validation": [
+        "02",
+        "04",
+        "10",
+        "15",
+        "18",
+        "24"
+      ],
+      "normal_calibration": [
+        "09",
+        "11",
+        "13",
+        "14",
+        "16",
+        "17",
+        "31"
+      ],
+      "downstream_fit": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "10",
+        "12",
+        "15",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "32",
+        "33",
+        "34"
+      ]
+    },
+    "R02": {
+      "representation_train": [
+        "02",
+        "03",
+        "06",
+        "07",
+        "09",
+        "10",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "28",
+        "30"
+      ],
+      "representation_validation": [
+        "04",
+        "08",
+        "12",
+        "14",
+        "29"
+      ],
+      "normal_calibration": [
+        "01",
+        "05",
+        "11",
+        "13",
+        "19",
+        "27"
+      ],
+      "downstream_fit": [
+        "02",
+        "03",
+        "04",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "12",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    "R03": {
+      "representation_train": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "20",
+        "21"
+      ],
+      "representation_validation": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "normal_calibration": [
+        "07",
+        "08",
+        "15",
+        "22"
+      ],
+      "downstream_fit": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ]
+    },
+    "R04": {
+      "representation_train": [
+        "03",
+        "04",
+        "06",
+        "07",
+        "09",
+        "13",
+        "14",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "representation_validation": [
+        "01",
+        "05",
+        "11",
+        "17"
+      ],
+      "normal_calibration": [
+        "02",
+        "08",
+        "10",
+        "12",
+        "15"
+      ],
+      "downstream_fit": [
+        "01",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "09",
+        "11",
+        "13",
+        "14",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    }
+  },
+  "sequences": [
+    {
+      "scene": "R01",
+      "sequence": "01",
+      "partition": "representation_train",
+      "source_frames": 207,
+      "views": {
+        "global": 52,
+        "crop": 166
+      },
+      "source_feature_sha256": "d938eb78514b570f4e5039a0aeeabc2a76333b6f94ec6ac2afcd7c4385faeac4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "02",
+      "partition": "representation_validation",
+      "source_frames": 214,
+      "views": {
+        "global": 54,
+        "crop": 188
+      },
+      "source_feature_sha256": "75e172d5a357d8fea97305e7fed8b268e77068b371c0a240612d8f3441705975"
+    },
+    {
+      "scene": "R01",
+      "sequence": "03",
+      "partition": "representation_train",
+      "source_frames": 203,
+      "views": {
+        "global": 51,
+        "crop": 168
+      },
+      "source_feature_sha256": "706098eded98a63334e1ebc69324e4df1108d536c8d9e77531441f444a0b77c7"
+    },
+    {
+      "scene": "R01",
+      "sequence": "04",
+      "partition": "representation_validation",
+      "source_frames": 232,
+      "views": {
+        "global": 58,
+        "crop": 202
+      },
+      "source_feature_sha256": "e6f0d7e929c838e4ece199c9698e147eb98aa5e8494be7447a337f1ca557c4f4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "05",
+      "partition": "representation_train",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 187
+      },
+      "source_feature_sha256": "cfaaa4ed05629d63d5651d9d3e82523ed054807192dc9b8d95c6390695fa6ec9"
+    },
+    {
+      "scene": "R01",
+      "sequence": "06",
+      "partition": "representation_train",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 204
+      },
+      "source_feature_sha256": "84b209b753356b18392dfa1de597f8c3a07c5fe994e26e1e47b6b828d517dfc0"
+    },
+    {
+      "scene": "R01",
+      "sequence": "07",
+      "partition": "representation_train",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 193
+      },
+      "source_feature_sha256": "72693c690aba50d7898fb71eedc079791aed18faaa2220fc387b032102b6848f"
+    },
+    {
+      "scene": "R01",
+      "sequence": "08",
+      "partition": "representation_train",
+      "source_frames": 232,
+      "views": {
+        "global": 58,
+        "crop": 200
+      },
+      "source_feature_sha256": "c7a067b3677321c1a26139ff2c989fd9de13e7095801a6e91bec2738aa44b09c"
+    },
+    {
+      "scene": "R01",
+      "sequence": "10",
+      "partition": "representation_validation",
+      "source_frames": 236,
+      "views": {
+        "global": 59,
+        "crop": 204
+      },
+      "source_feature_sha256": "70576374afe28c7f3098d0e5fbdb74c9ad764ccc4ef007b83fff8daa741e98c8"
+    },
+    {
+      "scene": "R01",
+      "sequence": "12",
+      "partition": "representation_train",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 174
+      },
+      "source_feature_sha256": "87b58264ad5cd3d32716bd2d5d13243e2b11356d4010e243404f20ffb5062e4c"
+    },
+    {
+      "scene": "R01",
+      "sequence": "15",
+      "partition": "representation_validation",
+      "source_frames": 236,
+      "views": {
+        "global": 59,
+        "crop": 177
+      },
+      "source_feature_sha256": "6fba1efdd5e511b57579f309fdb4ec74d695005dabb58ab913665bc3f440e7e8"
+    },
+    {
+      "scene": "R01",
+      "sequence": "18",
+      "partition": "representation_validation",
+      "source_frames": 228,
+      "views": {
+        "global": 57,
+        "crop": 172
+      },
+      "source_feature_sha256": "0ef0db3dadb26dbe4810679ffbfc1ad2c0c2163e7bfe4ef11f31cef14c4d1eb8"
+    },
+    {
+      "scene": "R01",
+      "sequence": "19",
+      "partition": "representation_train",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 179
+      },
+      "source_feature_sha256": "a386747f39a5afd1f65b76e8066cfa1bc02df994ed7ca9d4d772bc76bc5b2603"
+    },
+    {
+      "scene": "R01",
+      "sequence": "20",
+      "partition": "representation_train",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 175
+      },
+      "source_feature_sha256": "c4c2b19ca150175c217cb8b2369a0fb99824fbad11a1f02fd27e6136689a76e6"
+    },
+    {
+      "scene": "R01",
+      "sequence": "21",
+      "partition": "representation_train",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 190
+      },
+      "source_feature_sha256": "ac11bf7e17343a90e53957d634a359ca3f75fb6b48da594fe6ceeda0b7f209d9"
+    },
+    {
+      "scene": "R01",
+      "sequence": "22",
+      "partition": "representation_train",
+      "source_frames": 234,
+      "views": {
+        "global": 59,
+        "crop": 191
+      },
+      "source_feature_sha256": "e97d1f2412821dc29c3fd0ee4a11cdbe584e9a139f645cce031e300ce0a0e868"
+    },
+    {
+      "scene": "R01",
+      "sequence": "23",
+      "partition": "representation_train",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 190
+      },
+      "source_feature_sha256": "899ac603df2b3f6737b931038895255451685e0275f4d699b39c533daff60955"
+    },
+    {
+      "scene": "R01",
+      "sequence": "24",
+      "partition": "representation_validation",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 183
+      },
+      "source_feature_sha256": "f944cc6305ca409c47dc7ac7165860cfe78e9409ed78fab621bcc09b5e0b458a"
+    },
+    {
+      "scene": "R01",
+      "sequence": "25",
+      "partition": "representation_train",
+      "source_frames": 225,
+      "views": {
+        "global": 57,
+        "crop": 196
+      },
+      "source_feature_sha256": "cbc9da201bb561a2aeb6e5eedb2e0211aeba2e0da56a4bf5a0e15396d90d868e"
+    },
+    {
+      "scene": "R01",
+      "sequence": "26",
+      "partition": "representation_train",
+      "source_frames": 238,
+      "views": {
+        "global": 60,
+        "crop": 186
+      },
+      "source_feature_sha256": "4f59bda767ebbb542bdc7b7d6306757bbbf8fe74f87d05e5416bd8b564fbd1ec"
+    },
+    {
+      "scene": "R01",
+      "sequence": "27",
+      "partition": "representation_train",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 174
+      },
+      "source_feature_sha256": "6345d2dbb5e280ee62b945417c41c7c50a0dd41090d0e748bd844ef21db7996e"
+    },
+    {
+      "scene": "R01",
+      "sequence": "28",
+      "partition": "representation_train",
+      "source_frames": 228,
+      "views": {
+        "global": 57,
+        "crop": 172
+      },
+      "source_feature_sha256": "3ebb21162c888ac16ecc41e2230a4e7bc393cfe7f4a70b0c00ba86e403578a51"
+    },
+    {
+      "scene": "R01",
+      "sequence": "29",
+      "partition": "representation_train",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 224
+      },
+      "source_feature_sha256": "a5fdaf44412290d690fbda69043ca99e9ecc96807b25be1b71956cacea785cf4"
+    },
+    {
+      "scene": "R01",
+      "sequence": "30",
+      "partition": "representation_train",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 225
+      },
+      "source_feature_sha256": "3e77250078cd5178c70e37da112fd1c818182eb23a4138c7176e78d04307e406"
+    },
+    {
+      "scene": "R01",
+      "sequence": "32",
+      "partition": "representation_train",
+      "source_frames": 230,
+      "views": {
+        "global": 58,
+        "crop": 205
+      },
+      "source_feature_sha256": "f9fb57ee85dea74a5e89789e74c5abb3e2b8f95ec42fbfec77002c0b5a71f208"
+    },
+    {
+      "scene": "R01",
+      "sequence": "33",
+      "partition": "representation_train",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 215
+      },
+      "source_feature_sha256": "f6fa78d345aab6a4bbdbe0a9a7602228e970fca45060a14444a445a0aefbda66"
+    },
+    {
+      "scene": "R01",
+      "sequence": "34",
+      "partition": "representation_train",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 204
+      },
+      "source_feature_sha256": "32699247efed865f51c4dee46677b6ed70ec83c0d1dfbb81792de04d94f0e670"
+    },
+    {
+      "scene": "R01",
+      "sequence": "09",
+      "partition": "normal_calibration",
+      "source_frames": 235,
+      "views": {
+        "global": 59,
+        "crop": 193
+      },
+      "source_feature_sha256": "be1e14746d1da6ef5b18709e139fef7abd577d38086aafa35fef8fe24220de2b"
+    },
+    {
+      "scene": "R01",
+      "sequence": "11",
+      "partition": "normal_calibration",
+      "source_frames": 235,
+      "views": {
+        "global": 59,
+        "crop": 178
+      },
+      "source_feature_sha256": "dc96aa5a2147f7dcb81ec1c18fd886d2e577c81d728ffe041f3fd1184b1dd332"
+    },
+    {
+      "scene": "R01",
+      "sequence": "13",
+      "partition": "normal_calibration",
+      "source_frames": 232,
+      "views": {
+        "global": 58,
+        "crop": 174
+      },
+      "source_feature_sha256": "39d209080b545ffd52ec49a247c4b4151cb434c7315261e2d2e083aa806623cc"
+    },
+    {
+      "scene": "R01",
+      "sequence": "14",
+      "partition": "normal_calibration",
+      "source_frames": 232,
+      "views": {
+        "global": 58,
+        "crop": 175
+      },
+      "source_feature_sha256": "7231435e4d01a66959c05cc8418c7e3d0640db07fb778bf7fbc8f8e7e747953d"
+    },
+    {
+      "scene": "R01",
+      "sequence": "16",
+      "partition": "normal_calibration",
+      "source_frames": 230,
+      "views": {
+        "global": 58,
+        "crop": 174
+      },
+      "source_feature_sha256": "9846a3244cb3239743be7fb2d96e1c8f12cc219cba3e681719cf17fa20b5abee"
+    },
+    {
+      "scene": "R01",
+      "sequence": "17",
+      "partition": "normal_calibration",
+      "source_frames": 234,
+      "views": {
+        "global": 59,
+        "crop": 178
+      },
+      "source_feature_sha256": "62e999c7990b1da817ee0310c0e2a3b739e82bf057a511c14d0bc6a6a6ad1540"
+    },
+    {
+      "scene": "R01",
+      "sequence": "31",
+      "partition": "normal_calibration",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 221
+      },
+      "source_feature_sha256": "d3085207ae5b339607964e04eba518db71a5b30ce90c8b5d73d3937100889cfa"
+    },
+    {
+      "scene": "R02",
+      "sequence": "02",
+      "partition": "representation_train",
+      "source_frames": 608,
+      "views": {
+        "global": 152,
+        "crop": 570
+      },
+      "source_feature_sha256": "1385305fcd0869c17de3cec080a6d6e7f9e475598293870cc82f022be8510b09"
+    },
+    {
+      "scene": "R02",
+      "sequence": "03",
+      "partition": "representation_train",
+      "source_frames": 550,
+      "views": {
+        "global": 138,
+        "crop": 538
+      },
+      "source_feature_sha256": "15ef4a329870e5540d77b54afd8a3eb0a7c1c0e099f5d0464133ad58bab0619a"
+    },
+    {
+      "scene": "R02",
+      "sequence": "04",
+      "partition": "representation_validation",
+      "source_frames": 596,
+      "views": {
+        "global": 149,
+        "crop": 599
+      },
+      "source_feature_sha256": "4fa22e3b50badb111dcff375e449a6ee0156c8b2570ecbe190cb6375a9a76301"
+    },
+    {
+      "scene": "R02",
+      "sequence": "06",
+      "partition": "representation_train",
+      "source_frames": 610,
+      "views": {
+        "global": 153,
+        "crop": 599
+      },
+      "source_feature_sha256": "b2ebb880ebf65ddb57f2424edc5c1abe5a7dd0a3b432ea8bf7cbb002b4a0b74d"
+    },
+    {
+      "scene": "R02",
+      "sequence": "07",
+      "partition": "representation_train",
+      "source_frames": 588,
+      "views": {
+        "global": 147,
+        "crop": 569
+      },
+      "source_feature_sha256": "774a95e43ac5d9412ddd74547f015e16cfc7bbdf4477348140b0d07e757bd401"
+    },
+    {
+      "scene": "R02",
+      "sequence": "08",
+      "partition": "representation_validation",
+      "source_frames": 585,
+      "views": {
+        "global": 147,
+        "crop": 600
+      },
+      "source_feature_sha256": "173fa05e17fbc0cb377ed5db8c5f6276ac9340d9a38c5aee7d1dcc00f1cfac71"
+    },
+    {
+      "scene": "R02",
+      "sequence": "09",
+      "partition": "representation_train",
+      "source_frames": 595,
+      "views": {
+        "global": 149,
+        "crop": 601
+      },
+      "source_feature_sha256": "7c0418e4988968ac19cab8e07a669e303d0e7f4d4c1c626a161a5bd0fd160f0f"
+    },
+    {
+      "scene": "R02",
+      "sequence": "10",
+      "partition": "representation_train",
+      "source_frames": 595,
+      "views": {
+        "global": 149,
+        "crop": 601
+      },
+      "source_feature_sha256": "23414021e1822b80b61e6219ad243f61dfe2e7fddbafdaccc9a7ea89f9937fdd"
+    },
+    {
+      "scene": "R02",
+      "sequence": "12",
+      "partition": "representation_validation",
+      "source_frames": 590,
+      "views": {
+        "global": 148,
+        "crop": 595
+      },
+      "source_feature_sha256": "6c2d722020abbf8de5377962026a5e6c6b81cd217d8c4d7b10f163c8ef9a25c0"
+    },
+    {
+      "scene": "R02",
+      "sequence": "14",
+      "partition": "representation_validation",
+      "source_frames": 579,
+      "views": {
+        "global": 145,
+        "crop": 574
+      },
+      "source_feature_sha256": "9e9efb16f0ca54fb26548aa0e5398f2bc2385b4be7bd269c0f79b4a23d6aea0f"
+    },
+    {
+      "scene": "R02",
+      "sequence": "15",
+      "partition": "representation_train",
+      "source_frames": 612,
+      "views": {
+        "global": 153,
+        "crop": 567
+      },
+      "source_feature_sha256": "5f33e516a73bfb4eef2e0a3f6e9bf7400f73e36bce780d59c1f3bb481d1a486d"
+    },
+    {
+      "scene": "R02",
+      "sequence": "16",
+      "partition": "representation_train",
+      "source_frames": 588,
+      "views": {
+        "global": 147,
+        "crop": 567
+      },
+      "source_feature_sha256": "675bb3b0fcaa21d198d944e75538d7e2058e946c90055807912055b20f354c93"
+    },
+    {
+      "scene": "R02",
+      "sequence": "17",
+      "partition": "representation_train",
+      "source_frames": 574,
+      "views": {
+        "global": 144,
+        "crop": 551
+      },
+      "source_feature_sha256": "2da1093902696003d1fd9362441afcc84107671f1aee0310c96d351585032c6b"
+    },
+    {
+      "scene": "R02",
+      "sequence": "18",
+      "partition": "representation_train",
+      "source_frames": 579,
+      "views": {
+        "global": 145,
+        "crop": 555
+      },
+      "source_feature_sha256": "86569738fd8566ade1262000fc5033e5e29403d43e7225c46690139062608fb1"
+    },
+    {
+      "scene": "R02",
+      "sequence": "20",
+      "partition": "representation_train",
+      "source_frames": 609,
+      "views": {
+        "global": 153,
+        "crop": 597
+      },
+      "source_feature_sha256": "b6a1ab3488d73bb86b64d6bb2656a85d238f0d604027bbbb6916acd31e80bf5d"
+    },
+    {
+      "scene": "R02",
+      "sequence": "21",
+      "partition": "representation_train",
+      "source_frames": 584,
+      "views": {
+        "global": 146,
+        "crop": 547
+      },
+      "source_feature_sha256": "81c8314d4094ca14476fee3ddda44b92fae4a4918976d1d63e1a7f4b5124780f"
+    },
+    {
+      "scene": "R02",
+      "sequence": "22",
+      "partition": "representation_train",
+      "source_frames": 601,
+      "views": {
+        "global": 151,
+        "crop": 595
+      },
+      "source_feature_sha256": "63ce2c766beb0de5665d3f2223253fa86d42df1afe25754722b37c2c70fd2d88"
+    },
+    {
+      "scene": "R02",
+      "sequence": "23",
+      "partition": "representation_train",
+      "source_frames": 612,
+      "views": {
+        "global": 153,
+        "crop": 592
+      },
+      "source_feature_sha256": "ffaafc6504381f88be0104ed4dbabcaa069395ddbd2176c6323911d373df296e"
+    },
+    {
+      "scene": "R02",
+      "sequence": "24",
+      "partition": "representation_train",
+      "source_frames": 568,
+      "views": {
+        "global": 142,
+        "crop": 552
+      },
+      "source_feature_sha256": "186a77e13c621febcaa70e699e41fbe2dcf434a14caf5f3427f2fdcf81d5817f"
+    },
+    {
+      "scene": "R02",
+      "sequence": "25",
+      "partition": "representation_train",
+      "source_frames": 588,
+      "views": {
+        "global": 147,
+        "crop": 572
+      },
+      "source_feature_sha256": "df59b9d08567202880e7448188a92bf89a9114244f35ff0a6c6cd5577657a864"
+    },
+    {
+      "scene": "R02",
+      "sequence": "26",
+      "partition": "representation_train",
+      "source_frames": 574,
+      "views": {
+        "global": 144,
+        "crop": 563
+      },
+      "source_feature_sha256": "419421636458162f92deae681d4eea397747a8f3789321b57251f7d1d8058e86"
+    },
+    {
+      "scene": "R02",
+      "sequence": "28",
+      "partition": "representation_train",
+      "source_frames": 592,
+      "views": {
+        "global": 148,
+        "crop": 573
+      },
+      "source_feature_sha256": "3c6b73057fb427c3fa5ba339b0e76eba0c866ce7f2cd70fef80c8acba1eb8dae"
+    },
+    {
+      "scene": "R02",
+      "sequence": "29",
+      "partition": "representation_validation",
+      "source_frames": 585,
+      "views": {
+        "global": 147,
+        "crop": 560
+      },
+      "source_feature_sha256": "a6545c5661bccc7ade7ce8c4eae454e3ea713cb1c266d18a4daa3ec71a3180dd"
+    },
+    {
+      "scene": "R02",
+      "sequence": "30",
+      "partition": "representation_train",
+      "source_frames": 568,
+      "views": {
+        "global": 142,
+        "crop": 545
+      },
+      "source_feature_sha256": "8f278eb8e2d5067179af924b946a4da9c41986ad380ebc048d46b6388fd5d091"
+    },
+    {
+      "scene": "R02",
+      "sequence": "01",
+      "partition": "normal_calibration",
+      "source_frames": 642,
+      "views": {
+        "global": 161,
+        "crop": 639
+      },
+      "source_feature_sha256": "c99c521d89f0d7859a1a35264e2c883264284a0a720ff81d536a6c4c42676db9"
+    },
+    {
+      "scene": "R02",
+      "sequence": "05",
+      "partition": "normal_calibration",
+      "source_frames": 602,
+      "views": {
+        "global": 151,
+        "crop": 589
+      },
+      "source_feature_sha256": "db9e21fc8a291ad6eeec14c5fd0ee26d7f7c9c34db4c54d186614de99491e094"
+    },
+    {
+      "scene": "R02",
+      "sequence": "11",
+      "partition": "normal_calibration",
+      "source_frames": 600,
+      "views": {
+        "global": 150,
+        "crop": 589
+      },
+      "source_feature_sha256": "ef012ee84d11a17315a2d5a46cda3292d6b58e404aad7c8604b0d7b998397243"
+    },
+    {
+      "scene": "R02",
+      "sequence": "13",
+      "partition": "normal_calibration",
+      "source_frames": 591,
+      "views": {
+        "global": 148,
+        "crop": 599
+      },
+      "source_feature_sha256": "0f81cff99862ef24cbc871c121a128b777d5b00f447b6b5587f9ada3aef89d36"
+    },
+    {
+      "scene": "R02",
+      "sequence": "19",
+      "partition": "normal_calibration",
+      "source_frames": 602,
+      "views": {
+        "global": 151,
+        "crop": 560
+      },
+      "source_feature_sha256": "5fbf81bb746febf5189c4350b34b64113b00ad5431993da57d11d30b6dbdd597"
+    },
+    {
+      "scene": "R02",
+      "sequence": "27",
+      "partition": "normal_calibration",
+      "source_frames": 589,
+      "views": {
+        "global": 148,
+        "crop": 547
+      },
+      "source_feature_sha256": "4a03f734124d85e071b524c74e4a6133912d5311d8d5e6725caad5466f0172f9"
+    },
+    {
+      "scene": "R03",
+      "sequence": "01",
+      "partition": "representation_train",
+      "source_frames": 668,
+      "views": {
+        "global": 167,
+        "crop": 470
+      },
+      "source_feature_sha256": "063946cea13314edcee823ada78cd21642ba3aa1d991fb39043e81fb76340d32"
+    },
+    {
+      "scene": "R03",
+      "sequence": "02",
+      "partition": "representation_train",
+      "source_frames": 692,
+      "views": {
+        "global": 173,
+        "crop": 406
+      },
+      "source_feature_sha256": "dc9435bf1704d261d00c026869f01f8a7e64c8acbd987b15dff81f2e4d1fb687"
+    },
+    {
+      "scene": "R03",
+      "sequence": "03",
+      "partition": "representation_train",
+      "source_frames": 723,
+      "views": {
+        "global": 181,
+        "crop": 488
+      },
+      "source_feature_sha256": "ba8ba557163ff05ab445c740b10d5f776622e998b59be94744334b4721ccf69d"
+    },
+    {
+      "scene": "R03",
+      "sequence": "04",
+      "partition": "representation_train",
+      "source_frames": 688,
+      "views": {
+        "global": 172,
+        "crop": 404
+      },
+      "source_feature_sha256": "98990a3853dda9df72cd2571a3ce15b8105ffc649d5d1bc5975779d6ceb7b41a"
+    },
+    {
+      "scene": "R03",
+      "sequence": "05",
+      "partition": "representation_train",
+      "source_frames": 705,
+      "views": {
+        "global": 177,
+        "crop": 425
+      },
+      "source_feature_sha256": "923363e0a39272d48f9b59c3e375999ce9bb150620a3ef9a862f2bfec1dc8295"
+    },
+    {
+      "scene": "R03",
+      "sequence": "06",
+      "partition": "representation_train",
+      "source_frames": 706,
+      "views": {
+        "global": 177,
+        "crop": 442
+      },
+      "source_feature_sha256": "be010c77a94c1b73fdd484cab777a7becf31fb145b2e4d6fd5079f75edafc947"
+    },
+    {
+      "scene": "R03",
+      "sequence": "09",
+      "partition": "representation_train",
+      "source_frames": 742,
+      "views": {
+        "global": 186,
+        "crop": 433
+      },
+      "source_feature_sha256": "c96bf462fa8761ec3c679793c1f79537041aa1e1ad85481e67a17c5dc1c41354"
+    },
+    {
+      "scene": "R03",
+      "sequence": "10",
+      "partition": "representation_train",
+      "source_frames": 697,
+      "views": {
+        "global": 175,
+        "crop": 419
+      },
+      "source_feature_sha256": "08deb7e297c7c71ca2053f6bfd5f2860e3be29e990a48db3d202bbecb817ecd0"
+    },
+    {
+      "scene": "R03",
+      "sequence": "11",
+      "partition": "representation_train",
+      "source_frames": 696,
+      "views": {
+        "global": 174,
+        "crop": 409
+      },
+      "source_feature_sha256": "070d5aa1c3a4165c34b110162a8051f50d10a0481db17bfa57515c56b5c830ec"
+    },
+    {
+      "scene": "R03",
+      "sequence": "12",
+      "partition": "representation_train",
+      "source_frames": 745,
+      "views": {
+        "global": 187,
+        "crop": 433
+      },
+      "source_feature_sha256": "bde976d19805f64a4464c03675138953718961543c62dacfa41095adcdf9301d"
+    },
+    {
+      "scene": "R03",
+      "sequence": "13",
+      "partition": "representation_train",
+      "source_frames": 720,
+      "views": {
+        "global": 180,
+        "crop": 464
+      },
+      "source_feature_sha256": "cd23b3e91e97f9bbd5662b30c2bc15bb2aad5baed6ac107e35434dbad93a0868"
+    },
+    {
+      "scene": "R03",
+      "sequence": "14",
+      "partition": "representation_train",
+      "source_frames": 630,
+      "views": {
+        "global": 158,
+        "crop": 438
+      },
+      "source_feature_sha256": "bd0989556d6340c2a1f91e5c1a6c5888f00ee6b8339d584293b01cf3bbbf9b70"
+    },
+    {
+      "scene": "R03",
+      "sequence": "16",
+      "partition": "representation_validation",
+      "source_frames": 656,
+      "views": {
+        "global": 164,
+        "crop": 390
+      },
+      "source_feature_sha256": "5ea9b003d05cd72e3f826427eadcb3bdb94e7bd66070287071dfe75b8d617426"
+    },
+    {
+      "scene": "R03",
+      "sequence": "17",
+      "partition": "representation_validation",
+      "source_frames": 685,
+      "views": {
+        "global": 172,
+        "crop": 410
+      },
+      "source_feature_sha256": "43b812591d3a48769b3a95b8a8f0c82808bc4e3f293bb2830e8822ff7d56e554"
+    },
+    {
+      "scene": "R03",
+      "sequence": "18",
+      "partition": "representation_validation",
+      "source_frames": 690,
+      "views": {
+        "global": 173,
+        "crop": 401
+      },
+      "source_feature_sha256": "4b974cd6e619c922a90a965c1781acc445290af98396facde7911e3d13a53e55"
+    },
+    {
+      "scene": "R03",
+      "sequence": "19",
+      "partition": "representation_validation",
+      "source_frames": 694,
+      "views": {
+        "global": 174,
+        "crop": 420
+      },
+      "source_feature_sha256": "2c1a0732beb165cc4a5cced5c8bac1011543ec68a75133f904a349dfbc12139c"
+    },
+    {
+      "scene": "R03",
+      "sequence": "20",
+      "partition": "representation_train",
+      "source_frames": 690,
+      "views": {
+        "global": 173,
+        "crop": 404
+      },
+      "source_feature_sha256": "efa71f6181fdd42afd344e971fa4c938e9440b02589644f0564afdd688ad296e"
+    },
+    {
+      "scene": "R03",
+      "sequence": "21",
+      "partition": "representation_train",
+      "source_frames": 713,
+      "views": {
+        "global": 179,
+        "crop": 483
+      },
+      "source_feature_sha256": "44465efc9076b26a838580b34447263e46e2d991ecb081c30a041520bd526879"
+    },
+    {
+      "scene": "R03",
+      "sequence": "07",
+      "partition": "normal_calibration",
+      "source_frames": 689,
+      "views": {
+        "global": 173,
+        "crop": 413
+      },
+      "source_feature_sha256": "d1b15d07fc72a2d7d29916248c7db0a6d8cb124b549ca19560ce16afbab2d8df"
+    },
+    {
+      "scene": "R03",
+      "sequence": "08",
+      "partition": "normal_calibration",
+      "source_frames": 708,
+      "views": {
+        "global": 177,
+        "crop": 366
+      },
+      "source_feature_sha256": "4e1c62013edc301c72bcae72f1370102c695b1274a72ff811bc2f8a7a08bed82"
+    },
+    {
+      "scene": "R03",
+      "sequence": "15",
+      "partition": "normal_calibration",
+      "source_frames": 706,
+      "views": {
+        "global": 177,
+        "crop": 427
+      },
+      "source_feature_sha256": "f1df0a7a2a7dea446d5c38085e3d042bb68064497887f2820ccc861a3fff9c54"
+    },
+    {
+      "scene": "R03",
+      "sequence": "22",
+      "partition": "normal_calibration",
+      "source_frames": 703,
+      "views": {
+        "global": 176,
+        "crop": 460
+      },
+      "source_feature_sha256": "f2f8575766105a5e94c20c54efcc8ba5ddf35541dd777812cc7845871a12689a"
+    },
+    {
+      "scene": "R04",
+      "sequence": "01",
+      "partition": "representation_validation",
+      "source_frames": 309,
+      "views": {
+        "global": 78,
+        "crop": 275
+      },
+      "source_feature_sha256": "f4861e11d56e989c5e472dca39a35b886837f28f2e044dfbb071af8ead597c25"
+    },
+    {
+      "scene": "R04",
+      "sequence": "03",
+      "partition": "representation_train",
+      "source_frames": 461,
+      "views": {
+        "global": 116,
+        "crop": 416
+      },
+      "source_feature_sha256": "111109a3fbfd5d3ae133fb9668b6679808a1b95d38c75e9ee7589f63befe7c0f"
+    },
+    {
+      "scene": "R04",
+      "sequence": "04",
+      "partition": "representation_train",
+      "source_frames": 408,
+      "views": {
+        "global": 102,
+        "crop": 322
+      },
+      "source_feature_sha256": "e395c756be623703506b7e87582dfc26a1d6499a654d699728f08a11c77c6541"
+    },
+    {
+      "scene": "R04",
+      "sequence": "05",
+      "partition": "representation_validation",
+      "source_frames": 437,
+      "views": {
+        "global": 110,
+        "crop": 388
+      },
+      "source_feature_sha256": "76ff852a4747bee1840dbba4053f2085e060014639ae2b94fef5b63659b1e9d7"
+    },
+    {
+      "scene": "R04",
+      "sequence": "06",
+      "partition": "representation_train",
+      "source_frames": 448,
+      "views": {
+        "global": 112,
+        "crop": 372
+      },
+      "source_feature_sha256": "e26ca1782f69b8e92b87015d7e9ac8bc5f23d89c1f76ce0b4fdc61f78d21a198"
+    },
+    {
+      "scene": "R04",
+      "sequence": "07",
+      "partition": "representation_train",
+      "source_frames": 385,
+      "views": {
+        "global": 97,
+        "crop": 319
+      },
+      "source_feature_sha256": "cd93f3e4db20b6629e158067088f70bfbfb0b16e44f1eb92697cd26c4d2c5f90"
+    },
+    {
+      "scene": "R04",
+      "sequence": "09",
+      "partition": "representation_train",
+      "source_frames": 417,
+      "views": {
+        "global": 105,
+        "crop": 349
+      },
+      "source_feature_sha256": "41973024eb4aee856aa7c86ea84699802a9984ca41732d8abe3126a8bd67088f"
+    },
+    {
+      "scene": "R04",
+      "sequence": "11",
+      "partition": "representation_validation",
+      "source_frames": 340,
+      "views": {
+        "global": 85,
+        "crop": 283
+      },
+      "source_feature_sha256": "53cc3532314aec12a42088dcd671539a361d90a9d23be4a2f4eb58710a87deb9"
+    },
+    {
+      "scene": "R04",
+      "sequence": "13",
+      "partition": "representation_train",
+      "source_frames": 382,
+      "views": {
+        "global": 96,
+        "crop": 317
+      },
+      "source_feature_sha256": "3d721f3eff82af92f3af37de9c38679a13fdb16c301e707d20f151d19f278784"
+    },
+    {
+      "scene": "R04",
+      "sequence": "14",
+      "partition": "representation_train",
+      "source_frames": 323,
+      "views": {
+        "global": 81,
+        "crop": 264
+      },
+      "source_feature_sha256": "424900922d19d190ec2af910eabef9b9a9d5e4f9e8d6835f9345f0548ff1d70c"
+    },
+    {
+      "scene": "R04",
+      "sequence": "16",
+      "partition": "representation_train",
+      "source_frames": 373,
+      "views": {
+        "global": 94,
+        "crop": 308
+      },
+      "source_feature_sha256": "2bf08676c47c5e64245fb255582f82a97f30c15e7480033e9702ffe55ab9aca1"
+    },
+    {
+      "scene": "R04",
+      "sequence": "17",
+      "partition": "representation_validation",
+      "source_frames": 372,
+      "views": {
+        "global": 93,
+        "crop": 347
+      },
+      "source_feature_sha256": "2c1082e230a442a9a3ddda53fe95a42c5cd7af8c81e41044ae9eac206c419f55"
+    },
+    {
+      "scene": "R04",
+      "sequence": "18",
+      "partition": "representation_train",
+      "source_frames": 412,
+      "views": {
+        "global": 103,
+        "crop": 339
+      },
+      "source_feature_sha256": "b8d30a27418d5bd9d95f63de79404f5d6472111555006931f5c7adc09987b216"
+    },
+    {
+      "scene": "R04",
+      "sequence": "19",
+      "partition": "representation_train",
+      "source_frames": 396,
+      "views": {
+        "global": 99,
+        "crop": 356
+      },
+      "source_feature_sha256": "224872ad6fe9464cd8ce35ef47d04bf0130c84fe51a46932a51cc1659112eb51"
+    },
+    {
+      "scene": "R04",
+      "sequence": "20",
+      "partition": "representation_train",
+      "source_frames": 404,
+      "views": {
+        "global": 101,
+        "crop": 332
+      },
+      "source_feature_sha256": "b348ec92f6f8726bfb98dc25200cabf464974719f2c865bd93b2a93ce57b6e4e"
+    },
+    {
+      "scene": "R04",
+      "sequence": "21",
+      "partition": "representation_train",
+      "source_frames": 417,
+      "views": {
+        "global": 105,
+        "crop": 359
+      },
+      "source_feature_sha256": "7f3b83417fd58157d0cc006f25ab0fd960714fb9cbac0c2258397210fe3730f1"
+    },
+    {
+      "scene": "R04",
+      "sequence": "22",
+      "partition": "representation_train",
+      "source_frames": 380,
+      "views": {
+        "global": 95,
+        "crop": 312
+      },
+      "source_feature_sha256": "7418c547b2db6652df110dd4f40d7bdd49b2a29be890c9672e82402fc224bfa3"
+    },
+    {
+      "scene": "R04",
+      "sequence": "23",
+      "partition": "representation_train",
+      "source_frames": 377,
+      "views": {
+        "global": 95,
+        "crop": 312
+      },
+      "source_feature_sha256": "a4167cb98d8758c57a4164ae7d9145d4c7708ce8f05d4e7560cd931b7449d3c4"
+    },
+    {
+      "scene": "R04",
+      "sequence": "24",
+      "partition": "representation_train",
+      "source_frames": 368,
+      "views": {
+        "global": 92,
+        "crop": 290
+      },
+      "source_feature_sha256": "8d107ba8b7f865933b0b8c956866c0a11f4703733fc9244c679e645170492267"
+    },
+    {
+      "scene": "R04",
+      "sequence": "25",
+      "partition": "representation_train",
+      "source_frames": 403,
+      "views": {
+        "global": 101,
+        "crop": 324
+      },
+      "source_feature_sha256": "b829b7a1c38f799a343b04a1a37c5c7a674693a269d18b2e0048f2489e4a2147"
+    },
+    {
+      "scene": "R04",
+      "sequence": "02",
+      "partition": "normal_calibration",
+      "source_frames": 409,
+      "views": {
+        "global": 103,
+        "crop": 355
+      },
+      "source_feature_sha256": "d1dbba6834404bf0eda35f75081d053b1081fece4de077fcbcb3b3898cf65c56"
+    },
+    {
+      "scene": "R04",
+      "sequence": "08",
+      "partition": "normal_calibration",
+      "source_frames": 413,
+      "views": {
+        "global": 104,
+        "crop": 340
+      },
+      "source_feature_sha256": "7b7c026617b91f89c05a4522203ddb0e272effbf16f049d3ece77e80def5bbdc"
+    },
+    {
+      "scene": "R04",
+      "sequence": "10",
+      "partition": "normal_calibration",
+      "source_frames": 376,
+      "views": {
+        "global": 94,
+        "crop": 309
+      },
+      "source_feature_sha256": "32cf101404552b218035c71c6d6200e74b0988debb7cc044609a3e2e8895813a"
+    },
+    {
+      "scene": "R04",
+      "sequence": "12",
+      "partition": "normal_calibration",
+      "source_frames": 382,
+      "views": {
+        "global": 96,
+        "crop": 316
+      },
+      "source_feature_sha256": "c9656f9a2b4b38fba6ed900ddef81a34b104e7957383297378b533da653ea7e7"
+    },
+    {
+      "scene": "R04",
+      "sequence": "15",
+      "partition": "normal_calibration",
+      "source_frames": 340,
+      "views": {
+        "global": 85,
+        "crop": 295
+      },
+      "source_feature_sha256": "ee692d102a1dae92a1f4783d7c31eef2e80b028d1dc375f1dc466d7a704585e2"
+    }
+  ],
+  "view_manifest": "artifacts/experiment40/normal_views.jsonl",
+  "view_manifest_sha256": "7805683b1ac244b53951dd94f15fa1bae6ffefea0e4dc825d36188a5595c0018",
+  "normal_source_feature_sha256": {
+    "artifacts/experiment02/features/R01/training_01.npz": "d938eb78514b570f4e5039a0aeeabc2a76333b6f94ec6ac2afcd7c4385faeac4",
+    "artifacts/experiment02/features/R01/training_02.npz": "75e172d5a357d8fea97305e7fed8b268e77068b371c0a240612d8f3441705975",
+    "artifacts/experiment02/features/R01/training_03.npz": "706098eded98a63334e1ebc69324e4df1108d536c8d9e77531441f444a0b77c7",
+    "artifacts/experiment02/features/R01/training_04.npz": "e6f0d7e929c838e4ece199c9698e147eb98aa5e8494be7447a337f1ca557c4f4",
+    "artifacts/experiment02/features/R01/training_05.npz": "cfaaa4ed05629d63d5651d9d3e82523ed054807192dc9b8d95c6390695fa6ec9",
+    "artifacts/experiment02/features/R01/training_06.npz": "84b209b753356b18392dfa1de597f8c3a07c5fe994e26e1e47b6b828d517dfc0",
+    "artifacts/experiment02/features/R01/training_07.npz": "72693c690aba50d7898fb71eedc079791aed18faaa2220fc387b032102b6848f",
+    "artifacts/experiment02/features/R01/training_08.npz": "c7a067b3677321c1a26139ff2c989fd9de13e7095801a6e91bec2738aa44b09c",
+    "artifacts/experiment02/features/R01/training_10.npz": "70576374afe28c7f3098d0e5fbdb74c9ad764ccc4ef007b83fff8daa741e98c8",
+    "artifacts/experiment02/features/R01/training_12.npz": "87b58264ad5cd3d32716bd2d5d13243e2b11356d4010e243404f20ffb5062e4c",
+    "artifacts/experiment02/features/R01/training_15.npz": "6fba1efdd5e511b57579f309fdb4ec74d695005dabb58ab913665bc3f440e7e8",
+    "artifacts/experiment02/features/R01/training_18.npz": "0ef0db3dadb26dbe4810679ffbfc1ad2c0c2163e7bfe4ef11f31cef14c4d1eb8",
+    "artifacts/experiment02/features/R01/training_19.npz": "a386747f39a5afd1f65b76e8066cfa1bc02df994ed7ca9d4d772bc76bc5b2603",
+    "artifacts/experiment02/features/R01/training_20.npz": "c4c2b19ca150175c217cb8b2369a0fb99824fbad11a1f02fd27e6136689a76e6",
+    "artifacts/experiment02/features/R01/training_21.npz": "ac11bf7e17343a90e53957d634a359ca3f75fb6b48da594fe6ceeda0b7f209d9",
+    "artifacts/experiment02/features/R01/training_22.npz": "e97d1f2412821dc29c3fd0ee4a11cdbe584e9a139f645cce031e300ce0a0e868",
+    "artifacts/experiment02/features/R01/training_23.npz": "899ac603df2b3f6737b931038895255451685e0275f4d699b39c533daff60955",
+    "artifacts/experiment02/features/R01/training_24.npz": "f944cc6305ca409c47dc7ac7165860cfe78e9409ed78fab621bcc09b5e0b458a",
+    "artifacts/experiment02/features/R01/training_25.npz": "cbc9da201bb561a2aeb6e5eedb2e0211aeba2e0da56a4bf5a0e15396d90d868e",
+    "artifacts/experiment02/features/R01/training_26.npz": "4f59bda767ebbb542bdc7b7d6306757bbbf8fe74f87d05e5416bd8b564fbd1ec",
+    "artifacts/experiment02/features/R01/training_27.npz": "6345d2dbb5e280ee62b945417c41c7c50a0dd41090d0e748bd844ef21db7996e",
+    "artifacts/experiment02/features/R01/training_28.npz": "3ebb21162c888ac16ecc41e2230a4e7bc393cfe7f4a70b0c00ba86e403578a51",
+    "artifacts/experiment02/features/R01/training_29.npz": "a5fdaf44412290d690fbda69043ca99e9ecc96807b25be1b71956cacea785cf4",
+    "artifacts/experiment02/features/R01/training_30.npz": "3e77250078cd5178c70e37da112fd1c818182eb23a4138c7176e78d04307e406",
+    "artifacts/experiment02/features/R01/training_32.npz": "f9fb57ee85dea74a5e89789e74c5abb3e2b8f95ec42fbfec77002c0b5a71f208",
+    "artifacts/experiment02/features/R01/training_33.npz": "f6fa78d345aab6a4bbdbe0a9a7602228e970fca45060a14444a445a0aefbda66",
+    "artifacts/experiment02/features/R01/training_34.npz": "32699247efed865f51c4dee46677b6ed70ec83c0d1dfbb81792de04d94f0e670",
+    "artifacts/experiment02/features/R01/training_09.npz": "be1e14746d1da6ef5b18709e139fef7abd577d38086aafa35fef8fe24220de2b",
+    "artifacts/experiment02/features/R01/training_11.npz": "dc96aa5a2147f7dcb81ec1c18fd886d2e577c81d728ffe041f3fd1184b1dd332",
+    "artifacts/experiment02/features/R01/training_13.npz": "39d209080b545ffd52ec49a247c4b4151cb434c7315261e2d2e083aa806623cc",
+    "artifacts/experiment02/features/R01/training_14.npz": "7231435e4d01a66959c05cc8418c7e3d0640db07fb778bf7fbc8f8e7e747953d",
+    "artifacts/experiment02/features/R01/training_16.npz": "9846a3244cb3239743be7fb2d96e1c8f12cc219cba3e681719cf17fa20b5abee",
+    "artifacts/experiment02/features/R01/training_17.npz": "62e999c7990b1da817ee0310c0e2a3b739e82bf057a511c14d0bc6a6a6ad1540",
+    "artifacts/experiment02/features/R01/training_31.npz": "d3085207ae5b339607964e04eba518db71a5b30ce90c8b5d73d3937100889cfa",
+    "artifacts/experiment40_R02_base/features/R02/training_02.npz": "1385305fcd0869c17de3cec080a6d6e7f9e475598293870cc82f022be8510b09",
+    "artifacts/experiment40_R02_base/features/R02/training_03.npz": "15ef4a329870e5540d77b54afd8a3eb0a7c1c0e099f5d0464133ad58bab0619a",
+    "artifacts/experiment40_R02_base/features/R02/training_04.npz": "4fa22e3b50badb111dcff375e449a6ee0156c8b2570ecbe190cb6375a9a76301",
+    "artifacts/experiment40_R02_base/features/R02/training_06.npz": "b2ebb880ebf65ddb57f2424edc5c1abe5a7dd0a3b432ea8bf7cbb002b4a0b74d",
+    "artifacts/experiment40_R02_base/features/R02/training_07.npz": "774a95e43ac5d9412ddd74547f015e16cfc7bbdf4477348140b0d07e757bd401",
+    "artifacts/experiment40_R02_base/features/R02/training_08.npz": "173fa05e17fbc0cb377ed5db8c5f6276ac9340d9a38c5aee7d1dcc00f1cfac71",
+    "artifacts/experiment40_R02_base/features/R02/training_09.npz": "7c0418e4988968ac19cab8e07a669e303d0e7f4d4c1c626a161a5bd0fd160f0f",
+    "artifacts/experiment40_R02_base/features/R02/training_10.npz": "23414021e1822b80b61e6219ad243f61dfe2e7fddbafdaccc9a7ea89f9937fdd",
+    "artifacts/experiment40_R02_base/features/R02/training_12.npz": "6c2d722020abbf8de5377962026a5e6c6b81cd217d8c4d7b10f163c8ef9a25c0",
+    "artifacts/experiment40_R02_base/features/R02/training_14.npz": "9e9efb16f0ca54fb26548aa0e5398f2bc2385b4be7bd269c0f79b4a23d6aea0f",
+    "artifacts/experiment40_R02_base/features/R02/training_15.npz": "5f33e516a73bfb4eef2e0a3f6e9bf7400f73e36bce780d59c1f3bb481d1a486d",
+    "artifacts/experiment40_R02_base/features/R02/training_16.npz": "675bb3b0fcaa21d198d944e75538d7e2058e946c90055807912055b20f354c93",
+    "artifacts/experiment40_R02_base/features/R02/training_17.npz": "2da1093902696003d1fd9362441afcc84107671f1aee0310c96d351585032c6b",
+    "artifacts/experiment40_R02_base/features/R02/training_18.npz": "86569738fd8566ade1262000fc5033e5e29403d43e7225c46690139062608fb1",
+    "artifacts/experiment40_R02_base/features/R02/training_20.npz": "b6a1ab3488d73bb86b64d6bb2656a85d238f0d604027bbbb6916acd31e80bf5d",
+    "artifacts/experiment40_R02_base/features/R02/training_21.npz": "81c8314d4094ca14476fee3ddda44b92fae4a4918976d1d63e1a7f4b5124780f",
+    "artifacts/experiment40_R02_base/features/R02/training_22.npz": "63ce2c766beb0de5665d3f2223253fa86d42df1afe25754722b37c2c70fd2d88",
+    "artifacts/experiment40_R02_base/features/R02/training_23.npz": "ffaafc6504381f88be0104ed4dbabcaa069395ddbd2176c6323911d373df296e",
+    "artifacts/experiment40_R02_base/features/R02/training_24.npz": "186a77e13c621febcaa70e699e41fbe2dcf434a14caf5f3427f2fdcf81d5817f",
+    "artifacts/experiment40_R02_base/features/R02/training_25.npz": "df59b9d08567202880e7448188a92bf89a9114244f35ff0a6c6cd5577657a864",
+    "artifacts/experiment40_R02_base/features/R02/training_26.npz": "419421636458162f92deae681d4eea397747a8f3789321b57251f7d1d8058e86",
+    "artifacts/experiment40_R02_base/features/R02/training_28.npz": "3c6b73057fb427c3fa5ba339b0e76eba0c866ce7f2cd70fef80c8acba1eb8dae",
+    "artifacts/experiment40_R02_base/features/R02/training_29.npz": "a6545c5661bccc7ade7ce8c4eae454e3ea713cb1c266d18a4daa3ec71a3180dd",
+    "artifacts/experiment40_R02_base/features/R02/training_30.npz": "8f278eb8e2d5067179af924b946a4da9c41986ad380ebc048d46b6388fd5d091",
+    "artifacts/experiment40_R02_base/features/R02/training_01.npz": "c99c521d89f0d7859a1a35264e2c883264284a0a720ff81d536a6c4c42676db9",
+    "artifacts/experiment40_R02_base/features/R02/training_05.npz": "db9e21fc8a291ad6eeec14c5fd0ee26d7f7c9c34db4c54d186614de99491e094",
+    "artifacts/experiment40_R02_base/features/R02/training_11.npz": "ef012ee84d11a17315a2d5a46cda3292d6b58e404aad7c8604b0d7b998397243",
+    "artifacts/experiment40_R02_base/features/R02/training_13.npz": "0f81cff99862ef24cbc871c121a128b777d5b00f447b6b5587f9ada3aef89d36",
+    "artifacts/experiment40_R02_base/features/R02/training_19.npz": "5fbf81bb746febf5189c4350b34b64113b00ad5431993da57d11d30b6dbdd597",
+    "artifacts/experiment40_R02_base/features/R02/training_27.npz": "4a03f734124d85e071b524c74e4a6133912d5311d8d5e6725caad5466f0172f9",
+    "artifacts/experiment14/features/R03/training_01.npz": "063946cea13314edcee823ada78cd21642ba3aa1d991fb39043e81fb76340d32",
+    "artifacts/experiment14/features/R03/training_02.npz": "dc9435bf1704d261d00c026869f01f8a7e64c8acbd987b15dff81f2e4d1fb687",
+    "artifacts/experiment14/features/R03/training_03.npz": "ba8ba557163ff05ab445c740b10d5f776622e998b59be94744334b4721ccf69d",
+    "artifacts/experiment14/features/R03/training_04.npz": "98990a3853dda9df72cd2571a3ce15b8105ffc649d5d1bc5975779d6ceb7b41a",
+    "artifacts/experiment14/features/R03/training_05.npz": "923363e0a39272d48f9b59c3e375999ce9bb150620a3ef9a862f2bfec1dc8295",
+    "artifacts/experiment14/features/R03/training_06.npz": "be010c77a94c1b73fdd484cab777a7becf31fb145b2e4d6fd5079f75edafc947",
+    "artifacts/experiment14/features/R03/training_09.npz": "c96bf462fa8761ec3c679793c1f79537041aa1e1ad85481e67a17c5dc1c41354",
+    "artifacts/experiment14/features/R03/training_10.npz": "08deb7e297c7c71ca2053f6bfd5f2860e3be29e990a48db3d202bbecb817ecd0",
+    "artifacts/experiment14/features/R03/training_11.npz": "070d5aa1c3a4165c34b110162a8051f50d10a0481db17bfa57515c56b5c830ec",
+    "artifacts/experiment14/features/R03/training_12.npz": "bde976d19805f64a4464c03675138953718961543c62dacfa41095adcdf9301d",
+    "artifacts/experiment14/features/R03/training_13.npz": "cd23b3e91e97f9bbd5662b30c2bc15bb2aad5baed6ac107e35434dbad93a0868",
+    "artifacts/experiment14/features/R03/training_14.npz": "bd0989556d6340c2a1f91e5c1a6c5888f00ee6b8339d584293b01cf3bbbf9b70",
+    "artifacts/experiment14/features/R03/training_16.npz": "5ea9b003d05cd72e3f826427eadcb3bdb94e7bd66070287071dfe75b8d617426",
+    "artifacts/experiment14/features/R03/training_17.npz": "43b812591d3a48769b3a95b8a8f0c82808bc4e3f293bb2830e8822ff7d56e554",
+    "artifacts/experiment14/features/R03/training_18.npz": "4b974cd6e619c922a90a965c1781acc445290af98396facde7911e3d13a53e55",
+    "artifacts/experiment14/features/R03/training_19.npz": "2c1a0732beb165cc4a5cced5c8bac1011543ec68a75133f904a349dfbc12139c",
+    "artifacts/experiment14/features/R03/training_20.npz": "efa71f6181fdd42afd344e971fa4c938e9440b02589644f0564afdd688ad296e",
+    "artifacts/experiment14/features/R03/training_21.npz": "44465efc9076b26a838580b34447263e46e2d991ecb081c30a041520bd526879",
+    "artifacts/experiment14/features/R03/training_07.npz": "d1b15d07fc72a2d7d29916248c7db0a6d8cb124b549ca19560ce16afbab2d8df",
+    "artifacts/experiment14/features/R03/training_08.npz": "4e1c62013edc301c72bcae72f1370102c695b1274a72ff811bc2f8a7a08bed82",
+    "artifacts/experiment14/features/R03/training_15.npz": "f1df0a7a2a7dea446d5c38085e3d042bb68064497887f2820ccc861a3fff9c54",
+    "artifacts/experiment14/features/R03/training_22.npz": "f2f8575766105a5e94c20c54efcc8ba5ddf35541dd777812cc7845871a12689a",
+    "artifacts/experiment37/asinh/features/R04/training_01.npz": "f4861e11d56e989c5e472dca39a35b886837f28f2e044dfbb071af8ead597c25",
+    "artifacts/experiment37/asinh/features/R04/training_03.npz": "111109a3fbfd5d3ae133fb9668b6679808a1b95d38c75e9ee7589f63befe7c0f",
+    "artifacts/experiment37/asinh/features/R04/training_04.npz": "e395c756be623703506b7e87582dfc26a1d6499a654d699728f08a11c77c6541",
+    "artifacts/experiment37/asinh/features/R04/training_05.npz": "76ff852a4747bee1840dbba4053f2085e060014639ae2b94fef5b63659b1e9d7",
+    "artifacts/experiment37/asinh/features/R04/training_06.npz": "e26ca1782f69b8e92b87015d7e9ac8bc5f23d89c1f76ce0b4fdc61f78d21a198",
+    "artifacts/experiment37/asinh/features/R04/training_07.npz": "cd93f3e4db20b6629e158067088f70bfbfb0b16e44f1eb92697cd26c4d2c5f90",
+    "artifacts/experiment37/asinh/features/R04/training_09.npz": "41973024eb4aee856aa7c86ea84699802a9984ca41732d8abe3126a8bd67088f",
+    "artifacts/experiment37/asinh/features/R04/training_11.npz": "53cc3532314aec12a42088dcd671539a361d90a9d23be4a2f4eb58710a87deb9",
+    "artifacts/experiment37/asinh/features/R04/training_13.npz": "3d721f3eff82af92f3af37de9c38679a13fdb16c301e707d20f151d19f278784",
+    "artifacts/experiment37/asinh/features/R04/training_14.npz": "424900922d19d190ec2af910eabef9b9a9d5e4f9e8d6835f9345f0548ff1d70c",
+    "artifacts/experiment37/asinh/features/R04/training_16.npz": "2bf08676c47c5e64245fb255582f82a97f30c15e7480033e9702ffe55ab9aca1",
+    "artifacts/experiment37/asinh/features/R04/training_17.npz": "2c1082e230a442a9a3ddda53fe95a42c5cd7af8c81e41044ae9eac206c419f55",
+    "artifacts/experiment37/asinh/features/R04/training_18.npz": "b8d30a27418d5bd9d95f63de79404f5d6472111555006931f5c7adc09987b216",
+    "artifacts/experiment37/asinh/features/R04/training_19.npz": "224872ad6fe9464cd8ce35ef47d04bf0130c84fe51a46932a51cc1659112eb51",
+    "artifacts/experiment37/asinh/features/R04/training_20.npz": "b348ec92f6f8726bfb98dc25200cabf464974719f2c865bd93b2a93ce57b6e4e",
+    "artifacts/experiment37/asinh/features/R04/training_21.npz": "7f3b83417fd58157d0cc006f25ab0fd960714fb9cbac0c2258397210fe3730f1",
+    "artifacts/experiment37/asinh/features/R04/training_22.npz": "7418c547b2db6652df110dd4f40d7bdd49b2a29be890c9672e82402fc224bfa3",
+    "artifacts/experiment37/asinh/features/R04/training_23.npz": "a4167cb98d8758c57a4164ae7d9145d4c7708ce8f05d4e7560cd931b7449d3c4",
+    "artifacts/experiment37/asinh/features/R04/training_24.npz": "8d107ba8b7f865933b0b8c956866c0a11f4703733fc9244c679e645170492267",
+    "artifacts/experiment37/asinh/features/R04/training_25.npz": "b829b7a1c38f799a343b04a1a37c5c7a674693a269d18b2e0048f2489e4a2147",
+    "artifacts/experiment37/asinh/features/R04/training_02.npz": "d1dbba6834404bf0eda35f75081d053b1081fece4de077fcbcb3b3898cf65c56",
+    "artifacts/experiment37/asinh/features/R04/training_08.npz": "7b7c026617b91f89c05a4522203ddb0e272effbf16f049d3ece77e80def5bbdc",
+    "artifacts/experiment37/asinh/features/R04/training_10.npz": "32cf101404552b218035c71c6d6200e74b0988debb7cc044609a3e2e8895813a",
+    "artifacts/experiment37/asinh/features/R04/training_12.npz": "c9656f9a2b4b38fba6ed900ddef81a34b104e7957383297378b533da653ea7e7",
+    "artifacts/experiment37/asinh/features/R04/training_15.npz": "ee692d102a1dae92a1f4783d7c31eef2e80b028d1dc375f1dc466d7a704585e2"
+  },
+  "model": {
+    "repo": "timm/MobileCLIP2-S2-OpenCLIP",
+    "revision": "ac6b37c8fc40b62b623d09ed228a6f0c9bc29fe6",
+    "local_path": ".cache/huggingface/hub/models--timm--MobileCLIP2-S2-OpenCLIP/snapshots/ac6b37c8fc40b62b623d09ed228a6f0c9bc29fe6",
+    "sha256": {
+      "open_clip_model.safetensors": "92f6bdcf3665a31eb05b83e41e3de665055a9dfe2f8ed8274fcf7ee08c692d68",
+      "open_clip_config.json": "e3b764439eccd2dcd77308978093f6b91cf0a7653606c9c2e758a43b375f7bb6"
+    }
+  },
+  "total_normal_videos": 111,
+  "view_count": 54047,
+  "calibration_views_excluded_from_encoder": 10601,
+  "original_splits_sha256": "ff22af881f82595776120efa9da7a15ef2d551814c3b896d2f42e65e27575bc8",
+  "note": "Whole-video split; independent recording groups unknown. Cached detector and phase outputs are fixed and shared by A-D; no learned ReID or phase supervision."
+}

@@ -1,0 +1,23 @@
+{
+  "python": "3.12.3",
+  "packages": {
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "transformers": "4.57.6",
+    "open_clip_torch": "3.3.0",
+    "timm": "1.0.30",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pillow": "12.3.0",
+    "safetensors": "0.8.0",
+    "matplotlib": "3.11.2"
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 96 GB",
+  "comparison_timing_limitations": [
+    "Shared host, background applications active; wall time is descriptive, not an isolated architecture benchmark.",
+    "A/B extraction includes IO/preprocessing/serialization; model load excluded.",
+    "B extraction overlapped GPU numerical smoke in part.",
+    "Early aborted loader configuration retained as resource preflight, not an adaptation result."
+  ]
+}
