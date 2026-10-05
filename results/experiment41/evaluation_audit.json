@@ -1,0 +1,10 @@
+{
+  "models_refitted_exact_to_frozen_normal": 32,
+  "full_normal_scores_reconstructed": 32,
+  "source_metadata_checks": 528,
+  "test_process_array_checks": 2639,
+  "prediction_files_frozen_before_any_labels": 528,
+  "predictions_unchanged_after_labels": true,
+  "metric_rows": 32,
+  "per_sequence_rows": 528
+}

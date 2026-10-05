@@ -1,0 +1,18 @@
+{
+  "normal_files_verified": 888,
+  "full_and_holdout_normal_models_scores_reconstructed": 208,
+  "test_predictions_reconstructed": 528,
+  "auroc_recomputed_from_midranks": true,
+  "ap_recomputed_from_tied_thresholds": true,
+  "alarms_events_recomputed": true,
+  "protocols_verified": true,
+  "training_runs": [
+    {
+      "run": "shared_detector_s42",
+      "selected_epoch": 5,
+      "updates": 455
+    }
+  ],
+  "training_checkpoint_selection_normal_only": true,
+  "independent_recording_groups_available": false
+}

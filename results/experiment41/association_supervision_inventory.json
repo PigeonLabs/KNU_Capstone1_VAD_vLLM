@@ -1,0 +1,2809 @@
+{
+  "normal_only": true,
+  "confidence_min": 0.5,
+  "positive_rule": "unique row/column adjacent IoU >= .7, candidate only",
+  "negative_rule": "same-frame same-role distinct boxes IoU <= .1, candidate only",
+  "identity_ground_truth": false,
+  "rows": [
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "01",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 50,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "01",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 51,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "01",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 51,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 48,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 50,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 50,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "05",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 47,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "05",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "05",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 49,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 55,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 46,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "08",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 49,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 3
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "08",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "08",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "12",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 42,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 10
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "12",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "12",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "19",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 42,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 7
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "19",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "19",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 35,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 46,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 48,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 56,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 46,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 51,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 47,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 54,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 56,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "26",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 46,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "26",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 47,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "26",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 59,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "27",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 42,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "27",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 53,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "27",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "28",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 41,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 7
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "28",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 52,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "28",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 56,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "29",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 48,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "29",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 56,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "29",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "30",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 37,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "30",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 55,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "30",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "32",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 37,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 12
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "32",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 54,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "32",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "33",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 35,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 16
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "33",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "33",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "34",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 42,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "34",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_train",
+      "sequence": "34",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "02",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 50,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 3
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "02",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 53,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "02",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 53,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "04",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 49,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "04",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 55,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "04",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "10",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 49,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "10",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "10",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "15",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 34,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "15",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 54,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "15",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "18",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 41,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 7
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "18",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 48,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "18",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 56,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "24",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 43,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 10
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "24",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "representation_validation",
+      "sequence": "24",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "09",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 45,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "09",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "09",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "11",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 37,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "11",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "11",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "13",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 41,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "13",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "13",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "14",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 43,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "14",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 55,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "14",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "16",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 39,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "16",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 53,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "16",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "17",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 41,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "17",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 54,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "17",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "31",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 37,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 17
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "31",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 56,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R01",
+      "group": "normal_calibration",
+      "sequence": "31",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 58,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "02",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 151,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "02",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 122,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "02",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 137,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 122,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 57,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 152,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 119,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 74,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 146,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 122,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 71,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 148,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 122,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "10",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 148,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "10",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 120,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "10",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "15",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 152,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "15",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 117,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "15",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "16",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 146,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "16",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 118,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "16",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "17",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 143,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "17",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 117,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "17",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 70,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "18",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 144,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "18",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 118,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "18",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 70,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 152,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 125,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 76,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 145,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 116,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 71,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 150,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 122,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 74,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 152,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 123,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "24",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 141,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "24",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 111,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "24",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 70,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 146,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 117,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 72,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "26",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 143,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "26",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 120,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "26",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 71,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "28",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 147,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "28",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 118,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "28",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "30",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 141,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "30",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 112,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_train",
+      "sequence": "30",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 71,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "04",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 148,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "04",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 118,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "04",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "08",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 146,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "08",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 112,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "08",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 74,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "12",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 147,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "12",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 120,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "12",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "14",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 144,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "14",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 119,
+      "same_frame_iou_le01_candidates": 1,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "14",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 69,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "29",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 146,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "29",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 122,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "representation_validation",
+      "sequence": "29",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 71,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "01",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 160,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "01",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 123,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "01",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 78,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "05",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 150,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "05",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 119,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "05",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 72,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "11",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 149,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "11",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 124,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "11",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "13",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 147,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "13",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 119,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "13",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "19",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 150,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "19",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 125,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "19",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 72,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "27",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 147,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "27",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 116,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R02",
+      "group": "normal_calibration",
+      "sequence": "27",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "01",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 162,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "01",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 160,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "02",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 167,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "02",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 150,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 171,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 7
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 128,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "04",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 165,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "04",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 147,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "05",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 170,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "05",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 140,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 168,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 158,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 12
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 183,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 168,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "10",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 166,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "10",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 151,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "11",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 167,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "11",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 157,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "12",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 175,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "12",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 163,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "13",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 174,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "13",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 164,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 11
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "14",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 152,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "14",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 147,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 17
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 168,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 4
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 161,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 11
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 171,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 12
+    },
+    {
+      "scene": "R03",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 166,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 12
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "16",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 146,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 7
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "16",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 153,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "17",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 160,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "17",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 161,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 10
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "18",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 164,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "18",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 166,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "19",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 165,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 8
+    },
+    {
+      "scene": "R03",
+      "group": "representation_validation",
+      "sequence": "19",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 163,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 10
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "07",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 166,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 6
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "07",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 159,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "08",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 173,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 3
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "08",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 167,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "15",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 156,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "15",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 166,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 10
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "22",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 166,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R03",
+      "group": "normal_calibration",
+      "sequence": "22",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 163,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 101,
+      "same_frame_iou_le01_candidates": 9,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 9,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "03",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 106,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 5
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "04",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 8,
+      "adjacent_iou_02_to_07_edges": 12
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "04",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 1,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "04",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 96,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 70,
+      "same_frame_iou_le01_candidates": 4,
+      "adjacent_iou_02_to_07_edges": 16
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 5,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "06",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 106,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 74,
+      "same_frame_iou_le01_candidates": 16,
+      "adjacent_iou_02_to_07_edges": 20
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "07",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 93,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 82,
+      "same_frame_iou_le01_candidates": 16,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "09",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 91,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "13",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 69,
+      "same_frame_iou_le01_candidates": 16,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "13",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "13",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 80,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "14",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 54,
+      "same_frame_iou_le01_candidates": 4,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "14",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "14",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 71,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "16",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 76,
+      "same_frame_iou_le01_candidates": 9,
+      "adjacent_iou_02_to_07_edges": 10
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "16",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 1,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "16",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 82,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "18",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 73,
+      "same_frame_iou_le01_candidates": 9,
+      "adjacent_iou_02_to_07_edges": 11
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "18",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "18",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 92,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "19",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 67,
+      "same_frame_iou_le01_candidates": 14,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "19",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "19",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 84,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 66,
+      "same_frame_iou_le01_candidates": 15,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "20",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 97,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 88,
+      "same_frame_iou_le01_candidates": 17,
+      "adjacent_iou_02_to_07_edges": 22
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "21",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 90,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 65,
+      "same_frame_iou_le01_candidates": 4,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "22",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 88,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 70,
+      "same_frame_iou_le01_candidates": 17,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "23",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 77,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "24",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 63,
+      "same_frame_iou_le01_candidates": 5,
+      "adjacent_iou_02_to_07_edges": 12
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "24",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "24",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 87,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 59,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_train",
+      "sequence": "25",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 89,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "01",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 62,
+      "same_frame_iou_le01_candidates": 11,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "01",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 3,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "01",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 65,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "05",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 93,
+      "same_frame_iou_le01_candidates": 15,
+      "adjacent_iou_02_to_07_edges": 14
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "05",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 5,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "05",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 104,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 3
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "11",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 50,
+      "same_frame_iou_le01_candidates": 5,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "11",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "11",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 70,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "17",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 78,
+      "same_frame_iou_le01_candidates": 19,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "17",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 1,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "representation_validation",
+      "sequence": "17",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 81,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "02",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 88,
+      "same_frame_iou_le01_candidates": 17,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "02",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 12,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 3
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "02",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 96,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 2
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "08",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 85,
+      "same_frame_iou_le01_candidates": 16,
+      "adjacent_iou_02_to_07_edges": 15
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "08",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "08",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 97,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "10",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 66,
+      "same_frame_iou_le01_candidates": 9,
+      "adjacent_iou_02_to_07_edges": 13
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "10",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 0,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "10",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 90,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "12",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 81,
+      "same_frame_iou_le01_candidates": 7,
+      "adjacent_iou_02_to_07_edges": 9
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "12",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 1,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "12",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 85,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 0
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "15",
+      "role": 0,
+      "unique_adjacent_iou_ge07_candidates": 62,
+      "same_frame_iou_le01_candidates": 5,
+      "adjacent_iou_02_to_07_edges": 11
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "15",
+      "role": 1,
+      "unique_adjacent_iou_ge07_candidates": 4,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    },
+    {
+      "scene": "R04",
+      "group": "normal_calibration",
+      "sequence": "15",
+      "role": 2,
+      "unique_adjacent_iou_ge07_candidates": 75,
+      "same_frame_iou_le01_candidates": 0,
+      "adjacent_iou_02_to_07_edges": 1
+    }
+  ],
+  "limitations": "Boxes can split one object or capture false positives; high IoU can switch identities. No cross-video identities or human labels inferred. Counts cannot establish ReID accuracy."
+}

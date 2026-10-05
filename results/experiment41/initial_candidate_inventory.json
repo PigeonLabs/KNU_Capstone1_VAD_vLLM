@@ -1,0 +1,666 @@
+[
+  {
+    "scene": "R01",
+    "partition": "representation_train",
+    "sampled_frames": 1211,
+    "any_high_conf_continuous_box_frames": 1169,
+    "all_cached_boxes_high_conf_continuous_frames": 363,
+    "roles": {
+      "0": {
+        "count": 1387,
+        "ge_05": 1206,
+        "quantiles": [
+          0.2500859797000885,
+          0.6919689178466797,
+          0.8085028409957886,
+          0.8715087175369263
+        ]
+      },
+      "1": {
+        "count": 1418,
+        "ge_05": 941,
+        "quantiles": [
+          0.25246816873550415,
+          0.5434122383594513,
+          0.622152578830719,
+          0.6970399022102356
+        ]
+      },
+      "2": {
+        "count": 1213,
+        "ge_05": 819,
+        "quantiles": [
+          0.25214871764183044,
+          0.5236219167709351,
+          0.584913182258606,
+          0.6570629477500916
+        ]
+      }
+    },
+    "per_sequence": {
+      "01": {
+        "any_qualified": 50,
+        "all_cached_boxes_qualified": 3
+      },
+      "03": {
+        "any_qualified": 49,
+        "all_cached_boxes_qualified": 14
+      },
+      "05": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 24
+      },
+      "06": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 8
+      },
+      "07": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 18
+      },
+      "08": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 19
+      },
+      "12": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 11
+      },
+      "19": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 46
+      },
+      "20": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 36
+      },
+      "21": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 19
+      },
+      "22": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 22
+      },
+      "23": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 35
+      },
+      "25": {
+        "any_qualified": 55,
+        "all_cached_boxes_qualified": 16
+      },
+      "26": {
+        "any_qualified": 58,
+        "all_cached_boxes_qualified": 32
+      },
+      "27": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 30
+      },
+      "28": {
+        "any_qualified": 55,
+        "all_cached_boxes_qualified": 29
+      },
+      "29": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 0
+      },
+      "30": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 1
+      },
+      "32": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 0
+      },
+      "33": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 0
+      },
+      "34": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 0
+      }
+    }
+  },
+  {
+    "scene": "R01",
+    "partition": "representation_validation",
+    "sampled_frames": 345,
+    "any_high_conf_continuous_box_frames": 333,
+    "all_cached_boxes_high_conf_continuous_frames": 133,
+    "roles": {
+      "0": {
+        "count": 434,
+        "ge_05": 342,
+        "quantiles": [
+          0.25077590346336365,
+          0.6419232487678528,
+          0.8004319667816162,
+          0.833802342414856
+        ]
+      },
+      "1": {
+        "count": 346,
+        "ge_05": 340,
+        "quantiles": [
+          0.281426340341568,
+          0.5882244408130646,
+          0.6440215408802032,
+          0.6893892288208008
+        ]
+      },
+      "2": {
+        "count": 346,
+        "ge_05": 271,
+        "quantiles": [
+          0.2508324384689331,
+          0.5303959548473358,
+          0.5816242694854736,
+          0.653996467590332
+        ]
+      }
+    },
+    "per_sequence": {
+      "02": {
+        "any_qualified": 52,
+        "all_cached_boxes_qualified": 9
+      },
+      "04": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 16
+      },
+      "10": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 4
+      },
+      "15": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 44
+      },
+      "18": {
+        "any_qualified": 55,
+        "all_cached_boxes_qualified": 40
+      },
+      "24": {
+        "any_qualified": 56,
+        "all_cached_boxes_qualified": 20
+      }
+    }
+  },
+  {
+    "scene": "R02",
+    "partition": "representation_train",
+    "sampled_frames": 2803,
+    "any_high_conf_continuous_box_frames": 2753,
+    "all_cached_boxes_high_conf_continuous_frames": 0,
+    "roles": {
+      "0": {
+        "count": 5160,
+        "ge_05": 2720,
+        "quantiles": [
+          0.2500160038471222,
+          0.5177942514419556,
+          0.6459915220737458,
+          0.699755072593689
+        ]
+      },
+      "1": {
+        "count": 4045,
+        "ge_05": 0,
+        "quantiles": [
+          0.25002989172935486,
+          0.3116385042667389,
+          0.3647047758102417,
+          0.4636927843093872
+        ]
+      },
+      "2": {
+        "count": 1649,
+        "ge_05": 1427,
+        "quantiles": [
+          0.2527317702770233,
+          0.8847855925559998,
+          0.899297559261322,
+          0.9107714891433716
+        ]
+      }
+    },
+    "per_sequence": {
+      "02": {
+        "any_qualified": 150,
+        "all_cached_boxes_qualified": 0
+      },
+      "03": {
+        "any_qualified": 133,
+        "all_cached_boxes_qualified": 0
+      },
+      "06": {
+        "any_qualified": 150,
+        "all_cached_boxes_qualified": 0
+      },
+      "07": {
+        "any_qualified": 143,
+        "all_cached_boxes_qualified": 0
+      },
+      "09": {
+        "any_qualified": 145,
+        "all_cached_boxes_qualified": 0
+      },
+      "10": {
+        "any_qualified": 145,
+        "all_cached_boxes_qualified": 0
+      },
+      "15": {
+        "any_qualified": 151,
+        "all_cached_boxes_qualified": 0
+      },
+      "16": {
+        "any_qualified": 145,
+        "all_cached_boxes_qualified": 0
+      },
+      "17": {
+        "any_qualified": 142,
+        "all_cached_boxes_qualified": 0
+      },
+      "18": {
+        "any_qualified": 143,
+        "all_cached_boxes_qualified": 0
+      },
+      "20": {
+        "any_qualified": 151,
+        "all_cached_boxes_qualified": 0
+      },
+      "21": {
+        "any_qualified": 144,
+        "all_cached_boxes_qualified": 0
+      },
+      "22": {
+        "any_qualified": 149,
+        "all_cached_boxes_qualified": 0
+      },
+      "23": {
+        "any_qualified": 151,
+        "all_cached_boxes_qualified": 0
+      },
+      "24": {
+        "any_qualified": 140,
+        "all_cached_boxes_qualified": 0
+      },
+      "25": {
+        "any_qualified": 144,
+        "all_cached_boxes_qualified": 0
+      },
+      "26": {
+        "any_qualified": 141,
+        "all_cached_boxes_qualified": 0
+      },
+      "28": {
+        "any_qualified": 146,
+        "all_cached_boxes_qualified": 0
+      },
+      "30": {
+        "any_qualified": 140,
+        "all_cached_boxes_qualified": 0
+      }
+    }
+  },
+  {
+    "scene": "R02",
+    "partition": "representation_validation",
+    "sampled_frames": 736,
+    "any_high_conf_continuous_box_frames": 722,
+    "all_cached_boxes_high_conf_continuous_frames": 0,
+    "roles": {
+      "0": {
+        "count": 1372,
+        "ge_05": 721,
+        "quantiles": [
+          0.2500780522823334,
+          0.5138132274150848,
+          0.6455485701560975,
+          0.692676842212677
+        ]
+      },
+      "1": {
+        "count": 1123,
+        "ge_05": 1,
+        "quantiles": [
+          0.2501855492591858,
+          0.30902642011642456,
+          0.36157227158546446,
+          0.5888845920562744
+        ]
+      },
+      "2": {
+        "count": 433,
+        "ge_05": 375,
+        "quantiles": [
+          0.2570500075817108,
+          0.8891395926475525,
+          0.9004342555999756,
+          0.9081659317016602
+        ]
+      }
+    },
+    "per_sequence": {
+      "04": {
+        "any_qualified": 146,
+        "all_cached_boxes_qualified": 0
+      },
+      "08": {
+        "any_qualified": 145,
+        "all_cached_boxes_qualified": 0
+      },
+      "12": {
+        "any_qualified": 143,
+        "all_cached_boxes_qualified": 0
+      },
+      "14": {
+        "any_qualified": 143,
+        "all_cached_boxes_qualified": 0
+      },
+      "29": {
+        "any_qualified": 145,
+        "all_cached_boxes_qualified": 0
+      }
+    }
+  },
+  {
+    "scene": "R03",
+    "partition": "representation_train",
+    "sampled_frames": 2459,
+    "any_high_conf_continuous_box_frames": 1743,
+    "all_cached_boxes_high_conf_continuous_frames": 737,
+    "roles": {
+      "0": {
+        "count": 2607,
+        "ge_05": 1858,
+        "quantiles": [
+          0.2500133514404297,
+          0.6606258153915405,
+          0.7881374835968018,
+          0.8375340700149536
+        ]
+      },
+      "1": {
+        "count": 3511,
+        "ge_05": 1309,
+        "quantiles": [
+          0.25142717361450195,
+          0.41008901596069336,
+          0.6290972828865051,
+          0.6978453993797302
+        ]
+      }
+    },
+    "per_sequence": {
+      "01": {
+        "any_qualified": 108,
+        "all_cached_boxes_qualified": 2
+      },
+      "02": {
+        "any_qualified": 123,
+        "all_cached_boxes_qualified": 62
+      },
+      "03": {
+        "any_qualified": 77,
+        "all_cached_boxes_qualified": 16
+      },
+      "04": {
+        "any_qualified": 105,
+        "all_cached_boxes_qualified": 56
+      },
+      "05": {
+        "any_qualified": 98,
+        "all_cached_boxes_qualified": 13
+      },
+      "06": {
+        "any_qualified": 143,
+        "all_cached_boxes_qualified": 71
+      },
+      "09": {
+        "any_qualified": 156,
+        "all_cached_boxes_qualified": 74
+      },
+      "10": {
+        "any_qualified": 131,
+        "all_cached_boxes_qualified": 75
+      },
+      "11": {
+        "any_qualified": 131,
+        "all_cached_boxes_qualified": 69
+      },
+      "12": {
+        "any_qualified": 120,
+        "all_cached_boxes_qualified": 77
+      },
+      "13": {
+        "any_qualified": 152,
+        "all_cached_boxes_qualified": 80
+      },
+      "14": {
+        "any_qualified": 118,
+        "all_cached_boxes_qualified": 37
+      },
+      "20": {
+        "any_qualified": 127,
+        "all_cached_boxes_qualified": 82
+      },
+      "21": {
+        "any_qualified": 154,
+        "all_cached_boxes_qualified": 23
+      }
+    }
+  },
+  {
+    "scene": "R03",
+    "partition": "representation_validation",
+    "sampled_frames": 683,
+    "any_high_conf_continuous_box_frames": 507,
+    "all_cached_boxes_high_conf_continuous_frames": 248,
+    "roles": {
+      "0": {
+        "count": 697,
+        "ge_05": 475,
+        "quantiles": [
+          0.2509461045265198,
+          0.5975102186203003,
+          0.7570133328437805,
+          0.8215075135231018
+        ]
+      },
+      "1": {
+        "count": 924,
+        "ge_05": 503,
+        "quantiles": [
+          0.2510871887207031,
+          0.5303939580917358,
+          0.6540757954120636,
+          0.6982737183570862
+        ]
+      }
+    },
+    "per_sequence": {
+      "16": {
+        "any_qualified": 120,
+        "all_cached_boxes_qualified": 68
+      },
+      "17": {
+        "any_qualified": 131,
+        "all_cached_boxes_qualified": 72
+      },
+      "18": {
+        "any_qualified": 123,
+        "all_cached_boxes_qualified": 70
+      },
+      "19": {
+        "any_qualified": 133,
+        "all_cached_boxes_qualified": 38
+      }
+    }
+  },
+  {
+    "scene": "R04",
+    "partition": "representation_train",
+    "sampled_frames": 1594,
+    "any_high_conf_continuous_box_frames": 1149,
+    "all_cached_boxes_high_conf_continuous_frames": 2,
+    "roles": {
+      "0": {
+        "count": 1996,
+        "ge_05": 942,
+        "quantiles": [
+          0.25008445978164673,
+          0.47943215072155,
+          0.715683251619339,
+          0.8468791246414185
+        ]
+      },
+      "1": {
+        "count": 1701,
+        "ge_05": 1,
+        "quantiles": [
+          0.2500162124633789,
+          0.32514768838882446,
+          0.39060619473457336,
+          0.5027251839637756
+        ]
+      },
+      "2": {
+        "count": 1594,
+        "ge_05": 1033,
+        "quantiles": [
+          0.34411051869392395,
+          0.5711787939071655,
+          0.7425655543804168,
+          0.8453452587127686
+        ]
+      }
+    },
+    "per_sequence": {
+      "03": {
+        "any_qualified": 80,
+        "all_cached_boxes_qualified": 0
+      },
+      "04": {
+        "any_qualified": 79,
+        "all_cached_boxes_qualified": 1
+      },
+      "06": {
+        "any_qualified": 68,
+        "all_cached_boxes_qualified": 0
+      },
+      "07": {
+        "any_qualified": 72,
+        "all_cached_boxes_qualified": 0
+      },
+      "09": {
+        "any_qualified": 88,
+        "all_cached_boxes_qualified": 0
+      },
+      "13": {
+        "any_qualified": 57,
+        "all_cached_boxes_qualified": 0
+      },
+      "14": {
+        "any_qualified": 44,
+        "all_cached_boxes_qualified": 0
+      },
+      "16": {
+        "any_qualified": 74,
+        "all_cached_boxes_qualified": 0
+      },
+      "18": {
+        "any_qualified": 74,
+        "all_cached_boxes_qualified": 0
+      },
+      "19": {
+        "any_qualified": 75,
+        "all_cached_boxes_qualified": 0
+      },
+      "20": {
+        "any_qualified": 78,
+        "all_cached_boxes_qualified": 0
+      },
+      "21": {
+        "any_qualified": 78,
+        "all_cached_boxes_qualified": 0
+      },
+      "22": {
+        "any_qualified": 78,
+        "all_cached_boxes_qualified": 0
+      },
+      "23": {
+        "any_qualified": 72,
+        "all_cached_boxes_qualified": 0
+      },
+      "24": {
+        "any_qualified": 71,
+        "all_cached_boxes_qualified": 1
+      },
+      "25": {
+        "any_qualified": 61,
+        "all_cached_boxes_qualified": 0
+      }
+    }
+  },
+  {
+    "scene": "R04",
+    "partition": "representation_validation",
+    "sampled_frames": 366,
+    "any_high_conf_continuous_box_frames": 257,
+    "all_cached_boxes_high_conf_continuous_frames": 0,
+    "roles": {
+      "0": {
+        "count": 466,
+        "ge_05": 224,
+        "quantiles": [
+          0.25050660967826843,
+          0.4854535162448883,
+          0.7294766306877136,
+          0.8347681760787964
+        ]
+      },
+      "1": {
+        "count": 461,
+        "ge_05": 0,
+        "quantiles": [
+          0.2502075731754303,
+          0.30982092022895813,
+          0.38840270042419434,
+          0.4556792676448822
+        ]
+      },
+      "2": {
+        "count": 366,
+        "ge_05": 265,
+        "quantiles": [
+          0.3514459729194641,
+          0.5772222578525543,
+          0.7392744421958923,
+          0.8168286681175232
+        ]
+      }
+    },
+    "per_sequence": {
+      "01": {
+        "any_qualified": 41,
+        "all_cached_boxes_qualified": 0
+      },
+      "05": {
+        "any_qualified": 94,
+        "all_cached_boxes_qualified": 0
+      },
+      "11": {
+        "any_qualified": 42,
+        "all_cached_boxes_qualified": 0
+      },
+      "17": {
+        "any_qualified": 80,
+        "all_cached_boxes_qualified": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "normal_input_ids": [
+    "R01_01_0040",
+    "R01_01_0104"
+  ],
+  "weights": "original_pretrained_not_smoke_or_finetuned",
+  "native_loss": 61561.765625,
+  "native_components": {
+    "loss_ce": 2.7170417308807373,
+    "loss_bbox": 0.04497286304831505,
+    "loss_giou": 0.2553553581237793,
+    "cardinality_error": 897.0,
+    "loss_ce_enc": 30776.037109375,
+    "loss_bbox_enc": 0.4006239175796509,
+    "loss_giou_enc": 0.7599399089813232,
+    "cardinality_error_enc": 897.0
+  },
+  "final_decoder_loss": 6.169658660888672,
+  "decoder_components": {
+    "loss_ce": 2.7170417308807373,
+    "loss_bbox": 0.04497286304831505,
+    "loss_giou": 0.2553553581237793,
+    "cardinality_error": 897.0
+  },
+  "implementation_sha256": "ba98eb52acbd8a7e36bab581fd0f9b092fed3579e37cd6e69c55ea153504b2e0",
+  "source_observation": "encoder_pred_boxes are detached reference_points; encoder_logits computed from learned target query embeddings and pre-fusion text_features. Frozen proposal head not optimized by this encoder loss. Final-decoder-only loss uses original matcher and weights, retaining original two-stage inference.",
+  "cardinality_error_note": "HF DETR argmax cardinality is not a confidence-thresholded GroundingDINO detection count and is not reported as detector accuracy."
+}

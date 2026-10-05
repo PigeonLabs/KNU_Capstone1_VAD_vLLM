@@ -1,0 +1,668 @@
+{
+  "normal_checkpoint_sha256": "74eb42fd971b7aa920ec47ef53ff4a2ec9e44c80b61bfab5fd62dfea4d2249e3",
+  "test_source_feature_sha256": {
+    "artifacts/experiment41/detections/features/R01/testing_01.npz": "d272d0017445142eaa187989ad10627b42f6ca5696db95cf6de7322cf4a55d69",
+    "artifacts/experiment41/detections/features/R01/testing_02.npz": "4705596acf9f815153136c87514b646c10fbd71cf250ebcc5aebf17b6e649739",
+    "artifacts/experiment41/detections/features/R01/testing_03.npz": "9cfbcd4e1a0da1262cf83fc2c750f269da1d7c2c7f14d49b9b894fea3de4df93",
+    "artifacts/experiment41/detections/features/R01/testing_04.npz": "e771157dff468bc6e3379a4fef9adb3cec873f54b33e32540e969e9823488b91",
+    "artifacts/experiment41/detections/features/R01/testing_05.npz": "0cb0b6e67096aeb8508fdeb2a40ffe5c5415fc5135dbfc4da54221131014e123",
+    "artifacts/experiment41/detections/features/R01/testing_06.npz": "2150608d077da49e457f7ee4e395bd709b536b8dddb25d90a1cfd4e44b105aa8",
+    "artifacts/experiment41/detections/features/R01/testing_07.npz": "722e7bd7dbf48d0d4a3ee81c922c6ee4ef4c9111b9d61d365304e30f432217fd",
+    "artifacts/experiment41/detections/features/R01/testing_08.npz": "cfc1548bc7ccde084103aa58328067ada5208098a282ad5f158a2a5795780d77",
+    "artifacts/experiment41/detections/features/R01/testing_09.npz": "07e8a12fd4d1ba9e347efc2f8e6dd448cfad515d8a044086237a24d383532f0b",
+    "artifacts/experiment41/detections/features/R01/testing_10.npz": "e7b8eb3848b091e30801751c8c53d95f34b92fcb5721be1d68836f2f9443ba1d",
+    "artifacts/experiment41/detections/features/R01/testing_11.npz": "7b429c325ceeaea603ff3d843429f140641c4c79915ac85c322848667e85678f",
+    "artifacts/experiment41/detections/features/R01/testing_12.npz": "ba98b36980b380c5253122fcbb0c9d801116690cf895a993506ba2eba70a3938",
+    "artifacts/experiment41/detections/features/R01/testing_13.npz": "ecdef91261e5b9850aa1bdf33ee5f707a9daaaf46fb37ca5173e7a3a4f1b91fe",
+    "artifacts/experiment41/detections/features/R01/testing_14.npz": "65c8951b1ceb1c14d9a53c6c980be657994995ee5ae8fa12ebd7e65c1bb6d4cc",
+    "artifacts/experiment41/detections/features/R01/testing_15.npz": "6c357df0a2b12c99f3ff195b5b9e5f65163394e04a9074f50e6f4cb78219d8d6",
+    "artifacts/experiment41/detections/features/R02/testing_01.npz": "58b1e3f185951cb7be09ef81186e031818a9f5cd891358097515d5bd89876a94",
+    "artifacts/experiment41/detections/features/R02/testing_02.npz": "e5ec1f66361cc250590db26ca4b5372013e60469cdd8c7a1a984da135b9519c3",
+    "artifacts/experiment41/detections/features/R02/testing_03.npz": "c00cbfe141780b048542d1193a988a792c695b12b6ccfeb3f8c4e4fe5affc5a7",
+    "artifacts/experiment41/detections/features/R02/testing_04.npz": "f6573b4d7460e50930ec0a24fc6e0067b2eebabdc90aad25965dac8b8823dac2",
+    "artifacts/experiment41/detections/features/R02/testing_05.npz": "91380b0129ca08274a6c07ebbe8ee68498939b53a85e5f6f4264b624b688c8e6",
+    "artifacts/experiment41/detections/features/R02/testing_06.npz": "086e4b02fe8304146c7dc7449e2dd396861772f15c0d802f226492034fa5b2c2",
+    "artifacts/experiment41/detections/features/R02/testing_07.npz": "c2fe6ff329dad67b71ea832e7a772e77ca25e202105e7b0ea10d93a19c440136",
+    "artifacts/experiment41/detections/features/R02/testing_08.npz": "ed00e2520e0dea696306bdae14480e601883040a5e5604e1ad3f2c3ba0341bd6",
+    "artifacts/experiment41/detections/features/R02/testing_09.npz": "f6b7f06e497dcaa923b5d1c82fb6ea8b3cc69770b33725966f4cea33547584ce",
+    "artifacts/experiment41/detections/features/R02/testing_10.npz": "5cb1942d0e108bc0c726c0a7fc1c5487054702b5e69c3ee40edd7bb5f60e02c9",
+    "artifacts/experiment41/detections/features/R02/testing_11.npz": "eedd71b6ead4d0bcfbb79245ef1a278ca84a4b601642e977416e1ed8117fa5a1",
+    "artifacts/experiment41/detections/features/R02/testing_12.npz": "482c39d0d2c1b344296ad0700a59709afb492001760b5cbb6926c9739d2da981",
+    "artifacts/experiment41/detections/features/R02/testing_13.npz": "dcbb08a4537e4cae7ebcfc8d01ffd2b89877d3809a61bacc3a708575734fa17f",
+    "artifacts/experiment41/detections/features/R02/testing_14.npz": "975a7ae28c15b99c4c9d2c66a3929f7b9343d5d3143f33a5d0d21419c4389bd2",
+    "artifacts/experiment41/detections/features/R02/testing_15.npz": "53e41eb786c0f4ebc7e7fbfaf8baa57d50f7312e0f2ecc5e562c88cbf1182043",
+    "artifacts/experiment41/detections/features/R03/testing_01.npz": "c7b93315503f3be59adaa071d87c1203d56f044fbf4b1e54ce4e1f2feff2e3a3",
+    "artifacts/experiment41/detections/features/R03/testing_02.npz": "52804fc2fcd29049eaf851a75c24a85d02ab8828d16d2d59960a73c573409abb",
+    "artifacts/experiment41/detections/features/R03/testing_03.npz": "437eec0071b5e1dd6758b90afd8f6ea849236ff1965d8fd029c2cfd8b27f26d1",
+    "artifacts/experiment41/detections/features/R03/testing_04.npz": "4459edc759e827b2933c30f04d0c117799461e79dbed14b3e540f261b19e805a",
+    "artifacts/experiment41/detections/features/R03/testing_05.npz": "fc72ca9eb2741696fd2268f3265df0f81f35f612630bbddd302a3309e39bf658",
+    "artifacts/experiment41/detections/features/R03/testing_06.npz": "470585182e3735fdb1508b415da6354bb94baaae55f886a17ff18790a236dfee",
+    "artifacts/experiment41/detections/features/R03/testing_07.npz": "1f2a3ac92f1f391da73f24c8dbd42556b6384bb7fd7e73cd00f9c14b33fe0dbd",
+    "artifacts/experiment41/detections/features/R03/testing_08.npz": "3db4e83f259cce62a41cffd4b567433f05d5eaf47a149a662000e46f9a9efe6a",
+    "artifacts/experiment41/detections/features/R03/testing_09.npz": "2e6944b0d3929dee64b5bf347e6ff94b7ba1f6109b4b8686648d385898bd945f",
+    "artifacts/experiment41/detections/features/R03/testing_10.npz": "106205f71ed5ebbcaa38c560d4aabf5b79d588dfcb788d0f0b0bf4286f6fd77c",
+    "artifacts/experiment41/detections/features/R03/testing_11.npz": "f185e49ed92325448f67b9165543c5ecfdba43835cedd1bf078d5b015df45e1c",
+    "artifacts/experiment41/detections/features/R03/testing_12.npz": "fad43e34e62a837a1ba9589c9d8cd062e225a158f8dfbbe0805e370ad302e4ff",
+    "artifacts/experiment41/detections/features/R03/testing_13.npz": "e0820e95962c24d4ebc093e8a4271ad3f6803439dd34e6e80a97e0d9eef317ce",
+    "artifacts/experiment41/detections/features/R03/testing_14.npz": "d2aa5fb6964a4adeee8486cb2bc631091db3ac08de6008f4c6848a1f6940cf97",
+    "artifacts/experiment41/detections/features/R03/testing_15.npz": "54b875931c4bcc6cda7c83a015277e56ebf0ecf4c85cc411eca72f50709ed6d4",
+    "artifacts/experiment41/detections/features/R03/testing_16.npz": "50907ef277c9128f1ce76132190b6e6c8865a57681836579bd546d07b02ce7bf",
+    "artifacts/experiment41/detections/features/R03/testing_17.npz": "a009da75563087be1f79a925e6b1f26f36e4d85a45a5907925bbd196f6b744e5",
+    "artifacts/experiment41/detections/features/R04/testing_01.npz": "206b5717056666b869cf93c26548cc6b637b21d466e6feb98b1c21107d778276",
+    "artifacts/experiment41/detections/features/R04/testing_02.npz": "2e38ed2d96b0b8bdce46ba84043375ae2f72a75277fa2bf3e5e8356226cbf63e",
+    "artifacts/experiment41/detections/features/R04/testing_03.npz": "16cf63c74c5ec60c956c34de2b515ab3f24505294da80baa8bc25e1376275313",
+    "artifacts/experiment41/detections/features/R04/testing_04.npz": "d4bf4af3ec54dae89b6cea51a6b3130a87f82b73d8ce209d169456217d2744c1",
+    "artifacts/experiment41/detections/features/R04/testing_05.npz": "f3dec1eda13a113737615aad9b67847b7003f737d55d54284d82c93a8f3c4d8d",
+    "artifacts/experiment41/detections/features/R04/testing_06.npz": "3f28002a618c58a242302e01b33ee860b818e2c34a7ff9a8bc307159c78ebbf9",
+    "artifacts/experiment41/detections/features/R04/testing_07.npz": "bea1fd8348fc67ea88c3a9a08f63cb5b15dfee52a262d43188fdfd95e0d9b1e3",
+    "artifacts/experiment41/detections/features/R04/testing_08.npz": "0207759d82a82be749b175ba803db624258fcb9c47842ceab72727d0b89d98d0",
+    "artifacts/experiment41/detections/features/R04/testing_09.npz": "84c950d179aa417908a2f4e9cfe326cca2daadbb7b526b74deaf7092076f6b71",
+    "artifacts/experiment41/detections/features/R04/testing_10.npz": "78dee0e8521cfd4a208194461b44a5affae51ca45967af2f54885ea51559a707",
+    "artifacts/experiment41/detections/features/R04/testing_11.npz": "7693831d570cc76e34d7412c4cd011d662e2410f12e2918605032facefd41c60",
+    "artifacts/experiment41/detections/features/R04/testing_12.npz": "1955ec59bd68ffa12164f9bc2b148a70e51892c91545f432fccc9d28ffa80a3e",
+    "artifacts/experiment41/detections/features/R04/testing_13.npz": "7ea423bb936c2de9b174890a3d5f4cff39fdfd917e8d5385de1ffcf043eae88a",
+    "artifacts/experiment41/detections/features/R04/testing_14.npz": "561dd547aac6ae20fd0f0f12fdd9e9e772418c814f4c6c060bfe08e67e0ac729",
+    "artifacts/experiment41/detections/features/R04/testing_15.npz": "cb7a553164be789c8ced075b5e33a57c802eae712a83ce3546a220b95fba3dad",
+    "artifacts/experiment41/detections/features/R04/testing_16.npz": "96d317f6b55e8d0e8285495f30bdf55255bfb6ac30f8c23f08eb2e6ebe77cff9",
+    "artifacts/experiment41/detections/features/R04/testing_17.npz": "668693e6cf4173bdc2928f7869db0931ba67f0e1fc22f933be0e0f952f97f50c",
+    "artifacts/experiment41/detections/features/R04/testing_18.npz": "2afb6fe893d7282ea3ea109343a65b070bf9b0336fd00ff14ca24b51c4688b2d",
+    "artifacts/experiment41/detections/features/R04/testing_19.npz": "86c95fffd7f920b4069eff8fac6306fd1e6bf763de150ac8013c2061e55021ac"
+  },
+  "sequences": [
+    {
+      "scene": "R01",
+      "sequence": "01",
+      "source_frames": 230,
+      "views": {
+        "global": 58,
+        "crop": 179
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "02",
+      "source_frames": 256,
+      "views": {
+        "global": 64,
+        "crop": 192
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "03",
+      "source_frames": 409,
+      "views": {
+        "global": 103,
+        "crop": 311
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "04",
+      "source_frames": 191,
+      "views": {
+        "global": 48,
+        "crop": 147
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "05",
+      "source_frames": 290,
+      "views": {
+        "global": 73,
+        "crop": 220
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "06",
+      "source_frames": 233,
+      "views": {
+        "global": 59,
+        "crop": 175
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "07",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 174
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "08",
+      "source_frames": 235,
+      "views": {
+        "global": 59,
+        "crop": 177
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "09",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 174
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "10",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 179
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "11",
+      "source_frames": 232,
+      "views": {
+        "global": 58,
+        "crop": 174
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "12",
+      "source_frames": 231,
+      "views": {
+        "global": 58,
+        "crop": 185
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "13",
+      "source_frames": 229,
+      "views": {
+        "global": 58,
+        "crop": 176
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "14",
+      "source_frames": 230,
+      "views": {
+        "global": 58,
+        "crop": 173
+      }
+    },
+    {
+      "scene": "R01",
+      "sequence": "15",
+      "source_frames": 228,
+      "views": {
+        "global": 57,
+        "crop": 170
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "01",
+      "source_frames": 583,
+      "views": {
+        "global": 146,
+        "crop": 368
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "02",
+      "source_frames": 595,
+      "views": {
+        "global": 149,
+        "crop": 384
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "03",
+      "source_frames": 573,
+      "views": {
+        "global": 144,
+        "crop": 370
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "04",
+      "source_frames": 578,
+      "views": {
+        "global": 145,
+        "crop": 375
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "05",
+      "source_frames": 583,
+      "views": {
+        "global": 146,
+        "crop": 364
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "06",
+      "source_frames": 604,
+      "views": {
+        "global": 151,
+        "crop": 373
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "07",
+      "source_frames": 536,
+      "views": {
+        "global": 134,
+        "crop": 340
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "08",
+      "source_frames": 784,
+      "views": {
+        "global": 196,
+        "crop": 483
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "09",
+      "source_frames": 853,
+      "views": {
+        "global": 214,
+        "crop": 528
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "10",
+      "source_frames": 612,
+      "views": {
+        "global": 153,
+        "crop": 443
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "11",
+      "source_frames": 590,
+      "views": {
+        "global": 148,
+        "crop": 364
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "12",
+      "source_frames": 806,
+      "views": {
+        "global": 202,
+        "crop": 503
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "13",
+      "source_frames": 609,
+      "views": {
+        "global": 153,
+        "crop": 375
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "14",
+      "source_frames": 497,
+      "views": {
+        "global": 125,
+        "crop": 310
+      }
+    },
+    {
+      "scene": "R02",
+      "sequence": "15",
+      "source_frames": 815,
+      "views": {
+        "global": 204,
+        "crop": 509
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "01",
+      "source_frames": 720,
+      "views": {
+        "global": 180,
+        "crop": 363
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "02",
+      "source_frames": 676,
+      "views": {
+        "global": 169,
+        "crop": 346
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "03",
+      "source_frames": 674,
+      "views": {
+        "global": 169,
+        "crop": 339
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "04",
+      "source_frames": 683,
+      "views": {
+        "global": 171,
+        "crop": 343
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "05",
+      "source_frames": 574,
+      "views": {
+        "global": 144,
+        "crop": 291
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "06",
+      "source_frames": 582,
+      "views": {
+        "global": 146,
+        "crop": 292
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "07",
+      "source_frames": 686,
+      "views": {
+        "global": 172,
+        "crop": 344
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "08",
+      "source_frames": 695,
+      "views": {
+        "global": 174,
+        "crop": 348
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "09",
+      "source_frames": 712,
+      "views": {
+        "global": 178,
+        "crop": 369
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "10",
+      "source_frames": 647,
+      "views": {
+        "global": 162,
+        "crop": 326
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "11",
+      "source_frames": 706,
+      "views": {
+        "global": 177,
+        "crop": 360
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "12",
+      "source_frames": 841,
+      "views": {
+        "global": 211,
+        "crop": 426
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "13",
+      "source_frames": 766,
+      "views": {
+        "global": 192,
+        "crop": 385
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "14",
+      "source_frames": 908,
+      "views": {
+        "global": 227,
+        "crop": 468
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "15",
+      "source_frames": 692,
+      "views": {
+        "global": 173,
+        "crop": 352
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "16",
+      "source_frames": 730,
+      "views": {
+        "global": 183,
+        "crop": 374
+      }
+    },
+    {
+      "scene": "R03",
+      "sequence": "17",
+      "source_frames": 713,
+      "views": {
+        "global": 179,
+        "crop": 359
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "01",
+      "source_frames": 411,
+      "views": {
+        "global": 103,
+        "crop": 316
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "02",
+      "source_frames": 398,
+      "views": {
+        "global": 100,
+        "crop": 327
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "03",
+      "source_frames": 381,
+      "views": {
+        "global": 96,
+        "crop": 313
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "04",
+      "source_frames": 379,
+      "views": {
+        "global": 95,
+        "crop": 303
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "05",
+      "source_frames": 465,
+      "views": {
+        "global": 117,
+        "crop": 361
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "06",
+      "source_frames": 505,
+      "views": {
+        "global": 127,
+        "crop": 454
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "07",
+      "source_frames": 550,
+      "views": {
+        "global": 138,
+        "crop": 437
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "08",
+      "source_frames": 653,
+      "views": {
+        "global": 164,
+        "crop": 517
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "09",
+      "source_frames": 334,
+      "views": {
+        "global": 84,
+        "crop": 269
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "10",
+      "source_frames": 223,
+      "views": {
+        "global": 56,
+        "crop": 172
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "11",
+      "source_frames": 424,
+      "views": {
+        "global": 106,
+        "crop": 341
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "12",
+      "source_frames": 686,
+      "views": {
+        "global": 172,
+        "crop": 569
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "13",
+      "source_frames": 464,
+      "views": {
+        "global": 116,
+        "crop": 382
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "14",
+      "source_frames": 385,
+      "views": {
+        "global": 97,
+        "crop": 313
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "15",
+      "source_frames": 376,
+      "views": {
+        "global": 94,
+        "crop": 311
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "16",
+      "source_frames": 418,
+      "views": {
+        "global": 105,
+        "crop": 318
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "17",
+      "source_frames": 582,
+      "views": {
+        "global": 146,
+        "crop": 489
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "18",
+      "source_frames": 243,
+      "views": {
+        "global": 61,
+        "crop": 201
+      }
+    },
+    {
+      "scene": "R04",
+      "sequence": "19",
+      "source_frames": 277,
+      "views": {
+        "global": 70,
+        "crop": 224
+      }
+    }
+  ],
+  "labels_opened": false
+}

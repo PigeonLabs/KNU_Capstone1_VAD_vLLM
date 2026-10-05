@@ -1,0 +1,28 @@
+{
+  "archived_normal_model_and_score_files_exactly_reproduced": 320,
+  "unchanged_supported_processes": [
+    "R01",
+    "R02",
+    "R03"
+  ],
+  "all8_R04_dwell_unavailable_and_zero_masked": true,
+  "changed_existing_protocol_files": [
+    "configs/experiment41_A_R04.json",
+    "configs/experiment41_B_R04.json",
+    "configs/experiment41_C_s42_R04.json",
+    "configs/experiment41_D_s42_R04.json",
+    "configs/experiment41_C_s43_R04.json",
+    "configs/experiment41_D_s43_R04.json",
+    "configs/experiment41_C_s44_R04.json",
+    "configs/experiment41_D_s44_R04.json",
+    "/media/jeong/ExtHDD/IPAD_vLLM/KNU_Capstone1_VAD_vLLM/scripts/experiment41_normal.py"
+  ],
+  "new_protocol_files": [
+    "docs/EXPERIMENT41_NORMAL_RECOVERY.md",
+    "results/experiment41/normal_fit_recovery.json",
+    "src/ipad_vad/optional_dwell.py",
+    "tests/test_optional_dwell.py"
+  ],
+  "all_original_training_weights_and_features_unchanged": true,
+  "test_labels_accessed": false
+}

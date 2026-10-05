@@ -1,0 +1,1348 @@
+{
+  "reviewer": "Codex visual inspection; not human ground truth",
+  "board_layout": "9 full square frames per board; 3x3; 512px image from 256px source",
+  "approved_boards": {
+    "R01": [
+      "R01_00.jpg",
+      "R01_01.jpg",
+      "R01_02.jpg",
+      "R01_03.jpg",
+      "R01_04.jpg",
+      "R01_05.jpg",
+      "R01_06.jpg",
+      "R01_07.jpg",
+      "R01_08.jpg"
+    ],
+    "R02": [
+      "R02_00.jpg",
+      "R02_01.jpg",
+      "R02_02.jpg",
+      "R02_03.jpg",
+      "R02_04.jpg",
+      "R02_05.jpg",
+      "R02_06.jpg",
+      "R02_07.jpg"
+    ],
+    "R03": [
+      "R03_00.jpg",
+      "R03_01.jpg",
+      "R03_02.jpg",
+      "R03_03.jpg",
+      "R03_04.jpg",
+      "R03_05.jpg"
+    ],
+    "R04": [
+      "R04_00.jpg",
+      "R04_01.jpg",
+      "R04_02.jpg",
+      "R04_03.jpg",
+      "R04_04.jpg",
+      "R04_05.jpg",
+      "R04_06.jpg"
+    ]
+  },
+  "excluded": {
+    "R03_03_0576": "Tray proposal has gross extent error or incomplete tray/cup coverage; exclude entire frame, not negative background.",
+    "R03_04_0548": "Tray proposal has gross extent error or incomplete tray/cup coverage; exclude entire frame, not negative background.",
+    "R03_10_0560": "Tray proposal has gross extent error or incomplete tray/cup coverage; exclude entire frame, not negative background.",
+    "R03_11_0556": "Tray proposal has gross extent error or incomplete tray/cup coverage; exclude entire frame, not negative background.",
+    "R03_12_0596": "Tray proposal has gross extent error or incomplete tray/cup coverage; exclude entire frame, not negative background.",
+    "R04_03_0232": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_03_0368": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_04_0324": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_06_0224": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_06_0356": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_07_0192": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_07_0308": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_09_0336": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_13_0304": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_14_0160": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_14_0256": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_16_0188": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_16_0300": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_18_0204": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_18_0328": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_19_0316": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_20_0080": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_20_0320": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_21_0208": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_21_0336": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_22_0188": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_22_0304": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_23_0304": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_24_0184": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_24_0292": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_25_0200": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_25_0320": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_01_0156": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_01_0248": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_05_0220": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_05_0352": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_11_0168": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_11_0272": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded.",
+    "R04_17_0296": "Merged or missing cardboard instances and/or moving/lowered blade not reliably bounded by the draft; entire frame excluded."
+  },
+  "overrides": {
+    "R02_02_0120": [
+      {
+        "role": 0,
+        "box": [
+          0.30778294801712036,
+          0.2746436893939972,
+          0.7694960236549377,
+          0.727590799331665
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.40320608019828796,
+          0.3809186518192291,
+          0.6925511360168457,
+          0.5884987115859985
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.712590799331665,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_02_0484": [
+      {
+        "role": 0,
+        "box": [
+          0.2959093451499939,
+          0.22807306051254272,
+          0.779607355594635,
+          0.6844406723976135
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6694406723976135,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_03_0440": [
+      {
+        "role": 0,
+        "box": [
+          0.29893597960472107,
+          0.2517748475074768,
+          0.7702637910842896,
+          0.7093688249588013
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.39062172174453735,
+          0.6881247758865356,
+          0.6732308268547058,
+          0.8284552097320557
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_06_0120": [
+      {
+        "role": 0,
+        "box": [
+          0.30732202529907227,
+          0.2730806767940521,
+          0.7703959941864014,
+          0.7283776998519897
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.39142751693725586,
+          0.37103503942489624,
+          0.682934045791626,
+          0.591428816318512
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7133776998519897,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_06_0488": [
+      {
+        "role": 0,
+        "box": [
+          0.2964931130409241,
+          0.23471876978874207,
+          0.7770277857780457,
+          0.6905683279037476
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3929100036621094,
+          0.6708645820617676,
+          0.6764959096908569,
+          0.8295780420303345
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_07_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3063373267650604,
+          0.2676740884780884,
+          0.7724419832229614,
+          0.7259742617607117
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.39287155866622925,
+          0.3749341368675232,
+          0.6851114630699158,
+          0.582002580165863
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7109742617607117,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_07_0468": [
+      {
+        "role": 0,
+        "box": [
+          0.29547443985939026,
+          0.22562655806541443,
+          0.7806025743484497,
+          0.6869661808013916
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6719661808013916,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_09_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3072100579738617,
+          0.2799556255340576,
+          0.7691651582717896,
+          0.7319554090499878
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.3854355812072754,
+          0.3712773323059082,
+          0.6709836721420288,
+          0.575169563293457
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7169554090499878,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_09_0476": [
+      {
+        "role": 0,
+        "box": [
+          0.2956862449645996,
+          0.22622378170490265,
+          0.7804785966873169,
+          0.6869750618934631
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6719750618934631,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_10_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3089030981063843,
+          0.27968257665634155,
+          0.7680478096008301,
+          0.7389242053031921
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.4153707027435303,
+          0.37596505880355835,
+          0.701574444770813,
+          0.5898135304450989
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7239242053031921,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_15_0120": [
+      {
+        "role": 0,
+        "box": [
+          0.30652010440826416,
+          0.2674574851989746,
+          0.7737442255020142,
+          0.7246978878974915
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.38736116886138916,
+          0.3556050658226013,
+          0.6765185594558716,
+          0.564297080039978
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7096978878974914,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_15_0488": [
+      {
+        "role": 0,
+        "box": [
+          0.2974685728549957,
+          0.23324646055698395,
+          0.7795681953430176,
+          0.6892063617706299
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3933720588684082,
+          0.6682301163673401,
+          0.6783642768859863,
+          0.8286435008049011
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_16_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.30705589056015015,
+          0.26823484897613525,
+          0.7731098532676697,
+          0.7256271839141846
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.3911861479282379,
+          0.36626237630844116,
+          0.6814590692520142,
+          0.5729859471321106
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7106271839141846,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_16_0468": [
+      {
+        "role": 0,
+        "box": [
+          0.2974490225315094,
+          0.2342825084924698,
+          0.7783652544021606,
+          0.6876116394996643
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6726116394996643,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_17_0112": [
+      {
+        "role": 0,
+        "box": [
+          0.30730539560317993,
+          0.2695081830024719,
+          0.7728161215782166,
+          0.7257245779037476
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.39701005816459656,
+          0.3577219247817993,
+          0.6836656332015991,
+          0.5620444416999817
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7107245779037475,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_17_0460": [
+      {
+        "role": 0,
+        "box": [
+          0.2987411618232727,
+          0.23875311017036438,
+          0.7765230536460876,
+          0.6955578327178955
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3926713168621063,
+          0.6737932562828064,
+          0.6765040159225464,
+          0.8295069336891174
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_18_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3083716630935669,
+          0.27708446979522705,
+          0.770714521408081,
+          0.7284070253372192
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.40481871366500854,
+          0.3697642982006073,
+          0.6918535828590393,
+          0.578496515750885
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7134070253372192,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_18_0464": [
+      {
+        "role": 0,
+        "box": [
+          0.2988240718841553,
+          0.23930688202381134,
+          0.776049017906189,
+          0.6952016353607178
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6802016353607178,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_20_0120": [
+      {
+        "role": 0,
+        "box": [
+          0.30659908056259155,
+          0.26763617992401123,
+          0.7740300297737122,
+          0.7237390875816345
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.3919498026371002,
+          0.36252641677856445,
+          0.6819154024124146,
+          0.5715388059616089
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7087390875816345,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_20_0488": [
+      {
+        "role": 0,
+        "box": [
+          0.2969924807548523,
+          0.2297338843345642,
+          0.7799975275993347,
+          0.6876422166824341
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6726422166824341,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_21_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.30837947130203247,
+          0.27399179339408875,
+          0.7716761231422424,
+          0.7293250560760498
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.39720940589904785,
+          0.36851584911346436,
+          0.6844537258148193,
+          0.5760010480880737
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7143250560760498,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_21_0464": [
+      {
+        "role": 0,
+        "box": [
+          0.2974936068058014,
+          0.23191094398498535,
+          0.7792129516601562,
+          0.6884580850601196
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.39296695590019226,
+          0.6679790616035461,
+          0.6781948804855347,
+          0.8293662667274475
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_22_0120": [
+      {
+        "role": 0,
+        "box": [
+          0.3078290820121765,
+          0.274748831987381,
+          0.7717501521110535,
+          0.7288037538528442
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.3941861391067505,
+          0.37093544006347656,
+          0.6838884353637695,
+          0.5850211381912231
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7138037538528442,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_22_0480": [
+      {
+        "role": 0,
+        "box": [
+          0.29791754484176636,
+          0.23590217530727386,
+          0.7782501578330994,
+          0.6886703968048096
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3933239281177521,
+          0.6688452363014221,
+          0.6777200698852539,
+          0.8292441964149475
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_23_0120": [
+      {
+        "role": 0,
+        "box": [
+          0.3079489469528198,
+          0.27564355731010437,
+          0.7713539600372314,
+          0.7293112277984619
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.409925639629364,
+          0.37039250135421753,
+          0.6993982195854187,
+          0.5865588784217834
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7143112277984619,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_24_0112": [
+      {
+        "role": 0,
+        "box": [
+          0.3079889416694641,
+          0.2701140344142914,
+          0.7723252177238464,
+          0.7266085147857666
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.40050429105758667,
+          0.36847400665283203,
+          0.6892083287239075,
+          0.5752306580543518
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7116085147857666,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_24_0452": [
+      {
+        "role": 0,
+        "box": [
+          0.297899454832077,
+          0.23311860859394073,
+          0.7787452936172485,
+          0.688481330871582
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3927576541900635,
+          0.6672455072402954,
+          0.6775742769241333,
+          0.8298366069793701
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_25_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3044326603412628,
+          0.2670086622238159,
+          0.7713606357574463,
+          0.7209089398384094
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.39293521642684937,
+          0.38421761989593506,
+          0.6905820965766907,
+          0.5996249914169312
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7059089398384094,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_25_0468": [
+      {
+        "role": 0,
+        "box": [
+          0.29547393321990967,
+          0.23484624922275543,
+          0.7764900922775269,
+          0.6872120499610901
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3912907540798187,
+          0.6678869724273682,
+          0.6747803688049316,
+          0.8294681310653687
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_26_0112": [
+      {
+        "role": 0,
+        "box": [
+          0.3071412444114685,
+          0.2734653949737549,
+          0.7719700932502747,
+          0.7294979095458984
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.4014575183391571,
+          0.36431270837783813,
+          0.6878423690795898,
+          0.5661302804946899
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7144979095458984,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_26_0460": [
+      {
+        "role": 0,
+        "box": [
+          0.298222154378891,
+          0.23788870871067047,
+          0.7765388488769531,
+          0.6938861012458801
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6788861012458801,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_28_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.307600200176239,
+          0.2646341919898987,
+          0.7747700810432434,
+          0.7183414697647095
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.405935138463974,
+          0.3619382679462433,
+          0.6973143815994263,
+          0.5731077194213867
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7033414697647095,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_28_0472": [
+      {
+        "role": 0,
+        "box": [
+          0.2978421151638031,
+          0.23635703325271606,
+          0.7771553993225098,
+          0.692306637763977
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.392340749502182,
+          0.6724066734313965,
+          0.6760261058807373,
+          0.8301670551300049
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_30_0112": [
+      {
+        "role": 0,
+        "box": [
+          0.3091391324996948,
+          0.27141526341438293,
+          0.7729779481887817,
+          0.7267777919769287
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.39528125524520874,
+          0.359754741191864,
+          0.6812885403633118,
+          0.5654262900352478
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7117777919769287,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_30_0452": [
+      {
+        "role": 0,
+        "box": [
+          0.2977895140647888,
+          0.23623013496398926,
+          0.7785170674324036,
+          0.6893987655639648
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.392889142036438,
+          0.6683169603347778,
+          0.6775140762329102,
+          0.8291882276535034
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_04_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3069162964820862,
+          0.2712814211845398,
+          0.769270122051239,
+          0.7297890782356262
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.40869373083114624,
+          0.3721221089363098,
+          0.6986532807350159,
+          0.5846530795097351
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7147890782356262,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_04_0476": [
+      {
+        "role": 0,
+        "box": [
+          0.2958531975746155,
+          0.2278805524110794,
+          0.7788732647895813,
+          0.6874165534973145
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.3926875591278076,
+          0.6669719219207764,
+          0.6764088869094849,
+          0.8292157649993896
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_08_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3067648410797119,
+          0.27689486742019653,
+          0.7701218128204346,
+          0.7289120554924011
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.380271315574646,
+          0.36156487464904785,
+          0.6692609786987305,
+          0.5840460062026978
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7139120554924011,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_08_0468": [
+      {
+        "role": 0,
+        "box": [
+          0.29599303007125854,
+          0.22917386889457703,
+          0.7789124846458435,
+          0.6881238222122192
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.39285287261009216,
+          0.6681286692619324,
+          0.6766650676727295,
+          0.8297299742698669
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_12_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.30697548389434814,
+          0.27763310074806213,
+          0.7697842121124268,
+          0.728422999382019
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.38622862100601196,
+          0.3667011857032776,
+          0.6718460917472839,
+          0.5722377300262451
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.713422999382019,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_12_0472": [
+      {
+        "role": 0,
+        "box": [
+          0.29589468240737915,
+          0.23265789449214935,
+          0.7780467867851257,
+          0.6893323659896851
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.39278948307037354,
+          0.6687780618667603,
+          0.676946759223938,
+          0.8293299674987793
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_14_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.304348349571228,
+          0.26308760046958923,
+          0.7748019695281982,
+          0.7157688140869141
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.38831183314323425,
+          0.35596510767936707,
+          0.6817977428436279,
+          0.5701612234115601
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.700768814086914,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_14_0464": [
+      {
+        "role": 0,
+        "box": [
+          0.2973720133304596,
+          0.2358078807592392,
+          0.7771719694137573,
+          0.6897876858711243
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.39289459586143494,
+          0.6687836647033691,
+          0.6768250465393066,
+          0.8293799161911011
+        ],
+        "proposal_source": "Codex_review_corrected_scissor_from_wrong_meter"
+      }
+    ],
+    "R02_29_0116": [
+      {
+        "role": 0,
+        "box": [
+          0.3054962754249573,
+          0.26354122161865234,
+          0.7754560112953186,
+          0.7167313694953918
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.3923436999320984,
+          0.3666125535964966,
+          0.6873212456703186,
+          0.5744448304176331
+        ],
+        "proposal_source": "teacher_instrument_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.7017313694953918,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R02_29_0468": [
+      {
+        "role": 0,
+        "box": [
+          0.29918020963668823,
+          0.23969362676143646,
+          0.7778605818748474,
+          0.6976248621940613
+        ],
+        "proposal_source": "teacher_top_plate_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.38,
+          0.6826248621940613,
+          0.69,
+          0.84
+        ],
+        "proposal_source": "Codex_review_added_visible_collapsed_scissor"
+      }
+    ],
+    "R04_01_0060": [
+      {
+        "role": 0,
+        "box": [
+          0.2112714946269989,
+          0.00036334991455078125,
+          0.6378588676452637,
+          0.6164463758468628
+        ],
+        "proposal_source": "teacher_sheet_candidate"
+      },
+      {
+        "role": 1,
+        "box": [
+          0.45,
+          0.0,
+          0.79,
+          0.36
+        ],
+        "proposal_source": "manual_seed_upright_blade_draft_review_required"
+      },
+      {
+        "role": 2,
+        "box": [
+          0.0,
+          0.26,
+          0.8,
+          0.92
+        ],
+        "proposal_source": "normal_fixed_scene_trough_draft"
+      }
+    ]
+  },
+  "notes": {
+    "R01": "All 81 normal frames inspected. Belt product correctly localized, unlike teacher tape-measure errors. Boxes are approximate: product upper padding, belt and front rail fixed scene geometry. No independent annotator verification.",
+    "R02": "All 72 frames inspected. Plate and on-plate meter proposals retained. Scissor below plate added if missing. Wrong meter proposals below plate remapped to scissor; visible absence of meter preserved. Approximate visible scissor extent excludes base and background vises.",
+    "R03": "All 54 frames inspected. Five frames with gross tray extent error or clipped tray/cups excluded; remaining boxes approximate and sometimes image-boundary truncated.",
+    "R04": "All 60 frames inspected. Retain clear individual sheet(s), upright blade and trough only. Exclude ambiguous merged sheet/cut-piece instances, missed large pieces, moving/lowered blade and false material proposal. Tiny pre-existing debris not the sheet target. This leaves predominantly upright blade states and must be reported as limited supervision support, not balanced full-process annotations."
+  },
+  "corrected_geometry_review": {
+    "R02": "All 45 modified retained frames re-inspected in R02_corrected_00..04.jpg; scissor/meter role and approximate geometry accepted."
+  }
+}

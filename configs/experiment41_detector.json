@@ -1,0 +1,49 @@
+{
+  "experiment": "41",
+  "seed": 42,
+  "epochs": 5,
+  "batch_size": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "precision": "float32",
+  "training_shortest_edges": [
+    768,
+    800,
+    832
+  ],
+  "validation_shortest_edge": 800,
+  "checkpoint_selection": "minimum_macro_scene_normal_weak_box_validation_loss_including_epoch0",
+  "mode": "eval_with_gradients",
+  "data_root": "/media/jeong/ExtHDD/IPAD_vLLM/IPAD_dataset",
+  "annotations": "results/experiment41/annotations.json",
+  "prompts": {
+    "R01": [
+      "small black object with red top",
+      "green conveyor belt",
+      "horizontal metal bar"
+    ],
+    "R02": [
+      "white square platform top plate",
+      "black scissor lift mechanism",
+      "black digital multimeter device"
+    ],
+    "R03": [
+      "yellow and black toy forklift",
+      "black pallet tray holding white cups"
+    ],
+    "R04": [
+      "brown cardboard sheet",
+      "hinged metal lid",
+      "galvanized metal trough"
+    ]
+  },
+  "training_sampling": "all_accepted_frames_once_per_epoch_same_scene_batches_shuffled_without_replacement",
+  "validation_sampling": "all_accepted_frames_same_scene_batches_deterministic",
+  "new_supervision": "model_assisted_normal_weak_boxes_not_human_GT",
+  "anomaly_labels_for_training": false,
+  "calibration_for_training": false,
+  "test_for_training": false,
+  "loss": "final_decoder_only_HF_Hungarian_focal_L1_GIoU",
+  "frozen_proposal_bbox_head": true
+}

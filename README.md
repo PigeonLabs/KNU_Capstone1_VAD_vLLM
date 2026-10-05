@@ -1321,3 +1321,39 @@ R04 정상 FIT 20/calibration 5/test 19개, 테스트 8,154프레임입니다. �
 | 3 | **공정별 learned phase head와 보정 진단**: 공유 시각 표현 위의 R01~R04 별도 head를 비교하고, transition/dwell/calibration은 공정별 통계 모델로 유지한다. | R02 C의 Visual AUC0.7318이 Combined0.5464로 낮아지고, R01 C는 정상 holdout FP105~109/1631 및 test FPR15.01%다. 기존 phase/grammar 결합 병목을 점검할 근거다. | 정상-only phase 약지도와 별도 검수 사례로 phase 품질을 구분하고, visual-only 대조·정상 holdout·이상 구간을 함께 평가. 잠재 cluster를 action 정답으로 취급하지 않으며 HSMM/transition/dwell에 LoRA를 억지로 적용하지 않는다. |
 
 [상세 결과·한계·공정별 표](docs/EXPERIMENT40.md) · [학습 곡선](results/experiment40/figures/training_diagnostics.png) · [경보 비교](results/experiment40/figures/operating_points.png) · [지표](results/experiment40/metrics.json) · [영상별 결과](results/experiment40/per_sequence.csv) · [검증](results/experiment40/validation.json) · [구현·재현 명세](docs/EXPERIMENT40_METHODS.md) · [실험41 계획](docs/EXPERIMENT41_PLAN.md)
+
+
+## 실험 41 — 공유 GroundingDINO decoder partial FT
+
+**완료: 일부 객체 역할 관측과 정상 loss는 개선됐지만 전체 이상탐지는 개선되지 않았다.** 정상178 train/50 val 약지도 프레임, detector seed42/5epochs/455updates로 decoder·bbox head11,187,460개 파라미터를 학습했다. 실험40의8개 visual encoder를 모두 동결한 paired 비교다. Test66영상 중31,550 valid frames·66events를 평가했고 길이 불일치1,912프레임은 제외했다.
+
+| exp | arm | Visual AUC | Combined AUC | Combined AP | FPR% | recall% | event% |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 40 | A | 0.6934 | 0.6395 | 0.5247 | 7.60 | 16.31 | 56.72 |
+| 41 | A | 0.6680 | 0.6113 | 0.5081 | 3.99 | 9.47 | 63.18 |
+| 40 | B | 0.7082 | 0.6584 | 0.5510 | 6.58 | 16.29 | 57.68 |
+| 41 | B | 0.6775 | 0.6348 | 0.5332 | 2.65 | 7.91 | 61.51 |
+| 40 | C | 0.7226 ± 0.0011 | 0.6702 ± 0.0009 | 0.5576 ± 0.0009 | 6.93 ± 0.15 | 17.01 ± 0.37 | 60.50 ± 1.47 |
+| 41 | C | 0.6862 ± 0.0009 | 0.6421 ± 0.0005 | 0.5394 ± 0.0007 | 2.16 ± 0.08 | 6.93 ± 0.16 | 58.54 ± 0.84 |
+| 40 | D | 0.6759 ± 0.0040 | 0.6354 ± 0.0016 | 0.5368 ± 0.0012 | 6.10 ± 0.24 | 16.58 ± 1.02 | 55.39 ± 1.52 |
+| 41 | D | 0.6762 ± 0.0026 | 0.6261 ± 0.0053 | 0.5240 ± 0.0051 | 3.34 ± 0.98 | 10.90 ± 1.72 | 56.12 ± 3.09 |
+
+공정별 지표의 동일 가중 macro다. C/D는 기존 visual3seed 평균±표본 SD(신뢰구간 아님), detector는1seed다. FPR/recall/event는 run·공정별 정상 q99를 사용한다. **R04는 정상 dwell 지원 부족으로 strict fit이 실패했고, 최소10을 유지한 명시적 unavailable-dwell 처리 후 평가했다.** 기존 strict 파이프라인과 runtime 처리까지 동일한 비교는 아니다.
+
+![실험41 공정별 paired 비교](results/experiment41/figures/paired_auroc.png)
+
+**의의:** normal val loss3.7955→0.4871 및 동결부 보존을 확인했다. 검수한 정상 holdout에서 R01 줄자 대신 제품, R02 바이스 대신 scissor를 잡는 변화가 보였다. 그러나 C 평균 Combined AUROC0.6702→0.6421, recall17.01→6.93%로 낮아졌다. 역할 교정·phase 관측·체류 지원·최종 경보를 함께 검증해야 함을 보여준다. 이는 구성 요소 학습과 전파를 재현한 구현 성과이며 새로운 detector/loss, SOTA 또는 통계적 유의성을 주장하지 않는다.
+
+**보완할 점:** C의 FPR6.93→2.16% 감소에는 큰 TP 손실이 동반됐다. R02 C는 Combined AUC0.5464→0.5755로 개선됐지만 R01 C의 TP293→48, R03 C의 recall28.24→15.82%, R04 C의 recall11.42→2.24%로 감소했다. R01 탐지 구간6/8→7/8 상승만으로 frame coverage를 설명할 수 없다. R04 정상 phase3는18.6→89.9%, complete-run 최대7개로 dwell 적합에 실패했다. 약지도 box·추적·phase의 독립 GT, 별도 녹화 그룹 및 일반화는 미검증이다.
+
+182개 테스트, 정상888feature/208full·holdout 모델·점수 및528test 예측 재구성, AUROC/AP 독립 재계산을 통과했다. 실패 복구 전후 R01~R03의 정상 모델·점수320파일은 정확히 같다. 모든 테스트 점수는 라벨 전에 고정했다. 원본 영상·가중치·feature cache·server log는 업로드하지 않는다.
+
+**다음 Recommended improvements — 추천순3개**
+
+| 추천순 | 개선 후보와 변경 내용 | 이번 결과의 근거 | 검증 기준 및 주의점 |
+|---|---|---|---|
+| 1 | **공유 learned ReID/association adapter를 분리 검증**: 검수 가능한 정상 temporal pair로 작은 residual metric head만 학습. IoU-only, frozen-feature association, learned association을 같은 검출·시각 표현에서 비교 | R04 정상 material/blade track ID 합계가223/268→247/286이고, blade 관측률은97.8→82.3%다. 반면 다른 공정의 track 수는 크게 감소했다. 역할 교정 뒤에도 연결 품질을 별도로 검증할 필요가 있다. 정상 same-role negative 후보는 R04 train163/val50에 집중되어 감독 한계도 확인됐다 | 사용자 지정 학습 단계에 따라 **다음42는 이 한 요소**를 선택. 기존 track ID를 identity GT로 복제하지 않고 positive/negative pair를 검수하며, 지원 부족 역할은 IoU로 명시적 fallback. False link·재연결·phase/dwell 가용성·FPR/recall을 함께 평가. Track 감소를 IDF1 개선으로 부르거나 ReID가 AUROC 하락의 원인이라고 단정하지 않음 |
+| 2 | **공정별 learned phase head와 관측 분포 적합성 검증**: 새 detector 관측에 맞춘 정상 phase target/참조와 작은 process별 head를 검증. Transition/dwell은 통계 모델로 유지 | R04 phase3가18.6→89.9%, complete run 최대7개로 dwell 적합 실패. C의 R04 Combined AUC0.7557→0.6837, recall11.42→2.24%. R01도 새 박스는 제품을 잡지만 C Combined AUC0.6156→0.5487 | 과거 latent phase를 action 정답으로 그대로 증류하지 않음. 기존 phase, 새 정상 참조, learned head 효과를 구분하고 phase 점유·전이·완결 지원과 최종 경보를 검증. 정상-only checkpoint 선택, test 상대시간 입력 금지. 42 결과를 본 뒤 구체화 |
+| 3 | **상태 균형 detector 약지도와 독립 검증 자료 확충**: 낮아진/움직이는 blade, 분리·겹친 material 및 identity/phase 경계를 포함한 정상 주석을 보강 | R04 60개 검수 프레임 중34개 제외, val5개는 upright 편중. 정상 holdout에서 잘린 종이 누락·손/금속 오검출이 남음. 약지도 box 일치 상승에도 전체 C AUROC와 recall 하락 | 최적화 주석·checkpoint validation·독립 진단을 구분. 기존 pseudo-box 일치를 detector 정확도로 대체하지 않으며 주석 변경과 모델 구조 변경을 동시에 넣지 않음. 독립 사람 GT와 별도 녹화 그룹이 없으면 그 제한을 유지 |
+
+[상세 결과·의의·한계](docs/EXPERIMENT41.md) · [전체 공정/seed 표](results/experiment41/report_tables.md) · [학습 곡선](results/experiment41/figures/training.png) · [경보 비교](results/experiment41/figures/operating_points.png) · [영상별 CSV](results/experiment41/per_sequence.csv) · [지표](results/experiment41/metrics.json) · [검증](results/experiment41/validation.json) · [정상 적합 실패·복구](docs/EXPERIMENT41_NORMAL_RECOVERY.md) · [구현 명세](docs/EXPERIMENT41_METHODS.md) · [다음42 계획](docs/EXPERIMENT42_PLAN.md)

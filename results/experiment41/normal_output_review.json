@@ -1,0 +1,23 @@
+{
+  "reviewer": "Codex visual inspection, not independent human ground truth",
+  "inventory_sha256": "e911ea9bf9823821d76c4d52d5dc15bb7e774b23c50cd66ceabb1e9de24ebc32",
+  "boards_reviewed": [
+    "artifacts/experiment41/normal_output_review/R01_09.jpg",
+    "artifacts/experiment41/normal_output_review/R01_31.jpg",
+    "artifacts/experiment41/normal_output_review/R02_01.jpg",
+    "artifacts/experiment41/normal_output_review/R02_27.jpg",
+    "artifacts/experiment41/normal_output_review/R03_07.jpg",
+    "artifacts/experiment41/normal_output_review/R03_22.jpg",
+    "artifacts/experiment41/normal_output_review/R04_02.jpg",
+    "artifacts/experiment41/normal_output_review/R04_15.jpg"
+  ],
+  "frames_reviewed": 24,
+  "used_for_training_or_model_selection": false,
+  "observations": {
+    "R01": "Both normal holdout sequences: frozen red-tape-measure false role0 boxes below belt replaced by belt product boxes at all 6 inspected times. Belt/rail scopes narrower. Spatial phase follows product movement; old phases differ in some frames.",
+    "R02": "Both sequences: learned scissor role1 below plate at all 6 times, replacing frozen off-platform vise/cord boxes and role-confused lower structure. Plate and on-platform meter retained; no meter detected on inspected empty plates. Phase is frozen unchanged by design.",
+    "R03": "Similar forklift/tray locations at the 6 inspected times, with increased confidence. R03/22 frame560 frozen multiple overlapping tray/cup candidates become one tray candidate. Border truncation remains.",
+    "R04": "Upright blade role1 replaces foreground vise errors; lowered blade also detected in both final sampled frames. R04/02 frame328 still adds a hand/metal false role1 candidate. R04/15 frame168 separated cut piece is missed by both detector paths. Some stacked/overlapping material remains one box. Learned phase3 at all 6 inspected frames despite visible blade motion; exact phase semantic accuracy cannot be assessed without ground truth."
+  },
+  "limits": "Post-training normal-calibration qualitative sample, not detector mAP, IDF1, phase accuracy or unbiased error prevalence. Approximate annotations and all data reuse disclosed."
+}

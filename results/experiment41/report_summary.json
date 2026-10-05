@@ -1,0 +1,231 @@
+{
+  "normal_observation_rollup": [
+    {
+      "scene": "R01",
+      "arm": "frozen",
+      "role": 0,
+      "sampled_frames": 1966,
+      "observed_frames": 1966,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 111,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R01",
+      "arm": "frozen",
+      "role": 1,
+      "sampled_frames": 1966,
+      "observed_frames": 1966,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 89,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R01",
+      "arm": "frozen",
+      "role": 2,
+      "sampled_frames": 1966,
+      "observed_frames": 1966,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 37,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R01",
+      "arm": "learned",
+      "role": 0,
+      "sampled_frames": 1966,
+      "observed_frames": 1956,
+      "coverage": 0.9949135300101729,
+      "sum_track_ids_within_videos": 151,
+      "maximum_missing_samples": 2
+    },
+    {
+      "scene": "R01",
+      "arm": "learned",
+      "role": 1,
+      "sampled_frames": 1966,
+      "observed_frames": 1966,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 34,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R01",
+      "arm": "learned",
+      "role": 2,
+      "sampled_frames": 1966,
+      "observed_frames": 1966,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 34,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R02",
+      "arm": "frozen",
+      "role": 0,
+      "sampled_frames": 4448,
+      "observed_frames": 4448,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 127,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R02",
+      "arm": "frozen",
+      "role": 1,
+      "sampled_frames": 4448,
+      "observed_frames": 4446,
+      "coverage": 0.9995503597122302,
+      "sum_track_ids_within_videos": 572,
+      "maximum_missing_samples": 1
+    },
+    {
+      "scene": "R02",
+      "arm": "frozen",
+      "role": 2,
+      "sampled_frames": 4448,
+      "observed_frames": 2593,
+      "coverage": 0.5829586330935251,
+      "sum_track_ids_within_videos": 220,
+      "maximum_missing_samples": 46
+    },
+    {
+      "scene": "R02",
+      "arm": "learned",
+      "role": 0,
+      "sampled_frames": 4448,
+      "observed_frames": 4448,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 30,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R02",
+      "arm": "learned",
+      "role": 1,
+      "sampled_frames": 4448,
+      "observed_frames": 4216,
+      "coverage": 0.947841726618705,
+      "sum_track_ids_within_videos": 189,
+      "maximum_missing_samples": 11
+    },
+    {
+      "scene": "R02",
+      "arm": "learned",
+      "role": 2,
+      "sampled_frames": 4448,
+      "observed_frames": 2266,
+      "coverage": 0.5094424460431655,
+      "sum_track_ids_within_videos": 65,
+      "maximum_missing_samples": 74
+    },
+    {
+      "scene": "R03",
+      "arm": "frozen",
+      "role": 0,
+      "sampled_frames": 3845,
+      "observed_frames": 3845,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 137,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R03",
+      "arm": "frozen",
+      "role": 1,
+      "sampled_frames": 3845,
+      "observed_frames": 3843,
+      "coverage": 0.999479843953186,
+      "sum_track_ids_within_videos": 272,
+      "maximum_missing_samples": 1
+    },
+    {
+      "scene": "R03",
+      "arm": "learned",
+      "role": 0,
+      "sampled_frames": 3845,
+      "observed_frames": 3845,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 33,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R03",
+      "arm": "learned",
+      "role": 1,
+      "sampled_frames": 3845,
+      "observed_frames": 3844,
+      "coverage": 0.999739921976593,
+      "sum_track_ids_within_videos": 81,
+      "maximum_missing_samples": 1
+    },
+    {
+      "scene": "R04",
+      "arm": "frozen",
+      "role": 0,
+      "sampled_frames": 2442,
+      "observed_frames": 2261,
+      "coverage": 0.9258804258804259,
+      "sum_track_ids_within_videos": 223,
+      "maximum_missing_samples": 13
+    },
+    {
+      "scene": "R04",
+      "arm": "frozen",
+      "role": 1,
+      "sampled_frames": 2442,
+      "observed_frames": 2389,
+      "coverage": 0.9782964782964783,
+      "sum_track_ids_within_videos": 268,
+      "maximum_missing_samples": 4
+    },
+    {
+      "scene": "R04",
+      "arm": "frozen",
+      "role": 2,
+      "sampled_frames": 2442,
+      "observed_frames": 2442,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 25,
+      "maximum_missing_samples": 0
+    },
+    {
+      "scene": "R04",
+      "arm": "learned",
+      "role": 0,
+      "sampled_frames": 2442,
+      "observed_frames": 2410,
+      "coverage": 0.9868959868959869,
+      "sum_track_ids_within_videos": 247,
+      "maximum_missing_samples": 5
+    },
+    {
+      "scene": "R04",
+      "arm": "learned",
+      "role": 1,
+      "sampled_frames": 2442,
+      "observed_frames": 2009,
+      "coverage": 0.8226863226863227,
+      "sum_track_ids_within_videos": 286,
+      "maximum_missing_samples": 10
+    },
+    {
+      "scene": "R04",
+      "arm": "learned",
+      "role": 2,
+      "sampled_frames": 2442,
+      "observed_frames": 2442,
+      "coverage": 1.0,
+      "sum_track_ids_within_videos": 32,
+      "maximum_missing_samples": 0
+    }
+  ],
+  "source_sha256": {
+    "results/experiment40/metrics.json": "1efdf167ca02b2bd6b17f5af0aa3820fb92de9944dbda6e304fa6ed1b38704b9",
+    "results/experiment41/metrics.json": "5c255c6d8478d1087d6a1158252bce27f7180acdf34377142a63688bf737939b",
+    "results/experiment41/validation.json": "1facc4d6bf7f2476a7ed14c453b20d8af8bc04c64c4de338543f58d804a9ee3c",
+    "results/experiment41/normal_diagnostics.json": "5c89c6cd896d6d537276a5e295c4cb5a04daef9817a3536301ef255f26669f49"
+  },
+  "tables_sha256": "f1ef938e83778d690d025aaa6462af28caf7846cd321a2cbdaee152295cb36ce"
+}

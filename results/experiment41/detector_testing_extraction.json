@@ -1,0 +1,1555 @@
+{
+  "normal_only": false,
+  "sequences": [
+    {
+      "scene": "R01",
+      "sequence": "01",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "d272d0017445142eaa187989ad10627b42f6ca5696db95cf6de7322cf4a55d69",
+      "sampled_frames": 58,
+      "boxes": 179,
+      "tracks": 7,
+      "phase_changes_from_frozen": 30,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        14,
+        14,
+        30
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 7.9759522110107355
+    },
+    {
+      "scene": "R01",
+      "sequence": "02",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "4705596acf9f815153136c87514b646c10fbd71cf250ebcc5aebf17b6e649739",
+      "sampled_frames": 64,
+      "boxes": 192,
+      "tracks": 3,
+      "phase_changes_from_frozen": 20,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        24,
+        21,
+        19
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 6.8481629049929325
+    },
+    {
+      "scene": "R01",
+      "sequence": "03",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "9cfbcd4e1a0da1262cf83fc2c750f269da1d7c2c7f14d49b9b894fea3de4df93",
+      "sampled_frames": 103,
+      "boxes": 311,
+      "tracks": 6,
+      "phase_changes_from_frozen": 66,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        24,
+        57,
+        22
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 10.637936412997078
+    },
+    {
+      "scene": "R01",
+      "sequence": "04",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "e771157dff468bc6e3379a4fef9adb3cec873f54b33e32540e969e9823488b91",
+      "sampled_frames": 48,
+      "boxes": 147,
+      "tracks": 6,
+      "phase_changes_from_frozen": 18,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        18,
+        12,
+        18
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 4.561230565974256
+    },
+    {
+      "scene": "R01",
+      "sequence": "05",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "0cb0b6e67096aeb8508fdeb2a40ffe5c5415fc5135dbfc4da54221131014e123",
+      "sampled_frames": 73,
+      "boxes": 220,
+      "tracks": 6,
+      "phase_changes_from_frozen": 54,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        33,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 6.8893862219993025
+    },
+    {
+      "scene": "R01",
+      "sequence": "06",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "2150608d077da49e457f7ee4e395bd709b536b8dddb25d90a1cfd4e44b105aa8",
+      "sampled_frames": 59,
+      "boxes": 175,
+      "tracks": 4,
+      "phase_changes_from_frozen": 7,
+      "role_frame_coverage": [
+        0.9661016949152542,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        22
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.610313659009989
+    },
+    {
+      "scene": "R01",
+      "sequence": "07",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "722e7bd7dbf48d0d4a3ee81c922c6ee4ef4c9111b9d61d365304e30f432217fd",
+      "sampled_frames": 58,
+      "boxes": 174,
+      "tracks": 5,
+      "phase_changes_from_frozen": 28,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.828996172000188
+    },
+    {
+      "scene": "R01",
+      "sequence": "08",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "cfc1548bc7ccde084103aa58328067ada5208098a282ad5f158a2a5795780d77",
+      "sampled_frames": 59,
+      "boxes": 177,
+      "tracks": 5,
+      "phase_changes_from_frozen": 23,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        19,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.588371018995531
+    },
+    {
+      "scene": "R01",
+      "sequence": "09",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "07e8a12fd4d1ba9e347efc2f8e6dd448cfad515d8a044086237a24d383532f0b",
+      "sampled_frames": 58,
+      "boxes": 174,
+      "tracks": 5,
+      "phase_changes_from_frozen": 24,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 6.320681404991774
+    },
+    {
+      "scene": "R01",
+      "sequence": "10",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "e7b8eb3848b091e30801751c8c53d95f34b92fcb5721be1d68836f2f9443ba1d",
+      "sampled_frames": 58,
+      "boxes": 179,
+      "tracks": 6,
+      "phase_changes_from_frozen": 39,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.5551769160083495
+    },
+    {
+      "scene": "R01",
+      "sequence": "11",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "7b429c325ceeaea603ff3d843429f140641c4c79915ac85c322848667e85678f",
+      "sampled_frames": 58,
+      "boxes": 174,
+      "tracks": 4,
+      "phase_changes_from_frozen": 39,
+      "role_frame_coverage": [
+        0.9827586206896551,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.510589094017632
+    },
+    {
+      "scene": "R01",
+      "sequence": "12",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "ba98b36980b380c5253122fcbb0c9d801116690cf895a993506ba2eba70a3938",
+      "sampled_frames": 58,
+      "boxes": 185,
+      "tracks": 9,
+      "phase_changes_from_frozen": 39,
+      "role_frame_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.512287035991903
+    },
+    {
+      "scene": "R01",
+      "sequence": "13",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "ecdef91261e5b9850aa1bdf33ee5f707a9daaaf46fb37ca5173e7a3a4f1b91fe",
+      "sampled_frames": 58,
+      "boxes": 176,
+      "tracks": 10,
+      "phase_changes_from_frozen": 40,
+      "role_frame_coverage": [
+        0.9482758620689655,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        18,
+        18,
+        22
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.517838069994468
+    },
+    {
+      "scene": "R01",
+      "sequence": "14",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "65c8951b1ceb1c14d9a53c6c980be657994995ee5ae8fa12ebd7e65c1bb6d4cc",
+      "sampled_frames": 58,
+      "boxes": 173,
+      "tracks": 4,
+      "phase_changes_from_frozen": 39,
+      "role_frame_coverage": [
+        0.9827586206896551,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        18,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.500939782999922
+    },
+    {
+      "scene": "R01",
+      "sequence": "15",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "6c357df0a2b12c99f3ff195b5b9e5f65163394e04a9074f50e6f4cb78219d8d6",
+      "sampled_frames": 57,
+      "boxes": 170,
+      "tracks": 5,
+      "phase_changes_from_frozen": 38,
+      "role_frame_coverage": [
+        0.9649122807017544,
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        19,
+        17,
+        21
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 5.430537759006256
+    },
+    {
+      "scene": "R02",
+      "sequence": "01",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "58b1e3f185951cb7be09ef81186e031818a9f5cd891358097515d5bd89876a94",
+      "sampled_frames": 146,
+      "boxes": 368,
+      "tracks": 10,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.952054794520548,
+        0.5
+      ],
+      "phase_counts": [
+        1,
+        49,
+        15,
+        81
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.506744698999682
+    },
+    {
+      "scene": "R02",
+      "sequence": "02",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "e5ec1f66361cc250590db26ca4b5372013e60469cdd8c7a1a984da135b9519c3",
+      "sampled_frames": 149,
+      "boxes": 384,
+      "tracks": 11,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9798657718120806,
+        0.5167785234899329
+      ],
+      "phase_counts": [
+        0,
+        70,
+        12,
+        67
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.789658805995714
+    },
+    {
+      "scene": "R02",
+      "sequence": "03",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "c00cbfe141780b048542d1193a988a792c695b12b6ccfeb3f8c4e4fe5affc5a7",
+      "sampled_frames": 144,
+      "boxes": 370,
+      "tracks": 13,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9791666666666666,
+        0.5138888888888888
+      ],
+      "phase_counts": [
+        1,
+        66,
+        7,
+        70
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 22.375032887997804
+    },
+    {
+      "scene": "R02",
+      "sequence": "04",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "f6573b4d7460e50930ec0a24fc6e0067b2eebabdc90aad25965dac8b8823dac2",
+      "sampled_frames": 145,
+      "boxes": 375,
+      "tracks": 11,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9862068965517241,
+        0.503448275862069
+      ],
+      "phase_counts": [
+        3,
+        28,
+        16,
+        98
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 24.922436953987926
+    },
+    {
+      "scene": "R02",
+      "sequence": "05",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "91380b0129ca08274a6c07ebbe8ee68498939b53a85e5f6f4264b624b688c8e6",
+      "sampled_frames": 146,
+      "boxes": 364,
+      "tracks": 10,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.952054794520548,
+        0.5136986301369864
+      ],
+      "phase_counts": [
+        0,
+        70,
+        3,
+        73
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.293988307996187
+    },
+    {
+      "scene": "R02",
+      "sequence": "06",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "086e4b02fe8304146c7dc7449e2dd396861772f15c0d802f226492034fa5b2c2",
+      "sampled_frames": 151,
+      "boxes": 373,
+      "tracks": 10,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9337748344370861,
+        0.5165562913907285
+      ],
+      "phase_counts": [
+        2,
+        82,
+        6,
+        61
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.917462875018828
+    },
+    {
+      "scene": "R02",
+      "sequence": "07",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "c2fe6ff329dad67b71ea832e7a772e77ca25e202105e7b0ea10d93a19c440136",
+      "sampled_frames": 134,
+      "boxes": 340,
+      "tracks": 12,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9328358208955224,
+        0.5671641791044776
+      ],
+      "phase_counts": [
+        0,
+        87,
+        0,
+        47
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 12.228548287996091
+    },
+    {
+      "scene": "R02",
+      "sequence": "08",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "ed00e2520e0dea696306bdae14480e601883040a5e5604e1ad3f2c3ba0341bd6",
+      "sampled_frames": 196,
+      "boxes": 483,
+      "tracks": 9,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9591836734693877,
+        0.4846938775510204
+      ],
+      "phase_counts": [
+        0,
+        91,
+        5,
+        100
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 18.127184020995628
+    },
+    {
+      "scene": "R02",
+      "sequence": "09",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "f6b7f06e497dcaa923b5d1c82fb6ea8b3cc69770b33725966f4cea33547584ce",
+      "sampled_frames": 214,
+      "boxes": 528,
+      "tracks": 7,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9626168224299065,
+        0.49065420560747663
+      ],
+      "phase_counts": [
+        1,
+        105,
+        4,
+        104
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 24.07556709597702
+    },
+    {
+      "scene": "R02",
+      "sequence": "10",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "5cb1942d0e108bc0c726c0a7fc1c5487054702b5e69c3ee40edd7bb5f60e02c9",
+      "sampled_frames": 153,
+      "boxes": 443,
+      "tracks": 10,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9019607843137255,
+        0.9803921568627451
+      ],
+      "phase_counts": [
+        0,
+        12,
+        0,
+        141
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 22.664300281991018
+    },
+    {
+      "scene": "R02",
+      "sequence": "11",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "eedd71b6ead4d0bcfbb79245ef1a278ca84a4b601642e977416e1ed8117fa5a1",
+      "sampled_frames": 148,
+      "boxes": 364,
+      "tracks": 8,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9324324324324325,
+        0.5135135135135135
+      ],
+      "phase_counts": [
+        0,
+        22,
+        0,
+        126
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.257732792000752
+    },
+    {
+      "scene": "R02",
+      "sequence": "12",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "482c39d0d2c1b344296ad0700a59709afb492001760b5cbb6926c9739d2da981",
+      "sampled_frames": 202,
+      "boxes": 503,
+      "tracks": 12,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9603960396039604,
+        0.5099009900990099
+      ],
+      "phase_counts": [
+        0,
+        70,
+        4,
+        128
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 18.31393606599886
+    },
+    {
+      "scene": "R02",
+      "sequence": "13",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "dcbb08a4537e4cae7ebcfc8d01ffd2b89877d3809a61bacc3a708575734fa17f",
+      "sampled_frames": 153,
+      "boxes": 375,
+      "tracks": 8,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9411764705882353,
+        0.49019607843137253
+      ],
+      "phase_counts": [
+        3,
+        67,
+        5,
+        78
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.967561299010413
+    },
+    {
+      "scene": "R02",
+      "sequence": "14",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "975a7ae28c15b99c4c9d2c66a3929f7b9343d5d3143f33a5d0d21419c4389bd2",
+      "sampled_frames": 125,
+      "boxes": 310,
+      "tracks": 12,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.936,
+        0.504
+      ],
+      "phase_counts": [
+        1,
+        56,
+        8,
+        60
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 13.068408652005019
+    },
+    {
+      "scene": "R02",
+      "sequence": "15",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "53e41eb786c0f4ebc7e7fbfaf8baa57d50f7312e0f2ecc5e562c88cbf1182043",
+      "sampled_frames": 204,
+      "boxes": 509,
+      "tracks": 12,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        0.9411764705882353,
+        0.5
+      ],
+      "phase_counts": [
+        0,
+        95,
+        7,
+        102
+      ],
+      "valid_relations": null,
+      "elapsed_seconds": 18.54174672201043
+    },
+    {
+      "scene": "R03",
+      "sequence": "01",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "c7b93315503f3be59adaa071d87c1203d56f044fbf4b1e54ce4e1f2feff2e3a3",
+      "sampled_frames": 180,
+      "boxes": 363,
+      "tracks": 4,
+      "phase_changes_from_frozen": 5,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        71,
+        49,
+        60
+      ],
+      "valid_relations": 180,
+      "elapsed_seconds": 16.228962399996817
+    },
+    {
+      "scene": "R03",
+      "sequence": "02",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "52804fc2fcd29049eaf851a75c24a85d02ab8828d16d2d59960a73c573409abb",
+      "sampled_frames": 169,
+      "boxes": 346,
+      "tracks": 5,
+      "phase_changes_from_frozen": 54,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        71,
+        45,
+        52,
+        1
+      ],
+      "valid_relations": 169,
+      "elapsed_seconds": 15.134270807990106
+    },
+    {
+      "scene": "R03",
+      "sequence": "03",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "437eec0071b5e1dd6758b90afd8f6ea849236ff1965d8fd029c2cfd8b27f26d1",
+      "sampled_frames": 169,
+      "boxes": 339,
+      "tracks": 3,
+      "phase_changes_from_frozen": 12,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        69,
+        46,
+        47,
+        7
+      ],
+      "valid_relations": 169,
+      "elapsed_seconds": 15.229264441004489
+    },
+    {
+      "scene": "R03",
+      "sequence": "04",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "4459edc759e827b2933c30f04d0c117799461e79dbed14b3e540f261b19e805a",
+      "sampled_frames": 171,
+      "boxes": 343,
+      "tracks": 3,
+      "phase_changes_from_frozen": 13,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        70,
+        48,
+        53,
+        0
+      ],
+      "valid_relations": 171,
+      "elapsed_seconds": 15.430843474983703
+    },
+    {
+      "scene": "R03",
+      "sequence": "05",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "fc72ca9eb2741696fd2268f3265df0f81f35f612630bbddd302a3309e39bf658",
+      "sampled_frames": 144,
+      "boxes": 291,
+      "tracks": 5,
+      "phase_changes_from_frozen": 42,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        70,
+        37,
+        37,
+        0
+      ],
+      "valid_relations": 144,
+      "elapsed_seconds": 12.943887574016117
+    },
+    {
+      "scene": "R03",
+      "sequence": "06",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "470585182e3735fdb1508b415da6354bb94baaae55f886a17ff18790a236dfee",
+      "sampled_frames": 146,
+      "boxes": 292,
+      "tracks": 2,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        107,
+        39
+      ],
+      "valid_relations": 146,
+      "elapsed_seconds": 13.630215039011091
+    },
+    {
+      "scene": "R03",
+      "sequence": "07",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "1f2a3ac92f1f391da73f24c8dbd42556b6384bb7fd7e73cd00f9c14b33fe0dbd",
+      "sampled_frames": 172,
+      "boxes": 344,
+      "tracks": 2,
+      "phase_changes_from_frozen": 0,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        163,
+        9
+      ],
+      "valid_relations": 172,
+      "elapsed_seconds": 15.689244319975842
+    },
+    {
+      "scene": "R03",
+      "sequence": "08",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "3db4e83f259cce62a41cffd4b567433f05d5eaf47a149a662000e46f9a9efe6a",
+      "sampled_frames": 174,
+      "boxes": 348,
+      "tracks": 2,
+      "phase_changes_from_frozen": 8,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        83,
+        41,
+        50
+      ],
+      "valid_relations": 174,
+      "elapsed_seconds": 15.637003918003757
+    },
+    {
+      "scene": "R03",
+      "sequence": "09",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "2e6944b0d3929dee64b5bf347e6ff94b7ba1f6109b4b8686648d385898bd945f",
+      "sampled_frames": 178,
+      "boxes": 369,
+      "tracks": 5,
+      "phase_changes_from_frozen": 34,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        89,
+        51,
+        38,
+        0
+      ],
+      "valid_relations": 178,
+      "elapsed_seconds": 16.056140333996154
+    },
+    {
+      "scene": "R03",
+      "sequence": "10",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "106205f71ed5ebbcaa38c560d4aabf5b79d588dfcb788d0f0b0bf4286f6fd77c",
+      "sampled_frames": 162,
+      "boxes": 326,
+      "tracks": 4,
+      "phase_changes_from_frozen": 51,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        76,
+        47,
+        39,
+        0
+      ],
+      "valid_relations": 162,
+      "elapsed_seconds": 14.591689200984547
+    },
+    {
+      "scene": "R03",
+      "sequence": "11",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "f185e49ed92325448f67b9165543c5ecfdba43835cedd1bf078d5b015df45e1c",
+      "sampled_frames": 177,
+      "boxes": 360,
+      "tracks": 5,
+      "phase_changes_from_frozen": 11,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        59,
+        49,
+        69,
+        0
+      ],
+      "valid_relations": 177,
+      "elapsed_seconds": 15.955894747021375
+    },
+    {
+      "scene": "R03",
+      "sequence": "12",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "fad43e34e62a837a1ba9589c9d8cd062e225a158f8dfbbe0805e370ad302e4ff",
+      "sampled_frames": 211,
+      "boxes": 426,
+      "tracks": 5,
+      "phase_changes_from_frozen": 4,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        111,
+        48,
+        52
+      ],
+      "valid_relations": 211,
+      "elapsed_seconds": 19.13108437799383
+    },
+    {
+      "scene": "R03",
+      "sequence": "13",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "e0820e95962c24d4ebc093e8a4271ad3f6803439dd34e6e80a97e0d9eef317ce",
+      "sampled_frames": 192,
+      "boxes": 385,
+      "tracks": 3,
+      "phase_changes_from_frozen": 6,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        65,
+        44,
+        81,
+        2
+      ],
+      "valid_relations": 192,
+      "elapsed_seconds": 17.23711635300424
+    },
+    {
+      "scene": "R03",
+      "sequence": "14",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "d2aa5fb6964a4adeee8486cb2bc631091db3ac08de6008f4c6848a1f6940cf97",
+      "sampled_frames": 227,
+      "boxes": 468,
+      "tracks": 7,
+      "phase_changes_from_frozen": 4,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        65,
+        72,
+        89,
+        1
+      ],
+      "valid_relations": 227,
+      "elapsed_seconds": 20.564377739006886
+    },
+    {
+      "scene": "R03",
+      "sequence": "15",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "54b875931c4bcc6cda7c83a015277e56ebf0ecf4c85cc411eca72f50709ed6d4",
+      "sampled_frames": 173,
+      "boxes": 352,
+      "tracks": 6,
+      "phase_changes_from_frozen": 5,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        58,
+        47,
+        67,
+        1
+      ],
+      "valid_relations": 173,
+      "elapsed_seconds": 15.854628002998652
+    },
+    {
+      "scene": "R03",
+      "sequence": "16",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "50907ef277c9128f1ce76132190b6e6c8865a57681836579bd546d07b02ce7bf",
+      "sampled_frames": 183,
+      "boxes": 374,
+      "tracks": 4,
+      "phase_changes_from_frozen": 9,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        68,
+        45,
+        70
+      ],
+      "valid_relations": 183,
+      "elapsed_seconds": 16.60567878501024
+    },
+    {
+      "scene": "R03",
+      "sequence": "17",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "a009da75563087be1f79a925e6b1f26f36e4d85a45a5907925bbd196f6b744e5",
+      "sampled_frames": 179,
+      "boxes": 359,
+      "tracks": 3,
+      "phase_changes_from_frozen": 14,
+      "role_frame_coverage": [
+        1.0,
+        1.0
+      ],
+      "phase_counts": [
+        77,
+        36,
+        66,
+        0
+      ],
+      "valid_relations": 179,
+      "elapsed_seconds": 16.110318689985434
+    },
+    {
+      "scene": "R04",
+      "sequence": "01",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "206b5717056666b869cf93c26548cc6b637b21d466e6feb98b1c21107d778276",
+      "sampled_frames": 103,
+      "boxes": 316,
+      "tracks": 30,
+      "phase_changes_from_frozen": 90,
+      "role_frame_coverage": [
+        0.9514563106796117,
+        0.8155339805825242,
+        1.0
+      ],
+      "phase_counts": [
+        9,
+        0,
+        0,
+        94
+      ],
+      "valid_relations": 79,
+      "elapsed_seconds": 9.369046211009845
+    },
+    {
+      "scene": "R04",
+      "sequence": "02",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "2e38ed2d96b0b8bdce46ba84043375ae2f72a75277fa2bf3e5e8356226cbf63e",
+      "sampled_frames": 100,
+      "boxes": 327,
+      "tracks": 27,
+      "phase_changes_from_frozen": 87,
+      "role_frame_coverage": [
+        0.91,
+        0.75,
+        1.0
+      ],
+      "phase_counts": [
+        12,
+        0,
+        0,
+        88
+      ],
+      "valid_relations": 63,
+      "elapsed_seconds": 9.091643638996175
+    },
+    {
+      "scene": "R04",
+      "sequence": "03",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "16cf63c74c5ec60c956c34de2b515ab3f24505294da80baa8bc25e1376275313",
+      "sampled_frames": 96,
+      "boxes": 313,
+      "tracks": 20,
+      "phase_changes_from_frozen": 76,
+      "role_frame_coverage": [
+        1.0,
+        0.9375,
+        1.0
+      ],
+      "phase_counts": [
+        3,
+        3,
+        0,
+        90
+      ],
+      "valid_relations": 82,
+      "elapsed_seconds": 8.83084196501295
+    },
+    {
+      "scene": "R04",
+      "sequence": "04",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "d4bf4af3ec54dae89b6cea51a6b3130a87f82b73d8ce209d169456217d2744c1",
+      "sampled_frames": 95,
+      "boxes": 303,
+      "tracks": 28,
+      "phase_changes_from_frozen": 92,
+      "role_frame_coverage": [
+        0.9894736842105263,
+        0.7473684210526316,
+        1.0
+      ],
+      "phase_counts": [
+        1,
+        5,
+        0,
+        89
+      ],
+      "valid_relations": 63,
+      "elapsed_seconds": 9.560428087977925
+    },
+    {
+      "scene": "R04",
+      "sequence": "05",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "f3dec1eda13a113737615aad9b67847b7003f737d55d54284d82c93a8f3c4d8d",
+      "sampled_frames": 117,
+      "boxes": 361,
+      "tracks": 24,
+      "phase_changes_from_frozen": 116,
+      "role_frame_coverage": [
+        1.0,
+        0.8376068376068376,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        7,
+        0,
+        110
+      ],
+      "valid_relations": 74,
+      "elapsed_seconds": 10.747780848992988
+    },
+    {
+      "scene": "R04",
+      "sequence": "06",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "3f28002a618c58a242302e01b33ee860b818e2c34a7ff9a8bc307159c78ebbf9",
+      "sampled_frames": 127,
+      "boxes": 454,
+      "tracks": 27,
+      "phase_changes_from_frozen": 111,
+      "role_frame_coverage": [
+        0.984251968503937,
+        0.905511811023622,
+        1.0
+      ],
+      "phase_counts": [
+        7,
+        1,
+        0,
+        119
+      ],
+      "valid_relations": 100,
+      "elapsed_seconds": 22.882778779021464
+    },
+    {
+      "scene": "R04",
+      "sequence": "07",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "bea1fd8348fc67ea88c3a9a08f63cb5b15dfee52a262d43188fdfd95e0d9b1e3",
+      "sampled_frames": 138,
+      "boxes": 437,
+      "tracks": 22,
+      "phase_changes_from_frozen": 125,
+      "role_frame_coverage": [
+        0.9927536231884058,
+        0.8188405797101449,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        10,
+        0,
+        128
+      ],
+      "valid_relations": 83,
+      "elapsed_seconds": 26.146960407990264
+    },
+    {
+      "scene": "R04",
+      "sequence": "08",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "0207759d82a82be749b175ba803db624258fcb9c47842ceab72727d0b89d98d0",
+      "sampled_frames": 164,
+      "boxes": 517,
+      "tracks": 36,
+      "phase_changes_from_frozen": 162,
+      "role_frame_coverage": [
+        0.9939024390243902,
+        0.8353658536585366,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        18,
+        0,
+        146
+      ],
+      "valid_relations": 81,
+      "elapsed_seconds": 15.022413220984163
+    },
+    {
+      "scene": "R04",
+      "sequence": "09",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "84c950d179aa417908a2f4e9cfe326cca2daadbb7b526b74deaf7092076f6b71",
+      "sampled_frames": 84,
+      "boxes": 269,
+      "tracks": 18,
+      "phase_changes_from_frozen": 51,
+      "role_frame_coverage": [
+        0.9880952380952381,
+        0.8690476190476191,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        2,
+        0,
+        82
+      ],
+      "valid_relations": 67,
+      "elapsed_seconds": 7.741639761021361
+    },
+    {
+      "scene": "R04",
+      "sequence": "10",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "78dee0e8521cfd4a208194461b44a5affae51ca45967af2f54885ea51559a707",
+      "sampled_frames": 56,
+      "boxes": 172,
+      "tracks": 14,
+      "phase_changes_from_frozen": 55,
+      "role_frame_coverage": [
+        1.0,
+        0.8928571428571429,
+        1.0
+      ],
+      "phase_counts": [
+        1,
+        11,
+        0,
+        44
+      ],
+      "valid_relations": 47,
+      "elapsed_seconds": 5.112714641989442
+    },
+    {
+      "scene": "R04",
+      "sequence": "11",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "7693831d570cc76e34d7412c4cd011d662e2410f12e2918605032facefd41c60",
+      "sampled_frames": 106,
+      "boxes": 341,
+      "tracks": 26,
+      "phase_changes_from_frozen": 79,
+      "role_frame_coverage": [
+        0.9905660377358491,
+        0.8773584905660378,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        14,
+        0,
+        92
+      ],
+      "valid_relations": 74,
+      "elapsed_seconds": 10.546712375013158
+    },
+    {
+      "scene": "R04",
+      "sequence": "12",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "1955ec59bd68ffa12164f9bc2b148a70e51892c91545f432fccc9d28ffa80a3e",
+      "sampled_frames": 172,
+      "boxes": 569,
+      "tracks": 38,
+      "phase_changes_from_frozen": 166,
+      "role_frame_coverage": [
+        1.0,
+        0.8546511627906976,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        15,
+        0,
+        157
+      ],
+      "valid_relations": 111,
+      "elapsed_seconds": 15.56483701398247
+    },
+    {
+      "scene": "R04",
+      "sequence": "13",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "7ea423bb936c2de9b174890a3d5f4cff39fdfd917e8d5385de1ffcf043eae88a",
+      "sampled_frames": 116,
+      "boxes": 382,
+      "tracks": 29,
+      "phase_changes_from_frozen": 106,
+      "role_frame_coverage": [
+        1.0,
+        0.8793103448275862,
+        1.0
+      ],
+      "phase_counts": [
+        2,
+        10,
+        0,
+        104
+      ],
+      "valid_relations": 88,
+      "elapsed_seconds": 10.631650780007476
+    },
+    {
+      "scene": "R04",
+      "sequence": "14",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "561dd547aac6ae20fd0f0f12fdd9e9e772418c814f4c6c060bfe08e67e0ac729",
+      "sampled_frames": 97,
+      "boxes": 313,
+      "tracks": 22,
+      "phase_changes_from_frozen": 95,
+      "role_frame_coverage": [
+        1.0,
+        0.7010309278350515,
+        1.0
+      ],
+      "phase_counts": [
+        0,
+        7,
+        0,
+        90
+      ],
+      "valid_relations": 56,
+      "elapsed_seconds": 8.932228735997342
+    },
+    {
+      "scene": "R04",
+      "sequence": "15",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "cb7a553164be789c8ced075b5e33a57c802eae712a83ce3546a220b95fba3dad",
+      "sampled_frames": 94,
+      "boxes": 311,
+      "tracks": 23,
+      "phase_changes_from_frozen": 69,
+      "role_frame_coverage": [
+        1.0,
+        0.7446808510638298,
+        1.0
+      ],
+      "phase_counts": [
+        2,
+        8,
+        0,
+        84
+      ],
+      "valid_relations": 62,
+      "elapsed_seconds": 8.698603374999948
+    },
+    {
+      "scene": "R04",
+      "sequence": "16",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "96d317f6b55e8d0e8285495f30bdf55255bfb6ac30f8c23f08eb2e6ebe77cff9",
+      "sampled_frames": 105,
+      "boxes": 318,
+      "tracks": 29,
+      "phase_changes_from_frozen": 78,
+      "role_frame_coverage": [
+        0.9523809523809523,
+        0.6666666666666666,
+        1.0
+      ],
+      "phase_counts": [
+        3,
+        3,
+        5,
+        94
+      ],
+      "valid_relations": 58,
+      "elapsed_seconds": 9.644021352985874
+    },
+    {
+      "scene": "R04",
+      "sequence": "17",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "668693e6cf4173bdc2928f7869db0931ba67f0e1fc22f933be0e0f952f97f50c",
+      "sampled_frames": 146,
+      "boxes": 489,
+      "tracks": 34,
+      "phase_changes_from_frozen": 135,
+      "role_frame_coverage": [
+        0.9931506849315068,
+        0.8082191780821918,
+        1.0
+      ],
+      "phase_counts": [
+        4,
+        5,
+        0,
+        137
+      ],
+      "valid_relations": 105,
+      "elapsed_seconds": 13.366015659004916
+    },
+    {
+      "scene": "R04",
+      "sequence": "18",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "2afb6fe893d7282ea3ea109343a65b070bf9b0336fd00ff14ca24b51c4688b2d",
+      "sampled_frames": 61,
+      "boxes": 201,
+      "tracks": 21,
+      "phase_changes_from_frozen": 56,
+      "role_frame_coverage": [
+        0.9836065573770492,
+        0.8360655737704918,
+        1.0
+      ],
+      "phase_counts": [
+        3,
+        3,
+        0,
+        55
+      ],
+      "valid_relations": 45,
+      "elapsed_seconds": 5.65623131202301
+    },
+    {
+      "scene": "R04",
+      "sequence": "19",
+      "partition": "testing",
+      "signature": "24b62cfa70be4222107a44e0b6021737a9e6da97a209a203f35d6db21f4e40e4b3d2ecebdc8d66c5be7e98f90337c3b3d5ec13bcc1e872aaf9aeccaba13aea5d38c4d563d74aa105cb8bf7eb87c4067855b171d05f7088c60522c2a6c4b29aff",
+      "sha256": "86c95fffd7f920b4069eff8fac6306fd1e6bf763de150ac8013c2061e55021ac",
+      "sampled_frames": 70,
+      "boxes": 224,
+      "tracks": 15,
+      "phase_changes_from_frozen": 67,
+      "role_frame_coverage": [
+        1.0,
+        0.8142857142857143,
+        1.0
+      ],
+      "phase_counts": [
+        1,
+        5,
+        0,
+        64
+      ],
+      "valid_relations": 46,
+      "elapsed_seconds": 6.458759758999804
+    }
+  ],
+  "elapsed_seconds": 842.2097819440241,
+  "peak_gpu_bytes": 2217306112,
+  "labels_read": false,
+  "full_frame_clip_auxiliary_reused": true,
+  "frozen_phase_parameters_reused": true,
+  "timing_scope": "includes model already loaded sequential detector/CLIP crops, image IO, tracking, frozen phase transform and serialization; excludes VLM and model fitting; cache skips excluded from elapsed"
+}
